@@ -1,0 +1,6 @@
+{"id": "molecular", "version": "0.1.0", "name": "Sinh học phân tử", "draft": true,
+ "detect": ["polymerase chain reaction", "PCR", "qPCR", "RT-PCR", "real-time PCR", "primer", "primers", "amplicon",
+            "agarose", "gel electrophoresis", "plasmid", "transfection", "Western blot", "Sanger sequencing", "CRISPR",
+            "cDNA", "cell line", "restriction enzyme", "cloning vector", "expression vector", "recombinant protein",
+            "nucleotide", "genotyping", "allele", "heterozygous", "homozygous", "codon", "intron", "mRNA",
+            "genomic DNA"]}

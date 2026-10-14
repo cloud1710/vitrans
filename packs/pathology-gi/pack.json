@@ -1,0 +1,5 @@
+{"id": "pathology-gi", "version": "0.1.1", "name": "Giải phẫu bệnh tiêu hóa", "parent": "pathology", "draft": true,
+ "detect": ["esophagus", "oesophagus", "esophageal", "Barrett", "gastric", "stomach", "gastritis", "Helicobacter",
+            "duodenum", "small bowel", "ileum", "colon", "colonic", "colorectal", "rectum", "rectal", "appendix",
+            "appendiceal", "anal canal", "GIST", "celiac", "coeliac", "Crohn", "ulcerative colitis", "colitis",
+            "serrated", "polypectomy", "mesorectal", "sigmoid", "tumor deposit", "tumour deposit"]}

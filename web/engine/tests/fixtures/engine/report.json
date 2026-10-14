@@ -1,0 +1,3072 @@
+{
+ "cases": [
+  {
+   "name": "level 3 with info flags only",
+   "meta": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    }
+   },
+   "rows": [
+    {
+     "where": "Slide 1",
+     "src": "Source 0",
+     "out": "Ngu\u1ed3n 0",
+     "level": 3,
+     "flags": [
+      "retried:tags"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 2",
+     "src": "Source 1",
+     "out": "Ngu\u1ed3n 1",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 3",
+     "src": "Source 2",
+     "out": "Ngu\u1ed3n 2",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 4",
+     "src": "Source 3",
+     "out": "Ngu\u1ed3n 3",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 5",
+     "src": "Source 4",
+     "out": "Ngu\u1ed3n 4",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 6",
+     "src": "Source 5",
+     "out": "Ngu\u1ed3n 5",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 7",
+     "src": "Source 6",
+     "out": "Ngu\u1ed3n 6",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 8",
+     "src": "Source 7",
+     "out": "Ngu\u1ed3n 7",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 9",
+     "src": "Source 8",
+     "out": "Ngu\u1ed3n 8",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 10",
+     "src": "Source 9",
+     "out": "Ngu\u1ed3n 9",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 11",
+     "src": "Source 10",
+     "out": "Ngu\u1ed3n 10",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 12",
+     "src": "Source 11",
+     "out": "Ngu\u1ed3n 11",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 13",
+     "src": "Source 12",
+     "out": "Ngu\u1ed3n 12",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 14",
+     "src": "Source 13",
+     "out": "Ngu\u1ed3n 13",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 15",
+     "src": "Source 14",
+     "out": "Ngu\u1ed3n 14",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 16",
+     "src": "Source 15",
+     "out": "Ngu\u1ed3n 15",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 17",
+     "src": "Source 16",
+     "out": "Ngu\u1ed3n 16",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 18",
+     "src": "Source 17",
+     "out": "Ngu\u1ed3n 17",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 19",
+     "src": "Source 18",
+     "out": "Ngu\u1ed3n 18",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 20",
+     "src": "Source 19",
+     "out": "Ngu\u1ed3n 19",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    }
+   ],
+   "skipped": [
+    {
+     "where": "Slide 9",
+     "reason": "references",
+     "text": "Refs"
+    },
+    {
+     "where": "Slide 9",
+     "reason": "no_text",
+     "text": ""
+    },
+    {
+     "where": "Slide 8",
+     "reason": "tracked changes",
+     "text": "t"
+    }
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.9
+    }
+   ],
+   "fonts": [],
+   "report": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    },
+    "counts": {
+     "segments": 20,
+     "cached": 0,
+     "flagged": 1,
+     "tag_exact_after_ladder": 19
+    },
+    "levels": {
+     "3": 1,
+     "0": 19
+    },
+    "info": {
+     "retried": 1
+    },
+    "skipped": {
+     "references": 1,
+     "no_text": 1,
+     "tracked changes": 1
+    },
+    "skipped_items": [
+     {
+      "where": "Slide 9",
+      "reason": "references",
+      "text": "Refs"
+     },
+     {
+      "where": "Slide 8",
+      "reason": "tracked changes",
+      "text": "t"
+     }
+    ],
+    "flagged": [
+     {
+      "where": "Slide 1",
+      "src": "Source 0",
+      "out": "Ngu\u1ed3n 0",
+      "level": 3,
+      "flags": [
+       "retried:tags"
+      ],
+      "cached": false
+     }
+    ],
+    "fit": [
+     {
+      "where": "Slide 1",
+      "scale": 0.9
+     }
+    ],
+    "fonts": [],
+    "review": {
+     "level": "moderate",
+     "reasons": [],
+     "flagged": 1,
+     "segments": 20
+    }
+   }
+  },
+  {
+   "name": "level 2 with a warning flag",
+   "meta": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    }
+   },
+   "rows": [
+    {
+     "where": "Slide 1",
+     "src": "Source 0",
+     "out": "Ngu\u1ed3n 0",
+     "level": 2,
+     "flags": [
+      "retried:gate",
+      "english_left"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 2",
+     "src": "Source 1",
+     "out": "Ngu\u1ed3n 1",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 3",
+     "src": "Source 2",
+     "out": "Ngu\u1ed3n 2",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 4",
+     "src": "Source 3",
+     "out": "Ngu\u1ed3n 3",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 5",
+     "src": "Source 4",
+     "out": "Ngu\u1ed3n 4",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 6",
+     "src": "Source 5",
+     "out": "Ngu\u1ed3n 5",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 7",
+     "src": "Source 6",
+     "out": "Ngu\u1ed3n 6",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 8",
+     "src": "Source 7",
+     "out": "Ngu\u1ed3n 7",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 9",
+     "src": "Source 8",
+     "out": "Ngu\u1ed3n 8",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 10",
+     "src": "Source 9",
+     "out": "Ngu\u1ed3n 9",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 11",
+     "src": "Source 10",
+     "out": "Ngu\u1ed3n 10",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 12",
+     "src": "Source 11",
+     "out": "Ngu\u1ed3n 11",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 13",
+     "src": "Source 12",
+     "out": "Ngu\u1ed3n 12",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 14",
+     "src": "Source 13",
+     "out": "Ngu\u1ed3n 13",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 15",
+     "src": "Source 14",
+     "out": "Ngu\u1ed3n 14",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 16",
+     "src": "Source 15",
+     "out": "Ngu\u1ed3n 15",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 17",
+     "src": "Source 16",
+     "out": "Ngu\u1ed3n 16",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 18",
+     "src": "Source 17",
+     "out": "Ngu\u1ed3n 17",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 19",
+     "src": "Source 18",
+     "out": "Ngu\u1ed3n 18",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 20",
+     "src": "Source 19",
+     "out": "Ngu\u1ed3n 19",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    }
+   ],
+   "skipped": [
+    {
+     "where": "Slide 9",
+     "reason": "references",
+     "text": "Refs"
+    },
+    {
+     "where": "Slide 9",
+     "reason": "no_text",
+     "text": ""
+    },
+    {
+     "where": "Slide 8",
+     "reason": "tracked changes",
+     "text": "t"
+    }
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.9
+    }
+   ],
+   "fonts": [],
+   "report": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    },
+    "counts": {
+     "segments": 20,
+     "cached": 0,
+     "flagged": 1,
+     "tag_exact_after_ladder": 20
+    },
+    "levels": {
+     "2": 1,
+     "0": 19
+    },
+    "info": {
+     "retried": 1
+    },
+    "skipped": {
+     "references": 1,
+     "no_text": 1,
+     "tracked changes": 1
+    },
+    "skipped_items": [
+     {
+      "where": "Slide 9",
+      "reason": "references",
+      "text": "Refs"
+     },
+     {
+      "where": "Slide 8",
+      "reason": "tracked changes",
+      "text": "t"
+     }
+    ],
+    "flagged": [
+     {
+      "where": "Slide 1",
+      "src": "Source 0",
+      "out": "Ngu\u1ed3n 0",
+      "level": 2,
+      "flags": [
+       "retried:gate",
+       "english_left"
+      ],
+      "cached": false
+     }
+    ],
+    "fit": [
+     {
+      "where": "Slide 1",
+      "scale": 0.9
+     }
+    ],
+    "fonts": [],
+    "review": {
+     "level": "thorough",
+     "reasons": [
+      "warning_flags"
+     ],
+     "flagged": 1,
+     "segments": 20
+    }
+   }
+  },
+  {
+   "name": "share exactly 5%",
+   "meta": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    }
+   },
+   "rows": [
+    {
+     "where": "Slide 1",
+     "src": "Source 0",
+     "out": "Ngu\u1ed3n 0",
+     "level": 0,
+     "flags": [
+      "numbers_changed"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 2",
+     "src": "Source 1",
+     "out": "Ngu\u1ed3n 1",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 3",
+     "src": "Source 2",
+     "out": "Ngu\u1ed3n 2",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 4",
+     "src": "Source 3",
+     "out": "Ngu\u1ed3n 3",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 5",
+     "src": "Source 4",
+     "out": "Ngu\u1ed3n 4",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 6",
+     "src": "Source 5",
+     "out": "Ngu\u1ed3n 5",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 7",
+     "src": "Source 6",
+     "out": "Ngu\u1ed3n 6",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 8",
+     "src": "Source 7",
+     "out": "Ngu\u1ed3n 7",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 9",
+     "src": "Source 8",
+     "out": "Ngu\u1ed3n 8",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 10",
+     "src": "Source 9",
+     "out": "Ngu\u1ed3n 9",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 11",
+     "src": "Source 10",
+     "out": "Ngu\u1ed3n 10",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 12",
+     "src": "Source 11",
+     "out": "Ngu\u1ed3n 11",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 13",
+     "src": "Source 12",
+     "out": "Ngu\u1ed3n 12",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 14",
+     "src": "Source 13",
+     "out": "Ngu\u1ed3n 13",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 15",
+     "src": "Source 14",
+     "out": "Ngu\u1ed3n 14",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 16",
+     "src": "Source 15",
+     "out": "Ngu\u1ed3n 15",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 17",
+     "src": "Source 16",
+     "out": "Ngu\u1ed3n 16",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 18",
+     "src": "Source 17",
+     "out": "Ngu\u1ed3n 17",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 19",
+     "src": "Source 18",
+     "out": "Ngu\u1ed3n 18",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 20",
+     "src": "Source 19",
+     "out": "Ngu\u1ed3n 19",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    }
+   ],
+   "skipped": [
+    {
+     "where": "Slide 9",
+     "reason": "references",
+     "text": "Refs"
+    },
+    {
+     "where": "Slide 9",
+     "reason": "no_text",
+     "text": ""
+    },
+    {
+     "where": "Slide 8",
+     "reason": "tracked changes",
+     "text": "t"
+    }
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.9
+    }
+   ],
+   "fonts": [],
+   "report": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    },
+    "counts": {
+     "segments": 20,
+     "cached": 0,
+     "flagged": 1,
+     "tag_exact_after_ladder": 20
+    },
+    "levels": {
+     "0": 20
+    },
+    "info": {},
+    "skipped": {
+     "references": 1,
+     "no_text": 1,
+     "tracked changes": 1
+    },
+    "skipped_items": [
+     {
+      "where": "Slide 9",
+      "reason": "references",
+      "text": "Refs"
+     },
+     {
+      "where": "Slide 8",
+      "reason": "tracked changes",
+      "text": "t"
+     }
+    ],
+    "flagged": [
+     {
+      "where": "Slide 1",
+      "src": "Source 0",
+      "out": "Ngu\u1ed3n 0",
+      "level": 0,
+      "flags": [
+       "numbers_changed"
+      ],
+      "cached": false
+     }
+    ],
+    "fit": [
+     {
+      "where": "Slide 1",
+      "scale": 0.9
+     }
+    ],
+    "fonts": [],
+    "review": {
+     "level": "moderate",
+     "reasons": [],
+     "flagged": 1,
+     "segments": 20
+    }
+   }
+  },
+  {
+   "name": "share 10%",
+   "meta": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    }
+   },
+   "rows": [
+    {
+     "where": "Slide 1",
+     "src": "Source 0",
+     "out": "Ngu\u1ed3n 0",
+     "level": 0,
+     "flags": [
+      "numbers_changed"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 2",
+     "src": "Source 1",
+     "out": "Ngu\u1ed3n 1",
+     "level": 0,
+     "flags": [
+      "numbers_changed"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 3",
+     "src": "Source 2",
+     "out": "Ngu\u1ed3n 2",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 4",
+     "src": "Source 3",
+     "out": "Ngu\u1ed3n 3",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 5",
+     "src": "Source 4",
+     "out": "Ngu\u1ed3n 4",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 6",
+     "src": "Source 5",
+     "out": "Ngu\u1ed3n 5",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 7",
+     "src": "Source 6",
+     "out": "Ngu\u1ed3n 6",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 8",
+     "src": "Source 7",
+     "out": "Ngu\u1ed3n 7",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 9",
+     "src": "Source 8",
+     "out": "Ngu\u1ed3n 8",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 10",
+     "src": "Source 9",
+     "out": "Ngu\u1ed3n 9",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 11",
+     "src": "Source 10",
+     "out": "Ngu\u1ed3n 10",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 12",
+     "src": "Source 11",
+     "out": "Ngu\u1ed3n 11",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 13",
+     "src": "Source 12",
+     "out": "Ngu\u1ed3n 12",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 14",
+     "src": "Source 13",
+     "out": "Ngu\u1ed3n 13",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 15",
+     "src": "Source 14",
+     "out": "Ngu\u1ed3n 14",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 16",
+     "src": "Source 15",
+     "out": "Ngu\u1ed3n 15",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 17",
+     "src": "Source 16",
+     "out": "Ngu\u1ed3n 16",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 18",
+     "src": "Source 17",
+     "out": "Ngu\u1ed3n 17",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 19",
+     "src": "Source 18",
+     "out": "Ngu\u1ed3n 18",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 20",
+     "src": "Source 19",
+     "out": "Ngu\u1ed3n 19",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    }
+   ],
+   "skipped": [
+    {
+     "where": "Slide 9",
+     "reason": "references",
+     "text": "Refs"
+    },
+    {
+     "where": "Slide 9",
+     "reason": "no_text",
+     "text": ""
+    },
+    {
+     "where": "Slide 8",
+     "reason": "tracked changes",
+     "text": "t"
+    }
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.9
+    }
+   ],
+   "fonts": [],
+   "report": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    },
+    "counts": {
+     "segments": 20,
+     "cached": 0,
+     "flagged": 2,
+     "tag_exact_after_ladder": 20
+    },
+    "levels": {
+     "0": 20
+    },
+    "info": {},
+    "skipped": {
+     "references": 1,
+     "no_text": 1,
+     "tracked changes": 1
+    },
+    "skipped_items": [
+     {
+      "where": "Slide 9",
+      "reason": "references",
+      "text": "Refs"
+     },
+     {
+      "where": "Slide 8",
+      "reason": "tracked changes",
+      "text": "t"
+     }
+    ],
+    "flagged": [
+     {
+      "where": "Slide 1",
+      "src": "Source 0",
+      "out": "Ngu\u1ed3n 0",
+      "level": 0,
+      "flags": [
+       "numbers_changed"
+      ],
+      "cached": false
+     },
+     {
+      "where": "Slide 2",
+      "src": "Source 1",
+      "out": "Ngu\u1ed3n 1",
+      "level": 0,
+      "flags": [
+       "numbers_changed"
+      ],
+      "cached": false
+     }
+    ],
+    "fit": [
+     {
+      "where": "Slide 1",
+      "scale": 0.9
+     }
+    ],
+    "fonts": [],
+    "review": {
+     "level": "careful",
+     "reasons": [
+      "flagged_over_5"
+     ],
+     "flagged": 2,
+     "segments": 20
+    }
+   }
+  },
+  {
+   "name": "share exactly 15%",
+   "meta": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    }
+   },
+   "rows": [
+    {
+     "where": "Slide 1",
+     "src": "Source 0",
+     "out": "Ngu\u1ed3n 0",
+     "level": 0,
+     "flags": [
+      "unchanged"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 2",
+     "src": "Source 1",
+     "out": "Ngu\u1ed3n 1",
+     "level": 0,
+     "flags": [
+      "unchanged"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 3",
+     "src": "Source 2",
+     "out": "Ngu\u1ed3n 2",
+     "level": 0,
+     "flags": [
+      "unchanged"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 4",
+     "src": "Source 3",
+     "out": "Ngu\u1ed3n 3",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 5",
+     "src": "Source 4",
+     "out": "Ngu\u1ed3n 4",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 6",
+     "src": "Source 5",
+     "out": "Ngu\u1ed3n 5",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 7",
+     "src": "Source 6",
+     "out": "Ngu\u1ed3n 6",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 8",
+     "src": "Source 7",
+     "out": "Ngu\u1ed3n 7",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 9",
+     "src": "Source 8",
+     "out": "Ngu\u1ed3n 8",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 10",
+     "src": "Source 9",
+     "out": "Ngu\u1ed3n 9",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 11",
+     "src": "Source 10",
+     "out": "Ngu\u1ed3n 10",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 12",
+     "src": "Source 11",
+     "out": "Ngu\u1ed3n 11",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 13",
+     "src": "Source 12",
+     "out": "Ngu\u1ed3n 12",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 14",
+     "src": "Source 13",
+     "out": "Ngu\u1ed3n 13",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 15",
+     "src": "Source 14",
+     "out": "Ngu\u1ed3n 14",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 16",
+     "src": "Source 15",
+     "out": "Ngu\u1ed3n 15",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 17",
+     "src": "Source 16",
+     "out": "Ngu\u1ed3n 16",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 18",
+     "src": "Source 17",
+     "out": "Ngu\u1ed3n 17",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 19",
+     "src": "Source 18",
+     "out": "Ngu\u1ed3n 18",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 20",
+     "src": "Source 19",
+     "out": "Ngu\u1ed3n 19",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    }
+   ],
+   "skipped": [
+    {
+     "where": "Slide 9",
+     "reason": "references",
+     "text": "Refs"
+    },
+    {
+     "where": "Slide 9",
+     "reason": "no_text",
+     "text": ""
+    },
+    {
+     "where": "Slide 8",
+     "reason": "tracked changes",
+     "text": "t"
+    }
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.9
+    }
+   ],
+   "fonts": [],
+   "report": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    },
+    "counts": {
+     "segments": 20,
+     "cached": 0,
+     "flagged": 3,
+     "tag_exact_after_ladder": 20
+    },
+    "levels": {
+     "0": 20
+    },
+    "info": {},
+    "skipped": {
+     "references": 1,
+     "no_text": 1,
+     "tracked changes": 1
+    },
+    "skipped_items": [
+     {
+      "where": "Slide 9",
+      "reason": "references",
+      "text": "Refs"
+     },
+     {
+      "where": "Slide 8",
+      "reason": "tracked changes",
+      "text": "t"
+     }
+    ],
+    "flagged": [
+     {
+      "where": "Slide 1",
+      "src": "Source 0",
+      "out": "Ngu\u1ed3n 0",
+      "level": 0,
+      "flags": [
+       "unchanged"
+      ],
+      "cached": false
+     },
+     {
+      "where": "Slide 2",
+      "src": "Source 1",
+      "out": "Ngu\u1ed3n 1",
+      "level": 0,
+      "flags": [
+       "unchanged"
+      ],
+      "cached": false
+     },
+     {
+      "where": "Slide 3",
+      "src": "Source 2",
+      "out": "Ngu\u1ed3n 2",
+      "level": 0,
+      "flags": [
+       "unchanged"
+      ],
+      "cached": false
+     }
+    ],
+    "fit": [
+     {
+      "where": "Slide 1",
+      "scale": 0.9
+     }
+    ],
+    "fonts": [],
+    "review": {
+     "level": "careful",
+     "reasons": [
+      "flagged_over_5"
+     ],
+     "flagged": 3,
+     "segments": 20
+    }
+   }
+  },
+  {
+   "name": "share 20%",
+   "meta": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    }
+   },
+   "rows": [
+    {
+     "where": "Slide 1",
+     "src": "Source 0",
+     "out": "Ngu\u1ed3n 0",
+     "level": 5,
+     "flags": [
+      "formatting_lost"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 2",
+     "src": "Source 1",
+     "out": "Ngu\u1ed3n 1",
+     "level": 5,
+     "flags": [
+      "formatting_lost"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 3",
+     "src": "Source 2",
+     "out": "Ngu\u1ed3n 2",
+     "level": 5,
+     "flags": [
+      "formatting_lost"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 4",
+     "src": "Source 3",
+     "out": "Ngu\u1ed3n 3",
+     "level": 5,
+     "flags": [
+      "formatting_lost"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 5",
+     "src": "Source 4",
+     "out": "Ngu\u1ed3n 4",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 6",
+     "src": "Source 5",
+     "out": "Ngu\u1ed3n 5",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 7",
+     "src": "Source 6",
+     "out": "Ngu\u1ed3n 6",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 8",
+     "src": "Source 7",
+     "out": "Ngu\u1ed3n 7",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 9",
+     "src": "Source 8",
+     "out": "Ngu\u1ed3n 8",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 10",
+     "src": "Source 9",
+     "out": "Ngu\u1ed3n 9",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 11",
+     "src": "Source 10",
+     "out": "Ngu\u1ed3n 10",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 12",
+     "src": "Source 11",
+     "out": "Ngu\u1ed3n 11",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 13",
+     "src": "Source 12",
+     "out": "Ngu\u1ed3n 12",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 14",
+     "src": "Source 13",
+     "out": "Ngu\u1ed3n 13",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 15",
+     "src": "Source 14",
+     "out": "Ngu\u1ed3n 14",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 16",
+     "src": "Source 15",
+     "out": "Ngu\u1ed3n 15",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 17",
+     "src": "Source 16",
+     "out": "Ngu\u1ed3n 16",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 18",
+     "src": "Source 17",
+     "out": "Ngu\u1ed3n 17",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 19",
+     "src": "Source 18",
+     "out": "Ngu\u1ed3n 18",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 20",
+     "src": "Source 19",
+     "out": "Ngu\u1ed3n 19",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    }
+   ],
+   "skipped": [
+    {
+     "where": "Slide 9",
+     "reason": "references",
+     "text": "Refs"
+    },
+    {
+     "where": "Slide 9",
+     "reason": "no_text",
+     "text": ""
+    },
+    {
+     "where": "Slide 8",
+     "reason": "tracked changes",
+     "text": "t"
+    }
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.9
+    }
+   ],
+   "fonts": [],
+   "report": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    },
+    "counts": {
+     "segments": 20,
+     "cached": 0,
+     "flagged": 4,
+     "tag_exact_after_ladder": 16
+    },
+    "levels": {
+     "5": 4,
+     "0": 16
+    },
+    "info": {},
+    "skipped": {
+     "references": 1,
+     "no_text": 1,
+     "tracked changes": 1
+    },
+    "skipped_items": [
+     {
+      "where": "Slide 9",
+      "reason": "references",
+      "text": "Refs"
+     },
+     {
+      "where": "Slide 8",
+      "reason": "tracked changes",
+      "text": "t"
+     }
+    ],
+    "flagged": [
+     {
+      "where": "Slide 1",
+      "src": "Source 0",
+      "out": "Ngu\u1ed3n 0",
+      "level": 5,
+      "flags": [
+       "formatting_lost"
+      ],
+      "cached": false
+     },
+     {
+      "where": "Slide 2",
+      "src": "Source 1",
+      "out": "Ngu\u1ed3n 1",
+      "level": 5,
+      "flags": [
+       "formatting_lost"
+      ],
+      "cached": false
+     },
+     {
+      "where": "Slide 3",
+      "src": "Source 2",
+      "out": "Ngu\u1ed3n 2",
+      "level": 5,
+      "flags": [
+       "formatting_lost"
+      ],
+      "cached": false
+     },
+     {
+      "where": "Slide 4",
+      "src": "Source 3",
+      "out": "Ngu\u1ed3n 3",
+      "level": 5,
+      "flags": [
+       "formatting_lost"
+      ],
+      "cached": false
+     }
+    ],
+    "fit": [
+     {
+      "where": "Slide 1",
+      "scale": 0.9
+     }
+    ],
+    "fonts": [],
+    "review": {
+     "level": "thorough",
+     "reasons": [
+      "flagged_over_15"
+     ],
+     "flagged": 4,
+     "segments": 20
+    }
+   }
+  },
+  {
+   "name": "fast draft",
+   "meta": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": true,
+    "polish": {
+     "enabled": true
+    }
+   },
+   "rows": [
+    {
+     "where": "Slide 1",
+     "src": "Source 0",
+     "out": "Ngu\u1ed3n 0",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 2",
+     "src": "Source 1",
+     "out": "Ngu\u1ed3n 1",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 3",
+     "src": "Source 2",
+     "out": "Ngu\u1ed3n 2",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 4",
+     "src": "Source 3",
+     "out": "Ngu\u1ed3n 3",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 5",
+     "src": "Source 4",
+     "out": "Ngu\u1ed3n 4",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 6",
+     "src": "Source 5",
+     "out": "Ngu\u1ed3n 5",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 7",
+     "src": "Source 6",
+     "out": "Ngu\u1ed3n 6",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 8",
+     "src": "Source 7",
+     "out": "Ngu\u1ed3n 7",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 9",
+     "src": "Source 8",
+     "out": "Ngu\u1ed3n 8",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 10",
+     "src": "Source 9",
+     "out": "Ngu\u1ed3n 9",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 11",
+     "src": "Source 10",
+     "out": "Ngu\u1ed3n 10",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 12",
+     "src": "Source 11",
+     "out": "Ngu\u1ed3n 11",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 13",
+     "src": "Source 12",
+     "out": "Ngu\u1ed3n 12",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 14",
+     "src": "Source 13",
+     "out": "Ngu\u1ed3n 13",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 15",
+     "src": "Source 14",
+     "out": "Ngu\u1ed3n 14",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 16",
+     "src": "Source 15",
+     "out": "Ngu\u1ed3n 15",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 17",
+     "src": "Source 16",
+     "out": "Ngu\u1ed3n 16",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 18",
+     "src": "Source 17",
+     "out": "Ngu\u1ed3n 17",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 19",
+     "src": "Source 18",
+     "out": "Ngu\u1ed3n 18",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 20",
+     "src": "Source 19",
+     "out": "Ngu\u1ed3n 19",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    }
+   ],
+   "skipped": [
+    {
+     "where": "Slide 9",
+     "reason": "references",
+     "text": "Refs"
+    },
+    {
+     "where": "Slide 9",
+     "reason": "no_text",
+     "text": ""
+    },
+    {
+     "where": "Slide 8",
+     "reason": "tracked changes",
+     "text": "t"
+    }
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.9
+    }
+   ],
+   "fonts": [],
+   "report": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": true,
+    "polish": {
+     "enabled": true
+    },
+    "counts": {
+     "segments": 20,
+     "cached": 0,
+     "flagged": 0,
+     "tag_exact_after_ladder": 20
+    },
+    "levels": {
+     "0": 20
+    },
+    "info": {},
+    "skipped": {
+     "references": 1,
+     "no_text": 1,
+     "tracked changes": 1
+    },
+    "skipped_items": [
+     {
+      "where": "Slide 9",
+      "reason": "references",
+      "text": "Refs"
+     },
+     {
+      "where": "Slide 8",
+      "reason": "tracked changes",
+      "text": "t"
+     }
+    ],
+    "flagged": [],
+    "fit": [
+     {
+      "where": "Slide 1",
+      "scale": 0.9
+     }
+    ],
+    "fonts": [],
+    "review": {
+     "level": "thorough",
+     "reasons": [
+      "fast_draft"
+     ],
+     "flagged": 0,
+     "segments": 20
+    }
+   }
+  },
+  {
+   "name": "no pack, polish off",
+   "meta": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": false
+    }
+   },
+   "rows": [
+    {
+     "where": "Slide 1",
+     "src": "Source 0",
+     "out": "Ngu\u1ed3n 0",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 2",
+     "src": "Source 1",
+     "out": "Ngu\u1ed3n 1",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 3",
+     "src": "Source 2",
+     "out": "Ngu\u1ed3n 2",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 4",
+     "src": "Source 3",
+     "out": "Ngu\u1ed3n 3",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 5",
+     "src": "Source 4",
+     "out": "Ngu\u1ed3n 4",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 6",
+     "src": "Source 5",
+     "out": "Ngu\u1ed3n 5",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 7",
+     "src": "Source 6",
+     "out": "Ngu\u1ed3n 6",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 8",
+     "src": "Source 7",
+     "out": "Ngu\u1ed3n 7",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 9",
+     "src": "Source 8",
+     "out": "Ngu\u1ed3n 8",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 10",
+     "src": "Source 9",
+     "out": "Ngu\u1ed3n 9",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 11",
+     "src": "Source 10",
+     "out": "Ngu\u1ed3n 10",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 12",
+     "src": "Source 11",
+     "out": "Ngu\u1ed3n 11",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 13",
+     "src": "Source 12",
+     "out": "Ngu\u1ed3n 12",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 14",
+     "src": "Source 13",
+     "out": "Ngu\u1ed3n 13",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 15",
+     "src": "Source 14",
+     "out": "Ngu\u1ed3n 14",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 16",
+     "src": "Source 15",
+     "out": "Ngu\u1ed3n 15",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 17",
+     "src": "Source 16",
+     "out": "Ngu\u1ed3n 16",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 18",
+     "src": "Source 17",
+     "out": "Ngu\u1ed3n 17",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 19",
+     "src": "Source 18",
+     "out": "Ngu\u1ed3n 18",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 20",
+     "src": "Source 19",
+     "out": "Ngu\u1ed3n 19",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    }
+   ],
+   "skipped": [
+    {
+     "where": "Slide 9",
+     "reason": "references",
+     "text": "Refs"
+    },
+    {
+     "where": "Slide 9",
+     "reason": "no_text",
+     "text": ""
+    },
+    {
+     "where": "Slide 8",
+     "reason": "tracked changes",
+     "text": "t"
+    }
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.9
+    }
+   ],
+   "fonts": [],
+   "report": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": false
+    },
+    "counts": {
+     "segments": 20,
+     "cached": 0,
+     "flagged": 0,
+     "tag_exact_after_ladder": 20
+    },
+    "levels": {
+     "0": 20
+    },
+    "info": {},
+    "skipped": {
+     "references": 1,
+     "no_text": 1,
+     "tracked changes": 1
+    },
+    "skipped_items": [
+     {
+      "where": "Slide 9",
+      "reason": "references",
+      "text": "Refs"
+     },
+     {
+      "where": "Slide 8",
+      "reason": "tracked changes",
+      "text": "t"
+     }
+    ],
+    "flagged": [],
+    "fit": [
+     {
+      "where": "Slide 1",
+      "scale": 0.9
+     }
+    ],
+    "fonts": [],
+    "review": {
+     "level": "careful",
+     "reasons": [
+      "no_pack",
+      "polish_off"
+     ],
+     "flagged": 0,
+     "segments": 20
+    }
+   }
+  },
+  {
+   "name": "moderate",
+   "meta": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    }
+   },
+   "rows": [
+    {
+     "where": "Slide 1",
+     "src": "Source 0",
+     "out": "Ngu\u1ed3n 0",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 2",
+     "src": "Source 1",
+     "out": "Ngu\u1ed3n 1",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 3",
+     "src": "Source 2",
+     "out": "Ngu\u1ed3n 2",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 4",
+     "src": "Source 3",
+     "out": "Ngu\u1ed3n 3",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 5",
+     "src": "Source 4",
+     "out": "Ngu\u1ed3n 4",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 6",
+     "src": "Source 5",
+     "out": "Ngu\u1ed3n 5",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 7",
+     "src": "Source 6",
+     "out": "Ngu\u1ed3n 6",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 8",
+     "src": "Source 7",
+     "out": "Ngu\u1ed3n 7",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 9",
+     "src": "Source 8",
+     "out": "Ngu\u1ed3n 8",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 10",
+     "src": "Source 9",
+     "out": "Ngu\u1ed3n 9",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 11",
+     "src": "Source 10",
+     "out": "Ngu\u1ed3n 10",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 12",
+     "src": "Source 11",
+     "out": "Ngu\u1ed3n 11",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 13",
+     "src": "Source 12",
+     "out": "Ngu\u1ed3n 12",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 14",
+     "src": "Source 13",
+     "out": "Ngu\u1ed3n 13",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 15",
+     "src": "Source 14",
+     "out": "Ngu\u1ed3n 14",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 16",
+     "src": "Source 15",
+     "out": "Ngu\u1ed3n 15",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 17",
+     "src": "Source 16",
+     "out": "Ngu\u1ed3n 16",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 18",
+     "src": "Source 17",
+     "out": "Ngu\u1ed3n 17",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 19",
+     "src": "Source 18",
+     "out": "Ngu\u1ed3n 18",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 20",
+     "src": "Source 19",
+     "out": "Ngu\u1ed3n 19",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    }
+   ],
+   "skipped": [
+    {
+     "where": "Slide 9",
+     "reason": "references",
+     "text": "Refs"
+    },
+    {
+     "where": "Slide 9",
+     "reason": "no_text",
+     "text": ""
+    },
+    {
+     "where": "Slide 8",
+     "reason": "tracked changes",
+     "text": "t"
+    }
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.9
+    }
+   ],
+   "fonts": [],
+   "report": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    },
+    "counts": {
+     "segments": 20,
+     "cached": 0,
+     "flagged": 0,
+     "tag_exact_after_ladder": 20
+    },
+    "levels": {
+     "0": 20
+    },
+    "info": {},
+    "skipped": {
+     "references": 1,
+     "no_text": 1,
+     "tracked changes": 1
+    },
+    "skipped_items": [
+     {
+      "where": "Slide 9",
+      "reason": "references",
+      "text": "Refs"
+     },
+     {
+      "where": "Slide 8",
+      "reason": "tracked changes",
+      "text": "t"
+     }
+    ],
+    "flagged": [],
+    "fit": [
+     {
+      "where": "Slide 1",
+      "scale": 0.9
+     }
+    ],
+    "fonts": [],
+    "review": {
+     "level": "moderate",
+     "reasons": [],
+     "flagged": 0,
+     "segments": 20
+    }
+   }
+  },
+  {
+   "name": "info kinds and cache",
+   "meta": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    }
+   },
+   "rows": [
+    {
+     "where": "Slide 1",
+     "src": "Source 0",
+     "out": "Ngu\u1ed3n 0",
+     "level": 0,
+     "flags": [
+      "term_fix:lung",
+      "glossary_miss:x",
+      "kept_code",
+      "retried:english",
+      "polish_rejected:ratio",
+      "kept_reference",
+      "kept_english"
+     ],
+     "cached": true
+    },
+    {
+     "where": "Slide 2",
+     "src": "Source 1",
+     "out": "Ngu\u1ed3n 1",
+     "level": 1,
+     "flags": [],
+     "cached": true
+    },
+    {
+     "where": "Slide 3",
+     "src": "Source 2",
+     "out": "Ngu\u1ed3n 2",
+     "level": 4,
+     "flags": [
+      "formatting_lost"
+     ],
+     "cached": false
+    },
+    {
+     "where": "Slide 4",
+     "src": "Source 3",
+     "out": "Ngu\u1ed3n 3",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 5",
+     "src": "Source 4",
+     "out": "Ngu\u1ed3n 4",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 6",
+     "src": "Source 5",
+     "out": "Ngu\u1ed3n 5",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 7",
+     "src": "Source 6",
+     "out": "Ngu\u1ed3n 6",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 8",
+     "src": "Source 7",
+     "out": "Ngu\u1ed3n 7",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 9",
+     "src": "Source 8",
+     "out": "Ngu\u1ed3n 8",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 10",
+     "src": "Source 9",
+     "out": "Ngu\u1ed3n 9",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 11",
+     "src": "Source 10",
+     "out": "Ngu\u1ed3n 10",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 12",
+     "src": "Source 11",
+     "out": "Ngu\u1ed3n 11",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 13",
+     "src": "Source 12",
+     "out": "Ngu\u1ed3n 12",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 14",
+     "src": "Source 13",
+     "out": "Ngu\u1ed3n 13",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 15",
+     "src": "Source 14",
+     "out": "Ngu\u1ed3n 14",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 16",
+     "src": "Source 15",
+     "out": "Ngu\u1ed3n 15",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 17",
+     "src": "Source 16",
+     "out": "Ngu\u1ed3n 16",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 18",
+     "src": "Source 17",
+     "out": "Ngu\u1ed3n 17",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 19",
+     "src": "Source 18",
+     "out": "Ngu\u1ed3n 18",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    },
+    {
+     "where": "Slide 20",
+     "src": "Source 19",
+     "out": "Ngu\u1ed3n 19",
+     "level": 0,
+     "flags": [],
+     "cached": false
+    }
+   ],
+   "skipped": [
+    {
+     "where": "Slide 9",
+     "reason": "references",
+     "text": "Refs"
+    },
+    {
+     "where": "Slide 9",
+     "reason": "no_text",
+     "text": ""
+    },
+    {
+     "where": "Slide 8",
+     "reason": "tracked changes",
+     "text": "t"
+    }
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.9
+    }
+   ],
+   "fonts": [],
+   "report": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    },
+    "counts": {
+     "segments": 20,
+     "cached": 2,
+     "flagged": 1,
+     "tag_exact_after_ladder": 19
+    },
+    "levels": {
+     "0": 18,
+     "1": 1,
+     "4": 1
+    },
+    "info": {
+     "term_fix": 1,
+     "glossary_miss": 1,
+     "kept_code": 1,
+     "retried": 1,
+     "polish_rejected": 1,
+     "kept_reference": 1,
+     "kept_english": 1
+    },
+    "skipped": {
+     "references": 1,
+     "no_text": 1,
+     "tracked changes": 1
+    },
+    "skipped_items": [
+     {
+      "where": "Slide 9",
+      "reason": "references",
+      "text": "Refs"
+     },
+     {
+      "where": "Slide 8",
+      "reason": "tracked changes",
+      "text": "t"
+     }
+    ],
+    "flagged": [
+     {
+      "where": "Slide 3",
+      "src": "Source 2",
+      "out": "Ngu\u1ed3n 2",
+      "level": 4,
+      "flags": [
+       "formatting_lost"
+      ],
+      "cached": false
+     }
+    ],
+    "fit": [
+     {
+      "where": "Slide 1",
+      "scale": 0.9
+     }
+    ],
+    "fonts": [],
+    "review": {
+     "level": "moderate",
+     "reasons": [],
+     "flagged": 1,
+     "segments": 20
+    }
+   }
+  },
+  {
+   "name": "empty job",
+   "meta": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    }
+   },
+   "rows": [],
+   "skipped": [
+    {
+     "where": "Slide 9",
+     "reason": "references",
+     "text": "Refs"
+    },
+    {
+     "where": "Slide 9",
+     "reason": "no_text",
+     "text": ""
+    },
+    {
+     "where": "Slide 8",
+     "reason": "tracked changes",
+     "text": "t"
+    }
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.9
+    }
+   ],
+   "fonts": [],
+   "report": {
+    "file": "x.pptx",
+    "output": "x_vi.pptx",
+    "kind": "pptx",
+    "domain": "pathology",
+    "domain_name": "GPB",
+    "pack": "pathology@0.1.8",
+    "packs": [
+     {
+      "id": "pathology"
+     }
+    ],
+    "packs_unavailable": [],
+    "packs_unavailable_names": [],
+    "registry_offline": false,
+    "device": "gpu",
+    "device_name": "GPU",
+    "model": "m",
+    "fast": false,
+    "polish": {
+     "enabled": true
+    },
+    "counts": {
+     "segments": 0,
+     "cached": 0,
+     "flagged": 0,
+     "tag_exact_after_ladder": 0
+    },
+    "levels": {},
+    "info": {},
+    "skipped": {
+     "references": 1,
+     "no_text": 1,
+     "tracked changes": 1
+    },
+    "skipped_items": [
+     {
+      "where": "Slide 9",
+      "reason": "references",
+      "text": "Refs"
+     },
+     {
+      "where": "Slide 8",
+      "reason": "tracked changes",
+      "text": "t"
+     }
+    ],
+    "flagged": [],
+    "fit": [
+     {
+      "where": "Slide 1",
+      "scale": 0.9
+     }
+    ],
+    "fonts": [],
+    "review": {
+     "level": "moderate",
+     "reasons": [],
+     "flagged": 0,
+     "segments": 0
+    }
+   }
+  }
+ ]
+}

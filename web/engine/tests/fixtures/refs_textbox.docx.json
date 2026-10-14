@@ -1,0 +1,140 @@
+{
+ "file": "refs_textbox.docx",
+ "kind": "docx",
+ "options": {
+  "notes": true,
+  "comments": false
+ },
+ "names": [
+  "[Content_Types].xml",
+  "_rels/.rels",
+  "docProps/core.xml",
+  "docProps/app.xml",
+  "word/document.xml",
+  "word/_rels/document.xml.rels",
+  "word/styles.xml",
+  "word/stylesWithEffects.xml",
+  "word/settings.xml",
+  "word/webSettings.xml",
+  "word/fontTable.xml",
+  "word/theme/theme1.xml",
+  "customXml/item1.xml",
+  "customXml/_rels/item1.xml.rels",
+  "customXml/itemProps1.xml",
+  "word/numbering.xml",
+  "docProps/thumbnail.jpeg"
+ ],
+ "parts": [
+  "word/document.xml"
+ ],
+ "labels": {
+  "word/document.xml": "Body"
+ },
+ "items": [
+  {
+   "part": "word/document.xml",
+   "index": 0,
+   "location": "Body",
+   "skip": "no_text",
+   "text": "",
+   "seg": null
+  },
+  {
+   "part": "word/document.xml",
+   "index": 1,
+   "location": "Body",
+   "skip": "",
+   "text": "References",
+   "seg": {
+    "kind": "w",
+    "tagged": "References",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "word/document.xml",
+   "index": 2,
+   "location": "Body",
+   "skip": "",
+   "text": "Final diagnosis: atypical meningioma.",
+   "seg": {
+    "kind": "w",
+    "tagged": "Final diagnosis: atypical meningioma.",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  }
+ ],
+ "scenarios": {
+  "identity": {
+   "texts": [
+    "References",
+    "Final diagnosis: atypical meningioma."
+   ],
+   "fixes": [
+    [],
+    []
+   ],
+   "fit": [],
+   "changed": {
+    "word/document.xml": {
+     "sha256": "b9a3e9c5b0616f9306084dde8cd2b1b6d78d0b89a3d92ca8b654d17edca30cc0",
+     "canon": "E w:document \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nN m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"\nN mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\"\nN mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\"\nN mv=\"urn:schemas-microsoft-com:mac:vml\"\nN o=\"urn:schemas-microsoft-com:office:office\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nN v=\"urn:schemas-microsoft-com:vml\"\nN w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nN w10=\"urn:schemas-microsoft-com:office:word\"\nN w14=\"http://schemas.microsoft.com/office/word/2010/wordml\"\nN wne=\"http://schemas.microsoft.com/office/word/2006/wordml\"\nN wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nN wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\"\nN wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\"\nN wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\"\nN wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\"\nN wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nA \"http://schemas.openxmlformats.org/markup-compatibility/2006\" Ignorable=\"w14 wp14\"\nE w:body \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:p \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:r \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE w:drawing \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE wp:inline \"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nA \"\" distB=\"0\"\nA \"\" distL=\"0\"\nA \"\" distR=\"0\"\nA \"\" distT=\"0\"\nE wp:extent \"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nA \"\" cx=\"2743200\"\nA \"\" cy=\"457200\"\n/E\nE wp:docPr \"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nA \"\" id=\"100\"\nA \"\" name=\"Text Box 1\"\n/E\nE a:graphic \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:graphicData \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" uri=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE wps:wsp \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE wps:cNvSpPr \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nA \"\" txBox=\"1\"\n/E\nE wps:spPr \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"0\"\nA \"\" y=\"0\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"2743200\"\nA \"\" cy=\"457200\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\nE wps:txbx \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE w:txbxContent \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:p \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:r \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:rPr \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:lang \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" val=\"vi-VN\"\n/E\n/E\nE w:t \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://www.w3.org/XML/1998/namespace\" space=\"preserve\"\nT \"References\"\n/E\n/E\n/E\n/E\n/E\nE wps:bodyPr \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE w:p \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:r \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:rPr \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:lang \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" val=\"vi-VN\"\n/E\n/E\nE w:t \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://www.w3.org/XML/1998/namespace\" space=\"preserve\"\nT \"Final diagnosis: atypical meningioma.\"\n/E\n/E\n/E\nE w:sectPr \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" rsidR=\"00FC693F\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" rsidRPr=\"0006063C\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" rsidSect=\"00034616\"\nE w:pgSz \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" h=\"15840\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w=\"12240\"\n/E\nE w:pgMar \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" bottom=\"1440\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" footer=\"720\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" gutter=\"0\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" header=\"720\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" left=\"1800\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" right=\"1800\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" top=\"1440\"\n/E\nE w:cols \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" space=\"720\"\n/E\nE w:docGrid \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" linePitch=\"360\"\n/E\n/E\n/E\n/E"
+    }
+   }
+  },
+  "fake": {
+   "texts": [
+    "VI_References",
+    "VI_Final VI_diagnosis: VI_atypical VI_meningioma."
+   ],
+   "fixes": [
+    [],
+    []
+   ],
+   "fit": [],
+   "changed": {
+    "word/document.xml": {
+     "sha256": "8459513e4ee0585425bb2316db35ec7816bd347a6810895bf6e731bde4c1d98a",
+     "canon": "E w:document \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nN m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"\nN mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\"\nN mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\"\nN mv=\"urn:schemas-microsoft-com:mac:vml\"\nN o=\"urn:schemas-microsoft-com:office:office\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nN v=\"urn:schemas-microsoft-com:vml\"\nN w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nN w10=\"urn:schemas-microsoft-com:office:word\"\nN w14=\"http://schemas.microsoft.com/office/word/2010/wordml\"\nN wne=\"http://schemas.microsoft.com/office/word/2006/wordml\"\nN wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nN wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\"\nN wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\"\nN wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\"\nN wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\"\nN wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nA \"http://schemas.openxmlformats.org/markup-compatibility/2006\" Ignorable=\"w14 wp14\"\nE w:body \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:p \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:r \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE w:drawing \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE wp:inline \"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nA \"\" distB=\"0\"\nA \"\" distL=\"0\"\nA \"\" distR=\"0\"\nA \"\" distT=\"0\"\nE wp:extent \"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nA \"\" cx=\"2743200\"\nA \"\" cy=\"457200\"\n/E\nE wp:docPr \"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nA \"\" id=\"100\"\nA \"\" name=\"Text Box 1\"\n/E\nE a:graphic \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:graphicData \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" uri=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE wps:wsp \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE wps:cNvSpPr \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nA \"\" txBox=\"1\"\n/E\nE wps:spPr \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"0\"\nA \"\" y=\"0\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"2743200\"\nA \"\" cy=\"457200\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\nE wps:txbx \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE w:txbxContent \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:p \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:r \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:rPr \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:lang \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" val=\"vi-VN\"\n/E\n/E\nE w:t \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://www.w3.org/XML/1998/namespace\" space=\"preserve\"\nT \"VI_References\"\n/E\n/E\n/E\n/E\n/E\nE wps:bodyPr \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE w:p \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:r \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:rPr \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:lang \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" val=\"vi-VN\"\n/E\n/E\nE w:t \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://www.w3.org/XML/1998/namespace\" space=\"preserve\"\nT \"VI_Final VI_diagnosis: VI_atypical VI_meningioma.\"\n/E\n/E\n/E\nE w:sectPr \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" rsidR=\"00FC693F\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" rsidRPr=\"0006063C\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" rsidSect=\"00034616\"\nE w:pgSz \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" h=\"15840\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w=\"12240\"\n/E\nE w:pgMar \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" bottom=\"1440\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" footer=\"720\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" gutter=\"0\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" header=\"720\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" left=\"1800\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" right=\"1800\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" top=\"1440\"\n/E\nE w:cols \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" space=\"720\"\n/E\nE w:docGrid \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" linePitch=\"360\"\n/E\n/E\n/E\n/E"
+    }
+   }
+  },
+  "messy": {
+   "texts": [
+    "A\r\nB VI_References <x99/>",
+    "ma\u0300ng VI_Final VI_diagnosis: VI_atypical VI_meningioma."
+   ],
+   "fixes": [
+    [
+     "x_unknown:99"
+    ],
+    []
+   ],
+   "fit": [],
+   "changed": {
+    "word/document.xml": {
+     "sha256": "08ed861eeb5bba24a19b7e9f974769187f1b2f6cf8378651720273c130d6f1a5",
+     "canon": "E w:document \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nN m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"\nN mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\"\nN mo=\"http://schemas.microsoft.com/office/mac/office/2008/main\"\nN mv=\"urn:schemas-microsoft-com:mac:vml\"\nN o=\"urn:schemas-microsoft-com:office:office\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nN v=\"urn:schemas-microsoft-com:vml\"\nN w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nN w10=\"urn:schemas-microsoft-com:office:word\"\nN w14=\"http://schemas.microsoft.com/office/word/2010/wordml\"\nN wne=\"http://schemas.microsoft.com/office/word/2006/wordml\"\nN wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nN wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\"\nN wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\"\nN wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\"\nN wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\"\nN wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nA \"http://schemas.openxmlformats.org/markup-compatibility/2006\" Ignorable=\"w14 wp14\"\nE w:body \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:p \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:r \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE w:drawing \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE wp:inline \"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nA \"\" distB=\"0\"\nA \"\" distL=\"0\"\nA \"\" distR=\"0\"\nA \"\" distT=\"0\"\nE wp:extent \"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nA \"\" cx=\"2743200\"\nA \"\" cy=\"457200\"\n/E\nE wp:docPr \"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"\nA \"\" id=\"100\"\nA \"\" name=\"Text Box 1\"\n/E\nE a:graphic \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:graphicData \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" uri=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE wps:wsp \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE wps:cNvSpPr \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nA \"\" txBox=\"1\"\n/E\nE wps:spPr \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"0\"\nA \"\" y=\"0\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"2743200\"\nA \"\" cy=\"457200\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\nE wps:txbx \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\nE w:txbxContent \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:p \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:r \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:rPr \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:lang \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" val=\"vi-VN\"\n/E\n/E\nE w:t \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://www.w3.org/XML/1998/namespace\" space=\"preserve\"\nT \"A B VI_References \"\n/E\n/E\n/E\n/E\n/E\nE wps:bodyPr \"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE w:p \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:r \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:rPr \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nE w:lang \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" val=\"vi-VN\"\n/E\n/E\nE w:t \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://www.w3.org/XML/1998/namespace\" space=\"preserve\"\nT \"m\\u00e0ng VI_Final VI_diagnosis: VI_atypical VI_meningioma.\"\n/E\n/E\n/E\nE w:sectPr \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" rsidR=\"00FC693F\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" rsidRPr=\"0006063C\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" rsidSect=\"00034616\"\nE w:pgSz \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" h=\"15840\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w=\"12240\"\n/E\nE w:pgMar \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" bottom=\"1440\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" footer=\"720\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" gutter=\"0\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" header=\"720\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" left=\"1800\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" right=\"1800\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" top=\"1440\"\n/E\nE w:cols \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" space=\"720\"\n/E\nE w:docGrid \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"\nA \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" linePitch=\"360\"\n/E\n/E\n/E\n/E"
+    }
+   }
+  }
+ }
+}

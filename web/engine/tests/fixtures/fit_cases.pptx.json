@@ -1,0 +1,599 @@
+{
+ "file": "fit_cases.pptx",
+ "kind": "pptx",
+ "options": {
+  "notes": true,
+  "comments": false
+ },
+ "names": [
+  "[Content_Types].xml",
+  "_rels/.rels",
+  "docProps/core.xml",
+  "docProps/app.xml",
+  "ppt/presentation.xml",
+  "ppt/_rels/presentation.xml.rels",
+  "ppt/presProps.xml",
+  "ppt/viewProps.xml",
+  "ppt/theme/theme1.xml",
+  "ppt/tableStyles.xml",
+  "ppt/slideMasters/slideMaster1.xml",
+  "ppt/slideMasters/_rels/slideMaster1.xml.rels",
+  "ppt/slideLayouts/slideLayout11.xml",
+  "ppt/slideLayouts/_rels/slideLayout11.xml.rels",
+  "ppt/slideLayouts/slideLayout1.xml",
+  "ppt/slideLayouts/_rels/slideLayout1.xml.rels",
+  "ppt/slideLayouts/slideLayout2.xml",
+  "ppt/slideLayouts/_rels/slideLayout2.xml.rels",
+  "ppt/slideLayouts/slideLayout3.xml",
+  "ppt/slideLayouts/_rels/slideLayout3.xml.rels",
+  "ppt/slideLayouts/slideLayout4.xml",
+  "ppt/slideLayouts/_rels/slideLayout4.xml.rels",
+  "ppt/slideLayouts/slideLayout5.xml",
+  "ppt/slideLayouts/_rels/slideLayout5.xml.rels",
+  "ppt/slideLayouts/slideLayout6.xml",
+  "ppt/slideLayouts/_rels/slideLayout6.xml.rels",
+  "ppt/slideLayouts/slideLayout7.xml",
+  "ppt/slideLayouts/_rels/slideLayout7.xml.rels",
+  "ppt/slideLayouts/slideLayout8.xml",
+  "ppt/slideLayouts/_rels/slideLayout8.xml.rels",
+  "ppt/slideLayouts/slideLayout9.xml",
+  "ppt/slideLayouts/_rels/slideLayout9.xml.rels",
+  "ppt/slideLayouts/slideLayout10.xml",
+  "ppt/slideLayouts/_rels/slideLayout10.xml.rels",
+  "ppt/printerSettings/printerSettings1.bin",
+  "ppt/slides/slide1.xml",
+  "ppt/slides/_rels/slide1.xml.rels",
+  "docProps/thumbnail.jpeg"
+ ],
+ "parts": [
+  "ppt/slides/slide1.xml",
+  "ppt/slideLayouts/slideLayout7.xml",
+  "ppt/slideMasters/slideMaster1.xml"
+ ],
+ "labels": {
+  "ppt/slides/slide1.xml": "Slide 1",
+  "ppt/slideLayouts/slideLayout7.xml": "Layout 7",
+  "ppt/slideMasters/slideMaster1.xml": "Master 1"
+ },
+ "items": [
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 0,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Short English line",
+   "seg": {
+    "kind": "a",
+    "tagged": "Short English line",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 1,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Label",
+   "seg": {
+    "kind": "a",
+    "tagged": "Label",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 2,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Scaled text box",
+   "seg": {
+    "kind": "a",
+    "tagged": "Scaled text box",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 3,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Spacing kept here",
+   "seg": {
+    "kind": "a",
+    "tagged": "Spacing kept here",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 4,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Plain box text",
+   "seg": {
+    "kind": "a",
+    "tagged": "Plain box text",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 5,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Grows a lot",
+   "seg": {
+    "kind": "a",
+    "tagged": "Grows a lot",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 6,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Warped text",
+   "seg": {
+    "kind": "a",
+    "tagged": "Warped text",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 7,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "First line of a box",
+   "seg": {
+    "kind": "a",
+    "tagged": "First line of a box",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 8,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Second line of the same box",
+   "seg": {
+    "kind": "a",
+    "tagged": "Second line of the same box",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 9,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Marker",
+   "seg": {
+    "kind": "a",
+    "tagged": "Marker",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 10,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Result of the stain",
+   "seg": {
+    "kind": "a",
+    "tagged": "Result of the stain",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 11,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Ki-67",
+   "seg": {
+    "kind": "a",
+    "tagged": "Ki-67",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 12,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Low",
+   "seg": {
+    "kind": "a",
+    "tagged": "Low",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 13,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Pneumonoultramicroscopicsilicovolcanoconiosis",
+   "seg": {
+    "kind": "a",
+    "tagged": "Pneumonoultramicroscopicsilicovolcanoconiosis",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  }
+ ],
+ "scenarios": {
+  "identity": {
+   "texts": [
+    "Short English line",
+    "Label",
+    "Scaled text box",
+    "Spacing kept here",
+    "Plain box text",
+    "Grows a lot",
+    "Warped text",
+    "First line of a box",
+    "Second line of the same box",
+    "Marker",
+    "Result of the stain",
+    "Ki-67",
+    "Low",
+    "Pneumonoultramicroscopicsilicovolcanoconiosis"
+   ],
+   "fixes": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+   ],
+   "fit": [],
+   "changed": {
+    "ppt/slides/slide1.xml": {
+     "sha256": "446d707a4b614789389fb44455385ca4119a1df38b7e841de012bd021746def6",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"TextBox 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"457200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:prstTxWarp \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"textNoShape\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"90000\"\n/E\nE a:extLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Short English line\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"TextBox 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"1371600\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:spAutoFit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Label\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"4\"\nA \"\" name=\"TextBox 3\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"2286000\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"62.5%\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Scaled text box\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"5\"\nA \"\" name=\"TextBox 4\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"3200400\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"90000\"\nA \"\" lnSpcReduction=\"20000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Spacing kept here\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"6\"\nA \"\" name=\"TextBox 5\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"4114800\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nT \"\\u000a  \"\nE a:noAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nT \"\\u000a\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Plain box text\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"7\"\nA \"\" name=\"TextBox 6\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"5029200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Grows a lot\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"8\"\nA \"\" name=\"TextBox 7\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"5943600\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nT \"\\u000a  \"\nE a:prstTxWarp \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"textNoShape\"\nT \"\\u000a    \"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nT \"\\u000a  \"\n/E\nT \"\\u000a  \"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"85000\"\n/E\nT \"\\u000a  \"\nE a:scene3d \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:camera \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"orthographicFront\"\n/E\nE a:lightRig \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dir=\"t\"\nA \"\" rig=\"threePt\"\n/E\n/E\nT \"\\u000a\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Warped text\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"9\"\nA \"\" name=\"TextBox 8\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"4572000\"\nA \"\" y=\"457200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"914400\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:spAutoFit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"First line of a box\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Second line of the same box\"\n/E\n/E\n/E\n/E\n/E\nE p:graphicFrame \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGraphicFramePr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"10\"\nA \"\" name=\"Table 9\"\n/E\nE p:cNvGraphicFramePr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:graphicFrameLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:xfrm \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"4572000\"\nA \"\" y=\"2743200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"914400\"\n/E\n/E\nE a:graphic \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:graphicData \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" uri=\"http://schemas.openxmlformats.org/drawingml/2006/table\"\nE a:tbl \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:tblPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" bandRow=\"1\"\nA \"\" firstRow=\"1\"\nE a:tableStyleId \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"{5C22544A-7EE6-4342-B048-85BDC9FD1C3A}\"\n/E\n/E\nE a:tblGrid \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:gridCol \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" w=\"1828800\"\n/E\nE a:gridCol \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" w=\"1828800\"\n/E\n/E\nE a:tr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" h=\"457200\"\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Marker\"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Result of the stain\"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\nE a:tr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" h=\"457200\"\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Ki-67\"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Low\"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"11\"\nA \"\" name=\"TextBox 10\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"4572000\"\nA \"\" y=\"4572000\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:spAutoFit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Pneumonoultramicroscopicsilicovolcanoconiosis\"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    }
+   }
+  },
+  "fake": {
+   "texts": [
+    "VI_Short VI_English VI_line",
+    "VI_Label",
+    "VI_Scaled VI_text VI_box",
+    "VI_Spacing VI_kept VI_here",
+    "VI_Plain VI_box VI_text",
+    "VI_Grows VI_a VI_lot",
+    "VI_Warped VI_text",
+    "VI_First VI_line VI_of VI_a VI_box",
+    "VI_Second VI_line VI_of VI_the VI_same VI_box",
+    "VI_Marker",
+    "VI_Result VI_of VI_the VI_stain",
+    "VI_Ki-67",
+    "VI_Low",
+    "VI_Pneumonoultramicroscopicsilicovolcanoconiosis"
+   ],
+   "fixes": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.73
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.62
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.5
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.73
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.78
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.74
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.68
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.58
+    },
+    {
+     "where": "Slide 1",
+     "table_cell_longer": true
+    },
+    {
+     "where": "Slide 1",
+     "table_cell_longer": true
+    },
+    {
+     "where": "Slide 1",
+     "table_cell_longer": true
+    },
+    {
+     "where": "Slide 1",
+     "table_cell_longer": true
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.94
+    }
+   ],
+   "changed": {
+    "ppt/slides/slide1.xml": {
+     "sha256": "55dccd977be2a9ec9e4c4c0e3e83b91a8c2752c9be1094326668cc1fa7094bfa",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"TextBox 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"457200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:prstTxWarp \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"textNoShape\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"73485\"\nA \"\" lnSpcReduction=\"10000\"\n/E\nE a:extLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Short VI_English VI_line\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"TextBox 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"1371600\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"62500\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Label\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"4\"\nA \"\" name=\"TextBox 3\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"2286000\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"50000\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Scaled VI_text VI_box\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"5\"\nA \"\" name=\"TextBox 4\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"3200400\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"72775\"\nA \"\" lnSpcReduction=\"20000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Spacing VI_kept VI_here\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"6\"\nA \"\" name=\"TextBox 5\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"4114800\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nT \"\\u000a  \"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"78019\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Plain VI_box VI_text\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"7\"\nA \"\" name=\"TextBox 6\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"5029200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"74162\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Grows VI_a VI_lot\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"8\"\nA \"\" name=\"TextBox 7\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"5943600\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nT \"\\u000a  \"\nE a:prstTxWarp \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"textNoShape\"\nT \"\\u000a    \"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nT \"\\u000a  \"\n/E\nT \"\\u000a  \"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"68374\"\nA \"\" lnSpcReduction=\"10000\"\n/E\nE a:scene3d \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:camera \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"orthographicFront\"\n/E\nE a:lightRig \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dir=\"t\"\nA \"\" rig=\"threePt\"\n/E\n/E\nT \"\\u000a\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Warped VI_text\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"9\"\nA \"\" name=\"TextBox 8\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"4572000\"\nA \"\" y=\"457200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"914400\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"58228\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_First VI_line VI_of VI_a VI_box\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Second VI_line VI_of VI_the VI_same VI_box\"\n/E\n/E\n/E\n/E\n/E\nE p:graphicFrame \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGraphicFramePr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"10\"\nA \"\" name=\"Table 9\"\n/E\nE p:cNvGraphicFramePr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:graphicFrameLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:xfrm \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"4572000\"\nA \"\" y=\"2743200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"914400\"\n/E\n/E\nE a:graphic \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:graphicData \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" uri=\"http://schemas.openxmlformats.org/drawingml/2006/table\"\nE a:tbl \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:tblPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" bandRow=\"1\"\nA \"\" firstRow=\"1\"\nE a:tableStyleId \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"{5C22544A-7EE6-4342-B048-85BDC9FD1C3A}\"\n/E\n/E\nE a:tblGrid \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:gridCol \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" w=\"1828800\"\n/E\nE a:gridCol \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" w=\"1828800\"\n/E\n/E\nE a:tr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" h=\"457200\"\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Marker\"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Result VI_of VI_the VI_stain\"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\nE a:tr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" h=\"457200\"\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Ki-67\"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Low\"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"11\"\nA \"\" name=\"TextBox 10\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"4572000\"\nA \"\" y=\"4572000\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"93750\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Pneumonoultramicroscopicsilicovolcanoconiosis\"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    }
+   }
+  },
+  "messy": {
+   "texts": [
+    "A\r\nB VI_Short VI_English VI_line <x99/>",
+    "ma\u0300ng VI_Label",
+    "C\u000bD VI_Scaled VI_text VI_box <x99/>",
+    "E\u0001F VI_Spacing VI_kept VI_here",
+    "G\ud800H VI_Plain VI_box VI_text <x99/>",
+    "\u00a0 VI_Grows VI_a VI_lot",
+    "A\r\nB VI_Warped VI_text <x99/>",
+    "ma\u0300ng VI_First VI_line VI_of VI_a VI_box",
+    "C\u000bD VI_Second VI_line VI_of VI_the VI_same VI_box <x99/>",
+    "E\u0001F VI_Marker",
+    "G\ud800H VI_Result VI_of VI_the VI_stain <x99/>",
+    "\u00a0 VI_Ki-67",
+    "A\r\nB VI_Low <x99/>",
+    "ma\u0300ng VI_Pneumonoultramicroscopicsilicovolcanoconiosis"
+   ],
+   "fixes": [
+    [
+     "x_unknown:99"
+    ],
+    [],
+    [
+     "x_unknown:99"
+    ],
+    [],
+    [
+     "x_unknown:99"
+    ],
+    [],
+    [
+     "x_unknown:99"
+    ],
+    [],
+    [
+     "x_unknown:99"
+    ],
+    [],
+    [
+     "x_unknown:99"
+    ],
+    [],
+    [
+     "x_unknown:99"
+    ],
+    []
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.66
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.5
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.5
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.68
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.71
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.71
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.59
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.51
+    },
+    {
+     "where": "Slide 1",
+     "table_cell_longer": true
+    },
+    {
+     "where": "Slide 1",
+     "table_cell_longer": true
+    },
+    {
+     "where": "Slide 1",
+     "table_cell_longer": true
+    },
+    {
+     "where": "Slide 1",
+     "table_cell_longer": true
+    },
+    {
+     "where": "Slide 1",
+     "scale": 0.83
+    }
+   ],
+   "changed": {
+    "ppt/slides/slide1.xml": {
+     "sha256": "f31747c359109d91db471be2b881c926b9ec5ae8923c3e7be84656d7b9312832",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"TextBox 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"457200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:prstTxWarp \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"textNoShape\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"66469\"\nA \"\" lnSpcReduction=\"10000\"\n/E\nE a:extLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"A B VI_Short VI_English VI_line \"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"TextBox 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"1371600\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"50000\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"m\\u00e0ng VI_Label\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"4\"\nA \"\" name=\"TextBox 3\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"2286000\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"50000\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"C D VI_Scaled VI_text VI_box \"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"5\"\nA \"\" name=\"TextBox 4\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"3200400\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"67750\"\nA \"\" lnSpcReduction=\"20000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"EF VI_Spacing VI_kept VI_here\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"6\"\nA \"\" name=\"TextBox 5\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"4114800\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nT \"\\u000a  \"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"70711\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"GH VI_Plain VI_box VI_text \"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"7\"\nA \"\" name=\"TextBox 6\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"5029200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"70711\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\u00a0 VI_Grows VI_a VI_lot\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"8\"\nA \"\" name=\"TextBox 7\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"5943600\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nT \"\\u000a  \"\nE a:prstTxWarp \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"textNoShape\"\nT \"\\u000a    \"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nT \"\\u000a  \"\n/E\nT \"\\u000a  \"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"58783\"\nA \"\" lnSpcReduction=\"10000\"\n/E\nE a:scene3d \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:camera \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"orthographicFront\"\n/E\nE a:lightRig \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dir=\"t\"\nA \"\" rig=\"threePt\"\n/E\n/E\nT \"\\u000a\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"A B VI_Warped VI_text \"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"9\"\nA \"\" name=\"TextBox 8\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"4572000\"\nA \"\" y=\"457200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"914400\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"51111\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"m\\u00e0ng VI_First VI_line VI_of VI_a VI_box\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"C D VI_Second VI_line VI_of VI_the VI_same VI_box \"\n/E\n/E\n/E\n/E\n/E\nE p:graphicFrame \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGraphicFramePr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"10\"\nA \"\" name=\"Table 9\"\n/E\nE p:cNvGraphicFramePr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:graphicFrameLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:xfrm \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"4572000\"\nA \"\" y=\"2743200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"914400\"\n/E\n/E\nE a:graphic \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:graphicData \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" uri=\"http://schemas.openxmlformats.org/drawingml/2006/table\"\nE a:tbl \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:tblPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" bandRow=\"1\"\nA \"\" firstRow=\"1\"\nE a:tableStyleId \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"{5C22544A-7EE6-4342-B048-85BDC9FD1C3A}\"\n/E\n/E\nE a:tblGrid \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:gridCol \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" w=\"1828800\"\n/E\nE a:gridCol \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" w=\"1828800\"\n/E\n/E\nE a:tr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" h=\"457200\"\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"EF VI_Marker\"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"GH VI_Result VI_of VI_the VI_stain \"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\nE a:tr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" h=\"457200\"\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\u00a0 VI_Ki-67\"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:tc \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:txBody \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"A B VI_Low \"\n/E\n/E\n/E\n/E\nE a:tcPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"11\"\nA \"\" name=\"TextBox 10\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"4572000\"\nA \"\" y=\"4572000\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"3657600\"\nA \"\" cy=\"548640\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"83333\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"m\\u00e0ng VI_Pneumonoultramicroscopicsilicovolcanoconiosis\"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    }
+   }
+  }
+ }
+}

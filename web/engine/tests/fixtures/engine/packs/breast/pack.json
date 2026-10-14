@@ -1,0 +1,1 @@
+{"id": "breast", "version": "1.0.0", "name": "Breast (synthetic)", "parent": "pathology", "detect": ["ductal carcinoma in situ", "HER2", "BI-RADS", "mammography", "lobular", "Nottingham"]}

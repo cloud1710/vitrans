@@ -1,0 +1,12 @@
+{
+ "term_fixes": [
+  {
+   "en": "lymph node",
+   "vi": "h\u1ea1ch",
+   "wrong": [
+    "h\u1ea1ch b\u1ea1ch huy\u1ebft",
+    "(?:x|y)z\\s+w"
+   ]
+  }
+ ]
+}

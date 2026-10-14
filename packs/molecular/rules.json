@@ -1,0 +1,4 @@
+{"term_fixes": [
+ {"en": "DNA", "vi": "DNA", "wrong": ["ADN"]},
+ {"en": "RNA", "vi": "RNA", "wrong": ["ARN"]}
+]}

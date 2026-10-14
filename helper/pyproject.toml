@@ -1,0 +1,20 @@
+[project]
+name = "vitranslate"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.110", "starlette>=1.8", "uvicorn>=0.29", "python-multipart", "lxml>=5", "fonttools>=4.50",
+  "httpx>=0.27", "python-docx", "python-pptx",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+  "ollama: needs a running Ollama with the configured models (config.MODELS)",
+  "private: needs files listed in private/corpus.txt",
+]
+addopts = "-m 'not ollama and not private'"

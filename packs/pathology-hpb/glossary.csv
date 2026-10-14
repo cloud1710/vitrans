@@ -1,0 +1,83 @@
+en,vi,note
+hepatocellular carcinoma,ung thư biểu mô tế bào gan (HCC),"freq 33 (+3 ref); src: BYT3129, YDLS108-1264, VMJ-6127; = parent pack; Bộ Y tế QĐ 3129/2020 title uses this form"
+fibrolamellar carcinoma,ung thư biểu mô tế bào gan thể xơ lá,freq 1 (+0 ref) ['thể xơ lá']; src: YDLS108-1264; low evidence: 1 VN review (108 Hospital); MSD-VN spells 'xơ lát'
+hepatoblastoma,u nguyên bào gan,"freq 3 (+1 ref); src: TCNCYH-5459, vnras-UNBG, YDLS108-1260"
+cholangiocarcinoma,ung thư biểu mô đường mật,"freq 11 (+2 ref); src: YDLS108-1264, TCNCYH-3681, VMJ-4038; HUMAN DECISION: short form 'ung thư đường mật' is in more docs (surgery/imaging); pathology papers use 'ung thư biểu mô đường mật' (carcinoma = ung thư biểu mô, parent)"
+intrahepatic cholangiocarcinoma,ung thư biểu mô đường mật trong gan,"freq 8 (+0 ref); src: TCNCYH-3681, VMJ-4038, YDLS108-3017; tie in docs (8 vs 8), long form 83 hits vs 25; WHO 2019 pathology papers (K, Bạch Mai) use long form"
+perihilar cholangiocarcinoma,ung thư biểu mô đường mật vùng rốn gan,"freq 6 (+0 ref) ['ung thư đường mật vùng rốn gan']; src: YDLS108-3017, YHCD-2390, VMJ-9114; qualifier 'vùng rốn gan' majority; head noun follows the cholangiocarcinoma decision; 'u Klatskin' as synonym"
+extrahepatic cholangiocarcinoma,ung thư biểu mô đường mật ngoài gan,"freq 8 (+1 ref) ['ung thư (biểu mô) đường mật ngoài gan']; src: TCNCYH-3681, YDLS108-3017, VMJ-10126; head noun follows the cholangiocarcinoma decision"
+Klatskin tumor,u Klatskin,"freq 6 (+0 ref); src: YHCD-2390, VMJ-1276, YDLS108-3017; perihilar CCA synonym"
+combined hepatocellular-cholangiocarcinoma,ung thư biểu mô hỗn hợp tế bào gan-đường mật,"freq 2 (+0 ref); src: vnras-cHCCCCA, YDLS108v-191950; WHO cHCC-CCA"
+small duct type,típ ống nhỏ,"freq 2 (+0 ref); src: TCNCYH-3681, VMJ-4038; iCCA subtype, WHO 2019"
+large duct type,típ ống lớn,"freq 2 (+0 ref); src: TCNCYH-3681, VMJ-4038; iCCA subtype, WHO 2019"
+hepatocellular adenoma,u tuyến tế bào gan,"freq 1 (+1 ref); src: YDLS108-1264, MSD-UGLT; adenoma = u tuyến (parent)"
+focal nodular hyperplasia,tăng sản dạng nốt khu trú (FNH),freq 0 (+1 ref); src: MSD-UGLT; every variant 1 source; 'dạng nốt khu trú' shared by BYT 3129 + MSD; hyperplasia = tăng sản (parent)
+dysplastic nodule,nốt loạn sản,"freq 2 (+0 ref); src: YDLS108-1264, DQYHHN-90093; low/high grade = độ thấp/độ cao"
+cirrhosis,xơ gan,"freq 37 (+11 ref); src: BYT3129, VMJ-11570, LATS-HVQY2018"
+fibrosis stage,giai đoạn xơ hóa,"freq 12 (+0 ref); src: YDHue2020-052, VMJ-1097, PNT-97977; stage = giai đoạn (parent staging rule); METAVIR F0-F4 / Ishak kept in English"
+bridging fibrosis,xơ hóa bắc cầu,"freq 3 (+0 ref); src: YDHue2020-050, YDHue2020-052, LATS-HVQY2018"
+steatosis,nhiễm mỡ,"freq 23 (+6 ref); src: YDLS108-2113, YDLS108-2261, VMJ-2264; CONFLICT parent: 'macrovesicular steatosis = thoái hóa mỡ giọt lớn'"
+steatohepatitis,viêm gan nhiễm mỡ,"freq 12 (+4 ref); src: VMJ-2264, YDLS108-2113, YDHue2020-050"
+NASH,viêm gan nhiễm mỡ không do rượu (NASH),"freq 7 (+2 ref); src: VMJ-2264, YDHue2020-050, LATS-HVQY2018"
+MASH,viêm gan nhiễm mỡ liên quan rối loạn chuyển hóa (MASH),freq 0 (+1 ref); src: MSD-MASLD; new 2023 nomenclature; built to match MASLD row
+MASLD,bệnh gan nhiễm mỡ liên quan rối loạn chuyển hóa (MASLD),"freq 2 (+2 ref); src: YDLS108-2261, YDLS108-2853, HASLD-MASLD; HASLD terminology note + 108 journal; MSD-VN drops 'nhiễm mỡ'"
+ballooning degeneration,thoái hóa nước (ballooning),"freq 2 (+0 ref); src: YDHue2020-050, YDHue2020-052; HUMAN DECISION: scattered; 'thoái hóa nước' = 2 papers of one Huế group; keep EN gloss"
+hepatocyte ballooning,thoái hóa nước (ballooning),"freq 2 (+0 ref); src: YDHue2020-050, YDHue2020-052; see ballooning degeneration"
+Mallory-Denk bodies,thể Mallory-Denk,"freq 2 (+1 ref) ['thể Mallory(-Denk)']; src: YDLS108-1264, vnras-GanRuou, HASLD-VG"
+lobular inflammation,viêm tiểu thùy,"freq 1 (+1 ref); src: LATS-HVQY2018, BVNTP-NAFLD; low evidence but no competitor"
+interface hepatitis,hoại tử mối gặm (interface hepatitis),"freq 1 (+1 ref); src: LATS-HVQY2018, BVNTP-VGM; HUMAN DECISION: VN literature names it by the older synonym piecemeal necrosis; keep EN gloss"
+piecemeal necrosis,hoại tử mối gặm,"freq 1 (+1 ref); src: LATS-HVQY2018, BVNTP-VGM; Knodell/Ishak item"
+portal tract,khoảng cửa,"freq 10 (+5 ref); src: YDHue2020-050, LATS-HVQY2018, TCNCYH-4535"
+bile duct,ống mật,"freq 8 (+6 ref); src: TCNCYH-3681, TCNCYH-4535, YDLS108-1264; anatomical biliary tree = đường mật"
+ductular reaction,phản ứng tiểu ống mật (ductular reaction),"freq 0 (+0 ref); src: none in corpus; UNRESOLVED: no VN source found; constructed, keep EN gloss"
+cholestasis,ứ mật,"freq 10 (+5 ref); src: TCNCYH-4535, TCNCYH-4543, TCNCYH-606; tắc mật = biliary obstruction (different)"
+sinusoidal obstruction syndrome,hội chứng tắc nghẽn xoang gan (SOS),freq 1 (+0 ref) ['hội chứng tắc nghẽn xoang']; src: DQYHHN-90093; formerly veno-occlusive disease (VOD)
+sinusoidal obstruction,tắc nghẽn xoang gan,freq 1 (+0 ref) ['tắc nghẽn xoang']; src: DQYHHN-90093; see SOS
+primary biliary cholangitis,viêm đường mật nguyên phát (PBC),"freq 2 (+2 ref); src: YDLS108-3017, PNT-79696, MSD-PBC; old 'primary biliary cirrhosis' = xơ gan mật nguyên phát"
+primary sclerosing cholangitis,viêm đường mật xơ hóa nguyên phát (PSC),"ALIGNED to the parent rule sclerosing = xơ hóa (tie in the HPB corpus); evidence 'xơ cứng' 1 lit + MSD-VN body vs 'xơ hóa' 1 lit; MSD-VN title / Vinmec 'viêm xơ đường mật tiên phát' -- pending user decision; src: VMJ-10067, MSD-UTGkhac, MSD-PSC"
+autoimmune hepatitis,viêm gan tự miễn,"freq 4 (+6 ref); src: TCNCYH-606, LATS-HVQY2018, PNT-79696"
+chronic viral hepatitis,viêm gan virus mạn tính,"freq 3 (+1 ref); src: YDHue2020-051, VMJ-1097, LATS-HVQY2018"
+ground-glass hepatocytes,tế bào gan kính mờ (ground-glass),"freq 1 (+1 ref) ['(tế bào/thể) kính mờ']; src: YDLS108-1264, HASLD-VG; HBsAg; low evidence, keep EN gloss"
+hemosiderosis,nhiễm hemosiderin,freq 0 (+0 ref); src: none in corpus; web-only (see sources.md); low evidence; 'ứ sắt/quá tải sắt' = iron overload (broader)
+Wilson disease,bệnh Wilson,"freq 4 (+2 ref); src: TCNCYH-4766, TCNCYH-606, PNT-79696"
+alpha-1 antitrypsin deficiency,thiếu hụt alpha-1 antitrypsin,freq 0 (+1 ref); src: BVNTP-NAFLD; low evidence
+liver biopsy,sinh thiết gan,"freq 22 (+10 ref); src: YDHue2020-050, YDHue2020-051, LATS-HVQY2018"
+liver biopsy adequacy,mẫu sinh thiết gan đạt chuẩn,"freq 3 (+0 ref) ['mẫu sinh thiết/mô gan (không) đạt chuẩn']; src: YDHue2020-050, YDHue2020-052, LATS-HVQY2018; VN papers: 'không đạt chuẩn (< 6 khoảng cửa)'; phrase-level evidence only"
+biliary intraepithelial neoplasia,tân sinh trong biểu mô đường mật (BilIN),freq 0 (+0 ref) ['tân sinh trong/nội biểu mô đường mật']; src: none in corpus; UNRESOLVED: no VN term found; built like parent CIN = tân sinh trong biểu mô cổ tử cung
+intraductal papillary neoplasm of the bile duct,u nhú trong ống mật (IPNB),freq 0 (+0 ref) ['u nhú trong/nội ống mật']; src: none in corpus; UNRESOLVED: no VN term found; built like IPMN row
+gallbladder adenocarcinoma,ung thư biểu mô tuyến túi mật,freq 1 (+0 ref); src: PNT-128125; adenocarcinoma = ung thư biểu mô tuyến (33 VN docs in corpus)
+chronic cholecystitis,viêm túi mật mạn,"freq 2 (+0 ref); src: VMJ-17365, YDCT-250900; 'mạn tính' equally acceptable"
+xanthogranulomatous cholecystitis,viêm túi mật u hạt vàng,freq 0 (+1 ref) ['(u) hạt vàng']; src: TamAnh-UCT; UNRESOLVED: no VN journal hit; Tâm Anh lists 'u hạt vàng' among gallbladder lesions
+Rokitansky-Aschoff sinuses,xoang Rokitansky-Aschoff,"freq 1 (+1 ref); src: YDCT-250900, TamAnh-UCT"
+adenomyomatosis,u cơ tuyến túi mật,"freq 2 (+1 ref) ['u cơ tuyến']; src: VMJ-17365, YDLS108v-192412, TamAnh-UCT"
+ampulla of Vater,bóng Vater,"freq 16 (+0 ref); src: VMJ-8237, YHCD-6273, YHLSHue-153532"
+ampullary carcinoma,ung thư biểu mô bóng Vater,"freq 12 (+0 ref) ['ung thư bóng Vater (clinical short form)']; src: VMJ-7804, YHCD-6273, YDLS108-778; HUMAN DECISION: same register question as cholangiocarcinoma; pathology sections write 'ung thư biểu mô tuyến bóng Vater'"
+pancreatic ductal adenocarcinoma,ung thư biểu mô tuyến ống tụy (PDAC),"freq 5 (+2 ref); src: VMJ-7209, VJST-3882, VMJ-15426"
+pancreatic intraepithelial neoplasia,tân sinh trong biểu mô tụy (PanIN),freq 0 (+1 ref) ['tân sinh trong/nội biểu mô tụy']; src: Wiki-UTtuy; low evidence (Wikipedia-VN); same pattern as parent CIN
+intraductal papillary mucinous neoplasm,u nhú nhầy trong ống tụy (IPMN),"freq 3 (+2 ref) ['u nhú nhầy trong/nội ống']; src: YDHue2020-020, TCNCYH-877, YHTPHCM-176078; 'nội ống' = 'trong ống'"
+mucinous cystic neoplasm,u nang nhầy (MCN),"freq 2 (+2 ref); src: YHCDv-149378, YDHue2020-020, UTH.vn-SPN"
+serous cystadenoma,u tuyến nang thanh dịch,freq 1 (+0 ref); src: YHCDv-149378; cystadenoma = u tuyến nang; low evidence
+serous cystic neoplasm,u nang thanh dịch,"freq 1 (+3 ref); src: YHCDv-149378, UTH.vn-SPN, Wiki-UTtuy"
+solid pseudopapillary neoplasm,u đặc giả nhú (SPN),"freq 9 (+2 ref); src: VMJ-14248, YDHQS-174598, DQVN-440"
+acinar cell carcinoma,ung thư biểu mô tế bào chùm nang,"freq 1 (+1 ref) ['tế bào chùm nang']; src: VMJ-4656, Wiki-UTtuy; low evidence; CONFLICT-ish parent 'acinar pattern = kiểu túi tuyến'"
+pancreatoblastoma,u nguyên bào tụy,freq 0 (+1 ref); src: Wiki-UTtuy; low evidence; parallels hepatoblastoma = u nguyên bào gan
+pancreatic neuroendocrine tumor,u thần kinh nội tiết tụy (PanNET),"freq 7 (+3 ref) ['u thần kinh nội tiết']; src: YHCD-6591, YHCDv-149378, YDHue2023-054; grade G1/G2/G3 by Ki-67 / mitoses, WHO codes kept"
+pancreatic neuroendocrine tumour,u thần kinh nội tiết tụy (PanNET),"freq 7 (+3 ref) ['u thần kinh nội tiết']; src: YHCD-6591, YHCDv-149378, YDHue2023-054; UK spelling row"
+chronic pancreatitis,viêm tụy mạn,"freq 8 (+1 ref); src: YDLS108-1747, YDLS108-902, VMJ-8237"
+autoimmune pancreatitis,viêm tụy tự miễn,"freq 2 (+0 ref); src: YDLS108-970, YDLS108v-192412; type 1 = IgG4-related"
+IgG4-related disease,bệnh liên quan IgG4,"freq 3 (+1 ref) ['liên quan (đến) IgG4']; src: YDLS108v-192412, VMJ-1276, YDLS108-3017"
+acute pancreatitis,viêm tụy cấp,"freq 10 (+5 ref); src: VMJ-15927, YDHue2023-054, YDLS108v-192412"
+fat necrosis,hoại tử mỡ,freq 0 (+0 ref); src: none in corpus; web-only (see sources.md); standard term; not in corpus
+Whipple specimen,bệnh phẩm cắt khối tá tụy (Whipple),"freq 17 (+2 ref) ['cắt khối tá tụy']; src: VMJ-8237, VMJ-7804, YDLS108-970; specimen = bệnh phẩm (parent usage)"
+pancreaticoduodenectomy,cắt khối tá tụy,"freq 17 (+2 ref); src: VMJ-8237, VMJ-7804, YDLS108-970"
+perineural invasion,xâm nhập quanh thần kinh,"decision 6 applied (user 2026-10-14: LVI / PNI = xâm nhập; = pack cha 0.1.7); HPB pathology papers 'xâm nhập (quanh) thần kinh' 5 docs vs 'xâm lấn' 4 docs; all HPB papers freq 4 (+1 ref) 'xâm lấn (quanh) thần kinh'; src: YDLS108-778, VMJ-4656, TCNCYH-877"
+microvascular invasion,xâm lấn vi mạch,freq 1 (+0 ref); src: VMJ-6127; HCC (MVI); follows parent 'vascular invasion = xâm lấn mạch máu'; pathology papers often 'xâm nhập mạch'
+resection margin,diện cắt,"freq 19 (+0 ref); src: VMJ-7804, YDLS108-1053, VJST-3882; = parent; R0/R1/R2 codes kept"
+CA 19-9,CA 19-9,"freq 19 (+3 ref); src: TCNCYH-3681, VMJ-10067, VMJ-4038; kept English"
+glypican-3,glypican-3 (GPC3),"freq 7 (+0 ref); src: YDLS108v-191950, YDLS108-1053, YDLS108-1264; kept English"
+HepPar-1,HepPar-1,"freq 3 (+0 ref); src: TCNCYH-3681, YDLS108v-191950, UTHVN-219287; kept English"
+arginase-1,arginase-1 (Arg-1),"freq 4 (+0 ref); src: TCNCYH-3681, TCNCYH-4766, YDLS108v-191950; kept English"
+CK7,CK7,"freq 6 (+1 ref); src: YDLS108-1264, TCNCYH-3681, VMJ-4038; kept English"
+CK19,CK19,"freq 6 (+0 ref); src: YDLS108-1264, TCNCYH-3681, VMJ-4038; kept English"
+Ki-67 index,chỉ số Ki-67,"freq 2 (+0 ref); src: VMJ-7209, VMJ-15426; = breast pack"
+Edmondson-Steiner grade,độ Edmondson-Steiner,freq 1 (+0 ref) ['Edmondson-Steiner']; src: YDLS108-1053; grade I-IV kept

@@ -1,0 +1,18 @@
+{
+ "term_fixes": [
+  {
+   "en": "lobular",
+   "vi": "ti\u1ec3u th\u00f9y",
+   "wrong": [
+    "th\u00f9y nh\u1ecf"
+   ]
+  },
+  {
+   "en": "mammography",
+   "vi": "ch\u1ee5p X-quang tuy\u1ebfn v\u00fa",
+   "wrong": [
+    "ch\u1ee5p v\u00fa"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+{"id": "breast-kid", "version": "0.1.0", "name": "Breast child (synthetic)", "parent": "breast", "detect": ["phyllodes", "fibroadenoma"]}

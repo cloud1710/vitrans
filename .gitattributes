@@ -1,0 +1,3 @@
+web/engine/vendor/** -text
+web/engine/tests/fixtures/engine/packs/** -text
+packs/** text eol=lf

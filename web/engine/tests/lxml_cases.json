@@ -1,0 +1,169 @@
+{
+ "xml": {
+  "cdata": {
+   "in": "PHI+PHQ+PCFbQ0RBVEFbYSA8IGIgJiBjXV0+PC90Pjwvcj4=",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8cj48dD5hICZsdDsgYiAmYW1wOyBjPC90Pjwvcj4="
+  },
+  "entities": {
+   "in": "PHIgYT0ieCAmYW1wOyAmbHQ7ICZndDsgJnF1b3Q7ICciPjx0PiZhbXA7Jmx0OyZndDsmcXVvdDsmYXBvczsmI3gxRjYwMDsmIzE2MDs8L3Q+PC9yPg==",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8ciBhPSJ4ICZhbXA7ICZsdDsgJmd0OyAmcXVvdDsgJyI+PHQ+JmFtcDsmbHQ7Jmd0OyIn8J+YgMKgPC90Pjwvcj4="
+  },
+  "cr_ref_text": {
+   "in": "PHI+PHQ+YSYjMTM7YiYjMTM7JiMxMDtjPC90Pjwvcj4=",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8cj48dD5hJiMxMztiJiMxMzsKYzwvdD48L3I+"
+  },
+  "crlf_raw_text": {
+   "in": "PHI+PHQ+YQ0KYg1jPC90Pjwvcj4=",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8cj48dD5hCmIKYzwvdD48L3I+"
+  },
+  "attr_ws": {
+   "in": "PHIgYT0ieCYjOTt5JiMxMDt6JiMxMzt3IiBiPSJsaXQJdGFiCm5sIi8+",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8ciBhPSJ4JiM5O3kmIzEwO3omIzEzO3ciIGI9ImxpdCB0YWIgbmwiLz4="
+  },
+  "attr_gt": {
+   "in": "PHIgYT0iMSA+IDAiLz4=",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8ciBhPSIxICZndDsgMCIvPg=="
+  },
+  "comment_pi_top": {
+   "in": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gdG9wIC0tPjw/cGkgZGF0YT8+PHIvPjwhLS0gYWZ0ZXIgLS0+",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8IS0tIHRvcCAtLT48P3BpIGRhdGE/PjxyLz48IS0tIGFmdGVyIC0tPg=="
+  },
+  "pi_no_data": {
+   "in": "PHI+PD9nbz8+PC9yPg==",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8cj48P2dvPz48L3I+"
+  },
+  "empty_elem": {
+   "in": "PHI+PGE+PC9hPjxiLz48L3I+",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8cj48YS8+PGIvPjwvcj4="
+  },
+  "bom": {
+   "in": "77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48cj54PC9yPg==",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8cj54PC9yPg=="
+  },
+  "utf16": {
+   "in": "//48AD8AeABtAGwAIAB2AGUAcgBzAGkAbwBuAD0AIgAxAC4AMAAiACAAZQBuAGMAbwBkAGkAbgBnAD0AIgBVAFQARgAtADEANgAiAD8APgA8AHIAPgDpAD3YAN48AC8AcgA+AA==",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8cj7DqfCfmIA8L3I+"
+  },
+  "nel_ls": {
+   "in": "PHI+PHQ+YcKFYuKAqGM8L3Q+PC9yPg==",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8cj48dD5hwoVi4oCoYzwvdD48L3I+"
+  },
+  "xmlns_empty": {
+   "in": "PHIgeG1sbnM9InVybjphIj48YyB4bWxucz0iIi8+PC9yPg==",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8ciB4bWxucz0idXJuOmEiPjxjIHhtbG5zPSIiLz48L3I+"
+  },
+  "redundant_ns": {
+   "in": "PHc6cCB4bWxuczp3PSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvd29yZHByb2Nlc3NpbmdtbC8yMDA2L21haW4iPjx3OnIgeG1sbnM6dz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL3dvcmRwcm9jZXNzaW5nbWwvMjAwNi9tYWluIj48dzp0Png8L3c6dD48L3c6cj48L3c6cD4=",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8dzpwIHhtbG5zOnc9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy93b3JkcHJvY2Vzc2luZ21sLzIwMDYvbWFpbiI+PHc6ciB4bWxuczp3PSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvd29yZHByb2Nlc3NpbmdtbC8yMDA2L21haW4iPjx3OnQ+eDwvdzp0PjwvdzpyPjwvdzpwPg=="
+  },
+  "ns_attr_only": {
+   "in": "PHIgeG1sbnM6cT0idXJuOnEiPjxjIHE6YT0iMSIvPjwvcj4=",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8ciB4bWxuczpxPSJ1cm46cSI+PGMgcTphPSIxIi8+PC9yPg=="
+  },
+  "prefix_rebind": {
+   "in": "PGE6ciB4bWxuczphPSJ1cm46MSI+PGE6YyB4bWxuczphPSJ1cm46MiI+PGE6ZC8+PC9hOmM+PC9hOnI+",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8YTpyIHhtbG5zOmE9InVybjoxIj48YTpjIHhtbG5zOmE9InVybjoyIj48YTpkLz48L2E6Yz48L2E6cj4="
+  },
+  "standalone_no_decl": {
+   "in": "PD94bWwgdmVyc2lvbj0iMS4wIj8+PHIvPg==",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8ci8+"
+  },
+  "ws_only_root_text": {
+   "in": "PHI+CiAgPGEvPgo8L3I+Cg==",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8cj4KICA8YS8+Cjwvcj4="
+  },
+  "latin1": {
+   "in": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iSVNPLTg4NTktMSI/PjxyPuk8L3I+",
+   "out": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J3llcyc/Pgo8cj7DqTwvcj4="
+  },
+  "bad_mismatched_tag": {
+   "in": "PHc6cCB4bWxuczp3PSJ1cm46dyI+PHc6cj48dzp0Png8L3c6dD48L3c6cD4=",
+   "error": "XMLSyntaxError"
+  },
+  "bad_truncated": {
+   "in": "PHc6ZG9jdW1lbnQgeG1sbnM6dz0idXJuOnciPjx3OmJvZHk+PHc6cD48dzpyPjx3OnQ+SGVs",
+   "error": "XMLSyntaxError"
+  },
+  "bad_undefined_entity": {
+   "in": "PHI+PHQ+YSAmbmJzcDsgYjwvdD48L3I+",
+   "error": "XMLSyntaxError"
+  },
+  "bad_no_root": {
+   "in": "PD94bWwgdmVyc2lvbj0iMS4wIj8+CjwhLS0gb25seSBhIGNvbW1lbnQgLS0+",
+   "error": "XMLSyntaxError"
+  },
+  "bad_empty": {
+   "in": "",
+   "error": "XMLSyntaxError"
+  },
+  "bad_two_roots": {
+   "in": "PGEvPjxiLz4=",
+   "error": "XMLSyntaxError"
+  },
+  "bad_attribute_twice": {
+   "in": "PGEgYj0iMSIgYj0iMiIvPg==",
+   "error": "XMLSyntaxError"
+  },
+  "bad_utf8": {
+   "in": "PHI+Y2Fmwzwvcj4=",
+   "error": "XMLSyntaxError"
+  }
+ },
+ "clone": {
+  "two_foreign": {
+   "xml": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:r><w:t xml:space=\"preserve\">Read the </w:t></w:r><w:hyperlink xmlns:q1=\"urn:q1\" xmlns:q2=\"urn:q2\" q1:a=\"1\" q2:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:b/></w:rPr><w:t>bold</w:t></w:r><w:r><w:t xml:space=\"preserve\"> linked words</w:t></w:r></w:hyperlink><w:r><w:t xml:space=\"preserve\"> now and then more text</w:t></w:r></w:p>",
+   "texts": [
+    "Read <g1>bold</g1> mid <g2>linked</g2> now and then more text"
+   ],
+   "tagged": [
+    "Read the <g1>bold</g1><g2> linked words</g2> now and then more text"
+   ],
+   "fixes": [
+    []
+   ],
+   "py": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">Read </w:t></w:r><w:hyperlink xmlns:q1=\"urn:q1\" xmlns:q2=\"urn:q2\" q1:a=\"1\" q2:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:b/><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">bold</w:t></w:r></w:hyperlink><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\"> mid </w:t></w:r><w:hyperlink xmlns:ns0=\"urn:q1\" xmlns:ns1=\"urn:q2\" ns0:a=\"1\" ns1:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">linked</w:t></w:r></w:hyperlink><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\"> now and then more text</w:t></w:r></w:p>"
+  },
+  "local_r": {
+   "xml": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:r><w:t xml:space=\"preserve\">Read the </w:t></w:r><w:hyperlink xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" r:id=\"rId1\"><w:r><w:rPr><w:b/></w:rPr><w:t>bold</w:t></w:r><w:r><w:t xml:space=\"preserve\"> linked words</w:t></w:r></w:hyperlink><w:r><w:t xml:space=\"preserve\"> now and then more text</w:t></w:r></w:p>",
+   "texts": [
+    "Read <g1>bold</g1> mid <g2>linked</g2> now and then more text"
+   ],
+   "tagged": [
+    "Read the <g1>bold</g1><g2> linked words</g2> now and then more text"
+   ],
+   "fixes": [
+    []
+   ],
+   "py": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">Read </w:t></w:r><w:hyperlink xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" r:id=\"rId1\"><w:r><w:rPr><w:b/><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">bold</w:t></w:r></w:hyperlink><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\"> mid </w:t></w:r><w:hyperlink xmlns:ns0=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" ns0:id=\"rId1\"><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">linked</w:t></w:r></w:hyperlink><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\"> now and then more text</w:t></w:r></w:p>"
+  },
+  "three_pieces": {
+   "xml": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:r><w:t xml:space=\"preserve\">Read the </w:t></w:r><w:hyperlink xmlns:q1=\"urn:q1\" xmlns:q2=\"urn:q2\" q1:a=\"1\" q2:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:b/></w:rPr><w:t>bold</w:t></w:r><w:r><w:t xml:space=\"preserve\"> linked words</w:t></w:r></w:hyperlink><w:r><w:t xml:space=\"preserve\"> now and then more text</w:t></w:r></w:p>",
+   "texts": [
+    "<g1>bold</g1> a <g2>linked</g2> b <g1>bold again</g1> end"
+   ],
+   "tagged": [
+    "Read the <g1>bold</g1><g2> linked words</g2> now and then more text"
+   ],
+   "fixes": [
+    []
+   ],
+   "py": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:hyperlink xmlns:q1=\"urn:q1\" xmlns:q2=\"urn:q2\" q1:a=\"1\" q2:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:b/><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">bold</w:t></w:r></w:hyperlink><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\"> a </w:t></w:r><w:hyperlink xmlns:ns0=\"urn:q1\" xmlns:ns1=\"urn:q2\" ns0:a=\"1\" ns1:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">linked</w:t></w:r></w:hyperlink><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\"> b </w:t></w:r><w:hyperlink xmlns:ns2=\"urn:q1\" xmlns:ns3=\"urn:q2\" ns2:a=\"1\" ns3:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:b/><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">bold again</w:t></w:r></w:hyperlink><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\"> end</w:t></w:r></w:p>"
+  },
+  "two_paragraphs": {
+   "xml": "<w:body xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:p><w:r><w:t xml:space=\"preserve\">Read the </w:t></w:r><w:hyperlink xmlns:q1=\"urn:q1\" xmlns:q2=\"urn:q2\" q1:a=\"1\" q2:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:b/></w:rPr><w:t>bold</w:t></w:r><w:r><w:t xml:space=\"preserve\"> linked words</w:t></w:r></w:hyperlink><w:r><w:t xml:space=\"preserve\"> now and then more text</w:t></w:r></w:p><w:p><w:r><w:t xml:space=\"preserve\">Read the </w:t></w:r><w:hyperlink xmlns:q1=\"urn:q1\" xmlns:q2=\"urn:q2\" q1:a=\"1\" q2:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:b/></w:rPr><w:t>bold</w:t></w:r><w:r><w:t xml:space=\"preserve\"> linked words</w:t></w:r></w:hyperlink><w:r><w:t xml:space=\"preserve\"> now and then more text</w:t></w:r></w:p></w:body>",
+   "texts": [
+    "Read <g1>bold</g1> mid <g2>linked</g2> now and then more text",
+    "Read <g1>bold</g1> mid <g2>linked</g2> now and then more text"
+   ],
+   "tagged": [
+    "Read the <g1>bold</g1><g2> linked words</g2> now and then more text",
+    "Read the <g1>bold</g1><g2> linked words</g2> now and then more text"
+   ],
+   "fixes": [
+    [],
+    []
+   ],
+   "py": "<w:body xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:p><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">Read </w:t></w:r><w:hyperlink xmlns:q1=\"urn:q1\" xmlns:q2=\"urn:q2\" q1:a=\"1\" q2:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:b/><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">bold</w:t></w:r></w:hyperlink><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\"> mid </w:t></w:r><w:hyperlink xmlns:ns0=\"urn:q1\" xmlns:ns1=\"urn:q2\" ns0:a=\"1\" ns1:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">linked</w:t></w:r></w:hyperlink><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\"> now and then more text</w:t></w:r></w:p><w:p><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">Read </w:t></w:r><w:hyperlink xmlns:q1=\"urn:q1\" xmlns:q2=\"urn:q2\" q1:a=\"1\" q2:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:b/><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">bold</w:t></w:r></w:hyperlink><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\"> mid </w:t></w:r><w:hyperlink xmlns:ns2=\"urn:q1\" xmlns:ns3=\"urn:q2\" ns2:a=\"1\" ns3:b=\"2\" w:history=\"1\"><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\">linked</w:t></w:r></w:hyperlink><w:r><w:rPr><w:lang w:val=\"vi-VN\"/></w:rPr><w:t xml:space=\"preserve\"> now and then more text</w:t></w:r></w:p></w:body>"
+  }
+ }
+}

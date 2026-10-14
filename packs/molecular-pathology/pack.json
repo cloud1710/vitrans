@@ -1,0 +1,8 @@
+{"id": "molecular-pathology", "version": "0.1.0", "name": "Bệnh học phân tử ung thư", "parent": "molecular",
+ "draft": true,
+ "detect": ["next-generation sequencing", "next generation sequencing", "variant allele frequency",
+            "tumor mutational burden", "tumour mutational burden", "microsatellite instability", "MSI-H",
+            "liquid biopsy", "ctDNA", "cfDNA", "cell-free DNA", "circulating tumor DNA", "circulating tumour DNA",
+            "actionable", "companion diagnostic", "somatic mutation", "driver mutation", "homologous recombination",
+            "gene panel", "EGFR", "KRAS", "BRAF", "ALK", "ROS1", "PIK3CA", "TP53", "BRCA1", "BRCA2", "T790M",
+            "dMMR"]}

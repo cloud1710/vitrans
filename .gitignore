@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+private/
+out/
+web/engine/node_modules/
+functions/_generated/
+.dev.vars
+.wrangler/

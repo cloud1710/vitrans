@@ -1,0 +1,6 @@
+{
+ "term_fixes": [
+  {"en": "fine needle aspiration", "vi": "chọc hút tế bào bằng kim nhỏ", "wrong": ["chọc hút kim nhỏ"]},
+  {"en": "lymphovascular invasion", "vi": "xâm nhập mạch bạch huyết", "wrong": ["viêm mạch bạch huyết", "xâm lấn mạch bạch huyết"]}
+ ]
+}

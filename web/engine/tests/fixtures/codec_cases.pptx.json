@@ -1,0 +1,594 @@
+{
+ "file": "codec_cases.pptx",
+ "kind": "pptx",
+ "options": {
+  "notes": true,
+  "comments": false
+ },
+ "names": [
+  "[Content_Types].xml",
+  "_rels/.rels",
+  "docProps/core.xml",
+  "docProps/app.xml",
+  "ppt/presentation.xml",
+  "ppt/_rels/presentation.xml.rels",
+  "ppt/presProps.xml",
+  "ppt/viewProps.xml",
+  "ppt/theme/theme1.xml",
+  "ppt/tableStyles.xml",
+  "ppt/slideMasters/slideMaster1.xml",
+  "ppt/slideMasters/_rels/slideMaster1.xml.rels",
+  "ppt/slideLayouts/slideLayout11.xml",
+  "ppt/slideLayouts/_rels/slideLayout11.xml.rels",
+  "ppt/slideLayouts/slideLayout1.xml",
+  "ppt/slideLayouts/_rels/slideLayout1.xml.rels",
+  "ppt/slideLayouts/slideLayout2.xml",
+  "ppt/slideLayouts/_rels/slideLayout2.xml.rels",
+  "ppt/slideLayouts/slideLayout3.xml",
+  "ppt/slideLayouts/_rels/slideLayout3.xml.rels",
+  "ppt/slideLayouts/slideLayout4.xml",
+  "ppt/slideLayouts/_rels/slideLayout4.xml.rels",
+  "ppt/slideLayouts/slideLayout5.xml",
+  "ppt/slideLayouts/_rels/slideLayout5.xml.rels",
+  "ppt/slideLayouts/slideLayout6.xml",
+  "ppt/slideLayouts/_rels/slideLayout6.xml.rels",
+  "ppt/slideLayouts/slideLayout7.xml",
+  "ppt/slideLayouts/_rels/slideLayout7.xml.rels",
+  "ppt/slideLayouts/slideLayout8.xml",
+  "ppt/slideLayouts/_rels/slideLayout8.xml.rels",
+  "ppt/slideLayouts/slideLayout9.xml",
+  "ppt/slideLayouts/_rels/slideLayout9.xml.rels",
+  "ppt/slideLayouts/slideLayout10.xml",
+  "ppt/slideLayouts/_rels/slideLayout10.xml.rels",
+  "ppt/printerSettings/printerSettings1.bin",
+  "ppt/slides/slide1.xml",
+  "ppt/slides/_rels/slide1.xml.rels",
+  "docProps/thumbnail.jpeg"
+ ],
+ "parts": [
+  "ppt/slides/slide1.xml",
+  "ppt/slideLayouts/slideLayout7.xml",
+  "ppt/slideMasters/slideMaster1.xml"
+ ],
+ "labels": {
+  "ppt/slides/slide1.xml": "Slide 1",
+  "ppt/slideLayouts/slideLayout7.xml": "Layout 7",
+  "ppt/slideMasters/slideMaster1.xml": "Master 1"
+ },
+ "items": [
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 0,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "In NF2-altered meningiomas, chromosome1p loss3",
+   "seg": {
+    "kind": "a",
+    "tagged": "In <g1>NF2-altered</g1> meningiomas, chromosome<x1/><g2>1p loss</g2><x2/>",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}dirty=\"0\" {}lang=\"en-US\" {}sz=\"1800\"></>",
+     "container": null
+    },
+    "spans": {
+     "1": {
+      "sig": "(rPr b=1)",
+      "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}b=\"1\" {}dirty=\"0\" {}lang=\"en-US\" {}sz=\"1800\"></>",
+      "container": null
+     },
+     "2": {
+      "sig": "(rPr i=1)",
+      "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}i=\"1\" {}lang=\"en-US\" {}sz=\"1800\"></>",
+      "container": null
+     }
+    },
+    "fixed": {
+     "1": {
+      "wrap": false,
+      "nodes": [
+       "{http://schemas.openxmlformats.org/drawingml/2006/main}br"
+      ],
+      "container": null,
+      "wrap_rpr": null
+     },
+     "2": {
+      "wrap": false,
+      "nodes": [
+       "{http://schemas.openxmlformats.org/drawingml/2006/main}fld"
+      ],
+      "container": null,
+      "wrap_rpr": null
+     }
+    },
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 1,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Smith A. et al. J Clin Pathol",
+   "seg": {
+    "kind": "a",
+    "tagged": "Smith A. et al. <g1>J Clin Pathol</g1>",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\"></>",
+     "container": null
+    },
+    "spans": {
+     "1": {
+      "sig": "(rPr i=1)",
+      "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}i=\"1\" {}lang=\"en-US\"></>",
+      "container": null
+     }
+    },
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 2,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "\uf061-synuclein immunoreactivity",
+   "seg": {
+    "kind": "a",
+    "tagged": "<g1>\uf061</g1>-synuclein immunoreactivity",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\"><{http://schemas.openxmlformats.org/drawingml/2006/main}latin {}typeface=\"Arial\"></></>",
+     "container": null
+    },
+    "spans": {
+     "1": {
+      "sig": "{font Symbol}",
+      "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\"><{http://schemas.openxmlformats.org/drawingml/2006/main}latin {}charset=\"2\" {}pitchFamily=\"18\" {}typeface=\"Symbol\"></></>",
+      "container": null
+     }
+    },
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 3,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "\uf0e8 Lateral neck LNs (14.6%)",
+   "seg": {
+    "kind": "a",
+    "tagged": "<g1>\uf0e8 </g1>Lateral neck LNs (14.6%)",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\"><{http://schemas.openxmlformats.org/drawingml/2006/main}sym {}typeface=\"Wingdings\"></></>",
+     "container": null
+    },
+    "spans": {
+     "1": {
+      "sig": "{font Wingdings}",
+      "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\"><{http://schemas.openxmlformats.org/drawingml/2006/main}sym {}typeface=\"Wingdings\"></></>",
+      "container": null
+     }
+    },
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 4,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Hello world",
+   "seg": {
+    "kind": "a",
+    "tagged": "Hello world",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\"></>",
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 5,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Results of the study: a b",
+   "seg": {
+    "kind": "a",
+    "tagged": "Results of the study: <g1>a b</g1>",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\"></>",
+     "container": null
+    },
+    "spans": {
+     "1": {
+      "sig": "(rPr u=sng)",
+      "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\" {}u=\"sng\"></>",
+      "container": null
+     }
+    },
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 6,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Tumour cells",
+   "seg": {
+    "kind": "a",
+    "tagged": "Tumour cells",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\" {}sz=\"1800\"><{http://schemas.openxmlformats.org/drawingml/2006/main}latin {}typeface=\"Arial\"></></>",
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 7,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Spindle cell lesion with myxoid stroma (SCL-MS)",
+   "seg": {
+    "kind": "a",
+    "tagged": "Spindle cell lesion with myxoid stroma (SCL-MS)",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\"></>",
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 8,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Loss of ABC1-mutated cells",
+   "seg": {
+    "kind": "a",
+    "tagged": "Loss of <g1>ABC1</g1>-mutated cells",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\" {}spc=\"-10\"></>",
+     "container": null
+    },
+    "spans": {
+     "1": {
+      "sig": "(rPr i=1)",
+      "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}i=\"1\" {}lang=\"en-US\" {}spc=\"-45\"></>",
+      "container": null
+     }
+    },
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 9,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Updated Tuesday, October 13",
+   "seg": {
+    "kind": "a",
+    "tagged": "Updated <x1/>",
+    "locked": [
+     "Tuesday, October 13"
+    ],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\"></>",
+     "container": null
+    },
+    "spans": {},
+    "fixed": {
+     "1": {
+      "wrap": false,
+      "nodes": [
+       "{http://schemas.openxmlformats.org/drawingml/2006/main}fld"
+      ],
+      "container": null,
+      "wrap_rpr": null
+     }
+    },
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 10,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Text with a math sign \ud835\udefc and an emoji \ud83d\ude00 end",
+   "seg": {
+    "kind": "a",
+    "tagged": "Text with a math sign <g1>\ud835\udefc</g1> and an emoji \ud83d\ude00 end",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\"></>",
+     "container": null
+    },
+    "spans": {
+     "1": {
+      "sig": "(rPr i=1)",
+      "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}i=\"1\" {}lang=\"en-US\"></>",
+      "container": null
+     }
+    },
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 11,
+   "location": "Slide 1",
+   "skip": "no_text",
+   "text": "",
+   "seg": null
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 12,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Pretty printed runs with tailsend",
+   "seg": {
+    "kind": "a",
+    "tagged": "<g1>Pretty printed</g1> runs with tails<x1/><g2>end</g2>",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}lang=\"en-US\"></>",
+     "container": null
+    },
+    "spans": {
+     "1": {
+      "sig": "(rPr b=1)",
+      "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}b=\"1\" {}lang=\"en-US\"></>",
+      "container": null
+     },
+     "2": {
+      "sig": "(rPr i=1)",
+      "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}i=\"1\" {}lang=\"en-US\"></>",
+      "container": null
+     }
+    },
+    "fixed": {
+     "1": {
+      "wrap": false,
+      "nodes": [
+       "{http://schemas.openxmlformats.org/drawingml/2006/main}br"
+      ],
+      "container": null,
+      "wrap_rpr": null
+     }
+    },
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 13,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "AlphaGamma",
+   "seg": {
+    "kind": "a",
+    "tagged": "Alpha<g1>Gamma</g1>",
+    "locked": [],
+    "dominant": {
+     "sig": "(rPr b=1)",
+     "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}b=\"1\" {}lang=\"en-US\"></>",
+     "container": null
+    },
+    "spans": {
+     "1": {
+      "sig": "(rPr i=1)",
+      "rpr": "<{http://schemas.openxmlformats.org/drawingml/2006/main}rPr {}i=\"1\" {}lang=\"en-US\"></>",
+      "container": null
+     }
+    },
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  }
+ ],
+ "scenarios": {
+  "identity": {
+   "texts": [
+    "In <g1>NF2-altered</g1> meningiomas, chromosome<x1/><g2>1p loss</g2><x2/>",
+    "Smith A. et al. <g1>J Clin Pathol</g1>",
+    "<g1>\uf061</g1>-synuclein immunoreactivity",
+    "<g1>\uf0e8 </g1>Lateral neck LNs (14.6%)",
+    "Hello world",
+    "Results of the study: <g1>a b</g1>",
+    "Tumour cells",
+    "Spindle cell lesion with myxoid stroma (SCL-MS)",
+    "Loss of <g1>ABC1</g1>-mutated cells",
+    "Updated <x1/>",
+    "Text with a math sign <g1>\ud835\udefc</g1> and an emoji \ud83d\ude00 end",
+    "<g1>Pretty printed</g1> runs with tails<x1/><g2>end</g2>",
+    "Alpha<g1>Gamma</g1>"
+   ],
+   "fixes": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+   ],
+   "fit": [],
+   "changed": {
+    "ppt/slides/slide1.xml": {
+     "sha256": "19118c76ffa387161a6d2cc66ccf529d46cfc7b00d5e27d648e2eee4079b3ec8",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"TextBox 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"457200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"8229600\"\nA \"\" cy=\"5486400\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:spAutoFit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\u000a  \"\nE a:pPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" algn=\"l\"\n/E\nT \"\\u000a  \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dirty=\"0\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"In \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" b=\"1\"\nA \"\" dirty=\"0\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"NF2-altered\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dirty=\"0\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \" meningiomas, chromosome\"\n/E\n/E\nE a:br \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\n/E\nT \"\\u000a  \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"1p loss\"\n/E\n/E\nE a:fld \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" id=\"{B6F15528-21DE-4FAA-801E-634DDDAF4B2B}\"\nA \"\" type=\"slidenum\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"3\"\n/E\n/E\nT \"\\u000a  \"\nE a:endParaRPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nT \"\\u000a\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Smith A. et al. \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"J Clin Pathol\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:latin \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" charset=\"2\"\nA \"\" pitchFamily=\"18\"\nA \"\" typeface=\"Symbol\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\uf061\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:latin \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Arial\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"-synuclein immunoreactivity\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:sym \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Wingdings\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\uf0e8 \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:sym \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Wingdings\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Lateral neck LNs (14.6%)\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Hello world\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Results of the study: \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" u=\"sng\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"a b\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\nE a:latin \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Arial\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Tumour cells\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Spindle cell lesion with myxoid stroma (SCL-MS)\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" spc=\"-10\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Loss of \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\nA \"\" spc=\"-45\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"ABC1\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" spc=\"-10\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"-mutated cells\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Updated \"\n/E\n/E\nE a:fld \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" id=\"{1A2B3C4D-0000-4000-8000-000000000001}\"\nA \"\" type=\"datetime8\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Tuesday, October 13\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Text with a math sign \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\ud835\\udefc\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \" and an emoji \\ud83d\\ude00 end\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:endParaRPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\u000a    \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" b=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nT \"\\u000a      \"\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Pretty printed\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nT \"\\u000a      \"\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \" runs with tails\"\n/E\n/E\nE a:br \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nT \"\\u000a    \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nT \"\\u000a      \"\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"end\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" b=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Alpha\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Gamma\"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    }
+   }
+  },
+  "fake": {
+   "texts": [
+    "VI_In <g1>VI_NF2-altered</g1> VI_meningiomas, VI_chromosome<x1/><g2>VI_1p VI_loss</g2><x2/>",
+    "VI_Smith VI_A. VI_et VI_al. <g1>VI_J VI_Clin VI_Pathol</g1>",
+    "<g1>VI_\uf061</g1>VI_-synuclein VI_immunoreactivity",
+    "<g1>VI_\uf0e8 </g1>VI_Lateral VI_neck VI_LNs VI_(14.6%)",
+    "VI_Hello VI_world",
+    "VI_Results VI_of VI_the VI_study: <g1>VI_a VI_b</g1>",
+    "VI_Tumour VI_cells",
+    "VI_Spindle VI_cell VI_lesion VI_with VI_myxoid VI_stroma VI_(SCL-MS)",
+    "VI_Loss VI_of <g1>VI_ABC1</g1>VI_-mutated VI_cells",
+    "VI_Updated <x1/>",
+    "VI_Text VI_with VI_a VI_math VI_sign <g1>VI_\ud835\udefc</g1> VI_and VI_an VI_emoji VI_\ud83d\ude00 VI_end",
+    "<g1>VI_Pretty VI_printed</g1> VI_runs VI_with VI_tails<x1/><g2>VI_end</g2>",
+    "VI_Alpha<g1>VI_Gamma</g1>"
+   ],
+   "fixes": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.64
+    }
+   ],
+   "changed": {
+    "ppt/slides/slide1.xml": {
+     "sha256": "cdd871106fdb3d4fc497384684660870e88964010082732b05dc545c8f21a9df",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"TextBox 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"457200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"8229600\"\nA \"\" cy=\"5486400\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"64407\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\u000a  \"\nE a:pPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" algn=\"l\"\n/E\nT \"\\u000a  \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dirty=\"0\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_In \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" b=\"1\"\nA \"\" dirty=\"0\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_NF2-altered\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dirty=\"0\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \" VI_meningiomas, VI_chromosome\"\n/E\n/E\nE a:br \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\n/E\nT \"\\u000a  \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_1p VI_loss\"\n/E\n/E\nE a:fld \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" id=\"{B6F15528-21DE-4FAA-801E-634DDDAF4B2B}\"\nA \"\" type=\"slidenum\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"3\"\n/E\n/E\nT \"\\u000a  \"\nE a:endParaRPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nT \"\\u000a\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Smith VI_A. VI_et VI_al. \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_J VI_Clin VI_Pathol\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:latin \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" charset=\"2\"\nA \"\" pitchFamily=\"18\"\nA \"\" typeface=\"Symbol\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_\\uf061\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:latin \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Arial\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_-synuclein VI_immunoreactivity\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:sym \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Wingdings\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_\\uf0e8 \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:sym \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Wingdings\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Lateral VI_neck VI_LNs VI_(14.6%)\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Hello VI_world\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Results VI_of VI_the VI_study: \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" u=\"sng\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_a VI_b\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\nE a:latin \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Arial\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Tumour VI_cells\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Spindle VI_cell VI_lesion VI_with VI_myxoid VI_stroma VI_(SCL-MS)\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" spc=\"-10\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Loss VI_of \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\nA \"\" spc=\"-45\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_ABC1\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" spc=\"-10\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_-mutated VI_cells\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Updated \"\n/E\n/E\nE a:fld \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" id=\"{1A2B3C4D-0000-4000-8000-000000000001}\"\nA \"\" type=\"datetime8\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Tuesday, October 13\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Text VI_with VI_a VI_math VI_sign \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_\\ud835\\udefc\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \" VI_and VI_an VI_emoji VI_\\ud83d\\ude00 VI_end\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:endParaRPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\u000a    \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" b=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nT \"\\u000a      \"\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Pretty VI_printed\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nT \"\\u000a      \"\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \" VI_runs VI_with VI_tails\"\n/E\n/E\nE a:br \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nT \"\\u000a    \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nT \"\\u000a      \"\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_end\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" b=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Alpha\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Gamma\"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    }
+   }
+  },
+  "messy": {
+   "texts": [
+    "A\r\nB <x1/>VI_In <g1><g77>VI_NF2-altered</g77></g1> VI_meningiomas, VI_chromosome<g2>VI_1p VI_loss</g2><x2/><x2/> <x99/>",
+    "ma\u0300ng VI_Smith VI_A. VI_et VI_al. <g1>VI_J VI_Clin VI_Pathol</g1>",
+    "C\u000bD <g1>VI_\uf061</g1>VI_-synuclein VI_immunoreactivity <x99/>",
+    "E\u0001F <g1><g77>VI_\uf0e8 </g77></g1>VI_Lateral VI_neck VI_LNs VI_(14.6%)",
+    "G\ud800H VI_Hello VI_world <x99/>",
+    "\u00a0 VI_Results VI_of VI_the VI_study: <g1>VI_a VI_b</g1>",
+    "A\r\nB VI_Tumour VI_cells <x99/>",
+    "ma\u0300ng VI_Spindle VI_cell VI_lesion VI_with VI_myxoid VI_stroma VI_(SCL-MS)",
+    "C\u000bD VI_Loss VI_of <g1>VI_ABC1</g1>VI_-mutated VI_cells <x99/>",
+    "E\u0001F <x1/>VI_Updated <x1/>",
+    "G\ud800H VI_Text VI_with VI_a VI_math VI_sign <g1>VI_\ud835\udefc</g1> VI_and VI_an VI_emoji VI_\ud83d\ude00 VI_end <x99/>",
+    "\u00a0 <x1/><g1>VI_Pretty VI_printed</g1> VI_runs VI_with VI_tails<g2>VI_end</g2><x1/>",
+    "A\r\nB VI_Alpha<g1><g77>VI_Gamma</g77></g1> <x99/>"
+   ],
+   "fixes": [
+    [
+     "x_duplicate:2",
+     "x_unknown:99",
+     "g_unknown:77"
+    ],
+    [],
+    [
+     "x_unknown:99"
+    ],
+    [
+     "g_unknown:77"
+    ],
+    [
+     "x_unknown:99"
+    ],
+    [],
+    [
+     "x_unknown:99"
+    ],
+    [],
+    [
+     "x_unknown:99"
+    ],
+    [
+     "x_duplicate:1"
+    ],
+    [
+     "x_unknown:99"
+    ],
+    [
+     "x_duplicate:1"
+    ],
+    [
+     "x_unknown:99",
+     "g_unknown:77"
+    ]
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.58
+    }
+   ],
+   "changed": {
+    "ppt/slides/slide1.xml": {
+     "sha256": "add9314f3a52623ff97746c19557546bb0082965ad858f253d82b9ad98ebb98b",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"TextBox 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" txBox=\"1\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"457200\"\nA \"\" y=\"457200\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"8229600\"\nA \"\" cy=\"5486400\"\n/E\n/E\nE a:prstGeom \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" prst=\"rect\"\nE a:avLst \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE a:noFill \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"none\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"57673\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\u000a  \"\nE a:pPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" algn=\"l\"\n/E\nT \"\\u000a  \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dirty=\"0\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"A B \"\n/E\n/E\nE a:br \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\n/E\nT \"\\u000a  \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dirty=\"0\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_In \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dirty=\"0\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_NF2-altered\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dirty=\"0\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \" VI_meningiomas, VI_chromosome\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_1p VI_loss\"\n/E\n/E\nE a:fld \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" id=\"{B6F15528-21DE-4FAA-801E-634DDDAF4B2B}\"\nA \"\" type=\"slidenum\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"3\"\n/E\n/E\nT \"\\u000a  \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" dirty=\"0\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \" \"\n/E\n/E\nE a:endParaRPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\n/E\nT \"\\u000a\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"m\\u00e0ng VI_Smith VI_A. VI_et VI_al. \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_J VI_Clin VI_Pathol\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:latin \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Arial\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"C D \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:latin \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" charset=\"2\"\nA \"\" pitchFamily=\"18\"\nA \"\" typeface=\"Symbol\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_\\uf061\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:latin \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Arial\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_-synuclein VI_immunoreactivity \"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:sym \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Wingdings\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"EF \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:sym \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Wingdings\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_\\uf0e8 \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nE a:sym \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Wingdings\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Lateral VI_neck VI_LNs VI_(14.6%)\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"GH VI_Hello VI_world \"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\u00a0 VI_Results VI_of VI_the VI_study: \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" u=\"sng\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_a VI_b\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" sz=\"1800\"\nE a:latin \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" typeface=\"Arial\"\n/E\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"A B VI_Tumour VI_cells \"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"m\\u00e0ng VI_Spindle VI_cell VI_lesion VI_with VI_myxoid VI_stroma VI_(SCL-MS)\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" spc=\"-10\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"C D VI_Loss VI_of \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\nA \"\" spc=\"-45\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_ABC1\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\nA \"\" spc=\"-10\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_-mutated VI_cells \"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"EF \"\n/E\n/E\nE a:fld \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" id=\"{1A2B3C4D-0000-4000-8000-000000000001}\"\nA \"\" type=\"datetime8\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Tuesday, October 13\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Updated \"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"GH VI_Text VI_with VI_a VI_math VI_sign \"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_\\ud835\\udefc\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \" VI_and VI_an VI_emoji VI_\\ud83d\\ude00 VI_end \"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:endParaRPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"en-US\"\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\u000a    \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nT \"\\u000a      \"\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"\\u00a0 \"\n/E\n/E\nE a:br \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nT \"\\u000a    \"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" b=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nT \"\\u000a      \"\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Pretty VI_printed\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nT \"\\u000a      \"\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \" VI_runs VI_with VI_tails\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" i=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nT \"\\u000a      \"\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_end\"\n/E\n/E\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" b=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"A B VI_Alpha\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" b=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Gamma\"\n/E\n/E\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" b=\"1\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \" \"\n/E\n/E\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    }
+   }
+  }
+ }
+}

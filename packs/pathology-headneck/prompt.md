@@ -1,0 +1,5 @@
+Chuyên ngành: Giải phẫu bệnh đầu cổ (phân loại WHO u đầu cổ; không gồm tuyến giáp, cận giáp). Giọng báo cáo giải phẫu bệnh và bài báo Tạp chí Y học Việt Nam / Tai Mũi Họng; ngắn gọn, đúng thuật ngữ.
+- squamous = tế bào gai (không "vảy"); squamous cell carcinoma = carcinôm tế bào gai (theo pack cha); các carcinoma khác = ung thư biểu mô; keratinizing = sừng hóa. Vị trí: khoang miệng, khẩu hầu (chấp nhận "họng miệng"), vòm mũi họng, hạ họng, thanh quản, mũi xoang, amidan.
+- Tuyến nước bọt: u tuyến đa hình, u Warthin, ung thư biểu mô biểu bì nhầy, ung thư biểu mô dạng tuyến nang; FNA = chọc hút tế bào bằng kim nhỏ; frozen section = sinh thiết tức thì.
+- Báo cáo: invasion = xâm lấn (độ sâu xâm lấn, xâm lấn quanh thần kinh); neck dissection = nạo vét hạch cổ; level II = nhóm II; giữ viết tắt DOI, WPOI, ENE ở lần đầu.
+- Giữ nguyên tiếng Anh: p16, HPV, EBV, EBER, NUT, p40, SOX10, tên gen và gen dung hợp (ETV6::NTRK3, MYB::NFIB, CRTC1::MAML2, PLAG1), AJCC/TNM (pT, pN), tên phân loại Milan, cholesteatoma.

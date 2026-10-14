@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ViTranslate</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>ViTranslate</h1>
+      <p>Dịch tài liệu Anh → Việt, giữ nguyên định dạng</p>
+    </div>
+    <div id="status" class="pill" role="status">Đang tải…</div>
+  </header>
+
+  <main>
+    <section class="card" id="setup" hidden>
+      <h2>Dịch trên máy</h2>
+      <p>Tài liệu không rời máy: bộ dịch ViTranslate chạy ngay trên máy tính Windows (địa chỉ 127.0.0.1), dùng Gemma 4 E4B nếu máy có GPU, Qwen 3.5 9B nếu chỉ có CPU, qua Ollama. Lần đầu cần tải mô hình (khoảng 6,6 GB).</p>
+      <p class="muted">Bộ dịch chỉ kết nối tới kho gói thuật ngữ để tải gói, không gửi nội dung tài liệu. Mã nguồn mở; gỡ cài đặt sẽ xóa toàn bộ dữ liệu của ứng dụng.</p>
+      <div id="setup-missing" hidden>
+        <p class="note">Trang chưa thấy bộ dịch trên máy này. Bộ cài cho Windows đang được hoàn thiện; khi bộ dịch chạy, trang sẽ tự kết nối.</p>
+        <p class="muted">Nếu trình duyệt hỏi có cho trang này truy cập thiết bị trong mạng cục bộ không, hãy chọn Cho phép: đó là đường nối tới bộ dịch trên chính máy bạn.</p>
+        <p id="lna-denied" class="note" hidden>Trình duyệt đang chặn quyền này. Bấm biểu tượng bên trái địa chỉ trang, bật "Mạng cục bộ" (hoặc vào Cài đặt trang web, chọn Cho phép), rồi bấm Thử kết nối lại.</p>
+        <button id="retry" type="button">Thử kết nối lại</button>
+      </div>
+    </section>
+
+    <section class="card advice" id="advice" aria-live="polite" hidden>
+      <h2>Gợi ý cho máy này</h2>
+      <p id="advice-line" class="advice-line">Đang kiểm tra cấu hình phù hợp…</p>
+      <p id="advice-estimate" class="advice-est" hidden></p>
+      <p id="advice-detail" class="muted" hidden></p>
+      <p id="advice-status" class="muted" hidden></p>
+      <div id="advice-ask" class="ask" hidden>
+        <button id="ask-a" type="button"></button>
+        <button id="ask-b" type="button"></button>
+      </div>
+      <p class="advice-actions">
+        <button id="advice-pull" type="button" class="primary" hidden></button>
+        <a id="advice-link" href="lab/" hidden>Mở Phòng đo (/lab/)</a>
+        <button id="advice-redo" type="button" class="link">Đo lại</button>
+      </p>
+    </section>
+
+    <section class="card" id="upload">
+      <div class="modes" role="group" aria-label="Dịch văn bản hay tệp">
+        <button id="mode-text" type="button" class="mode" aria-pressed="true">Văn bản</button>
+        <button id="mode-file" type="button" class="mode" aria-pressed="false">Tệp</button>
+      </div>
+      <div id="text-panel">
+        <label for="src-text" class="muted">Dán văn bản tiếng Anh vào đây (mỗi dòng là một đoạn).</label>
+        <textarea id="src-text" rows="9" spellcheck="false" lang="en"></textarea>
+        <p id="text-count" class="text-count muted">0 / 20.000 ký tự</p>
+        <p id="text-note" class="note" hidden></p>
+      </div>
+      <div id="file-panel" hidden>
+        <label id="drop" class="drop" tabindex="0">
+          <input id="file" type="file" accept=".docx,.pptx" hidden>
+          <strong>Kéo thả tệp .docx hoặc .pptx vào đây</strong>
+          <span>hoặc bấm để chọn tệp · PDF sẽ có ở phiên bản sau</span>
+          <span id="filename" class="filename"></span>
+        </label>
+        <details class="advanced">
+          <summary>Tùy chọn nâng cao</summary>
+          <div class="options">
+            <label><input id="opt-notes" type="checkbox" checked> Dịch cả ghi chú của slide</label>
+          </div>
+          <div id="local-options" class="options" hidden>
+            <p class="muted">Trang đã tự chọn theo gợi ý cho máy này; chỉ đổi khi bạn muốn khác.</p>
+            <label><input id="opt-polish" type="checkbox"> Đọc lại cho mượt (mô hình đọc lại từng slide / đoạn để câu chữ tự nhiên hơn; thêm thời gian, mặc định bật khi có GPU)<span id="polish-hint"></span></label>
+            <label><input id="opt-fast" type="checkbox"> Bản nháp nhanh (Gemma 4 E2B: nhanh hơn, kém chính xác hơn)<span id="fast-hint"></span></label>
+          </div>
+        </details>
+      </div>
+      <div id="turnstile-box" class="turnstile"></div>
+      <button id="go" class="primary" disabled>Dịch</button>
+      <label id="engine-local-wrap" class="engine-switch"><input id="engine-local" type="checkbox"> Dịch trên máy (riêng tư, không gửi lên mạng)</label>
+    </section>
+
+    <section class="card" id="text-result" hidden>
+      <h2>Bản dịch</h2>
+      <p id="text-packs" class="muted"></p>
+      <ol id="text-out" class="text-out"></ol>
+      <p class="dialog-actions">
+        <button id="text-copy" type="button">Sao chép bản dịch</button>
+        <span id="text-copied" class="muted" role="status"></span>
+      </p>
+    </section>
+
+    <section class="card" id="progress" hidden>
+      <h2>Tiến độ</h2>
+      <ul id="notice" class="notice-list" aria-live="polite">
+        <li id="q-model"></li>
+        <li id="q-packs"></li>
+        <li id="q-polish"></li>
+        <li id="q-eta"></li>
+        <li>Giữ máy không ngủ và không đóng trang trong lúc dịch.</li>
+        <li>Dịch xong, hãy xem các đoạn cần xem lại; chuyên gia cần duyệt bản dịch trước khi dùng.</li>
+      </ul>
+      <ol id="steps" class="steps"></ol>
+      <div class="bar"><div id="bar-fill"></div></div>
+      <p id="progress-note" class="muted"></p>
+      <button id="cancel" type="button" hidden>Dừng dịch</button>
+    </section>
+
+    <section class="card" id="log-card" hidden>
+      <h2>Nhật ký</h2>
+      <ol id="log" class="log" aria-live="polite"></ol>
+    </section>
+
+    <section class="card" id="result" hidden>
+      <h2>Kết quả</h2>
+      <p id="summary"></p>
+      <p id="review" class="review" hidden></p>
+      <a id="download" class="primary button" href="#">Tải bản dịch</a>
+      <button id="delete" type="button" title="Xóa bản dịch và báo cáo">Xóa</button>
+      <div id="skipped"></div>
+      <div id="fonts"></div>
+      <h3 id="flagged-title" hidden>Đoạn cần xem lại</h3>
+      <div class="table-wrap"><table id="flagged" hidden>
+        <thead><tr><th>Vị trí</th><th>Bản gốc</th><th>Bản dịch</th><th>Ghi chú</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </section>
+
+    <section class="card error" id="error" hidden>
+      <h2>Có lỗi</h2>
+      <p id="error-text"></p>
+      <p id="error-detail" class="detail" hidden></p>
+    </section>
+  </main>
+
+  <footer>Bản dịch máy – cần chuyên gia duyệt trước khi dùng.</footer>
+
+  <dialog id="consent">
+    <form method="dialog">
+      <h2>Trước khi bắt đầu</h2>
+      <ul>
+        <li>Bản dịch do AI tạo ra, cần chuyên gia duyệt trước khi dùng.</li>
+        <li>Chữ của tài liệu được gửi lên máy chủ để dịch, không lưu lại và không dùng để huấn luyện mô hình.</li>
+        <li>Không gửi tài liệu có thông tin định danh bệnh nhân.</li>
+      </ul>
+      <label class="agree"><input id="agree" type="checkbox"> Tôi đã đọc và đồng ý</label>
+      <button id="consent-ok" class="primary" value="ok" disabled>Tiếp tục</button>
+    </form>
+  </dialog>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

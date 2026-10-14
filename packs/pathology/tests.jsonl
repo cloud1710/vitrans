@@ -1,0 +1,35 @@
+{"src": "Meningiomas are the most common primary intracranial tumors in adults.", "must": ["u màng não"], "must_not": ["u nhày", "u nhầy"]}
+{"src": "The tumor shows anaplastic features.", "must": ["thoái sản"], "must_not": ["biến tính", "bất sản"]}
+{"src": "Squamous cell carcinoma of the lung was confirmed by biopsy.", "must": ["tế bào gai", "phổi", "sinh thiết"], "must_not": ["vảy", "pulmôn"]}
+{"src": "A 77-year-old man presented with hoarseness for two months.", "must": ["bệnh nhân nam", "77 tuổi"], "must_not": ["người đàn ông"]}
+{"src": "Histologic grading follows the WHO criteria.", "must": ["mô bệnh học"], "must_not": ["mô học"]}
+{"src": "Lymphovascular invasion was present in two sections.", "must": ["xâm nhập mạch bạch huyết"], "must_not": ["viêm mạch", "xâm lấn mạch bạch huyết"]}
+{"src": "The stroma is myxoid with sclerosing areas.", "must": [], "must_any": [["xơ hóa", "xơ hoá"], ["mô đệm niêm", "dạng niêm"]], "must_not": []}
+{"src": "Delayed fixation can cause a false negative result.", "must": ["âm tính giả"], "must_not": ["sai âm tính"]}
+{"src": "The histological patterns of these tumours overlap considerably.", "must": ["hình thái mô bệnh học"], "must_not": ["kiểu hình học", "kiểu hình mô bệnh học"]}
+{"src": "Macroscopic appearance: a well-circumscribed grey-white mass.", "must": ["hình ảnh đại thể"], "must_not": ["hiển vi", "vĩ mô"]}
+{"src": "Microscopic appearance: sheets of epithelioid cells with clear cytoplasm.", "must": ["hình ảnh vi thể"], "must_not": ["vi mô", "bức ảnh"]}
+{"src": "Normal functioning hepatocytes", "must": [], "must_any": [["chức năng tế bào gan bình thường", "tế bào gan có chức năng bình thường"]], "must_not": ["các ", "những ", "hoạt động"]}
+{"src": "Abnormal functioning hepatocytes and hepatocyte loss", "must": ["rối loạn chức năng tế bào gan"], "must_not": ["các ", "những ", "hoạt động"]}
+{"src": "The patient underwent a left neck dissection.", "must": ["nạo vét hạch"], "must_not": ["cắt bỏ hạch", "cắt cổ"]}
+{"src": "Clear cell renal cell carcinoma (CCRCC) is the most common subtype.", "must": ["CCRCC", "tế bào sáng"]}
+{"src": "A papillary microcarcinoma was found incidentally in the right lobe.", "must": ["carcinôm nhú vi thể"], "must_not": ["ung thư biểu mô tuyến vi thể"]}
+{"src": "Metastatic carcinoma was present in two level II lymph nodes.", "must": ["nhóm II"]}
+{"src": "Diffuse neocortical (five areas)", "must": ["vỏ não mới lan tỏa"], "must_not": ["lan tỏa vỏ não mới"]}
+{"src": "The follicular cells show atypical features but no capsular invasion.", "must": ["không điển hình"], "must_not": ["bất thường"]}
+{"src": "Perineural invasion was identified at the deep aspect of the lesion.", "must": ["xâm nhập quanh thần kinh"], "must_not": ["xâm lấn quanh thần kinh"]}
+{"src": "Tumour invasion extends into the muscularis propria, and lymphovascular invasion is also present.", "must": ["xâm lấn", "xâm nhập mạch bạch huyết"], "must_not": ["xâm lấn mạch bạch huyết"]}
+{"src": "The surgical margin lies 6 mm from the tumour.", "must": ["diện cắt"], "must_not": ["lề cắt", "rìa"]}
+{"src": "Margin status was recorded for every specimen.", "must": ["tình trạng diện cắt"], "must_not": ["lề cắt", "rìa"]}
+{"src": "Re-excision achieved a negative margin.", "must": ["diện cắt âm tính"], "must_not": ["lề cắt", "rìa"]}
+{"src": "A positive margin was found after the first excision.", "must": ["diện cắt dương tính"], "must_not": ["lề cắt", "rìa"]}
+{"src": "A close margin of 1 mm was reported.", "must": ["diện cắt sát u"], "must_not": ["lề cắt", "rìa"]}
+{"src": "Margins negative; no residual carcinoma.", "must": ["diện cắt âm tính"], "must_not": ["lề cắt", "rìa"]}
+{"src": "All margins are negative for dysplasia.", "must": ["diện cắt", "âm tính"], "must_not": ["lề cắt", "rìa"]}
+{"src": "Margins positive; further excision is advised.", "must": ["diện cắt dương tính"], "must_not": ["lề cắt", "rìa"]}
+{"src": "Both margins are positive for carcinoma.", "must": ["diện cắt", "dương tính"], "must_not": ["lề cắt", "rìa"]}
+{"src": "Margins free of tumour after wide local excision.", "must": ["diện cắt"], "must_not": ["lề cắt", "rìa", "tự do"]}
+{"src": "Margins involved by high-grade dysplasia.", "must": ["diện cắt"], "must_not": ["lề cắt", "rìa", "liên quan"]}
+{"src": "Imaging showed invasion of the adjacent pancreas.", "must": ["xâm lấn"], "must_not": ["xâm nhập"]}
+{"src": "Invasion beyond the muscularis propria defines a T3 tumour.", "must": ["xâm lấn"], "must_not": ["xâm nhập"]}
+{"src": "Invasion into the peripancreatic fat was seen together with perineural invasion.", "must": ["xâm lấn", "xâm nhập quanh thần kinh"], "must_not": ["xâm lấn quanh thần kinh"]}

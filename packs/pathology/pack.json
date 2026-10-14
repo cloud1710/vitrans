@@ -1,0 +1,6 @@
+{"id": "pathology", "version": "0.1.8", "name": "Giải phẫu bệnh",
+ "detect": ["histopathology", "histologic", "histology", "biopsy", "biopsies", "tumor", "tumour", "sarcoma",
+            "carcinoma", "meningioma", "glioma", "astrocytoma", "neuropathology", "neurodegeneration",
+            "dementia", "immunohistochemistry", "IHC", "cytology", "lymphoma", "neoplasm",
+            "metastasis", "metastases", "pathology", "mitoses", "necrosis", "neurodegenerative", "alzheimer", "gliosis", "lymphocytes", "WHO classification",
+            "lymph node", "thyroid"]}

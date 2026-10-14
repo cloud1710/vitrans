@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engine parity check</title>
+<!-- Test page, never deployed: the OOXML parity fixtures and unit checks with the browser's own DOMParser.
+     Run headless with `npm run test:chrome` (tests/chrome.mjs); the result is in window.__parity. -->
+<style>
+  body { font: 14px/1.4 system-ui, sans-serif; margin: 16px; background: #fff; color: #111; }
+  td, th { padding: 2px 8px; text-align: left; border-bottom: 1px solid #ddd; }
+  .bad { color: #a00; font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>Engine parity check</h1>
+<p id="status">running...</p>
+<ul id="failed" class="bad"></ul>
+<table><thead><tr><th>file</th><th>items</th><th>parts</th><th>bytes</th><th>other</th></tr></thead><tbody id="rows"></tbody></table>
+<script type="module" src="./browser.mjs"></script>
+</body>
+</html>

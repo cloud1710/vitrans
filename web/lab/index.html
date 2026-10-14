@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>ViTranslate Lab</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="lab.css">
+</head>
+<body>
+  <header class="top">
+    <h1>ViTranslate · Phòng đo</h1>
+    <p class="muted">Đo xem điện thoại, máy tính bảng hoặc máy tính này có tự chạy được mô hình dịch ngay trong trình duyệt (WebGPU) hay không. Trang chỉ dùng 10 câu y khoa mẫu, không đọc tài liệu của bạn và không kết nối bộ dịch trên máy. Chỉ tải thư viện từ cdn.jsdelivr.net và mô hình từ huggingface.co (WebLLM lấy thêm phần mã biên dịch từ raw.githubusercontent.com); mô hình chạy hoàn toàn trên thiết bị.</p>
+  </header>
+
+  <main>
+    <p id="crash" class="notice" hidden></p>
+
+    <section class="card">
+      <h2>1. Thiết bị</h2>
+      <dl id="device" class="kv"><dt>Đang kiểm tra…</dt><dd></dd></dl>
+      <button id="device-json" type="button">Chỉ lấy thông tin thiết bị (không tải mô hình)</button>
+    </section>
+
+    <section class="card" id="requirements">
+      <h2>Yêu cầu tối thiểu cho điện thoại, máy tính bảng</h2>
+      <ul class="req">
+        <li>iOS / iPadOS 26 trở lên (Safari có WebGPU).</li>
+        <li>RAM từ 8 GB: iPhone 15 Pro, iPhone 15 Pro Max, mọi iPhone 16 và iPhone 17; iPad có chip M; iPad mini (A17 Pro).</li>
+        <li>Còn trống từ 5 GB dung lượng máy.</li>
+        <li>Lần đầu dùng Wi-Fi: mô hình tải về khoảng 2,4 GB.</li>
+        <li>Pin trên 50% hoặc đang sạc; giữ màn hình sáng trong lúc tải và dịch.</li>
+        <li>Nên dùng cho tài liệu ngắn. Kết quả là bản nháp, cần chuyên gia duyệt lại.</li>
+        <li>Android: đang thử nghiệm, chưa đo; cần Chrome bản mới và RAM từ 12 GB.</li>
+      </ul>
+      <p class="muted">Safari không cho trang biết đời máy. Xem đời máy ở Cài đặt &gt; Cài đặt chung &gt; Giới thiệu (dòng Tên kiểu máy).</p>
+      <label class="pick" for="dev-pick">Bạn dùng máy nào? (so với mốc RAM 8 GB, không cần tải gì)</label>
+      <select id="dev-pick"><option value="">Chọn đời iPhone / iPad…</option></select>
+      <p id="dev-verdict" class="status" role="status" hidden></p>
+      <label id="dev-override-wrap" class="confirm" hidden><input id="dev-override" type="checkbox"> Vẫn muốn thử để đo (trang có thể bị tải lại, không mất dữ liệu)</label>
+      <p class="muted">Đã đo: iPhone RAM 4–6 GB bị đóng trang khi nạp mô hình 2B; iPhone 8 GB chưa đo. Trước khi tải, trang thử giữ chỗ bộ nhớ GPU đúng bằng mức mô hình cần trong khoảng 1 giây; nếu máy không đủ, trang báo và không tải mô hình.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Chọn mô hình</h2>
+      <div id="models" class="models"></div>
+      <label class="confirm"><input id="confirm" type="checkbox"> <span id="confirm-text"></span></label>
+      <p class="muted">Giữ màn hình sáng và không chuyển sang ứng dụng khác trong lúc tải và chạy: iOS có thể dừng trang đang chạy nền.</p>
+      <button id="load" class="primary" type="button" disabled>Tải và nạp mô hình</button>
+      <progress id="load-progress" max="1" value="0" hidden></progress>
+      <p id="load-text" class="status" role="status"></p>
+    </section>
+
+    <section class="card">
+      <h2>3. Chạy 10 câu thử</h2>
+      <p class="muted">Đo tốc độ đọc đề (nạp đề) và sinh chữ, kiểm tra thẻ định dạng &lt;g1&gt;…&lt;/g1&gt; và thuật ngữ trong bảng chú giải.</p>
+      <button id="run" class="primary" type="button" disabled>Chạy thử</button>
+      <progress id="run-progress" max="10" value="0" hidden></progress>
+      <p id="run-text" class="status" role="status"></p>
+      <ol id="items" class="items"></ol>
+    </section>
+
+    <section class="card" id="result-card" hidden>
+      <h2>4. Gửi kết quả</h2>
+      <p class="muted">Bấm Sao chép rồi dán vào tin nhắn (Zalo, email) gửi lại. Kết quả chỉ gồm thông tin thiết bị, số đo và bản dịch 10 câu mẫu.</p>
+      <button id="copy" class="primary" type="button">Sao chép kết quả (JSON)</button>
+      <p id="copy-text" class="status" role="status"></p>
+      <textarea id="json" readonly rows="8" spellcheck="false"></textarea>
+    </section>
+
+    <section class="card">
+      <h2>Dọn bộ nhớ</h2>
+      <p class="muted">Mô hình đã tải nằm trong bộ nhớ của trình duyệt (1–5 GB). Xóa khi đo xong để lấy lại dung lượng.</p>
+      <button id="clear" type="button">Xóa mô hình đang chọn khỏi máy</button>
+      <p id="clear-text" class="status" role="status"></p>
+    </section>
+  </main>
+  <script type="module" src="lab.js"></script>
+</body>
+</html>

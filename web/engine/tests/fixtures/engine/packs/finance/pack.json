@@ -1,0 +1,1 @@
+{"id": "finance", "version": "2.0.0", "name": "Finance (synthetic)", "detect": ["budget", "spending", "fiscal year", "invoice"]}

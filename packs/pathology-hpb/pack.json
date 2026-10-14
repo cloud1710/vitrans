@@ -1,0 +1,5 @@
+{"id": "pathology-hpb", "version": "0.1.1", "name": "Giải phẫu bệnh gan mật tụy", "parent": "pathology", "draft": true,
+ "detect": ["hepatocellular", "hepatocyte", "hepatobiliary", "liver biopsy", "cirrhosis", "steatohepatitis", "steatosis",
+            "MASLD", "hepatitis", "hepatoblastoma", "portal tract", "METAVIR", "cholangiocarcinoma", "Klatskin", "biliary",
+            "bile duct", "cholestasis", "gallbladder", "cholecystitis", "pancreas", "pancreatic", "pancreatitis",
+            "ampullary", "ampulla", "Whipple", "pancreaticoduodenectomy", "IPMN", "PanIN", "glypican-3", "HepPar-1"]}

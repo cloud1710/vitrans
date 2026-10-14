@@ -1,0 +1,11 @@
+{
+ "term_fixes": [
+  {
+   "en": "x",
+   "vi": "y",
+   "wrong": [
+    "(oops"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,251 @@
+en,vi,note
+kidney,thận,"freq 40/40 docs (kidney corpus, see sources.md); profile term"
+renal,thận,freq 40/40 docs; adjective: renal = thận
+renal tumor,u thận,"freq 'u thận' 9 docs (S2 C2 N4 H1); src: YHTPHCM16-116, YHTPHCM18-95, TCNCYH-2046; parent tumor = u"
+renal mass,khối u thận,"freq 3 docs (C1 N2); src: CTUMP-716, TCNCYH-2262, TCNCYH-3992; LOW"
+clear cell renal cell carcinoma,ung thư biểu mô tế bào thận tế bào sáng,"= parent clear cell RCC; freq 'tế bào sáng' 9 docs (S4 C1 N3 L1); src: YHTPHCM16-116, YHTPHCM-a10418, YDLS108-1074; alt South urology/radiology 'carcinôm tế bào sáng thận' (YHTPHCM-a10418), 'uttbt tế bào sáng' (YHTPHCM16-116); carcinoma kept = parent rule"
+papillary renal cell carcinoma,ung thư biểu mô tế bào thận dạng nhú,"= parent papillary RCC; src: YDLS108-1021 ('típ nhú' 14, 'utbm dạng nhú'), YHTPHCM16-116 ('uttbt loại nhú'), YHTPHCM-a10418 ('carcinôm nhú tế bào thận')"
+chromophobe renal cell carcinoma,ung thư biểu mô tế bào thận kỵ màu,"= parent chromophobe RCC; freq 'kỵ màu' 3 docs (S1 N2); src: YHTPHCM16-116, YDLS108-1021, TCNCYH-3992; alt 'kị sắc' (user-corrected textbook, translator/glossary/learned.csv), 'kỵ sắc' 0 docs"
+clear cell papillary renal cell tumor,u tế bào thận dạng nhú tế bào sáng,WHO 2022 name; freq 0; BUILT from parent clear cell / papillary rows; keep (CCPRCT) in brackets
+clear cell papillary renal cell carcinoma,ung thư biểu mô tế bào thận dạng nhú tế bào sáng,older WHO 2016 name; src: YDLS108-1021 'utbmtbt nhú tế bào sáng' (N1); learned.csv 'Carcinom tế bào sáng của thận dạng nhú'
+multilocular cystic renal neoplasm of low malignant potential,tân sinh thận dạng nang nhiều ngăn có tiềm năng ác tính thấp,= parent MCNLMP row (long key added); freq 0 VN docs; learned.csv 'u thận dạng nang nhiều ngăn'
+TFE3-rearranged renal cell carcinoma,ung thư biểu mô tế bào thận tái sắp xếp TFE3,= parent TFE3-rearranged RCC (long key added); freq 0 VN docs
+TFEB-altered renal cell carcinoma,ung thư biểu mô tế bào thận biến đổi TFEB,WHO 2022; freq 0; BUILT: alteration = biến đổi (parent)
+ALK-rearranged renal cell carcinoma,ung thư biểu mô tế bào thận tái sắp xếp ALK,WHO 2022; freq 0; BUILT; sibling row ALK rearrangement = tái sắp xếp gen ALK
+ELOC-mutated renal cell carcinoma,ung thư biểu mô tế bào thận đột biến ELOC,WHO 2022 (formerly TCEB1); freq 0; BUILT
+fumarate hydratase-deficient renal cell carcinoma,ung thư biểu mô tế bào thận thiếu hụt fumarate hydratase,parent FH-/SDH-deficient RCC row (deficient = thiếu hụt); full form instead of 'UTBM'
+succinate dehydrogenase-deficient renal cell carcinoma,ung thư biểu mô tế bào thận thiếu hụt succinate dehydrogenase,parent FH-/SDH-deficient RCC row
+eosinophilic solid and cystic renal cell carcinoma,ung thư biểu mô tế bào thận ái toan dạng đặc và nang,"WHO 2022; freq 0; BUILT: eosinophilic = ái toan (parent oncocytic), solid = dạng đặc, cystic = dạng nang (parent)"
+acquired cystic disease-associated renal cell carcinoma,ung thư biểu mô tế bào thận liên quan bệnh thận nang mắc phải,src: YDLS108-1021 'utbmtbt liên quan với bệnh thận nang...' (N1); LOW
+mucinous tubular and spindle cell carcinoma,ung thư biểu mô dạng ống và tế bào hình thoi chế nhầy,freq 0; BUILT: spindle cell = tế bào hình thoi (parent); mucinous = chế nhầy; LOW
+tubulocystic renal cell carcinoma,ung thư biểu mô tế bào thận dạng ống-nang,freq 0; BUILT; LOW
+renal cell carcinoma with fibromyomatous stroma,ung thư biểu mô tế bào thận có mô đệm sợi-cơ,WHO 2022; freq 0; BUILT: fibro = sợi (house rule); LOW
+unclassified renal cell carcinoma,ung thư biểu mô tế bào thận không xếp loại,freq 0; BUILT; WHO 2022 'RCC NOS' = không đặc hiệu (NOS)
+SMARCB1-deficient renal medullary carcinoma,ung thư biểu mô tủy thận thiếu hụt SMARCB1,parent renal medullary carcinoma + deficient = thiếu hụt
+papillary adenoma,u tuyến nhú,freq 0; BUILT: adenoma = u tuyến (parent)
+papillary renal neoplasm with reverse polarity,tân sinh thận dạng nhú phân cực đảo ngược,freq 0; BUILT; keep (PRNRP)
+oncocytoma,u tế bào ái toan (oncocytoma),"= sibling pathology-headneck row; parent renal oncocytoma = u tế bào ái toan ở thận; corpus: 'u tế bào lớn (oncocytoma)' YHTPHCM16-116 (S1); web: 'u tế bào lớn ưa toan' (xray.vn), 'u tế bào biểu mô hạt' (hahoangkiem.com); LOW"
+low-grade oncocytic tumor,u dạng tế bào ái toan độ thấp,WHO 2022 emerging entity; freq 0; BUILT from parent oncocytic = dạng tế bào ái toan; keep (LOT)
+eosinophilic vacuolated tumor,u ái toan có không bào,freq 0; BUILT; keep (EVT)
+metanephric adenoma,u tuyến hậu thận,learned.csv (user-corrected textbook); YHTPHCM18-95 'u hậu thận' (S1)
+angiomyolipoma with epithelial cysts,u cơ mỡ mạch có nang biểu mô,freq 0; BUILT from parent angiomyolipoma; keep (AMLEC)
+mixed epithelial and stromal tumor,u hỗn hợp biểu mô và mô đệm,freq 0; BUILT; keep (MEST) -- not Oxford MEST-C
+cystic nephroma,u thận dạng nang,learned.csv 'u nang thận' (ambiguous with renal cyst); BUILT; LOW
+Wilms tumor,u Wilms,"freq 'u Wilms' S1 (YHTPHCM18-95, 39 hits); alt 'bướu Wilms' S1 + BVNTP-web; parent nephroblastoma = u nguyên bào thận"
+blastemal,mầm,as blastema: blastemal component = thành phần mầm
+favorable histology,mô bệnh học thuận lợi,"BVNTP-web 'mô học thuận lợi' (S1); BYT Wilms guideline (clbv.vn, web snippet) 'nhóm thuận lợi'; histologic = mô bệnh học (house rule)"
+favourable histology,mô bệnh học thuận lợi,same as favorable histology
+unfavorable histology,mô bệnh học không thuận lợi,BVNTP-web 'mô học không thuận lợi'; house rule mô bệnh học
+focal anaplasia,thoái sản khu trú,BVNTP-web 'thoái sản khu trú' (S); parent anaplasia = thoái sản; alt BYT Wilms guideline 'bất thục sản khu trú' (web snippet)
+diffuse anaplasia,thoái sản lan tỏa,BVNTP-web 'thoái sản lan tỏa' (S); alt BYT 'bất thục sản lan tỏa'
+nephrogenic rest,ổ tồn dư sinh thận,freq 0; BUILT; LOW (no VN form found)
+cystic partially differentiated nephroblastoma,u nguyên bào thận dạng nang biệt hóa một phần,freq 0; BUILT from parent nephroblastoma; LOW
+congenital mesoblastic nephroma,u nguyên trung mô thận bẩm sinh,YHTPHCM18-95 'u nguyên trung mô thận' (S1); alt BVNTP-web 'bướu nguyên - trung bì thận'; LOW
+clear cell sarcoma of kidney,sarcom tế bào sáng của thận,parent clear cell sarcoma = sarcom tế bào sáng; BVNTP-web 'sarcom tế bào sáng của thận'; YHTPHCM18-95 'sarcoma tế bào sáng'
+rhabdoid tumor of kidney,u dạng cơ vân của thận,YHTPHCM18-95 'u dạng cơ vân' (S1); BVNTP-web 'bướu ác dạng cơ vân'; parent rhabdoid = dạng cơ vân
+urothelial carcinoma,ung thư biểu mô đường niệu,"src: HueJMP17-22 (C, 7 hits; the paper calls it the now unified term); alt South urology 'bướu tế bào chuyển tiếp' (YHTPHCM19-255); carcinoma = ung thư biểu mô (parent)"
+urothelial carcinoma of the renal pelvis,ung thư biểu mô đường niệu bể thận,built from urothelial carcinoma + parent renal pelvis = bể thận
+upper tract urothelial carcinoma,ung thư biểu mô đường niệu trên,freq 0; BUILT; LOW
+invasive urothelial carcinoma,ung thư biểu mô đường niệu xâm nhập,parent pattern invasive ductal carcinoma = ung thư biểu mô ống xâm nhập
+transitional cell carcinoma,ung thư biểu mô đường niệu (tế bào chuyển tiếp),old name; HueJMP17-22 gives 'ung thư tế bào chuyển tiếp' as the former name; YHTPHCM19-255 'bướu tế bào chuyển tiếp' (S)
+ureter,niệu quản,freq 7 docs (S3 C1 N2 L1)
+WHO/ISUP grade,độ WHO/ISUP,"src: YDLS108-1021 'phân độ ... theo hệ thống WHO/ISUP', TCNCYH-3992 'ISUP độ 1'; ISUP kept English"
+ISUP grade,độ ISUP,src: TCNCYH-3992 (N1)
+WHO/ISUP nuclear grade,độ nhân WHO/ISUP,'độ nhân' 0 docs; YDLS108-1021 calls it 'độ mô học' (N); nuclear grade = độ nhân (BUILT); DECISION
+nuclear grade,độ nhân,"freq 0; BUILT; alt 'độ mô học' (YDLS108-1021, YHTPHCM16-116)"
+Fuhrman grade,độ Fuhrman,"src: YDLS108-1021 'phân độ theo Fuhrman', TCNCYH-2262 'Fuhrman: G3' (N2)"
+nucleolus,hạt nhân,"src: YDLS108-1021 (N1, 4 hits: 'hạt nhân rõ'); 'hạch nhân' 0, 'nhân con' 0; matcher also takes nucleoli"
+prominent nucleoli,hạt nhân rõ,src: YDLS108-1021 'hạt nhân rõ và ưa axít'
+sarcomatoid,dạng sarcôm,parent: sarcomatoid = dạng sarcôm (RCC with sarcomatoid features row); corpus keeps 'sarcomatoid' EN once (YDLS108-1021)
+sarcomatoid differentiation,biệt hóa dạng sarcôm,YDLS108-1021 'biệt hóa dạng cơ vân hoặc sarcoma' (N1); parent sarcomatoid = dạng sarcôm
+rhabdoid differentiation,biệt hóa dạng cơ vân,"src: YDLS108-1021 (N1, 2 hits); parent rhabdoid = dạng cơ vân"
+coagulative necrosis,hoại tử đông,general pathology term; freq 0 in kidney corpus; LOW
+eosinophilic cytoplasm,bào tương ái toan,'bào tương' 5 docs vs 'tế bào chất' 1; ái toan = parent oncocytic
+raisinoid nuclei,nhân hình nho khô,chromophobe RCC; freq 0; BUILT; LOW
+central scar,sẹo trung tâm,oncocytoma; web xray.vn 'sẹo hình sao ở trung tâm'; LOW
+renal capsule,bao thận,freq 7 docs (S2 C1 N3 L1); alt 'vỏ bao thận' N1 (YDLS108-1074)
+renal parenchyma,nhu mô thận,"freq 8 docs; src: YHTPHCM16-116, CTUMP-716, TCNCYH-2262"
+renal cortex,vỏ thận,freq 3 docs (S3)
+renal medulla,tủy thận,src: TCNCYH-3614 (N1)
+renal hilum,rốn thận,"src: BVNTP-web, TCNCYH-2262 (2 docs)"
+nephrectomy,cắt thận,"freq 9 docs (S3 C1 N4 L1); src: YHTPHCM16-116, YHTPHCM-a16827, TCNCYH-2262"
+radical nephrectomy,cắt thận tận gốc,"S2 C1 (YHTPHCM16-116, YHTPHCM-a16827, CTUMP-716) vs 'cắt thận triệt căn' N2 (TCNCYH-2262, TCNCYH-3992); Southern first; roadmap national triệt căn 177 / tận gốc 38 (all surgery); DECISION"
+partial nephrectomy,cắt một phần thận,"South: 'cắt một phần thận' YHTPHCM-a16827 + BVNTP-web, 'cắt thận một phần' YHTPHCM16-116; vs 'cắt thận bán phần' 3 docs (C1 N2, 21 hits) + 'cắt bán phần thận' C1; DECISION"
+nephron-sparing surgery,phẫu thuật bảo tồn thận,"'bảo tồn thận' 3 docs (C1 N2); src: CTUMP-716, TCNCYH-3992, TCNCYH-2046"
+nephrectomy specimen,bệnh phẩm cắt thận,freq 0; BUILT; candidate for _shared/specimen_context (roadmap decision 11)
+perinephric fat,mỡ quanh thận,"freq 7 docs (S2 N4 L1); src: YHTPHCM16-116, YHTPHCM18-95, YDLS108-1021"
+perinephric fat invasion,xâm lấn mỡ quanh thận,"YDLS108-1074 'xâm lấn mô mỡ quanh thận', TCNCYH-2262 'xâm lấn lớp mỡ quanh thận', YHTPHCM16-116 'xâm lấn mỡ quanh u'; staging invasion = xâm lấn (roadmap decision 6B)"
+renal sinus,xoang thận,"freq 3 docs (S2 N1); src: YHTPHCM16-116, YHTPHCM18-95, TCNCYH-2262"
+renal sinus fat,mỡ xoang thận,freq 2 docs (S1 N1)
+renal sinus fat invasion,xâm lấn mỡ xoang thận,"src: YHTPHCM16-116 'xâm lấn mỡ xoang thận 34,3%' (S1)"
+Gerota fascia,mạc Gerota,"S1 'mạc Gerota' (YHTPHCM16-116, 9 hits) vs N1 'cân Gerota' (TCNCYH-2262, 4 hits); Southern first"
+Gerota's fascia,mạc Gerota,as Gerota fascia
+renal vein,tĩnh mạch thận,freq 5 docs (S2 C1 N1 L1)
+renal vein invasion,xâm lấn tĩnh mạch thận,src: YHTPHCM16-116 'xâm lấn tĩnh mạch thận cùng bên' (S1)
+tumor thrombus,huyết khối u,src: YHTPHCM16-116 'huyết khối u' (S1)
+inferior vena cava,tĩnh mạch chủ dưới,freq 5 docs (S3 N1 L1)
+adrenal gland,tuyến thượng thận,freq 5 docs (S3 N1 L1)
+renal cyst,nang thận,freq 4 docs (S1 C2 L1)
+polycystic kidney disease,bệnh thận đa nang,src: BVNTP-GPB-P1 (H1); standard term
+acquired cystic kidney disease,bệnh thận nang mắc phải,src: YDLS108-1021 (N1)
+von Hippel-Lindau disease,bệnh von Hippel-Lindau,freq 0 in corpus; eponym kept; LOW
+hereditary leiomyomatosis and renal cell carcinoma,hội chứng u cơ trơn và ung thư biểu mô tế bào thận di truyền,freq 0; BUILT; keep (HLRCC)
+Birt-Hogg-Dubé syndrome,hội chứng Birt-Hogg-Dubé,eponym kept
+tuberous sclerosis complex,phức hợp xơ cứng củ,established VN disease name 'xơ cứng củ' (not parent sclerosis = xơ chai); freq 0 in corpus; LOW
+RCC,RCC,acronym kept (parent note 'giữ viết tắt RCC')
+ccRCC,ccRCC,acronym kept (parent note 'Giữ CCRCC')
+PAX8,PAX8,IHC marker kept English
+CAIX,CAIX,IHC marker kept English; parent CAIX box row
+CD117,CD117,IHC marker kept English
+CK7,CK7,IHC marker kept English (same row in a sibling pack)
+cathepsin K,cathepsin K,IHC marker kept English
+TFE3,TFE3,gene / IHC marker kept English
+SDHB,SDHB,IHC marker kept English
+GATA3,GATA3,IHC marker kept English
+Melan-A,Melan-A,IHC marker kept English
+renal biopsy,sinh thiết thận,"freq 17 docs (S12 C1 N4); src: YHTPHCM19-291, YHTPHCM25-58, YHTPHCM26-116"
+kidney biopsy,sinh thiết thận,as renal biopsy
+transplant kidney biopsy,sinh thiết thận ghép,'thận ghép' 8 docs (S3 C2 N1 H2)
+biopsy adequacy,mức đạt yêu cầu của mẫu sinh thiết,src: TCNCYH-3614 'mẫu đạt yêu cầu' (N1); LOW
+light microscopy,kính hiển vi quang học,"freq 9 docs (S7 N2); src: YHTPHCM25-197, YHTPHCM25-58, YHTPHCM16-194"
+immunofluorescence,miễn dịch huỳnh quang,"freq 12 docs (S10 N2); abbreviation MDHQ S2 (YHTPHCM25-177, YHTPHCM25-185)"
+electron microscopy,kính hiển vi điện tử,"freq 5 docs (S3 N2) + BVNTP-GPB P1/P2; src: YHTPHCM25-197, YHTPHCM16-194, TCNCYH-3614"
+ultrastructure,siêu cấu trúc,"src: TCNCYH-3614 (N1, 36 hits)"
+PAS stain,nhuộm PAS,freq 12 docs (S9 N3)
+Jones silver stain,nhuộm bạc Jones,'nhuộm bạc' 7 docs (S5 N2); stain name kept
+Masson trichrome,nhuộm Masson trichrome,"src: YHTPHCM25-177 'trichrome', YHTPHCM16-194; stain name kept"
+Congo red,đỏ Congo,freq 3 docs (S2 N1); parent apple-green birefringence note
+glomerulus,cầu thận,"freq 19+ docs (S13 C1 N5), 478 hits; 'tiểu cầu thận' 0; matcher also takes glomeruli"
+glomerular,cầu thận,as glomerulus
+glomerular basement membrane,màng đáy cầu thận,freq 10 docs (S6 N2 H2)
+basement membrane thickening,dày màng đáy,freq 2 docs (S1 N1)
+capillary loops,quai mao mạch,"freq S4 H2 (YHTPHCM25-197, YHTPHCM16-194, YHTPHCM25-58, BVNTP-GPB)"
+Bowman capsule,bao Bowman,src: YHTPHCM25-177 (S1)
+Bowman's capsule,bao Bowman,as Bowman capsule
+mesangial,gian mạch,"freq 12 docs (S9 N2 H1, 65 hits) vs 'gian mao mạch' 4 docs (S2 H2, 39 hits), 'trung mô' S2 (old, = mesenchymal); DECISION"
+mesangial matrix,chất nền gian mạch,freq 2 docs (S1 N1); YHTPHCM25-197 'chất nền vùng gian mạch'
+mesangial proliferation,tăng sinh gian mạch,freq 6 docs (S4 N1 H1)
+mesangial hypercellularity,tăng sinh tế bào gian mạch,Oxford M; built from mesangial proliferation
+endocapillary hypercellularity,tăng sinh tế bào trong mao mạch,"Oxford E; South 'tăng sinh trong mao mạch' (YHTPHCM25-177, BVNTP-GPB) vs N 'tăng sinh nội mao mạch' (TCNCYH-3276, 4 hits); LOW"
+extracapillary proliferation,tăng sinh ngoài mao mạch,freq 0; BUILT; LOW
+podocyte,tế bào chân giả (podocyte),"S2 'tế bào (biểu mô) chân giả' (YHTPHCM22-188, YHTPHCM25-197) vs 'túc bào' H1 (BVNTP-GPB, 12 hits), 'tế bào có chân' N1 (TCNCYH-3614), 'tế bào biểu mô tạng' S1; DECISION"
+foot process effacement,xóa chân (foot process),"BVNTP-GPB 'xóa chân các túc bào', TCNCYH-3614 'xóa, mất chân tế bào có chân'; LOW"
+endothelial cells,tế bào nội mô,'nội mô' 6 docs (S4 N2); 'tế bào nội mô' 2 docs
+subepithelial deposits,lắng đọng dưới biểu mô,freq 3 docs (S1 N1 H1)
+subendothelial deposits,lắng đọng dưới nội mô,freq 3 docs (S1 N1 H1)
+mesangial deposits,lắng đọng gian mạch,built from mesangial + deposits; YHTPHCM25-58
+electron-dense deposits,lắng đọng đậm đặc điện tử,freq 0 exact; YHTPHCM18-10 'phức hợp giầu điện tử'; BUILT; LOW
+immune deposits,lắng đọng miễn dịch,"src: TCNCYH-4436, YHTPHCM25-58"
+immune complex,phức hợp miễn dịch,freq 9 docs (S8 N1)
+granular staining,nhuộm dạng hạt,src: YHTPHCM25-197 'nhuộm dạng hạt ở các quai mao mạch'; parent membranous = nhuộm màng
+linear staining,nhuộm dạng đường,anti-GBM; freq 0; BUILT; LOW
+wire loop,quai dây thép (wire loop),freq 0 in corpus and web search; BUILT; LOW
+hyaline thrombi,huyết khối hyalin,freq 0; BUILT; spelling hyalin (sibling 'màng hyalin'); LOW
+double contours,đường viền đôi,"src: YHTPHCM16-194 'đường viền đôi' (S1), BVNTP-GPB 'viền đôi'; alt 'đường đôi' N1 (TCNCYH-3614)"
+tram-track appearance,hình ảnh đường rầy xe lửa,src: YHTPHCM16-194 'đường rầy xe lửa' (S1)
+basement membrane spikes,gai màng đáy,freq 0; BUILT; LOW
+crescent,liềm,"freq 12 docs (S9 N1 H2, 174 hits); alt 'liềm thể' 6 docs (S5 H1); 'tổn thương liềm' 7 docs"
+cellular crescent,liềm tế bào,freq 9 docs (S6 N1 H2)
+fibrocellular crescent,liềm tế bào-sợi,"src: YHTPHCM25-177 (GPB Gia Dinh, 7 hits) vs 'liềm tế bào-xơ / xơ tế bào' S2 (YHTPHCM25-185, YHTPHCM16-194); fibro = sợi house rule; DECISION"
+fibrous crescent,liềm sợi,"src: YHTPHCM25-177 (GPB Gia Dinh, 10 hits) vs 'liềm xơ' S2 (2 hits); fibro = sợi house rule; DECISION"
+crescentic glomerulonephritis,viêm cầu thận liềm,freq 7 docs (S6 H1); 'hình liềm' / 'tạo liềm' 0
+glomerulonephritis,viêm cầu thận,freq 15 docs (S12 N3)
+rapidly progressive glomerulonephritis,viêm cầu thận tiến triển nhanh,freq 8 docs (S6 N2)
+pauci-immune,nghèo miễn dịch,"freq 3 docs (S3, 23 hits); 'ít miễn dịch' 0"
+pauci-immune glomerulonephritis,viêm cầu thận nghèo miễn dịch,"src: YHTPHCM25-185, YHTPHCM18-10, YHTPHCM25-177"
+anti-GBM disease,bệnh kháng màng đáy cầu thận,'kháng màng đáy cầu thận' 3 docs (S2 N1)
+anti-glomerular basement membrane disease,bệnh kháng màng đáy cầu thận,as anti-GBM disease
+ANCA-associated vasculitis,viêm mạch liên quan ANCA,"freq 3 docs (S2 N1, 14 hits)"
+microscopic polyangiitis,viêm đa mao mạch vi thể,src: YHTPHCM18-10 (S1)
+granulomatosis with polyangiitis,bệnh u hạt kèm viêm đa mao mạch,YHTPHCM-a14383 'u hạt Wegener'; BUILT; keep (GPA); LOW
+fibrinoid necrosis,hoại tử dạng fibrin,"freq 2 docs (S2, 14 hits); 'hoại tử dạng tơ huyết' 0"
+minimal change disease,bệnh cầu thận tổn thương tối thiểu,"'tổn thương (cầu thận) tối thiểu' 3 docs (S2 H1, 20 hits: BVNTP-GPB exact) vs 'sang thương tối thiểu' 3 docs (S3, 7 hits: UMP nephrology) vs 'thay đổi tối thiểu' N1; DECISION"
+focal segmental glomerulosclerosis,xơ chai cầu thận khu trú từng vùng,"S2 (YHTPHCM19-291, YHTPHCM25-58; 6 hits) vs 'xơ hóa cầu thận khu trú từng phần' S1 (YHTPHCM22-188); parent sclerosis = xơ chai"
+FSGS,FSGS,acronym kept (5 docs)
+segmental sclerosis,xơ chai từng vùng,"as FSGS; alt 'xơ hóa (cầu thận) từng phần' S3 (YHTPHCM25-197, -177, -185); DECISION"
+segmental glomerulosclerosis,xơ chai cầu thận từng vùng,Oxford S; as segmental sclerosis
+collapsing variant,thể xẹp,FSGS Columbia; freq 0; BUILT; LOW
+tip lesion,tổn thương đỉnh,FSGS Columbia; freq 0; BUILT; LOW
+global glomerulosclerosis,xơ hóa cầu thận toàn bộ,'xơ hóa toàn bộ' 7 docs (S5 N1 H1) vs 'xơ chai toàn bộ' 0
+globally sclerosed glomeruli,cầu thận xơ hóa toàn bộ,as global glomerulosclerosis; YHTPHCM25-185 'số cầu thận xơ hóa toàn bộ'
+membranous nephropathy,bệnh cầu thận màng,"freq 5 docs (S3 H2, 22 hits) vs 'viêm cầu thận màng' 3 docs (S1 H2)"
+PLA2R,PLA2R,antigen kept English (YHTPHCM25-197)
+membranoproliferative glomerulonephritis,viêm cầu thận tăng sinh màng,freq 4 docs (S4); BVNTP-GPB 'viêm cầu thận màng - tăng sinh'
+C3 glomerulopathy,bệnh cầu thận C3,"src: YHTPHCM16-194 (S1, 6 hits)"
+C3 glomerulonephritis,viêm cầu thận C3,src: YHTPHCM16-194 (S1)
+dense deposit disease,bệnh lắng đọng đặc,src: YHTPHCM16-194 (S1)
+IgA nephropathy,bệnh thận IgA,"freq 7 docs (S6 N1, 69 hits); 'bệnh cầu thận IgA' 0"
+Oxford classification,phân loại Oxford,src: YHTPHCM18-289 (S1)
+MEST-C score,thang điểm MEST-C,code kept English; LOW
+IgA vasculitis,viêm mạch IgA,src: YHTPHCM18-10 (S1); alt 'viêm mao mạch dị ứng' S1 N1 (13 hits)
+Henoch-Schönlein purpura,ban xuất huyết Henoch-Schönlein,YHTPHCM18-19 'bệnh Schönlein-Henoch'; 'ban xuất huyết' 5 docs; eponym kept
+Henoch-Schonlein purpura,ban xuất huyết Henoch-Schönlein,as Henoch-Schönlein purpura (spelling without umlaut)
+lupus nephritis,viêm thận lupus,"freq 8 docs (S6 N2, 101 hits)"
+ISN/RPS classification,phân loại ISN/RPS,"src: YHTPHCM26-116, TCNCYH-5667"
+class III lupus nephritis,viêm thận lupus nhóm III,"class = nhóm: 5 docs (S4 H1, 69 hits) vs 'lớp' (TCNCYH-5667, N); src: YHTPHCM26-116, YHTPHCM25-177"
+class IV lupus nephritis,viêm thận lupus nhóm IV,src: YHTPHCM25-177 'viêm thận lupus nhóm IV' (S)
+class V lupus nephritis,viêm thận lupus nhóm V,src: YHTPHCM26-116 'nhóm V' (S)
+proliferative lupus nephritis,viêm thận lupus tăng sinh,"src: YHTPHCM26-116 (S, title)"
+activity index,chỉ số hoạt động,"S1 H1 (YHTPHCM26-116, BVNTP-GPB); alt 'chỉ số hoạt tính' S1"
+chronicity index,chỉ số mạn tính,"src: YHTPHCM26-116 (S1, 4 hits); alt 'chỉ số mãn tính' H1"
+diabetic nephropathy,bệnh thận đái tháo đường,"freq 3 docs (S3, 13 hits)"
+Kimmelstiel-Wilson nodule,nốt Kimmelstiel-Wilson,src: BVNTP-GPB P2 (H1)
+nodular glomerulosclerosis,xơ hóa cầu thận dạng nốt,src: BVNTP-GPB (H1)
+renal amyloidosis,thoái hóa dạng bột ở thận,"follows parent amyloidosis = thoái hóa dạng bột; corpus: 'lắng đọng amyloid' N1 (32 hits), 'amyloidosis' kept EN 4 docs (S3 N1), 'bệnh amyloid thận' (HueJMP20-85); DECISION (parent)"
+amyloid deposits,lắng đọng amyloid,"src: TCNCYH-4436 (N1, 32 hits); parent amyloid = amyloid"
+thrombotic microangiopathy,bệnh vi mạch huyết khối,"freq 2 docs (S2, 14 hits) vs 'viêm vi mạch huyết khối' S1; TMA kept"
+hemolytic uremic syndrome,hội chứng tán huyết urê huyết,'tán huyết' S2 H1 vs 'tan máu' 0; BUILT; LOW
+postinfectious glomerulonephritis,viêm cầu thận hậu nhiễm trùng,"src: BVNTP-GPB P1/P2 (H2), YHTPHCM18-10 (S1)"
+post-infectious glomerulonephritis,viêm cầu thận hậu nhiễm trùng,as postinfectious glomerulonephritis
+Alport syndrome,hội chứng Alport,src: YHTPHCM16-194 (S1)
+thin basement membrane disease,bệnh màng đáy mỏng,src: YHTPHCM16-194 (S1)
+renal tubules,ống thận,freq S/N (e.g. YHTPHCM25-58 'ống thận')
+tubular atrophy,teo ống thận,freq 3 docs (S3)
+interstitial fibrosis,xơ hóa mô kẽ,freq 5 docs (S4 N1)
+interstitial fibrosis and tubular atrophy,xơ hóa mô kẽ và teo ống thận,built from both rows; keep (IFTA)
+interstitial inflammation,viêm mô kẽ,freq 3 docs (S1 N1 H1)
+tubulointerstitial,ống thận mô kẽ,S1 H1 ('ống thận - mô kẽ') vs 'ống thận kẽ' S2; parent interstitial = mô kẽ
+tubulointerstitial nephritis,viêm ống thận mô kẽ,"src: YHTPHCM18-10, BVNTP-GPB (S1 H1)"
+acute interstitial nephritis,viêm thận mô kẽ cấp,"freq 0; lay web 'viêm thận kẽ cấp' (Long Chau), 'viêm ống kẽ thận cấp' (Vinmec); parent interstitial = mô kẽ; LOW"
+acute tubular necrosis,hoại tử ống thận cấp,freq 4 docs (S4)
+acute tubular injury,tổn thương ống thận cấp,freq 0; BUILT on 'tổn thương thận cấp' (S4)
+tubulitis,viêm ống thận,src: HueJMP20-85 (S1); Banff t
+red blood cell casts,trụ hồng cầu,freq 5 docs (S2 N2 H1)
+arteriolar hyalinosis,hyalin hóa tiểu động mạch,"'hyalin(e) hóa' 3 docs (S3: YHTPHCM25-197, YHTPHCM25-185, HueJMP20-85); parent hyalinization = thoái hóa kính (0 docs here); DECISION"
+arterioles,tiểu động mạch,freq 7 docs (S5 N2)
+arteriosclerosis,xơ cứng động mạch,freq 0; standard VN term (not parent sclerosis = xơ chai); LOW
+hypertensive nephrosclerosis,xơ hóa thận do tăng huyết áp,src: TCNCYH-3614 (N1); LOW
+nephrotic syndrome,hội chứng thận hư,freq 14 docs (S10 C1 N3)
+steroid-resistant nephrotic syndrome,hội chứng thận hư kháng steroid,src: YHTPHCM22-188 (S1)
+nephritic syndrome,hội chứng viêm thận,freq 4 docs (S3 N1) vs 'hội chứng viêm cầu thận' S2
+proteinuria,đạm niệu,S6 docs (64 hits) vs 'protein niệu' 10 docs (S5 C1 N4) vs 'tiểu đạm' S4; DECISION
+hematuria,tiểu máu,freq 13 docs (S10 N2 L1) vs 'đái máu' 7 (S2 C2 N3)
+acute kidney injury,tổn thương thận cấp,"freq 4 docs (S4, 19 hits) vs 'suy thận cấp' 5"
+chronic kidney disease,bệnh thận mạn,freq 11 docs (S8 N3)
+end-stage kidney disease,bệnh thận giai đoạn cuối,freq 6 docs (S3 N3)
+end-stage renal disease,suy thận giai đoạn cuối,freq 7 docs (S5 N2)
+glomerular filtration rate,độ lọc cầu thận,S7 docs (23 hits) vs 'mức lọc cầu thận' 4 docs (S1 N3)
+dialysis,lọc máu,freq 8 docs (S4 N4)
+kidney transplantation,ghép thận,"freq 10 docs (S5 C1 N4, 110 hits)"
+kidney transplant,ghép thận,as kidney transplantation
+renal allograft,thận ghép,freq 8 docs (S3 C2 N1 H2)
+allograft rejection,thải ghép,'thải ghép' 2 docs (78 hits); bare 'rejection' left out (statistics sense)
+acute rejection,thải ghép cấp,"src: TCNCYH-3614, vjol PNT (web)"
+chronic rejection,thải ghép mạn,src: TCNCYH-3614 'thải ghép mạn tính'
+T cell-mediated rejection,thải ghép qua trung gian tế bào T,"Banff name; TCNCYH-3614 'thải ghép tế bào' (N1, 12 hits); BUILT; keep (TCMR)"
+antibody-mediated rejection,thải ghép qua trung gian kháng thể,"src: TCNCYH-3614 (N1, 2 hits); alt 'thải ghép dịch thể' N1 (13 hits), 'thải ghép thể dịch' S1 (YHTPHCM25-58); keep (AMR)"
+humoral rejection,thải ghép thể dịch,src: YHTPHCM25-58 (S1); alt 'dịch thể' (TCNCYH-3614)
+chronic active antibody-mediated rejection,thải ghép qua trung gian kháng thể mạn tính hoạt động,Banff; BUILT
+Banff classification,phân loại Banff,"src: TCNCYH-3614 (N1, 25 hits)"
+C4d,C4d,"kept English (S1 N1, 122 hits)"
+C4d deposition,lắng đọng C4d,"src: YHTPHCM25-58 (S1, 30 hits)"
+peritubular capillaries,mao mạch quanh ống thận,'mao mạch quanh ống' 2 docs (S1 N1)
+peritubular capillaritis,viêm mao mạch quanh ống thận,built from peritubular capillaries; LOW
+glomerulitis,viêm mao mạch cầu thận,Banff g; freq 0; BUILT (not 'viêm cầu thận' = glomerulonephritis); LOW
+microvascular inflammation,viêm vi mạch,Banff MVI; freq 0; BUILT; LOW
+intimal arteritis,viêm nội mạc động mạch,Banff v; freq 0; BUILT; LOW
+transplant glomerulopathy,bệnh cầu thận ghép,"src: TCNCYH-3614 (N1, 3 hits)"
+donor-specific antibodies,kháng thể đặc hiệu người hiến,freq 0; BUILT; keep (DSA); LOW
+calcineurin inhibitor toxicity,độc tính của thuốc ức chế calcineurin,freq 0; BUILT; LOW
+BK polyomavirus nephropathy,bệnh thận do polyomavirus BK,freq 0; BUILT; LOW
+pyelonephritis,viêm đài bể thận,src: YHTPHCM16-116 (S1)

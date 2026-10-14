@@ -1,0 +1,314 @@
+{
+ "file": "deck3.pptx",
+ "kind": "pptx",
+ "options": {
+  "notes": true,
+  "comments": false
+ },
+ "names": [
+  "[Content_Types].xml",
+  "_rels/.rels",
+  "docProps/core.xml",
+  "docProps/app.xml",
+  "ppt/presentation.xml",
+  "ppt/_rels/presentation.xml.rels",
+  "ppt/presProps.xml",
+  "ppt/viewProps.xml",
+  "ppt/theme/theme1.xml",
+  "ppt/tableStyles.xml",
+  "ppt/slideMasters/slideMaster1.xml",
+  "ppt/slideMasters/_rels/slideMaster1.xml.rels",
+  "ppt/slideLayouts/slideLayout11.xml",
+  "ppt/slideLayouts/_rels/slideLayout11.xml.rels",
+  "ppt/slideLayouts/slideLayout1.xml",
+  "ppt/slideLayouts/_rels/slideLayout1.xml.rels",
+  "ppt/slideLayouts/slideLayout2.xml",
+  "ppt/slideLayouts/_rels/slideLayout2.xml.rels",
+  "ppt/slideLayouts/slideLayout3.xml",
+  "ppt/slideLayouts/_rels/slideLayout3.xml.rels",
+  "ppt/slideLayouts/slideLayout4.xml",
+  "ppt/slideLayouts/_rels/slideLayout4.xml.rels",
+  "ppt/slideLayouts/slideLayout5.xml",
+  "ppt/slideLayouts/_rels/slideLayout5.xml.rels",
+  "ppt/slideLayouts/slideLayout6.xml",
+  "ppt/slideLayouts/_rels/slideLayout6.xml.rels",
+  "ppt/slideLayouts/slideLayout7.xml",
+  "ppt/slideLayouts/_rels/slideLayout7.xml.rels",
+  "ppt/slideLayouts/slideLayout8.xml",
+  "ppt/slideLayouts/_rels/slideLayout8.xml.rels",
+  "ppt/slideLayouts/slideLayout9.xml",
+  "ppt/slideLayouts/_rels/slideLayout9.xml.rels",
+  "ppt/slideLayouts/slideLayout10.xml",
+  "ppt/slideLayouts/_rels/slideLayout10.xml.rels",
+  "ppt/printerSettings/printerSettings1.bin",
+  "ppt/slides/slide1.xml",
+  "ppt/slides/_rels/slide1.xml.rels",
+  "ppt/slides/slide2.xml",
+  "ppt/slides/_rels/slide2.xml.rels",
+  "ppt/slides/slide3.xml",
+  "ppt/slides/_rels/slide3.xml.rels",
+  "ppt/notesSlides/notesSlide1.xml",
+  "ppt/notesSlides/_rels/notesSlide1.xml.rels",
+  "ppt/notesMasters/notesMaster1.xml",
+  "ppt/notesMasters/_rels/notesMaster1.xml.rels",
+  "ppt/theme/theme2.xml",
+  "docProps/thumbnail.jpeg"
+ ],
+ "parts": [
+  "ppt/slides/slide1.xml",
+  "ppt/slides/slide2.xml",
+  "ppt/slides/slide3.xml",
+  "ppt/notesSlides/notesSlide1.xml",
+  "ppt/slideLayouts/slideLayout2.xml",
+  "ppt/slideMasters/slideMaster1.xml"
+ ],
+ "labels": {
+  "ppt/slides/slide1.xml": "Slide 1",
+  "ppt/slides/slide2.xml": "Slide 2",
+  "ppt/slides/slide3.xml": "Slide 3",
+  "ppt/notesSlides/notesSlide1.xml": "Notes 3",
+  "ppt/slideLayouts/slideLayout2.xml": "Layout 2",
+  "ppt/slideMasters/slideMaster1.xml": "Master 1"
+ },
+ "items": [
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 0,
+   "location": "Slide 1",
+   "skip": "",
+   "text": "Title number 1",
+   "seg": {
+    "kind": "a",
+    "tagged": "Title number 1",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide1.xml",
+   "index": 1,
+   "location": "Slide 1",
+   "skip": "no_text",
+   "text": "",
+   "seg": null
+  },
+  {
+   "part": "ppt/slides/slide2.xml",
+   "index": 0,
+   "location": "Slide 2",
+   "skip": "",
+   "text": "Title number 2",
+   "seg": {
+    "kind": "a",
+    "tagged": "Title number 2",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide2.xml",
+   "index": 1,
+   "location": "Slide 2",
+   "skip": "no_text",
+   "text": "",
+   "seg": null
+  },
+  {
+   "part": "ppt/slides/slide3.xml",
+   "index": 0,
+   "location": "Slide 3",
+   "skip": "",
+   "text": "Title number 3",
+   "seg": {
+    "kind": "a",
+    "tagged": "Title number 3",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  },
+  {
+   "part": "ppt/slides/slide3.xml",
+   "index": 1,
+   "location": "Slide 3",
+   "skip": "no_text",
+   "text": "",
+   "seg": null
+  },
+  {
+   "part": "ppt/notesSlides/notesSlide1.xml",
+   "index": 0,
+   "location": "Notes 3",
+   "skip": "",
+   "text": "Note on the third slide",
+   "seg": {
+    "kind": "a",
+    "tagged": "Note on the third slide",
+    "locked": [],
+    "dominant": {
+     "sig": "",
+     "rpr": null,
+     "container": null
+    },
+    "spans": {},
+    "fixed": {},
+    "anchors_start": [],
+    "anchors_end": []
+   }
+  }
+ ],
+ "scenarios": {
+  "identity": {
+   "texts": [
+    "Title number 1",
+    "Title number 2",
+    "Title number 3",
+    "Note on the third slide"
+   ],
+   "fixes": [
+    [],
+    [],
+    [],
+    []
+   ],
+   "fit": [],
+   "changed": {
+    "ppt/slides/slide1.xml": {
+     "sha256": "e5c82a151d23e40a4c1b837aa56d3c9a2777a8e480508f04d33ca85348e78771",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Title 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" type=\"title\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Title number 1\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Content Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"1\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    },
+    "ppt/slides/slide2.xml": {
+     "sha256": "10699d4695498d8bea04f9d784b3f69a44f78be751a5ddf8dc3e53347867ffbe",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Title 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" type=\"title\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Title number 2\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Content Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"1\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    },
+    "ppt/slides/slide3.xml": {
+     "sha256": "9bcead16b5e189d7ba2eafc1cede9db84118325fad7db13b5dceedc987d608d4",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Title 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" type=\"title\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Title number 3\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Content Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"1\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    },
+    "ppt/notesSlides/notesSlide1.xml": {
+     "sha256": "bbf9fc370f5b261be635db77e617c877ff57b9590b8a9882da3136101b1aadc9",
+     "canon": "E p:notes \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"0\"\nA \"\" y=\"0\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"0\"\nA \"\" cy=\"0\"\n/E\nE a:chOff \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"0\"\nA \"\" y=\"0\"\n/E\nE a:chExt \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"0\"\nA \"\" cy=\"0\"\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Slide Image Placeholder 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"2\"\nA \"\" type=\"sldImg\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Notes Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"3\"\nA \"\" sz=\"quarter\"\nA \"\" type=\"body\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"Note on the third slide\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"4\"\nA \"\" name=\"Slide Number Placeholder 3\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"5\"\nA \"\" sz=\"quarter\"\nA \"\" type=\"sldNum\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    }
+   }
+  },
+  "fake": {
+   "texts": [
+    "VI_Title VI_number VI_1",
+    "VI_Title VI_number VI_2",
+    "VI_Title VI_number VI_3",
+    "VI_Note VI_on VI_the VI_third VI_slide"
+   ],
+   "fixes": [
+    [],
+    [],
+    [],
+    []
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.78
+    },
+    {
+     "where": "Slide 2",
+     "scale": 0.78
+    },
+    {
+     "where": "Slide 3",
+     "scale": 0.78
+    }
+   ],
+   "changed": {
+    "ppt/slides/slide1.xml": {
+     "sha256": "a8b8e2aa61216c5309d52a6ba8e87a6a1d274e4716e0eb95fb05ed89a20209fc",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Title 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" type=\"title\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"78019\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Title VI_number VI_1\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Content Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"1\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    },
+    "ppt/slides/slide2.xml": {
+     "sha256": "1b23793b75823e5bf7b16be7fd0949eb7f29f74d138ace1e7bfc75df79b9563b",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Title 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" type=\"title\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"78019\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Title VI_number VI_2\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Content Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"1\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    },
+    "ppt/slides/slide3.xml": {
+     "sha256": "94ac8fdfbedf0493da60053795e974024d160476c750f5939d20a7a4b8e5cfc3",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Title 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" type=\"title\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"78019\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Title VI_number VI_3\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Content Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"1\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    },
+    "ppt/notesSlides/notesSlide1.xml": {
+     "sha256": "c6d31533d84f81f5fc270cbdf624bd7d5c08942e6b1d53c81e2460a08f289a7a",
+     "canon": "E p:notes \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"0\"\nA \"\" y=\"0\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"0\"\nA \"\" cy=\"0\"\n/E\nE a:chOff \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"0\"\nA \"\" y=\"0\"\n/E\nE a:chExt \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"0\"\nA \"\" cy=\"0\"\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Slide Image Placeholder 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"2\"\nA \"\" type=\"sldImg\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Notes Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"3\"\nA \"\" sz=\"quarter\"\nA \"\" type=\"body\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"VI_Note VI_on VI_the VI_third VI_slide\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"4\"\nA \"\" name=\"Slide Number Placeholder 3\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"5\"\nA \"\" sz=\"quarter\"\nA \"\" type=\"sldNum\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    }
+   }
+  },
+  "messy": {
+   "texts": [
+    "A\r\nB VI_Title VI_number VI_1 <x99/>",
+    "ma\u0300ng VI_Title VI_number VI_2",
+    "C\u000bD VI_Title VI_number VI_3 <x99/>",
+    "E\u0001F VI_Note VI_on VI_the VI_third VI_slide"
+   ],
+   "fixes": [
+    [
+     "x_unknown:99"
+    ],
+    [],
+    [
+     "x_unknown:99"
+    ],
+    []
+   ],
+   "fit": [
+    {
+     "where": "Slide 1",
+     "scale": 0.69
+    },
+    {
+     "where": "Slide 2",
+     "scale": 0.69
+    },
+    {
+     "where": "Slide 3",
+     "scale": 0.71
+    }
+   ],
+   "changed": {
+    "ppt/slides/slide1.xml": {
+     "sha256": "ad2a6309eb8954006fd75c5055d98dcae980d187eb2bda2b6ed4df4fa849d5f9",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Title 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" type=\"title\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"69481\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"A B VI_Title VI_number VI_1 \"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Content Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"1\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    },
+    "ppt/slides/slide2.xml": {
+     "sha256": "366761526ef93e965577067b56daffbe61a7447552ddf7021f9867ca3cba95ec",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Title 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" type=\"title\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"69481\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"m\\u00e0ng VI_Title VI_number VI_2\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Content Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"1\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    },
+    "ppt/slides/slide3.xml": {
+     "sha256": "a264e8c2e8a7b75c4a1062d253a21b6991a0e284b1153bf9c30f9306897f09cd",
+     "canon": "E p:sld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Title 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" type=\"title\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" wrap=\"square\"\nE a:normAutofit \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" fontScale=\"70711\"\nA \"\" lnSpcReduction=\"10000\"\n/E\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"C D VI_Title VI_number VI_3 \"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Content Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"1\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    },
+    "ppt/notesSlides/notesSlide1.xml": {
+     "sha256": "3be660e6d32b2519569676b9cf4769b7d1e1e5ccb3cd10e17fe23856e5e8ddbf",
+     "canon": "E p:notes \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"\nN p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"\nN r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"\nE p:cSld \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:spTree \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"1\"\nA \"\" name=\"\"\n/E\nE p:cNvGrpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:grpSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:xfrm \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:off \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"0\"\nA \"\" y=\"0\"\n/E\nE a:ext \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"0\"\nA \"\" cy=\"0\"\n/E\nE a:chOff \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" x=\"0\"\nA \"\" y=\"0\"\n/E\nE a:chExt \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" cx=\"0\"\nA \"\" cy=\"0\"\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"2\"\nA \"\" name=\"Slide Image Placeholder 1\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"2\"\nA \"\" type=\"sldImg\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"3\"\nA \"\" name=\"Notes Placeholder 2\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"3\"\nA \"\" sz=\"quarter\"\nA \"\" type=\"body\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\nE p:txBody \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:bodyPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:lstStyle \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\nE a:p \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:r \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nE a:rPr \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" lang=\"vi-VN\"\n/E\nE a:t \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nT \"EF VI_Note VI_on VI_the VI_third VI_slide\"\n/E\n/E\n/E\n/E\n/E\nE p:sp \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:nvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:cNvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" id=\"4\"\nA \"\" name=\"Slide Number Placeholder 3\"\n/E\nE p:cNvSpPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:spLocks \"http://schemas.openxmlformats.org/drawingml/2006/main\"\nA \"\" noGrp=\"1\"\n/E\n/E\nE p:nvPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE p:ph \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nA \"\" idx=\"5\"\nA \"\" sz=\"quarter\"\nA \"\" type=\"sldNum\"\n/E\n/E\n/E\nE p:spPr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\n/E\n/E\n/E\n/E\nE p:clrMapOvr \"http://schemas.openxmlformats.org/presentationml/2006/main\"\nE a:masterClrMapping \"http://schemas.openxmlformats.org/drawingml/2006/main\"\n/E\n/E\n/E"
+    }
+   }
+  }
+ }
+}

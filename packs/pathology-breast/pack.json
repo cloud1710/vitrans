@@ -1,0 +1,6 @@
+{"id": "pathology-breast", "version": "0.1.1", "name": "Giải phẫu bệnh vú", "parent": "pathology", "draft": true,
+ "detect": ["breast", "mammary", "DCIS", "LCIS", "ductal carcinoma in situ", "lobular carcinoma", "no special type",
+            "Nottingham", "HER2-low", "estrogen receptor", "Allred", "phyllodes", "fibroadenoma",
+            "intraductal papilloma", "radial scar", "atypical ductal hyperplasia", "flat epithelial atypia",
+            "sentinel lymph node", "residual cancer burden", "mammography", "BI-RADS", "triple-negative",
+            "luminal A", "luminal B", "mastectomy"]}

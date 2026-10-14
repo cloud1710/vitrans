@@ -1,0 +1,26 @@
+{
+ "allow_short": [],
+ "deny": ["cytotrophoblast"],
+ "allow_partial": ["fine needle aspiration", "targeted therapy"],
+ "fixes": [
+  {"en": "neuropathology", "vi": "giải phẫu bệnh thần kinh", "wrong": ["thần kinh bệnh học"]},
+  {"en": "high-grade", "vi": "độ cao", "wrong": ["độ phân biệt cao"]},
+  {"en": "encapsulated", "vi": "có vỏ bao", "wrong": ["đóng gói"]},
+  {"en": "clinical trial", "vi": "thử nghiệm lâm sàng", "wrong": ["đề tài nghiên cứu lâm sàng", "thử nghiệm y học"]},
+  {"en": "atelectasis", "vi": "xẹp phổi", "wrong": ["tắc nghẽn phổi", "xẹp lép phổi"]},
+  {"en": "meningioma", "vi": "u màng não", "wrong": ["u nhày màng não", "ung thư màng não"]},
+  {"en": "lung", "vi": "phổi", "wrong": ["pulmôn", "phe phổi"]},
+  {"en": "false positive", "vi": "dương tính giả", "wrong": ["tích cực giả", "đương dương giả", "sai dương tính"]},
+  {"en": "false negative", "vi": "âm tính giả", "wrong": ["sai âm tính"]},
+  {"en": "primary antibody", "vi": "kháng thể sơ cấp", "wrong": ["kháng thể nguyên phát"]},
+  {"en": "lymph node", "vi": "hạch", "wrong": ["nút bạch huyết", "đuôi bạch huyết"]},
+  {"en": "malignant transformation", "vi": "chuyển dạng ác tính", "wrong": ["chuyển hóa ác tính"]},
+  {"en": "squamous cell carcinoma", "vi": "carcinôm tế bào gai", "wrong": ["carcinom tế bào gai"]},
+  {"en": "plasma cell", "vi": "tương bào", "wrong": ["tế bào huyết tương", "tế bào plasma"]},
+  {"en": "macroscopic", "vi": "đại thể", "wrong": ["vĩ mô"]},
+  {"en": "microscopic", "vi": "vi thể", "wrong": ["vi mô"]},
+  {"en": "rearranged", "vi": "tái sắp xếp", "wrong": ["sắp xếp lại"]},
+  {"en": "rearrangement", "vi": "tái sắp xếp", "wrong": ["sắp xếp lại"]},
+  {"en": "leukemia", "vi": "bệnh bạch cầu", "wrong": ["lơ xê mi", "lơ-xê-mi"]}
+ ]
+}

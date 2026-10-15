@@ -8,26 +8,28 @@
 //   setup.classify                                                 // the helper's "classify" progress event
 //   results = await translateSegments(segments, {model, modelKey, setup, tm, signal})
 // segments: [{id, tagged, essential: [span ids kept at level 3], prev, nxt, where}] (prev / nxt: the neighbouring
-// segments' plain text, "" for none; where: a location for messages); results: [{id, text, level, flags, cached,
-// reduced, spans}] -- the helper's Translator decisions (reduced: the text belongs to the segment without its
-// non-essential spans, as at levels 3-5; spans: the span ids of that segment).
+// segments' plain text, "" for none; where: a location for messages); results: [{id, text, level, flags, fixes, cached,
+// reduced, spans}] -- the helper's Translator decisions (fixes: the term fixes and the title-order fix written into the
+// text, [{en: the pack's English key or "title-order", from: the text found, to: the text written}]; reduced: the text
+// belongs to the segment without its non-essential spans, as at levels 3-5; spans: the span ids of that segment).
 // packs: a pack source {manifest() -> registry manifest, readText(packId, version, file) -> text | null,
 // lastSource?(packId)} (the style pack is readText("_style", null, file)), or an already parsed pack set
 // {manifest, style, packs: {id: pack data}} (packToData / packFromData: JSON-safe pack data, e.g. bundled at deploy).
 import { Translator, TaggedSegment, buildSystem, ModelError, abortError } from "./translate.js";
 import { scorePacks, selectPacks as selectMatches, families } from "./matching.js";
 import { compile } from "./pyre.js";
-import { loadPack, mergePacks, glossaryHits, EMPTY_PACK, Pack, TermFix, PackError } from "./packs.js";
+import { loadPack, mergePacks, glossaryHits, allowedWords, EMPTY_PACK, Pack, TermFix, PackError } from "./packs.js";
 import { pyStrip, pySplit, pyRoundN } from "./py.js";
 
 export { Translator, TaggedSegment, isEssential, buildSystem, buildUser, ModelError, abortError, Outcome, CHECK_KINDS,
   TRANSLATOR_VERSION, SPAN_PROMPT } from "./translate.js";
 export { MemoryTM, tmKey, sha256Hex } from "./tm.js";
+export { TermIndex, termIndex, findCandidates } from "./repair.js";
 export { buildReport, reviewLevel, INFO_KINDS, WARNING_KINDS } from "./report.js";
 export { scorePacks, families, countTerms, Match, THRESHOLD, MIN_TERMS, MIN_DETECT, MAX_FAMILIES,
   MAX_PACKS } from "./matching.js";
 export { selectMatches };
-export { loadPack, mergePacks, glossaryHits, readGlossary, decodeText, EMPTY_PACK, Pack, TermFix,
+export { loadPack, mergePacks, glossaryHits, allowedWords, readGlossary, decodeText, EMPTY_PACK, Pack, TermFix,
   PackError } from "./packs.js";
 
 export const APP_VERSION = "0.1.0"; // the helper's config.VERSION: part of the TM scope
@@ -188,7 +190,8 @@ export async function selectPacks(text, manifest, { packs = null, domain = "", o
 
 /** Everything a job needs before translating, as JSON-safe data: {classify, pack: {id, name, key}, packRows,
  * unavailable, unavailableNames, offline, packKey, styleKey, scope (the TM pack scope), system (prompt), hits,
- * fixes}. text = the document's segments' plain text joined by "\n" (glossary hits come from the whole text). */
+ * fixes, allowed (allowedWords of the merged pack: words the suspicious-word check accepts)}. text = the document's
+ * segments' plain text joined by "\n" (glossary hits come from the whole text). */
 export async function prepareTranslation(text, { packs, manifest = undefined, domain = "", offline = undefined,
   appVersion = APP_VERSION } = {}) {
   const style = await loadStyle(packs);
@@ -198,7 +201,7 @@ export async function prepareTranslation(text, { packs, manifest = undefined, do
     unavailable: c.unavailable, unavailableNames: c.unavailableNames, offline: c.offline, packKey: c.packKey,
     styleKey: style.key(), scope: c.packKey + "+" + style.key() + "+" + appVersion,
     system: buildSystem(style.prompt, c.pack, hits), hits,
-    fixes: c.pack.termFixes.map((f) => ({ en: f.en, vi: f.vi, wrong: [...f.wrong] })) };
+    fixes: c.pack.termFixes.map((f) => ({ en: f.en, vi: f.vi, wrong: [...f.wrong] })), allowed: allowedWords(c.pack) };
 }
 
 // ---------------------------------------------------------------- translation
@@ -243,18 +246,18 @@ async function translateOne(translator, seg, s, retryDelay, sleep, signal) {
 
 /** Translate segments in order with the helper's Translator decisions (see the module notes). model: async
  * (messages, {temperature, maxTokens, think: false, signal}) -> text; modelKey: the model's name in TM keys; setup:
- * prepareTranslation's result (system, scope, fixes, hits are used); tm: {get, put} or null; onSegment(result,
- * index) after each segment; retryDelay / sleep: the retry of a failed model call. */
+ * prepareTranslation's result (system, scope, fixes, hits, allowed are used); tm: {get, put} or null;
+ * onSegment(result, index) after each segment; retryDelay / sleep: the retry of a failed model call. */
 export async function translateSegments(segments, { model, setup, modelKey = "", tm = null, signal = null,
   onSegment = null, retryDelay = RETRY_DELAY, sleep = defaultSleep } = {}) {
   const translator = new Translator({ model, system: setup.system, modelKey, packKey: setup.scope,
-    fixes: setup.fixes || [], hits: setup.hits || [], tm, signal });
+    fixes: setup.fixes || [], hits: setup.hits || [], tm, signal, allowed: setup.allowed || [] });
   const out = [];
   for (const s of segments) {
     if (signal && signal.aborted) throw abortError();
     const seg = s instanceof TaggedSegment ? s : new TaggedSegment(s.tagged, s.essential || []);
     const res = await translateOne(translator, seg, s, retryDelay, sleep, signal);
-    const r = { id: s.id, text: res.text, level: res.level, flags: res.flags, cached: res.cached,
+    const r = { id: s.id, text: res.text, level: res.level, flags: res.flags, fixes: res.fixes, cached: res.cached,
       reduced: res.segment !== seg, spans: [...res.segment.spans.keys()] };
     out.push(r);
     if (onSegment) await onSegment(r, out.length - 1);

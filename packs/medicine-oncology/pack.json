@@ -1,0 +1,8 @@
+{"id": "medicine-oncology", "version": "0.1.1", "name": "Ung thư học", "parent": "medicine",
+ "detect": ["chemotherapy", "radiotherapy", "chemoradiotherapy", "concurrent chemoradiotherapy", "immunotherapy",
+            "immune checkpoint inhibitor", "tyrosine kinase inhibitor", "overall survival",
+            "progression-free survival", "disease-free survival", "objective response rate", "RECIST", "CTCAE",
+            "ECOG", "first-line", "second-line", "adjuvant chemotherapy", "neoadjuvant chemotherapy",
+            "palliative care", "febrile neutropenia", "brachytherapy", "stereotactic body radiotherapy",
+            "intensity-modulated radiotherapy", "hazard ratio", "median follow-up", "tumor marker",
+            "medical oncology", "dose-limiting toxicity"]}

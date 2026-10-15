@@ -1,0 +1,6 @@
+{
+ "term_fixes": [
+  {"en": "megakaryocyte", "vi": "mẫu tiểu cầu", "wrong": ["tế bào nhân khổng lồ", "tế bào khổng lồ nhân"]},
+  {"en": "myelodysplastic syndrome", "vi": "hội chứng loạn sản tủy", "wrong": ["hội chứng rối loạn sinh tủy"]}
+ ]
+}

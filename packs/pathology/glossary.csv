@@ -19,20 +19,19 @@ immunohistochemistry,hóa mô miễn dịch,
 meningioma,u màng não,
 atypical meningioma,u màng não không điển hình,
 anaplastic meningioma,u màng não thoái sản,
-sarcoma,sarcôm / ung thư mô liên kết,
-osteosarcoma,sarcôm xương,
-chondrosarcoma,sarcôm sụn,
-leiomyosarcoma,sarcôm cơ trơn,
-rhabdomyosarcoma,sarcôm cơ vân,
-liposarcoma,sarcôm mỡ,
-carcinoma,ung thư biểu mô,
-neoplasm,tân sinh / u,
+sarcoma,sarcom,"user 2026-10-14 22:39: sarcom (không dấu mũ); KHÔNG ""sarcôm"" / ""ung thư mô liên kết"""
+osteosarcoma,sarcom xương,"user 2026-10-14 22:39; KHÔNG ""sarcôm xương"""
+chondrosarcoma,sarcom sụn,"user 2026-10-14 22:39; KHÔNG ""sarcôm sụn"""
+leiomyosarcoma,sarcom cơ trơn,"user 2026-10-14 22:39; KHÔNG ""sarcôm cơ trơn"""
+rhabdomyosarcoma,sarcom cơ vân,"user 2026-10-14 22:39; KHÔNG ""sarcôm cơ vân"""
+liposarcoma,sarcom mỡ,"user 2026-10-14 22:39; KHÔNG ""sarcôm mỡ"""
+carcinoma,carcinom,"user 2026-10-14 22:20 + 22:39: carcinoma = carcinom (không dấu mũ), ngoại lệ choriocarcinoma; [S: carcinôm/carcinom 19 tài liệu vs UTBM 12]; KHÔNG ""carcinôm"" / ""ung thư biểu mô"""
+neoplasm,tân sinh,"user 2026-10-15 (""neoplasm vào gói pathology lõi: tân sinh""), thay quyết định 2026-07-17 (neoplasms = u); ""tumor / tumour"" vẫn = u"
 malignant,ác tính,
 benign,lành tính,
 tumor progression,tiến triển u,
 malignant transformation,chuyển dạng ác tính,
 marker,dấu ấn,
-alteration (molecular),biến đổi,
 advanced stage,giai đoạn tiến xa,
 reproducibility,tính tái lập (reproducibility),
 cost-effective,chi phí-hiệu quả (cost-effective),
@@ -91,20 +90,21 @@ chordoid,dạng dây sống (chordoid),
 clear cell,tế bào sáng (clear cell),
 rhabdoid,dạng cơ vân (rhabdoid),
 papillary,dạng nhú (papillary),
-frozen section,lát cắt lạnh,
+frozen section,sinh thiết tức thì,"decision 6 (user 2026-10-14): thủ thuật = sinh thiết tức thì, tiêu bản = tiêu bản cắt lạnh; [Nam: S 4 tài liệu (BvNTP, BV ĐHYD, BV Bình Dân, YHCM), N 2; ""lát cắt lạnh"" 0]. KHÔNG ""lát cắt lạnh"" / ""lát cắt đông lạnh"" / ""phần đông lạnh"""
+frozen section slide,tiêu bản cắt lạnh,decision 6 (user 2026-10-14)
 paraffin section,lát cắt paraffin,
 H&E staining,nhuộm H&E,
 differentiation,biệt hóa,
 undifferentiated,không biệt hóa,
 fine needle aspiration,chọc hút tế bào bằng kim nhỏ (FNA),"KHÔNG dùng ""chọc hút kim nhỏ"" (quá ngắn)"
-hepatocellular carcinoma,ung thư biểu mô tế bào gan (HCC),"KHÔNG dùng ""ung thư tế bào gan"""
+hepatocellular carcinoma,carcinom tế bào gan (HCC),"user 2026-07-17 (carcinôm tế bào gan) + 2026-10-14 (carcinom); KHÔNG ""carcinôm tế bào gan"" / ""ung thư biểu mô tế bào gan"" / ""ung thư tế bào gan"""
 benign prostatic hyperplasia,tăng sản lành tính tuyến tiền liệt (BPH),"""tăng sản"" ≠ ""phì đại"""
 macrovesicular steatosis,thoái hóa mỡ giọt lớn,
 lymphovascular invasion,xâm nhập mạch bạch huyết,"decision 6 (2026-10-14): LVI / PNI = xâm nhập, invasion trần vẫn = xâm lấn; KHÔNG dùng ""viêm mạch bạch huyết"" / ""xâm lấn mạch bạch huyết"""
 DLBCL,DLBCL,giữ nguyên
 cytogenetics,di truyền tế bào (cytogenetics),
 FISH,lai tại chỗ huỳnh quang (FISH),
-rearrangement (gene),tái sắp xếp,
+gene rearrangement,tái sắp xếp gen,
 karyotype,nhiễm sắc thể đồ,
 CNS tumor,u hệ thần kinh trung ương,
 FFPE,FFPE,giữ nguyên
@@ -134,11 +134,11 @@ low-grade glioma,u thần kinh đệm độ thấp (LGG),
 diffuse midline glioma,u thần kinh đệm đường giữa lan tỏa,
 diffuse hemispheric glioma,u thần kinh đệm bán cầu lan tỏa,
 DIPG,u thần kinh đệm cầu não lan tỏa nội tại (DIPG),
-circumscribed (growth),khu trú,đối lập với lan tỏa/thâm nhiễm
+circumscribed growth,khu trú,đối lập với lan tỏa / thâm nhiễm
 diffusely infiltrative,thâm nhiễm lan tỏa,
 microvascular proliferation,tăng sinh vi mạch (MVP),
 perivascular pseudorosettes,thể giả hoa hồng quanh mạch,user chốt
-chicken wire (vasculature),mạch máu chân chim,"user chốt. [y văn GPB VN không dùng ""chân chim""; hay gặp ""lưới mắt cáo"" / giữ EN]"
+chicken wire,mạch máu chân chim,"user chốt. [y văn GPB VN không dùng ""chân chim""; hay gặp ""lưới mắt cáo"" / giữ EN]"
 satellitosis,hiện tượng vệ tinh (satellitosis),"user chốt kèm EN để tránh nhầm ""tế bào vệ tinh""=satellite glial cell"
 perinuclear halo,quầng sáng quanh nhân,
 Scherer's secondary structures,cấu trúc thứ phát của Scherer,
@@ -162,46 +162,48 @@ nuclear grooves,rãnh nhân,
 tumor-to-tumor metastasis,di căn u-trong-u,
 metastasis organotropism,tính hướng cơ quan trong di căn,giữ EN gloss
 lymphangitis carcinomatosis,viêm bạch mạch do ung thư,giữ EN gloss
-salivary duct carcinoma,ung thư biểu mô ống tuyến nước bọt,giữ viết tắt SDC
+salivary duct carcinoma,carcinom ống tuyến nước bọt,"giữ viết tắt SDC; KHÔNG ""ung thư biểu mô ống tuyến nước bọt"" / ""carcinôm ống tuyến nước bọt"""
 goiter,nhân giáp,
 follicular goiter,phình giáp tuyến,"KHÔNG dịch ""bệnh nốt dạng nang"""
 follicular nodular disease,phình giáp tuyến,"KHÔNG dịch ""bệnh nốt dạng nang"""
-lymphoma,lymphôm,"KHÔNG dịch ""u lympho"" (dùng phiên âm lymphôm) cho bài dịch EN->VI. NGOẠI LỆ: deck do tác giả VN tự viết mà tác giả dùng ""u lympho"" (vd Flow in lymphoma / Phân loại MBH u lympho, 2026-09-26) -> GIỮ ""u lympho"" theo tác giả. Nhưng ""lymphocyte""=tế bào lympho, ""lymphoblastic""=nguyên bào lympho, ""lymphoid lineage""=dòng lympho GIỮ NGUYÊN"
-follicular lymphoma,lymphôm dạng nang,giữ viết tắt FL
-diffuse large B-cell lymphoma,lymphôm tế bào B lớn lan tỏa,giữ viết tắt DLBCL
-Hodgkin lymphoma,lymphôm Hodgkin,
-lymphocyte,lympho bào,"KHÔNG dịch ""tế bào lympho"""
-squamous cell carcinoma,carcinôm tế bào gai,"""squamous"" = tế bào GAI (KHÔNG ""vảy""); carcinoma = carcinôm"
-transformation (lymphoma),chuyển dạng,
-indolent lymphoma,lymphôm diễn tiến chậm (indolent),
-aggressive lymphoma,lymphôm diễn tiến nhanh (aggressive),"KHÔNG thêm ""ác tính"" (aggressive != malignant)"
+lymphoma,lymphom,"user 2026-10-14 22:20 + 22:39: lymphom (không dấu mũ). KHÔNG ""lymphôm"" / ""u lympho"". NGOẠI LỆ: deck do tác giả VN tự viết dùng ""u lympho"" -> giữ theo tác giả. ""lymphocyte"" = lymphô bào, ""lymphoblastic"" = nguyên bào lympho, ""lymphoid lineage"" = dòng lympho"
+follicular lymphoma,lymphom dạng nang,"giữ viết tắt FL; KHÔNG ""u lympho dạng nang"" / ""lymphôm dạng nang"""
+diffuse large B-cell lymphoma,lymphom tế bào B lớn lan tỏa,giữ viết tắt DLBCL
+Hodgkin lymphoma,lymphom Hodgkin,
+lymphocyte,lymphô bào,"user 2026-10-14 22:20 (""lymphô bào"", đúng như anh gõ); KHÔNG ""tế bào lympho"" / ""lympho bào"" / ""tế bào lymphô"""
+squamous cell carcinoma,carcinom tế bào gai,"""squamous"" = tế bào gai (user); carcinoma = carcinom (user 2026-10-14 22:39)"
+histologic transformation,chuyển dạng mô bệnh học,"khóa cũ ""transformation (lymphoma)"" không khớp văn bản; transformation trần là khóa mơ hồ (owners.csv)"
+indolent lymphoma,lymphom diễn tiến chậm (indolent),
+aggressive lymphoma,lymphom diễn tiến nhanh (aggressive),"KHÔNG thêm ""ác tính"" (aggressive != malignant)"
 clonally-related,cùng dòng,
 -unrelated,không cùng dòng,
 de novo,nguyên phát (de novo),
 blastoid,dạng nguyên bào (blastoid),
 monoclonal,đơn dòng,
 polyclonal,đa dòng,
-somatic (hypermutation/mutation),sinh dưỡng,somatic = sinh dưỡng (đột biến sinh dưỡng). VD somatic hypermutation = siêu đột biến sinh dưỡng
+somatic hypermutation,siêu đột biến sinh dưỡng,somatic = sinh dưỡng
+somatic mutation,đột biến sinh dưỡng,somatic = sinh dưỡng
 flow cytometry,đếm tế bào dòng chảy (flow cytometry),
 PET avid,tăng chuyển hóa trên PET (PET avid),
 core biopsy,sinh thiết lõi,
 performance status,tổng trạng,
-classifier (Hans/iDZ),bảng phân loại,
+Hans classifier,bảng phân loại Hans,
+iDZ classifier,bảng phân loại iDZ,
 supraclavicular,hố thượng đòn,
 parotid,tuyến mang tai,
 light chain restriction,hạn chế chuỗi nhẹ (lambda/kappa),lambda/kappa giữ nguyên
-rearrangement (FISH/huyết học),rearrangement (FISH/huyết học),"Trong ngữ cảnh FISH/gene huyết học GIỮ English; văn xuôi thần kinh vẫn ""tái sắp xếp""; giữ nguyên ""rearrangement"""
+FISH rearrangement,FISH rearrangement,"Trong ngữ cảnh FISH/gene huyết học giữ English; văn xuôi vẫn ""tái sắp xếp""; giữ nguyên ""rearrangement"""
 HGBCL,HGBCL,"viết tắt tiên lượng/phân loại, giữ như staging code; giữ nguyên"
 FLIPI,FLIPI,"viết tắt tiên lượng/phân loại, giữ như staging code; giữ nguyên"
 POD24,POD24,"viết tắt tiên lượng/phân loại, giữ như staging code; giữ nguyên"
-poorly differentiated thyroid carcinoma,ung thư biểu mô tuyến giáp biệt hóa kém,giữ viết tắt PDTC
-anaplastic thyroid carcinoma,ung thư biểu mô tuyến giáp thoái sản,anaplastic = thoái sản
+poorly differentiated thyroid carcinoma,carcinom tuyến giáp biệt hóa kém,"giữ viết tắt PDTC; KHÔNG ""ung thư biểu mô tuyến giáp biệt hóa kém"" / ""carcinôm tuyến giáp biệt hóa kém"""
+anaplastic thyroid carcinoma,carcinom tuyến giáp thoái sản,"anaplastic = thoái sản; KHÔNG ""ung thư biểu mô tuyến giáp thoái sản"" / ""carcinôm tuyến giáp thoái sản"""
 oncocytic,dạng tế bào ái toan (oncocytic),
 cribriform,dạng sàng,growth pattern
 micropapillary,vi nhú,
-renal cell carcinoma,ung thư biểu mô tế bào thận,giữ viết tắt RCC
+renal cell carcinoma,carcinom tế bào thận,"giữ viết tắt RCC; KHÔNG ""ung thư biểu mô tế bào thận"" / ""carcinôm tế bào thận"""
 wedge-shaped arrangement,sắp xếp hình chêm,
-nodular goiter,bướu giáp nhân,
+nodular goiter,phình giáp,"house rule (user 2026-07): nodular goiter = phình giáp, goiter = nhân giáp; [S: phình giáp 4 tài liệu / bướu giáp nhân 3]"
 follicular nodular disease with metastatic X,bệnh nốt dạng nang kèm di căn X,
 epithelioid,dạng biểu mô (epithelioid),
 spindle cell,tế bào hình thoi,"KHÔNG dịch ""tế bào trục"""
@@ -226,8 +228,8 @@ stroma,mô đệm,"KHÔNG dịch ""chất nền"""
 stromal,mô đệm,"KHÔNG dịch ""chất nền"""
 solid,dạng đặc,
 cystic,dạng nang,
-nest (of cells),ổ (tế bào),nests = các ổ
-sheet (of cells),đám / dải (tế bào),"KHÔNG dịch ""tờ"""
+nest,ổ (tế bào),nests = các ổ
+sheet,đám / dải (tế bào),"không dịch ""tờ"""
 trabecular,dạng bè,
 storiform,dạng xoáy lốc (storiform),
 fascicle,bó,
@@ -253,8 +255,8 @@ overexpression,bộc lộ quá mức,
 loss of expression,mất bộc lộ,
 retained expression,còn bộc lộ,
 aberrant expression,bộc lộ bất thường,
-positive,dương tính,"KHÔNG dịch ""tích cực / tiêu cực"""
-negative (staining),âm tính,"KHÔNG dịch ""tích cực / tiêu cực"""
+positive,dương tính,"không dịch ""tích cực / tiêu cực"""
+negative,âm tính,"không dịch ""tích cực / tiêu cực"""
 membranous,nhuộm màng,
 cytoplasmic,nhuộm bào tương,
 nuclear staining,nhuộm nhân,
@@ -264,7 +266,7 @@ poorly differentiated,biệt hóa kém,
 low-grade,độ thấp,"KHÔNG dịch ""mạn tính"""
 high-grade,độ cao,"KHÔNG dịch ""cấp tính"" / ""cao cấp"""
 bland,hiền (bland),"tế bào hiền, không không điển hình"
-brisk (mitoses),nhiều (phân bào),
+brisk mitoses,nhiều (phân bào),
 prominent,nổi bật,
 subtle,kín đáo,
 hallmark,dấu hiệu đặc trưng,
@@ -272,13 +274,13 @@ features,đặc điểm,"KHÔNG dịch ""tính năng"""
 findings,kết quả / phát hiện,
 present with,biểu hiện bằng,
 differential diagnosis,chẩn đoán phân biệt,
-mimic,tổn thương giả dạng (mimic),
-mimicker,tổn thương giả dạng (mimic),
+mimic,tổn thương dễ nhầm,user 2026-07-17 (bảng sửa: mimickers = tổn thương dễ nhầm)
+mimicker,tổn thương dễ nhầm,user 2026-07-17 (bảng sửa: mimickers = tổn thương dễ nhầm)
 pitfall,bẫy chẩn đoán (pitfall),
 workup,tiếp cận chẩn đoán,
 consistent with,phù hợp với,
 in keeping with,phù hợp với,
-favor (a diagnosis),nghiêng về,
+favor,nghiêng về,
 rule out,loại trừ,
 metaplasia,dị sản,"KHÔNG dịch ""chuyển hóa"" (= metabolism)"
 dysplasia,loạn sản,
@@ -295,7 +297,7 @@ bronchi,phế quản,
 bronchial,phế quản,
 bronchiole,tiểu phế quản,
 bronchioles,tiểu phế quản,
-goblet cell,tế bào đài,"KHÔNG viết ""gobet"""
+goblet cell,tế bào hình đài,user 2026-07-17 (bảng sửa: goblet cells = tế bào hình đài)
 ciliated epithelium,biểu mô có lông chuyển,
 columnar epithelium,biểu mô trụ,"columnar = trụ, KHÔNG ""cột"""
 cuboidal epithelium,biểu mô vuông,
@@ -319,8 +321,8 @@ parkinsonism,hội chứng parkinson,
 gliosis,tăng sinh thần kinh đệm,"biến thể ""tăng sinh tế bào thần kinh đệm"" chính xác hơn nhưng dài; giữ dạng ngắn (hợp khung PPTX)"
 neuron,neuron,"""neuron"" giữ nguyên là chuẩn y văn thần kinh VN; ""tế bào thần kinh"" đồng nghĩa dùng được"
 neuronal loss,mất neuron,"""neuron"" giữ nguyên là chuẩn y văn thần kinh VN; ""tế bào thần kinh"" đồng nghĩa dùng được"
-astrocyte,tế bào hình sao,"áp đảo ""tế bào sao"" (lưu ý astrocytoma vẫn = ""u sao bào"")"
-inclusion (neuro),thể vùi,
+astrocyte,sao bào,user 2026-07-17 (bảng sửa: astrocytes = sao bào); astrocytoma = u sao bào
+inclusion body,thể vùi,
 amyloid plaque,mảng amyloid,
 neuritic plaque,mảng amyloid dạng neuritic,"""mảng lão hóa"" (senile plaque) là biến thể cổ điển; deck dùng ""mảng amyloid"" rõ hơn cho ABC scoring"
 neurofibrillary tangles,đám rối tơ thần kinh,"""tơ"" và ""sợi"" thần kinh dùng ngang nhau (MSD dùng cả hai); giữ viết tắt NFT"
@@ -343,7 +345,7 @@ Pick disease,bệnh Pick,"tần cao (Long Chau, Vinmec)"
 Pick bodies,Pick bodies (giữ EN),"""the Pick"" chua thanh chuan trong y van VN (VN mo ta ""te bao Pick"" + ""the vui""). Giu EN"
 hippocampus,hồi hải mã,
 cingulate gyrus,hồi đai,
-dentate fascia (of hippocampus),hồi răng cưa,
+dentate fascia,hồi răng cưa,
 caudate,nhân đuôi,
 basal ganglia,hạch nền,
 neuropil,neuropil,giữ EN
@@ -352,16 +354,16 @@ External Quality Assessment,ngoại kiểm,"Chuẩn ngành: CSQL/Trung tâm Ki�
 Quality Control,nội kiểm,"Chuẩn ngành (Trung tâm Kiểm chuẩn, chatluongxetnghiem.com); dạng đầy đủ ""nội kiểm tra chất lượng xét nghiệm"". Giữ viết tắt QC"
 Quality Assurance,đảm bảo chất lượng,"Phổ biến hơn ""bảo đảm chất lượng"" (Sở Y tế TP.HCM). Giữ viết tắt QA"
 antigen retrieval,bộc lộ kháng nguyên,"Tên bước 1 chuẩn của quy trình nhuộm HMMD (Vinmec, BvNTP, Bộ môn GPB ĐH Y HN). Biến thể ""phục hồi kháng nguyên"" dùng song song. KHÔNG dịch ""trình diện kháng nguyên"" (= antigen presentation, khác nghĩa)"
-reproducibility (ISO 15189),tính tái lập / độ tái lập,"Deck dùng ""tính tái lập"". Register kiểm chuẩn/ISO 15189: ""độ tái lập"" (khác phòng/người/thiết bị), PHÂN BIỆT với ""độ lặp lại"" = repeatability (cùng phòng/người/thiết bị). ""độ lặp lại"" KHÔNG phải reproducibility"
+inter-laboratory reproducibility,tính tái lập / độ tái lập,"Register kiểm chuẩn / ISO 15189: ""độ tái lập"" (khác phòng / người / thiết bị), phân biệt ""độ lặp lại"" = repeatability"
 cut point,điểm cắt,"""điểm cắt"" = cut-off (GPB/thống kê); deck ghép ""ngưỡng (điểm cắt)"" cho rõ"
 threshold,ngưỡng,"""điểm cắt"" = cut-off (GPB/thống kê); deck ghép ""ngưỡng (điểm cắt)"" cho rõ"
 targeted therapy,liệu pháp nhắm trúng đích,"Áp đảo (Vinmec, Tâm Anh, BV Ung Bướu HN, BV 108). KHÔNG dùng ""liệu pháp đích"""
 assay,xét nghiệm,"Chuẩn lâm sàng. KHÔNG dùng ""khảo nghiệm"" (sai register)"
 estrogen receptor,thụ thể estrogen,"Áp đảo (Tâm Anh, Vinmec, NCI). ""thụ thể nội tiết"" = hormone receptor (ô dù), không thay riêng ER/PR. Giữ viết tắt ER"
 progesterone receptor,thụ thể progesterone,Như ER. Giữ viết tắt PR
-infiltrating,ung thư biểu mô ống xâm nhập,"Dạng chuẩn; biến thể ""thể ống xâm nhập""/""carcinôm ống xâm nhập"" cùng lưu hành"
-invasive ductal carcinoma,ung thư biểu mô ống xâm nhập,"Dạng chuẩn; biến thể ""thể ống xâm nhập""/""carcinôm ống xâm nhập"" cùng lưu hành"
-invasive lobular carcinoma,ung thư biểu mô tiểu thùy xâm nhập,Song song với ống xâm nhập
+infiltrating ductal carcinoma,carcinom ống xâm nhập,"invasive ductal carcinoma: user 2026-07-17 (carcinôm ống xâm nhập) + 2026-10-14 (carcinom); KHÔNG ""ung thư biểu mô ống xâm nhập"" / ""carcinôm ống xâm nhập"""
+invasive ductal carcinoma,carcinom ống xâm nhập,"invasive ductal carcinoma: user 2026-07-17 (carcinôm ống xâm nhập) + 2026-10-14 (carcinom); KHÔNG ""ung thư biểu mô ống xâm nhập"" / ""carcinôm ống xâm nhập"""
+invasive lobular carcinoma,carcinom tiểu thùy xâm nhập,"user 2026-07-17 + 2026-10-14; KHÔNG ""ung thư biểu mô tiểu thùy xâm nhập"" / ""carcinôm tiểu thùy xâm nhập"""
 false negative,âm tính giả,
 false positive,dương tính giả,
 endogenous peroxidase,peroxidase nội sinh,
@@ -375,8 +377,8 @@ cardiac pseudoneoplasm,giả u tim (pseudoneoplasm),tổn thương giống u nh�
 inflammatory myofibroblastic tumor,u nguyên bào sợi cơ viêm,"myofibroblast = ""nguyên bào sợi cơ""; KHÔNG đảo ""cơ sợi"". Giữ viết tắt IMT"
 myofibroblast,nguyên bào sợi cơ,"fibro=sợi, myo=cơ; KHÔNG ""cơ sợi"""
 papillary fibroelastoma,u nhú sợi chun,"Journal VN (Tạp chí Y Dược Thực hành 175 - Viện Tim mạch TP.HCM; Hội Tim mạch học TP.HCM bài CLVT) dùng ""u nhú sợi chun"" (phổ biến hơn ""u nhú xơ chun"" của Phạm Nguyễn Vinh). Giữ viết tắt PFE"
-hamartoma,u mô thừa,"áp đảo (BV Bạch Mai, BV 115); ""u lạc mô""=choristoma (KHÁC)"
-hamartoma of mature cardiac myocytes,u mô thừa tế bào cơ tim trưởng thành,giữ viết tắt HMCM
+hamartoma,mô thừa,"user 2026-07-17 (bảng sửa: hamartoma = mô thừa / mô thừa dạng bướu); ""u lạc mô"" = choristoma (KHÁC)"
+hamartoma of mature cardiac myocytes,mô thừa tế bào cơ tim trưởng thành,theo hamartoma = mô thừa (user 2026-07-17); giữ viết tắt HMCM
 cardiac myxoma,u nhầy (tim),"""u nhầy""/""u nhày"" song song; giữ ""u nhầy"""
 calcified amorphous tumor,u vô định hình vôi hóa,"hiếm, mô tả tự đặt; ""vôi hóa"" > ""canxi hóa"". Giữ viết tắt CAT"
 caseous calcification of mitral annulus,vôi hóa bã đậu vòng van hai lá,"caseous=""bã đậu"". Giữ viết tắt CCMA"
@@ -396,53 +398,53 @@ mesothelial,trung biểu mô,
 mesothelium,trung biểu mô,
 cervical cancer screening,tầm soát ung thư cổ tử cung,"""tầm soát"" áp đảo (MOH, BvNTP); ""sàng lọc"" song song"
 cervical cytology,tế bào học cổ tử cung,
-squamous intraepithelial lesion,tổn thương nội biểu mô vảy (độ thấp/độ cao),"""vảy"" KHÔNG ""gai"" cho Bethesda cổ tử cung; giữ LSIL/HSIL"
+squamous intraepithelial lesion,tổn thương trong biểu mô gai (SIL),"user 2026-10-14 22:20: Bethesda squamous = gai (LSIL / HSIL = tổn thương trong biểu mô gai độ thấp / độ cao); [S: BvNTP, BV ĐHYD dùng ""gai""]; KHÔNG ""tổn thương nội biểu mô vảy"" / ""tổn thương trong biểu mô vảy"""
 cervical intraepithelial neoplasia,tân sinh trong biểu mô cổ tử cung (CIN),"""trong biểu mô"" áp đảo; giữ CIN/CIN2/CIN3"
 cytotechnician,kỹ thuật viên tế bào học,
 cytotechnologist,kỹ thuật viên tế bào học,
 Bethesda codes,Bethesda codes,y văn VN giữ EN; giữ nguyên viết tắt
-low-grade fibromyxoid sarcoma,sarcôm sợi niêm độ thấp,fibromyxoid = sợi niêm
-myxoid (descriptor),(dạng) niêm,VD myxoid liposarcoma = sarcôm mỡ dạng niêm
+low-grade fibromyxoid sarcoma,sarcom sợi niêm độ thấp,fibromyxoid = sợi niêm
+myxoid,(dạng) niêm,VD myxoid liposarcoma = sarcom mỡ dạng niêm
 sclerosing,xơ hóa,"KHÔNG ""xơ"" đơn thuần cho myxoid"
 amyloidosis,thoái hóa dạng bột (amyloidosis),"Journal Y Dược Phạm Ngọc Thạch, Vinmec, BvNTP; ""thoái hóa tinh bột"" là biến thể phổ thông. Bệnh = thoái hóa dạng bột; CHẤT = giữ ""amyloid"""
 amyloid,amyloid,"GIỮ cho chất/sợi/lắng đọng amyloid (mọi nguồn VN giữ ""amyloid"")"
 hypersensitivity pneumonitis,viêm phổi quá mẫn,"chuẩn miễn dịch + MSD (""viêm phổi kẽ quá mẫn""); biến thể ""viêm phổi tăng cảm"", cổ điển ""viêm phế nang dị ứng ngoại lai"". Giữ viết tắt CHP"
-interstitial lung disease,bệnh phổi mô kẽ,"Bộ Y Tế QĐ 1005/2023; ""bệnh phổi kẽ"" song song. Giữ viết tắt ILD"
+interstitial lung disease,bệnh phổi kẽ,"user 2026-07-17 (bảng sửa); BYT QĐ 1005/2023 viết ""bệnh phổi mô kẽ"". Giữ viết tắt ILD"
 idiopathic pulmonary fibrosis,xơ phổi vô căn,"Tạp chí Y học VN; ""xơ hóa phổi vô căn"" song song. Giữ viết tắt IPF"
 plasma cell,tương bào,"chuẩn GPB/huyết học. KHÔNG ""tế bào plasma""/""tế bào tương"""
 plasma cell neoplasm,tân sinh tương bào,"phạm trù WHO. LƯU Ý ""u tương bào"" = plasmacytoma (thực thể cụ thể)"
 lymphoproliferative disorder,rối loạn tăng sinh lympho,disorder=rối loạn
-monotypic (light chain),đơn dòng (monotypic),giữ EN gloss để phân biệt monoclonal (phân tử) vs monotypic (IHC/ISH chuỗi nhẹ)
+monotypic,đơn dòng (monotypic),giữ EN gloss để phân biệt monoclonal (phân tử) vs monotypic (IHC/ISH chuỗi nhẹ)
 pulmonary/lung nodule,nốt (phổi),"""nốt"" cho phổi; ""nhân"" cho tuyến giáp"
-fibril (amyloid),sợi (fibril),sợi amyloid; giữ EN gloss lần đầu
+amyloid fibril,sợi (fibril),sợi amyloid; giữ EN gloss lần đầu
 extracellular matrix,chất nền ngoại bào,"KHÔNG nhầm stroma=mô đệm; ""khuôn ngoại bào"" ít dùng"
-cutaneous T-cell lymphoma,lymphôm tế bào T ở da (CTCL),"house style lymphôm; y văn hay ""u lympho tế bào T ở da"". Giữ viết tắt CTCL"
+cutaneous T-cell lymphoma,lymphom tế bào T ở da (CTCL),"house style lymphom; y văn hay ""u lympho tế bào T ở da"". Giữ viết tắt CTCL"
 mycosis fungoides,u sùi dạng nấm (MF),"áp đảo dalieu.vn/MSD/VICAS; KHÔNG ""u sùi thể nấm"". Giữ MF"
-lymphomatoid papulosis,sẩn dạng lympho (LyP),"dalieu.vn ""u sẩn dạng lympho""; ""-oid""=dạng lympho (KHÔNG ""lymphôm""). Giữ LyP"
-primary cutaneous ALCL,lymphôm tế bào lớn thoái sản nguyên phát ở da (pcALCL),anaplastic=thoái sản. Giữ pcALCL
-primary cutaneous gamma-delta TCL,lymphôm tế bào T gamma/delta ở da nguyên phát (PCGDTCL),"hiếm (~3,7% NC VN). Giữ PCGDTCL"
-"extranodal NK/T-cell lymphoma, nasal type","lymphôm tế bào NK/T ngoài hạch, thể mũi","Tạp chí NCYH ""típ mũi"". Giữ ENKTCL"
-subcutaneous panniculitis-like TCL,lymphôm tế bào T giống viêm mô mỡ dưới da,dalieu.vn. Giữ SPTCL
+lymphomatoid papulosis,sẩn dạng lympho (LyP),"dalieu.vn ""u sẩn dạng lympho""; ""-oid""=dạng lympho (KHÔNG ""lymphom""). Giữ LyP"
+primary cutaneous ALCL,lymphom tế bào lớn thoái sản nguyên phát ở da (pcALCL),anaplastic=thoái sản. Giữ pcALCL
+primary cutaneous gamma-delta TCL,lymphom tế bào T gamma/delta ở da nguyên phát (PCGDTCL),"hiếm (~3,7% NC VN). Giữ PCGDTCL"
+"extranodal NK/T-cell lymphoma, nasal type","lymphom tế bào NK/T ngoài hạch, thể mũi","Tạp chí NCYH ""típ mũi"". Giữ ENKTCL"
+subcutaneous panniculitis-like TCL,lymphom tế bào T giống viêm mô mỡ dưới da,dalieu.vn. Giữ SPTCL
 epidermotropism,hướng thượng bì,dalieu.vn
-panniculitis,viêm mô mỡ,"VICAS, Tâm Anh"
-lobular panniculitis,viêm mô mỡ tiểu thùy,"VICAS, Tâm Anh"
+panniculitis,viêm mô mỡ dưới da,user 2026-07-17 (bảng sửa: panniculitis = viêm mô mỡ dưới da)
+lobular panniculitis,viêm mô mỡ dưới da dạng tiểu thùy,user 2026-07-17 (bảng sửa: panniculitis = viêm mô mỡ dưới da)
 subcutis,hạ bì,
 panniculus,lớp mỡ dưới da,
 angiocentric,hướng mạch,"chưa chuẩn VN, giữ gloss EN"
 angiodestructive,phá hủy mạch (angiocentric),"chưa chuẩn VN, giữ gloss EN"
 cytotoxic markers,dấu ấn gây độc tế bào,TIA-1/granzyme B/perforin giữ EN
 large cell transformation,chuyển dạng tế bào lớn,
-patch,dát,"patch=dát, plaque=mảng (KHÔNG ""mảng bám"")"
-plaque (da),mảng,"patch=dát, plaque=mảng (KHÔNG ""mảng bám"")"
+patch,dát,"patch = dát, plaque = mảng (không ""mảng bám"")"
+plaque,mảng,"patch = dát, plaque = mảng (không ""mảng bám"")"
 skin-directed therapy,điều trị hướng vào da,đối lập điều trị toàn thân
 karyorrhexis,vỡ nhân,
 hemophagocytic syndrome,hội chứng thực bào máu,
 CDKN2A/B deletion,mất đoạn CDKN2A/B,"""mất đoạn""=deletion (áp đảo y văn di truyền VN, Long Châu/novagen); KHÔNG ""xóa đoạn"""
 arachnoid cap cell,tế bào mũ màng nhện,"bv108.vn, xray.vn"
 TERT promoter mutation,đột biến vùng khởi động (promoter) TERT,Tạp chí Y học VN; giữ tên gen TERT
-small cell lung carcinoma,carcinôm tế bào nhỏ (SCLC),"deck phiên âm ""carcinôm"" nhất quán; mainstream ""ung thư phổi tế bào nhỏ"". Giữ SCLC"
-neuroendocrine (NE) marker,dấu ấn thần kinh nội tiết (NE),NE-cao/NE-thấp. Giữ NE
-basaloid,dạng đáy (basaloid),"basal=đáy; ""carcinôm tế bào gai dạng đáy ở phổi"""
+small cell lung carcinoma,carcinom tế bào nhỏ (SCLC),"user 2026-10-14: carcinom; Giữ SCLC; KHÔNG ""carcinôm tế bào nhỏ"" / ""ung thư phổi tế bào nhỏ"""
+neuroendocrine marker,dấu ấn thần kinh nội tiết (NE),NE-cao/NE-thấp. Giữ NE
+basaloid,dạng đáy (basaloid),"basal=đáy; ""carcinom tế bào gai dạng đáy ở phổi"""
 tuft cell,(giống) tế bào chùm (tuft cell),"TRÁNH ""tế bào tua"" (=dendritic cell). Giữ gloss EN"
 tuft cell-like,(giống) tế bào chùm (tuft cell),"TRÁNH ""tế bào tua"" (=dendritic cell). Giữ gloss EN"
 lineage factors,yếu tố dòng tế bào (lineage factors),
@@ -459,12 +461,13 @@ hemangiopericytoma,hemangiopericytoma,"GIỮ EN (gộp vào SFT, WHO CNS5)"
 "intracranial mesenchymal tumor, FET::CREB fusion",u trung mô nội sọ có dung hợp FET::CREB,"mô tả, chưa chuẩn VN"
 leptomeningeal melanocytoma,u tế bào hắc tố màng não mềm (leptomeningeal melanocytoma),melanocytoma=u tế bào hắc tố (lành/độ thấp)
 malignant melanotic nerve sheath tumor,u bao thần kinh hắc tố ác tính,"trước gọi ""melanotic schwannoma"" (WHO 2020 đổi tên)"
-dural-based (neoplasm),(u/khối) nền màng cứng,"y văn thần kinh VN dùng ""màng cứng"""
-"primary intracranial sarcoma, DICER1-mutant","sarcôm nội sọ nguyên phát, đột biến DICER1",manh mối: cầu/giọt hyaline
+dural-based,(u/khối) nền màng cứng,"y văn thần kinh VN dùng ""màng cứng"""
+"primary intracranial sarcoma, DICER1-mutant","sarcom nội sọ nguyên phát, đột biến DICER1",manh mối: cầu/giọt hyaline
 glioneuronal tumor,u thần kinh đệm-thần kinh (GNT),glio=thần kinh đệm + neuronal=thần kinh (WHO CNS5). Giữ GNT
 pleomorphic xanthoastrocytoma,u sao bào vàng đa hình (PXA),"VN ""u sao bào vàng"" (Tâm Anh) + pleomorphic=đa hình. Giữ PXA"
 astroblastoma,u nguyên bào sao,hiếm; astro=sao+blast=nguyên bào. KHÁC glioblastoma=u nguyên bào thần kinh đệm
-astroblastic (pseudo)rosette,(thể giả) hoa hồng nguyên bào sao,
+astroblastic pseudorosette,thể giả hoa hồng nguyên bào sao,
+astroblastic rosette,hoa hồng nguyên bào sao,
 high-grade astrocytoma with piloid features,u sao bào độ cao có đặc điểm dạng lông (HGAP),"xác định bằng methyl hóa. Giữ HGAP (pilocytic vẫn ""u sao bào lông"")"
 diffuse leptomeningeal glioneuronal tumor,u thần kinh đệm-thần kinh màng mềm lan tỏa (DLGNT),
 multinodular and vacuolating neuronal tumor,u neuron đa nốt và tạo không bào (MVNT),
@@ -476,17 +479,17 @@ subependymal giant cell astrocytoma,u sao bào tế bào khổng lồ dưới m�
 integrated diagnosis,chẩn đoán tích hợp,kết hợp mô bệnh học + phân tử (WHO 2021)
 resource level,mức nguồn lực (RL),giữ viết tắt RL I-V / LMIC/UMIC/HIC
 LMIC,nước thu nhập thấp và trung bình (LMIC),giữ viết tắt RL I-V / LMIC/UMIC/HIC
-clear cell RCC,ung thư biểu mô tế bào thận tế bào sáng,Giữ CCRCC
-papillary RCC,ung thư biểu mô tế bào thận dạng nhú,Giữ PRCC
-chromophobe RCC,ung thư biểu mô tế bào thận kỵ màu,"""kỵ màu"" (MSD VI/BV108). Giữ ChRCC"
+clear cell RCC,carcinom tế bào thận tế bào sáng,Giữ CCRCC
+papillary RCC,carcinom tế bào thận dạng nhú,user 2026-07-17 (carcinôm tế bào thận dạng nhú); Giữ PRCC
+chromophobe RCC,carcinom tế bào thận kị sắc,user 2026-07-17 (kị sắc) + 2026-10-14 22:20; Giữ ChRCC
 renal oncocytoma,u tế bào ái toan ở thận,"nhất quán oncocytic=ái toan; biến thể ""u tế bào lớn ưa toan"""
 angiomyolipoma,u cơ mỡ mạch,"áp đảo (medlatec); biến thể ""u mỡ cơ mạch"". Giữ AML"
-RCC with sarcomatoid features,ung thư biểu mô tế bào thận có đặc điểm dạng sarcôm,sarcomatoid=dạng sarcôm
+RCC with sarcomatoid features,carcinom tế bào thận có đặc điểm dạng sarcom,sarcomatoid = dạng sarcom
 MCNLMP,tân sinh thận dạng nang nhiều ngăn có tiềm năng ác tính thấp,"mô tả, chưa chuẩn VN. Giữ MCNLMP"
-FH-/SDH-deficient RCC,UTBM tế bào thận thiếu hụt fumarate hydratase / succinate dehydrogenase,thiếu hụt=deficient
-renal medullary carcinoma,ung thư biểu mô tủy thận,
-collecting duct carcinoma,ung thư biểu mô ống góp,
-TFE3-rearranged RCC,ung thư biểu mô tế bào thận tái sắp xếp TFE3,
+FH-/SDH-deficient RCC,carcinom tế bào thận thiếu hụt fumarate hydratase / succinate dehydrogenase,thiếu hụt = deficient
+renal medullary carcinoma,carcinom tủy thận,"KHÔNG ""ung thư biểu mô tủy thận"" / ""carcinôm tủy thận"""
+collecting duct carcinoma,carcinom ống góp,"user 2026-07-17 (carcinôm ống góp) + 2026-10-14; KHÔNG ""ung thư biểu mô ống góp"" / ""carcinôm ống góp"""
+TFE3-rearranged RCC,carcinom tế bào thận tái sắp xếp TFE3,
 CAIX box,nhuộm CAIX dạng hộp,"mô tả kiểu nhuộm màng, giữ gloss EN"
 cup staining,dạng cốc,"mô tả kiểu nhuộm màng, giữ gloss EN"
 oncogene,gen sinh ung,proto-oncogene=gen tiền ung thư
@@ -502,8 +505,8 @@ methylation,methyl hóa,methylation-specific PCR=PCR đặc hiệu methyl hóa
 epigenetics,biểu sinh,"biến thể ""di truyền biểu sinh"""
 germline,dòng mầm,
 somatic,sinh dưỡng,
-allele,allele,allele giữ EN
-allele-specific PCR,PCR đặc hiệu allele,allele giữ EN
+allele,alen,"decision 7 (user 2026-10-14): alen; [S 5 tài liệu / 25 lần vs ""allele"" 2 / 6]"
+allele-specific PCR,PCR đặc hiệu alen,"decision 7 (user 2026-10-14): alen; [S 5 tài liệu / 25 lần vs ""allele"" 2 / 6]"
 break-apart,đầu dò tách đôi,
 fusion probe,đầu dò dung hợp,
 fusion partner,đối tác dung hợp,
@@ -515,7 +518,7 @@ mordant,chất cắn màu,cầu nối gắn thuốc nhuộm (iod trong Gram)
 counterstain,nhuộm nền,"biến thể ""nhuộm đối màu"""
 decolorize,tẩy màu,chuẩn nhuộm Gram
 decolorization,tẩy màu,chuẩn nhuộm Gram
-differentiation (staining),tách màu,"phân biệt với ""tẩy màu"" (decolorize)"
+acid alcohol differentiation,tách màu,"phân biệt với ""tẩy màu"" (decolorize)"
 reticulin fiber,sợi liên võng (reticulin),"histotech chuẩn ""sợi liên võng"" (KHÔNG ""sợi lưới"")"
 basement membrane,màng đáy,
 silver impregnation,tẩm bạc,muối bạc + chất khử -> bạc kim loại
@@ -525,7 +528,7 @@ dye lake,phức màu không tan (dye lake),phức CV-iod. Giữ EN
 birefringence,lưỡng chiết,amyloid + đỏ Congo dưới ánh sáng phân cực
 apple-green birefringence,lưỡng chiết xanh táo,amyloid + đỏ Congo dưới ánh sáng phân cực
 toning,tạo tông màu,chưa chuẩn VN; non tông/quá tông (under/overtone)
-toner (gold toning),chuyển tông (toning),chưa chuẩn VN; non tông/quá tông (under/overtone)
+gold toning,chuyển tông (toning),chưa chuẩn VN; non tông/quá tông (under/overtone)
 GMS,nhuộm bạc methenamine Grocott (GMS),Giữ GMS
 Grocott methenamine silver,nhuộm bạc methenamine Grocott (GMS),Giữ GMS
 quality management system,hệ thống quản lý chất lượng (QMS),TCVN ISO 9001/15189. Giữ QMS
@@ -554,7 +557,7 @@ myxoid liposarcoma,sarcom mỡ dạng niêm,
 desmoplastic small round cell tumor,u tế bào tròn nhỏ tăng sinh mô đệm,kèm EN desmoplastic
 angiomatoid fibrous histiocytoma,u mô bào sợi dạng mạch,
 sclerosing epithelioid fibrosarcoma,sarcom sợi dạng biểu mô xơ hóa,sclerosing=xơ hóa
-myxofibrosarcoma,sarcom sợi-niêm,"fibro=sợi, myxo=niêm; giữ MFS"
+myxofibrosarcoma,sarcom sợi niêm,"house rule (user 2026-08-01): fibro = sợi, myxo = niêm; user 2026-10-14 22:39: sarcom; giữ MFS; KHÔNG ""sarcôm sợi niêm"" / ""sarcom xơ nhầy"""
 dedifferentiated chondrosarcoma,sarcom sụn mất biệt hóa,dedifferentiated=mất biệt hóa
 myoepithelial neoplasm,u cơ-biểu mô,
 hyalinizing clear cell carcinoma,carcinom tế bào sáng hyalin hóa,
@@ -564,7 +567,7 @@ cranial fasciitis,viêm cân sọ,thể phụ ở trẻ em
 cellular fibroma of tendon sheath,u sợi giàu tế bào của bao gân,
 myositis ossificans,viêm cơ cốt hóa,
 fibro-osseous pseudotumor of digits,giả u sợi-xương ở ngón (FD),
-aneurysmal bone cyst,nang xương phình mạch (ABC),~70% USP6; giữ ABC
+aneurysmal bone cyst,bọc phình xương (ABC),user 2026-07-17 (bảng sửa: Bọc phình xương); ~70% USP6; giữ ABC
 proliferative myositis,viêm cơ tăng sinh,
 fasciitis,viêm cân tăng sinh,
 ischaemic fasciitis,viêm cân thiếu máu cục bộ,
@@ -579,17 +582,17 @@ partial hydatidiform mole,thai trứng bán phần (PHM),[Từ Dũ TTBP]. Giữ 
 invasive mole,thai trứng xâm lấn,"[Từ Dũ TTXL; ""xâm lấn"" 5/0 so với ""xâm nhập""]. vjog dùng ""chửa trứng xâm nhập"""
 persistent GTD,bệnh nguyên bào nuôi tồn tại,"[Từ Dũ, phân loại FIGO 2002]. KHÔNG ""tồn lưu"" (không có trong y văn VN)"
 persistent mole,thai trứng tồn tại,"[Từ Dũ, phân loại FIGO 2002]. KHÔNG ""tồn lưu"" (không có trong y văn VN)"
-choriocarcinoma,ung thư nguyên bào nuôi (UTNBN),"[ÁP ĐẢO: vjog 2024 §3.2 + 2 tiêu đề bài; Từ Dũ 7/0]. NGOẠI LỆ quy tắc carcinoma→carcinôm. Biến thể ít dùng: ""carcinôm đệm nuôi"" (GPB BvNTP), ""ung thư nhau thai"" (báo phổ thông)"
-placental site trophoblastic tumour,u nguyên bào nuôi vùng nhau bám (PSTT),"[vjog 2024 ""vùng rau bám""; Từ Dũ ""nơi nhau bám""/""vị trí nhau thai""]. KHÔNG calque ""vị trí nhau"". Giữ PSTT"
+choriocarcinoma,ung thư nguyên bào nuôi (UTNBN),"USER 2026-10-14 22:20: ngoại lệ của họ carcinom (giữ ""ung thư nguyên bào nuôi""). [vjog 2024; Từ Dũ 7/0]"
+placental site trophoblastic tumour,u nguyên bào nuôi vị trí nhau thai (PSTT),"user 2026-07-17 (bảng sửa); Từ Dũ ""vị trí nhau thai"" / ""nơi nhau bám""; vjog ""vùng rau bám"". Giữ PSTT"
 epithelioid trophoblastic tumour,u nguyên bào nuôi dạng biểu mô (ETT),[vjog 2024 ×3]. Giữ ETT
-placental site nodule,nốt vùng nhau bám (PSN),"[vjog 2024 ""nốt, mảng vùng rau bám""]. Giữ PSN"
+placental site nodule,nốt tại vị trí bánh nhau (PSN),user 2026-07-17 (bảng sửa). Giữ PSN
 atypical placental site nodule,nốt vùng nhau bám không điển hình (APSN),[vjog 2024]. Giữ APSN
 exaggerated placental site,vùng nhau bám quá mức,"PHÂN BIỆT implantation site = ""vị trí làm tổ"""
 chorionic villi,gai nhau,"[Từ Dũ]. Biến thể: ""gai rau"" (Bắc/vjog), ""lông nhau"" (GPB BvNTP)"
 cytotrophoblast,đơn bào nuôi,"[GPB BvNTP + vjog 2024: 3 loại nguyên bào nuôi = đơn bào nuôi / trung gian / hợp bào nuôi]. KHÔNG ""tế bào nuôi"" (tên chung, nhập nhằng)"
 syncytiotrophoblast,hợp bào nuôi,[GPB BvNTP + vjog 2024]. Luôn âm tính với p57
 intermediate trophoblast,nguyên bào nuôi trung gian,[GPB BvNTP + vjog 2024]
-villous,nguyên bào nuôi gai nhau,"GPB BvNTP dùng ""lông nhau""; giữ nhất quán với ""gai nhau"""
+villous trophoblast,nguyên bào nuôi gai nhau,"GPB BvNTP dùng ""lông nhau""; giữ nhất quán với ""gai nhau"""
 extravillous trophoblast,nguyên bào nuôi ngoài gai nhau,"GPB BvNTP dùng ""lông nhau""; giữ nhất quán với ""gai nhau"""
 chorionic type intermediate trophoblast,nguyên bào nuôi trung gian týp màng đệm,chorion = màng đệm
 cistern,xoang chứa dịch (cistern),"[GPB BvNTP bài nguyên bào nuôi thai kì]. KHÔNG ""hồ dịch"" (không có trong y văn VN cho gai nhau)"
@@ -615,9 +618,9 @@ theca-lutein cyst,nang hoàng tuyến,"[vjog, Từ Dũ]"
 p57,p57 (CDKN1C),"giữ EN; vjog gọi ""protein p57KIP2""; gen bộc lộ từ mẹ, in dấu ở bố"
 nodular sclerosis,(thể) xơ nốt,"[phổ biến: TC YHVN (Viện HH-TM) 2023, ungthuhoc.vn]. Biến thể: ""xơ hóa thể nốt"" (MSD), ""xơ cứng dạng nốt"", ""xơ cục"" (giáo trình cũ)"
 mixed cellularity,(thể) hỗn hợp tế bào,"[phổ biến: TC YHVN 2023, MSD, BvNTP, Hội MDTL ung thư ""típ hỗn hợp tế bào""]"
-lymphocyte-rich,(thể) giàu lympho bào,"[ungthuhoc.vn; MSD ""giàu lympho""]"
-lymphocyte-depleted,(thể) suy giảm lympho bào,"[MSD ""suy giảm bạch cầu lympho"", Tâm Anh ""suy giảm tế bào lympho""]. Biến thể: ""mất lympho bào"" (ungthuhoc), ""ít lymphô bào"" (giáo trình cũ). ""nghèo lympho bào"": 0 nguồn"
-nodular lymphocyte-predominant HL,u lympho Hodgkin dạng nốt ưu thế lympho bào (NLPHL),"Biến thể: ""nốt trội tế bào lympho"" (ungthuhoc), ""ưu thế tế bào lympho dạng nốt"" (Vinmec). Giữ NLPHL"
+lymphocyte-rich,(thể) giàu lymphô bào,"[ungthuhoc.vn; MSD ""giàu lympho""]"
+lymphocyte-depleted,(thể) suy giảm lymphô bào,"[MSD ""suy giảm bạch cầu lympho"", Tâm Anh ""suy giảm tế bào lympho""]. Biến thể: ""mất lymphô bào"" (ungthuhoc), ""ít lymphô bào"" (giáo trình cũ). ""nghèo lymphô bào"": 0 nguồn"
+nodular lymphocyte-predominant HL,lymphom Hodgkin dạng nốt ưu thế lymphô bào (NLPHL),"user 2026-10-14: lymphom, lymphô bào. Giữ NLPHL"
 tingible-body macrophage,đại thực bào nhặt mảnh (tingible-body),"y văn VN KHÔNG có term (GPB BvNTP chỉ ghi ""đại thực bào""). Giữ gloss EN. TRÁNH ""đại thực bào có thể nhuộm màu"" (calque sai nghĩa)"
 high endothelial venule,tĩnh mạch sau mao mạch nội mô cao (HEV),"[GPB hạch BvNTP: ""tĩnh mạch sau mao mạch ... lót bởi tế bào nội mô cao""]. ""tiểu tĩnh mạch nội mô cao"": 0 nguồn. Giữ HEV"
 follicular dendritic cell,tế bào tua nang (FDC),"[GPB hạch BvNTP; vi.wikipedia ""Tế bào tua""]. dendritic = tua"
@@ -627,22 +630,32 @@ centroblastic,nguyên tâm bào,[GPB hạch BvNTP; mô tả DLBCL VN]. centrocyt
 immunoblast,nguyên bào miễn dịch,[GPB hạch BvNTP; dieutri.vn; mô tả DLBCL VN]
 immunoblastic,nguyên bào miễn dịch,[GPB hạch BvNTP; dieutri.vn; mô tả DLBCL VN]
 hairy cell leukemia,bệnh bạch cầu tế bào tóc (HCL),"USER 2026-10-14: theo miền Nam, leukemia = ""bệnh bạch cầu"", KHÔNG ""lơ xê mi"" (lơ xê mi = dạng miền Bắc, hệ Viện HH-TM)."
-lymphoplasmacytic lymphoma,u lympho tương bào lympho (LPL),"THẤP: ""u lympho tương bào lympho"" (youmed), ""tương bào - lymphô bào"" (TC YHVN, BV TMHH), ""dạng tương bào"" (nci.vn, dễ nhầm plasmacytoid); TC YHVN hay để nguyên ""LPL/WM"". ""lympho-tương bào"": 0 nguồn. Giữ LPL"
+lymphoplasmacytic lymphoma,lymphom tương bào lympho (LPL),"user 2026-10-14: lymphom. TC YHVN hay để nguyên ""LPL/WM"". Giữ LPL"
 aggressive NK-cell leukemia,bệnh bạch cầu tế bào NK diễn tiến nhanh (ANKL),"USER 2026-10-14: leukemia = ""bệnh bạch cầu"" (miền Nam). y văn VN chưa có term; aggressive = diễn tiến nhanh (theo dòng ""aggressive lymphoma""). KHÔNG ""tấn công""/""xâm lấn"". Giữ ANKL"
-anaplastic large cell lymphoma,u lympho tế bào lớn thoái sản (ALCL),"[phổ biến: Vinmec sALCL, TC YD Huế 2023, Tâm Anh]. anaplastic = thoái sản"
-mantle zone,vùng áo nang,"[phổ biến: TC YHVN (Viện HH-TM) 2019-2023, nci.vn, jocm Bạch Mai]. Biến thể: ""tế bào vỏ"" (Hội HH Bến Tre), ""vùng viền"" (GPB BvNTP)"
-mantle cell lymphoma,u lympho tế bào áo nang (MCL),"[phổ biến: TC YHVN (Viện HH-TM) 2019-2023, nci.vn, jocm Bạch Mai]. Biến thể: ""tế bào vỏ"" (Hội HH Bến Tre), ""vùng viền"" (GPB BvNTP)"
-marginal zone,vùng rìa,"[phổ biến: TC YHVN 2024, nci.vn]"
-MZL,u lympho vùng rìa (MZL),"[phổ biến: TC YHVN 2024, nci.vn]"
+anaplastic large cell lymphoma,lymphom tế bào lớn thoái sản (ALCL),user 2026-07-17 + 2026-10-14: lymphom; anaplastic = thoái sản
+mantle zone,vùng áo nang,"user 2026-10-14 22:20: MCL = lymphom tế bào áo nang, mantle zone = vùng áo nang"
+mantle cell lymphoma,lymphom tế bào áo nang (MCL),"user 2026-10-14 22:20: MCL = lymphom tế bào áo nang, mantle zone = vùng áo nang"
+marginal zone,vùng rìa,"user 2026-10-14 22:20: MZL = lymphom vùng rìa, marginal zone = vùng rìa"
+marginal zone lymphoma,lymphom vùng rìa (MZL),"user 2026-10-14 22:20: MZL = lymphom vùng rìa, marginal zone = vùng rìa"
+MZL,lymphom vùng rìa (MZL),"user 2026-10-14 22:20: MZL = lymphom vùng rìa, marginal zone = vùng rìa"
 hematogones,hematogones (tiền thân tế bào B lành tính),"y văn VN không có term -> giữ EN, chú thích lần đầu"
-compensation (flow),bù tín hiệu huỳnh quang (compensation),"THẤP: 1 nguồn VN ""Bù tín hiệu (compensation)"" (thuvienso.cyt.edu.vn); đa số tài liệu VN giữ EN"
+fluorescence compensation,bù tín hiệu huỳnh quang (compensation),"THẤP: 1 nguồn VN ""Bù tín hiệu (compensation)"" (thuvienso.cyt.edu.vn); đa số tài liệu VN giữ EN"
 gating,khoanh vùng (gating),"THẤP: ""khoanh vùng (gating) quần thể"" (thuvienso.cyt.edu.vn). ""cổng"": 0 nguồn"
-gate (flow),vùng chọn (gate),"THẤP: ""khoanh vùng (gating) quần thể"" (thuvienso.cyt.edu.vn). ""cổng"": 0 nguồn"
+gate,vùng chọn (gate),"THẤP: ""khoanh vùng (gating) quần thể"" (thuvienso.cyt.edu.vn). ""cổng"": 0 nguồn"
 viability dye,chất nhuộm sống/chết (viability dye),"y văn VN chưa có term (""thuốc nhuộm khả năng tồn tại"" = calque). Giữ gloss EN"
 spectral unmixing,tách phổ (spectral unmixing),chưa có term VN; giữ gloss EN
 spillover spreading,độ lan tín hiệu (spillover spreading),chưa có term VN; giữ gloss EN. Giữ SSM nếu có
-papillary microcarcinoma,carcinôm nhú vi thể,user 2026-10-14
-papillary thyroid microcarcinoma,carcinôm nhú vi thể tuyến giáp,user 2026-10-14
+carcinoma in situ,carcinom tại chỗ,"user 2026-07-17 (bảng sửa: Carcinom tại chỗ); KHÔNG ""ung thư biểu mô tại chỗ"" / ""carcinôm tại chỗ"""
+low-grade squamous intraepithelial lesion,tổn thương trong biểu mô gai độ thấp (LSIL),"user 2026-10-14 22:20; KHÔNG ""tổn thương nội biểu mô vảy độ thấp"" / ""tổn thương trong biểu mô vảy độ thấp"""
+high-grade squamous intraepithelial lesion,tổn thương trong biểu mô gai độ cao (HSIL),"user 2026-10-14 22:20; KHÔNG ""tổn thương nội biểu mô vảy độ cao"" / ""tổn thương trong biểu mô vảy độ cao"""
+atypical squamous cells,tế bào gai không điển hình,"Bethesda ASC-US / ASC-H; user 2026-10-14 22:20 (squamous = gai); [S: BvNTP, BV ĐHYD]; KHÔNG ""tế bào vảy không điển hình"""
+lymph node,hạch lympho,"user 2026-07-17 (bảng sửa: Lymph node = hạch lympho); phiếu kết quả thường viết tắt ""hạch"" (di căn 2/15 hạch)"
+mitotic rate,tỷ lệ phân bào,"user 2026-07-17 (bảng sửa: tỉ lệ phân bào; ""tỷ"" theo quyết định 8)"
+histiocyte,mô bào,user 2026-07-17 (bảng sửa: histiocytes = mô bào); [S: mô bào 3 tài liệu]
+eosinophil,bạch cầu ái toan,user 2026-07-17 (bảng sửa: eosinophils = bạch cầu ái toan)
+suggestive of,gợi ý,"[S: ""gợi ý"" 25 tài liệu vs ""hướng đến"" 6, ""nghĩ đến"" 6]"
+papillary microcarcinoma,carcinom nhú vi thể,"user 2026-10-14 (22:39: carcinom không dấu mũ); KHÔNG ""carcinôm nhú vi thể"" / ""vi carcinôm nhú"" / ""vi carcinom nhú"""
+papillary thyroid microcarcinoma,carcinom nhú vi thể tuyến giáp,"user 2026-10-14 (22:39: carcinom); KHÔNG ""carcinôm nhú vi thể tuyến giáp"""
 macroscopic,đại thể,user 2026-10-14
 microscopic,vi thể,user 2026-10-14
 macroscopic appearance,hình ảnh đại thể,user 2026-10-14
@@ -661,8 +674,8 @@ pattern,kiểu,growth / staining pattern = kiểu; histologic patterns = hình t
 aggregate,kết tập,protein aggregate = kết tập protein
 aggregated,kết tập,
 autopsy,tử thiết,
-adenocarcinoma,ung thư biểu mô tuyến,
-chromophobe,kỵ màu,như chromophobe RCC
+adenocarcinoma,carcinom tuyến,"user 2026-07-17 (Carcinom tuyến) + 2026-10-14 22:20 / 22:39; [S: carcinôm tuyến 14 tài liệu vs ung thư biểu mô tuyến 6]; KHÔNG ""ung thư biểu mô tuyến"" / ""carcinôm tuyến"""
+chromophobe,kị sắc,"user 2026-07-17 (kị sắc, 2 dòng) + 2026-10-14 22:20; như chromophobe RCC; KHÔNG ""kỵ màu"" / ""kị màu"""
 nephroblastoma,u nguyên bào thận,
 epithelioid angiomyolipoma,u cơ mỡ mạch dạng biểu mô,giữ EAML
 acinar,túi tuyến,như acinar pattern = kiểu túi tuyến

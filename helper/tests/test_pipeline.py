@@ -454,3 +454,38 @@ def test_report_records_the_fast_draft_and_the_review_level(tmp_path):
     rep = run(make_pptx(tmp_path / "a.pptx"), tmp_path, options=Options(fast=True)).report
     assert rep["fast"] is True and rep["model"] == config.MODEL_FAST
     assert rep["review"]["level"] == "thorough" and "fast_draft" in rep["review"]["reasons"]
+
+
+LYM_SRC = "Many lymphocytes were seen in the biopsy of the tumor with necrosis."
+LYM_HOUSE = "Nhi\u1ec1u lymph\u00f4 b\u00e0o trong sinh thi\u1ebft u c\u00f3 ho\u1ea1i t\u1eed."
+
+
+def lym_docx(path):
+    d = docx.Document()
+    d.add_paragraph(LYM_SRC)
+    d.save(path)
+    return path
+
+
+def test_house_forms_of_the_selected_pack_are_no_strange_words(tmp_path):
+    # the pathology term-lock writes lymphocyte as "lymph\u00f4 b\u00e0o" (his form): the suspicious-word check must
+    # accept it, and still flag a strange word no active pack writes
+    answer = "Nhi\u1ec1u t\u1ebf b\u00e0o lympho trong sinh thi\u1ebft u c\u00f3 ho\u1ea1i t\u1eed, nghi carcin\u00f4m."
+    res = run(lym_docx(tmp_path / "l.docx"), tmp_path, llm=FakeLLM(fn=lambda s, u: answer), options=Options(polish=False))
+    rep = res.report
+    assert [p["id"] for p in rep["packs"]] == ["pathology"]
+    assert docx.Document(res.output).paragraphs[0].text == LYM_HOUSE[:-1] + ", nghi carcin\u00f4m."
+    flags = [f for r in rep["flagged"] for f in r["flags"]]
+    assert "term_fix:lymphocyte" in flags and "suspicious:carcin\u00f4m" in flags
+    assert not any(f.startswith("suspicious:lymph") for f in flags)
+
+
+def test_the_read_back_pass_may_write_a_house_form_of_the_selected_pack(tmp_path):
+    from vitranslate.polish import EDITOR_HEAD
+    draft = "Nhi\u1ec1u b\u1ea1ch c\u1ea7u lympho trong sinh thi\u1ebft u c\u00f3 ho\u1ea1i t\u1eed."
+
+    def fn(system, user):
+        return "[1] " + LYM_HOUSE if system.startswith(EDITOR_HEAD.split("(")[0]) else draft
+    res = run(lym_docx(tmp_path / "l.docx"), tmp_path, llm=FakeLLM(fn=fn), options=Options(polish=True))
+    assert res.report["polish"]["changed"] == 1 and res.report["polish"]["rejected"] == {}
+    assert docx.Document(res.output).paragraphs[0].text == LYM_HOUSE

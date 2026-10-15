@@ -3,7 +3,8 @@
 // quota / budget errors, session renewal and abort. A scripted fake fetch: no network.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { createCloud, cloudJob, CloudError, API_BASE, BATCH_SIZE, BACKOFF_MS, CONCURRENCY } from "../cloud.js";
+import { createCloud, cloudJob, CloudError, API_BASE, BATCH_SIZE, BACKOFF_MS, CONCURRENCY, createSessionStore,
+  SESSION_KEY } from "../cloud.js";
 
 // answers: path -> function(body, call#) -> { status, body } | Error (thrown by fetch)
 function fakeApi(answers) {
@@ -86,6 +87,10 @@ test("classify gets the whole document text once (whole-document glossary hits, 
   // the user's pack choice (translateFile's comma-separated domain) goes along as ids
   await cloudJob(cloud, { jobId: "job-2" }).prepare("text", { domain: "pathology, pathology-breast" });
   assert.deepEqual(api.calls.filter((c) => c.path === "classify")[1].body.domain, ["pathology", "pathology-breast"]);
+  assert.equal("profile" in sent[0].body, false, "files send no profile");
+  // the image tool: profile photo (packs named in a short text)
+  await cloudJob(cloud, { jobId: "job-3" }).prepare("text", { domain: "", profile: "photo" });
+  assert.equal(api.calls.filter((c) => c.path === "classify")[2].body.profile, "photo");
 });
 
 test("every translate batch of the document carries the classify setup as given: setup_id + setup {packs, hits}", async () => {
@@ -354,4 +359,129 @@ test("an answer that misses a segment or has no results is a bad response (retri
   await cloud.openSession("t");
   await assert.rejects(cloudJob(cloud, { jobId: "j" }).translateSegments(segs(2)), (e) => e.code === "bad_response");
   assert.equal(api.calls.filter((c) => c.path === "translate").length, 3);
+});
+
+// ---- term review after a job (spec Amendment G): /api/v1/terms and /api/v1/feedback ----
+
+const ITEMS = [{ id: 0, src: "The biopsy showed a tumour.", vi: "Sinh thiết cho thấy khối u." }];
+const TERMS = { terms: [{ en: "biopsy", vi: "sinh thiết", count: 1, ids: [0] }] };
+const PAIRS = [{ en: "biopsy", vi_used: "sinh thiết", vi_user: "sinh thiết kim", pack: "pathology", kind: "new" }];
+
+test("terms: POST /api/v1/terms with the job's id, its classify setup and the items; the answer comes back", async () => {
+  const api = fakeApi({ session: SESSION, classify: () => ({ body: { classify: EVENT, setup: SETUP, setup_id: "s-1" } }),
+    terms: () => ({ body: TERMS }) });
+  const cloud = createCloud({ fetch: api.fetch });
+  await cloud.openSession("t");
+  const job = cloudJob(cloud, { jobId: "job-7" });
+  await job.prepare("biopsy text", {});
+  assert.deepEqual(await job.terms(ITEMS), TERMS);
+  const sent = api.calls.filter((c) => c.path === "terms");
+  assert.equal(sent.length, 1);
+  assert.equal(sent[0].method, "POST");
+  assert.deepEqual(sent[0].body, { session: "tok-1", job_id: "job-7", setup_id: "s-1", setup: SETUP, items: ITEMS });
+  // an answer without a terms list is not an answer
+  const bad = fakeApi({ session: SESSION, terms: () => ({ body: { ok: true } }) });
+  const c2 = createCloud({ fetch: bad.fetch, sleep: async () => {} });
+  await c2.openSession("t");
+  await assert.rejects(cloudJob(c2, { jobId: "j" }).terms(ITEMS), (e) => e instanceof CloudError && e.code === "bad_response");
+});
+
+test("terms: an expired session is renewed once; quota / budget stop at once; a model error is tried 3 times", async () => {
+  let first = true;
+  const api = fakeApi({ session: (body, k) => ({ body: { session: "tok-" + k, expires_s: 3600, quota: {} } }),
+    terms: () => {
+      if (first) { first = false; return { status: 401, body: { code: "session_expired" } }; }
+      return { body: TERMS };
+    } });
+  const cloud = createCloud({ fetch: api.fetch, sleep: async () => {} });
+  await cloud.openSession("t1");
+  let renewed = 0;
+  const job = cloudJob(cloud, { jobId: "j", renew: async () => { renewed += 1; await cloud.openSession("t2"); } });
+  assert.deepEqual(await job.terms(ITEMS), TERMS);
+  assert.equal(renewed, 1);
+  assert.deepEqual(api.calls.filter((c) => c.path === "terms").map((c) => c.body.session), ["tok-1", "tok-2"]);
+  for (const [status, code, calls] of [[429, "quota_exceeded", 1], [429, "budget_exhausted", 1], [502, "model_error", 3]]) {
+    const failing = fakeApi({ session: SESSION, terms: () => ({ status, body: { code } }) });
+    const c = createCloud({ fetch: failing.fetch, sleep: async () => {} });
+    await c.openSession("t");
+    await assert.rejects(cloudJob(c, { jobId: "j" }).terms(ITEMS), (e) => e.code === code && e.status === status);
+    assert.equal(failing.calls.filter((x) => x.path === "terms").length, calls, code);
+  }
+});
+
+test("feedback: POST /api/v1/feedback {session, items} and nothing else; 401 renews once; 429 is reported", async () => {
+  let first = true;
+  const api = fakeApi({ session: (body, k) => ({ body: { session: "tok-" + k, expires_s: 3600, quota: {} } }),
+    feedback: () => {
+      if (first) { first = false; return { status: 401, body: { code: "session_expired" } }; }
+      return { body: { ok: true } };
+    } });
+  const cloud = createCloud({ fetch: api.fetch, sleep: async () => {} });
+  await cloud.openSession("t1");
+  const job = cloudJob(cloud, { jobId: "job-3", renew: async () => { await cloud.openSession("t2"); } });
+  assert.deepEqual(await job.feedback(PAIRS), { ok: true });
+  const sent = api.calls.filter((c) => c.path === "feedback");
+  assert.deepEqual(sent.map((c) => c.body), [{ session: "tok-1", items: PAIRS }, { session: "tok-2", items: PAIRS }]);
+  const limited = fakeApi({ session: SESSION, feedback: () => ({ status: 429, body: { code: "quota_exceeded" } }) });
+  const c2 = createCloud({ fetch: limited.fetch, sleep: async () => { throw new Error("no backoff expected"); } });
+  await c2.openSession("t");
+  await assert.rejects(cloudJob(c2, { jobId: "j" }).feedback(PAIRS), (e) => e.code === "quota_exceeded");
+  assert.equal(limited.calls.filter((c) => c.path === "feedback").length, 1);
+});
+
+// ---- one session for the whole page (his report 2026-10-15: Turnstile asked again and again): every tool's client
+// shares one store, kept in localStorage (one key) so a reload reuses it; storage that throws -> memory only
+
+function fakeStorage() {
+  const m = new Map();
+  return { m, getItem: (k) => (m.has(k) ? m.get(k) : null), setItem: (k, v) => { m.set(k, String(v)); },
+    removeItem: (k) => { m.delete(k); } };
+}
+
+const LONG = () => ({ body: { session: "tok-1", expires_s: 43200, quota: { segments_left_today: 500 } } });
+
+test("shared session: two clients on one store share it; a reload (new store, new client) reads it back", async () => {
+  const c = clock();
+  const storage = fakeStorage();
+  const store = createSessionStore({ storage });
+  const a = createCloud({ fetch: fakeApi({ session: LONG }).fetch, now: c.now, store });
+  const b = createCloud({ fetch: fakeApi({}).fetch, now: c.now, store });
+  assert.equal(b.hasSession(), false);
+  await a.openSession("t");
+  assert.equal(b.hasSession(), true, "a session opened by one tool serves the others");
+  assert.equal(b.session.token, "tok-1");
+  assert.deepEqual(JSON.parse(storage.m.get(SESSION_KEY)).token, "tok-1");
+  assert.equal(SESSION_KEY, "vitranslate-session-v1");
+  c.t += 11 * 3600 * 1000;  // a reload hours later: a new store and a new client over the same storage
+  const reloaded = createCloud({ fetch: fakeApi({}).fetch, now: c.now, store: createSessionStore({ storage }) });
+  assert.equal(reloaded.hasSession(), true);
+  assert.equal(reloaded.session.token, "tok-1");
+  assert.deepEqual(reloaded.session.quota, { segments_left_today: 500 });
+  b.dropSession();
+  assert.equal(a.hasSession(), false, "dropped for every tool");
+  assert.equal(storage.m.has(SESSION_KEY), false);
+});
+
+test("shared session: an expired or broken stored session is ignored; a storage that throws falls back to memory", async () => {
+  const c = clock();
+  const storage = fakeStorage();
+  storage.setItem(SESSION_KEY, JSON.stringify({ token: "old", expiresAt: c.t - 1, quota: null }));
+  const cl = createCloud({ fetch: fakeApi({}).fetch, now: c.now, store: createSessionStore({ storage }) });
+  assert.equal(cl.hasSession(), false);
+  storage.setItem(SESSION_KEY, "{not json");
+  assert.equal(cl.hasSession(), false);
+  assert.equal(cl.session, null);
+  const throwing = { getItem() { throw new Error("blocked"); }, setItem() { throw new Error("blocked"); },
+    removeItem() { throw new Error("blocked"); } };
+  const store = createSessionStore({ storage: throwing });
+  const a = createCloud({ fetch: fakeApi({ session: LONG }).fetch, now: c.now, store });
+  const b = createCloud({ fetch: fakeApi({}).fetch, now: c.now, store });
+  await a.openSession("t");
+  assert.equal(b.hasSession(), true, "kept in memory, still shared on the page");
+  b.dropSession();
+  assert.equal(a.hasSession(), false);
+  const none = createSessionStore({ storage: null });
+  const d = createCloud({ fetch: fakeApi({ session: LONG }).fetch, now: c.now, store: none });
+  await d.openSession("t");
+  assert.equal(d.hasSession(), true);
 });

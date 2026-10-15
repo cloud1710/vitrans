@@ -1,6 +1,9 @@
 // Test doubles for the Pages Functions (functions/): an in-memory KV namespace, a scripted Workers AI binding, a
-// Turnstile siteverify fake, a request-context builder and a synthetic pack bundle (raw pack files, the shape
-// tools/bundle_packs.py writes). Synthetic text only; no network.
+// Turnstile siteverify fake, a request-context builder, a synthetic pack bundle (raw pack files, the shape
+// tools/bundle_packs.py writes) and an in-memory D1 database with the repo's migrations. Synthetic text only; no
+// network.
+import { DatabaseSync } from "node:sqlite";
+import { readdirSync, readFileSync } from "node:fs";
 
 export const TEST_TURNSTILE_SECRET = "1x0000000000000000000000000000000AA";
 export const TEST_SESSION_SECRET = "test-session-secret-0123456789abcdef0123456789";
@@ -166,5 +169,156 @@ export async function withConsoleSpy(fn) {
     return [await fn(), lines];
   } finally {
     Object.assign(console, saved);
+  }
+}
+
+// ---------------------------------------------------------------- Cloudflare Access
+
+const enc = new TextEncoder();
+export const b64url = (bytes) => Buffer.from(bytes).toString("base64url");
+export const ACCESS_AUD = "4714c1358e65fe4b408ad6d432a5f878f08194bdb4752441fd56faefa9b2b6f2";
+export const ADMIN_EMAIL = "reviewer@example.org";
+
+export function rsaKey() {
+  return crypto.subtle.generateKey({ name: "RSASSA-PKCS1-v1_5", modulusLength: 2048,
+    publicExponent: new Uint8Array([1, 0, 1]), hash: "SHA-256" }, true, ["sign", "verify"]);
+}
+
+/** The public key as Access serves it in its certs: {kid, kty, alg, use, e, n}. */
+export async function publicJwk(pair, kid) {
+  const jwk = await crypto.subtle.exportKey("jwk", pair.publicKey);
+  return { kid, kty: jwk.kty, alg: "RS256", use: "sig", e: jwk.e, n: jwk.n };
+}
+
+export async function signJwt(privateKey, header, claims) {
+  const head = b64url(enc.encode(JSON.stringify(header)));
+  const body = b64url(enc.encode(JSON.stringify(claims)));
+  const sig = new Uint8Array(await crypto.subtle.sign("RSASSA-PKCS1-v1_5", privateKey, enc.encode(head + "." + body)));
+  return head + "." + body + "." + b64url(sig);
+}
+
+let accessTeams = 0;
+
+/** A Cloudflare Access team of its own (the certs cache is per isolate and per team): its signing key, its certs
+ * endpoint as a fetch double (records the URLs; certsDown: every fetch fails) and token(claims over, {privateKey,
+ * kid, alg}) -> a JWT as Access writes it into Cf-Access-Jwt-Assertion, valid for an hour after nowMs. */
+export async function accessTeam({ certsDown = false, nowMs = Date.UTC(2026, 9, 14, 12, 0, 0) } = {}) {
+  accessTeams += 1;
+  const team = "vt-test-" + accessTeams;
+  const origin = "https://" + team + ".cloudflareaccess.com";
+  const key = await rsaKey();
+  const certs = { keys: [await publicJwk(key, "k1")] };
+  const fetches = [];
+  const fetch = async (url) => {
+    fetches.push(String(url));
+    if (certsDown) throw new TypeError("fetch failed");
+    if (String(url) !== origin + "/cdn-cgi/access/certs") return new Response("not found", { status: 404 });
+    return new Response(JSON.stringify({ keys: certs.keys, public_cert: { kid: "k1", cert: "PEM" },
+      public_certs: [{ kid: "k1", cert: "PEM" }] }), { status: 200, headers: { "content-type": "application/json" } });
+  };
+  const t = Math.floor(nowMs / 1000);
+  const claims = (over = {}) => ({ aud: [ACCESS_AUD], email: ADMIN_EMAIL, exp: t + 3600, iat: t - 10, nbf: t - 10,
+    iss: origin, type: "app", identity_nonce: "nonce", sub: "0b5a2c1e-user", country: "VN", ...over });
+  const token = (over = {}, { privateKey = key.privateKey, kid = "k1", alg = "RS256" } = {}) =>
+    signJwt(privateKey, { alg, kid, typ: "JWT" }, claims(over));
+  return { team, origin, key, certs, fetch, fetches, token };
+}
+
+// ---------------------------------------------------------------- D1
+
+const MIGRATIONS = new URL("../../migrations/", import.meta.url);
+
+function sqlValue(v) {
+  if (v === undefined) throw new TypeError("D1_TYPE_ERROR: Type 'undefined' not supported for value 'undefined'");
+  return typeof v === "boolean" ? (v ? 1 : 0) : v;
+}
+
+const READS = /^\s*(select|with|pragma)\b/i;
+
+class FakeStatement {
+  constructor(d1, sql, params = []) {
+    this.d1 = d1;
+    this.sql = sql;
+    this.params = params;
+  }
+
+  bind(...values) {
+    return new FakeStatement(this.d1, this.sql, values.map(sqlValue));
+  }
+
+  exec() {
+    this.d1.statements.push({ sql: this.sql, params: this.params });
+    if (this.d1.failWrites && !READS.test(this.sql)) throw new Error("D1_ERROR: database is overloaded");
+    const st = this.d1.db.prepare(this.sql);
+    if (READS.test(this.sql)) {
+      const results = st.all(...this.params).map((r) => ({ ...r }));
+      return { success: true, results, meta: { changes: 0, rows_read: results.length } };
+    }
+    const r = st.run(...this.params);
+    return { success: true, results: [], meta: { changes: Number(r.changes), last_row_id: Number(r.lastInsertRowid) } };
+  }
+
+  async run() {
+    return this.exec();
+  }
+
+  async all() {
+    return this.exec();
+  }
+
+  async first(column) {
+    const row = this.exec().results[0];
+    if (!row) return null;
+    return column === undefined ? row : row[column];
+  }
+
+  async raw() {
+    return this.exec().results.map((r) => Object.values(r));
+  }
+}
+
+/** An in-memory D1 database (the binding's prepare / bind / first / all / run / raw, batch in one transaction, exec)
+ * over Node's built-in SQLite, with migrations/*.sql applied in name order; records every statement it runs. */
+export class FakeD1 {
+  constructor({ migrate = true } = {}) {
+    this.db = new DatabaseSync(":memory:");
+    this.statements = [];
+    this.failWrites = false;
+    if (migrate) {
+      for (const name of readdirSync(MIGRATIONS).filter((n) => n.endsWith(".sql")).sort()) {
+        this.db.exec(readFileSync(new URL(name, MIGRATIONS), "utf8"));
+      }
+    }
+  }
+
+  prepare(sql) {
+    return new FakeStatement(this, sql);
+  }
+
+  async batch(statements) {
+    this.db.exec("BEGIN");
+    try {
+      const out = statements.map((s) => s.exec());
+      this.db.exec("COMMIT");
+      return out;
+    } catch (err) {
+      this.db.exec("ROLLBACK");
+      throw err;
+    }
+  }
+
+  async exec(sql) {
+    this.db.exec(sql);
+    return { count: 1, duration: 0 };
+  }
+
+  /** {table: rows} of every table: what the database holds. */
+  dump() {
+    const out = {};
+    for (const { name } of this.db.prepare("SELECT name FROM sqlite_master WHERE type = 'table' AND name NOT LIKE " +
+      "'sqlite_%' ORDER BY name").all()) {
+      out[name] = this.db.prepare("SELECT * FROM \"" + name + "\"").all().map((r) => ({ ...r }));
+    }
+    return out;
   }
 }

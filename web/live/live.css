@@ -1,0 +1,54 @@
+/* The live captions tool ("Dịch đuổi" tab of the shell) and its floating window (Document Picture-in-Picture,
+   body.pip, which loads this file alone): the subtitle stage is dark in both themes, Vietnamese large, English small
+   and only when bilingual (also in the transcript list), the sentence being spoken faded. The stage rules are unscoped (the floating window has no view). */
+#view-live .small { font-size: .9rem; }
+#view-live .actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 0; }
+#view-live .pick { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 6px; }
+#view-live .pick select { padding: 6px 8px; max-width: 100%; }
+#view-live .status { margin: 12px 0 0; font-weight: 700; }
+#view-live .status.bad { color: var(--err); }
+
+.stage { --sub-size: 1.9rem; background: #0b0e12; color: #f4f7fa; border-radius: var(--radius, 14px); padding: 12px 18px 22px;
+  min-height: 46vh; display: flex; flex-direction: column; overflow: hidden; }
+.stage-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: flex-end; }
+.stage-tools button { background: #1c232b; color: #e6edf3; border: 1px solid #2f3a45; border-radius: 8px; padding: 6px 12px;
+  min-height: 34px; font-size: .9rem; cursor: pointer; }
+.stage .toggle { color: #c9d3dd; font-size: .9rem; margin-right: auto; }
+.lines { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: .55em; padding-top: 12px;
+  font-size: var(--sub-size); }
+.stage-empty { color: #5f6b77; font-size: 1rem; margin: auto 0; text-align: center; }
+.line { margin: 0; transition: opacity .3s ease; }
+.line .vi { display: block; font-weight: 700; line-height: 1.32; }
+.line .en { display: block; font-size: .5em; line-height: 1.35; color: #9aa7b4; margin-top: .15em; }
+.en .fixed { text-decoration: underline; text-decoration-thickness: 1px; text-decoration-color: rgba(154, 167, 180, .55);
+  text-underline-offset: .18em; }
+.line.prev { opacity: .62; }
+.line.waiting .vi { color: #7f8b97; font-weight: 400; }
+.line.flagged .vi::after { content: " \2022"; color: #f5c27a; }
+.line.new { animation: rise .28s ease-out; }
+.draft { margin: 0; font-size: .62em; color: rgba(244, 247, 250, .42); font-style: italic; line-height: 1.35; }
+.stage.no-en .line .en { display: none; }
+@keyframes rise { from { transform: translateY(.5em); opacity: 0; } to { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .line.new { animation: none; } .line { transition: none; } }
+
+.stage:fullscreen { border-radius: 0; min-height: 100vh; padding: 3vh 5vw 6vh; }
+.stage.focus { position: fixed; inset: 0; z-index: 50; border-radius: 0; min-height: 0;
+  padding: calc(env(safe-area-inset-top, 0px) + 10px) calc(env(safe-area-inset-right, 0px) + 18px)
+           calc(env(safe-area-inset-bottom, 0px) + 22px) calc(env(safe-area-inset-left, 0px) + 18px); }
+
+#view-live .transcript { margin: 12px 0 0; padding: 0; list-style: none; max-height: 60vh; overflow-y: auto; }
+#view-live .transcript li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+#view-live .transcript .t { color: var(--muted); font-size: .8rem; margin-right: 8px; font-variant-numeric: tabular-nums; }
+#view-live .transcript .vi { font-weight: 700; }
+#view-live .transcript .en { display: block; color: var(--muted); font-size: .9rem; }
+#view-live .transcript.no-en .en { display: none; }
+#view-live .transcript .mark { color: var(--warn); font-size: .8rem; margin-left: 6px; }
+
+body.pip { margin: 0; background: #0b0e12; font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; }
+body.pip .stage { min-height: 100vh; border-radius: 0; padding: 8px 14px 12px; }
+body.pip .lines { padding-top: 0; }
+
+@media (max-width: 520px) {
+  .stage { --sub-size: 1.45rem; min-height: 52vh; padding: 10px 12px 18px; }
+  .stage-tools button { padding: 6px 9px; }
+}

@@ -29,23 +29,57 @@ Web page: <https://vitrans.pages.dev>.
 - **Cloud mode (works now):** the same pipeline ported to JavaScript (web/engine, parity-tested against the helper)
   runs as the translation API on Cloudflare; the browser handles the OOXML. Acceptance on a 239-segment lecture deck:
   tag-exact 0.996, no silent English, the output opens in PowerPoint.
-- **Not yet:** PDF input, installer (run from source for now), measured text fit, learner / term sync. The in-browser
-  model engine (LiteRT-LM, Gemma 4 E2B / E4B in WebGPU) is paused; the measurement lab stays at `/lab/`.
+- **Windows installer (local mode):** per-user `ViTranslate-Setup.exe`, see [Install on Windows](#install-on-windows)
+  and [installer/README.md](installer/README.md).
+- **macOS installer (local mode, Apple silicon):** unsigned `ViTranslate-macOS.dmg` built by GitHub Actions, see
+  [Install on macOS](#install-on-macos).
+- **Not yet:** PDF input, measured text fit, learner / term sync. The in-browser model engine (LiteRT-LM, Gemma 4
+  E2B / E4B in WebGPU) is paused; the measurement lab stays at `/lab/`.
 
 ## Phones and tablets
 
 The cloud mode works in the browser of any phone or tablet: the file is read and written on the device and only the
-text goes to the API, so there is no model download. The local mode needs the helper on a Windows PC.
+text goes to the API, so there is no model download. The local mode needs the helper on a Windows PC or an
+Apple-silicon Mac.
 
 ## Privacy
 
 - **Cloud mode:** only the text of the document (segment by segment, no images, no file) is sent to the translation
   API on Cloudflare. Nothing is stored except counters (requests per day / month, no text); the text is not logged.
-  Cloudflare's Workers AI terms: customer content is not used to train models. Do not send documents with
-  patient-identifying data in this mode.
+  Only if the user chooses to send them after the term review, term pairs (English term, Vietnamese, pack) are kept
+  for the author -- never a sentence, the document's text or its name. Cloudflare's Workers AI terms: customer content
+  is not used to train models. Do not send documents with patient-identifying data in this mode.
 - **Local mode:** everything runs on your machine; the page and the helper never send document content anywhere. The
   only network requests the helper may make are plain downloads of glossary pack files from a pack registry (none is
-  configured by default).
+  configured by default) and, in the installed helper's first-run setup, the download of Ollama (official GitHub
+  release, pinned version and SHA-256; only when no Ollama is running) and of the recommended model through Ollama.
+
+## Install on Windows
+
+Download `ViTranslate-Setup.exe` (and its SHA-256 in `SHA256SUMS.txt`) from the
+[latest release](https://github.com/cloud1710/vitrans/releases/latest) and run it: per-user, no administrator
+rights. The installer is not code-signed, so Windows SmartScreen may warn:
+"Windows protected your PC" -> click "More info" -> "Run anyway".
+
+On its first start the helper reuses an Ollama already running on this PC, or downloads its own copy (~1.5 GB) into
+`%LOCALAPPDATA%\ViTranslate`, then the model for this device (~5-7 GB); progress shows on the page. Uninstalling
+(Settings > Apps) removes the app and `%LOCALAPPDATA%\ViTranslate`, models included; an Ollama you installed yourself
+is not touched. Details, build and release steps: [installer/README.md](installer/README.md).
+
+## Install on macOS
+
+Apple-silicon Macs (M1 or later, macOS 14+): download `ViTranslate-macOS.dmg` (SHA-256 in `SHA256SUMS-macOS.txt`)
+from the [latest release](https://github.com/cloud1710/vitrans/releases/latest), drag ViTranslate.app into
+Applications and open it. The app is not signed or notarized by Apple, so the first open is blocked: System
+Settings -> Privacy & Security -> "Open Anyway" (enter your password, then "Open Anyway" again). Then it works like
+the Windows helper: it reuses a running Ollama (Ollama.app, port 11434) or downloads its own copy (~160 MB) into
+`~/Library/Application Support/ViTranslate`, then the model for this Mac (16 GB or more: Gemma 4 E4B on the GPU;
+8 GB: Gemma 4 E2B). No Dock icon; logs in `~/Library/Logs/ViTranslate`. Uninstall: "Uninstall ViTranslate.command"
+in the disk image, or see [installer/README.md](installer/README.md#macos).
+
+Máy Mac chip Apple (M1 trở lên, macOS 14+): tải `ViTranslate-macOS.dmg`, kéo ViTranslate.app vào Applications rồi
+mở. Ứng dụng chưa ký số với Apple nên lần đầu bị chặn: System Settings (Cài đặt hệ thống) -> Privacy & Security
+(Quyền riêng tư & Bảo mật) -> "Open Anyway" (Vẫn mở), nhập mật khẩu, bấm "Open Anyway" lần nữa.
 
 ## Run from source
 
@@ -97,11 +131,14 @@ sends segments; files and images never reach it (only `application/json` bodies 
   transient errors.
 - Errors are JSON `{code, message}`: 400 `bad_request`, 401 `session_expired`, 403 `bad_turnstile` / `bad_origin`, 405,
   409 `packs_changed`, 413 `too_large`, 415 `unsupported_media_type`, 429 `quota_exceeded` / `budget_exhausted`,
-  502 `model_error`, 503 `turnstile_unavailable`, 500 `server_misconfigured` / `server_error`. Same origin only: no
-  CORS headers (a server-side caller such as the helper sends no `Origin`).
+  502 `model_error`, 503 `turnstile_unavailable`, 500 `server_misconfigured` / `server_error` (the admin API also: 403
+  `forbidden`, 404 `not_found`, 503 `admin_not_configured` / `access_unavailable`). Same origin only: no CORS headers
+  (a server-side caller such as the helper sends no `Origin`).
+- Term review and feedback to the author (`/api/v1/terms`, `/api/v1/feedback`, the review page): see the next section.
 
 Privacy of the cloud mode: nothing is stored but counters (KV namespace `COUNTERS`: numbers per day and month, keyed
-by a random session id or a keyed hash of the client IP -- never the IP, never text). Request bodies, segments and
+by a random session id or a keyed hash of the client IP -- never the IP, never text) and the term pairs a user chooses
+to send (D1, next section). Request bodies, segments and
 model answers are never logged (errors are logged by code only) and every answer is `Cache-Control: no-store`.
 Cloudflare does not use Workers AI inputs or outputs to train models or improve services and stores them only when a
 storage product is used with it ([data usage](https://developers.cloudflare.com/workers-ai/platform/data-usage/)).
@@ -125,9 +162,10 @@ non-draft packs as the registry ships them); a `.dev.vars` file (git-ignored) wi
 random characters>` and `ALLOW_TEST_TURNSTILE=1`; then `npx wrangler@4.150.0 pages dev` at the repo root. The AI
 binding always uses the account's real Workers AI (billed).
 
-Tests: `node --test "tests/functions/*.test.mjs"` (no network: fake KV, AI binding and siteverify, the real core);
-`cd helper && "$PY" -m pytest -q tests/test_bundle_packs.py`; `"$PY" tests/functions/export_helper_parity.py`
-re-exports the parity fixture from the helper.
+Tests: `node --test "tests/functions/*.test.mjs"` (no network: fake KV, AI binding and siteverify, an in-memory D1 over
+Node's built-in SQLite with `migrations/` applied, Access certs made in the test, the real core);
+`cd helper && "$PY" -m pytest -q tests/test_bundle_packs.py`; `"$PY" -m pytest -q tests/tools`;
+`"$PY" tests/functions/export_helper_parity.py` re-exports the parity fixture from the helper.
 
 Deploy (a preview branch; production is the account owner's step):
 
@@ -145,6 +183,52 @@ run one after another), about 12 neurons per segment (about 1,300 prompt and 20 
 the prompt tokens served from the prefix cache (no discount on Gemma 4 26B's price list: it saves time, not money);
 CPU per request: classify 28 ms warm (750 ms for the first request of an isolate, which compiles the regexes),
 translate 6 ms for 1 segment to 143 ms for 20 (first batch of an isolate).
+
+## Term review and feedback (spec Amendment G)
+
+After a job the page can list the document's new terms with the Vietnamese the translation used, let the user correct
+them in the file, and send the term pairs to the author:
+
+| Endpoint | Body | Answer |
+|---|---|---|
+| `POST /api/v1/terms` | `{session, job_id, setup, setup_id?, items: [{id, src, vi}]}`: the segments' English plain text and their translation, at most 200 items / 60,000 characters | `{terms: [{en, vi, count, ids}], usage}` |
+| `POST /api/v1/feedback` | `{session, items: [{en, vi_used, vi_user, pack, kind: "new" or "fixed"}]}`, at most 50 | `{ok: true, stored}` |
+| `GET /admin/api/feedback?status=` | `new`, `approved`, `rejected` or `all` (default) | `{rows: [{key, en, vi_used, vi_user, pack, kind, count, first_day, last_day, status}]}` |
+| `POST /admin/api/decide` | `{key, decision: "approved" or "rejected"}` | `{ok, key, status}` |
+
+- `/terms`: one call of the translation model per 20,000 characters (thinking off, strict JSON; an answer in a code
+  fence or after a preface is repaired, anything else is 502 `model_error`). A term is kept when its English is in a
+  segment (the core's glossary matcher: plurals, US / UK spellings), its Vietnamese is in the same segment's
+  translation and it is not a glossary key of the job's packs (`setup`; the glossary hits are named in the prompt as
+  known); `ids` = the segments that hold the pair, `count` = occurrences of the English term in them. Counted like
+  `/translate` (profile `file`): the neurons on the day's budget, one segment per started 2,000 characters of src + vi
+  on the session and IP quotas (`TERMS_CHARS_PER_UNIT`). Measured locally (3 synthetic segments): one call, about
+  300 prompt and 110 answer tokens, 4-6 neurons, 3 s.
+- `/feedback`: term pairs only -- `en` at most 80 and each Vietnamese at most 120 characters (a sentence is refused),
+  `pack` = a pack id of the deployment, no other field (no sentence, no document text, no file name). Stored in the D1
+  database `vitrans-feedback` (binding `FEEDBACK`, schema `migrations/`): one row per (en, vi_user, pack, kind)
+  ignoring case and spacing, with count, first / last UTC day and the review status (`new`, `approved`, `rejected`).
+  At most 500 rows per client IP per UTC day (`FEEDBACK_ROWS_PER_DAY`), counted under the session's keyed IP hash --
+  never the IP; counts older than yesterday are removed. Beyond it: 429 `quota_exceeded`.
+- Review page `/admin/` (`web/admin/`): the rows of a status, most frequent first, "Duyệt" / "Bỏ". The page and its
+  API (`/admin/api/*`) sit behind a Cloudflare Access application (his e-mail only), and the Functions check the
+  Access login again: the `Cf-Access-Jwt-Assertion` JWT must be RS256, signed by a key of
+  `https://<team>.cloudflareaccess.com/cdn-cgi/access/certs` (cached per isolate, fetched again for a new key id),
+  with that issuer, `ACCESS_AUD` in its audience, a valid time and an e-mail of `ADMIN_EMAILS`. Without `ACCESS_AUD`,
+  `ACCESS_TEAM` and `ADMIN_EMAILS` the admin API is closed (503 `admin_not_configured`); a refused login is 403
+  `forbidden` with a short reason (for example: the e-mail of this Access login is not on the admin list).
+- Approved rows: `"$PY" tools/pull_feedback.py` (a wrangler login with D1 access) writes
+  `out/feedback/approved-<UTC date>.json`; they reach a pack only through the normal pack work (evidence note "user
+  feedback, n users", tests, `tools/check_packs.py`, eval) and a deploy.
+
+Setup: the database was made with `npx wrangler@4.150.0 d1 create vitrans-feedback`; the schema goes in with
+`npx wrangler@4.150.0 d1 migrations apply vitrans-feedback --remote` (`--local --persist-to <dir>` for `wrangler pages
+dev`). Cloudflare Access: Zero Trust -> Access controls -> Applications -> a self-hosted application for
+`vitrans.pages.dev` with the path `admin` (it covers `/admin/*`, the API included), policy Allow -> Include -> Emails
+-> the author's e-mail; the AUD tag is under the application's Configure -> Additional settings ("Application Audience
+(AUD) Tag"), the team domain under Zero Trust -> Settings. Then the secrets per environment (`npx wrangler pages
+secret put <NAME> --project-name vitrans [--env preview]`): `ACCESS_AUD`, `ACCESS_TEAM` (`<team>.cloudflareaccess.com`)
+and `ADMIN_EMAILS` (comma-separated). Preview deployments are not behind Access: their admin API answers 403.
 
 ## Tests and acceptance tools
 

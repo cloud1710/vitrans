@@ -48,6 +48,12 @@ Ngày khai thác: 2026-10-14, cùng phiên và cùng kho với `molecular` (cha)
 9. **driver mutation**: giữ "đột biến điều khiển (driver mutation)" của pathology hay đổi sang "đột biến dẫn đường"?
 10. **targeted therapy** (pathology / medicine-oncology): "liệu pháp nhắm trúng đích" hay "điều trị (nhắm trúng) đích" như kho đếm được?
 
+### Đã chốt 2026-10-15 18:48 (bản 0.1.2)
+
+- fusion gene = **"tổ hợp gen"**: anh xác nhận (lựa chọn 1), cùng giá trị với `pathology-hemato`; gene fusion = "dung
+  hợp gen", fusion = "dung hợp", ALK fusion = "dung hợp gen ALK" không đổi. prompt.md: câu cũ "fusion gene = gen dung
+  hợp" sửa thành "tổ hợp gen". Thêm 1 test (must "tổ hợp gen" và "dung hợp gen", must_not "gen dung hợp").
+
 ## 4. Kiểm tra
 
 - `check_packs`: 0 lỗi. `build_registry --include-drafts`: 185 profile terms, không cảnh báo.

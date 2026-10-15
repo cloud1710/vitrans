@@ -215,6 +215,28 @@ def test_guard_reapplies_the_term_lock():
     assert guard_line(guard_seg(), DRAFT, edit, [], fixes) == (EDIT, None, ["tumor"])
 
 
+def one_run_seg(text):
+    from lxml import etree
+    from vitranslate.ooxml.codec import encode
+    return encode(etree.fromstring('<a:p %s><a:r><a:rPr lang="en-US"/><a:t>%s</a:t></a:r></a:p>' % (A_NS, text)))
+
+
+def test_guard_reapplies_the_title_order():
+    seg = one_run_seg("Slides reviewed by Jane Doe, MD, PhD, in 2024.")
+    draft = "Ti\u00eau b\u1ea3n do TS. BS. Jane Doe xem l\u1ea1i n\u0103m 2024."
+    edit = "C\u00e1c ti\u00eau b\u1ea3n do BS. TS. Jane Doe xem l\u1ea1i n\u0103m 2024."
+    assert guard_line(seg, draft, edit, [], []) == (edit.replace("BS. TS.", "TS. BS."), None, ["title-order"])
+    assert guard_line(seg, draft, draft.replace("TS. BS.", "BS TS"), [], []) == (draft, None, [])
+
+
+def test_guard_accepts_the_house_forms_of_the_active_packs():
+    seg = one_run_seg("Many lymphocytes in the node.")
+    draft = "Nhi\u1ec1u t\u1ebf b\u00e0o lympho trong h\u1ea1ch."
+    edit = "Nhi\u1ec1u lymph\u00f4 b\u00e0o trong h\u1ea1ch."
+    assert guard_line(seg, draft, edit, [], []) == (draft, "suspicious", [])
+    assert guard_line(seg, draft, edit, [], [], allowed=frozenset({"lymph\u00f4"})) == (edit, None, [])
+
+
 def editor(replies=None, fn=None, tm=None, fixes=(), hits=()):
     from vitranslate.llm import FakeLLM
     from vitranslate.polish import Polisher

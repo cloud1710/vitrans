@@ -5,6 +5,7 @@ import { A, P, W } from "./ns.js";
 import { iterElements, findChild, getAttr, textOf, is, parentElement } from "./lx.js";
 import { keepParagraph, location, paragraphKind, partLabels, selectParts, findPath } from "./parts.js";
 import { PY_WS, pySplit, pyStrip, pyRstrip, pyLower, pyInt, hasAlpha, hasNonSpace, nonLatin } from "../py.js";
+import { compile } from "../pyre.js";
 
 export const STOP_HEADINGS = new Set(["references", "reference", "reference list", "key references",
   "selected references", "bibliography", "literature cited", "works cited", "further reading", "suggested reading",
@@ -33,6 +34,34 @@ export function isStopHeading(text) {
   let t = pySplit(pyLower(text.normalize("NFC"))).join(" ");
   t = t.replace(NUMBERING, "");
   return STOP_HEADINGS.has(pyStrip(pyRstrip(t, ":")));
+}
+
+// The section titles of the back matter that follows a reference list (his report 2026-10-15: "dich phu luc, chi ko
+// dich tai lieu tham khao"): optional numbering ("7.", "A.", "IV)"), the title, an optional number / letter ("A",
+// "2", "S1", "II"), then nothing, a colon, or a separator and the rest of a short title. Python's patterns (pyre.js).
+const BACK_MATTER = compile(String.raw`(?:(?:\d+(?:\.\d+)*|[a-z]|[ivxlc]+)[.)]\s*)?`
+  + String.raw`(?:appendix|appendices|annex(?:es)?`
+  + String.raw`|supplementary(?:\s+(?:materials?|data|information|methods|figures?|tables?))?`
+  + String.raw`|supporting\s+information|online\s+resources?|acknowledge?ments?|abbreviations?|glossary`
+  + String.raw`|figure\s+legends?|tables?|authors?\s+contributions?|author's\s+contributions?|funding`
+  + String.raw`|conflicts?\s+of\s+interests?|competing\s+interests?|data\s+availability(?:\s+statement)?`
+  + String.raw`|about\s+the\s+authors?|phu\s+luc)`
+  + String.raw`(?:\s+(?:[a-z]?\d+(?:\.\d+)*|[a-z]|[ivx]+))?`
+  + String.raw`(?P<rest>\s*[:.–—-]\s*.*)?`);
+const CITATION = compile(String.raw`\b(?:19|20)\d\d\b|\bet al\b|\d\s*[;:(]\s*\d`);
+
+/** NFC lower case, white space squashed, diacritics dropped (d with stroke as d). */
+function fold(text) {
+  const t = pySplit(pyLower(text.normalize("NFC"))).join(" ").replaceAll("đ", "d");
+  return t.normalize("NFD").replace(/\p{Mn}/gu, "");
+}
+
+/** A short paragraph (<= 8 words) that reads as the title of a back-matter section (Appendix, Supplementary
+ * material, Acknowledgements, Abbreviations, Funding, Phu luc ...); not one whose rest looks like a citation. */
+export function isBackMatterHeading(text) {
+  if (pySplit(text).length > 8) return false;
+  const m = BACK_MATTER.fullmatch(fold(text));
+  return m !== null && !(m.group("rest") && CITATION.search(m.group("rest")));
 }
 
 function ancestor(el, ns, name) {
@@ -96,7 +125,8 @@ export function* collectParts(pkg, { notes = true, comments = false } = {}) {
     // DOCX: only body-level paragraphs open or close the references region. A heading stop heading closes at the next
     // heading of the same or a higher level (sub-headings of the list stay inside); a heading-like style without a
     // level counts as the stop heading's level, and a stop heading without a level closes at any heading. A plain
-    // paragraph stop heading runs to the end of the body.
+    // paragraph stop heading runs to the end of the body. A back-matter title (Appendix, Acknowledgements, Phu luc ...)
+    // always closes it, whatever its style or level.
     const body = pkg.kind === "docx" && part === "word/document.xml" ? findChild(root, W, "body") : null;
     let inRefs = false;
     let closeAt = null; // level that closes the region, null = never
@@ -107,6 +137,7 @@ export function* collectParts(pkg, { notes = true, comments = false } = {}) {
       if (body !== null && p.parentNode === body) {
         const level = headingLevel(p);
         if (inRefs && closeAt !== null && level !== null) inRefs = !(level === UNKNOWN || level <= closeAt);
+        if (inRefs && isBackMatterHeading(text)) inRefs = false;
         if (!inRefs && isStopHeading(text)) {
           inRefs = true;
           closeAt = level === null ? null : (level === UNKNOWN ? DEEPEST : level);

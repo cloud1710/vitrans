@@ -1,0 +1,14 @@
+{
+ "term_fixes": [
+  {
+   "en": "refeeding syndrome",
+   "vi": "hội chứng nuôi ăn lại",
+   "wrong": [
+    "hội chứng tái nuôi dưỡng",
+    "hội chứng nuôi dưỡng lại",
+    "hội chứng tái nuôi ăn",
+    "hội chứng cho ăn lại"
+   ]
+  }
+ ]
+}

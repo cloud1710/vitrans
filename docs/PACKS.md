@@ -56,13 +56,13 @@ never sees includes.
 
 | Pack | Version | Status | Rows |
 |---|---|---|---|
-| `_style` (writing style, no glossary) | 0.1.2 | bundled with the helper | - |
-| `pathology` (Giải phẫu bệnh) | 0.1.8 | published | 702 |
-| `pathology-breast` (vú) | 0.1.1 | **draft, not reviewed** | 89 |
-| `pathology-gi` (tiêu hóa) | 0.1.1 | **draft, not reviewed** | 96 |
-| `pathology-headneck` (đầu cổ) | 0.1.1 | **draft, not reviewed** | 70 |
-| `pathology-hpb` (gan mật tụy) | 0.1.1 | **draft, not reviewed** | 82 |
-| `pathology-respiratory` (hô hấp) | 0.1.0 | **draft, not reviewed** | 77 |
+| `_style` (writing style, no glossary) | 0.1.3 | bundled with the helper | - |
+| `pathology` (Giải phẫu bệnh) | 0.2.0 | published | 715 |
+| `pathology-breast` (vú) | 0.1.2 | **draft, not reviewed** | 89 |
+| `pathology-gi` (tiêu hóa) | 0.1.2 | **draft, not reviewed** | 96 |
+| `pathology-headneck` (đầu cổ) | 0.1.2 | **draft, not reviewed** | 70 |
+| `pathology-hpb` (gan mật tụy) | 0.1.2 | **draft, not reviewed** | 82 |
+| `pathology-respiratory` (hô hấp) | 0.1.1 | **draft, not reviewed** | 77 |
 
 Draft packs are skipped by the registry build unless `--include-drafts` is given. Planned families: internal medicine,
 surgery, obstetrics, radiology, molecular biology / genetics, microbiology, data analysis, computer vision.

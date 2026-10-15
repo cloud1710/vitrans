@@ -1,4 +1,4 @@
-{"id": "pathology-headneck", "version": "0.1.1", "name": "Giải phẫu bệnh đầu cổ", "parent": "pathology", "draft": true,
+{"id": "pathology-headneck", "version": "0.1.3", "name": "Giải phẫu bệnh đầu cổ", "parent": "pathology", "draft": true,
  "detect": ["head and neck", "oral cavity", "tongue", "glossectomy", "oropharyngeal", "oropharynx", "nasopharyngeal", "nasopharynx", "laryngeal",
             "larynx", "hypopharynx", "sinonasal", "salivary gland", "parotid", "submandibular", "pleomorphic adenoma",
             "Warthin", "mucoepidermoid", "adenoid cystic", "acinic cell", "Milan System",

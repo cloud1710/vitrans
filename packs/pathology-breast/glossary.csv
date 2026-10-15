@@ -1,90 +1,90 @@
 en,vi,note
-invasive breast carcinoma,ung thư biểu mô tuyến vú xâm nhập,"freq 6 UTBM vs 'carcinôm' 3 (Nam); sources: VMJ-H2L, VNU21, YHTPHCM03, VMJ-428, VNRAS-120100, YDLS-24"
-ductal carcinoma in situ,ung thư biểu mô ống tại chỗ (DCIS),"freq 4 vs 'UTBM (tuyến) vú (thể) nội ống' 2, lay 'ống dẫn sữa tại chỗ'; sources: BYT20, TCNCYH-3232, TCNCYH-5336, VNRAS-MRI-K"
-lobular carcinoma in situ,ung thư biểu mô tiểu thùy tại chỗ (LCIS),"freq 2 + lay 3; sources: BYT20, Vinmec-VNK19; lay Vinmec, Long Châu, Pharmacity"
-lobular neoplasia,tân sinh tiểu thùy,"freq 1 'tân sản tiểu thùy' (BYT20); giữ neoplasm=tân sinh của pack cha; xem conflicts"
-invasive breast carcinoma of no special type,ung thư biểu mô vú xâm nhập típ không đặc biệt (NST),"freq 4 'típ/typ/type không đặc biệt' vs 1 'không phải loại đặc biệt'; sources: VMJ-H2L, VNU21, Vinmec-VNK19, Vinmec-NST, BYT20"
+invasive breast carcinoma,carcinom tuyến vú xâm nhập,"freq 6 UTBM vs 'carcinôm' 3 (Nam); sources: VMJ-H2L, VNU21, YHTPHCM03, VMJ-428, VNRAS-120100, YDLS-24"
+ductal carcinoma in situ,carcinom ống tại chỗ (DCIS),"freq 4 vs 'UTBM (tuyến) vú (thể) nội ống' 2, lay 'ống dẫn sữa tại chỗ'; sources: BYT20, TCNCYH-3232, TCNCYH-5336, VNRAS-MRI-K"
+lobular carcinoma in situ,carcinom tiểu thùy tại chỗ (LCIS),"freq 2 + lay 3; sources: BYT20, Vinmec-VNK19; lay Vinmec, Long Châu, Pharmacity"
+lobular neoplasia,tân sinh tiểu thùy,freq 1 'tân sản tiểu thùy' (BYT20); giữ neoplasm=tân sinh của pack cha; xem conflicts
+invasive breast carcinoma of no special type,carcinom vú xâm nhập típ không đặc biệt (NST),"freq 4 'típ/typ/type không đặc biệt' vs 1 'không phải loại đặc biệt'; sources: VMJ-H2L, VNU21, Vinmec-VNK19, Vinmec-NST, BYT20"
 no special type,típ không đặc biệt (NST),"freq 4; sources: VMJ-H2L, VNU21, Vinmec-VNK19, Vinmec-NST"
 special type,thể đặc biệt,"freq 2; sources: VNU21, VMJ-14519"
 histologic type,típ mô bệnh học,"freq 1 'typ mô bệnh học'; sources: VNU21; spelling 'típ' theo đa số (VMJ-H2L, VMJ-16057)"
-invasive lobular carcinoma,ung thư biểu mô tiểu thùy xâm nhập,"freq 5; = pack cha; sources: BYT20, VNU21, VMJ-7675, VMJ-12602, VNRAS-121293"
-tubular carcinoma,ung thư biểu mô thể ống nhỏ,"freq 3 + lay 2; sources: BYT20 ('UTBM ống nhỏ'), VNU21, VMJ-14519; lay Pharmacity, Long Châu"
-mucinous carcinoma,ung thư biểu mô thể nhầy,"freq 3 vs lay 'dạng nhầy' 1; sources: BYT20, VNU21, VMJ-14519; lay Tâm Anh"
-metaplastic carcinoma,ung thư biểu mô thể dị sản,"freq 4; sources: BYT20, VMJ-14124, VMJ-DISANK, VNU21"
-medullary carcinoma,ung thư biểu mô thể tủy,"freq 1 + lay 2; sources: BYT20; lay Pharmacity, Long Châu"
-carcinoma with medullary pattern,ung thư biểu mô có đặc điểm tủy,"freq 1 ('UTBM với đặc điểm tủy'); sources: BYT20; Vinmec-VNK19 dùng 'típ không đặc biệt, giàu lympho bào'; low evidence"
-cribriform carcinoma,ung thư biểu mô thể mặt sàng,"freq 3 + lay 1; sources: BYT20, VNU21, VMJ-14519; lay Vinmec"
+invasive lobular carcinoma,carcinom tiểu thùy xâm nhập,"freq 5; = pack cha; sources: BYT20, VNU21, VMJ-7675, VMJ-12602, VNRAS-121293"
+tubular carcinoma,carcinom thể ống nhỏ,"freq 3 + lay 2; sources: BYT20 ('UTBM ống nhỏ'), VNU21, VMJ-14519; lay Pharmacity, Long Châu"
+mucinous carcinoma,carcinom thể nhầy,"freq 3 vs lay 'dạng nhầy' 1; sources: BYT20, VNU21, VMJ-14519; lay Tâm Anh"
+metaplastic carcinoma,carcinom thể dị sản,"freq 4; sources: BYT20, VMJ-14124, VMJ-DISANK, VNU21"
+medullary carcinoma,carcinom thể tủy,"freq 1 + lay 2; sources: BYT20; lay Pharmacity, Long Châu"
+carcinoma with medullary pattern,carcinom có đặc điểm tủy,"freq 1 ('UTBM với đặc điểm tủy'); sources: BYT20; Vinmec-VNK19 dùng 'típ không đặc biệt, giàu lympho bào'; low evidence"
+cribriform carcinoma,carcinom thể mặt sàng,"freq 3 + lay 1; sources: BYT20, VNU21, VMJ-14519; lay Vinmec"
 cribriform,mặt sàng,"freq 3 (vú); sources: BYT20, VMJ-16057 ('típ mặt sàng'), VNU21; CONFLICT pack cha 'dạng sàng'"
-invasive micropapillary carcinoma,ung thư biểu mô vi nhú xâm nhập,"freq 3; sources: BYT20 ('thể vi nhú xâm nhập'), VNU21, TCNCYH-2538"
-microinvasive carcinoma,ung thư biểu mô vi xâm nhập,"freq 1; sources: BYT20"
-carcinoma with apocrine differentiation,ung thư biểu mô có biệt hóa tiết rụng đầu,"freq 1; sources: BYT20"
-apocrine metaplasia,dị sản tiết rụng đầu,"freq 0 exact; apocrine='tiết rụng đầu' (BYT20) + metaplasia=dị sản (pack cha); low evidence"
+invasive micropapillary carcinoma,carcinom vi nhú xâm nhập,"freq 3; sources: BYT20 ('thể vi nhú xâm nhập'), VNU21, TCNCYH-2538"
+microinvasive carcinoma,carcinom vi xâm nhập,freq 1; sources: BYT20
+carcinoma with apocrine differentiation,carcinom có biệt hóa tiết rụng đầu,freq 1; sources: BYT20
+apocrine metaplasia,dị sản tiết rụng đầu,freq 0 exact; apocrine='tiết rụng đầu' (BYT20) + metaplasia=dị sản (pack cha); low evidence
 phyllodes tumor,u diệp thể,"freq 4 (2 peer + 2 lay) vs 'u phyllode' 2; sources: VMJ-1989, VMJ-2681, Vinmec, Tâm Anh; 'u phyllode': BYT20, VMJ-8205"
-phyllodes tumour,u diệp thể,"như 'phyllodes tumor'"
+phyllodes tumour,u diệp thể,như 'phyllodes tumor'
 borderline phyllodes tumor,u diệp thể giáp biên,"freq 2; sources: VMJ-1989, Vinmec; pack cha giữ EN 'borderline' (xem conflicts)"
 fibroadenoma,u xơ tuyến,"freq 4 peer vs 'u sợi tuyến' 0 peer/1 lay, 'bướu sợi tuyến' 1 lay; sources: BYT20, VMJ-671, VMJ-2293, KHSK25; CONFLICT quy tắc fibro=sợi"
-fibrocystic change,thay đổi sợi bọc,"tie 1:1 vs 'biến đổi xơ nang'; sources: KHSK25 / VMJ-671; quy tắc fibro=sợi quyết định; cần người chốt"
+fibrocystic change,thay đổi sợi bọc,tie 1:1 vs 'biến đổi xơ nang'; sources: KHSK25 / VMJ-671; quy tắc fibro=sợi quyết định; cần người chốt
 intraductal papilloma,u nhú nội ống,"freq 2 + lay 2; sources: BYT20, VMJ-NHU (UNNO); lay Tâm Anh, Long Châu"
-encapsulated papillary carcinoma,ung thư biểu mô nhú trong vỏ,"freq 2; sources: BYT20, VMJ-NHU"
-solid papillary carcinoma,ung thư biểu mô nhú đặc,"freq 1; sources: BYT20"
-papillary lesion,tổn thương nhú,"freq 1; sources: VMJ-NHU"
-radial scar,sẹo tỏa tia,"freq 0 peer; lay 2 vs 'sẹo nan hoa' lay 1; sources: Vinmec (VI+EN); Long Châu; low evidence"
-complex sclerosing lesion,tổn thương xơ hóa phức tạp,"lay tie 1:1 vs 'tổn thương xơ cứng phức tạp'; sources: Long Châu / Vinmec; sclerosing=xơ hóa (pack cha)"
+encapsulated papillary carcinoma,carcinom nhú trong vỏ,"freq 2; sources: BYT20, VMJ-NHU"
+solid papillary carcinoma,carcinom nhú đặc,freq 1; sources: BYT20
+papillary lesion,tổn thương nhú,freq 1; sources: VMJ-NHU
+radial scar,sẹo tỏa tia,freq 0 peer; lay 2 vs 'sẹo nan hoa' lay 1; sources: Vinmec (VI+EN); Long Châu; low evidence
+complex sclerosing lesion,tổn thương xơ hóa phức tạp,lay tie 1:1 vs 'tổn thương xơ cứng phức tạp'; sources: Long Châu / Vinmec; sclerosing=xơ hóa (pack cha)
 sclerosing adenosis,bệnh tuyến xơ hóa (sclerosing adenosis),"freq 0; Tâm Anh 'bệnh tuyến (adenosis)' + sclerosing=xơ hóa (pack cha); unresolved, giữ gloss EN"
-usual ductal hyperplasia,tăng sản ống thông thường,"freq 0 peer; lay Vinmec 'tăng sản (tuyến vú) thông thường'; hyperplasia=tăng sản (pack cha)"
+usual ductal hyperplasia,tăng sản ống thông thường,freq 0 peer; lay Vinmec 'tăng sản (tuyến vú) thông thường'; hyperplasia=tăng sản (pack cha)
 atypical ductal hyperplasia,tăng sản ống không điển hình (ADH),"lay 4 'tăng sản ... không điển hình' vs 'quá sản ...' 2; peer chỉ dùng 'ADH' (VMJ-NHU); sources: Vinmec x2, Tâm Anh, Long Châu"
 atypical lobular hyperplasia,tăng sản tiểu thùy không điển hình (ALH),"lay 3 vs 'quá sản tiểu thùy không điển hình' 2 (BYT20, Vinmec); hyperplasia=tăng sản (pack cha); xem conflicts"
-flat epithelial atypia,không điển hình biểu mô phẳng (FEA),"freq 0: không tìm thấy y văn VN; mô tả theo atypia=không điển hình (pack cha); unresolved"
+flat epithelial atypia,không điển hình biểu mô phẳng (FEA),freq 0: không tìm thấy y văn VN; mô tả theo atypia=không điển hình (pack cha); unresolved
 columnar cell lesion,tổn thương tế bào trụ (columnar cell lesion),"freq 0; columnar=trụ (pack cha); unresolved, giữ gloss EN"
 Paget disease of the nipple,bệnh Paget núm vú,"BYT20 'bệnh Paget của núm vú' 1 vs 'bệnh Paget (ở/của) vú' ~5 (MSD-VI, Vinmec, Tâm Anh, Long Châu); cần người chốt"
 Nottingham histologic grade,độ mô bệnh học Nottingham,"y văn vú: 'độ mô học' freq 6, 'độ mô bệnh học' 0; giữ histologic=mô bệnh học (quy tắc user); CONFLICT, cần người chốt"
 histologic grade,độ mô bệnh học,"như trên; sources 'độ mô học': BYT20, VMJ-H2L, VNU21, YHTPHCM03, TCNCYH-3232, VMJ-16057"
 Nottingham Prognostic Index,chỉ số tiên lượng Nottingham (NPI),"freq 2; sources: VMJ-H2L, YHTPHCM03 ('chỉ số NPI')"
-tubule formation,sự hình thành ống nhỏ,"freq 1 vs 'sự hình thành cấu trúc tuyến' 1 lay; sources: HMU-TMH (snippet); Vinmec-NST; low evidence"
-nuclear pleomorphism,đa hình thái nhân,"freq 1 ('sự đa hình thái của nhân'); sources: HMU-TMH (snippet); pleomorphism=đa hình thái (pack cha)"
+tubule formation,sự hình thành ống nhỏ,freq 1 vs 'sự hình thành cấu trúc tuyến' 1 lay; sources: HMU-TMH (snippet); Vinmec-NST; low evidence
+nuclear pleomorphism,đa hình thái nhân,freq 1 ('sự đa hình thái của nhân'); sources: HMU-TMH (snippet); pleomorphism=đa hình thái (pack cha)
 mitotic count,số phân bào,"y văn vú 'nhân chia' 3 (HMU-TMH, Vinmec-NST, Vinmec-VNK19) vs 'phân bào' 1; giữ pack cha mitotic=phân bào; CONFLICT"
 estrogen receptor,thụ thể estrogen,"= pack cha; sources: BYT20, VMJ-428"
-progesterone receptor,thụ thể progesterone,"= pack cha; BYT20 viết 'progesteron'"
+progesterone receptor,thụ thể progesterone,= pack cha; BYT20 viết 'progesteron'
 hormone receptor,thụ thể nội tiết,"freq 3; sources: BYT20, VMJ-H2L, JMP-Hue17"
 HER2,HER2,"kept EN (gene/protein name, VN literature keeps HER2); added at review 2026-10-13 as a profile term because HER2 is no longer a detect keyword (gastric/lung/colorectal reports also test HER2)"
 HER2 status,tình trạng HER2,"freq 3; sources: JMP-Hue18, JMP-Hue17, VMJ-11344 ('tình trạng gen HER2')"
 HER2-low,HER2 thấp,"freq 2 + lay 3; sources: VMJ-H2L, VNU-4880; lay Tâm Anh, Long Châu x2"
-HER2-ultralow,HER2-ultralow,"freq 0: không tìm thấy y văn VN; giữ EN"
-HER2 overexpression,bộc lộ quá mức HER2,"freq 1; sources: VNU21 ('bộc lộ quá mức Her-2/neu'); overexpression=bộc lộ quá mức (pack cha)"
+HER2-ultralow,HER2-ultralow,freq 0: không tìm thấy y văn VN; giữ EN
+HER2 overexpression,bộc lộ quá mức HER2,freq 1; sources: VNU21 ('bộc lộ quá mức Her-2/neu'); overexpression=bộc lộ quá mức (pack cha)
 Allred score,điểm Allred,"freq 2 ('thang/tiêu chuẩn Allred'); sources: YHTPHCM10, YDLS-24"
 H-score,H-score,"freq 1, y văn VN giữ EN; sources: VMJ-16621"
 Ki-67 index,chỉ số Ki-67,"freq 2; sources: VMJ-H2L, VMJ-NHU"
 in situ hybridization,lai tại chỗ (ISH),"freq 4; sources: BYT20, YHTPHCM09 (FISH), JMP-Hue18 (DISH), VMJ-11344"
-dual-color in situ hybridization,lai tại chỗ gắn hai màu (DISH),"freq 1; sources: JMP-Hue18"
-tumor-infiltrating lymphocytes,lympho bào xâm nhập u (TILs),"VNU21 'xâm nhập lympho vào mô u (TILs)'; refs TNJoS26 'lympho bào xâm nhập mô đệm khối u', 'thấm nhập lympho bào trong u'; lymphocyte=lympho bào (pack cha); cần người chốt"
-tumour-infiltrating lymphocytes,lympho bào xâm nhập u (TILs),"như 'tumor-infiltrating lymphocytes'"
+dual-color in situ hybridization,lai tại chỗ gắn hai màu (DISH),freq 1; sources: JMP-Hue18
+tumor-infiltrating lymphocytes,lymphô bào xâm nhập u (TILs),"VNU21 'xâm nhập lympho vào mô u (TILs)'; refs TNJoS26 'lympho bào xâm nhập mô đệm khối u', 'thấm nhập lympho bào trong u'; lymphocyte=lympho bào (pack cha); cần người chốt"
+tumour-infiltrating lymphocytes,lymphô bào xâm nhập u (TILs),như 'tumor-infiltrating lymphocytes'
 lymphovascular invasion,xâm nhập mạch bạch huyết,"decision 6 applied (user 2026-10-14: LVI / PNI = xâm nhập; = pack cha 0.1.7); evidence 'xâm nhập mạch bạch huyết' 6:0 peer (+ BYT20 'xâm nhập bạch mạch'); sources: TCNCYH-2538, VNRAS-136263, VNRAS-36208, VMJ-H2L, VNU21, VMJ-7675"
 perineural invasion,xâm nhập quanh thần kinh,"decision 6 applied (user 2026-10-14: LVI / PNI = xâm nhập; = pack cha 0.1.7); evidence 'xâm nhập quanh thần kinh' 2:0 (1 snippet); sources: VMJ-H2L, VMJ-TH (snippet)"
 surgical margin,diện cắt,"freq 4; = pack cha resection margin; sources: BYT20, TCNCYH-706, VNRAS-35884, VNRAS-36554"
 sentinel lymph node biopsy,sinh thiết hạch cửa,"peer 2 'hạch cửa' (BYT20, VNRAS-SLNB-K) + báo BV K vs 'hạch gác cửa' 1 peer (VNRAS-62653) + lay 3, 'hạch gác' 1 (VNRAS-130384)"
-sentinel lymph node,hạch cửa,"như 'sentinel lymph node biopsy'"
+sentinel lymph node,hạch cửa,như 'sentinel lymph node biopsy'
 isolated tumor cells,tế bào u biệt lập,"freq 1 + lay 1; sources: BYT20, Tâm Anh"
-isolated tumour cells,tế bào u biệt lập,"như 'isolated tumor cells'"
+isolated tumour cells,tế bào u biệt lập,như 'isolated tumor cells'
 micrometastasis,vi di căn,"freq 1 + lay 1; sources: BYT20, Tâm Anh"
 macrometastasis,đại di căn (macrometastasis),"freq 0; Tâm Anh mô tả 'di căn lớn (>2mm)'; unresolved, giữ gloss EN"
 axillary lymph node dissection,nạo vét hạch nách,"freq 2; sources: BYT20 ('vét hạch nách / nạo vét hạch nách'), VNU21"
 breast-conserving surgery,phẫu thuật bảo tồn vú,"freq 3; sources: BYT20, VNRAS-SLNB-K, VNRAS-35884"
 mastectomy,phẫu thuật cắt tuyến vú,"freq 2; sources: BYT20 ('cắt bỏ tuyến vú / cắt tuyến vú'), VNU21"
-residual cancer burden,residual cancer burden (RCB),"freq 0 thuật ngữ VN; bài VN giữ 'RCB' (NSTI-366044); giữ EN"
+residual cancer burden,residual cancer burden (RCB),freq 0 thuật ngữ VN; bài VN giữ 'RCB' (NSTI-366044); giữ EN
 pathologic complete response,đáp ứng hoàn toàn mô bệnh học (pCR),"freq 3 vs 'đáp ứng hoàn toàn trên mô bệnh học' 2, 'về giải phẫu bệnh' 1; sources: TCNCYH-2485, NSTI-366044, TCNCYH-5020"
-pathological complete response,đáp ứng hoàn toàn mô bệnh học (pCR),"như 'pathologic complete response'"
-neoadjuvant therapy,điều trị tân bổ trợ,"freq 3 vs 'tân hỗ trợ' 1, 'bổ trợ trước' 1; sources: BYT20, TCNCYH-2485, NSTI-366044"
-neoadjuvant,tân bổ trợ,"như 'neoadjuvant therapy'"
+pathological complete response,đáp ứng hoàn toàn mô bệnh học (pCR),như 'pathologic complete response'
+neoadjuvant therapy,điều trị tân bổ trợ,"owner 2026-10-15 18:48 (choice 2: neoadjuvant = tân bổ trợ in every pack); freq 3 vs 'tân hỗ trợ' 1, 'bổ trợ trước' 1; sources: BYT20, TCNCYH-2485, NSTI-366044"
+neoadjuvant,tân bổ trợ,owner 2026-10-15 18:48 (choice 2: neoadjuvant = tân bổ trợ in every pack); như 'neoadjuvant therapy'
 core needle biopsy,sinh thiết kim lõi,"freq 1 + lay 1 vs 'sinh thiết lõi kim' lay 2, 'sinh thiết lõi' 1 (VMJ-8553), 'sinh thiết kim' 1 (VMJ-4452); sources: BYT20, Vinmec"
-fine needle aspiration,chọc hút tế bào bằng kim nhỏ (FNA),"= pack cha (rule cấm 'chọc hút kim nhỏ'); y văn vú: BYT20 + NSTI-FNA dùng 'chọc hút kim nhỏ'; CONFLICT"
+fine needle aspiration,chọc hút tế bào bằng kim nhỏ (FNA),= pack cha (rule cấm 'chọc hút kim nhỏ'); y văn vú: BYT20 + NSTI-FNA dùng 'chọc hút kim nhỏ'; CONFLICT
 BI-RADS,BI-RADS,"giữ EN; sources: TCNCYH-1937, VMJ-671, TCNCYH-3232"
-mammography,chụp X-quang tuyến vú,"freq 4 vs 'nhũ ảnh' lay 2, 'chụp vú' 1; sources: BYT20, TCNCYH-3232, TCNCYH-1937, Vinmec"
+mammography,chụp X quang tuyến vú,"owner, recommended column 2026-10-15 18:48 (radiology R5): spelling 'X quang' 27 docs (S22) vs 'X-quang' 16 (S6) in radiology sources; this pack's count: 4 vs 'nhũ ảnh' lay 2, 'chụp vú' 1 (BYT20, TCNCYH-3232, TCNCYH-1937, Vinmec); WAS 'chụp X-quang tuyến vú'"
 microcalcification,vi vôi hóa,"freq 3 vs 'vi canxi hóa' 1 (BYT20); sources: TCNCYH-3232, TCNCYH-5336, VMJ-553; calcification=vôi hóa (pack cha)"
 triple-negative,bộ ba âm tính,"freq 5 vs 'tam âm' lay 1; sources: BYT20, TCNCYH-1937, TCNCYH-2485, VMJ-DISANK, VNRAS-TNBC-K"
 luminal A,lòng ống A (Luminal A),"'lòng ống A/B' 6 vs EN 'Luminal A/B' 5; sources: BYT20, VMJ-H2L, YDLS-430, STI-521, VMJ-TH, VMJ-10747; cần người chốt"
-luminal B,lòng ống B (Luminal B),"như 'luminal A'"
+luminal B,lòng ống B (Luminal B),như 'luminal A'
 basal-like,dạng đáy,"freq 2; sources: VMJ-10747, DHM-review; = pack cha basaloid=dạng đáy"
 molecular subtype,phân nhóm phân tử,"'(phân) nhóm phân tử' 5 vs 'phân típ/typ phân tử' 4, 'type phân tử' 2; sources: YHCD-TN24, JMP-Hue21, YDLS-430, YDLS-427, YDLS-432; cần người chốt"
-myoepithelial cell,tế bào cơ biểu mô,"freq 0 tìm thấy; nhất quán pack cha myoepithelial neoplasm=u cơ-biểu mô; unresolved"
+myoepithelial cell,tế bào cơ biểu mô,freq 0 tìm thấy; nhất quán pack cha myoepithelial neoplasm=u cơ-biểu mô; unresolved
 extensive intraductal component,thành phần nội ống lan rộng (EIC),"freq 0 exact; BYT20 diễn đạt 'UTBM tại chỗ thể ống lan rộng'; unresolved, giữ viết tắt EIC"
-comedo necrosis,hoại tử trứng cá,"freq 1; sources: VMJ-16057; Vinmec giữ EN 'comedocarcinoma'"
+comedo necrosis,hoại tử trứng cá,freq 1; sources: VMJ-16057; Vinmec giữ EN 'comedocarcinoma'

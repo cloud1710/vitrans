@@ -1,5 +1,5 @@
 {
- "allow_short": [],
+ "allow_short": ["carcinôm", "lymphôm", "sarcôm", "u lympho", "lympho bào", "carcinôm tuyến", "sarcôm xương", "sarcôm sụn", "sarcôm mỡ", "kỵ màu", "kị màu"],
  "deny": ["cytotrophoblast"],
  "allow_partial": ["fine needle aspiration", "targeted therapy"],
  "fixes": [
@@ -13,9 +13,9 @@
   {"en": "false positive", "vi": "dương tính giả", "wrong": ["tích cực giả", "đương dương giả", "sai dương tính"]},
   {"en": "false negative", "vi": "âm tính giả", "wrong": ["sai âm tính"]},
   {"en": "primary antibody", "vi": "kháng thể sơ cấp", "wrong": ["kháng thể nguyên phát"]},
-  {"en": "lymph node", "vi": "hạch", "wrong": ["nút bạch huyết", "đuôi bạch huyết"]},
+  {"en": "lymph node", "vi": "hạch lympho", "wrong": ["nút bạch huyết", "đuôi bạch huyết"]},
   {"en": "malignant transformation", "vi": "chuyển dạng ác tính", "wrong": ["chuyển hóa ác tính"]},
-  {"en": "squamous cell carcinoma", "vi": "carcinôm tế bào gai", "wrong": ["carcinom tế bào gai"]},
+  {"en": "squamous cell carcinoma", "vi": "carcinom tế bào gai", "wrong": ["carcinôm tế bào gai", "ung thư biểu mô tế bào gai", "ung thư biểu mô tế bào vảy", "ung thư biểu mô vảy", "carcinom tế bào vảy", "carcinôm tế bào vảy"]},
   {"en": "plasma cell", "vi": "tương bào", "wrong": ["tế bào huyết tương", "tế bào plasma"]},
   {"en": "macroscopic", "vi": "đại thể", "wrong": ["vĩ mô"]},
   {"en": "microscopic", "vi": "vi thể", "wrong": ["vi mô"]},

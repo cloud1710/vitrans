@@ -18,7 +18,7 @@ import time
 import httpx
 
 from . import config
-from .device import gpu_fits, ollama_vram_mb
+from .device import apple_chip, gpu_fits, metal_budget_mb, ollama_vram_mb, sysctl
 
 _NO_WINDOW = 0x08000000 if os.name == "nt" else 0
 NVIDIA_QUERY = "--query-gpu=name,memory.total,memory.free,memory.used,utilization.gpu"
@@ -142,6 +142,44 @@ def windows_cpu_name():
         return " ".join(str(winreg.QueryValueEx(key, "ProcessorNameString")[0]).split()) or None
 
 
+def mac_core_classes(run=subprocess.run):
+    """Per-core classes of an Apple-silicon CPU (1 = performance, 0 = efficiency) from sysctl hw.perflevel0/1;
+    hw.physicalcpu alone when the levels are not reported; None when sysctl fails."""
+    perf, eff = sysctl(run, "hw.perflevel0.physicalcpu"), sysctl(run, "hw.perflevel1.physicalcpu")
+    if perf and perf.isdigit():
+        return [1] * int(perf) + [0] * (int(eff) if eff and eff.isdigit() else 0)
+    total = sysctl(run, "hw.physicalcpu")
+    return [0] * int(total) if total and total.isdigit() else None
+
+
+def parse_displays(text):
+    """system_profiler SPDisplaysDataType -json -> (GPU name, GPU cores) of the first GPU; (None, None) when absent."""
+    try:
+        items = json.loads(text or "null").get("SPDisplaysDataType") or []
+    except (ValueError, AttributeError):
+        return None, None
+    for item in items:
+        if isinstance(item, dict) and isinstance(item.get("sppci_model"), str):
+            cores = str(item.get("sppci_cores") or "")
+            return item["sppci_model"].strip() or None, int(cores) if cores.isdigit() else None
+    return None, None
+
+
+def apple_gpus(run, total_mb):
+    """The GPU of an Apple-silicon Mac (name and cores from system_profiler, else the chip name from sysctl): Metal on
+    the unified memory, its budget = device.metal_budget_mb of the RAM, never busy (macOS does not report load)."""
+    try:
+        res = run(["system_profiler", "SPDisplaysDataType", "-json"], capture_output=True, text=True,
+                  encoding="utf-8", errors="replace", timeout=30)
+        name, cores = parse_displays(res.stdout) if getattr(res, "returncode", 1) == 0 else (None, None)
+    except (OSError, subprocess.SubprocessError, ValueError):
+        name, cores = None, None
+    budget = metal_budget_mb(total_mb)
+    return [{"vendor": "Apple", "name": name or apple_chip(run) or "Apple silicon", "vram_total_mb": budget,
+             "vram_free_mb": budget, "vram_used_mb": None, "util_pct": None, "backend": "Metal", "unified": True,
+             "cores": cores}]
+
+
 def cpu_info(name, classes, threads):
     """Physical cores from the per-core efficiency classes; a performance / efficiency split only when the cores
     differ (hybrid CPUs: the highest class = performance cores)."""
@@ -214,6 +252,12 @@ def gpu_now(gpus, ollama_mb):
     GPU_BUSY_FOREIGN_MB or more: calibration waits)."""
     nv = [g for g in gpus if g.get("vendor") == "NVIDIA" and g.get("vram_total_mb")]
     if not nv:
+        apple = [g for g in gpus if g.get("unified")]
+        if apple:  # Apple silicon: the Metal budget of the unified memory (device.probe uses the same number)
+            g = apple[0]
+            budget = g.get("vram_total_mb") or 0
+            return {"present": True, "name": g["name"], "total_mb": budget, "free_mb": budget, "foreign_mb": 0,
+                    "util_pct": None, "usable": gpu_fits(budget), "busy": False, "unified": True}
         return {"present": False, "usable": False, "busy": False}
     g = max(nv, key=lambda x: x.get("vram_free_mb") or 0)
     free = (g.get("vram_free_mb") or 0) + ollama_mb
@@ -261,13 +305,18 @@ def _safe(fn, *args, default=None):
 
 class Scanner:
     def __init__(self, run=subprocess.run, transport=None, base_url=None, home=None, system=None, os_version=None,
-                 machine=None, memory=memory_mb, core_classes=windows_core_classes, cpu_name=windows_cpu_name,
+                 machine=None, memory=memory_mb, core_classes=None, cpu_name=None,
                  threads=os.cpu_count, disk=disk_free_mb, clock=time.monotonic, ttl=TTL_SECONDS):
         self.run, self.transport, self.base_url = run, transport, base_url
         self.home = home
         self.system = system if system is not None else platform.system()
         self.os_version = os_version if os_version is not None else platform.version()
         self.machine = machine if machine is not None else platform.machine()
+        self.apple = self.system == "Darwin" and self.machine == "arm64"
+        if core_classes is None:
+            core_classes = (lambda: mac_core_classes(run)) if self.system == "Darwin" else windows_core_classes
+        if cpu_name is None:
+            cpu_name = (lambda: apple_chip(run)) if self.system == "Darwin" else windows_cpu_name
         self.memory, self.core_classes, self.cpu_name, self.threads, self.disk = (
             memory, core_classes, cpu_name, threads, disk)
         self.clock, self.ttl = clock, ttl
@@ -297,7 +346,8 @@ class Scanner:
         return {"os": os_info(self.system, self.os_version, self.machine),
                 "cpu": cpu_info(_safe(self.cpu_name), _safe(self.core_classes), _safe(self.threads)),
                 "ram_total_mb": total,
-                "adapters": _safe(wmi_adapters, self.run, self.system, default=[])}
+                "adapters": (_safe(apple_gpus, self.run, total, default=[]) if self.apple
+                             else _safe(wmi_adapters, self.run, self.system, default=[]))}
 
     def _dynamic_part(self):
         _, free = self._memory()

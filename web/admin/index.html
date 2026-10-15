@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Duyệt góp ý thuật ngữ</title>
+  <link rel="stylesheet" href="admin.css">
+  <script type="module" src="admin.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Góp ý thuật ngữ</h1>
+    <p class="note">Các cặp thuật ngữ người dùng gửi về sau khi dịch (không có câu, không có tài liệu). <b>Duyệt</b>:
+      đưa vào gói thuật ngữ ở lần cập nhật sau (tools/pull_feedback.py). <b>Bỏ</b>: không dùng.</p>
+    <div class="bar">
+      <label>Trạng thái
+        <select id="status">
+          <option value="new">Mới</option>
+          <option value="approved">Đã duyệt</option>
+          <option value="rejected">Đã bỏ</option>
+          <option value="all">Tất cả</option>
+        </select>
+      </label>
+      <button type="button" id="reload">Tải lại</button>
+      <span id="msg" role="status"></span>
+    </div>
+    <div class="wrap">
+      <table>
+        <thead>
+          <tr><th>Số lần</th><th>Thuật ngữ</th><th>Bản dịch đã dùng</th><th>Đề xuất</th><th>Gói</th><th>Loại</th>
+            <th>Ngày</th><th>Trạng thái</th><th></th></tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

@@ -4,7 +4,7 @@
 // them (no tags, essential [], prev / nxt = neighbouring paragraphs, where "Doan <n>") and a slide with tags.
 // The same answers are replayed through /api/v1/session -> /classify (whole text) -> /translate (batches): every
 // model call must carry the helper's system prompt and user prompt byte for byte, and every result must equal the
-// helper's text, level and flags.
+// helper's text, level, flags and fixes (the term fixes and the title-order fix written, {en, from, to}).
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
@@ -55,14 +55,30 @@ for (const doc of FIX.documents) {
     }
     const calls = env.AI.calls;
     for (const k of calls) assert.equal(k.inputs.messages[0].content, doc.system, "the helper's system prompt");
-    assert.deepEqual(calls.map((k) => k.inputs.messages[1].content), doc.segments.flatMap((x) => x.calls.map((y) => y.user)),
-      "the helper's user prompts, in order");
+    // the segments of a batch go at once (functions/_lib/engine.js): each segment's own calls in the helper's order
+    const users = calls.map((k) => k.inputs.messages[1].content);
+    assert.equal(users.length, doc.segments.reduce((n, x) => n + x.calls.length, 0), "as many calls as the helper");
+    for (const x of doc.segments) {
+      assert.deepEqual(calls.filter((k) => sourceOf(k.inputs) === x.tagged).map((k) => k.inputs.messages[1].content),
+        x.calls.map((y) => y.user), "the helper's user prompts, in order: " + x.where);
+    }
     for (const x of doc.segments) {
       const r = results.find((y) => y.id === x.id);
-      assert.deepEqual({ text: r.text, level: r.level, flags: r.flags, reduced: r.reduced }, x.result, x.where);
+      assert.deepEqual({ text: r.text, level: r.level, flags: r.flags, fixes: r.fixes, reduced: r.reduced }, x.result,
+        x.where);
     }
   });
 }
+
+test("the fixture covers the fixes the page lists: a real pack term fix, the title order, a house form", () => {
+  const slide = FIX.documents.find((d) => d.name === "slide with tags");
+  const fixes = FIX.documents.flatMap((d) => d.segments.flatMap((s) => s.result.fixes));
+  assert.ok(fixes.some((f) => f.en === "title-order"), JSON.stringify(fixes));
+  assert.ok(fixes.some((f) => f.en !== "title-order"), JSON.stringify(fixes));
+  const house = slide.segments.find((s) => s.tagged.startsWith("Many lymphocytes"));
+  assert.ok(house.result.text.includes("lymph\u00f4 b\u00e0o"), house.result.text);
+  assert.ok(!house.result.flags.some((f) => f.startsWith("suspicious:")), JSON.stringify(house.result.flags));
+});
 
 test("the fixture covers the plain-text gates the page's text mode will meet", () => {
   const plain = FIX.documents.find((d) => d.name === "plain text");

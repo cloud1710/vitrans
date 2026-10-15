@@ -1,0 +1,315 @@
+en,vi,note
+radiology,chẩn đoán hình ảnh,"freq 69 docs (S 43) ['chẩn đoán hình ảnh']; src: BVBD-PDUB2020, YHCM22-CDHA98"
+diagnostic imaging,chẩn đoán hình ảnh,"freq 69 docs (S 43) ['chẩn đoán hình ảnh']; src: BVBD-PDUB2020, YHCM22-CDHA98"
+interventional radiology,điện quang can thiệp,"freq 2 docs (S 1) ['điện quang can thiệp']; alt 'X quang can thiệp' 1 (S 1); src: BVBD-PDUB2020, DQYHHN-1302; alt 'X quang can thiệp' (YHCM)"
+radiologist,bác sĩ chẩn đoán hình ảnh,"freq 7 docs (S 5) ['bác sĩ chẩn đoán hình ảnh']; src: DQYHHN-1110, DQYHHN-574, YHCM22-CDHA189"
+nuclear medicine,y học hạt nhân,"freq 8 docs (S 2) ['y học hạt nhân']; src: BV103-UTTG, BVBD-PDUB2020, CTUMP-709"
+imaging features,đặc điểm hình ảnh,"freq 33 docs (S 21) ['đặc điểm hình ảnh']; src: CTUMP-2755, DQYHHN-1418, YHCM22-CDHA138"
+imaging findings,đặc điểm hình ảnh,"freq 33 docs (S 21) ['đặc điểm hình ảnh']; src: CTUMP-2755, DQYHHN-1418, YHCM22-CDHA138"
+computed tomography,cắt lớp vi tính,"owner, recommended column 2026-10-15 18:48 (R10: CT / MRI abbreviations kept as in the source); freq 50 docs (S 27) ['cắt lớp vi tính']; alt 'CLVT' 34 (S 17); src: BVBD-PDUB2020, CTUMP-2755, CTUMP-582; abbreviation CLVT common (CLVT 34 docs); bare CT kept when the source abbreviates"
+CT scan,chụp cắt lớp vi tính,"freq 42 docs (S 25) ['chụp cắt lớp vi tính']; alt 'chụp CLVT' 23 (S 13), 'chụp CT' 17 (S 11); src: BVBD-PDUB2020, CTUMP-2077, CTUMP-582"
+CT scanner,máy chụp cắt lớp vi tính,"freq 8 docs (S 4) ['máy chụp']; src: BVBD-PDUB2020, DQYHHN-1418, VNRAS-huong-dan-quy-tr"
+contrast-enhanced CT,cắt lớp vi tính có tiêm thuốc cản quang,"freq 9 docs (S 5) ['tiêm thuốc cản quang']; alt 'tiêm thuốc tương phản' 9 (S 8); src: BVBD-PDUB2020, CTUMP-612, DQYHHN-413"
+contrast-enhanced computed tomography,cắt lớp vi tính có tiêm thuốc cản quang,"freq 9 docs (S 5) ['tiêm thuốc cản quang']; src: BVBD-PDUB2020, CTUMP-612, DQYHHN-413"
+non-contrast CT,cắt lớp vi tính không tiêm thuốc cản quang,"freq 7 docs (S 4) ['không tiêm thuốc']; src: BVBD-PDUB2020, DQYHHN-1110, YHCM22-CDHA189"
+unenhanced CT,cắt lớp vi tính không tiêm thuốc cản quang,"freq 7 docs (S 4) ['không tiêm thuốc']; src: BVBD-PDUB2020, DQYHHN-1110, YHCM22-CDHA189"
+multidetector CT,cắt lớp vi tính đa dãy đầu thu (MDCT),"freq 5 docs (S 3) ['cắt lớp vi tính đa dãy']; alt 'đa dãy đầu thu' 2 (S 1), 'đa lát cắt' 2 (S 2); src: BVBD-PDUB2020, DQYHHN-1387, DQYHHN-48"
+multidetector computed tomography,cắt lớp vi tính đa dãy đầu thu (MDCT),"freq 5 docs (S 3) ['cắt lớp vi tính đa dãy']; src: BVBD-PDUB2020, DQYHHN-1387, DQYHHN-48"
+64-slice CT,cắt lớp vi tính 64 dãy,"freq 3 docs (S 0) ['64 dãy']; alt '128 dãy' 1 (S 1); src: JMPM-666, VJOL-79831, YDHUE20-03017-15_2_25"
+CT angiography,chụp cắt lớp vi tính mạch máu (CTA),"freq 2 docs (S 1) ['cắt lớp vi tính mạch máu']; src: DQYHHN-48, YHCM22-CDHA67; YHCM22 titles 106/145/203"
+dual-energy CT,cắt lớp vi tính hai mức năng lượng,freq 1 docs (S 1) ['cắt lớp vi tính hai mức năng lượng']; alt 'năng lượng kép' 1 (S 1); src: YHCM22-CDHA21; YHCM22-21 title
+low-dose CT,cắt lớp vi tính liều thấp,"freq 2 docs (S 0) ['cắt lớp vi tính liều thấp']; alt 'CLVT liều thấp' 1 (S 0); src: YDHUE20-03016-16_9_7, YDHUE20-03017-15_2_25"
+magnetic resonance imaging,cộng hưởng từ,"owner, recommended column 2026-10-15 18:48 (R10: CT / MRI abbreviations kept as in the source); freq 27 docs (S 16) ['cộng hưởng từ']; alt 'CHT' 13 (S 10); src: BVBD-PDUB2020, DQYHHN-574, YHCM22-CDHA98; abbreviation CHT (13 docs); bare MRI kept when the source abbreviates"
+MRI scan,chụp cộng hưởng từ,"freq 15 docs (S 10) ['chụp cộng hưởng từ']; alt 'chụp CHT' 7 (S 6); src: BVBD-PDUB2020, DQYHHN-1385, DQYHHN-574"
+contrast-enhanced MRI,cộng hưởng từ có tiêm thuốc tương phản,"freq 9 docs (S 8) ['tiêm thuốc tương phản']; src: DQYHHN-574, YHCM22-CDHA159, YHCM22-CDHA189"
+multiparametric MRI,cộng hưởng từ đa thông số (mpMRI),freq 1 docs (S 0) ['cộng hưởng từ đa thông số']; src: DQYHHN-1385
+diffusion-weighted imaging,cộng hưởng từ khuếch tán (DWI),"freq 5 docs (S 4) ['cộng hưởng từ khuếch tán']; alt 'xung khuếch tán' 3 (S 1); src: YHCM22-CDHA8, YHCM22-CDHA98; YHCM22 titles 8/79/98"
+diffusion-weighted MRI,cộng hưởng từ khuếch tán (DWI),"freq 5 docs (S 4) ['cộng hưởng từ khuếch tán']; src: YHCM22-CDHA8, YHCM22-CDHA98"
+dynamic contrast-enhanced MRI,cộng hưởng từ động học bắt thuốc (DCE-MRI),"freq 4 docs (S 3) ['động học bắt thuốc']; alt 'động học ngấm thuốc' 1 (S 0); src: DQYHHN-574, YHCM22-CDHA98; YHCM22-98 title"
+time-intensity curve,đường cong động học,"freq 2 docs (S 1) ['đường cong động học']; src: DQYHHN-574, YHCM22-CDHA8"
+kinetic curve,đường cong động học,"freq 2 docs (S 1) ['đường cong động học']; src: DQYHHN-574, YHCM22-CDHA8"
+perfusion imaging,hình ảnh tưới máu,"freq 17 docs (S 12) ['tưới máu']; src: BVBD-PDUB2020, YHCM16-S35, YHCM26-S56"
+perfusion,tưới máu,"freq 17 docs (S 12) ['tưới máu']; src: BVBD-PDUB2020, YHCM16-S35, YHCM26-S56"
+hypoperfusion,giảm tưới máu,"freq 7 docs (S 5) ['giảm tưới máu']; src: BVBD-PDUB2020, HOSREM-13.pdf, YHCM26-S56"
+functional MRI,cộng hưởng từ chức năng (fMRI),freq 0 ['cộng hưởng từ chức năng']; YHCM22-210 title
+MR spectroscopy,cộng hưởng từ phổ,freq 1 docs (S 1) ['cộng hưởng từ phổ']; src: BVBD-PDUB2020
+magnetic resonance angiography,chụp cộng hưởng từ mạch máu (MRA),freq 0 ['cộng hưởng từ mạch máu']; BUILT; LOW
+MR angiography,chụp cộng hưởng từ mạch máu (MRA),freq 0 ['cộng hưởng từ mạch máu']; BUILT; LOW
+magnetic resonance cholangiopancreatography,chụp cộng hưởng từ mật tụy (MRCP),freq 0 ['cộng hưởng từ mật tụy']; BUILT; LOW
+ultrasound,siêu âm,"freq 99 docs (S 57) ['siêu âm']; src: BVBD-PDUB2020, DQYHHN-413, ELIB-d06c3841337245a3"
+ultrasonography,siêu âm,"freq 99 docs (S 57) ['siêu âm']; src: BVBD-PDUB2020, DQYHHN-413, ELIB-d06c3841337245a3"
+Doppler ultrasound,siêu âm Doppler,"freq 10 docs (S 4) ['siêu âm Doppler']; src: BVBD-PDUB2020, DQYHHN-1110, ELIB-d06c3841337245a3"
+color Doppler,Doppler màu,"freq 4 docs (S 1) ['Doppler màu']; src: BVBD-PDUB2020, DQYHHN-1110, YDHUE20-03016-15_59_25"
+contrast-enhanced ultrasound,siêu âm có tiêm thuốc tương phản (CEUS),freq 0 ['siêu âm có tiêm thuốc']; BUILT; LOW
+elastography,siêu âm đàn hồi,freq 0 ['siêu âm đàn hồi']; alt 'đàn hồi mô' 0 (S 0); BUILT; LOW
+endoscopic ultrasound,siêu âm nội soi (EUS),"freq 2 docs (S 2) ['siêu âm nội soi']; src: BVBD-PDUB2020, BVNTP-phau-thuat-cat-ban-phan-da-day-noi-soi-va-nao-ve"
+transducer,đầu dò,"freq 15 docs (S 9) ['đầu dò']; src: BVBD-PDUB2020, VNRAS-huong-dan-quy-tr, YHCM25-S68; probe is a banned bare key (owners.csv); use transducer"
+radiography,chụp X quang,"owner, recommended column 2026-10-15 18:48 (R5: X quang); freq 9 docs (S 6) ['chụp X quang']; alt 'chụp X-quang' 2 (S 1); src: BVBD-PDUB2020, BVNTP-ung-thu-tuyen-giap-phan-2, YHCM16-S116; spelling 'X quang' 27 docs (S 22) vs 'X-quang' 16 (S 6)"
+radiograph,phim X quang,"freq 4 docs (S 1) ['phim X quang']; alt 'phim chụp' 12 (S 6); src: BVBD-PDUB2020, YDHUE20-03016-16_9_7, YDHUE20-03017-15_2_25"
+plain radiograph,phim X quang thường quy,freq 1 docs (S 1) ['X quang thường quy']; alt 'X quang quy ước' 1 (S 1); src: BVBD-PDUB2020; ICD-9-CM 87.44 'thường quy'
+chest X-ray,X quang ngực,"owner, recommended column 2026-10-15 18:48 (R5: X quang); freq 8 docs (S 7) ['X quang ngực']; alt 'X quang phổi' 9 (S 7); src: BVBD-PDUB2020, CTUMP-1250, YHCM16-S116"
+chest radiograph,phim X quang ngực,"freq 8 docs (S 7) ['X quang ngực']; src: BVBD-PDUB2020, CTUMP-1250, YHCM16-S116"
+angiography,chụp mạch,"freq 16 docs (S 8) ['chụp mạch']; src: BVBD-PDUB2020, DQYHHN-48, YHCM22-CDHA67"
+digital subtraction angiography,chụp mạch số hóa xóa nền (DSA),"freq 2 docs (S 2) ['chụp mạch số hóa xóa nền']; alt 'số hóa xóa nền' 24 (S 23); src: BVBD-PDUB2020, YHCM22-CDHA67"
+positron emission tomography,chụp cắt lớp phát xạ positron (PET),freq 0 ['cắt lớp phát xạ positron']; BUILT; corpus keeps 'PET/CT'; LOW
+PET/CT,PET/CT,"freq 6 docs (S 3) ['PET/CT']; alt 'PET-CT' 5 (S 3); src: BVBD-PDUB2020, DQYHHN-36, TCNCYH-914; kept English"
+standardized uptake value,giá trị hấp thu chuẩn (SUV),freq 0 ['giá trị hấp thu chuẩn']; BUILT; corpus keeps SUVmax; LOW
+SUVmax,SUVmax,freq 1 docs (S 0) ['SUVmax']; src: DQYHHN-36; kept English
+FDG-avid,tăng hấp thu FDG,"freq 2 docs (S 1) ['tăng hấp thu FDG']; src: BVBD-PDUB2020, DQYHHN-36"
+hypermetabolic,tăng chuyển hóa,"freq 5 docs (S 2) ['tăng chuyển hóa']; src: BVBD-PDUB2020, ELIB-d06c3841337245a3, TCNCYH-969; = pathology 'PET avid' wording"
+scintigraphy,xạ hình,"freq 17 docs (S 12) ['xạ hình']; src: BV103-UTTG, BVBD-PDUB2020, TCNCYH-666"
+bone scan,xạ hình xương,"freq 5 docs (S 4) ['xạ hình xương']; src: BV103-UTTG, BVBD-PDUB2020, YHCM26-S121"
+bone scintigraphy,xạ hình xương,"freq 5 docs (S 4) ['xạ hình xương']; src: BV103-UTTG, BVBD-PDUB2020, YHCM26-S121"
+single-photon emission computed tomography,chụp cắt lớp vi tính đơn photon (SPECT),freq 0 ['đơn photon']; BUILT; corpus keeps SPECT; LOW
+radiotracer,dược chất phóng xạ,freq 1 docs (S 1) ['dược chất phóng xạ']; src: BVBD-PDUB2020
+radiopharmaceutical,dược chất phóng xạ,freq 1 docs (S 1) ['dược chất phóng xạ']; src: BVBD-PDUB2020
+attenuation,đậm độ,"owner, recommended column 2026-10-15 18:48 (R2); freq 15 docs (S 13) ['đậm độ']; alt 'tỷ trọng' 10 (S 2), 'tỉ trọng' 3 (S 0); src: CTUMP-612, YHCM22-CDHA125, YHCM22-CDHA189; Southern form; North / VJRNM 'tỷ trọng'"
+hypodense,giảm đậm độ,"freq 3 docs (S 3) ['giảm đậm độ']; alt 'giảm tỷ trọng' 3 (S 1); src: CTUMP-612, YHCM16-S116, YHCM22-CDHA125"
+hyperdense,tăng đậm độ,"freq 5 docs (S 4) ['tăng đậm độ']; alt 'tăng tỷ trọng' 5 (S 1); src: CTUMP-612, YHCM22-CDHA159, YHCM22-CDHA34"
+isodense,đồng đậm độ,"freq 3 docs (S 3) ['đồng đậm độ']; alt 'đồng tỷ trọng' 2 (S 1); src: BVBD-PDUB2020, CTUMP-612, YHCM16-S116"
+hypoattenuating,giảm đậm độ,"freq 3 docs (S 3) ['giảm đậm độ']; alt 'giảm tỷ trọng' 3 (S 1); src: CTUMP-612, YHCM16-S116, YHCM22-CDHA125"
+hyperattenuating,tăng đậm độ,"freq 5 docs (S 4) ['tăng đậm độ']; alt 'tăng tỷ trọng' 5 (S 1); src: CTUMP-612, YHCM22-CDHA159, YHCM22-CDHA34"
+isoattenuating,đồng đậm độ,"freq 3 docs (S 3) ['đồng đậm độ']; alt 'đồng tỷ trọng' 2 (S 1); src: BVBD-PDUB2020, CTUMP-612, YHCM16-S116"
+low attenuation,đậm độ thấp,"freq 3 docs (S 2) ['đậm độ thấp']; alt 'tỷ trọng thấp' 2 (S 0); src: TAPCHIYHOCTPHCM-10418, YDHUE20-03016-16_9_7, YHCM16-S116"
+Hounsfield unit,đơn vị Hounsfield (HU),"freq 2 docs (S 1) ['đơn vị Hounsfield']; alt 'HU' 56 (S 46); src: BVBD-PDUB2020, DQYHHN-48"
+unenhanced attenuation,đậm độ trước tiêm thuốc,freq 0 ['đậm độ trước tiêm']; alt 'đậm độ thì không tiêm' 0 (S 0); YHCM22-189
+fat attenuation,đậm độ mỡ,freq 0 ['đậm độ mỡ']; alt 'tỷ trọng mỡ' 1 (S 0)
+fluid attenuation,đậm độ dịch,freq 0 ['đậm độ dịch']; alt 'tỷ trọng dịch' 0 (S 0)
+soft-tissue attenuation,đậm độ mô mềm,freq 1 docs (S 0) ['đậm độ mô mềm']; alt 'tỷ trọng mô mềm' 0 (S 0); src: DQYHHN-1418
+signal intensity,cường độ tín hiệu,"freq 2 docs (S 1) ['cường độ tín hiệu']; alt 'tín hiệu' 32 (S 19); src: VNRAS-huong-dan-quy-tr, YHCM22-CDHA8"
+hyperintense,tín hiệu cao,"owner, recommended column 2026-10-15 18:48 (R4); freq 7 docs (S 5) ['tín hiệu cao']; alt 'tăng tín hiệu' 7 (S 3); src: YHCM22-CDHA86, YHCM22-CDHA98; Southern docs 5 vs 3 (all docs 7 / 7)"
+hypointense,tín hiệu thấp,"owner, recommended column 2026-10-15 18:48 (R4); freq 7 docs (S 5) ['tín hiệu thấp']; alt 'giảm tín hiệu' 5 (S 2); src: DQYHHN-574, YHCM22-CDHA98; Southern docs 5 vs 2"
+isointense,đồng tín hiệu,"freq 3 docs (S 1) ['đồng tín hiệu']; src: BVBD-PDUB2020, DQYHHN-356, DQYHHN-574"
+hyperintensity,tín hiệu cao,"freq 7 docs (S 5) ['tín hiệu cao']; alt 'tăng tín hiệu' 7 (S 3); src: YHCM22-CDHA86, YHCM22-CDHA98"
+hypointensity,tín hiệu thấp,"freq 7 docs (S 5) ['tín hiệu thấp']; alt 'giảm tín hiệu' 5 (S 2); src: DQYHHN-574, YHCM22-CDHA98"
+T1-weighted,T1W,"freq 8 docs (S 5) ['T1W']; alt 'xung T1' 2 (S 1); src: DQYHHN-1110, DQYHHN-574, YHCM22-CDHA86; kept English sequence label"
+T2-weighted,T2W,"freq 8 docs (S 5) ['T2W']; alt 'xung T2' 4 (S 2); src: DQYHHN-574, YHCM22-CDHA98; kept English sequence label"
+pulse sequence,chuỗi xung,"freq 13 docs (S 8) ['chuỗi xung']; src: DQYHHN-574, YHCM22-CDHA16, YHCM22-CDHA8"
+fat-suppressed,xóa mỡ,"freq 4 docs (S 3) ['xóa mỡ']; alt 'ức chế mỡ' 0 (S 0); src: DQYHHN-574, YHCM22-CDHA98"
+fat suppression,xóa mỡ,"freq 4 docs (S 3) ['xóa mỡ']; alt 'ức chế mỡ' 0 (S 0); src: DQYHHN-574, YHCM22-CDHA98"
+fat-saturated,xóa mỡ,"freq 4 docs (S 3) ['xóa mỡ']; src: DQYHHN-574, YHCM22-CDHA98"
+in-phase,trong pha,freq 1 docs (S 0) ['trong pha']; src: DQYHHN-1302; BUILT pair with opposed-phase; LOW
+opposed-phase,lệch pha,freq 0 ['lệch pha']; alt 'ngoài pha' 0 (S 0); BUILT; LOW
+chemical shift imaging,chuỗi xung dịch chuyển hóa học,freq 1 docs (S 1) ['dịch chuyển hóa học']; src: YHCM22-CDHA79; BUILT; LOW
+restricted diffusion,hạn chế khuếch tán,"freq 6 docs (S 4) ['hạn chế khuếch tán']; alt 'khuếch tán hạn chế' 0 (S 0); src: DQYHHN-1385, YHCM22-CDHA79, YHCM22-CDHA98"
+diffusion restriction,hạn chế khuếch tán,"freq 6 docs (S 4) ['hạn chế khuếch tán']; src: DQYHHN-1385, YHCM22-CDHA79, YHCM22-CDHA98"
+apparent diffusion coefficient,hệ số khuếch tán biểu kiến (ADC),"freq 2 docs (S 1) ['hệ số khuếch tán biểu kiến']; src: DQYHHN-1385, YHCM22-CDHA8"
+ADC map,bản đồ ADC,"freq 6 docs (S 5) ['bản đồ ADC']; src: DQYHHN-1385, YHCM22-CDHA79, YHCM22-CDHA8"
+ADC value,giá trị ADC,"freq 8 docs (S 5) ['giá trị ADC']; src: DQYHHN-1385, YHCM22-CDHA79, YHCM22-CDHA86"
+b-value,giá trị b,"freq 18 docs (S 10) ['giá trị b']; src: BVBD-PDUB2020, DQYHHN-1385, HSA-TS-Nguyen-Van-Ch; YHCM22-8, -79, -98 (count inflated by OCR spacing)"
+gadolinium-based contrast agent,thuốc tương phản chứa gadolinium (GBCA),"owner, recommended column 2026-10-15 18:48 (R3: MRI thuốc tương phản); freq 15 docs (S 11) ['thuốc tương phản']; alt 'thuốc đối quang từ' 2 (S 1), 'thuốc tương phản từ' 1 (S 1); src: YHCM22-CDHA189, YHCM22-CDHA98; Southern MRI wording 'thuốc tương phản' (15 docs, S 11) vs 'thuốc đối quang' 4 (S 1)"
+gadolinium contrast,thuốc tương phản chứa gadolinium,"freq 15 docs (S 11) ['thuốc tương phản']; src: YHCM22-CDHA189, YHCM22-CDHA98"
+hepatobiliary phase,thì gan mật,freq 1 docs (S 0) ['thì gan mật']; alt 'pha gan mật' 0 (S 0); src: DQYHHN-356
+late gadolinium enhancement,bắt thuốc thì muộn (LGE),freq 0 ['bắt thuốc thì muộn']; alt 'ngấm thuốc muộn' 0 (S 0); YHCM22-196 title
+artifact,ảnh giả,"freq 14 docs (S 10) ['ảnh giả']; alt 'xảo ảnh' 2 (S 1), 'nhiễu ảnh' 1 (S 1); src: CTUMP-1904, TCNCYH-4427, YDHUE20-03017-15_2_25"
+artefact,ảnh giả,"freq 14 docs (S 10) ['ảnh giả']; src: CTUMP-1904, TCNCYH-4427, YDHUE20-03017-15_2_25"
+motion artifact,ảnh giả do chuyển động,"freq 14 docs (S 10) ['ảnh giả']; src: CTUMP-1904, TCNCYH-4427, YDHUE20-03017-15_2_25; BUILT on 'ảnh giả'"
+susceptibility artifact,ảnh giả nhiễu từ,"freq 14 docs (S 10) ['ảnh giả']; src: CTUMP-1904, TCNCYH-4427, YDHUE20-03017-15_2_25; BUILT; LOW"
+spatial resolution,độ phân giải không gian,"freq 13 docs (S 9) ['độ phân giải']; src: BVBD-PDUB2020, YHCM19-S255, YHCM22-CDHA16"
+echogenicity,độ hồi âm,"freq 4 docs (S 3) ['hồi âm']; alt 'độ hồi âm' 1 (S 1); src: CTUMP-1904, DQYHHN-1302, YHCM18-S001"
+hypoechoic,giảm âm,"freq 12 docs (S 5) ['giảm âm']; alt 'giảm hồi âm' 0 (S 0), 'echo kém' 0 (S 0); src: CTUMP-1904, DQYHHN-413, TCNCYH-2613; = pathology-endocrine"
+markedly hypoechoic,rất giảm âm,freq 1 docs (S 1) ['rất giảm âm']; src: CTUMP-1904
+hyperechoic,tăng âm,"freq 8 docs (S 2) ['tăng âm']; alt 'tăng hồi âm' 0 (S 0); src: DQYHHN-1302, DQYHHN-413, HOSREM-13.pdf"
+isoechoic,đồng âm,"freq 3 docs (S 1) ['đồng âm']; src: CTUMP-1904, DQYHHN-1302, DQYHHN-413"
+anechoic,trống âm,"freq 2 docs (S 2) ['trống âm']; src: BVBD-PDUB2020, CTUMP-1904"
+heterogeneous echotexture,cấu trúc âm không đồng nhất,freq 1 docs (S 0) ['cấu trúc âm']; alt 'không đồng nhất' 31 (S 16); src: ELIB-d06c3841337245a3; BUILT; LOW
+echogenic foci,chấm tăng âm,freq 0 ['chấm tăng âm']; alt 'nốt tăng âm' 1 (S 0); BUILT; LOW
+posterior acoustic shadowing,bóng lưng,freq 1 docs (S 1) ['bóng lưng']; alt 'bóng cản' 0 (S 0); src: YHCM25-S68
+acoustic shadowing,bóng lưng,freq 1 docs (S 1) ['bóng lưng']; src: YHCM25-S68
+posterior acoustic enhancement,tăng âm phía sau,freq 0 ['tăng âm phía sau']; alt 'tăng âm sau' 0 (S 0); BUILT; LOW
+comet-tail artifact,ảnh giả đuôi sao chổi,freq 1 docs (S 1) ['đuôi sao chổi']; src: CTUMP-1904
+taller-than-wide,chiều cao lớn hơn chiều rộng,"freq 2 docs (S 2) ['chiều cao lớn hơn chiều rộng']; alt 'cao hơn rộng' 0 (S 0); src: BVBD-PDUB2020, BVNTP-chan-doan-va-dieu-tri-ung-thu-tuyen-giap"
+hypervascular,tăng sinh mạch,"freq 15 docs (S 6) ['tăng sinh mạch']; alt 'giàu mạch' 4 (S 1); src: BVBD-PDUB2020, DQYHHN-1302, DQYHHN-413"
+hypovascular,nghèo mạch,"freq 3 docs (S 3) ['nghèo mạch']; src: YHCM22-CDHA138, YHCM22-CDHA98"
+resistive index,chỉ số kháng (RI),freq 0 ['chỉ số kháng']; BUILT; LOW
+peak systolic velocity,vận tốc đỉnh tâm thu (PSV),freq 1 docs (S 0) ['vận tốc đỉnh tâm thu']; src: VJOG-71
+solid component,thành phần đặc,"freq 4 docs (S 3) ['thành phần đặc']; src: BV103-UTTG, YHCM18-S001, YHCM22-CDHA79"
+cystic component,thành phần nang,freq 0 ['thành phần nang']; alt 'dạng nang' 14 (S 12)
+septation,vách,"freq 18 docs (S 14) ['vách']; src: BVBD-PDUB2020, CTUMP-582, ELIB-d06c3841337245a3"
+mural nodule,nốt thành,freq 2 docs (S 2) ['nốt thành']; src: YHCM22-CDHA98
+simple cyst,nang đơn thuần,"freq 2 docs (S 0) ['nang đơn thuần']; src: BV103-UTTG, YDHUE20-06029-17_23_11"
+complex cyst,nang phức tạp,freq 0 ['nang phức tạp']; BUILT; LOW
+ultrasound-guided,dưới hướng dẫn siêu âm,"freq 13 docs (S 7) ['dưới hướng dẫn siêu âm']; alt 'dưới hướng dẫn của siêu âm' 6 (S 3); src: BVBD-PDUB2020, TCNCYH-4341, huejmp.vn-343"
+ultrasound-guided biopsy,sinh thiết dưới hướng dẫn siêu âm,"freq 13 docs (S 7) ['dưới hướng dẫn siêu âm']; src: BVBD-PDUB2020, TCNCYH-4341, huejmp.vn-343"
+ultrasound-guided fine needle aspiration,chọc hút tế bào bằng kim nhỏ dưới hướng dẫn siêu âm,"freq 13 docs (S 7) ['dưới hướng dẫn siêu âm']; src: BVBD-PDUB2020, TCNCYH-4341, huejmp.vn-343; FNA wording = pathology"
+mass,khối,"freq 153 docs (S 84) ['khối']; src: BVBD-PDUB2020, ELIB-d06c3841337245a3, YHCM25-S59; roadmap: radiology owns 'mass' = khối; 'tumour mass' stays with pathology"
+nodule,nốt,"freq 25 docs (S 15) ['nốt']; src: CTUMP-1904, YDHUE20-03016-16_9_7, YDHUE20-03017-15_2_25; thyroid nodule = nhân giáp (pathology-endocrine)"
+solid nodule,nốt đặc,"freq 4 docs (S 1) ['nốt đặc']; src: BVBD-PDUB2020, YDHUE20-03016-16_9_7, YDHUE20-03017-15_2_25"
+part-solid nodule,nốt bán đặc,freq 0 ['nốt bán đặc']; alt 'bán đặc' 0 (S 0); web: Lung-RADS VN reports (vnras); LOW in corpus
+subsolid nodule,nốt bán đặc,freq 0 ['nốt bán đặc']
+ground-glass nodule,nốt kính mờ,"freq 2 docs (S 0) ['nốt kính mờ']; src: YDHUE20-03016-16_9_7, YDHUE20-03017-15_2_25"
+ground-glass opacity,kính mờ,"freq 3 docs (S 1) ['kính mờ']; src: YDHUE20-03016-16_9_7, YDHUE20-03017-15_2_25, YHCM22-CDHA34; = pathology-respiratory"
+pulmonary nodule,nốt phổi,freq 1 docs (S 1) ['nốt phổi']; src: YHCM16-S116
+lung nodule,nốt phổi,freq 1 docs (S 1) ['nốt phổi']; src: YHCM16-S116
+cavitation,tạo hang,"freq 4 docs (S 2) ['tạo hang']; src: YDHUE20-03016-16_9_7, YDHUE20-03017-15_2_25, YHCM18-S10"
+space-occupying lesion,tổn thương choán chỗ,freq 1 docs (S 1) ['tổn thương choán chỗ']; src: YHCM22-CDHA79
+mass effect,hiệu ứng khối,"freq 2 docs (S 1) ['hiệu ứng khối']; alt 'đè đẩy' 2 (S 1); src: BVBD-PDUB2020, YDHUE20-06029-17_23_11"
+midline shift,di lệch đường giữa,freq 0 ['di lệch đường giữa']; BUILT; LOW
+peritumoral edema,phù quanh u,freq 1 docs (S 1) ['phù quanh u']; alt 'phù quanh tổn thương' 0 (S 0); src: BVBD-PDUB2020
+fat stranding,thâm nhiễm mỡ,"freq 4 docs (S 3) ['thâm nhiễm mỡ']; src: DQYHHN-1110, YHCM16-S116, YHCM22-CDHA125"
+enlarged lymph node,hạch to,"freq 8 docs (S 5) ['hạch to']; src: BVBD-PDUB2020, BVNTP-giai-phau-benh-hoc-benh-ly-hach-limphop3, TCNCYH-5667"
+fatty hilum,rốn hạch mỡ,freq 1 docs (S 1) ['rốn hạch']; src: BVNTP-giai-phau-benh-hoc-benh-ly-hach-limpho-p1; LOW
+loss of fatty hilum,mất rốn hạch mỡ,freq 1 docs (S 1) ['rốn hạch']; alt 'mất rốn hạch' 0 (S 0); src: BVNTP-giai-phau-benh-hoc-benh-ly-hach-limpho-p1; LOW
+central necrosis,hoại tử trung tâm,"freq 3 docs (S 1) ['hoại tử trung tâm']; src: BVBD-PDUB2020, VJOL-79831, YDHUE20-03016-16_9_7"
+wall thickening,dày thành,"freq 6 docs (S 5) ['dày thành']; src: DQYHHN-1418, YHCM22-CDHA138, YHCM22-CDHA159"
+free fluid,dịch tự do,freq 1 docs (S 1) ['dịch tự do']; alt 'dịch tự do ổ bụng' 1 (S 1); src: BVBD-PDUB2020
+air-fluid level,mức khí dịch,freq 1 docs (S 1) ['mức nước hơi']; alt 'mức khí dịch' 0 (S 0); src: CTUMP-2755; alt 'mức nước hơi' (CTUMP 1); LOW
+biliary dilatation,giãn đường mật,"freq 3 docs (S 1) ['giãn đường mật']; src: BVBD-PDUB2020, DQYHHN-1302, DQYHHN-1387"
+bile duct dilatation,giãn đường mật,"freq 3 docs (S 1) ['giãn đường mật']; src: BVBD-PDUB2020, DQYHHN-1302, DQYHHN-1387"
+intrahepatic bile duct dilatation,giãn đường mật trong gan,freq 0 ['giãn đường mật trong gan']; BUILT; LOW
+portal vein thrombosis,huyết khối tĩnh mạch cửa,"freq 5 docs (S 3) ['huyết khối tĩnh mạch cửa']; src: BVBD-PDUB2020, CTUMP-612, DQYHHN-1387"
+filling defect,khuyết thuốc,"freq 2 docs (S 2) ['khuyết thuốc']; src: CTUMP-612, YHCM18-S95"
+osteolytic lesion,tổn thương hủy xương,"freq 6 docs (S 6) ['hủy xương']; src: BVBD-PDUB2020, BVNTP-u-tuyen-yen-pituitary-adenoma, YHCM16-S125"
+osteoblastic lesion,tổn thương tạo xương,"freq 3 docs (S 3) ['tạo xương']; alt 'đặc xương' 1 (S 1); src: BVBD-PDUB2020, YHCM16-S125, YHCM21-CDHA163"
+periosteal reaction,phản ứng màng xương,freq 1 docs (S 1) ['phản ứng màng xương']; src: BVBD-PDUB2020
+coarse calcification,vôi hóa thô,freq 1 docs (S 1) ['vôi hóa thô']; src: CTUMP-1904
+macrocalcification,vôi hóa thô,freq 1 docs (S 1) ['vôi hóa thô']; src: CTUMP-1904
+rim calcification,vôi hóa viền,freq 1 docs (S 1) ['vôi hóa viền']; src: CTUMP-1904
+peripheral calcification,vôi hóa viền,freq 1 docs (S 1) ['vôi hóa viền']; src: CTUMP-1904
+punctate calcification,vôi hóa dạng chấm,freq 1 docs (S 0) ['vôi hóa dạng chấm']; src: DQYHHN-48
+microcalcification,vi vôi hóa,"freq 8 docs (S 4) ['vi vôi hóa']; alt 'vi canxi hóa' 0 (S 0); src: TCNCYH-2613, TCNCYH-2641, YDHUE20-03016-16_9_7; = pathology-breast / -endocrine"
+well-defined,ranh giới rõ,"owner, recommended column 2026-10-15 18:48 (R7); freq 7 docs (S 1) ['ranh giới rõ']; alt 'giới hạn rõ' 9 (S 7), 'bờ rõ' 1 (S 1); src: BVBD-PDUB2020, ELIB-d06c3841337245a3, TCNCYH-666; DECISION ('giới hạn rõ' 8 docs, 7 from one site)"
+ill-defined,ranh giới không rõ,"owner, recommended column 2026-10-15 18:48 (R7); freq 7 docs (S 3) ['ranh giới không rõ']; alt 'giới hạn không rõ' 2 (S 1), 'bờ không rõ' 1 (S 0); src: BVBD-PDUB2020, ELIB-d06c3841337245a3, TCNCYH-2613"
+circumscribed margin,bờ rõ,freq 1 docs (S 1) ['bờ rõ']; alt 'ranh giới rõ' 7 (S 1); src: BVBD-PDUB2020
+smooth margin,bờ đều,"freq 7 docs (S 4) ['bờ đều']; src: CTUMP-1904, DQYHHN-574, YHCM16-S116"
+irregular margin,bờ không đều,"freq 11 docs (S 6) ['bờ không đều']; src: BVBD-PDUB2020, CTUMP-1904, VJOL-79831"
+spiculated margin,bờ tua gai,"freq 1 docs (S 0) ['bờ tua gai']; alt 'tua gai' 4 (S 2), 'bờ gai' 1 (S 1), 'dạng gai' 1 (S 1); src: YDHUE20-03016-16_9_7; 'tua gai' 4 docs (S 2)"
+spiculated,tua gai,"freq 4 docs (S 2) ['tua gai']; src: BVBD-PDUB2020, CTUMP-1904, YDHUE20-03016-16_9_7"
+lobulated margin,bờ đa cung,"freq 3 docs (S 1) ['bờ đa cung']; alt 'đa cung' 4 (S 2), 'bờ chia thùy' 0 (S 0); src: YDHUE20-03016-16_9_7, YDHUE20-03017-15_2_25, YHCM22-CDHA79"
+indistinct margin,bờ không rõ,freq 1 docs (S 0) ['bờ không rõ']; src: ELIB-d06c3841337245a3
+oval shape,hình bầu dục,"freq 7 docs (S 6) ['hình bầu dục']; src: BVNTP-choc-hut-te-bao-tuyen-giap-bang-kim-nho-fna-tuye, TCNCYH-666, YHCM22-CDHA8"
+round shape,hình tròn,"freq 10 docs (S 7) ['hình tròn']; src: BVBD-PDUB2020, BVNTP-giai-phau-benh-hoc-benh-ly-tuyen-giap-p3, YHCM16-S160"
+irregular shape,hình dạng không đều,"freq 2 docs (S 2) ['hình dạng không đều']; src: BVNTP-giai-phau-benh-hoc-benh-ly-hach-limpho-p1, YHCM22-CDHA8"
+contrast enhancement,bắt thuốc,"owner, recommended column 2026-10-15 18:48 (R1); freq 13 docs (S 10) ['bắt thuốc']; alt 'ngấm thuốc' 16 (S 5), 'tăng quang' 5 (S 4); src: DQYHHN-574, YHCM22-CDHA98; Southern 'bắt thuốc' 13 docs (S 10) vs 'ngấm thuốc' 16 (S 5) vs 'tăng quang' 5 (S 4); VJOL national 85/26/11 favours 'ngấm thuốc'"
+contrast-enhancing,bắt thuốc,"freq 13 docs (S 10) ['bắt thuốc']; alt 'ngấm thuốc' 16 (S 5); src: DQYHHN-574, YHCM22-CDHA98"
+enhancing lesion,tổn thương bắt thuốc,"freq 13 docs (S 10) ['bắt thuốc']; src: DQYHHN-574, YHCM22-CDHA98"
+enhancing mass,khối bắt thuốc,"freq 13 docs (S 10) ['bắt thuốc']; src: DQYHHN-574, YHCM22-CDHA98"
+nonenhancing,không bắt thuốc,"freq 2 docs (S 1) ['không bắt thuốc']; alt 'không ngấm thuốc' 4 (S 1); src: CTUMP-612, DQYHHN-1418"
+non-enhancing,không bắt thuốc,"freq 2 docs (S 1) ['không bắt thuốc']; alt 'không ngấm thuốc' 4 (S 1); src: CTUMP-612, DQYHHN-1418"
+homogeneous enhancement,bắt thuốc đồng nhất,freq 0 ['bắt thuốc đồng nhất']; alt 'ngấm thuốc đồng nhất' 0 (S 0); BUILT; LOW
+heterogeneous enhancement,bắt thuốc không đồng nhất,"freq 3 docs (S 2) ['bắt thuốc không đồng nhất']; alt 'ngấm thuốc không đồng nhất' 3 (S 1); src: CTUMP-2755, VJOL-79831, YHCM22-CDHA8"
+rim enhancement,bắt thuốc viền,"freq 0 ['bắt thuốc viền']; alt 'ngấm thuốc viền' 0 (S 0), 'bắt thuốc dạng viền' 0 (S 0); BUILT; LOW"
+ring enhancement,bắt thuốc viền,freq 0 ['bắt thuốc viền']; BUILT; LOW
+marked enhancement,bắt thuốc mạnh,"freq 3 docs (S 2) ['bắt thuốc mạnh']; alt 'ngấm thuốc mạnh' 7 (S 2); src: TAPCHIYHOCTPHCM-10418, VJOL-79831, YHCM22-CDHA8"
+avid enhancement,bắt thuốc mạnh,"freq 3 docs (S 2) ['bắt thuốc mạnh']; alt 'ngấm thuốc mạnh' 7 (S 2); src: TAPCHIYHOCTPHCM-10418, VJOL-79831, YHCM22-CDHA8"
+enhancement pattern,kiểu bắt thuốc,freq 1 docs (S 0) ['ngấm thuốc kiểu']; alt 'kiểu bắt thuốc' 1 (S 1); src: DQYHHN-356; BUILT; LOW
+hyperenhancement,tăng bắt thuốc,freq 1 docs (S 0) ['tăng bắt thuốc']; alt 'tăng ngấm thuốc' 1 (S 0); src: VJOL-79831
+hypoenhancement,giảm bắt thuốc,freq 0 ['giảm bắt thuốc']; alt 'giảm ngấm thuốc' 1 (S 0); BUILT; LOW
+hypoenhancing,giảm bắt thuốc,freq 0 ['giảm bắt thuốc']; BUILT; LOW
+arterial phase hyperenhancement,tăng bắt thuốc thì động mạch (APHE),freq 1 docs (S 0) ['tăng ngấm thuốc thì động mạch']; alt 'ngấm thuốc thì động mạch' 1 (S 0); src: DQYHHN-356; follows 'bắt thuốc'; DQ-356 'tăng ngấm thuốc thì động mạch'
+delayed enhancement,bắt thuốc thì muộn,freq 0 ['bắt thuốc thì muộn']; alt 'ngấm thuốc muộn' 0 (S 0)
+washout,thải thuốc (washout),"owner, recommended column 2026-10-15 18:48 (R9); freq 5 docs (S 3) ['thải thuốc']; alt 'washout' 2 (S 2), 'thoát thuốc' 2 (S 2); src: CTUMP-612, DQYHHN-1302, DQYHHN-356; 'thải thuốc' 5 docs (S 3) vs 'washout' kept 3 (S 2): VI + EN gloss"
+washout appearance,hình ảnh thải thuốc (washout),"freq 5 docs (S 3) ['thải thuốc']; src: CTUMP-612, DQYHHN-1302, DQYHHN-356; LI-RADS major feature"
+absolute washout,chỉ số thải tuyệt đối,freq 1 docs (S 1) ['chỉ số thải tuyệt đối']; alt 'thải thuốc tuyệt đối' 0 (S 0); src: YHCM22-CDHA189; YHCM22-189 (adrenal)
+relative washout,chỉ số thải tương đối,freq 1 docs (S 1) ['chỉ số thải tương đối']; alt 'thải thuốc tương đối' 0 (S 0); src: YHCM22-CDHA189; YHCM22-189 (adrenal)
+enhancing capsule,vỏ bao bắt thuốc,"freq 27 docs (S 19) ['vỏ bao']; src: BVNTP-giai-phau-benh-hoc-benh-ly-tuyen-giap-p3, CTUMP-612, VJOL-79831"
+capsule appearance,hình ảnh vỏ bao,"freq 27 docs (S 19) ['vỏ bao']; src: BVNTP-giai-phau-benh-hoc-benh-ly-tuyen-giap-p3, CTUMP-612, VJOL-79831"
+active extravasation,thoát thuốc cản quang,"freq 2 docs (S 2) ['thoát thuốc']; alt 'thoát mạch thuốc' 1 (S 1), 'thoát thuốc cản quang' 1 (S 1); src: BVBD-PDUB2020, YHCM22-CDHA67; bleeding sign (YHCM22-67)"
+arterial phase,thì động mạch,"freq 5 docs (S 3) ['thì động mạch']; alt 'pha động mạch' 0 (S 0); src: CTUMP-612, DQYHHN-1302, DQYHHN-356"
+late arterial phase,thì động mạch muộn,freq 1 docs (S 0) ['thì động mạch muộn']; src: DQYHHN-1302
+portal venous phase,thì tĩnh mạch cửa,"freq 5 docs (S 2) ['thì tĩnh mạch cửa']; src: BVBD-PDUB2020, CTUMP-612, DQYHHN-1302"
+venous phase,thì tĩnh mạch,"freq 9 docs (S 6) ['thì tĩnh mạch']; alt 'pha tĩnh mạch' 0 (S 0); src: CTUMP-612, DQYHHN-356, YHCM22-CDHA21"
+delayed phase,thì muộn,"freq 2 docs (S 0) ['thì muộn']; alt 'pha muộn' 1 (S 1); src: DQYHHN-356, ELIB-d06c3841337245a3"
+transitional phase,thì chuyển tiếp,freq 0 ['thì chuyển tiếp']; BUILT; LOW
+unenhanced phase,thì không tiêm thuốc,"freq 3 docs (S 2) ['thì không tiêm thuốc']; alt 'thì trước tiêm' 2 (S 1); src: VJOL-79831, YHCM22-CDHA125, YHCM22-CDHA189"
+non-contrast phase,thì không tiêm thuốc,"freq 3 docs (S 2) ['thì không tiêm thuốc']; src: VJOL-79831, YHCM22-CDHA125, YHCM22-CDHA189"
+precontrast,trước tiêm thuốc,"freq 2 docs (S 1) ['thì trước tiêm']; alt 'trước và sau tiêm' 2 (S 2); src: DQYHHN-1302, YHCM22-CDHA138"
+postcontrast,sau tiêm thuốc,"freq 26 docs (S 13) ['sau tiêm']; src: BVBD-PDUB2020, WHO-UMC-vietnam.pdf, YHCM22-CDHA8"
+contrast agent,thuốc cản quang,"owner, recommended column 2026-10-15 18:48 (R3: CT keeps thuốc cản quang); freq 24 docs (S 10) ['thuốc cản quang']; alt 'chất cản quang' 5 (S 5); src: BVBD-PDUB2020, ELIB-d06c3841337245a3, YHCM22-CDHA67; CT / X-ray sense; MRI = thuốc tương phản (gadolinium rows)"
+contrast medium,thuốc cản quang,"freq 24 docs (S 10) ['thuốc cản quang']; src: BVBD-PDUB2020, ELIB-d06c3841337245a3, YHCM22-CDHA67"
+contrast material,thuốc cản quang,"freq 24 docs (S 10) ['thuốc cản quang']; src: BVBD-PDUB2020, ELIB-d06c3841337245a3, YHCM22-CDHA67"
+iodinated contrast,thuốc cản quang chứa iod,freq 1 docs (S 1) ['thuốc cản quang chứa iod']; src: BVBD-PDUB2020
+iodinated contrast medium,thuốc cản quang chứa iod,freq 1 docs (S 1) ['thuốc cản quang chứa iod']; src: BVBD-PDUB2020
+intravenous contrast,thuốc cản quang tiêm tĩnh mạch,"freq 15 docs (S 8) ['tiêm tĩnh mạch']; alt 'tiêm thuốc cản quang' 9 (S 5); src: BVBD-PDUB2020, ELIB-d06c3841337245a3, WHO-UMC-vietnam.pdf"
+oral contrast,thuốc cản quang đường uống,freq 0 ['thuốc cản quang đường uống']; alt 'đường uống' 12 (S 5); BUILT; LOW
+contrast injection,tiêm thuốc cản quang,"freq 9 docs (S 5) ['tiêm thuốc cản quang']; src: BVBD-PDUB2020, CTUMP-612, DQYHHN-413"
+injection rate,tốc độ tiêm,"freq 3 docs (S 2) ['tốc độ tiêm']; src: DQYHHN-1302, YHCM22-CDHA21, YHCM22-CDHA8"
+bolus tracking,kỹ thuật theo dõi bolus (bolus tracking),"freq 7 docs (S 5) ['bolus']; src: BENHVIENDAKHOABARIA-5481_dai_thao_du, BVBD-PDUB2020, TCNCYH-969; BUILT; 'bolus' kept (6 docs); LOW"
+contrast-induced nephropathy,bệnh thận do thuốc cản quang,freq 0 ['bệnh thận do thuốc cản quang']; alt 'suy thận do thuốc cản quang' 1 (S 0); BUILT; LOW
+contrast allergy,dị ứng thuốc cản quang,freq 1 docs (S 1) ['dị ứng thuốc cản quang']; src: BVBD-PDUB2020
+slice thickness,độ dày lát cắt,"freq 9 docs (S 7) ['độ dày lát cắt']; src: DQYHHN-1385, YHCM22-CDHA21, YHCM22-CDHA79"
+axial plane,mặt phẳng ngang (axial),freq 1 docs (S 1) ['mặt phẳng ngang']; alt 'axial' 7 (S 5); src: BVBD-PDUB2020; 'axial' kept in 10 docs
+coronal plane,mặt phẳng đứng ngang (coronal),freq 1 docs (S 1) ['mặt phẳng đứng ngang']; alt 'coronal' 5 (S 4); src: BVBD-PDUB2020
+sagittal plane,mặt phẳng đứng dọc (sagittal),freq 0 ['mặt phẳng đứng dọc']; alt 'sagittal' 5 (S 4)
+multiplanar reconstruction,tái tạo đa mặt phẳng (MPR),"freq 2 docs (S 1) ['tái tạo đa mặt phẳng']; alt 'MPR' 2 (S 0); src: DQYHHN-413, YHCM22-CDHA159"
+maximum intensity projection,tái tạo cường độ tối đa (MIP),freq 0 ['cường độ tối đa']; alt 'MIP' 1 (S 1); BUILT; MIP kept (YHCM); LOW
+volume rendering,tái tạo thể tích (VR),freq 0 ['tái tạo thể tích']; alt 'VR' 2 (S 0); BUILT; LOW
+lung window,cửa sổ phổi,freq 0 ['cửa sổ phổi']; BUILT; LOW
+mediastinal window,cửa sổ trung thất,"freq 3 docs (S 0) ['cửa sổ trung thất']; src: TCNCYH-914, YDHUE20-03016-16_9_7, YDHUE20-03017-15_2_25"
+bone window,cửa sổ xương,freq 1 docs (S 1) ['cửa sổ xương']; src: BVBD-PDUB2020
+region of interest,vùng quan tâm (ROI),freq 1 docs (S 1) ['vùng quan tâm']; src: YHCM22-CDHA8
+radiation dose,liều bức xạ,"freq 2 docs (S 1) ['liều bức xạ']; alt 'liều chiếu' 3 (S 1); src: BVBD-PDUB2020, YDHUE20-03017-15_2_25"
+BI-RADS,BI-RADS,"freq 2 docs (S 1) ['BI-RADS']; src: DQYHHN-48, YHCM22-CDHA8; kept English; = pathology-breast"
+TI-RADS,TI-RADS,"freq 2 docs (S 1) ['TI-RADS']; alt 'TIRADS' 6 (S 3); src: BV103-UTTG, CTUMP-1904; kept English; = pathology-endocrine"
+ACR TI-RADS,ACR TI-RADS,freq 0 ['ACR TI-RADS']; kept English
+EU-TIRADS,EU-TIRADS,freq 1 docs (S 1) ['EU-TIRADS']; src: CTUMP-1904; kept English
+LI-RADS,LI-RADS,"freq 2 docs (S 0) ['LI-RADS']; src: DQYHHN-1302, DQYHHN-356; kept English"
+PI-RADS,PI-RADS,"freq 2 docs (S 0) ['PI-RADS']; src: DQYHHN-1385, DQYHHN-48; kept English"
+O-RADS,O-RADS,"freq 0 ['O-RADS']; kept English; web: O-RADS papers (vnras, tapchiyhcd)"
+Lung-RADS,Lung-RADS,"freq 2 docs (S 0) ['Lung-RADS']; src: YDHUE20-03016-16_9_7, YDHUE20-03017-15_2_25; kept English"
+CAD-RADS,CAD-RADS,freq 1 docs (S 0) ['CAD-RADS']; src: DQYHHN-48; kept English
+Bosniak classification,phân loại Bosniak,"freq 2 docs (S 1) ['Bosniak']; alt 'phân loại Bosniak' 0 (S 0); src: YDHUE20-06029-17_23_11, YHCM22-CDHA138"
+RECIST,RECIST,"freq 4 docs (S 2) ['RECIST']; src: DQYHHN-1302, DQYHHN-1387, YHCM16-S241; kept English"
+mRECIST,mRECIST,"freq 3 docs (S 1) ['mRECIST']; src: BVBD-PDUB2020, DQYHHN-1302, DQYHHN-1387; kept English"
+Deauville score,thang điểm Deauville,freq 1 docs (S 1) ['Deauville']; src: BVBD-PDUB2020
+complete response,đáp ứng hoàn toàn (CR),"freq 13 docs (S 8) ['đáp ứng hoàn toàn']; src: BVBD-PDUB2020, DQYHHN-1387, YHCM18-S289"
+partial response,đáp ứng một phần (PR),"freq 8 docs (S 5) ['đáp ứng một phần']; src: BVBD-PDUB2020, TCNCYH-3438, YHCM18-S289"
+stable disease,bệnh ổn định (SD),"freq 5 docs (S 2) ['bệnh ổn định']; alt 'bệnh giữ nguyên' 3 (S 2); src: BVBD-PDUB2020, BVNTP-ung-thu-tuyen-thuong-than, DQYHHN-1387"
+progressive disease,bệnh tiến triển (PD),"freq 17 docs (S 12) ['bệnh tiến triển']; src: BVBD-PDUB2020, TCNCYH-3438, YHCM16-S241"
+target lesion,tổn thương mục tiêu,"owner, recommended column 2026-10-15 18:48 (R6); freq 1 docs (S 1) ['tổn thương mục tiêu']; alt 'tổn thương đích' 0 (S 0); src: YHCM26-S20; DECISION (1 / 0 docs)"
+non-target lesion,tổn thương không mục tiêu,"owner, recommended column 2026-10-15 18:48 (R6); freq 0 ['tổn thương không mục tiêu']; alt 'tổn thương không đích' 0 (S 0); BUILT; LOW"
+new lesion,tổn thương mới,"freq 5 docs (S 3) ['tổn thương mới']; src: BVBD-PDUB2020, DQYHHN-1302, YHCM26-S121"
+measurable lesion,tổn thương đo được,freq 0 ['tổn thương đo được']; alt 'tổn thương có thể đo được' 0 (S 0); BUILT; LOW
+sum of diameters,tổng đường kính,freq 0 ['tổng đường kính']; alt 'tổng các đường kính' 0 (S 0); BUILT; LOW
+longest diameter,đường kính lớn nhất,"freq 3 docs (S 3) ['đường kính lớn nhất']; alt 'đường kính dài nhất' 0 (S 0); src: BVBD-PDUB2020, YHCM18-S26, YHCM25-S59"
+short-axis diameter,đường kính trục ngắn,"freq 2 docs (S 2) ['đường kính trục ngắn']; alt 'trục ngắn' 2 (S 2); src: YHCM18-S95, YHCM22-CDHA16"
+short axis,trục ngắn,"freq 2 docs (S 2) ['trục ngắn']; src: YHCM18-S95, YHCM22-CDHA16"
+local tumor progression,tiến triển tại chỗ,"freq 5 docs (S 4) ['tiến triển tại chỗ']; src: BVBD-PDUB2020, TCNCYH-2381, YHCM16-S116"
+embolization,nút mạch,"owner, recommended column 2026-10-15 18:48 (R8); freq 8 docs (S 3) ['nút mạch']; alt 'tắc mạch' 17 (S 12); src: DQYHHN-1302, DQYHHN-1387, YHCM22-CDHA67; 'tắc mạch' mostly = occlusion / embolism; procedure sense: YHCM22-CDHA67 'nút mạch' 14 vs 'tắc mạch' 1, DQYHHN-1302 29 vs 15; BVBD-PDUB2020 'gây tắc mạch' 15 vs 'nút mạch' 9"
+embolisation,nút mạch,"owner, recommended column 2026-10-15 18:48 (R8); freq 8 docs (S 3) ['nút mạch']; src: DQYHHN-1302, DQYHHN-1387, YHCM22-CDHA67"
+transarterial chemoembolization,nút mạch hóa chất (TACE),"freq 3 docs (S 1) ['nút mạch hóa chất']; src: BVBD-PDUB2020, DQYHHN-1302, DQYHHN-1387"
+transarterial chemoembolisation,nút mạch hóa chất (TACE),"freq 3 docs (S 1) ['nút mạch hóa chất']; src: BVBD-PDUB2020, DQYHHN-1302, DQYHHN-1387"
+conventional TACE,nút mạch hóa chất thường quy (cTACE),"freq 2 docs (S 0) ['cTACE']; src: DQYHHN-1302, DQYHHN-1387; BUILT; LOW"
+drug-eluting bead TACE,nút mạch hóa chất với hạt vi cầu tải thuốc (DEB-TACE),"freq 2 docs (S 0) ['hạt tải thuốc']; alt 'hạt vi cầu' 3 (S 1), 'DEB-TACE' 2 (S 0); src: DQYHHN-1302, DQYHHN-1387"
+drug-eluting beads,hạt vi cầu tải thuốc,"freq 2 docs (S 0) ['hạt tải thuốc']; alt 'hạt vi cầu' 3 (S 1); src: DQYHHN-1302, DQYHHN-1387"
+transarterial radioembolization,xạ trị trong chọn lọc (TARE),"freq 2 docs (S 1) ['xạ trị trong chọn lọc']; src: BVBD-PDUB2020, DQYHHN-1302"
+selective internal radiation therapy,xạ trị trong chọn lọc (SIRT),"freq 2 docs (S 1) ['xạ trị trong chọn lọc']; src: BVBD-PDUB2020, DQYHHN-1302"
+radiofrequency ablation,đốt sóng cao tần (RFA),"freq 5 docs (S 5) ['đốt sóng cao tần']; alt 'sóng cao tần' 7 (S 6); src: BVBD-PDUB2020, BVNTP-chan-doan-va-dieu-tri-ung-thu-tuyen-giap, BVNTP-phau-thuat-cat-tuyen-vu-vet-hach-nach"
+microwave ablation,đốt vi sóng (MWA),freq 0 ['đốt vi sóng']; alt 'vi sóng' 3 (S 1); BUILT; LOW
+cryoablation,áp lạnh,"freq 3 docs (S 2) ['áp lạnh']; alt 'đốt lạnh' 1 (S 1); src: BVBD-PDUB2020, BVNTP-choc-hut-te-bao-tuyen-giap-bang-kim-nho-fna-tuye, ELIB-d06c3841337245a3"
+thermal ablation,đốt nhiệt,freq 1 docs (S 0) ['đốt nhiệt']; src: ELIB-d06c3841337245a3
+percutaneous ethanol injection,tiêm cồn qua da (PEI),freq 1 docs (S 1) ['tiêm cồn qua da']; src: BVBD-PDUB2020
+ablation zone,vùng đốt,freq 1 docs (S 1) ['vùng đốt']; src: YHCM18-S001
+percutaneous drainage,dẫn lưu qua da,"freq 3 docs (S 2) ['dẫn lưu qua da']; src: YDHUE20-06029-17_23_11, YHCM22-CDHA159, YHCM22-S157"
+abscess drainage,dẫn lưu ổ áp xe,"freq 2 docs (S 2) ['dẫn lưu ổ áp xe']; alt 'chọc dẫn lưu' 2 (S 2); src: BVNTP-giai-phau-benh-hoc-benh-ly-tuyen-giap-p1, YHCM22-CDHA125"
+percutaneous transhepatic biliary drainage,dẫn lưu đường mật xuyên gan qua da (PTBD),freq 0 ['dẫn lưu đường mật xuyên gan qua da']; alt 'PTBD' 1 (S 1); BUILT (ICD-9-CM 87.51 'qua da'); LOW
+image-guided biopsy,sinh thiết dưới hướng dẫn hình ảnh,freq 1 docs (S 1) ['sinh thiết dưới hướng dẫn']; alt 'dưới hướng dẫn' 20 (S 10); src: BVBD-PDUB2020
+CT-guided,dưới hướng dẫn cắt lớp vi tính,freq 0 ['dưới hướng dẫn cắt lớp vi tính']; alt 'dưới hướng dẫn CLVT' 1 (S 0); = pathology-respiratory 'CT-guided core biopsy'
+CT-guided biopsy,sinh thiết dưới hướng dẫn cắt lớp vi tính,freq 1 docs (S 0) ['dưới hướng dẫn CLVT']; src: TCNCYH-914; = pathology-respiratory
+endovascular intervention,can thiệp nội mạch,"freq 5 docs (S 4) ['can thiệp nội mạch']; src: DQYHHN-1302, YHCM22-CDHA16, YHCM22-CDHA67"
+microcatheter,vi ống thông,"freq 3 docs (S 1) ['vi ống thông']; src: BVBD-PDUB2020, DQYHHN-1302, DQYHHN-1387"
+guidewire,dây dẫn,"freq 4 docs (S 2) ['dây dẫn']; src: BVBD-PDUB2020, TCNCYH-4341, YDHUE20-06029-17_23_11"
+superselective,siêu chọn lọc,"freq 3 docs (S 1) ['siêu chọn lọc']; src: BVBD-PDUB2020, DQYHHN-1302, DQYHHN-1387"
+superselective embolization,nút mạch siêu chọn lọc,"freq 3 docs (S 1) ['siêu chọn lọc']; src: BVBD-PDUB2020, DQYHHN-1302, DQYHHN-1387"
+coil embolization,nút mạch bằng vòng xoắn kim loại (coil),"freq 2 docs (S 1) ['vòng xoắn kim loại']; alt 'coil' 1 (S 0); src: BVBD-PDUB2020, DQYHHN-1302"
+pseudoaneurysm,giả phình,"freq 2 docs (S 1) ['giả phình']; src: YDHUE20-06029-17_23_11, YHCM22-CDHA67; YHCM22-73 title"
+feeding artery,động mạch nuôi,"freq 3 docs (S 1) ['động mạch nuôi']; src: BVBD-PDUB2020, DQYHHN-1302, TCNCYH-666"
+feeding vessel,mạch máu nuôi,"freq 10 docs (S 5) ['mạch máu nuôi']; src: BVBD-PDUB2020, DQYHHN-1302, YHCM16-S171"
+portal vein embolization,nút tĩnh mạch cửa (PVE),freq 1 docs (S 0) ['nút tĩnh mạch cửa']; src: DQYHHN-1302
+uterine artery embolization,nút động mạch tử cung (UAE),freq 1 docs (S 0) ['nút động mạch tử cung']; src: ELIB-d06c3841337245a3
+bronchial artery embolization,nút động mạch phế quản,freq 0 ['nút động mạch phế quản']; BUILT; LOW
+inferior vena cava filter,lưới lọc tĩnh mạch chủ dưới,freq 1 docs (S 1) ['lưới lọc tĩnh mạch chủ']; src: YHCM26-S70; BUILT; LOW
+vertebroplasty,tạo hình thân đốt sống (bơm xi măng),freq 0 ['tạo hình thân đốt sống']; alt 'bơm xi măng' 1 (S 1); LOW
+mechanical thrombectomy,lấy huyết khối cơ học,freq 0 ['lấy huyết khối cơ học']; alt 'lấy huyết khối' 2 (S 2)
+technical success,thành công kỹ thuật,"freq 2 docs (S 2) ['thành công kỹ thuật']; alt 'thành công về mặt kỹ thuật' 0 (S 0); src: YHCM21-CDHA144, YHCM22-CDHA67"
+impression,kết luận,"freq 214 docs (S 124) ['kết luận']; src: VNRAS-huong-dan-quy-tr, WHO-UMC-vietnam.pdf, YHCM18-S005; report section heading"
+unremarkable,không ghi nhận bất thường,"freq 48 docs (S 32) ['không ghi nhận']; alt 'không thấy bất thường' 0 (S 0); src: YHCM21-CDHA112, YHCM21-CDHA144, YHCM21-S93"
+no interval change,không thay đổi so với lần chụp trước,"freq 24 docs (S 15) ['không thay đổi']; src: YDHUE20-03016-16_9_7, YHCM22-CDHA98"
+prior study,lần chụp trước,"freq 0 ['lần chụp trước']; alt 'phim cũ' 3 (S 1), 'lần trước' 5 (S 2); BUILT; LOW"
+follow-up imaging,chụp kiểm tra,"freq 3 docs (S 1) ['chụp kiểm tra']; alt 'chụp lại' 4 (S 1); src: DQYHHN-1302, DQYHHN-1387, YHCM16-S66; LOW"
+suggestive of,gợi ý,"freq 76 docs (S 51) ['gợi ý']; alt 'nghĩ đến' 14 (S 9); src: BVBD-PDUB2020, ELIB-d06c3841337245a3, YHCM26-S70"
+cannot be excluded,không loại trừ,"freq 9 docs (S 4) ['không loại trừ']; alt 'chưa loại trừ' 2 (S 1); src: BVBD-PDUB2020, DQYHHN-1418, TCNCYH-4427"
+incidental finding,phát hiện tình cờ,"freq 10 docs (S 5) ['phát hiện tình cờ']; src: BVBD-PDUB2020, JMPM-666, TCNCYH-1240"
+incidentaloma,u phát hiện tình cờ,freq 0 ['u phát hiện tình cờ']; BUILT; LOW
+clinical correlation,đối chiếu lâm sàng,"freq 3 docs (S 3) ['đối chiếu lâm sàng']; src: BVNTP-gioi-thieu-mon-hoc-giai-phau-benh-p2, YHCM19-S209, YHCM22-CDHA183"
+lung cancer screening,tầm soát ung thư phổi,"freq 50 docs (S 32) ['tầm soát']; alt 'sàng lọc' 42 (S 13); src: BENHVIENDAKHOABARIA-5481_dai_thao_du, YDHUE20-03016-16_9_7, YDHUE20-03017-15_2_25; 'tầm soát' 50 docs (S 32) vs 'sàng lọc' 42 (S 13)"

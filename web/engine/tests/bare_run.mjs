@@ -52,10 +52,10 @@ for (const c of data.cases) {
     const want = c.results[k];
     const cfg = { ...data.default_cfg, ...(c.cfg || {}), ...(st.cfg || {}) };
     const setup = { system: cfg.system, scope: cfg.pack_key, hits: cfg.hits,
-      fixes: cfg.fixes.map(([en, vi, wrong]) => ({ en, vi, wrong })) };
+      fixes: cfg.fixes.map(([en, vi, wrong]) => ({ en, vi, wrong })), allowed: cfg.allowed };
     const seg = new core.TaggedSegment(want.tagged, want.essential);
     const keyer = new core.Translator({ model: async () => "", system: setup.system, modelKey: cfg.model,
-      packKey: setup.scope, fixes: setup.fixes, hits: setup.hits, tm });
+      packKey: setup.scope, fixes: setup.fixes, hits: setup.hits, tm, allowed: setup.allowed });
     if (st.put) {
       const key = await keyer.key(seg);
       if (key !== want.key) bad.push(k + ": key");
@@ -85,10 +85,10 @@ for (const c of data.cases) {
     }
     if (call !== want.calls.length) bad.push(k + ": " + call + " calls for " + want.calls.length);
     const work = r.reduced ? seg.reduced(core.isEssential) : seg;
-    const got = { id: r.id, text: r.text, level: r.level, flags: r.flags, cached: r.cached, work_tagged: work.tagged,
-      work_spans: [...r.spans].sort((a, b) => a - b) };
-    const exp = { id: "s" + k, text: want.text, level: want.level, flags: want.flags, cached: want.cached,
-      work_tagged: want.work_tagged, work_spans: want.work_spans };
+    const got = { id: r.id, text: r.text, level: r.level, flags: r.flags, fixes: r.fixes, cached: r.cached,
+      work_tagged: work.tagged, work_spans: [...r.spans].sort((a, b) => a - b) };
+    const exp = { id: "s" + k, text: want.text, level: want.level, flags: want.flags, fixes: want.fixes,
+      cached: want.cached, work_tagged: want.work_tagged, work_spans: want.work_spans };
     if (!same(got, exp)) bad.push(k + ": js " + show(got) + " py " + show(exp));
     if ((await keyer.key(seg)) !== want.key) bad.push(k + ": key");
     if (tm) {

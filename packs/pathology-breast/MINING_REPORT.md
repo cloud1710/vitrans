@@ -80,6 +80,12 @@ Y văn vú VN dùng áp đảo **"ung thư biểu mô" (UTBM)**: ≥15 nguồn p
 11. **TILs:** "lympho bào xâm nhập u (TILs)", hoặc dạng của VNU21 "xâm nhập lympho vào mô u".
 12. **Các thuật ngữ chưa có y văn VN:** FEA, columnar cell lesion, sclerosing adenosis, macrometastasis ("đại di căn" hay "di căn lớn"), EIC, HER2-ultralow (giữ EN hay "HER2 cực thấp"), radial scar ("sẹo tỏa tia" hay "sẹo nan hoa").
 
+### Thay đổi 2026-10-15 18:48 (bản 0.1.4)
+
+- mammography = "chụp X quang tuyến vú" (trước: "chụp X-quang tuyến vú") theo radiology R5 (chính tả "X quang" 27 tài
+  liệu, S22, so với "X-quang" 16, S6); test mammography đổi theo.
+- neoadjuvant / neoadjuvant therapy = "tân bổ trợ" / "điều trị tân bổ trợ": anh xác nhận (lựa chọn 2), không đổi.
+
 ## 6. Giới hạn
 
 - Số đếm là số nguồn **tìm được** qua khoảng 100 lượt tra, không phải tần suất toàn văn. Nhiều trang vnras.com đăng lại bài TCYHVN, nên mỗi bài được đếm 1 lần.

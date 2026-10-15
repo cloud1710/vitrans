@@ -16,6 +16,7 @@ Output (web/engine/tests/fixtures/engine/):
                   sent, levels, flags, final texts, TM keys and TM contents
   pipeline.json   job wiring: pack choice, merged pack key, glossary hits, system prompt, scope and the outcome of
                   every segment of synthetic documents (prev / next context), with the scripted model
+  repair.json     term repair candidates (repair.py) of synthetic mis-heard sentences over the pathology keys
   e2e.json        synthetic DOCX / PPTX through collect -> translate (scripted model) -> apply -> fit -> save: the
                   changed parts as the helper writes them (fonts and the re-open check are not part of the port)
 
@@ -36,6 +37,7 @@ sys.path.insert(0, str(ROOT / "helper" / "tests"))
 sys.path.insert(0, str(ROOT / "tools"))
 
 from vitranslate import matching, packs, qa, tags, translate, vnsyllable  # noqa: E402
+from vitranslate.ooxml import document  # noqa: E402
 
 OUT = ROOT / "web" / "engine" / "tests" / "fixtures" / "engine"
 FLAG_LETTERS = ((re.I, "i"), (re.S, "s"), (re.M, "m"))
@@ -145,7 +147,7 @@ TEMPLATES = [
 def collect_module_patterns():
     """Every compiled module-level pattern of the ported modules (name, pattern, flags)."""
     out = []
-    for mod in (tags, qa, translate, vnsyllable, matching, packs):
+    for mod in (tags, qa, translate, vnsyllable, matching, packs, document):
         for name in sorted(vars(mod)):
             v = getattr(mod, name)
             if isinstance(v, re.Pattern):
@@ -254,6 +256,7 @@ QA_SRC = [
     "Do not reuse old slides", "Tau in neurons", "Group C: ", "Fluid: clear", "Use ``` fences", "\"Quoted\"",
     "Text", "Translation: x", "",
     "Small round blue cells fill the marrow space now",  # exactly 40 letters: the ratio gate's boundary
+    "1-3 NOVEMBER 2026", "Sept 2019 to May 2020",  # month names -> their numbers in Vietnamese
 ]
 QA_OUT = [
     "S\u00e1p paraffin ch\u01b0a \u0111\u01b0\u1ee3c lo\u1ea1i b\u1ecf ho\u00e0n to\u00e0n", "BRAF VE1 (-)",
@@ -284,8 +287,11 @@ QA_OUT = [
     "B\u1ea3n d\u1ecbch ti\u1ebfng Vi\u1ec7t:\nV\u0103n b\u1ea3n", "Vietnamese: V\u0103n b\u1ea3n", "```\nD\u00f9ng\n```",
     "Swollen hepatocytes", "Paraffin wax not completely removed from the tissue section", "",
     nfd("Kh\u1ed1i u \u1edf ph\u1ed5i nh\u1ecf v\u00e0 g\u1ed3m 2,5 cm"), "PULM\u00d4N", "Ung th\u01b0 Pulm\u00f4n",
-    "T\u1ebf b\u00e0o nh\u1ecf",
+    "T\u1ebf b\u00e0o nh\u1ecf", "Nhi\u1ec1u lymph\u00f4 b\u00e0o, LYMPH\u00d4 v\u00e0 carcin\u00f4m",
+    "1\u20133 TH\u00c1NG 11 N\u0102M 2026", "th\u00e1ng 9/2019 \u0111\u1ebfn th\u00e1ng 5/2020", "1-3 th\u00e1ng 12 n\u0103m 2026",
 ]
+# the words of the active packs that the suspicious-word check accepts (packs.allowed_words: lower case)
+SUSPICIOUS_ALLOWED = ["lymph\u00f4", "pulm\u00f4n", "s\u00e9zary"]
 QA_HITS = [("biopsy", "sinh thi\u1ebft"), ("lung", "ph\u1ed5i"), ("carcinoma", "ung th\u01b0 bi\u1ec3u m\u00f4"),
            ("diagnosis", "ch\u1ea9n \u0111o\u00e1n"), ("index", "ch\u1ec9 s\u1ed1"), ("histologic patterns", "v"),
            ("estrogen receptor", "th\u1ee5 th\u1ec3 estrogen"), ("lymph node", "h\u1ea1ch"), ("high-grade", "\u0111\u1ed9 cao"),
@@ -313,7 +319,23 @@ CODE_CELLS = ["LUNG BASE", "BRAF VE1", "Ki-67 (MIB-1)", "pT1a", "p<0.001", "CD20
               "Nguyen A et al. Mod Pathol. 2019.", "Brown et al. (Am J Surg Pathol 2010)",
               "Histopathology. 2021 May;79(2):100-110.", "Garcia L et al. examplejournal.org 2018:",
               "Example J. 2024 Mar 2;16(3):e51234.", "Conclusion from Smith et al. (2017):", "Benign (Am J Pathol 1981)",
-              "Results for ER agree with Smith et al. Example J Pathol 2000; 61: 101-108.", "", "\u00c9T\u00c9 ROUGE"]
+              "Results for ER agree with Smith et al. Example J Pathol 2000; 61: 101-108.", "", "\u00c9T\u00c9 ROUGE",
+              "I AM ATTENDING ASDP 2026", "1-3 NOVEMBER 2026", "MAY 2026", "MAY", "SINGAPORE", "ER PR HER2 STATUS",
+              "CD20 AND CD3", "RESULTS OF THE STUDY", "KI-67 IN TUMOUR", "HER2 IS POSITIVE"]
+# academic-title runs (qa.fix_title_order): every rank, dots, tags, names with marks, and what stays as it is
+TITLE_TEXTS = [
+    "BS. TS. Jane Doe \u0111\u00e3 xem l\u1ea1i", "BS TS Jane Doe", "TS BS Nguyen A", "GS TS BS John Smith",
+    "BS TS PGS Mei-Ling Tran", "BS. ThS. Nguy\u1ec5n V\u0103n A", "KS. ThS. Tran B", "CN TS Tran B", "BS Jane Doe",
+    "TS. BS. TS. Jane Doe", "<g1>BS TS Jane Doe</g1> \u0111\u00e3 k\u00fd", "(BS. TS. Jane Doe)",
+    "BS. TS. <g1>Jane Doe</g1>, MD", "BS TS <g1><g2>Jane</g2> Doe</g1>",
+    "BS TS Jane Doe v\u00e0 BS. TS. John Smith, BS. TS. Nguyen A; TS. BS. Tran B", "BS\tTS  Jane Doe",
+    "BS TS O'Brien", "BS TS O\u2019Brien", "BS TS \u0110\u1eb7ng V\u0103n A", nfd("BS TS \u0110\u1eb7ng V\u0103n A"),
+    "BS TS \u00c9mile Roux", "TS. BS. Jane Doe", "GS. TS. BS. John Smith", "PGS. TS. Nguyen A", "ThS. BS. Tran B",
+    "TS.  BS. Jane Doe", "C\u00e1c BS v\u00e0 TS", "BS CKII Nguyen A", "d\u00e2y th\u1ea7n kinh s\u1ecd (CN VII)",
+    "TSH v\u00e0 BS", "Jane Doe, BS, TS", "<g1>BS. TS.</g1> Jane Doe", "BS-TS Nguyen A", "PGS.TS. Nguyen A",
+    "bs ts Jane Doe", "BS TS 2 l\u1ea7n", "BS TS", "BS TS A. Smith", "ABS TS Nguyen", "", "BS. TS. <x1/>Jane",
+    "Theo BS TS Jane Doe v\u00e0 PGS BS Tran B.",
+]
 
 
 def pairs_of(fn, a, b, marker=None):
@@ -333,11 +355,19 @@ def plain_of(text):
     return translate._plain(text)
 
 
+def title_order_logged(text):
+    """[text, applied, log] of qa.fix_title_order with a log."""
+    log = []
+    out, applied = qa.fix_title_order(text, log)
+    return [out, applied, log]
+
+
 def units_section():
     tag_src, tag_out = TAG_SRC, TAG_OUT
     qa_src, qa_out = QA_SRC, QA_OUT
     pools = {"tag_src": tag_src, "tag_out": tag_out, "qa_src": qa_src, "qa_out": qa_out, "words": WORDS,
-             "terms_bounded": TERMS_BOUNDED, "vn_words": VN_WORDS, "code_cells": CODE_CELLS}
+             "terms_bounded": TERMS_BOUNDED, "vn_words": VN_WORDS, "code_cells": CODE_CELLS,
+             "title_texts": TITLE_TEXTS}
     hits = [list(h) for h in QA_HITS]
     pair = {
         "tags.check": ["tag_src", "tag_out", None, pairs_of(tags.check, tag_src, tag_out)],
@@ -370,6 +400,9 @@ def units_section():
         "qa.source_case": ["qa_src", "qa_out", 1, pairs_of(qa.source_case, qa_src, qa_out, 1)],
         "qa.suspicious_tokens": ["qa_src", "qa_out", None,
                                  pairs_of(lambda s, o: qa.suspicious_tokens(o, s), qa_src, qa_out)],
+        "qa.suspicious_tokens.allowed": ["qa_src", "qa_out", None,
+                                         pairs_of(lambda s, o: qa.suspicious_tokens(o, s, SUSPICIOUS_ALLOWED), qa_src,
+                                                  qa_out)],
         "qa.glossary_misses": ["qa_src", "qa_out", None,
                                pairs_of(lambda s, o: qa.glossary_misses(s, o, QA_HITS), qa_src, qa_out)],
         "qa.strip_leaks": ["qa_src", "qa_out", 1, pairs_of(qa.strip_leaks, qa_src, qa_out, 1)],
@@ -399,6 +432,7 @@ def units_section():
         "qa._bounded": ["terms_bounded", [qa._bounded(t) for t in TERMS_BOUNDED]],
         "vn.is_valid": ["vn_words", [vnsyllable.is_valid(w) for w in VN_WORDS]],
         "vn._needs_check": ["vn_words", [vnsyllable._needs_check(w) for w in VN_WORDS]],
+        "qa.fix_title_order": ["title_texts", [title_order_logged(t) for t in TITLE_TEXTS]],
     }
     chars = sorted(set("".join(every + WORDS + VN_WORDS + text_pool())))
     py = {
@@ -423,7 +457,8 @@ def units_section():
                                     ("m", "p", "\U0001d400 \x00 " + nfd(GOOD))]:
         tm_keys.append([model, pack_key, tagged, TM.key(model, pack_key, tagged)])
     return {"pools": pools, "pairs": pair, "single": single, "py": py, "hits": hits, "terms": sorted(TERMS),
-            "caps_hits": [list(h) for h in CAPS_HITS], "cases": explicit_cases(), "tm_keys": tm_keys}
+            "caps_hits": [list(h) for h in CAPS_HITS], "suspicious_allowed": SUSPICIOUS_ALLOWED,
+            "cases": explicit_cases(), "tm_keys": tm_keys}
 
 
 TERM_FIXES = [
@@ -463,8 +498,9 @@ def explicit_cases():
     term_fix = []
     for src in FIX_SOURCES:
         for out in FIX_OUTPUTS:
-            text, applied = qa.apply_term_fixes(out, src, fixes)
-            term_fix.append([src, out, text, applied])
+            log = []
+            text, applied = qa.apply_term_fixes(out, src, fixes, log)
+            term_fix.append([src, out, text, applied, log])
     gate = []
     issue_sets = [["english_left"], ["english:Spleen, upper pole, partial resection"], ["ratio"], ["script", "scaffold"],
                   ["angle", "markdown", "latex"], ["acronym:CCRCC", "acronym:HER2"], ["omitted:Fibroadenoma with x"],
@@ -621,7 +657,7 @@ def write_synthetic_packs():
 def pack_summary(p):
     return {"id": p.id, "version": p.version, "name": p.name, "detect": list(p.detect), "prompt": p.prompt,
             "glossary": [list(r) for r in p.glossary], "term_fixes": [[f.en, f.vi, list(f.wrong)] for f in p.term_fixes],
-            "tests": p.tests, "key": p.key()}
+            "tests": p.tests, "key": p.key(), "allowed": packs.allowed_words(p)}
 
 
 def source_files(root, pid):
@@ -910,7 +946,7 @@ PREV_VI = ("Kh\u1ed1i u m\xe0ng n\xe3o l\xe0 u nguy\xean ph\xe1t th\u01b0\u1eddn
            "th\u1ea7n kinh trung \u01b0\u01a1ng \u1edf ng\u01b0\u1eddi l\u1edbn.")
 CTX = {"prev": "Meningiomas are common.", "nxt": "Grading follows WHO."}
 LUNG_FIX = [["lung", "ph\u1ed5i", ["pulm\xf4n"]]]
-DEFAULT_CFG = {"system": "SYS", "model": "m", "pack_key": "p@1", "fixes": [], "hits": []}
+DEFAULT_CFG = {"system": "SYS", "model": "m", "pack_key": "p@1", "fixes": [], "hits": [], "allowed": []}
 SPAN = translate.SPAN_PROMPT
 
 
@@ -1144,6 +1180,24 @@ def translate_cases():
     caps = a_para("The ", ("b", "WHO GRADE"), " of this small lesion is low")
     flat_caps = "M\u1ee9c \u0111\u1ed9 c\u1ee7a t\u1ed5n th\u01b0\u01a1ng nh\u1ecf n\xe0y th\u1ea5p"
     add("L4 all-caps span is not looked up", [step(caps, replies(flat_caps, flat_caps, flat_caps))])
+    # Vietnamese academic titles before the name, in order, a dot after each; listed in fixes like the term fixes
+    titled = one("Jane Doe, M.D., Ph.D., reviewed all the slides.")
+    reviewed = " \u0111\xe3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\xeau b\u1ea3n."
+    add("title order fixed, listed and cached", [step(titled, replies("BS. TS. Jane Doe" + reviewed)),
+                                                 step(titled, replies())])
+    add("title order and term fixes listed together", [
+        step(one("Jane Doe, MD, PhD: lung and lung"), replies("BS TS Jane Doe: pulm\xf4n v\xe0 Pulm\xf4n"))],
+        cfg={"fixes": LUNG_FIX})
+    add("title order inside a formatted span", [step(a_para("Signed by ", ("b", "Jane Doe, MD, PhD")),
+                                                     replies("K\xfd b\u1edfi <g1>BS TS Jane Doe</g1>"))])
+    add("title order before a formatted name", [step(a_para("Reviewed by ", ("b", "Jane Doe"), ", MD, PhD"),
+                                                     replies("Xem l\u1ea1i b\u1edfi BS. TS. <g1>Jane Doe</g1>"))])
+    add("title order kept when right", [step(titled, replies("TS. BS. Jane Doe" + reviewed))])
+    # the words of the active packs are no strange words, on cache hits too; real strange words stay flagged
+    lym = one("Many lymphocytes and a carcinoma in the node")
+    lym_vi = "Nhi\u1ec1u lymph\xf4 b\xe0o v\xe0 carcin\xf4m trong h\u1ea1ch"
+    add("house forms of the active packs", [step(lym, replies(lym_vi), cfg={"allowed": ["lymph\xf4"]}),
+                                            step(lym, replies()), step(lym, replies(), cfg={"allowed": ["lymph\xf4"]})])
     return c
 
 
@@ -1176,7 +1230,7 @@ def make_translator(cfg, llm, tm):
     from vitranslate.translate import Translator
     fixes = [packs.TermFix(en, vi, list(w)) for en, vi, w in cfg["fixes"]]
     hits = [tuple(h) for h in cfg["hits"]]
-    return Translator(llm, cfg["system"], cfg["model"], cfg["pack_key"], fixes, hits, tm)
+    return Translator(llm, cfg["system"], cfg["model"], cfg["pack_key"], fixes, hits, tm, allowed=cfg["allowed"])
 
 
 def essential_ids(seg):
@@ -1215,7 +1269,7 @@ def run_translate_case(case):
             raise SystemExit("case %r: %d calls for %d canned answers" % (case["name"], len(llm.calls),
                                                                           len(st["script"]["replies"])))
         out.append({"tagged": seg.tagged, "essential": essential_ids(seg), "calls": llm.calls, "text": res.text,
-                    "level": res.level, "flags": res.flags,
+                    "level": res.level, "flags": res.flags, "fixes": res.fixes,
                     "cached": res.cached, "work_tagged": res.segment.tagged, "work_spans": sorted(res.segment.spans),
                     "key": t._key(seg), "tm": tm_rows(tm) if tm is not None else None})
     return out
@@ -1408,10 +1462,55 @@ def report_section():
     return {"cases": cases}
 
 
+# ---------------------------------------------------------------- repair: term repair candidates
+
+REPAIR_KEYS = ["papillary thyroid carcinoma", "follicular thyroid carcinoma", "desmin", "smooth muscle actin",
+               "Hodgkin lymphoma", "tumour", "biopsies", "Ki-67", "ER", "HER2", "calcification", "WHO classification",
+               "adrenal cortex", "renal cortex", "luminal A", "S\u00e9zary syndrome", "haemorrhage", "staining"]
+
+
+def repair_section():
+    """Term repair candidates (repair.py) for synthetic sentences: the keys are the committed pathology pack's
+    glossary keys plus REPAIR_KEYS; the texts are the mis-heard sentences of tools/eval_repair.py (HEARD and a
+    generated set), the same sentences with the right terms, its talk sentences and the shared text pool. Per text:
+    the folded words and the candidates with the lexicon of web/engine/medical_words.json (terms + corpus) under the
+    default gate ("changed"), under the gates "off" and "any", and with limit 3 / min_score 700; the sound key of every word
+    of the keys. The pack's keys and the lexicon are not written (the JS side reads the pack itself): in glossary order they repeat
+    runs of the documents they were mined from."""
+    import random
+    import eval_repair
+    from vitranslate import repair
+    check_real_packs()
+    keys = [row[0] for row in packs.load_pack(REPO_PACKS / "pathology").glossary] + REPAIR_KEYS
+    lex = json.loads((ROOT / "web" / "engine" / "medical_words.json").read_text(encoding="utf-8"))
+    index = repair.term_index(keys, lex["terms"] + lex["corpus"])
+    heard, right = eval_repair.generated(keys, random.Random(11), 160)
+    texts = [h[0] for h in eval_repair.HEARD] + [h[0].replace(h[1], h[2]) for h in eval_repair.HEARD if h[1]]
+    texts += [h[0] for h in heard] + right + eval_repair.TALK + eval_repair.HARD + EN_SENTENCES + text_pool()
+    texts += ["Hodgkin's lymphoma and S\u00e9zary's syndrome", "the tumor was haemorrhagic", "Positive for Desmond.",
+              "It was a denoma.", "car sin oma", "hypoplasia and hipoplasia", "staining stained stains",
+              "The vocal cord. Vocal cords and Focal changes", "We met Dr. Desmond: Desmond said hello",
+              "The lymph mode and the Lymph Mode"]
+    seen = set()
+    cases = []
+    for t in texts:
+        if t in seen:
+            continue
+        seen.add(t)
+        cases.append({"text": t, "words": [w for _, _, w in repair.words(t)],
+                      "candidates": repair.find_candidates(t, index),
+                      "off": repair.find_candidates(t, index, gate="off"),
+                      "any": repair.find_candidates(t, index, gate="any"),
+                      "small": repair.find_candidates(t, index, limit=3, min_score=700)})
+    vocab = sorted({w for k in keys for _, _, w in repair.words(k)})
+    return {"pack": "pathology", "extra_keys": REPAIR_KEYS, "key_count": len(keys), "cases": cases,
+            "sounds": {w: repair.sound_key(w) for w in vocab}}
+
+
 SECTIONS = {"pyre": pyre_section, "units": units_section, "packs": packs_section, "matching": matching_section,
             "e2e": e2e_section, "report": report_section,
-            "translate": translate_section}
-COMPACT = {"pyre", "units", "matching"}
+            "translate": translate_section, "repair": repair_section}
+COMPACT = {"pyre", "units", "matching", "repair"}
 
 
 def main(argv):

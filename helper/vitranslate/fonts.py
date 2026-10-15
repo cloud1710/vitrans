@@ -2,6 +2,7 @@
 import json
 import os
 import re
+import sys
 import unicodedata
 from pathlib import Path
 
@@ -15,7 +16,11 @@ FALLBACK = {"sans": "Arial", "serif": "Times New Roman", "mono": "Consolas"}
 CACHE_VERSION = 3
 
 
-def _font_dirs():
+def _font_dirs(platform=None, user_home=None):
+    if (platform or sys.platform) == "darwin":  # macOS, and the fonts Office for Mac ships inside its apps
+        home = Path.home() if user_home is None else Path(user_home)
+        return ["/System/Library/Fonts", "/Library/Fonts", str(home / "Library" / "Fonts")] + [
+            "/Applications/Microsoft %s.app/Contents/Resources/DFonts" % app for app in ("Word", "PowerPoint")]
     dirs = [os.path.join(os.environ.get("WINDIR", "C:/Windows"), "Fonts")]
     local = os.environ.get("LOCALAPPDATA")
     if local:  # an unset variable would otherwise yield relative paths

@@ -76,6 +76,12 @@ export const CHECK_KINDS = new Set(["formatting_lost", "tags_broken", "unchanged
   "numbers_changed", "acronym_lost", "suspect_output", "suspicious", "stray_markup", "glossary_miss", "omitted"]);
 const NON_LETTERS_RE = compile("[^A-Za-z]");
 const CAPS_WORD_RE = compile(String.raw`(?<![A-Za-z])[A-Z]{4,}(?![A-Za-z])`);
+const CAPS_ANY_RE = compile(String.raw`(?<![A-Za-z0-9])[A-Z]+(?![A-Za-z0-9])`);
+// English function words that only prose has (never a gene, marker or degree), and the month names of a date
+const CAPS_FUNCTION = new Set(pySplit("I AM AN AS AT BE BY IF IN IS OF ON OR TO WE THE AND FOR ARE WAS WITH FROM YOUR " +
+  "OUR THIS THAT WILL"));
+const CAPS_MONTHS = new Set(pySplit("JANUARY FEBRUARY MARCH APRIL MAY JUNE JULY AUGUST SEPTEMBER OCTOBER NOVEMBER " +
+  "DECEMBER"));
 const ETAL_RE = compile(String.raw`\bet\s+al\b\.?`);
 const VOLUME_RE = compile(String.raw`\b(?:19|20)\d\d\b[^;]{0,12};\s*\d+|\d+\(\d+\):\s*e?\d+`);
 const YEAR_RE = compile(String.raw`\b(?:19|20)\d\d\b`);
@@ -104,12 +110,15 @@ function pyFind(s, sub, start) {
 }
 
 export class Outcome {
-  constructor(text, segment, level, flags = [], cached = false) {
+  /** fixes: the deterministic fixes written into the text, [{en: term-fix key (or qa.TITLE_FIX), from: the text
+   * found, to: the text written}] in the order made, each once. */
+  constructor(text, segment, level, flags = [], cached = false, fixes = []) {
     this.text = text;
     this.segment = segment;
     this.level = level;
     this.flags = flags;
     this.cached = cached;
+    this.fixes = fixes;
   }
 }
 
@@ -179,11 +188,15 @@ export function codeOnly(plainText) {
   return true;
 }
 
-/** True for ALL-CAPS English that codeOnly would keep: two capital words of 4+ letters with 2+ vowels each, or a
- * glossary term written with lower-case letters found in it. hits: [en, vi] pairs. */
+/** True for ALL-CAPS English that codeOnly would keep: two capital words of 4+ letters with 2+ vowels each, one such
+ * word with an English function word ("I AM ATTENDING ASDP 2026"), a month name with a number (a date: "1-3 NOVEMBER
+ * 2026"), or a glossary term written with lower-case letters found in it. hits: [en, vi] pairs. */
 export function capsProse(plainText, hits = []) {
   const wordy = CAPS_WORD_RE.findall(plainText).filter((w) => Array.from(w).filter((c) => "AEIOU".includes(c)).length >= 2);
   if (wordy.length >= 2) return true;
+  const words = CAPS_ANY_RE.findall(plainText);
+  if (wordy.length && words.some((w) => CAPS_FUNCTION.has(w))) return true;
+  if (Array.from(plainText).some(isDigit) && words.some((w) => CAPS_MONTHS.has(w))) return true;
   const low = plainText.toLowerCase();
   return hits.some(([en]) => en !== en.toUpperCase() && NON_LETTERS_RE.sub("", en).length >= 4 &&
     compile(String.raw`(?<![\w-])` + escape(en.toLowerCase()) + String.raw`(?![\w-])`).search(low) !== null);
@@ -359,9 +372,10 @@ export class Translator {
   /** model: async (messages, options) -> answer (see the module notes); system: the system prompt; modelKey /
    * packKey: parts of the TM key; fixes: term fixes {en, vi, wrong} (term-lock); hits: [en, vi] glossary hits; tm:
    * {get, put} or null; signal: AbortSignal checked before every model call; essential: which spans level 3 keeps
-   * (default: spans marked {essential: true}, as TaggedSegment builds them). */
+   * (default: spans marked {essential: true}, as TaggedSegment builds them); allowed: words the suspicious-word check
+   * accepts (packs.allowedWords of the job's merged pack). */
   constructor({ model, system, modelKey, packKey, fixes = [], hits = [], tm = null, signal = null,
-    essential = isEssential }) {
+    essential = isEssential, allowed = [] }) {
     this.model = model;
     this.system = system;
     this.modelKey = modelKey;
@@ -371,6 +385,7 @@ export class Translator {
     this.tm = tm;
     this.signal = signal;
     this.essential = essential;
+    this.allowed = new Set([...allowed].map((w) => w.toLowerCase()));
     this._systemHash = null;
     // glossary terms kept in English (vi == en) never count as English left
     this._kept = this.hits.filter(([en, vi]) => pyStrip(en) && pyStrip(en).toLowerCase() === pyStrip(vi).toLowerCase())
@@ -464,10 +479,10 @@ export class Translator {
     if (memo.get(t)) yield memo.get(t);
   }
 
-  /** Levels 4-5: translate without <g> tags, drop markdown emphasis, apply term fixes, then wrap each span's own
-   * translation where found verbatim. [text, level]; level 3 when no span is left to re-attach, [null, null] for an
-   * empty answer. */
-  async _reattach(work, prev, nxt, flags) {
+  /** Levels 4-5: translate without <g> tags, drop markdown emphasis, apply term fixes (logged in log), then wrap each
+   * span's own translation where found verbatim. [text, level]; level 3 when no span is left to re-attach,
+   * [null, null] for an empty answer. */
+  async _reattach(work, prev, nxt, flags, log) {
     const plainSrc = stripTags(work.tagged, true);
     const raw = qa.stripLeaks(plainSrc, await this._ask(plainSrc, prev, nxt));
     let out = repair(plainSrc, dropBlankInvented(plainSrc, normalizeTokens(raw, plainSrc)));
@@ -476,7 +491,7 @@ export class Translator {
     if (blank(work, out)) return [null, null];
     if (stripped) flags.push("suspect_output:markdown");
     let applied;
-    [out, applied] = qa.applyTermFixes(out, plain(work.tagged), this.fixes);
+    [out, applied] = qa.applyTermFixes(out, plain(work.tagged), this.fixes, log);
     flags.push(...applied.map((a) => "term_fix:" + a));
     if (!work.spans.size) return [out, 3];
     const memo = new Map();
@@ -523,20 +538,23 @@ export class Translator {
     const lost = qa.missingTokens(srcPlain, pl);
     if (lost.length) flags.push("acronym_lost:" + lost.join(","));
     flags.push(...suspect(srcPlain, pl, context).map((r) => "suspect_output:" + r));
-    flags.push(...qa.suspiciousTokens(pl, srcPlain).map((t) => "suspicious:" + t));
+    flags.push(...qa.suspiciousTokens(pl, srcPlain, this.allowed).map((t) => "suspicious:" + t));
     if (strayMarkup(work.tagged, out).length) flags.push("stray_markup");
     flags.push(...qa.glossaryMisses(srcPlain, pl, this.hits).map((en) => "glossary_miss:" + en));
     flags.push(...qa.omittedClauses(srcPlain, pl).map((c) => OMITTED_ISSUE + c));
     return flags;
   }
 
-  _finish(work, out, flags, context = false) {
+  /** Deterministic finishing (term fixes and the title order logged in log), then the check flags. */
+  _finish(work, out, flags, context = false, log = null) {
     out = restoreSpaces(work.tagged, out);
     out = qa.fixLatex(plain(work.tagged), out); // "$\beta$" -> the symbol; other LaTeX stays for the flag
     let applied;
-    [out, applied] = qa.applyTermFixes(out, plain(work.tagged), this.fixes);
+    let titled;
+    [out, applied] = qa.applyTermFixes(out, plain(work.tagged), this.fixes, log);
+    [out, titled] = qa.fixTitleOrder(out, log); // Vietnamese academic titles: before the name, in order
     out = qa.sourceCase(plain(work.tagged), out); // sentence-initial capital from the source, never the model's
-    flags.push(...applied.map((a) => "term_fix:" + a));
+    flags.push(...applied.concat(titled).map((a) => "term_fix:" + a));
     flags.push(...this.checks(work, out, context));
     return out;
   }
@@ -554,14 +572,15 @@ export class Translator {
     }
     if (citationOnly(plain(seg.tagged))) return new Outcome(seg.tagged, seg, 0, ["kept_reference"]);
     const key = await this.key(seg);
+    const log = []; // the fixes written into the text (Outcome.fixes)
     if (this.tm !== null) {
       const hit = await this.tm.get(key);
       if (hit) {
         const [stored, level] = hit;
         const work = level < 3 ? seg : seg.reduced(this.essential);
         const flags = [];
-        const text = this._finish(work, stored, flags); // same finishing as a fresh run: same text, same flags
-        return new Outcome(text, work, level, flags, true);
+        const text = this._finish(work, stored, flags, false, log); // same finishing as a fresh run: same text, flags
+        return new Outcome(text, work, level, flags, true, log);
       }
     }
     if (pySplit(plain(seg.tagged)).length < SHORT_WORDS) prev = nxt = ""; // titles and table cells: no neighbours
@@ -593,7 +612,7 @@ export class Translator {
       }
     }
     if (out === null) {
-      [out, level] = await this._reattach(work, prev, nxt, flags);
+      [out, level] = await this._reattach(work, prev, nxt, flags, log);
       if (out === null) {
         // every answer was empty: keep the source as it is (flagged, not cached) rather than erase the text
         return new Outcome(seg.tagged, seg, 5, ["empty_output", ...this.checks(seg, seg.tagged)]);
@@ -619,8 +638,8 @@ export class Translator {
     [out, stripped] = stripEmphasis(plain(work.tagged), out); // L0-L3 too (L4 already did it): never write "**"
     if (stripped) flags.push("suspect_output:markdown");
     const stored = out; // the TM keeps the text before finishing; every hit runs the same finishing again
-    out = this._finish(work, out, flags, context);
+    out = this._finish(work, out, flags, context, log);
     if (this.tm !== null && cacheable(level, flags)) await this.tm.put(key, stored, level);
-    return new Outcome(out, work, level, flags);
+    return new Outcome(out, work, level, flags, false, log);
   }
 }

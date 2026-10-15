@@ -1,14 +1,8 @@
 // "Gợi ý cho máy này" and the texts of a job, for both engines (spec Amendment F): the cloud engine (the Pages
-// Functions API on this origin, default) and the helper on 127.0.0.1 ("Dịch trên máy"). Also the page's own device
-// cards (device class, screen size, iOS version, WebGPU, the device named in the lab) for the case where neither
-// engine answers, their cache, the texts built from the helper's /api/hardware, the progress events of either engine
-// and the cloud engine's error texts. Pure functions (no DOM, no network): app.js renders them with textContent only.
-import { deviceClass, APPLE_DEVICES, deviceVerdict, MIN_RAM_GB, screenCandidates, screenDecision, groupLabel,
-  iosMajor } from "./lab/core.js";
-
-export const DEVICE_KEY = "vt-lab-device";    // the device the user named (lab picker or the question here)
-export const ADVICE_KEY = "vt-advice-v1";
-export const ADVICE_TTL_MS = 90 * 24 * 3600 * 1000;
+// Functions API on this origin, default) and the helper on 127.0.0.1 ("Dịch trên máy"). Also the texts built from
+// the helper's /api/hardware, the progress events of either engine and the cloud engine's error texts. Pure functions
+// (no DOM, no network): app.js renders them with textContent only. (The page's own device cards for the paused
+// in-browser engine are gone; the lab keeps its device picker.)
 // download sizes (ollama list) of the models the helper may offer (spec Amendment E roles)
 const MODEL_GB = { "gemma4:e4b": 6.6, "qwen3.5:9b": 6.6, "gemma4:e2b": 4.6 };
 const FAST_MODEL = "gemma4:e2b";
@@ -17,140 +11,6 @@ export function vnNum(x, digits) {
   return Number(x).toFixed(digits || 0).replace(".", ",").replace(/,0+$/, "");
 }
 const gb = (mb) => vnNum((mb || 0) / 1024, 1) + " GB";
-
-function platformOf(ua) {
-  if (/Windows NT/.test(ua)) return "windows";
-  if (/CrOS/.test(ua)) return "chromeos";
-  if (/Macintosh/.test(ua)) return "mac";
-  if (/Linux|X11/.test(ua)) return "linux";
-  return "other";
-}
-
-const LAB = "Phòng đo";
-
-// The device of the larger-RAM side that tells the most (smallest RAM above the line) or of the smaller side
-// (largest RAM under it): stored as the declared device when the user answers the two-way question.
-export function answerDevice(cands) {
-  if (!cands.length) return null;
-  const ok = cands[0].ram >= MIN_RAM_GB;
-  let best = cands[0];
-  for (const c of cands) if (ok ? c.ram < best.ram : c.ram > best.ram) best = c;
-  return best.device;
-}
-
-function ramText(cands) {
-  const lo = Math.min(...cands.map((c) => c.ram)), hi = Math.max(...cands.map((c) => c.ram));
-  return lo === hi ? lo + " GB" : lo + "–" + hi + " GB";
-}
-
-// env: { ua, touchPoints, screen: {w, h, dpr}, webgpu: {available, adapter, limits, features} | null,
-//        deviceMemory, declared (APPLE_DEVICES name | null), unfit ({model: record} from the lab's memory probe) }
-// -> { kind, title, line, detail, link (show the lab link), ask: {question, options: [{label, device}]} | null }
-export function adviseBrowser(env) {
-  const ua = env.ua || "";
-  const cls = deviceClass(ua, env.touchPoints || 0);
-  const gpu = env.webgpu || null;
-  const out = (kind, title, line, detail, link, ask) => ({ kind, title, line, detail: detail || "", link: !!link,
-    ask: ask || null });
-  if (cls === "desktop") {
-    const plat = platformOf(ua);
-    if (plat === "windows") {
-      return out("desktop-windows", "Máy tính Windows",
-        "Nên cài bộ dịch ViTranslate: Gemma 4 E4B (máy có GPU) hoặc Qwen 3.5 9B (chỉ CPU) chạy ngay trên máy này, "
-        + "tài liệu không rời máy.",
-        "Bộ cài đang được hoàn thiện; hiện có thể chạy bộ dịch từ mã nguồn hoặc liên hệ người phát triển.", false);
-    }
-    const title = { mac: "Máy Mac", linux: "Máy Linux", chromeos: "Chromebook" }[plat] || "Máy tính";
-    return out("desktop-other", title,
-      "Bản dịch ngay trong trình duyệt (không cần cài) đang được phát triển cho máy này.",
-      gpu && gpu.available ? "Trình duyệt có WebGPU: có thể đo thử máy ở " + LAB + "."
-        : "Trình duyệt này chưa có WebGPU.", true);
-  }
-  if (cls === "Android phone" || cls === "Android tablet") {
-    return out("android", "Thiết bị Android",
-      "Dịch trong trình duyệt trên Android đang thử nghiệm, chưa đo (cần Chrome bản mới, RAM từ 12 GB).",
-      env.deviceMemory ? "Trình duyệt báo RAM khoảng " + env.deviceMemory + " GB (con số này tối đa là 8)." : "", true);
-  }
-  const os = cls === "iPad" ? "iPadOS" : "iOS";
-  const major = iosMajor(ua);
-  const later = "Bản dịch ngay trong trình duyệt đang được phát triển; có thể đo thử máy ở " + LAB + ".";
-  const noGpu = gpu && gpu.available ? "" : " Hãy mở trang bằng Safari (cần WebGPU).";
-  if (major !== null && major < 26) {
-    return out("mobile-update", cls, "Cần " + os + " 26 trở lên để dịch ngay trong trình duyệt (máy đang chạy " + os
-      + " " + major + ").", "", true);
-  }
-  if (env.unfit && Object.keys(env.unfit).length) {
-    return out("mobile-below", cls, "Máy này chưa đủ cấu hình: lần đo bộ nhớ trước ở " + LAB + " không đạt.",
-      "Hãy dịch trên máy tính Windows có cài bộ dịch.", true);
-  }
-  const declared = APPLE_DEVICES.find((d) => d.name === env.declared);
-  if (declared) {
-    const v = deviceVerdict(declared);
-    return v.ok
-      ? out("mobile-ok", cls, "Đạt yêu cầu tối thiểu: " + declared.name + " có RAM " + v.ramText + " (mốc "
-        + MIN_RAM_GB + " GB).", later + noGpu, true)
-      : out("mobile-below", cls, "Chưa đạt yêu cầu tối thiểu: " + declared.name + " có RAM " + v.ramText + ", cần từ "
-        + MIN_RAM_GB + " GB.", "Hãy dịch trên máy tính Windows có cài bộ dịch. Không đúng đời máy? Chọn lại ở "
-        + LAB + ".", true);
-  }
-  const s = env.screen || {};
-  const d = screenDecision(screenCandidates(cls, s.w, s.h, s.dpr));
-  if (d.state === "ok") {
-    return out("mobile-ok", cls, "Đạt yêu cầu tối thiểu: " + groupLabel(d.ok) + " có RAM từ "
-      + Math.min(...d.ok.map((c) => c.ram)) + " GB (mốc " + MIN_RAM_GB + " GB).", later + noGpu, true);
-  }
-  if (d.state === "below") {
-    return out("mobile-below", cls, "Chưa đạt yêu cầu tối thiểu: " + groupLabel(d.below) + " có RAM "
-      + ramText(d.below) + ", cần từ " + MIN_RAM_GB + " GB.",
-      "Hãy dịch trên máy tính Windows có cài bộ dịch. Không đúng đời máy? Chọn lại ở " + LAB + ".", true);
-  }
-  if (d.state === "ask") {
-    const a = { label: groupLabel(d.below), device: answerDevice(d.below) };
-    const b = { label: groupLabel(d.ok), device: answerDevice(d.ok) };
-    return out("mobile-ask", cls, "Máy bạn là " + a.label + " hay " + b.label + "?",
-      "Cùng kích thước màn hình nhưng RAM khác nhau (mốc " + MIN_RAM_GB + " GB).", false,
-      { question: "Máy bạn là " + a.label + " hay " + b.label + "?", options: [a, b] });
-  }
-  return out("mobile-unknown", cls, "Chưa nhận ra đời máy này.",
-    "Chọn đời máy ở " + LAB + " để so với mốc RAM " + MIN_RAM_GB + " GB.", true);
-}
-
-// ---- cache (localStorage) ----
-// cheap: known at once (user agent, class, screen, declared device, failed probes) -> the cached card shows instantly;
-// full: cheap + the WebGPU adapter (async): a different GPU recomputes the card and rewrites the cache.
-export function cheapFingerprint(env) {
-  const s = env.screen || {};
-  return JSON.stringify(["v1", env.ua || "", deviceClass(env.ua || "", env.touchPoints || 0), s.w || 0, s.h || 0,
-    s.dpr || 0, env.declared || "", Object.keys(env.unfit || {}).sort()]);
-}
-
-export function fullFingerprint(env) {
-  const g = env.webgpu;
-  const a = (g && g.adapter) || {}, l = (g && g.limits) || {};
-  return JSON.stringify([cheapFingerprint(env), g ? [!!g.available, a.vendor || "", a.architecture || "",
-    a.description || "", l.maxBufferSize || 0, l.maxStorageBufferBindingSize || 0,
-    (g.features || []).includes("shader-f16")] : null]);
-}
-
-export function readAdviceCache(store, cheap, now) {
-  try {
-    const rec = JSON.parse(store.getItem(ADVICE_KEY) || "null");
-    if (!rec || rec.cheap !== cheap || typeof rec.at !== "number" || now - rec.at > ADVICE_TTL_MS || now < rec.at) {
-      return null;
-    }
-    return rec.advice ? { advice: rec.advice, fp: rec.fp } : null;
-  } catch (e) {
-    return null;
-  }
-}
-
-export function writeAdviceCache(store, cheap, fp, advice, now) {
-  try { store.setItem(ADVICE_KEY, JSON.stringify({ cheap, fp, at: now, advice })); } catch (e) { /* blocked */ }
-}
-
-export function clearAdviceCache(store) {
-  try { store.removeItem(ADVICE_KEY); } catch (e) { /* blocked */ }
-}
 
 // ---- engines: the cloud engine by default, the helper only in the local mode the user picks ("Dịch trên máy") ----
 
@@ -197,7 +57,7 @@ const CLOUD_ERRORS = {
   model_failed: "Mô hình không trả lời được dù đã thử lại. Hãy thử lại sau ít phút.",
   quota_exceeded: "Đã hết lượt dịch hôm nay. Hãy thử lại vào ngày mai, hoặc dùng Dịch trên máy.",
   budget_exhausted: "Máy chủ dịch đã dùng hết ngân sách hôm nay. Hãy thử lại vào ngày mai, hoặc dùng Dịch trên máy.",
-  bad_turnstile: "Không xác minh được trình duyệt (Turnstile). Hãy tải lại trang rồi thử lại.",
+  bad_turnstile: "Không xác minh được trình duyệt (Turnstile). Bấm Thử lại ở ô xác minh, hoặc tải lại trang.",
   turnstile: "Không tải được bước xác minh Turnstile (bị chặn hoặc mất mạng). Hãy tải lại trang rồi thử lại.",
   session_expired: "Phiên làm việc đã hết hạn. Hãy thử lại.",
   packs_changed: "Bộ thuật ngữ trên máy chủ vừa được cập nhật trong lúc dịch. Hãy dịch lại tệp này.",
@@ -210,6 +70,10 @@ const CLOUD_ERRORS = {
   output_invalid: "Bản dịch ghi ra không mở được nên đã bỏ; xem báo cáo.",
   engine_missing: "Trang này chưa có bộ dịch tài liệu cho máy chủ.",
   internal: "Lỗi nội bộ khi dịch.",
+  // Trên máy (the helper's sentence routes, web/adapter.js)
+  helper_not_found: "Chưa thấy ViTranslate trên máy. Bấm Mở ViTranslate rồi thử lại.",
+  ollama_unavailable: "Ollama chưa chạy trên máy này. Hãy mở ViTranslate rồi thử lại.",
+  model_missing: "ViTranslate chưa có mô hình dịch. Hãy tải mô hình ở mục Tài liệu.",
 };
 
 /** A cloud-engine error code -> the Vietnamese text of the page. */

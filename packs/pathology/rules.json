@@ -78,7 +78,7 @@
   },
   {
    "en": "lymph node",
-   "vi": "hạch",
+   "vi": "hạch lympho",
    "wrong": [
     "nút bạch huyết",
     "đuôi bạch huyết"
@@ -93,9 +93,14 @@
   },
   {
    "en": "squamous cell carcinoma",
-   "vi": "carcinôm tế bào gai",
+   "vi": "carcinom tế bào gai",
    "wrong": [
-    "carcinom tế bào gai"
+    "carcinôm tế bào gai",
+    "ung thư biểu mô tế bào gai",
+    "ung thư biểu mô tế bào vảy",
+    "ung thư biểu mô vảy",
+    "carcinom tế bào vảy",
+    "carcinôm tế bào vảy"
    ]
   },
   {
@@ -164,6 +169,57 @@
    ]
   },
   {
+   "en": "sarcoma",
+   "vi": "sarcom",
+   "wrong": [
+    "sarcôm",
+    "ung\\ thư\\ mô\\ liên\\ kết"
+   ]
+  },
+  {
+   "en": "osteosarcoma",
+   "vi": "sarcom xương",
+   "wrong": [
+    "sarcôm\\ xương"
+   ]
+  },
+  {
+   "en": "chondrosarcoma",
+   "vi": "sarcom sụn",
+   "wrong": [
+    "sarcôm\\ sụn"
+   ]
+  },
+  {
+   "en": "leiomyosarcoma",
+   "vi": "sarcom cơ trơn",
+   "wrong": [
+    "sarcôm\\ cơ\\ trơn"
+   ]
+  },
+  {
+   "en": "rhabdomyosarcoma",
+   "vi": "sarcom cơ vân",
+   "wrong": [
+    "sarcôm\\ cơ\\ vân"
+   ]
+  },
+  {
+   "en": "liposarcoma",
+   "vi": "sarcom mỡ",
+   "wrong": [
+    "sarcôm\\ mỡ"
+   ]
+  },
+  {
+   "en": "carcinoma",
+   "vi": "carcinom",
+   "wrong": [
+    "carcinôm",
+    "ung\\ thư\\ biểu\\ mô"
+   ]
+  },
+  {
    "en": "Assistant Professor",
    "vi": "Phó Giáo sư",
    "wrong": [
@@ -185,6 +241,15 @@
    ]
   },
   {
+   "en": "frozen section",
+   "vi": "sinh thiết tức thì",
+   "wrong": [
+    "lát\\ cắt\\ lạnh",
+    "lát\\ cắt\\ đông\\ lạnh",
+    "phần\\ đông\\ lạnh"
+   ]
+  },
+  {
    "en": "fine needle aspiration",
    "vi": "chọc hút tế bào bằng kim nhỏ",
    "wrong": [
@@ -193,8 +258,10 @@
   },
   {
    "en": "hepatocellular carcinoma",
-   "vi": "ung thư biểu mô tế bào gan",
+   "vi": "carcinom tế bào gan",
    "wrong": [
+    "carcinôm\\ tế\\ bào\\ gan",
+    "ung\\ thư\\ biểu\\ mô\\ tế\\ bào\\ gan",
     "ung\\ thư\\ tế\\ bào\\ gan"
    ]
   },
@@ -221,10 +288,60 @@
    ]
   },
   {
-   "en": "lymphocyte",
-   "vi": "lympho bào",
+   "en": "salivary duct carcinoma",
+   "vi": "carcinom ống tuyến nước bọt",
    "wrong": [
-    "tế\\ bào\\ lympho"
+    "ung\\ thư\\ biểu\\ mô\\ ống\\ tuyến\\ nước\\ bọt",
+    "carcinôm\\ ống\\ tuyến\\ nước\\ bọt"
+   ]
+  },
+  {
+   "en": "lymphoma",
+   "vi": "lymphom",
+   "wrong": [
+    "lymphôm",
+    "u\\ lympho"
+   ]
+  },
+  {
+   "en": "follicular lymphoma",
+   "vi": "lymphom dạng nang",
+   "wrong": [
+    "u\\ lympho\\ dạng\\ nang",
+    "lymphôm\\ dạng\\ nang"
+   ]
+  },
+  {
+   "en": "lymphocyte",
+   "vi": "lymphô bào",
+   "wrong": [
+    "tế\\ bào\\ lympho",
+    "lympho\\ bào",
+    "tế\\ bào\\ lymphô"
+   ]
+  },
+  {
+   "en": "poorly differentiated thyroid carcinoma",
+   "vi": "carcinom tuyến giáp biệt hóa kém",
+   "wrong": [
+    "ung\\ thư\\ biểu\\ mô\\ tuyến\\ giáp\\ biệt\\ hóa\\ kém",
+    "carcinôm\\ tuyến\\ giáp\\ biệt\\ hóa\\ kém"
+   ]
+  },
+  {
+   "en": "anaplastic thyroid carcinoma",
+   "vi": "carcinom tuyến giáp thoái sản",
+   "wrong": [
+    "ung\\ thư\\ biểu\\ mô\\ tuyến\\ giáp\\ thoái\\ sản",
+    "carcinôm\\ tuyến\\ giáp\\ thoái\\ sản"
+   ]
+  },
+  {
+   "en": "renal cell carcinoma",
+   "vi": "carcinom tế bào thận",
+   "wrong": [
+    "ung\\ thư\\ biểu\\ mô\\ tế\\ bào\\ thận",
+    "carcinôm\\ tế\\ bào\\ thận"
    ]
   },
   {
@@ -270,10 +387,34 @@
    ]
   },
   {
+   "en": "invasive ductal carcinoma",
+   "vi": "carcinom ống xâm nhập",
+   "wrong": [
+    "ung\\ thư\\ biểu\\ mô\\ ống\\ xâm\\ nhập",
+    "carcinôm\\ ống\\ xâm\\ nhập"
+   ]
+  },
+  {
+   "en": "invasive lobular carcinoma",
+   "vi": "carcinom tiểu thùy xâm nhập",
+   "wrong": [
+    "ung\\ thư\\ biểu\\ mô\\ tiểu\\ thùy\\ xâm\\ nhập",
+    "carcinôm\\ tiểu\\ thùy\\ xâm\\ nhập"
+   ]
+  },
+  {
    "en": "pericardium",
    "vi": "màng ngoài tim",
    "wrong": [
     "ngoại\\ tâm\\ mạc"
+   ]
+  },
+  {
+   "en": "squamous intraepithelial lesion",
+   "vi": "tổn thương trong biểu mô gai",
+   "wrong": [
+    "tổn\\ thương\\ nội\\ biểu\\ mô\\ vảy",
+    "tổn\\ thương\\ trong\\ biểu\\ mô\\ vảy"
    ]
   },
   {
@@ -284,10 +425,105 @@
    ]
   },
   {
+   "en": "small cell lung carcinoma",
+   "vi": "carcinom tế bào nhỏ",
+   "wrong": [
+    "carcinôm\\ tế\\ bào\\ nhỏ",
+    "ung\\ thư\\ phổi\\ tế\\ bào\\ nhỏ"
+   ]
+  },
+  {
+   "en": "renal medullary carcinoma",
+   "vi": "carcinom tủy thận",
+   "wrong": [
+    "ung\\ thư\\ biểu\\ mô\\ tủy\\ thận",
+    "carcinôm\\ tủy\\ thận"
+   ]
+  },
+  {
+   "en": "collecting duct carcinoma",
+   "vi": "carcinom ống góp",
+   "wrong": [
+    "ung\\ thư\\ biểu\\ mô\\ ống\\ góp",
+    "carcinôm\\ ống\\ góp"
+   ]
+  },
+  {
    "en": "surrogate marker",
    "vi": "dấu ấn thay thế",
    "wrong": [
     "dấu\\ thay\\ thế"
+   ]
+  },
+  {
+   "en": "myxofibrosarcoma",
+   "vi": "sarcom sợi niêm",
+   "wrong": [
+    "sarcôm\\ sợi\\ niêm",
+    "sarcom\\ xơ\\ nhầy"
+   ]
+  },
+  {
+   "en": "carcinoma in situ",
+   "vi": "carcinom tại chỗ",
+   "wrong": [
+    "ung\\ thư\\ biểu\\ mô\\ tại\\ chỗ",
+    "carcinôm\\ tại\\ chỗ"
+   ]
+  },
+  {
+   "en": "low-grade squamous intraepithelial lesion",
+   "vi": "tổn thương trong biểu mô gai độ thấp",
+   "wrong": [
+    "tổn\\ thương\\ nội\\ biểu\\ mô\\ vảy\\ độ\\ thấp",
+    "tổn\\ thương\\ trong\\ biểu\\ mô\\ vảy\\ độ\\ thấp"
+   ]
+  },
+  {
+   "en": "high-grade squamous intraepithelial lesion",
+   "vi": "tổn thương trong biểu mô gai độ cao",
+   "wrong": [
+    "tổn\\ thương\\ nội\\ biểu\\ mô\\ vảy\\ độ\\ cao",
+    "tổn\\ thương\\ trong\\ biểu\\ mô\\ vảy\\ độ\\ cao"
+   ]
+  },
+  {
+   "en": "atypical squamous cells",
+   "vi": "tế bào gai không điển hình",
+   "wrong": [
+    "tế\\ bào\\ vảy\\ không\\ điển\\ hình"
+   ]
+  },
+  {
+   "en": "papillary microcarcinoma",
+   "vi": "carcinom nhú vi thể",
+   "wrong": [
+    "carcinôm\\ nhú\\ vi\\ thể",
+    "vi\\ carcinôm\\ nhú",
+    "vi\\ carcinom\\ nhú"
+   ]
+  },
+  {
+   "en": "papillary thyroid microcarcinoma",
+   "vi": "carcinom nhú vi thể tuyến giáp",
+   "wrong": [
+    "carcinôm\\ nhú\\ vi\\ thể\\ tuyến\\ giáp"
+   ]
+  },
+  {
+   "en": "adenocarcinoma",
+   "vi": "carcinom tuyến",
+   "wrong": [
+    "ung\\ thư\\ biểu\\ mô\\ tuyến",
+    "carcinôm\\ tuyến"
+   ]
+  },
+  {
+   "en": "chromophobe",
+   "vi": "kị sắc",
+   "wrong": [
+    "kỵ\\ màu",
+    "kị\\ màu"
    ]
   },
   {

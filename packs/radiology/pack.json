@@ -1,0 +1,6 @@
+{"id": "radiology", "version": "0.1.1", "name": "Chẩn đoán hình ảnh",
+ "detect": ["contrast-enhanced", "hypoechoic", "hyperechoic", "anechoic", "hypodense", "hyperdense", "hypoattenuating",
+            "hyperintense", "hypointense", "T1-weighted", "T2-weighted", "diffusion-weighted",
+            "apparent diffusion coefficient", "Hounsfield", "washout", "arterial phase", "portal venous phase",
+            "LI-RADS", "PI-RADS", "O-RADS", "Lung-RADS", "Bosniak", "SUVmax", "Doppler", "chemoembolization",
+            "radiofrequency ablation", "embolization", "angiography", "multidetector", "mRECIST"]}

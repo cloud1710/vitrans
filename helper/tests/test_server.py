@@ -535,3 +535,48 @@ def test_default_jobs_get_a_time_estimate_from_the_calibration(tmp_path, home):
     est = app.state.manager.runner.keywords["estimator"](Device("gpu", "g", 14000, 999), "gemma4:e4b", [10, 20], True)
     summary = est.summary()
     assert summary["basis"] == "measured" and summary["translate_s"] == pytest.approx(4.0 + 0.4 + 0.9)
+
+
+class FakeSetup:
+    def __init__(self):
+        self.attached, self.starts = None, 0
+
+    def attach(self, model_needed, pull):
+        self.attached = (model_needed, pull)
+
+    def start(self):
+        self.starts += 1
+
+    def status(self):
+        return {"state": "running", "step": "download", "reason": None, "mode": "portable",
+                "ollama_url": "http://127.0.0.1:11435", "ollama_version": None,
+                "download": {"done": 5, "total": 10}, "error": None, "model": None}
+
+
+def test_without_a_setup_the_setup_endpoints_say_off(tmp_path):
+    c = client(tmp_path)  # the helper run from source: no first-run setup
+    assert c.get("/api/setup").json() == {"state": "off"}
+    assert c.get("/api/health").json()["setup"] == {"state": "off"}
+    assert c.post("/api/setup/start").status_code == 404
+
+
+def test_the_installed_helper_starts_its_setup_and_shows_its_progress(tmp_path):
+    setup, pull = FakeSetup(), FakePull()
+    c = client(tmp_path, setup=setup, pull=pull)
+    assert setup.starts == 1 and setup.attached[1] is pull  # the page's pull and the setup's pull are one
+    assert c.get("/api/setup").json()["download"] == {"done": 5, "total": 10}
+    assert c.get("/api/health").json()["setup"] == {"state": "running", "step": "download", "mode": "portable",
+                                                     "error": None}
+    assert c.post("/api/setup/start", headers={"Origin": "https://evil.example"}).status_code == 403
+    assert setup.starts == 1
+    assert c.post("/api/setup/start").json()["state"] == "running" and setup.starts == 2
+
+
+def test_the_setup_pulls_only_the_recommended_model_and_only_when_missing(tmp_path):
+    missing = dict(PROFILE, ollama=dict(PROFILE["ollama"], models=["qwen3.5:9b"], model_gpu=False))
+    setup, scanner = FakeSetup(), FakeScanner(missing)
+    client(tmp_path, setup=setup, scanner=scanner)
+    model_needed = setup.attached[0]
+    assert model_needed() == "gemma4:e4b"
+    scanner.p = PROFILE
+    assert model_needed() is None

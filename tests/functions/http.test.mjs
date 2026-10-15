@@ -128,7 +128,7 @@ test("configuration: defaults, string vars parsed, invalid numbers refused as se
   assert.equal(c.usdPer1000, 0.011);
   assert.equal(c.liveShare, 0.5);
   assert.throws(() => loadConfig({ LIVE_BUDGET_SHARE: "1.5" }), (e) => e.code === "server_misconfigured");
-  assert.equal(c.sessionTtl, 3600);
+  assert.equal(c.sessionTtl, 43200, "12 h: one browser check a working day (his report 2026-10-15)");
   assert.equal(c.dailyBudget, DEFAULTS.DAILY_NEURON_BUDGET);
   assert.deepEqual(c.turnstileHostnames, []);
   assert.equal(c.allowTestTurnstile, false);

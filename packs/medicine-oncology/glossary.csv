@@ -1,0 +1,279 @@
+en,vi,note
+chemotherapy,hóa trị,"freq 'hóa trị' 50 docs (S30 N14 H5 B1); vs 'điều trị hóa chất' 19 docs (S3 N13 H3 B0), 'hóa trị liệu' 8 docs (S3 N3 H1 B1); ""hóa chất"" alone also counted 53 docs (drug sense); verb ""receive chemotherapy"" = ""được hóa trị"""
+systemic therapy,điều trị toàn thân,guideline wording; opposite of local treatment
+cytotoxic chemotherapy,hóa trị gây độc tế bào,counted form 'thuốc gây độc tế bào' 2 docs (S2 N0 H0 B0); vs 'hóa chất gây độc tế bào' 1 docs (S1 N0 H0 B0)
+combination chemotherapy,hóa trị phối hợp,freq 'hóa trị phối hợp' 4 docs (S2 N0 H2 B0); vs 'hóa trị kết hợp' 4 docs (S1 N2 H1 B0)
+single-agent chemotherapy,hóa trị đơn chất,freq 'hóa trị đơn chất' 1 docs (S1 N0 H0 B0)
+monotherapy,đơn trị liệu,"freq 'đơn trị liệu' 3 docs (S2 N0 H1 B0); vs 'đơn trị' 11 docs (S5 N4 H1 B1); ""đơn trị"" 11 docs is the short form; both accepted in tests"
+platinum-based chemotherapy,hóa trị nhóm platinum,"freq 'nhóm platinum' 2 docs (S1 N0 H1 B0); vs 'dựa trên platinum' 0 docs (S0 N0 H0 B0), 'nền platinum' 0 docs (S0 N0 H0 B0), 'platin' 2 docs (S2 N0 H0 B0); drug class name kept as in the source (platinum)"
+platinum doublet,phác đồ bộ đôi platinum,"freq 'bộ đôi platinum' 1 docs (S0 N1 H0 B0); vs 'bộ đôi' 4 docs (S1 N3 H0 B0); plan seed; TCNCYH title ""bộ đôi platinum"""
+adjuvant,bổ trợ,"owner 2026-10-15 18:48 (choice 2, O4: adjuvant = bổ trợ); counted form 'xạ trị bổ trợ' 6 docs (S2 N3 H1 B0); vs 'xạ trị hỗ trợ' 2 docs (S1 N0 H1 B0), 'xạ trị bổ túc' 2 docs (S2 N0 H0 B0); follows neoadjuvant = tân bổ trợ (surgery, pathology-breast); Southern ""hỗ trợ / bổ túc"" also used"
+adjuvant therapy,điều trị bổ trợ,"owner 2026-10-15 18:48 (choice 2, O4); freq 'điều trị bổ trợ' 6 docs (S2 N4 H0 B0); ""điều trị hỗ trợ"" 12 docs also means supportive treatment, so not used here"
+adjuvant chemotherapy,hóa trị bổ trợ,"owner 2026-10-15 18:48 (choice 2, O4); freq 'hóa trị bổ trợ' 2 docs (S2 N0 H0 B0); vs 'hóa trị hỗ trợ' 3 docs (S3 N0 H0 B0), 'hóa trị bổ túc' 0 docs (S0 N0 H0 B0), 'hóa trị sau mổ' 1 docs (S1 N0 H0 B0)"
+adjuvant radiotherapy,xạ trị bổ trợ,"owner 2026-10-15 18:48 (choice 2, O4); freq 'xạ trị bổ trợ' 6 docs (S2 N3 H1 B0); vs 'xạ trị hỗ trợ' 2 docs (S1 N0 H1 B0), 'xạ trị bổ túc' 2 docs (S2 N0 H0 B0), 'xạ trị sau mổ' 5 docs (S3 N2 H0 B0)"
+postoperative radiotherapy,xạ trị sau mổ,freq 'xạ trị sau mổ' 5 docs (S3 N2 H0 B0)
+neoadjuvant,tân bổ trợ,"owner 2026-10-15 18:48 (choice 2, O4); freq 'tân bổ trợ' 6 docs (S2 N4 H0 B0); vs 'tân hỗ trợ' 5 docs (S4 N0 H1 B0); reuses surgery / pathology-breast value; South ""tân hỗ trợ"" S4 vs S2"
+neoadjuvant therapy,điều trị tân bổ trợ,"owner 2026-10-15 18:48 (choice 2, O4); freq 'tân bổ trợ' 6 docs (S2 N4 H0 B0); vs 'tân hỗ trợ' 5 docs (S4 N0 H1 B0); reuses surgery / pathology-breast value"
+neoadjuvant chemotherapy,hóa trị tân bổ trợ,"owner 2026-10-15 18:48 (choice 2, O4/O5): freq 'hóa trị tân bổ trợ' 2 docs (S1 N1 H0 B0); vs 'hóa trị tân hỗ trợ' 2 docs (S1 N0 H1 B0), 'hóa trị trước mổ' 2 docs (S2 N0 H0 B0), 'hóa trị tiền phẫu' 1 docs (S0 N1 H0 B0); pathology-gi 'neoadjuvant chemoradiotherapy' = hóa xạ trị tân bổ trợ (same choice)"
+total neoadjuvant therapy,điều trị tân bổ trợ toàn bộ (TNT),"owner 2026-10-15 18:48 (choice 2, O4); freq 'tân bổ trợ toàn bộ' 0 docs (S0 N0 H0 B0); YDLS108 title ""điều trị tân bổ trợ toàn bộ"" (search result); keep TNT"
+perioperative chemotherapy,hóa trị chu phẫu,"textbook form, no count"
+induction chemotherapy,hóa trị dẫn đầu,"owner 2026-10-15 18:48 (choice 4, O8); freq 'hóa trị dẫn đầu' 0 docs (S0 N0 H0 B0); vs 'hóa trị tấn công' 0 docs (S0 N0 H0 B0), 'hóa trị cảm ứng' 0 docs (S0 N0 H0 B0), 'điều trị tấn công' 2 docs (S2 N0 H0 B0); no count in corpus; head and neck / nasopharynx usage (BV K); ""điều trị tấn công"" is the leukaemia sense; bare ""induction"" banned by owners.csv"
+consolidation therapy,điều trị củng cố,freq 'điều trị củng cố' 2 docs (S1 N1 H0 B0); vs 'củng cố' 17 docs (S7 N9 H0 B1)
+maintenance therapy,điều trị duy trì,"freq 'điều trị duy trì' 3 docs (S2 N1 H0 B0); vs 'hóa trị duy trì' 0 docs (S0 N0 H0 B0); medicine holds ""maintenance dose"" = liều duy trì"
+salvage therapy,điều trị cứu vãn,freq 'điều trị cứu vãn' 1 docs (S1 N0 H0 B0); vs 'cứu vớt' 0 docs (S0 N0 H0 B0)
+palliative chemotherapy,hóa trị giảm nhẹ,"freq 'hóa trị giảm nhẹ' 0 docs (S0 N0 H0 B0); vs 'điều trị triệu chứng' 13 docs (S7 N5 H0 B1); family of ""chăm sóc giảm nhẹ""; surgery holds ""palliative surgery"" = phẫu thuật tạm thời"
+curative intent,mục đích triệt căn,"freq 'mục đích triệt căn' 2 docs (S2 N0 H0 B0); vs 'tận gốc' 10 docs (S9 N1 H0 B0), 'triệt để' 21 docs (S9 N7 H4 B1); surgery: ""curative-intent surgery"" = phẫu thuật với mục đích triệt căn"
+palliative intent,mục đích giảm nhẹ,freq 'giảm nhẹ' 23 docs (S13 N7 H2 B1); vs 'tạm bợ' 1 docs (S1 N0 H0 B0)
+first-line,bước một,"freq 'bước một' 8 docs (S2 N6 H0 B0); vs 'bước 1' 21 docs (S7 N11 H3 B0), 'đầu tay' 11 docs (S5 N5 H0 B1), 'hàng đầu' 45 docs (S19 N16 H8 B2); ""bước 1"" 21 docs counts numbered steps too; ""bước một"" and ""bước 1"" both accepted"
+first-line therapy,điều trị bước một,freq 'bước một' 8 docs (S2 N6 H0 B0); vs 'bước 1' 21 docs (S7 N11 H3 B0)
+second-line,bước hai,"freq 'bước hai' 2 docs (S2 N0 H0 B0); vs 'bước 2' 19 docs (S6 N11 H2 B0), 'hàng thứ hai' 7 docs (S5 N1 H1 B0)"
+second-line therapy,điều trị bước hai,freq 'bước hai' 2 docs (S2 N0 H0 B0); vs 'bước 2' 19 docs (S6 N11 H2 B0)
+later-line,bước sau,freq 'bước sau' 4 docs (S0 N2 H1 B1); vs 'bước tiếp theo' 4 docs (S2 N2 H0 B0)
+line of therapy,bước điều trị,textbook / guideline form; no corpus count
+regimen,phác đồ,freq 'phác đồ' 90 docs (S57 N24 H7 B2); vs 'công thức' 53 docs (S28 N19 H4 B2)
+chemotherapy regimen,phác đồ hóa trị,freq 'phác đồ hóa trị' 8 docs (S4 N2 H2 B0)
+treatment regimen,phác đồ điều trị,freq 'phác đồ điều trị' 66 docs (S46 N13 H5 B2)
+chemotherapy cycle,chu kỳ hóa trị,"freq 'chu kỳ hóa trị' 5 docs (S3 N0 H2 B0); vs 'đợt hóa trị' 1 docs (S1 N0 H0 B0), 'chu kì' 9 docs (S1 N6 H2 B0); bare ""cycle"" left alone (cell / menstrual cycle)"
+every 3 weeks,mỗi 3 tuần,freq 'mỗi 3 tuần' 3 docs (S2 N1 H0 B0); vs 'chu kỳ 3 tuần' 2 docs (S1 N1 H0 B0)
+dose intensity,cường độ liều,freq 'cường độ liều' 0 docs (S0 N0 H0 B0); vs 'liều cường độ' 0 docs (S0 N0 H0 B0); no count; textbook form
+relative dose intensity,cường độ liều tương đối (RDI),freq 'cường độ liều' 0 docs (S0 N0 H0 B0); no count; keep RDI
+dose-dense,liều dày,"freq 'liều dày' 2 docs (S1 N1 H0 B0); vs 'liều mau' 0 docs (S0 N0 H0 B0), 'dày liều' 0 docs (S0 N0 H0 B0)"
+dose reduction,giảm liều,freq 'giảm liều' 14 docs (S3 N5 H4 B2)
+dose delay,trì hoãn liều,freq 'trì hoãn' 17 docs (S8 N7 H1 B1); vs 'dời lịch' 0 docs (S0 N0 H0 B0)
+treatment delay,trì hoãn điều trị,freq 'trì hoãn điều trị' 3 docs (S1 N2 H0 B0); vs 'hoãn điều trị' 3 docs (S1 N2 H0 B0)
+cumulative dose,liều tích lũy,freq 'liều tích lũy' 1 docs (S1 N0 H0 B0)
+maximum tolerated dose,liều tối đa dung nạp (MTD),freq 'liều tối đa dung nạp' 1 docs (S0 N0 H0 B1); vs 'liều tối đa' 6 docs (S3 N2 H0 B1)
+dose-limiting toxicity,độc tính giới hạn liều (DLT),freq 'độc tính giới hạn liều' 0 docs (S0 N0 H0 B0); no count; phase I wording
+body surface area,diện tích da (BSA),freq 'diện tích da' 5 docs (S1 N2 H1 B1); vs 'diện tích bề mặt cơ thể' 0 docs (S0 N0 H0 B0)
+chemotherapy-naive,chưa từng hóa trị,counted form 'chưa hóa trị' 1 docs (S0 N0 H1 B0); vs 'chưa từng điều trị' 1 docs (S1 N0 H0 B0)
+treatment-naive,chưa từng điều trị,freq 'chưa từng điều trị' 1 docs (S1 N0 H0 B0); vs 'chưa điều trị' 7 docs (S5 N1 H0 B1)
+standard of care,điều trị chuẩn,"freq 'điều trị chuẩn' 5 docs (S2 N2 H0 B1); vs 'tiêu chuẩn điều trị' 3 docs (S1 N2 H0 B0), 'chuẩn điều trị' 3 docs (S1 N2 H0 B0)"
+platinum-sensitive,nhạy platinum,"freq 'nhạy platinum' 0 docs (S0 N0 H0 B0); vs 'nhạy cảm platinum' 0 docs (S0 N0 H0 B0); no count; mirror of ""kháng platinum"""
+platinum-resistant,kháng platinum,freq 'kháng platinum' 1 docs (S0 N0 H1 B0)
+treatment resistance,kháng trị,"freq 'kháng trị' 5 docs (S3 N1 H1 B0); vs 'kháng điều trị' 3 docs (S2 N1 H0 B0), 'kháng thuốc' 14 docs (S6 N6 H1 B1); plan noi_khoa table: treatment resistance = kháng trị"
+drug resistance,kháng thuốc,"freq 'kháng thuốc' 14 docs (S6 N6 H1 B1); vs 'đề kháng' 12 docs (S7 N1 H3 B1); owners.csv bans bare ""resistance"""
+refractory,kháng trị,freq 'kháng trị' 5 docs (S3 N1 H1 B0); vs 'kháng điều trị' 3 docs (S2 N1 H0 B0); pathology-hemato: refractory disease = bệnh kháng trị
+relapse,tái phát,freq 'tái phát' 97 docs (S61 N28 H8 B0); pathology owns recurrence = tái phát
+targeted therapy,liệu pháp nhắm trúng đích,"freq 'liệu pháp nhắm trúng đích' 3 docs (S3 N0 H0 B0); vs 'điều trị đích' 21 docs (S6 N14 H1 B0), 'điều trị nhắm trúng đích' 4 docs (S2 N2 H0 B0), 'liệu pháp đích' 1 docs (S1 N0 H0 B0); reuses pathology (owner row + term fix); South ""nhắm trúng đích"" S8; North ""điều trị đích"" N14"
+targeted agent,thuốc nhắm trúng đích,"freq 'thuốc nhắm trúng đích' 1 docs (S0 N1 H0 B0); vs 'thuốc điều trị đích' 7 docs (S3 N4 H0 B0), 'thuốc trúng đích' 1 docs (S0 N1 H0 B0)"
+tyrosine kinase inhibitor,thuốc ức chế tyrosine kinase (TKI),freq 'ức chế tyrosine kinase' 5 docs (S2 N3 H0 B0); vs 'ức chế tyrosin kinase' 1 docs (S1 N0 H0 B0); reuses molecular-pathology
+EGFR tyrosine kinase inhibitor,thuốc ức chế tyrosine kinase EGFR (EGFR-TKI),freq 'ức chế tyrosine kinase' 5 docs (S2 N3 H0 B0)
+EGFR-TKI,EGFR-TKI,kept English as in titles
+monoclonal antibody,kháng thể đơn dòng,freq 'kháng thể đơn dòng' 8 docs (S2 N6 H0 B0)
+antibody-drug conjugate,kháng thể liên hợp thuốc (ADC),no count; keep ADC (unresolved)
+anti-HER2 therapy,điều trị kháng HER2,freq 'kháng her2' 2 docs (S1 N1 H0 B0)
+anti-PD-1,kháng PD-1,freq 'kháng pd-1' 3 docs (S1 N2 H0 B0); vs 'kháng thể kháng pd-1' 1 docs (S1 N0 H0 B0)
+anti-angiogenic therapy,điều trị kháng tăng sinh mạch,freq 'kháng tăng sinh mạch' 0 docs (S0 N0 H0 B0); vs 'ức chế tăng sinh mạch' 1 docs (S1 N0 H0 B0)
+CDK4/6 inhibitor,thuốc ức chế CDK4/6,freq 'thuốc ức chế cdk4/6' 1 docs (S0 N1 H0 B0)
+PARP inhibitor,thuốc ức chế PARP,freq 'ức chế parp' 2 docs (S2 N0 H0 B0); reuses molecular-pathology
+immunotherapy,liệu pháp miễn dịch,"freq 'liệu pháp miễn dịch' 8 docs (S4 N4 H0 B0); vs 'điều trị miễn dịch' 4 docs (S2 N2 H0 B0), 'miễn dịch trị liệu' 0 docs (S0 N0 H0 B0), 'thuốc miễn dịch' 2 docs (S0 N1 H1 B0)"
+immune checkpoint inhibitor,thuốc ức chế điểm kiểm soát miễn dịch,"freq 'ức chế điểm kiểm soát miễn dịch' 4 docs (S1 N3 H0 B0); vs 'ức chế chốt kiểm soát miễn dịch' 1 docs (S0 N1 H0 B0), 'ức chế điểm kiểm tra miễn dịch' 0 docs (S0 N0 H0 B0); reuses molecular-pathology; drug names (pembrolizumab, nivolumab...) stay INN"
+checkpoint inhibitor,thuốc ức chế điểm kiểm soát miễn dịch,freq 'ức chế điểm kiểm soát' 4 docs (S1 N3 H0 B0)
+PD-1 inhibitor,thuốc ức chế PD-1,textbook / guideline form; no corpus count
+PD-L1 expression,bộc lộ PD-L1,"reuses molecular-pathology (IHC protein = bộc lộ, roadmap decision 5)"
+tumor proportion score,điểm tỷ lệ tế bào u (TPS),reuses molecular-pathology / pathology-respiratory
+chemoimmunotherapy,hóa trị kết hợp liệu pháp miễn dịch,freq 'hóa trị kết hợp' 4 docs (S1 N2 H1 B0); no single Vietnamese word; descriptive
+CAR T-cell therapy,liệu pháp tế bào CAR-T,keep CAR-T
+hormone therapy,điều trị nội tiết,"freq 'điều trị nội tiết' 10 docs (S7 N2 H1 B0); vs 'liệu pháp nội tiết' 3 docs (S3 N0 H0 B0), 'liệu pháp hormon' 2 docs (S2 N0 H0 B0), 'liệu pháp hormone' 1 docs (S0 N1 H0 B0), 'nội tiết tố' 9 docs (S7 N1 H1 B0)"
+hormonal therapy,điều trị nội tiết,freq 'điều trị nội tiết' 10 docs (S7 N2 H1 B0)
+endocrine therapy,điều trị nội tiết,freq 'điều trị nội tiết' 10 docs (S7 N2 H1 B0); vs 'liệu pháp nội tiết' 3 docs (S3 N0 H0 B0)
+hormone receptor-positive,thụ thể nội tiết dương tính,"freq 'thụ thể nội tiết dương tính' 4 docs (S1 N2 H1 B0); vs 'thụ thể hormon dương tính' 0 docs (S0 N0 H0 B0), 'thụ thể nội tiết tố dương tính' 0 docs (S0 N0 H0 B0); pathology-breast: hormone receptor = thụ thể nội tiết"
+aromatase inhibitor,thuốc ức chế men aromatase,freq 'ức chế men aromatase' 3 docs (S2 N1 H0 B0); vs 'ức chế aromatase' 1 docs (S1 N0 H0 B0)
+androgen deprivation therapy,liệu pháp ức chế androgen (ADT),"freq 'liệu pháp ức chế androgen' 1 docs (S1 N0 H0 B0); vs 'liệu pháp triệt androgen' 1 docs (S1 N0 H0 B0), 'cắt tinh hoàn nội khoa' 1 docs (S1 N0 H0 B0), 'kháng androgen' 2 docs (S1 N1 H0 B0)"
+castration-resistant prostate cancer,ung thư tuyến tiền liệt kháng cắt tinh hoàn (CRPC),freq 'kháng cắt tinh hoàn' 1 docs (S1 N0 H0 B0); vs 'kháng thiến' 0 docs (S0 N0 H0 B0)
+radiotherapy,xạ trị,"freq 'xạ trị' 48 docs (S29 N14 H5 B0); vs 'điều trị tia xạ' 4 docs (S2 N2 H0 B0), 'xạ trị liệu' 1 docs (S1 N0 H0 B0)"
+radiation therapy,xạ trị,freq 'xạ trị' 48 docs (S29 N14 H5 B0)
+radiation oncology,xạ trị ung thư,freq 'xạ trị ung thư' 3 docs (S1 N2 H0 B0)
+radiation oncologist,bác sĩ xạ trị,freq 'bác sĩ xạ trị' 0 docs (S0 N0 H0 B0)
+chemoradiotherapy,hóa xạ trị,"freq 'hóa xạ trị' 16 docs (S10 N4 H2 B0); vs 'xạ hóa trị' 0 docs (S0 N0 H0 B0), 'hóa-xạ trị' 0 docs (S0 N0 H0 B0)"
+chemoradiation,hóa xạ trị,freq 'hóa xạ trị' 16 docs (S10 N4 H2 B0)
+concurrent chemoradiotherapy,hóa xạ trị đồng thời,"freq 'hóa xạ trị đồng thời' 6 docs (S2 N3 H1 B0); vs 'hóa xạ đồng thời' 5 docs (S3 N1 H1 B0), 'hóa-xạ trị đồng thời' 0 docs (S0 N0 H0 B0)"
+concurrent chemoradiation,hóa xạ trị đồng thời,freq 'hóa xạ trị đồng thời' 6 docs (S2 N3 H1 B0)
+sequential chemoradiotherapy,hóa xạ trị tuần tự,freq 'hóa xạ trị tuần tự' 1 docs (S1 N0 H0 B0); vs 'hóa xạ tuần tự' 0 docs (S0 N0 H0 B0)
+definitive chemoradiotherapy,hóa xạ trị triệt căn,counted form 'hóa xạ trị đồng thời triệt căn' 2 docs (S1 N1 H0 B0)
+definitive radiotherapy,xạ trị triệt căn,freq 'triệt căn' 28 docs (S14 N12 H2 B0)
+palliative radiotherapy,xạ trị giảm nhẹ,"freq 'xạ trị giảm nhẹ' 1 docs (S1 N0 H0 B0); vs 'xạ trị giảm đau' 1 docs (S1 N0 H0 B0), 'xạ trị tạm bợ' 0 docs (S0 N0 H0 B0); ""xạ trị giảm đau"" (S1, bone metastases) is a narrower aim"
+external beam radiotherapy,xạ trị ngoài (EBRT),"freq 'xạ trị ngoài' 5 docs (S3 N2 H0 B0); vs 'xạ trị chiếu ngoài' 2 docs (S2 N0 H0 B0), 'xạ ngoài' 3 docs (S1 N2 H0 B0)"
+external beam radiation therapy,xạ trị ngoài (EBRT),freq 'xạ trị ngoài' 5 docs (S3 N2 H0 B0)
+brachytherapy,xạ trị áp sát,"freq 'xạ trị áp sát' 2 docs (S1 N1 H0 B0); vs 'xạ trị trong' 6 docs (S4 N2 H0 B0), 'xạ áp sát' 2 docs (S1 N1 H0 B0), 'xạ trị gần' 0 docs (S0 N0 H0 B0); ""xạ trị trong"" also counts ""xạ trị trong N tuần"""
+high-dose-rate brachytherapy,xạ trị áp sát suất liều cao (HDR),freq 'suất liều cao' 3 docs (S1 N2 H0 B0)
+stereotactic body radiotherapy,xạ trị lập thể định vị thân (SBRT),freq 'xạ trị lập thể định vị thân' 0 docs (S0 N0 H0 B0); vs 'xạ trị định vị thân' 1 docs (S1 N0 H0 B0); YDLS108 titles (search results); corpus text 0 (PDF layer)
+stereotactic body radiation therapy,xạ trị lập thể định vị thân (SBRT),freq 'xạ trị lập thể định vị thân' 0 docs (S0 N0 H0 B0)
+stereotactic radiosurgery,xạ phẫu định vị (SRS),freq 'xạ phẫu định vị' 1 docs (S1 N0 H0 B0); vs 'xạ phẫu lập thể' 0 docs (S0 N0 H0 B0)
+intensity-modulated radiotherapy,xạ trị điều biến liều (IMRT),freq 'xạ trị điều biến liều' 5 docs (S3 N1 H1 B0); vs 'xạ trị điều biến cường độ' 0 docs (S0 N0 H0 B0)
+intensity-modulated radiation therapy,xạ trị điều biến liều (IMRT),freq 'xạ trị điều biến liều' 5 docs (S3 N1 H1 B0)
+volumetric modulated arc therapy,xạ trị điều biến thể tích hình cung (VMAT),freq 'xạ trị điều biến thể tích' 1 docs (S1 N0 H0 B0); vs 'xạ trị hình cung điều biến thể tích' 0 docs (S0 N0 H0 B0)
+three-dimensional conformal radiotherapy,xạ trị 3D theo hình dạng khối u (3D-CRT),freq 'xạ trị 3d' 2 docs (S2 N0 H0 B0); vs 'xạ trị 3 chiều' 1 docs (S1 N0 H0 B0)
+image-guided radiotherapy,xạ trị dưới hướng dẫn hình ảnh (IGRT),freq 'xạ trị dưới hướng dẫn hình ảnh' 1 docs (S1 N0 H0 B0)
+whole-brain radiotherapy,xạ trị toàn não (WBRT),freq 'xạ trị toàn não' 1 docs (S1 N0 H0 B0); vs 'xạ toàn não' 1 docs (S1 N0 H0 B0)
+short-course radiotherapy,xạ trị ngắn ngày,freq 'xạ trị ngắn ngày' 0 docs (S0 N0 H0 B0); vs 'xạ trị ngắn hạn' 0 docs (S0 N0 H0 B0); no count
+hypofractionated radiotherapy,xạ trị giảm phân liều,freq 'giảm phân liều' 0 docs (S0 N0 H0 B0); vs 'phân liều lớn' 0 docs (S0 N0 H0 B0); no count; BV K usage (unverified)
+fractionation,phân liều,freq 'phân liều' 3 docs (S1 N1 H1 B0); vs 'phân đoạn' 7 docs (S3 N3 H0 B1)
+conventional fractionation,phân liều quy ước,"freq 'phân liều quy ước' 0 docs (S0 N0 H0 B0); vs 'phân liều chuẩn' 0 docs (S0 N0 H0 B0), 'phân liều thường quy' 0 docs (S0 N0 H0 B0); no count"
+dose per fraction,liều mỗi phân liều,"freq 'mỗi phân liều' 1 docs (S0 N1 H0 B0); vs 'liều mỗi phân liều' 0 docs (S0 N0 H0 B0); bare ""fraction"" left alone (a fraction of patients)"
+total dose,tổng liều,freq 'tổng liều' 12 docs (S6 N3 H1 B2)
+radiotherapy boost,nâng liều xạ trị,"freq 'nâng liều' 3 docs (S1 N1 H0 B1); vs 'liều nâng' 0 docs (S0 N0 H0 B0), 'boost' 4 docs (S3 N0 H1 B0)"
+CT simulation,chụp cắt lớp vi tính mô phỏng,counted form 'chụp mô phỏng' 2 docs (S1 N1 H0 B0); vs 'mô phỏng' 4 docs (S2 N2 H0 B0); radiology: computed tomography = cắt lớp vi tính
+radiotherapy planning,lập kế hoạch xạ trị,freq 'lập kế hoạch xạ trị' 6 docs (S2 N3 H1 B0); vs 'kế hoạch xạ trị' 6 docs (S2 N3 H1 B0)
+gross tumor volume,thể tích khối u thô (GTV),freq 'thể tích khối u thô' 0 docs (S0 N0 H0 B0); no count; keep GTV
+clinical target volume,thể tích đích lâm sàng (CTV),"freq 'thể tích đích' 2 docs (S1 N1 H0 B0); vs 'thể tích bia' 1 docs (S0 N1 H0 B0); South ""đích"" S1, North ""bia"" N1; keep CTV"
+planning target volume,thể tích đích lập kế hoạch (PTV),freq 'thể tích đích' 2 docs (S1 N1 H0 B0); vs 'thể tích bia' 1 docs (S0 N1 H0 B0); keep PTV
+organs at risk,cơ quan lành (OAR),"freq 'cơ quan lành' 4 docs (S2 N2 H0 B0); vs 'cơ quan nguy cơ' 1 docs (S1 N0 H0 B0), 'cơ quan nguy cấp' 0 docs (S0 N0 H0 B0), 'cơ quan có nguy cơ' 0 docs (S0 N0 H0 B0)"
+linear accelerator,máy gia tốc tuyến tính,freq 'máy gia tốc tuyến tính' 1 docs (S0 N1 H0 B0); vs 'máy gia tốc' 5 docs (S2 N3 H0 B0)
+radiation pneumonitis,viêm phổi do xạ trị,freq 'viêm phổi do xạ trị' 0 docs (S0 N0 H0 B0); vs 'viêm phổi do xạ' 0 docs (S0 N0 H0 B0); no count
+radiation dermatitis,viêm da do xạ trị,"freq 'viêm da do xạ trị' 0 docs (S0 N0 H0 B0); vs 'viêm da do xạ' 0 docs (S0 N0 H0 B0), 'viêm da do tia xạ' 0 docs (S0 N0 H0 B0); no count"
+xerostomia,khô miệng,freq 'khô miệng' 6 docs (S2 N0 H2 B2)
+RECIST,RECIST,counted form 'recist 1.1' 4 docs (S0 N4 H0 B0); vs 'tiêu chuẩn recist' 6 docs (S1 N3 H2 B0); reuses radiology
+RECIST 1.1,RECIST 1.1,freq 'recist 1.1' 4 docs (S0 N4 H0 B0)
+iRECIST,iRECIST,kept English
+complete response,đáp ứng hoàn toàn (CR),freq 'đáp ứng hoàn toàn' 21 docs (S7 N10 H4 B0); reuses radiology
+partial response,đáp ứng một phần (PR),freq 'đáp ứng một phần' 15 docs (S5 N7 H3 B0); reuses radiology
+stable disease,bệnh ổn định (SD),freq 'bệnh ổn định' 14 docs (S6 N6 H2 B0); reuses radiology
+progressive disease,bệnh tiến triển (PD),freq 'bệnh tiến triển' 27 docs (S13 N12 H2 B0); reuses radiology
+target lesion,tổn thương mục tiêu,"freq 'tổn thương mục tiêu' 1 docs (S1 N0 H0 B0); vs 'tổn thương đích' 2 docs (S0 N1 H1 B0); reuses radiology (S1 vs ""đích"" N1 H1)"
+non-target lesion,tổn thương không mục tiêu,freq 'tổn thương không mục tiêu' 0 docs (S0 N0 H0 B0); vs 'tổn thương không đích' 0 docs (S0 N0 H0 B0); reuses radiology
+disease progression,bệnh tiến triển,freq 'bệnh tiến triển' 27 docs (S13 N12 H2 B0)
+tumor response,đáp ứng khối u,freq 'đáp ứng khối u' 5 docs (S1 N3 H1 B0); vs 'đáp ứng u' 3 docs (S1 N1 H1 B0)
+treatment response,đáp ứng điều trị,freq 'đáp ứng điều trị' 36 docs (S15 N16 H4 B1)
+response assessment,đánh giá đáp ứng,freq 'đánh giá đáp ứng' 27 docs (S10 N14 H3 B0)
+objective response rate,tỷ lệ đáp ứng khách quan (ORR),"freq 'tỷ lệ đáp ứng khách quan' 4 docs (S0 N4 H0 B0); vs 'tỉ lệ đáp ứng khách quan' 0 docs (S0 N0 H0 B0), 'tỷ lệ đáp ứng toàn bộ' 3 docs (S0 N3 H0 B0), 'tỉ lệ đáp ứng chung' 2 docs (S1 N0 H1 B0)"
+overall response rate,tỷ lệ đáp ứng toàn bộ (ORR),"freq 'đáp ứng toàn bộ' 5 docs (S2 N3 H0 B0); vs 'đáp ứng chung' 3 docs (S1 N0 H2 B0), 'tỷ lệ đáp ứng chung' 0 docs (S0 N0 H0 B0); South S2 vs ""đáp ứng chung"" S1"
+response rate,tỷ lệ đáp ứng,textbook / guideline form; no corpus count
+disease control rate,tỷ lệ kiểm soát bệnh (DCR),freq 'tỷ lệ kiểm soát bệnh' 6 docs (S1 N5 H0 B0); vs 'tỉ lệ kiểm soát bệnh' 2 docs (S1 N1 H0 B0)
+best overall response,đáp ứng tốt nhất,freq 'đáp ứng tốt nhất' 2 docs (S1 N1 H0 B0)
+duration of response,thời gian đáp ứng (DoR),"freq 'thời gian đáp ứng' 3 docs (S2 N0 H0 B1); vs 'thời gian duy trì đáp ứng' 0 docs (S0 N0 H0 B0), 'thời gian kéo dài đáp ứng' 0 docs (S0 N0 H0 B0)"
+pseudoprogression,giả tiến triển,freq 'giả tiến triển' 0 docs (S0 N0 H0 B0); no count; immunotherapy wording
+time to progression,thời gian đến khi bệnh tiến triển (TTP),freq 'thời gian đến khi bệnh tiến triển' 0 docs (S0 N0 H0 B0); vs 'thời gian bệnh tiến triển' 0 docs (S0 N0 H0 B0); no count
+overall survival,sống còn toàn bộ,"owner, recommended column 2026-10-15 18:48 (O1); freq 'sống còn toàn bộ' 7 docs (S6 N1 H0 B0); vs 'sống thêm toàn bộ' 20 docs (S5 N13 H2 B0), 'thời gian sống thêm toàn bộ' 14 docs (S3 N10 H1 B0), 'sống toàn bộ' 5 docs (S0 N4 H1 B0); reuses pathology; South ""sống còn"" S6 vs North ""sống thêm"" N13"
+progression-free survival,sống còn không bệnh tiến triển (PFS),"owner, recommended column 2026-10-15 18:48 (O1); freq 'sống còn không bệnh tiến triển' 1 docs (S1 N0 H0 B0); vs 'sống thêm bệnh không tiến triển' 6 docs (S1 N4 H1 B0), 'sống thêm không tiến triển' 4 docs (S1 N3 H0 B0), 'sống thêm không bệnh tiến triển' 4 docs (S0 N4 H0 B0); South S1 vs North N4: follows the ""sống còn"" family of pathology"
+disease-free survival,sống còn không bệnh (DFS),"owner, recommended column 2026-10-15 18:48 (O1); freq 'sống còn không bệnh' 4 docs (S4 N0 H0 B0); vs 'sống thêm không bệnh' 12 docs (S3 N9 H0 B0), 'sống không bệnh' 5 docs (S0 N5 H0 B0)"
+recurrence-free survival,sống còn không tái phát (RFS),"freq 'sống còn không tái phát' 0 docs (S0 N0 H0 B0); vs 'sống thêm không tái phát' 1 docs (S1 N0 H0 B0); no count for ""sống còn""; family rule"
+relapse-free survival,sống còn không tái phát (RFS),freq 'sống còn không tái phát' 0 docs (S0 N0 H0 B0)
+event-free survival,sống còn không biến cố (EFS),freq 'sống còn không biến cố' 0 docs (S0 N0 H0 B0); vs 'sống thêm không biến cố' 0 docs (S0 N0 H0 B0); no count; family rule
+cancer-specific survival,sống còn đặc hiệu ung thư (CSS),freq 'sống còn đặc hiệu' 0 docs (S0 N0 H0 B0)
+median overall survival,trung vị thời gian sống còn toàn bộ,"counted form 'trung vị thời gian sống thêm' 4 docs (S0 N3 H1 B0); vs 'trung vị os' 3 docs (S0 N3 H0 B0), 'os trung vị' 2 docs (S0 N2 H0 B0); North ""trung vị thời gian sống thêm"" N3; family rule"
+median progression-free survival,trung vị thời gian sống còn không bệnh tiến triển,counted form 'trung vị pfs' 5 docs (S0 N5 H0 B0); vs 'pfs trung vị' 2 docs (S0 N2 H0 B0)
+survival rate,tỷ lệ sống còn,"freq 'tỷ lệ sống còn' 12 docs (S10 N2 H0 B0); vs 'tỉ lệ sống còn' 3 docs (S3 N0 H0 B0), 'tỷ lệ sống thêm' 13 docs (S4 N9 H0 B0), 'tỉ lệ sống thêm' 5 docs (S4 N1 H0 B0)"
+5-year survival rate,tỷ lệ sống còn 5 năm,counted form 'tỉ lệ sống còn 5 năm' 2 docs (S2 N0 H0 B0); vs 'sống thêm 5 năm' 9 docs (S5 N4 H0 B0)
+hazard ratio,tỷ số nguy cơ (HR),"freq 'tỷ số nguy cơ' 0 docs (S0 N0 H0 B0); vs 'tỷ số rủi ro' 0 docs (S0 N0 H0 B0), 'tỷ suất nguy cơ' 0 docs (S0 N0 H0 B0), 'hệ số nguy cơ' 0 docs (S0 N0 H0 B0); no count; HR abbreviation always kept"
+median follow-up,thời gian theo dõi trung vị,freq 'thời gian theo dõi trung vị' 2 docs (S2 N0 H0 B0); vs 'trung vị thời gian theo dõi' 1 docs (S0 N1 H0 B0)
+local control,kiểm soát tại chỗ,freq 'kiểm soát tại chỗ' 5 docs (S3 N1 H1 B0)
+locoregional control,kiểm soát tại chỗ tại vùng,freq 'tại chỗ tại vùng' 6 docs (S4 N1 H1 B0); vs 'kiểm soát tại chỗ tại vùng' 0 docs (S0 N0 H0 B0)
+local recurrence,tái phát tại chỗ,freq 'tái phát tại chỗ' 16 docs (S12 N4 H0 B0)
+locoregional recurrence,tái phát tại chỗ tại vùng,freq 'tái phát tại chỗ tại vùng' 1 docs (S1 N0 H0 B0); vs 'tái phát tại vùng' 2 docs (S2 N0 H0 B0)
+distant recurrence,tái phát xa,freq 'tái phát xa' 0 docs (S0 N0 H0 B0); vs 'tái phát di căn' 6 docs (S3 N2 H1 B0)
+distant metastasis,di căn xa,freq 'di căn xa' 41 docs (S28 N10 H3 B0)
+treatment failure,thất bại điều trị,textbook / guideline form; no corpus count
+quality of life,chất lượng cuộc sống,freq 'chất lượng cuộc sống' 28 docs (S18 N7 H3 B0); vs 'chất lượng sống' 11 docs (S2 N6 H3 B0)
+toxicity,độc tính,freq 'độc tính' 21 docs (S6 N10 H4 B1)
+treatment-related toxicity,độc tính liên quan đến điều trị,freq 'độc tính' 21 docs (S6 N10 H4 B1)
+treatment-related adverse event,biến cố bất lợi liên quan đến điều trị (TRAE),"freq 'biến cố bất lợi' 5 docs (S3 N1 H0 B1); vs 'tác dụng không mong muốn' 17 docs (S5 N10 H1 B1), 'tác dụng phụ' 27 docs (S10 N11 H4 B2); medicine owns adverse event = biến cố bất lợi"
+adverse event,biến cố bất lợi,"freq 'biến cố bất lợi' 5 docs (S3 N1 H0 B1); vs 'tác dụng không mong muốn' 17 docs (S5 N10 H1 B1), 'tác dụng phụ' 27 docs (S10 N11 H4 B2), 'tác dụng ngoại ý' 1 docs (S1 N0 H0 B0); reuses medicine (parent)"
+serious adverse event,biến cố bất lợi nghiêm trọng (SAE),freq 'biến cố bất lợi' 5 docs (S3 N1 H0 B1)
+CTCAE,CTCAE,freq 'ctcae' 11 docs (S4 N6 H1 B0); vs 'tiêu chuẩn ctcae' 2 docs (S1 N0 H1 B0); kept English with version (CTCAE 5.0)
+Common Terminology Criteria for Adverse Events,Common Terminology Criteria for Adverse Events (CTCAE),freq 'ctcae' 11 docs (S4 N6 H1 B0); criteria name kept English (named scale rule)
+grade 3,độ 3,"freq 'độ 3' 29 docs (S8 N12 H7 B2); vs 'độ iii' 14 docs (S7 N4 H2 B1), 'mức độ 3' 4 docs (S0 N2 H1 B1)"
+grade 4,độ 4,freq 'độ 4' 10 docs (S2 N4 H2 B2)
+grade 3-4,độ 3-4,"freq 'độ 3-4' 5 docs (S2 N2 H1 B0); vs 'độ iii-iv' 6 docs (S3 N1 H1 B1), 'độ 3 - 4' 0 docs (S0 N0 H0 B0)"
+acute toxicity,độc tính cấp,freq 'độc tính cấp' 2 docs (S1 N0 H1 B0)
+late toxicity,độc tính muộn,freq 'độc tính muộn' 2 docs (S1 N0 H1 B0)
+hematologic toxicity,độc tính huyết học,freq 'độc tính huyết học' 7 docs (S2 N3 H2 B0)
+non-hematologic toxicity,độc tính ngoài huyết học,freq 'độc tính ngoài huyết học' 0 docs (S0 N0 H0 B0); no count
+myelosuppression,ức chế tủy xương,"freq 'ức chế tủy xương' 1 docs (S1 N0 H0 B0); vs 'ức chế tủy' 1 docs (S1 N0 H0 B0), 'suy tủy' 6 docs (S3 N2 H0 B1), 'độc tính tủy' 1 docs (S1 N0 H0 B0)"
+neutropenia,giảm bạch cầu trung tính,"owner, recommended column 2026-10-15 18:48 (O6); freq 'giảm bạch cầu trung tính' 4 docs (S2 N1 H0 B1); vs 'giảm bạch cầu hạt' 4 docs (S2 N0 H2 B0), 'hạ bạch cầu trung tính' 2 docs (S0 N2 H0 B0), 'hạ bạch cầu hạt' 2 docs (S0 N1 H1 B0), 'giảm bạch cầu đa nhân trung tính' 2 docs (S1 N0 H0 B1); tie S2 / S2 with ""giảm bạch cầu hạt""; chosen for neutrophil = bạch cầu trung tính (pathology-hemato, medicine)"
+febrile neutropenia,sốt giảm bạch cầu trung tính,"owner, recommended column 2026-10-15 18:48 (O6); freq 'sốt giảm bạch cầu trung tính' 0 docs (S0 N0 H0 B0); vs 'sốt giảm bạch cầu hạt' 1 docs (S1 N0 H0 B0), 'sốt hạ bạch cầu' 2 docs (S0 N2 H0 B0), 'sốt hạ bạch cầu trung tính' 1 docs (S0 N1 H0 B0); follows neutropenia; ""sốt giảm bạch cầu hạt"" S1 is the only Southern hit"
+granulocyte colony-stimulating factor,yếu tố kích thích dòng bạch cầu hạt (G-CSF),"freq 'yếu tố kích thích dòng bạch cầu hạt' 1 docs (S1 N0 H0 B0); vs 'yếu tố kích thích tạo cụm bạch cầu hạt' 0 docs (S0 N0 H0 B0), 'g-csf' 3 docs (S2 N1 H0 B0)"
+primary prophylaxis,dự phòng nguyên phát,freq 'dự phòng nguyên phát' 1 docs (S1 N0 H0 B0)
+mucositis,viêm niêm mạc,freq 'viêm niêm mạc' 6 docs (S2 N3 H1 B0); vs 'loét miệng' 5 docs (S1 N3 H0 B1)
+oral mucositis,viêm niêm mạc miệng,"freq 'viêm niêm mạc miệng' 2 docs (S1 N0 H1 B0); vs 'viêm miệng' 2 docs (S1 N1 H0 B0), 'viêm loét miệng' 2 docs (S1 N1 H0 B0)"
+stomatitis,viêm miệng,freq 'viêm miệng' 2 docs (S1 N1 H0 B0); vs 'viêm loét miệng' 2 docs (S1 N1 H0 B0)
+nausea and vomiting,buồn nôn và nôn,"freq 'buồn nôn và nôn' 4 docs (S3 N1 H0 B0); vs 'nôn và buồn nôn' 4 docs (S2 N1 H0 B1), 'nôn ói' 13 docs (S11 N1 H1 B0); medicine: vomiting = nôn"
+chemotherapy-induced nausea and vomiting,buồn nôn và nôn do hóa trị (CINV),freq 'buồn nôn và nôn' 4 docs (S3 N1 H0 B0)
+antiemetic,thuốc chống nôn,"freq 'thuốc chống nôn' 4 docs (S1 N1 H1 B1); vs 'chống nôn' 5 docs (S2 N1 H1 B1), 'dự phòng nôn' 1 docs (S0 N0 H1 B0)"
+alopecia,rụng tóc,freq 'rụng tóc' 8 docs (S3 N3 H1 B1)
+fatigue,mệt mỏi,freq 'mệt mỏi' 27 docs (S10 N9 H6 B2); vs 'suy nhược' 2 docs (S1 N1 H0 B0)
+peripheral neuropathy,bệnh thần kinh ngoại biên,"freq 'bệnh thần kinh ngoại biên' 2 docs (S1 N0 H0 B1); vs 'bệnh lý thần kinh ngoại biên' 1 docs (S0 N0 H0 B1), 'viêm thần kinh ngoại biên' 0 docs (S0 N0 H0 B0), 'độc tính thần kinh ngoại biên' 0 docs (S0 N0 H0 B0); ""ngoại biên"" over ""ngoại vi"""
+chemotherapy-induced peripheral neuropathy,bệnh thần kinh ngoại biên do hóa trị (CIPN),freq 'bệnh thần kinh ngoại biên' 2 docs (S1 N0 H0 B1)
+hand-foot syndrome,hội chứng bàn tay bàn chân,"freq 'hội chứng bàn tay bàn chân' 0 docs (S0 N0 H0 B0); vs 'hội chứng tay-chân' 1 docs (S1 N0 H0 B0), 'hội chứng tay chân' 0 docs (S0 N0 H0 B0); vnras title (search, Hà Nội): ""hội chứng bàn tay bàn chân ... capecitabine"""
+acneiform rash,ban dạng mụn,freq 'ban dạng mụn' 1 docs (S0 N1 H0 B0); vs 'ban dạng trứng cá' 0 docs (S0 N0 H0 B0)
+cardiotoxicity,độc tính trên tim,"freq 'độc tính trên tim' 1 docs (S0 N1 H0 B0); vs 'độc tính tim' 1 docs (S1 N0 H0 B0), 'độc tính tim mạch' 0 docs (S0 N0 H0 B0); ""trên"" as medicine: hepatotoxicity = độc tính trên gan"
+infusion reaction,phản ứng tiêm truyền,freq 'phản ứng tiêm truyền' 1 docs (S0 N1 H0 B0); vs 'phản ứng truyền' 1 docs (S0 N1 H0 B0)
+extravasation,thoát mạch,freq 'thoát mạch' 1 docs (S1 N0 H0 B0)
+immune-related adverse event,biến cố bất lợi liên quan miễn dịch (irAE),"freq 'biến cố bất lợi liên quan miễn dịch' 0 docs (S0 N0 H0 B0); vs 'tác dụng phụ liên quan miễn dịch' 0 docs (S0 N0 H0 B0), 'liên quan đến miễn dịch' 1 docs (S0 N1 H0 B0); TCNCYH abstracts (search): ""biến cố bất lợi liên quan miễn dịch""; medicine AE = biến cố bất lợi"
+immune-related pneumonitis,viêm phổi liên quan miễn dịch,"plan seed: title ""viêm phổi liên quan thuốc ức chế điểm kiểm soát miễn dịch"""
+immune-related colitis,viêm đại tràng liên quan miễn dịch,freq 'viêm đại tràng' 6 docs (S3 N2 H0 B1)
+immune-related hepatitis,viêm gan liên quan miễn dịch,freq 'viêm gan' 33 docs (S17 N10 H4 B2)
+hypophysitis,viêm tuyến yên,freq 'viêm tuyến yên' 1 docs (S1 N0 H0 B0)
+tumor lysis syndrome,hội chứng ly giải u (TLS),"freq 'hội chứng ly giải u' 1 docs (S1 N0 H0 B0); vs 'hội chứng ly giải khối u' 2 docs (S1 N1 H0 B0), 'hội chứng tiêu u' 0 docs (S0 N0 H0 B0); tumor = u (pathology)"
+performance status,tổng trạng,"owner, recommended column 2026-10-15 18:48 (O3); freq 'tổng trạng' 4 docs (S4 N0 H0 B0); vs 'thể trạng' 23 docs (S8 N11 H3 B1), 'toàn trạng' 15 docs (S1 N12 H2 B0), 'chỉ số toàn trạng' 8 docs (S0 N7 H1 B0); reuses pathology; ""thể trạng"" S8 N11 (also body build), ""toàn trạng"" N12"
+ECOG performance status,tổng trạng ECOG,"freq 'tổng trạng' 4 docs (S4 N0 H0 B0); vs 'toàn trạng ecog' 4 docs (S0 N3 H1 B0), 'chỉ số toàn trạng ecog' 3 docs (S0 N2 H1 B0), 'thể trạng ecog' 0 docs (S0 N0 H0 B0); follows performance status"
+Karnofsky performance status,chỉ số Karnofsky (KPS),freq 'karnofsky' 2 docs (S2 N0 H0 B0); vs 'thang điểm karnofsky' 0 docs (S0 N0 H0 B0)
+tumor marker,chất chỉ điểm khối u,"owner, recommended column 2026-10-15 18:48 (O7); freq 'chất chỉ điểm khối u' 4 docs (S2 N1 H1 B0); vs 'chỉ điểm khối u' 5 docs (S2 N2 H1 B0), 'chất chỉ điểm u' 3 docs (S2 N1 H0 B0), 'dấu ấn ung thư' 2 docs (S1 N0 H1 B0), 'chất chỉ điểm ung thư' 2 docs (S1 N0 H1 B0); plan: unresolved between ""chất chỉ điểm khối u"" and ""dấu ấn ung thư""; counted 4+5 vs 2"
+prostate-specific antigen,kháng nguyên đặc hiệu tuyến tiền liệt (PSA),freq 'kháng nguyên đặc hiệu tuyến tiền liệt' 2 docs (S1 N1 H0 B0)
+alpha-fetoprotein,alpha-fetoprotein (AFP),freq 'alpha-fetoprotein' 2 docs (S2 N0 H0 B0); vs 'afp' 6 docs (S3 N3 H0 B0); kept English (South S2)
+CA-125,CA-125,freq 'ca-125' 2 docs (S1 N1 H0 B0); vs 'ca 125' 1 docs (S1 N0 H0 B0)
+TNM staging,phân giai đoạn TNM,"freq 'phân giai đoạn tnm' 3 docs (S2 N0 H1 B0); vs 'xếp giai đoạn tnm' 2 docs (S2 N0 H0 B0), 'phân loại tnm' 6 docs (S4 N2 H0 B0); pathology owns staging = phân giai đoạn"
+TNM classification,phân loại TNM,freq 'phân loại tnm' 6 docs (S4 N2 H0 B0)
+clinical stage,giai đoạn lâm sàng,freq 'giai đoạn lâm sàng' 10 docs (S8 N1 H1 B0)
+restaging,đánh giá lại giai đoạn,freq 'đánh giá lại giai đoạn' 1 docs (S1 N0 H0 B0); vs 'tái đánh giá giai đoạn' 0 docs (S0 N0 H0 B0)
+downstaging,giảm giai đoạn,"freq 'giảm giai đoạn' 1 docs (S0 N1 H0 B0); vs 'hạ giai đoạn' 0 docs (S0 N0 H0 B0), 'hạ thấp giai đoạn' 0 docs (S0 N0 H0 B0); no Southern form; North N1"
+early stage,giai đoạn sớm,freq 'giai đoạn sớm' 36 docs (S20 N12 H4 B0)
+advanced stage,giai đoạn tiến xa,"owner 2026-10-15 18:48 (choice 3, O2): giai đoạn tiến xa = pathology; freq 'giai đoạn tiến xa' 9 docs (S5 N3 H1 B0); vs 'giai đoạn muộn' 27 docs (S15 N10 H2 B0), 'giai đoạn tiến triển' 9 docs (S3 N5 H1 B0)"
+advanced cancer,ung thư giai đoạn tiến xa,"owner 2026-10-15 18:48 (choice 3, O2); freq 'giai đoạn tiến xa' 9 docs (S5 N3 H1 B0); vs 'giai đoạn muộn' 27 docs (S15 N10 H2 B0); follows advanced stage"
+locally advanced,tiến xa tại chỗ,"owner 2026-10-15 18:48 (choice 3: locally advanced = tiến xa tại chỗ); freq 'tiến xa tại chỗ' 2 docs (S2 N0 H0 B0); vs 'tiến triển tại chỗ' 6 docs (S3 N2 H1 B0), 'giai đoạn tiến triển tại chỗ' 2 docs (S1 N0 H1 B0); ""tiến triển tại chỗ"" = local progression (radiology), so not used here"
+metastatic,di căn,counted form 'di căn xa' 41 docs (S28 N10 H3 B0)
+metastatic disease,bệnh di căn,freq 'bệnh di căn' 4 docs (S4 N0 H0 B0); vs 'giai đoạn di căn' 9 docs (S3 N5 H1 B0)
+oligometastatic disease,bệnh di căn ít ổ,"freq 'di căn ít ổ' 0 docs (S0 N0 H0 B0); vs 'di căn giới hạn' 0 docs (S0 N0 H0 B0), 'ít di căn' 1 docs (S1 N0 H0 B0); no count"
+brain metastasis,di căn não,freq 'di căn não' 10 docs (S3 N6 H1 B0)
+brain metastases,di căn não,freq 'di căn não' 10 docs (S3 N6 H1 B0)
+bone metastasis,di căn xương,freq 'di căn xương' 14 docs (S7 N6 H1 B0)
+bone metastases,di căn xương,freq 'di căn xương' 14 docs (S7 N6 H1 B0)
+liver metastasis,di căn gan,freq 'di căn gan' 12 docs (S7 N3 H2 B0)
+liver metastases,di căn gan,freq 'di căn gan' 12 docs (S7 N3 H2 B0)
+lung metastasis,di căn phổi,freq 'di căn phổi' 13 docs (S5 N6 H2 B0)
+lung metastases,di căn phổi,freq 'di căn phổi' 13 docs (S5 N6 H2 B0)
+limited-stage,giai đoạn khu trú,freq 'giai đoạn khu trú' 7 docs (S5 N2 H0 B0); vs 'giai đoạn giới hạn' 0 docs (S0 N0 H0 B0); small cell lung cancer staging
+extensive-stage,giai đoạn lan rộng,freq 'giai đoạn lan rộng' 5 docs (S4 N1 H0 B0)
+tumor board,hội chẩn u,freq 'hội chẩn u' 0 docs (S0 N0 H0 B0); vs 'hội chẩn đa chuyên khoa' 6 docs (S1 N5 H0 B0); reuses pathology
+multidisciplinary tumor board,hội chẩn đa chuyên khoa,freq 'hội chẩn đa chuyên khoa' 6 docs (S1 N5 H0 B0); vs 'hội chẩn đa mô thức' 1 docs (S1 N0 H0 B0)
+multidisciplinary team,nhóm đa chuyên khoa (MDT),freq 'đa chuyên khoa' 15 docs (S7 N8 H0 B0)
+multimodal therapy,điều trị đa mô thức,freq 'điều trị đa mô thức' 7 docs (S7 N0 H0 B0); vs 'điều trị phối hợp' 6 docs (S3 N3 H0 B0); Southern S7 N0
+oncology,ung thư học,"freq 'ung thư học' 15 docs (S8 N6 H1 B0); vs 'ung bướu' 44 docs (S25 N14 H5 B0); ""ung bướu"" also counts hospital and department names; surgery: oncologic outcome = kết quả ung thư học"
+medical oncology,nội khoa ung thư,freq 'nội khoa ung thư' 2 docs (S1 N1 H0 B0); vs 'ung thư nội khoa' 0 docs (S0 N0 H0 B0)
+oncologist,bác sĩ ung thư,freq 'bác sĩ ung thư' 1 docs (S1 N0 H0 B0); vs 'bác sĩ ung bướu' 0 docs (S0 N0 H0 B0)
+palliative care,chăm sóc giảm nhẹ,freq 'chăm sóc giảm nhẹ' 8 docs (S5 N2 H0 B1); vs 'điều trị giảm nhẹ' 3 docs (S2 N1 H0 B0)
+supportive care,chăm sóc hỗ trợ,"freq 'chăm sóc hỗ trợ' 3 docs (S3 N0 H0 B0); vs 'điều trị nâng đỡ' 1 docs (S0 N1 H0 B0), 'nâng đỡ' 3 docs (S1 N2 H0 B0)"
+best supportive care,chăm sóc hỗ trợ tốt nhất (BSC),freq 'chăm sóc hỗ trợ tốt nhất' 0 docs (S0 N0 H0 B0); vs 'điều trị nâng đỡ tốt nhất' 0 docs (S0 N0 H0 B0); no count
+end-of-life care,chăm sóc cuối đời,freq 'chăm sóc cuối đời' 0 docs (S0 N0 H0 B0); vs 'cuối đời' 1 docs (S1 N0 H0 B0)
+symptom management,kiểm soát triệu chứng,freq 'kiểm soát triệu chứng' 3 docs (S1 N2 H0 B0); vs 'chăm sóc triệu chứng' 1 docs (S1 N0 H0 B0)
+cancer pain,đau do ung thư,freq 'đau do ung thư' 1 docs (S1 N0 H0 B0)
+breakthrough pain,đau đột xuất,freq 'đau đột xuất' 1 docs (S1 N0 H0 B0)
+WHO analgesic ladder,bậc thang giảm đau của WHO,freq 'bậc thang' 2 docs (S2 N0 H0 B0); vs 'ba bậc' 0 docs (S0 N0 H0 B0)
+opioid analgesic,thuốc giảm đau nhóm opioid,freq 'opioid' 9 docs (S5 N2 H1 B1)
+cancer survivor,người sống sót sau ung thư,freq 'người sống sót' 2 docs (S2 N0 H0 B0); vs 'người sống còn' 0 docs (S0 N0 H0 B0)
+survivorship care,chăm sóc người sống sót sau ung thư,freq 'người sống sót' 2 docs (S2 N0 H0 B0); no count
+late effects,biến chứng muộn,"freq 'biến chứng muộn' 7 docs (S5 N1 H1 B0); vs 'di chứng muộn' 0 docs (S0 N0 H0 B0), 'tác dụng muộn' 0 docs (S0 N0 H0 B0)"
+second primary cancer,ung thư nguyên phát thứ hai,"freq 'ung thư nguyên phát thứ hai' 0 docs (S0 N0 H0 B0); vs 'ung thư thứ hai' 1 docs (S0 N1 H0 B0), 'ung thư thứ phát' 2 docs (S1 N1 H0 B0); no count; ""ung thư thứ phát"" also means metastasis"
+fertility preservation,bảo tồn khả năng sinh sản,freq 'bảo tồn khả năng sinh sản' 5 docs (S4 N1 H0 B0); vs 'bảo tồn sinh sản' 0 docs (S0 N0 H0 B0)
+spinal cord compression,chèn ép tủy sống,freq 'chèn ép tủy sống' 2 docs (S2 N0 H0 B0); vs 'chèn ép tủy' 3 docs (S3 N0 H0 B0)
+superior vena cava syndrome,hội chứng chèn ép tĩnh mạch chủ trên,freq 'chèn ép tĩnh mạch chủ trên' 1 docs (S1 N0 H0 B0); vs 'hội chứng tĩnh mạch chủ trên' 0 docs (S0 N0 H0 B0)
+malignant pleural effusion,tràn dịch màng phổi ác tính,freq 'tràn dịch màng phổi ác tính' 1 docs (S1 N0 H0 B0)
+hypercalcemia of malignancy,tăng canxi máu ác tính,freq 'tăng canxi máu' 6 docs (S1 N5 H0 B0); vs 'tăng calci máu' 3 docs (S1 N2 H0 B0); medicine: hypercalcemia = tăng canxi máu
+paraneoplastic syndrome,hội chứng cận ung thư,freq 'hội chứng cận ung thư' 1 docs (S1 N0 H0 B0); vs 'cận u' 2 docs (S2 N0 H0 B0)
+clinical trial,thử nghiệm lâm sàng,freq 'thử nghiệm lâm sàng' 63 docs (S45 N14 H2 B2); vs 'nghiên cứu lâm sàng' 7 docs (S2 N3 H1 B1); same as pathology term fix
+randomized controlled trial,thử nghiệm ngẫu nhiên có đối chứng (RCT),freq 'ngẫu nhiên có đối chứng' 4 docs (S3 N1 H0 B0); vs 'thử nghiệm ngẫu nhiên' 3 docs (S2 N1 H0 B0)
+phase I trial,thử nghiệm pha I,"freq 'pha i' 1 docs (S1 N0 H0 B0); vs 'thử nghiệm pha' 2 docs (S1 N1 H0 B0); ""pha"" avoids the clash with stage I-IV (giai đoạn)"
+phase II trial,thử nghiệm pha II,freq 'pha ii' 2 docs (S1 N0 H1 B0)
+phase III trial,thử nghiệm pha III,"owner, recommended column 2026-10-15 18:48 (O10); freq 'pha iii' 4 docs (S2 N2 H0 B0); vs 'giai đoạn iii' 30 docs (S20 N8 H2 B0)"
+double-blind,mù đôi,freq 'mù đôi' 6 docs (S4 N1 H1 B0)
+open-label,nhãn mở,freq 'nhãn mở' 1 docs (S1 N0 H0 B0)
+placebo,giả dược,freq 'giả dược' 6 docs (S2 N1 H1 B2)
+placebo-controlled,có đối chứng với giả dược,freq 'giả dược' 6 docs (S2 N1 H1 B2)
+multicenter,đa trung tâm,freq 'đa trung tâm' 20 docs (S12 N6 H1 B1)
+control arm,nhánh chứng,freq 'nhánh chứng' 0 docs (S0 N0 H0 B0); vs 'nhóm chứng' 15 docs (S8 N3 H3 B1)
+experimental arm,nhánh thử nghiệm,freq 'nhánh thử nghiệm' 0 docs (S0 N0 H0 B0); vs 'nhóm can thiệp' 3 docs (S2 N1 H0 B0)
+primary endpoint,kết cục chính,"freq 'kết cục chính' 3 docs (S2 N1 H0 B0); vs 'mục tiêu chính' 4 docs (S1 N3 H0 B0), 'tiêu chí chính' 2 docs (S0 N2 H0 B0), 'tiêu chí đánh giá chính' 0 docs (S0 N0 H0 B0); South S2"
+secondary endpoint,kết cục phụ,"freq 'kết cục phụ' 2 docs (S2 N0 H0 B0); vs 'mục tiêu phụ' 1 docs (S0 N1 H0 B0), 'tiêu chí phụ' 0 docs (S0 N0 H0 B0)"
+intention-to-treat,theo ý định điều trị (ITT),freq 'theo ý định điều trị' 0 docs (S0 N0 H0 B0); vs 'phân tích theo ý định' 0 docs (S0 N0 H0 B0)
+palliative surgery,phẫu thuật giảm nhẹ,"owner, recommended column 2026-10-15 18:48 (O9): = surgery; oncology family 'giảm nhẹ' (freq 'giảm nhẹ' 23 docs, S13)"
+unresectable,không thể cắt bỏ,"owner, recommended column 2026-10-15 18:48 (O9): = surgery; corpus 'không thể phẫu thuật' 8 docs vs 'không thể cắt bỏ' 1"

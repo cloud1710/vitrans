@@ -143,6 +143,7 @@ def test_cache_hit_reruns_term_fixes_and_keeps_their_flags(tmp_path):
     hit = tr([], tm=tm, fixes=fixes)[0].translate(seg())
     assert first.text == hit.text == GOOD and hit.cached
     assert "term_fix:lung" in first.flags and "term_fix:lung" in hit.flags
+    assert first.fixes == hit.fixes == [{"en": "lung", "from": "pulm\u00f4n", "to": "ph\u1ed5i"}]
 
 
 def test_finishing_spaces_and_term_fix():
@@ -351,6 +352,7 @@ def test_level4_term_fixes_and_markdown_before_reattach(mark):
     out = t.translate(s)
     assert out.text == "M\u00f4 <g1>ph\u1ed5i</g1> \u0111\u01b0\u1ee3c c\u1ed1 \u0111\u1ecbnh" and out.level == 4 and len(llm.calls) == 3
     assert "term_fix:lung" in out.flags and "suspect_output:markdown" in out.flags
+    assert out.fixes == [{"en": "lung", "from": "pulm\u00f4n", "to": "ph\u1ed5i"}]  # fixed before the re-attach
 
 
 def test_more_than_12_tags_start_at_level3():
@@ -596,7 +598,9 @@ def test_code_only_cell_keeps_its_tags():
 
 
 @pytest.mark.parametrize("text", ["OVERVIEW OF STAINING METHODS", "SEVEN YEARS LATER (2019)",
-                                  "QUALITY CONTROL IN DAILY PRACTICE"])
+                                  "QUALITY CONTROL IN DAILY PRACTICE",
+                                  # one long word + an English function word; a month name with a number (a date)
+                                  "I AM ATTENDING ASDP 2026", "1-3 NOVEMBER 2026", "RESULTS OF THE STUDY", "MAY 2026"])
 def test_all_caps_english_is_translated_not_kept_as_code(text):
     t, llm = tr(["C\u00f3"])
     out = t.translate(one_run(text))
@@ -610,7 +614,8 @@ def test_all_caps_glossary_term_is_translated():
     assert len(llm.calls) == 1 and "kept_code" not in out.flags
 
 
-@pytest.mark.parametrize("text", ["BRAF NRAS KRAS", "TERT", "CDKN2A/B", "ALK ROS1 RET"])
+@pytest.mark.parametrize("text", ["BRAF NRAS KRAS", "TERT", "CDKN2A/B", "ALK ROS1 RET", "SINGAPORE",
+                                  "ER PR HER2 STATUS", "MAY", "CD20 AND CD3"])
 def test_all_caps_gene_lists_stay_code(text):
     t, llm = tr([])
     out = t.translate(one_run(text))
@@ -693,3 +698,41 @@ def test_recheck_gives_the_check_flags_of_a_finished_text():
     t, _ = tr([])
     flags = t.recheck(seg(), GOOD.replace("1p", "2p"))
     assert "numbers_changed" in flags and set(f.split(":")[0] for f in flags) <= translate.CHECK_KINDS
+
+
+TITLED_SRC = "Jane Doe, M.D., Ph.D., reviewed all the slides."
+TITLED_VI = "\u0111\u00e3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\u00eau b\u1ea3n."
+
+
+def test_title_order_is_fixed_flagged_and_listed_also_on_cache_hits(tmp_path):
+    tm = TM(tmp_path / "tm.sqlite")
+    first = tr(["BS. TS. Jane Doe " + TITLED_VI], tm=tm)[0].translate(one_run(TITLED_SRC))
+    assert first.text == "TS. BS. Jane Doe " + TITLED_VI and first.level == 0
+    assert "term_fix:title-order" in first.flags
+    assert first.fixes == [{"en": "title-order", "from": "BS. TS.", "to": "TS. BS."}]
+    hit = tr([], tm=tm)[0].translate(one_run(TITLED_SRC))
+    assert hit.cached and (hit.text, hit.flags, hit.fixes) == (first.text, first.flags, first.fixes)
+
+
+def test_term_fixes_and_the_title_fix_are_listed_together():
+    fixes = [TermFix("lung", "ph\u1ed5i", ["pulm\u00f4n"])]
+    t, _ = tr(["BS TS Jane Doe: pulm\u00f4n v\u00e0 Pulm\u00f4n"], fixes=fixes)
+    out = t.translate(one_run("Jane Doe, MD, PhD: lung and lung"))
+    assert out.text == "TS. BS. Jane Doe: ph\u1ed5i v\u00e0 ph\u1ed5i"
+    assert [f for f in out.flags if f.startswith("term_fix:")] == ["term_fix:lung", "term_fix:title-order"]
+    assert out.fixes == [{"en": "lung", "from": "pulm\u00f4n", "to": "ph\u1ed5i"},
+                         {"en": "lung", "from": "Pulm\u00f4n", "to": "ph\u1ed5i"},
+                         {"en": "title-order", "from": "BS TS", "to": "TS. BS."}]
+
+
+def test_segments_without_a_fix_list_none():
+    assert tr([GOOD])[0].translate(seg()).fixes == []
+    assert tr([])[0].translate(one_run("HER2 3+")).fixes == []  # kept as code, no model call
+
+
+def test_words_of_the_active_packs_are_not_suspicious():
+    answer = "Nhi\u1ec1u lymph\u00f4 b\u00e0o v\u00e0 carcin\u00f4m trong h\u1ea1ch"
+    src = one_run("Many lymphocytes and a carcinoma in the node")
+    flags = Translator(FakeLLM([answer]), "SYS", "m", "p@1", allowed=["lymph\u00f4"]).translate(src).flags
+    assert "suspicious:carcin\u00f4m" in flags and not any("lymph" in f for f in flags)
+    assert "suspicious:lymph\u00f4" in tr([answer])[0].translate(src).flags  # no pack: still strange

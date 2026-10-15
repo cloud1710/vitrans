@@ -8,6 +8,7 @@ from functools import lru_cache
 from pathlib import Path
 
 from .qa import _bounded
+from .vnsyllable import suspicious
 
 
 @lru_cache(maxsize=4096)
@@ -166,6 +167,17 @@ def merge_packs(packs):
     return Pack("+".join(p.id for p in packs), "+".join(p.version for p in packs), ", ".join(p.name for p in packs),
                 detect, "\n\n".join(p.prompt for p in packs if p.prompt), glossary, fixes,
                 [t for p in packs for t in p.tests], merged_key="+".join(p.key() for p in packs))
+
+
+def allowed_words(pack):
+    """The words of a pack's Vietnamese values (glossary and term-fix values; never a note or a wrong form) that are no
+    regular Vietnamese syllable (vnsyllable.suspicious), in lower case, sorted: the house forms the pack's author chose
+    (lympho with a circumflex, eponyms such as Sezary with an acute), which the suspicious-word check accepts in a job
+    that uses the pack (qa.suspicious_tokens)."""
+    words = set()
+    for vi in [row[1] for row in pack.glossary] + [fx.vi for fx in pack.term_fixes]:
+        words.update(t.lower() for t in suspicious(vi))
+    return sorted(words)
 
 
 def _count(term, low):

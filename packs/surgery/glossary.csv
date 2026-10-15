@@ -1,0 +1,313 @@
+en,vi,note
+open surgery,mổ mở,"freq 18 docs (S7 C5 N6) vs 'phẫu thuật mở' 9 (S6), 'mổ hở' 4; src: YHTPHCM19-255, CTUMP-716, TCNCYH-2262"
+laparoscopic surgery,phẫu thuật nội soi,"freq 31 docs (S13 C9 N9); src: YDLS108-930, CTUMP-914, CTUMP-770; ICD387 'phẫu thuật nội soi ổ bụng'"
+laparoscopic,nội soi,adjective: 'laparoscopic X' = 'X nội soi' / 'phẫu thuật nội soi X'; see laparoscopic surgery
+laparoscopy,nội soi ổ bụng,freq 14 docs (S9 C3 N2); ICD387 54.21
+diagnostic laparoscopy,nội soi chẩn đoán,freq 1 doc (C1); ICD387 54.21 'nội soi [chẩn đoán] ổ bụng'; LOW
+staging laparoscopy,nội soi đánh giá giai đoạn,"freq 0; BUILT (stage = giai đoạn, pathology); LOW"
+exploratory laparoscopy,nội soi thám sát,"freq 2 docs (S1 N1); Southern 'thám sát' (BD18-601, 58 hits) vs 'thăm dò'"
+exploratory laparotomy,mở bụng thám sát,"freq 1 doc (S1, BD18-601); ICD387 54.11 'mở bụng thăm dò' (national)"
+laparotomy,mở bụng,freq 5 docs (S3 C1 N1); ICD387 54.11-54.19
+midline laparotomy,mở bụng đường giữa,BUILT; 'đường giữa' 6 docs (S5 N1)
+midline incision,đường giữa,freq 'đường giữa' 6 docs (S5 N1); 'đường mổ giữa' 0
+Pfannenstiel incision,đường mổ Pfannenstiel,eponym kept; freq 1 doc (N1)
+surgical incision,đường mổ,"freq 9 docs (S4 C2 N3); src: CTUMP-716, BYT1514"
+skin incision,rạch da,"freq 9 docs (S6 N3); src: YHTPHCM19-255, BVNTP-VU"
+minimally invasive surgery,phẫu thuật ít xâm lấn,"freq 'ít xâm lấn' 9 docs (S5 C1 N3) vs 'xâm lấn tối thiểu' 5 (S3 C1 N1), 'xâm nhập tối thiểu' 3, 'ít xâm hại' 2; roadmap decision 6 (surgical sense = xâm lấn)"
+minimally invasive,ít xâm lấn,= minimally invasive surgery
+robotic surgery,phẫu thuật robot,"freq 2 docs (S2, 17 hits); src: YHTPHCM19-255 (BV Bình Dân)"
+robot-assisted surgery,phẫu thuật có robot hỗ trợ,ICD387 17.41-17.45 'có hỗ trợ của robot'; plan [KC] 'có robot hỗ trợ'
+robot-assisted,có robot hỗ trợ,= robot-assisted surgery
+thoracoscopic surgery,phẫu thuật nội soi lồng ngực,ICD387 17.45 'nội soi lồng ngực'; BUILT
+video-assisted thoracoscopic surgery,phẫu thuật nội soi lồng ngực (VATS),ICD387 17.45; acronym kept
+laparoscopic-assisted,nội soi hỗ trợ,freq 4 docs (S2 C1 N1)
+totally laparoscopic,nội soi hoàn toàn,"freq 2 docs (S1 N1, 12 hits); src: YDLS108-930, BVNTP-D2"
+single-incision laparoscopic surgery,phẫu thuật nội soi một lỗ,freq 0 in corpus; web title YDLS108 'phẫu thuật nội soi một lỗ' (TEP); LOW
+conversion to open surgery,chuyển mổ mở,"freq 8 docs (C3 N5) vs 'chuyển sang mổ mở' 1, 'chuyển mổ hở' 0; src: CTUMP-2562, TCNCYH-4341, TCNCYH-2262"
+conversion to laparotomy,chuyển mổ mở,= conversion to open surgery
+conversion rate,tỷ lệ chuyển mổ mở,BUILT from conversion to open surgery
+operative time,thời gian phẫu thuật,"freq 20 docs (S11 C5 N4) vs 'thời gian mổ' 15 (S5 C5 N5); src: YDLS108-930, YHTPHCM19-37, CTUMP-770"
+operating time,thời gian phẫu thuật,= operative time
+intraoperative blood loss,lượng máu mất trong mổ,"'lượng máu mất' 7 docs (S3 C1 N3); src: YDLS108-930, YHTPHCM19-255"
+estimated blood loss,lượng máu mất ước tính,BUILT from intraoperative blood loss
+surgical field,phẫu trường,freq 0 in corpus (textbook term); LOW
+surgical exposure,bộc lộ phẫu trường,'bộc lộ' 11 docs; plan [CKC]; LOW
+sharp dissection,phẫu tích sắc,BUILT; 'phẫu tích' 17 docs (S9 C3 N5) vs 'bóc tách' 5 (S5); bare 'dissection' banned (owners.csv)
+blunt dissection,phẫu tích tù,BUILT (see sharp dissection)
+hemostasis,cầm máu,freq 19 docs (S12 C2 N5)
+electrocautery,dao điện,"freq 5 docs (S3 N2); src: YHTPHCM19-PNT11, BVNTP-VU"
+ultrasonic scalpel,dao siêu âm,freq 1 doc (S1)
+vessel sealing device,dao hàn mạch,freq 2 docs (S1 N1); LigaSure 2 docs
+trocar,trocar,freq 11 docs (S5 C2 N4) vs 'troca' 1; kept
+trocar site,lỗ trocar,'lỗ trocar' 5 docs (S3 N2)
+port site,lỗ trocar,= trocar site
+port placement,đặt trocar,freq 4 docs (S1 C1 N2)
+Veress needle,kim Veress,eponym kept; plan [KC]
+CO2 pneumoperitoneum,bơm hơi ổ bụng bằng CO2,"'bơm hơi ổ bụng' 2 docs (S1 C1), 'bơm hơi' 4; bare 'pneumoperitoneum' left to radiology (imaging sign)"
+specimen extraction,lấy bệnh phẩm,'lấy bệnh phẩm' 16 docs
+anastomosis,miệng nối,"freq 13 docs (S7 C5 N1, 157 hits); the act = 'nối' (ICD387 45.9x 'nối ruột')"
+intestinal anastomosis,nối ruột,ICD387 45.90; freq 2 docs
+end-to-end anastomosis,nối tận - tận,freq 2 docs (S2)
+end-to-side anastomosis,nối tận - bên,freq 1 doc (N1)
+side-to-side anastomosis,nối bên - bên,BUILT
+stapled anastomosis,miệng nối bằng máy,"BUILT; 'stapler' 4 docs, 'máy cắt nối' 1"
+hand-sewn anastomosis,miệng nối khâu tay,'khâu tay' 3 docs (S1 C2)
+surgical stapler,máy cắt nối (stapler),"'stapler' kept in 4 docs (S2 C1 N1); 'máy cắt nối' 1 (S1, BVNTP-D2)"
+restoration of bowel continuity,tái lập lưu thông tiêu hóa,freq 4 docs (S2 C1 N1)
+Roux-en-Y reconstruction,tái lập lưu thông kiểu Roux-en-Y,BUILT; eponym kept
+absorbable suture,chỉ tiêu,freq 7 docs (S3 N4)
+running suture,khâu vắt,freq 2 docs (S2)
+interrupted suture,khâu mũi rời,'mũi rời' 2 docs (S1 N1)
+abdominal wall closure,đóng thành bụng,freq 2 docs (S2); 'đóng bụng' 5 (S4 N1)
+surgical drain,ống dẫn lưu,freq 16 docs (S11 C3 N2)
+drain placement,đặt dẫn lưu,freq 5 docs (S3 C2)
+drain removal,rút ống dẫn lưu,"'rút dẫn lưu' 7 docs, 'rút ống dẫn lưu' 3"
+abdominal drain,ống dẫn lưu ổ bụng,BUILT
+nasogastric tube,ống thông mũi dạ dày,"owner, recommended column 2026-10-15 18:48 (S7); = medicine, nutrition; 'sonde dạ dày' 4 docs (S3 C1), 'ống thông mũi dạ dày' 1 (S1)"
+adhesiolysis,gỡ dính,"freq 1 doc (S1, 24 hits, BD18-601); ICD387 54.5x 'gỡ dính phúc mạc'"
+postoperative adhesions,dính sau mổ,BUILT; 'dính ruột' 5 docs
+abdominal lavage,rửa bụng,"freq 2 docs (S1 C1, 29 hits); src: BD18-601"
+debridement,cắt lọc,freq 2 docs (S2); ICD387 86.22
+incision and drainage,rạch dẫn lưu,ICD387 86.04 'rạch có dẫn lưu'; LOW
+negative pressure wound therapy,liệu pháp hút áp lực âm (VAC),"'hút áp lực âm' 1 doc (C1), 'áp lực âm' 3 (S2 C1); VAC kept"
+appendectomy,cắt ruột thừa,freq 5 docs (S1 C2 N2); ICD387 47.0x
+appendicectomy,cắt ruột thừa,= appendectomy
+laparoscopic appendectomy,cắt ruột thừa nội soi,freq 1 doc (C1); ICD387 47.01
+cholecystectomy,cắt túi mật,freq 4 docs (S2 C1 N1); ICD387 51.22
+laparoscopic cholecystectomy,cắt túi mật nội soi,freq 3 docs (S1 C1 N1); ICD387 51.23
+subtotal cholecystectomy,cắt túi mật bán phần,freq 1 doc (N1)
+cholecystostomy,dẫn lưu túi mật,freq 3 docs (S2 N1)
+gastrectomy,cắt dạ dày,freq 6 docs (S4 C1 N1)
+total gastrectomy,cắt toàn bộ dạ dày,ICD387 43.99; BUILT
+subtotal gastrectomy,cắt bán phần dạ dày,"freq 2 docs (S2: BVNTP-D2, YHTPHCM25-106)"
+sleeve gastrectomy,cắt dạ dày hình ống,ICD387 43.82; LOW
+gastrojejunostomy,nối vị tràng,freq 2 docs (S1 B1; BD18-601 7 hits)
+gastrostomy,mở dạ dày ra da,"= nutrition; South 'mở dạ dày ra da' 1 doc (S1, BD18-601) = 'mở thông dạ dày' 1 (S1); 'ra da' series as ileostomy"
+jejunostomy,mở hỗng tràng ra da,"= nutrition; South 'mở hỗng tràng ra da' 1 doc (S1, BD18-601) vs 'mở thông hỗng tràng' 1 (C1)"
+feeding jejunostomy,mở hỗng tràng ra da nuôi ăn,BUILT from jejunostomy
+esophagectomy,cắt thực quản,freq 1 doc (C1)
+colectomy,cắt đại tràng,freq 3 docs (S2 C1); ICD387 45.7x
+right hemicolectomy,cắt đại tràng phải,"freq 1 doc (S1); ICD387 45.73, 17.33"
+left hemicolectomy,cắt đại tràng trái,ICD387 45.75; BUILT
+sigmoidectomy,cắt đại tràng sigma,freq 1 doc (S1); ICD387 45.76
+total colectomy,cắt toàn bộ đại tràng,ICD387 45.8x
+low anterior resection,cắt trước thấp,"freq 4 docs (S2 C2); src: CTUMP-687, YHTPHCM19-PNT11"
+abdominoperineal resection,phẫu thuật Miles,'Miles' 3 docs (S2 C1) vs 'cắt cụt trực tràng' 0
+Hartmann procedure,phẫu thuật Hartmann,freq 4 docs (S1 C1 N2)
+total mesorectal excision,cắt toàn bộ mạc treo trực tràng (TME),= pathology-gi
+colostomy,hậu môn nhân tạo,freq 7 docs (S3 C3 N1); ICD387 46.10 'mở thông đại tràng [làm hậu môn nhân tạo]'
+ileostomy,mở hồi tràng ra da,"'mở hồi tràng ra da' 2 docs (S1 C1), 'hồi tràng ra da' 5 (S2 C3); ICD387 46.20 'mở thông hồi tràng' (0 docs)"
+stoma closure,đóng hậu môn nhân tạo,freq 2 docs (S1 N1)
+hepatectomy,cắt gan,freq 3 docs (S2 C1); ICD387 50.22
+distal pancreatectomy,cắt thân đuôi tụy,ICD387 52.52 'cắt thân và đuôi tụy'
+pancreaticoduodenectomy,cắt khối tá tụy,= pathology-hpb
+Whipple procedure,phẫu thuật Whipple,"'phẫu thuật Whipple' 1 doc (B1, 5 hits); 'Whipple' 3 docs"
+splenectomy,cắt lách,freq 2 docs (S1 B1); ICD387 41.43
+adrenalectomy,cắt tuyến thượng thận,ICD387 07.22
+parathyroidectomy,cắt tuyến cận giáp,ICD387 06.81
+thyroidectomy,cắt tuyến giáp,= pathology-endocrine
+mastectomy,phẫu thuật cắt tuyến vú,= pathology-breast
+modified radical mastectomy,cắt tuyến vú triệt căn biến đổi,"owner, recommended column 2026-10-15 18:48 (S5); 'triệt căn biến đổi' 2 docs (B1 N1); Southern alt 'đoạn nhũ' 2 docs (BVNTP GPB), 'cắt tuyến vú vét hạch nách' (BVNTP-VU); Patey 2 docs"
+breast-conserving surgery,phẫu thuật bảo tồn vú,= pathology-breast
+breast reconstruction,tái tạo vú,BUILT
+axillary lymph node dissection,nạo vét hạch nách,= pathology-breast
+hernia repair,phẫu thuật điều trị thoát vị,ICD387 53.x 'phẫu thuật điều trị thoát vị'
+herniorrhaphy,khâu phục hồi thoát vị,ICD387 53.29 'khâu phục hồi thoát vị'
+hernioplasty,phục hồi thành bụng,"'phục hồi thành bụng' 2 docs (S2: BD18-126, BD18-601); ICD387 53.03"
+inguinal hernia,thoát vị bẹn,"freq 4 docs (S4); src: BV115-TVB, BD18-601"
+inguinal hernia repair,phẫu thuật điều trị thoát vị bẹn,ICD387 53.0x
+femoral hernia,thoát vị đùi,freq 1 doc (S1)
+umbilical hernia,thoát vị rốn,freq 2 docs (S1 N1)
+incisional hernia,thoát vị vết mổ,freq 3 docs (S2 N1); src: BD18-126
+incarcerated hernia,thoát vị kẹt,"freq 1 doc (S1, BV115-TVB)"
+strangulated hernia,thoát vị nghẹt,"freq 1 doc (S1, BV115-TVB)"
+surgical mesh,mảnh ghép,"'mảnh ghép' 8 docs (S6 N2, 136 hits) vs 'lưới' (mostly non-surgical); ICD387 'mảnh ghép hoặc vật liệu nhân tạo'"
+mesh repair,đặt mảnh ghép,"freq 2 docs (S2, 45 hits) vs 'đặt lưới' 1"
+prosthetic mesh,mảnh ghép nhân tạo,freq 1 doc (S1)
+Lichtenstein repair,phẫu thuật Lichtenstein,freq 2 docs (S2)
+Bassini repair,phẫu thuật Bassini,freq 1 doc (S1)
+Shouldice repair,phẫu thuật Shouldice,freq 2 docs (S2)
+totally extraperitoneal repair,phẫu thuật nội soi hoàn toàn ngoài phúc mạc (TEP),'ngoài phúc mạc' 3 docs; web titles TEP
+tracheostomy,mở khí quản,freq 7 docs (S6 N1)
+amputation,cắt cụt chi,'cắt cụt' 7 docs (S3 C2 N2) vs 'đoạn chi' 2 (S2); ICD387 84.x
+disarticulation,tháo khớp,freq 1 doc (B1); ICD387 84.x
+skin graft,ghép da,"freq 2 docs (S2, NDGD16-171); ICD387 86.6x"
+split-thickness skin graft,ghép da mỏng,freq 1 doc (S1)
+full-thickness skin graft,ghép da dày,"ICD387 86.61, 86.63; NDGD16-171"
+flap,vạt,freq 5 docs (S4 N1)
+free flap,vạt tự do,freq 1 doc (S1)
+pedicled flap,vạt có cuống,freq 1 doc (S1); ICD387 86.7x
+local flap,vạt tại chỗ,freq 1 doc (S1)
+myocutaneous flap,vạt da cơ,freq 2 docs
+microsurgery,vi phẫu,freq 2 docs (S2)
+soft tissue defect,khuyết hổng phần mềm,'khuyết hổng' 2 docs (S2)
+reconstructive surgery,phẫu thuật tạo hình,'tạo hình' 14 docs
+implantable port,buồng tiêm truyền dưới da,freq 1 doc (B1); ICD387 86.07 'buồng tiêm truyền hoàn toàn dưới da'
+metastasectomy,cắt bỏ khối di căn,BUILT; 'cắt bỏ di căn' 1 doc (S1)
+cytoreductive surgery,phẫu thuật giảm khối u,"freq 0 in corpus; web (Long Châu, Apollo) 'phẫu thuật giảm khối u'; LOW"
+debulking surgery,phẫu thuật giảm khối u,= cytoreductive surgery
+hyperthermic intraperitoneal chemotherapy,hóa trị nhiệt trong phúc mạc (HIPEC),freq 0 in corpus; BUILT; LOW
+peritoneal cancer index,chỉ số ung thư phúc mạc (PCI),BUILT; LOW
+peritoneal metastasis,di căn phúc mạc,freq 4 docs (S3 B1)
+peritoneal carcinomatosis,di căn phúc mạc,= peritoneal metastasis ('carcinom phúc mạc' 0)
+en bloc resection,cắt nguyên khối,'nguyên khối' 2 docs (S1 C1)
+radical,triệt căn,"owner, recommended column 2026-10-15 18:48 (S3); freq 23 docs (S8 C5 N9 B1) vs 'tận gốc' 13 (S9 C2 N1 B1); South tie -> BYT1514 'triệt căn' (55 hits), ICD387 'tiệt căn'; 'tận gốc' mostly urology / thyroid (kidney pack keeps 'cắt thận tận gốc')"
+radical resection,cắt bỏ triệt căn,"owner, recommended column 2026-10-15 18:48 (S3); = radical; 'phẫu thuật triệt căn' 6 docs"
+radical surgery,phẫu thuật triệt căn,"owner, recommended column 2026-10-15 18:48 (S3); freq 6 docs (S3 C1 N1 B1)"
+curative resection,cắt bỏ triệt căn,= radical resection
+curative-intent surgery,phẫu thuật với mục đích triệt căn,'mục đích triệt căn' 2 docs (S1 B1)
+palliative surgery,phẫu thuật giảm nhẹ,"owner, recommended column 2026-10-15 18:48 (oncology O9): the oncology family is 'giảm nhẹ' (S13); this pack's count: 'phẫu thuật tạm thời' 1 doc (B1) = 'phẫu thuật giảm nhẹ' 1 (B1); = medicine-oncology; WAS 'phẫu thuật tạm thời'"
+palliative bypass,nối tắt,freq 2 docs (S1 B1)
+R0 resection,cắt bỏ R0,R0 4 docs; 'cắt R0' 1 (C1); BUILT
+resectable,cắt bỏ được,freq 7 docs (S5 C1 B1) vs 'có thể cắt bỏ' 2 (B1 N1)
+unresectable,không thể cắt bỏ,"owner, recommended column 2026-10-15 18:48 (oncology O9): this pack's count 'không cắt bỏ được' 4 docs (S3 B1) vs 'không thể cắt bỏ' 1 (B1); oncology corpus 'không thể phẫu thuật' 8 docs vs 'không thể cắt bỏ' 1; = medicine-oncology; WAS 'không cắt bỏ được'"
+resectability,khả năng cắt bỏ,freq 3 docs (S2 B1)
+upfront surgery,phẫu thuật ngay từ đầu,BUILT; LOW
+surgical resection,phẫu thuật cắt bỏ,ICD387 'phẫu thuật cắt bỏ'
+wide local excision,cắt rộng tại chỗ,ICD387 85.21 'cắt bỏ tại chỗ'; plan [CKC]; LOW
+frozen section,sinh thiết tức thì,= pathology (decision 7)
+intraoperative frozen section,sinh thiết tức thì trong mổ,= pathology frozen section
+sentinel lymph node biopsy,sinh thiết hạch cửa,= pathology-breast
+lymph node dissection,nạo vét hạch,= pathology
+lymphadenectomy,nạo vét hạch,= pathology
+D2 lymphadenectomy,nạo vét hạch D2,freq 3 docs (S1 C1 N1); 'vét hạch D2' 3 docs
+extended lymphadenectomy,nạo vét hạch mở rộng,BUILT
+neck dissection,nạo vét hạch cổ,= pathology
+number of retrieved lymph nodes,số hạch nạo vét được,'số hạch' 6 docs; 'số hạch nạo vét' 2 (C2)
+neoadjuvant,tân bổ trợ,"owner 2026-10-15 18:48 (choice 2, decision S2): neoadjuvant = tân bổ trợ in every pack; = pathology-breast, medicine-oncology; Southern texts write 'tân hỗ trợ' (5 docs: S4 C1 vs 'tân bổ trợ' 4: B1 C1 N2)"
+neoadjuvant therapy,điều trị tân bổ trợ,"owner 2026-10-15 18:48 (choice 2, decision S2); = pathology-breast"
+oncologic outcome,kết quả ung thư học,freq 3 docs
+surgical oncology,phẫu thuật ung thư,'phẫu thuật ung thư' 14 docs
+perioperative,chu phẫu,freq 6 docs (S6) vs 'quanh phẫu thuật' 3
+preoperative,trước mổ,"freq 39 docs (S21 C8 N10) vs 'trước phẫu thuật' 23, 'tiền phẫu' 9"
+postoperative,sau mổ,'sau mổ' 48 docs / 607 hits vs 'sau phẫu thuật' 63 / 511; compounds favour 'sau mổ' (biến chứng sau mổ 19 vs 10)
+intraoperative,trong mổ,'trong mổ' 29 docs (S13 C6 N10) = 'trong phẫu thuật' 29 (S20); compounds favour 'trong mổ' (tai biến trong mổ 8 vs 0)
+postoperative day,ngày hậu phẫu,freq 4 docs (S3 C1); 'hậu phẫu ngày' 4
+postoperative period,giai đoạn hậu phẫu,'hậu phẫu' 29 docs
+postoperative complication,biến chứng sau mổ,freq 19 docs (S11 C5 N3) vs 'biến chứng sau phẫu thuật' 10
+intraoperative complication,tai biến trong mổ,freq 8 docs (C4 N4); 'tai biến' 29 docs; plan [KC]
+postoperative mortality,tử vong sau mổ,freq 6 docs (S2 C4)
+30-day mortality,tử vong trong 30 ngày,freq 1 doc (C1)
+postoperative length of stay,thời gian nằm viện sau mổ,freq 6 docs (S1 C3 N2); Southern alt 'thời gian hậu phẫu' 6 (S4)
+time to first flatus,thời gian trung tiện lần đầu,'trung tiện' 7 docs (S4 C2 N1)
+return of bowel function,phục hồi nhu động ruột,'có nhu động ruột' 2 docs (S2); BUILT
+postoperative ileus,liệt ruột sau mổ,'liệt ruột' 6 docs (S4 N2)
+early oral feeding,cho ăn đường miệng sớm,"'cho ăn sớm' 3 docs (S3), 'ăn đường miệng' 5"
+preoperative fasting,nhịn ăn trước mổ,'nhịn ăn' 13 docs
+Enhanced Recovery After Surgery,hồi phục sớm sau phẫu thuật (ERAS),"S only: 'hồi phục sớm sau mổ' 1 doc / 7 hits, '... sau phẫu thuật' 1 / 2 (title YHTPHCM25-106), 'tăng cường hồi phục' 1; Northern 'phục hồi sớm' (Vinmec, Việt Đức)"
+ERAS protocol,quy trình ERAS,plan [KC] Chợ Rẫy 'quy trình ERAS'; ERAS kept (4 docs)
+surgical safety checklist,bảng kiểm an toàn phẫu thuật,freq 0 in corpus; WHO / BYT checklist; LOW
+elective surgery,mổ chương trình,freq 2 docs (S2) vs 'phẫu thuật chương trình' 0
+emergency surgery,mổ cấp cứu,freq 10 docs (S5 C1 N4) vs 'phẫu thuật cấp cứu' 5
+reoperation,mổ lại,"freq 9 docs (S5 C2 N2, 35 hits) vs 'phẫu thuật lại' 10 (19 hits)"
+surgeon,phẫu thuật viên,freq 36 docs (S21 C7 N8) vs 'bác sĩ phẫu thuật' 8
+operating room,phòng mổ,freq 9 docs (S7 C2)
+learning curve,đường cong học tập,freq 1 doc (S1) vs 'đường cong huấn luyện' 1 (N1)
+surgical indication,chỉ định phẫu thuật,freq 23 docs vs 'chỉ định mổ' 5
+antibiotic prophylaxis,kháng sinh dự phòng,freq 3 docs (S2 B1; BVNTP-KS 23 hits)
+clean surgery,phẫu thuật sạch,freq 2 docs (S1 B1); src: BVNTP-KS
+clean-contaminated surgery,phẫu thuật sạch - nhiễm,"freq 1 doc (S1, BVNTP-KS)"
+contaminated surgery,phẫu thuật nhiễm,freq 1 doc (S1)
+wound classification,phân loại vết mổ,BUILT
+surgical wound,vết mổ,freq 27 docs (S13 C8 N6)
+Clavien-Dindo classification,phân loại Clavien-Dindo,"freq 3 docs (S2 N1, 51 hits); 'theo Clavien' 2 (S2); src: YHTPHCM25-59, YHTPHCM19-37, TCNCYH-4965"
+Clavien-Dindo,Clavien-Dindo,name kept
+surgical site infection,nhiễm trùng vết mổ,freq 13 docs (S6 C6 N1) vs 'nhiễm khuẩn vết mổ' 2 (S1 N1)
+superficial incisional surgical site infection,nhiễm trùng vết mổ nông,BUILT
+deep incisional surgical site infection,nhiễm trùng vết mổ sâu,BUILT
+wound dehiscence,bục vết mổ,"'bục' 2 docs (S2), 'toác' 1 (S1, BD18-126); ICD387 54.61 'bị bục'"
+fascial dehiscence,bục thành bụng,ICD387 54.61
+burst abdomen,bục thành bụng,= fascial dehiscence
+seroma,tụ dịch,freq 12 docs (S8 C2 N2) vs 'đọng dịch' 1
+wound hematoma,tụ máu vết mổ,freq 1 doc; 'tụ máu' 10 docs
+postoperative bleeding,chảy máu sau mổ,freq 4 docs (S4) vs 'xuất huyết sau mổ' 0
+intraoperative bleeding,chảy máu trong mổ,freq 4 docs
+anastomotic leak,xì miệng nối,"owner, recommended column 2026-10-15 18:48 (S1); South: 'xì' 3 docs / 17 hits (BD18-601, YHTPHCM21-93) vs 'rò' 3 / 5, 'dò' 1 / 10; all regions: xì 5, rò 5, dò 3, bục 2"
+anastomotic leakage,xì miệng nối,"owner, recommended column 2026-10-15 18:48 (S1); = anastomotic leak"
+anastomotic stricture,hẹp miệng nối,BUILT
+fistula,rò,"owner, recommended column 2026-10-15 18:48 (S4); standard spelling (ICD387 49.73 'đường rò'); Southern texts often spell 'dò' (BD18-601 'dò tiêu hóa', 'lỗ dò') = r/d spelling variant"
+enterocutaneous fistula,rò ruột ra da,BUILT from fistula
+postoperative pancreatic fistula,rò tụy sau mổ,"'rò tụy' 1 doc (N1), 'dò tụy' 1 (S1); plan"
+bile leak,rò mật,"'dò mật' 2 docs (S2), 'rò mật' 0, 'xì mật' 0; standard spelling kept (see fistula)"
+intra-abdominal abscess,áp xe trong ổ bụng,BUILT
+residual abscess,áp xe tồn lưu,freq 4 docs (S2 C1 N1); src: BD18-601
+postoperative intra-abdominal abscess,áp xe tồn lưu,= residual abscess
+adhesive small bowel obstruction,tắc ruột do dính,"freq 2 docs (S1 C1, 20 hits)"
+postoperative bowel obstruction,tắc ruột sau mổ,freq 3 docs
+bile duct injury,tổn thương đường mật,freq 3 docs (S1 N2)
+bowel injury,tổn thương ruột,freq 4 docs
+postoperative pain,đau sau mổ,BUILT
+postoperative nausea and vomiting,buồn nôn và nôn sau mổ (PONV),freq 1 doc (S1)
+Tokyo Guidelines 2018,Hướng dẫn Tokyo 2018,'Hướng dẫn Tokyo' 2 docs (C1 N1); plan: Cần Thơ title 'khuyến cáo Tokyo 2018'
+Tokyo Guidelines,Hướng dẫn Tokyo,= Tokyo Guidelines 2018
+Alvarado score,thang điểm Alvarado,freq 1 doc (N1)
+acute appendicitis,viêm ruột thừa cấp,freq 4 docs; 'viêm ruột thừa' 12
+appendiceal abscess,áp xe ruột thừa,freq 2 docs
+acute cholecystitis,viêm túi mật cấp,freq 3 docs (S1 C1 N1)
+gangrenous cholecystitis,viêm túi mật hoại tử,freq 3 docs (S2 C1)
+Calot triangle,tam giác Calot,freq 1 doc (N1)
+critical view of safety,góc nhìn an toàn (CVS),freq 0 in corpus; BUILT; LOW
+generalized peritonitis,viêm phúc mạc toàn thể,freq 2 docs (N2)
+perforated peptic ulcer,thủng ổ loét dạ dày - tá tràng,'thủng ổ loét' 1 doc (S1)
+hollow viscus perforation,thủng tạng rỗng,freq 1 doc (B1)
+acute abdomen,bụng cấp,freq 3 docs (C1 N2); Southern teaching 'bụng ngoại khoa' not found in corpus; LOW
+anesthetic technique,phương pháp vô cảm,freq 3 docs (S3); 'vô cảm' 10 docs (S9)
+anesthesiology,gây mê hồi sức,freq 15 docs (S11 C2 N2)
+anesthesiologist,bác sĩ gây mê,freq 5 docs (S5) vs 'bác sĩ gây mê hồi sức' 0
+anaesthetist,bác sĩ gây mê,= anesthesiologist
+general anesthesia,gây mê toàn thân,freq 6 docs (S3 C2 N1)
+endotracheal anesthesia,gây mê nội khí quản,freq 4 docs (S2 C2)
+endotracheal intubation,đặt nội khí quản,freq 10 docs (S7 C1 N2)
+tracheal intubation,đặt nội khí quản,= endotracheal intubation
+extubation,rút nội khí quản,"freq 2 docs (S2, 9 hits); 'rút ống' 5"
+laryngeal mask airway,mặt nạ thanh quản,freq 2 docs (S2)
+difficult airway,đường thở khó,BUILT
+Mallampati classification,phân độ Mallampati,freq 1 doc (S1)
+Cormack-Lehane grade,phân độ Cormack-Lehane,freq 1 doc (S1)
+induction of anesthesia,khởi mê,"freq 4 docs (S4, 61 hits) vs 'dẫn mê' 0; bare 'induction' banned (owners.csv)"
+anesthesia induction,khởi mê,= induction of anesthesia
+maintenance of anesthesia,duy trì mê,freq 3 docs (S3)
+emergence from anesthesia,tỉnh mê,"owner, recommended column 2026-10-15 18:48 (Q7); 'tỉnh mê' 2 docs (S2, 13 hits) vs 'thoát mê' 2 (S1 C1, 5 hits); 'hồi tỉnh' = recovery"
+recovery room,phòng hồi tỉnh,freq 2 docs (S2)
+post-anesthesia care unit,phòng hồi tỉnh (PACU),= recovery room
+depth of anesthesia,độ mê,"freq 2 docs (S2, 24 hits) vs 'độ sâu gây mê' 2 (4 hits)"
+bispectral index,chỉ số lưỡng phổ (BIS),"freq 1 doc (S1); BIS kept (2 docs, 105 hits)"
+target-controlled infusion,kiểm soát nồng độ đích (TCI),"freq 2 docs (S2, 23 hits); TCI 3 docs; src: HSA16, YHTPHCM18-74"
+intravenous anesthesia,gây mê tĩnh mạch,freq 4 docs (S3 C1)
+total intravenous anesthesia,gây mê tĩnh mạch toàn bộ (TIVA),BUILT; TIVA 1 doc
+neuromuscular blocking agent,thuốc giãn cơ,BUILT; 'giãn cơ' 2 docs
+muscle relaxant,thuốc giãn cơ,= neuromuscular blocking agent
+neuromuscular blockade,giãn cơ,freq 2 docs (S2); LOW
+regional anesthesia,gây tê vùng,freq 5 docs (S4 C1)
+spinal anesthesia,gây tê tủy sống,"freq 5 docs (S5); 'tê tủy sống' 5 docs / 29 hits; src: YHTPHCM16-104, YHTPHCM10-211"
+epidural anesthesia,gây tê ngoài màng cứng,freq 6 docs (S3 N3)
+combined spinal-epidural anesthesia,gây tê tủy sống - ngoài màng cứng phối hợp,BUILT; src: YHTPHCM10-211
+local anesthesia,gây tê tại chỗ,freq 3 docs
+local anesthetic,thuốc tê,freq 7 docs (S6 C1)
+nerve block,gây tê thần kinh,"owner, recommended column 2026-10-15 18:48 (S6); freq 2 docs (S2) = 'phong bế thần kinh' 2 (S2); pattern 'gây tê + target' (gây tê ống cơ khép 9 hits, gây tê mặt phẳng 13); 'phong bế' kept for block level; bare 'block' banned (owners.csv)"
+peripheral nerve block,gây tê thần kinh ngoại biên,BUILT; Southern 'ngoại biên'
+ultrasound-guided nerve block,gây tê thần kinh dưới hướng dẫn siêu âm,'dưới hướng dẫn siêu âm' 13 docs
+transversus abdominis plane block,gây tê mặt phẳng cơ ngang bụng (TAP),freq 1 doc (S1); plan [KC]
+TAP block,gây tê mặt phẳng cơ ngang bụng (TAP),= transversus abdominis plane block
+erector spinae plane block,gây tê mặt phẳng cơ dựng sống (ESP),HUEJMP-343 ('gây tê mặt phẳng' 12 hits); plan [KC]
+ESP block,gây tê mặt phẳng cơ dựng sống (ESP),= erector spinae plane block
+quadratus lumborum block,gây tê cơ vuông thắt lưng (QL),plan [KC]
+adductor canal block,gây tê ống cơ khép,"freq 1 doc (S1, YHTPHCM25-68, 9 hits)"
+brachial plexus block,gây tê đám rối thần kinh cánh tay,BUILT
+sensory block,phong bế cảm giác,freq 2 docs (S2) vs 'ức chế cảm giác' 1 (S1)
+motor block,phong bế vận động,freq 3 docs (S2 N1)
+sensory block level,mức phong bế cảm giác,'mức phong bế' 2 docs (S2)
+patient-controlled analgesia,giảm đau do bệnh nhân tự kiểm soát (PCA),'bệnh nhân tự kiểm soát' 1 doc (S1); PCA 2 docs
+multimodal analgesia,giảm đau đa mô thức,freq 2 docs (S1 C1)
+postoperative analgesia,giảm đau sau mổ,freq 3 docs (S3)
+visual analogue scale,thang điểm VAS,'thang điểm VAS' 4 docs; VAS 8 docs
+spinal anesthesia-induced hypotension,tụt huyết áp sau gây tê tủy sống,'tụt huyết áp' 16 docs (S10 N6) vs 'hạ huyết áp' 16 (S10)
+ASA physical status classification,phân loại ASA,ASA kept (14 docs); 'phân loại ASA' 1 (S1)
+American Society of Anesthesiologists,Hội Gây mê Hoa Kỳ (ASA),BUILT
+surgical margin,diện cắt,"= pathology; 'diện cắt' 15 docs (S7 C2 N6) vs 'rìa cắt' 2, 'mép cắt' 1"
+resection margin,diện cắt,= pathology
+negative margin,diện cắt âm tính,"= pathology; 2 docs (S1 B1)"
+positive margin,diện cắt dương tính,"= pathology; 3 docs (S1 N1 B1)"
+ultrasound-guided,dưới hướng dẫn siêu âm,"= radiology; 'dưới hướng dẫn siêu âm' 13 docs (S7 C2 N4)"
+incarcerated inguinal hernia,thoát vị bẹn kẹt,"BUILT from inguinal hernia + incarcerated hernia (BV115-TVB); model wrote 'nghẹt' (= strangulated) in eval"
+polypropylene mesh,mảnh ghép polypropylene,"freq 1 doc (S1, 5 hits, BD18-126) vs 'lưới polypropylene' 1 (S1, 1 hit)"

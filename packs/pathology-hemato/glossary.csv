@@ -1,0 +1,251 @@
+en,vi,note
+hematopathology,bệnh học huyết học,"OWN (glossary_review: hematopathology = bệnh học huyết học); freq 0 in corpus; KHÔNG ""huyết học bệnh lý"""
+lymphoid neoplasm,tân sinh dòng lympho,BUILT from neoplasm = tân sinh + parent 'lymphoid lineage = dòng lympho'; low
+myeloid neoplasm,tân sinh dòng tủy,"BUILT: neoplasm = tân sinh; 'dòng tủy' freq 3 docs (S2 O1); src: YHCM26-MRD, YHCM21-CML, BYT1514"
+B-cell lymphoma,lymphom tế bào B,house rule lymphom (parent); corpus writes 'u lympho tế bào B' (BYT1514) / 'lymphôm tế bào B' (BVDHYD-HACH): binding parent form wins
+T-cell lymphoma,lymphom tế bào T,house rule lymphom; OWN 'T cell lymphomas = lymphôm tế bào T' (before the no-hat decision)
+non-Hodgkin lymphoma,lymphom không Hodgkin,"house rule lymphom; 'không hodgkin' 9 docs (S6 O1); variant 'u lympho không Hodgkin' 3 docs (YHCM24-MZL, YHCM19-HH489, BYT1514) = BYT form overridden by the owner; OWN 'lymphôm không Hodgkin'"
+classic Hodgkin lymphoma,lymphom Hodgkin kinh điển (cHL),"'Hodgkin kinh điển' BVNTP-HACH2 20 hits (S) vs 'cổ điển' 2 docs (BVDHYD-HACH, BYT1514); src: BVNTP-HACH2, BVDHYD-HACH"
+classical Hodgkin lymphoma,lymphom Hodgkin kinh điển (cHL),as classic Hodgkin lymphoma
+nodular sclerosis,(thể) xơ nốt,freq 1 doc ('xơ nốt' BYT1514); parent style '(thể) hỗn hợp tế bào'; low
+Hodgkin and Reed-Sternberg cells,tế bào Hodgkin và Reed-Sternberg (HRS),"'tế bào Reed-Sternberg' 3 docs (S2 O1), 'tế bào Hodgkin' 2 docs (BVNTP-HACH2, BYT1514)"
+Reed-Sternberg cell,tế bào Reed-Sternberg,"freq 3 docs (S2 O1); src: BVNTP-HACH2, BVDHYD-HACH, BYT1514"
+Hodgkin cell,tế bào Hodgkin,"freq 2 docs; src: BVNTP-HACH2 (4), BYT1514"
+lacunar cell,tế bào hốc,BVNTP-HACH2 uses 'hốc' 5 hits in the Hodgkin section; exact 'tế bào hốc' 0; low
+popcorn cell,tế bào bắp rang (tế bào LP),BVNTP-HACH2 'bắp rang' 1 + 'tế bào LP' 8 (S); low
+centrocyte,tâm bào,"freq 3 docs S (BVNTP-HACH1 11, BVNTP-HACH3 11, BVNTP-HACH2 1); = parent note (centroblast = nguyên tâm bào)"
+small lymphocytic lymphoma,lymphom lymphô bào nhỏ (SLL),house rules lymphom + lymphocyte = lymphô bào (parent); OWN 'lymphôm tế bào lympho nhỏ (SLL)' predates the 2026-10-14 'lymphô bào' decision
+chronic lymphocytic leukemia,bệnh bạch cầu mạn dòng lympho (CLL),"owner 2026-10-15 17:50: names follow literature usage; mạn tính only in free prose; D: corpus 'bạch cầu mạn dòng lympho' 2 docs (BYT1514, YHCM25-197 S) = 'bạch cầu lympho mạn' 2 docs (BYT1514, BVDHYD-HACH S); 'mạn tính dòng lympho' 0; bthh.org.vn title 'bệnh bạch cầu mạn dòng lympho' (WS) | 'bạch cầu mạn dòng lympho' 2 docs (BYT1514, S YHCM25-197) + bthh.org.vn title (WS); 'mạn tính dòng lympho' 0; OWN 'bệnh bạch cầu mạn tính dòng lympho'; leukemia = bệnh bạch cầu (user)"
+CLL/SLL,bệnh bạch cầu mạn dòng lympho/lymphom lymphô bào nhỏ (CLL/SLL),owner 2026-10-15 17:50: names follow literature usage; mạn tính only in free prose | BUILT from the two rows above
+monoclonal B-cell lymphocytosis,tăng lymphô bào B đơn dòng (MBL),BUILT: lymphocytosis = tăng lymphô bào; monoclonal = đơn dòng (parent); freq 0; low
+proliferation centers,trung tâm tăng sinh,BUILT (CLL/SLL); freq 0; low
+Richter transformation,chuyển dạng Richter,'chuyển dạng' 9 docs; 'Richter' kept EN in all docs; = parent histologic transformation = chuyển dạng mô bệnh học
+nodal marginal zone lymphoma,lymphom vùng rìa tại hạch,OWN 'Nodal MZL = lymphôm vùng rìa tại hạch' + user 2026-10-14 MZL = lymphom vùng rìa
+splenic marginal zone lymphoma,lymphom vùng rìa ở lách (SMZL),BUILT from parent MZL row; freq 0; low
+extranodal marginal zone lymphoma of mucosa-associated lymphoid tissue,lymphom vùng rìa ngoài hạch của mô lympho liên kết niêm mạc (lymphom MALT),"YHCM24-MZL (ĐHYD TP.HCM 2024): 'vùng rìa ngoài hạch' 5, 'mô lympho liên kết niêm mạc' 10 (S); title writes 'u lympho' -> house lymphom; = pathology-gi 'MALT lymphoma = lymphom MALT'"
+extranodal marginal zone lymphoma,lymphom vùng rìa ngoài hạch,"freq 2 docs (YHCM24-MZL 5, BYT1514 1)"
+mucosa-associated lymphoid tissue,mô lympho liên kết niêm mạc (MALT),YHCM24-MZL 10 hits (S); 'mô lympho niêm mạc' 1 (BYT1514)
+Waldenström macroglobulinemia,bệnh tăng macroglobulin máu Waldenström,"BUILT; corpus keeps 'Waldenström' (1 doc, EN); parent note: LPL/WM often left in EN; low"
+Waldenstrom macroglobulinemia,bệnh tăng macroglobulin máu Waldenström,as Waldenström macroglobulinemia
+Burkitt lymphoma,lymphom Burkitt,house rule lymphom; OWN 'lymphôm Burkitt'; BYT1514 'u lympho Burkitt' 14 hits (overridden)
+starry sky pattern,hình ảnh bầu trời sao,"freq 2 docs ('bầu trời sao': BVDHYD-HACH, BVNTP-CT1); WS snippet 'hình thái bầu trời sao'"
+high-grade B-cell lymphoma,lymphom tế bào B độ cao,OWN 'HGBL = lymphôm tế bào B độ cao'; parent high-grade = độ cao; parent keeps the abbreviation HGBCL
+double-hit lymphoma,lymphom double-hit,OWN 'Double- and triple-hit lymphomas: giữ EN'; corpus 'double-hit' EN only (1 doc)
+triple-hit lymphoma,lymphom triple-hit,as double-hit lymphoma
+double-expressor lymphoma,lymphom bộc lộ kép (double-expressor),BUILT: IHC protein expression = bộc lộ (user decision 5); EN gloss kept; low
+MYC rearrangement,tái sắp xếp MYC,"= parent rearrangement = tái sắp xếp; corpus: 'tái sắp xếp' 1 doc, 'sắp xếp lại' 2 (parent term fix forbids it)"
+BCL2 rearrangement,tái sắp xếp BCL2,as MYC rearrangement
+primary mediastinal large B-cell lymphoma,lymphom tế bào B lớn nguyên phát trung thất (PMBL),BUILT from parent DLBCL row; 'nguyên phát trung thất' 0; low
+primary CNS lymphoma,lymphom nguyên phát hệ thần kinh trung ương,YHCM19-HH489 (BV Chợ Rẫy) 'não nguyên phát' (S); house lymphom; low
+T-cell/histiocyte-rich large B-cell lymphoma,lymphom tế bào B lớn giàu tế bào T/mô bào,BUILT; parent histiocyte = mô bào; low
+plasmablastic lymphoma,lymphom nguyên tương bào,"owner 2026-10-15 17:48 example (-blastic = nguyên bào); BUILT: plasmablast = nguyên tương bào (cell name from -blastic, plasma cell = tương bào); freq 0; low"
+plasmablast,nguyên tương bào,as plasmablastic lymphoma
+post-transplant lymphoproliferative disorder,rối loạn tăng sinh lympho sau ghép (PTLD),BUILT from parent lymphoproliferative disorder; 'ghép' from YHCM19-HH95 (S)
+B-lymphoblastic leukemia/lymphoma,bệnh bạch cầu/lymphom cấp dòng lympho B (B-ALL/LBL),"owner 2026-10-15 17:49: ALL family = cấp dòng lympho (explicit exception to -blastic = nguyên bào); corpus: only BYT1514 writes the WHO name, as bệnh bạch cầu/u lympho nguyên bào lympho B tiền thân (1 doc O, 2 hits) - not a clear preference | OWN 'Lymphoblastic lymphoma = lymphôm nguyên bào lympho'; parent 'lymphoblastic = nguyên bào lympho'; 'nguyên bào lympho' 2 docs (BYT1514 10, BVDHYD-HACH 2)"
+T-lymphoblastic leukemia/lymphoma,bệnh bạch cầu/lymphom cấp dòng lympho T (T-ALL/LBL),as B-lymphoblastic leukemia/lymphoma (owner 2026-10-15 17:49)
+lymphoblastic lymphoma,lymphom nguyên bào lympho,OWN 'lymphôm nguyên bào lympho'; house lymphom
+acute lymphoblastic leukemia,bệnh bạch cầu cấp dòng lympho (ALL),"owner 2026-10-15 17:46 keeps 'cấp dòng lympho' (supersedes the 2026-07-17 review row 'nguyên bào lympho cấp tính') | 'bạch cầu cấp dòng lympho' 2 docs (YHCM19-HH95 BV TMHH 3, BYT1514 5); OWN 'bệnh bạch cầu nguyên bào lympho cấp tính' (older); 'lơ xê mi cấp dòng lympho' BYT only; leukemia = bệnh bạch cầu (user)"
+acute lymphocytic leukemia,bệnh bạch cầu cấp dòng lympho (ALL),owner 2026-10-15 17:49: every English form of ALL maps here; BYT1514 + YHCM19-HH95 bạch cầu cấp dòng lympho
+acute lymphoid leukemia,bệnh bạch cầu cấp dòng lympho (ALL),owner 2026-10-15 17:49 (as acute lymphocytic leukemia)
+acute myeloid leukemia,bệnh bạch cầu cấp dòng tủy (AML),"owner 2026-10-15 17:46 keeps 'cấp dòng tủy' | 'bạch cầu cấp dòng tủy' 2 docs (YHCM19-HH95 BV TMHH 4, BYT1514 3) + bthh.org.vn title (WS); OWN 'Bạch cầu cấp dòng tủy'; user leukemia = bệnh bạch cầu"
+acute leukemia,bệnh bạch cầu cấp,OWN 'acute leukemia = bệnh bạch cầu cấp'; 'bạch cầu cấp' 5 docs
+acute promyelocytic leukemia,bệnh bạch cầu cấp tiền tủy bào (APL),promyelocyte = tiền tủy bào (BYT1514 15); WS snippet 'bệnh bạch cầu tiền tủy cấp tính'; low
+AML with myelodysplasia-related changes,bệnh bạch cầu cấp dòng tủy liên quan loạn sản tủy,BUILT from AML + MDS rows; low
+AML with defining genetic abnormalities,bệnh bạch cầu cấp dòng tủy có bất thường di truyền xác định,BUILT (WHO-HAEM5); low
+myeloid sarcoma,sarcom tủy,user sarcoma = sarcom; WS snippet (Tâm Anh) 'sarcom tủy'; corpus 'sarcoma tủy' 1 (BYT1514)
+chronic myeloid leukemia,bệnh bạch cầu mạn dòng tủy (CML),"owner 2026-10-15 17:50: names follow literature usage; mạn tính only in free prose; D: corpus 'bạch cầu mạn dòng tủy' 3 docs (YHCM26-MRD 4, YHCM21-CML 1 S; BYT1514 1) vs 'mạn tính dòng tủy' 0 | 'bạch cầu mạn dòng tủy' 3 docs S (YHCM26-MRD 4, YHCM21-CML, YHCM17-CR322 2) + BYT1514 1 + bthh.org.vn (WS); 'mạn tính dòng tủy' 0; OWN 'Bệnh bạch cầu mạn tính dòng tủy' (decision)"
+chronic myelomonocytic leukemia,bệnh bạch cầu mạn dòng tủy - mono (CMML),owner 2026-10-15 17:50: names follow literature usage; mạn tính only in free prose; D: corpus 0 for every variant; Viện HHTM 2022 'bệnh bạch cầu mạn dòng tủy - mono' (WS) | Viện HHTM guideline 2022 (WS) 'bệnh bạch cầu mạn dòng tủy - mono'; Vinmec 'bạch cầu mạn dòng tủy mono'; corpus 0
+chronic neutrophilic leukemia,bệnh bạch cầu mạn dòng bạch cầu trung tính (CNL),owner 2026-10-15 17:50: names follow literature usage; mạn tính only in free prose; D: corpus 0 for every variant; BUILT on the CML / CMML name pattern; low
+chronic phase,giai đoạn mạn tính,"owner 2026-10-15 17:50: names follow literature usage; mạn tính only in free prose; D: corpus 'giai đoạn mạn tính' 2 docs (BYT1514 7, YHCM26-MRD 1 S) vs bare 'giai đoạn mạn' 1 doc (YHCM21-CML 2 S); the name form of the literature is 'mạn tính' here | freq 3 docs (YHCM21-CML 2 S, YHCM26-MRD 1 S, BYT1514 7)"
+accelerated phase,giai đoạn tăng tốc,freq 1 doc (BYT1514 6); low
+blast phase,giai đoạn blast,"blast vs -blastic: owner 2026-10-15 17:48 ('có blastic thì mới nguyên bào, không có blastic thì không'); WAS 'giai đoạn chuyển cấp' (YHCM21-CML, BYT1514) | freq 2 docs (YHCM21-CML S, BYT1514)"
+blast crisis,giai đoạn blast,"blast vs -blastic: owner 2026-10-15 17:48 ('có blastic thì mới nguyên bào, không có blastic thì không') | as blast phase"
+myelodysplastic syndrome,hội chứng loạn sản tủy (MDS),OWN 'MDS = hội chứng loạn sản tủy (MDS)'; YHCM19-HH139 (BV TMHH 2019) 'hội chứng loạn sản tủy (xương)' 19 hits vs 'rối loạn sinh tủy' 10 (S); bthh.org.vn 'loạn sinh tủy' (WS); BYT1514 'loạn sinh tủy' 3 (decision)
+myelodysplastic neoplasm,tân sinh loạn sản tủy (MDS),WHO-HAEM5 name; BUILT: neoplasm = tân sinh (user) + MDS row
+MDS with increased blasts,MDS tăng blast (MDS-IB),"blast vs -blastic: owner 2026-10-15 17:48 ('có blastic thì mới nguyên bào, không có blastic thì không') | 'blast' kept in BV TMHH 2019 (YHCM19-HH139 17 hits) and BYT1514 ('tế bào blast' 17); OWN 'MDS-EB = MDS tăng nguyên bào' (decision)"
+MDS with excess blasts,MDS tăng blast (MDS-EB),"blast vs -blastic: owner 2026-10-15 17:48 ('có blastic thì mới nguyên bào, không có blastic thì không') | as MDS with increased blasts"
+MDS with ring sideroblasts,MDS có nguyên hồng cầu sắt vòng (MDS-RS),OWN + YHCM19-HH139 'nguyên hồng cầu sắt vòng' 4 (S); bthh.org.vn (WS)
+ring sideroblasts,nguyên hồng cầu sắt vòng,OWN 'MDS có nguyên hồng cầu sắt vòng'; YHCM19-HH139 (BV TMHH) 4; 'nguyên bào sắt vòng' 0
+ringed sideroblasts,nguyên hồng cầu sắt vòng,as ring sideroblasts
+sideroblast,nguyên bào sắt,OWN 'Sideroblasts = nguyên bào sắt'; bthh Perls page (WS) 'nguyên bào sắt'
+MDS with low blasts and isolated 5q deletion,MDS ít blast có mất đoạn 5q đơn độc (MDS-5q),"blast vs -blastic: owner 2026-10-15 17:48 ('có blastic thì mới nguyên bào, không có blastic thì không') | YHCM19-HH139 'mất NST 5q' 16, del(5q) 4 (S); BUILT"
+multilineage dysplasia,loạn sản đa dòng,OWN 'MDS kèm loạn sản đa dòng'; parent dysplasia = loạn sản
+dyserythropoiesis,loạn sản dòng hồng cầu,"OWN 'Dyserythropoiesis = loạn sản hồng cầu' (+ 'dòng' for clarity, as 'loạn sản đa dòng'); KHÔNG 'rối loạn sinh hồng cầu'"
+dysgranulopoiesis,loạn sản dòng bạch cầu hạt,OWN 'Loạn sản bạch cầu hạt'; KHÔNG 'rối loạn sinh bạch cầu'
+dysmegakaryopoiesis,loạn sản dòng mẫu tiểu cầu,BUILT as the two rows above; megakaryocyte = mẫu tiểu cầu
+dyspoiesis,loạn sản tạo máu,"BUILT (hematopoiesis = tạo máu, OWN 'trilineage hematopoiesis = tạo máu ba dòng'); low"
+myeloproliferative neoplasm,tân sinh tăng sinh tủy (MPN),OWN 'myeloproliferative neoplasms = tân sinh tăng sinh tủy'; bthh.org.vn title 'tân sinh tăng sinh tủy' (WS); YHCM26-MRD 1 (S); Chợ Rẫy YHCM17-CR322 'tân sản' 3 -> neoplasm = tân sinh (user)
+MDS/MPN,tân sinh loạn sản tủy/tăng sinh tủy (MDS/MPN),BUILT from the two families; low
+polycythemia vera,đa hồng cầu nguyên phát (PV),"freq 3 docs (BYT1514 12, YHCM17-CR322 2 S, BVNTP-MPN 10 WF); 'đa hồng cầu vera' 0"
+polycythaemia vera,đa hồng cầu nguyên phát (PV),as polycythemia vera
+essential thrombocythemia,tăng tiểu cầu nguyên phát (ET),YHCM17-CR322 2 (S) + BVNTP-MPN ~8 (WF) vs 'tiên phát' 1 doc (BYT1514 2)
+essential thrombocythaemia,tăng tiểu cầu nguyên phát (ET),as essential thrombocythemia
+primary myelofibrosis,xơ tủy nguyên phát (PMF),"YHCM17-CR322 (Chợ Rẫy, BV TMHH author) 29 hits (S); BVNTP-MPN ~5 (WF); bthh.org.vn title (WS)"
+myelofibrosis,xơ tủy,"OWN 'Marrow fibrosis = xơ tủy'; YHCM17-CR322 31, BYT1514 4"
+marrow fibrosis,xơ tủy,OWN
+reticulin fibrosis,xơ hóa sợi liên võng (reticulin),parent 'reticulin fiber = sợi liên võng (reticulin)'; BVNTP-STX 'sợi liên võng' (WF); YHCM17-CR322 keeps 'reticulin' 15
+reticulin stain,nhuộm sợi liên võng (reticulin),as reticulin fibrosis
+myelofibrosis grade,độ xơ tủy,BUILT; WHO grade codes MF-0 to MF-3 kept; low
+JAK2 V617F mutation,đột biến JAK2 V617F,"YHCM17-CR322 'JAK2V617F' 15, 'đột biến JAK2' 5 (S)"
+Philadelphia chromosome,nhiễm sắc thể Philadelphia (Ph),"freq 2 docs (YHCM26-MRD S, BYT1514 + 'NST Philadelphia' 2)"
+BCR::ABL1 fusion,tổ hợp gen BCR::ABL1,"owner 2026-10-15 18:48 (choice 1: fusion gene = tổ hợp gen); by rule (D: corpus, fusion-gene sense): 'tổ hợp gen' 2 docs S (YHCM26-MRD 3, YHCM21-CML 1) + BYT1514 'gen tổ hợp BCR-ABL' 1 vs 'gen dung hợp' 0 docs; molecular-pathology 'fusion gene' aligned to 'tổ hợp gen' 2026-10-15 | Southern haematology 'tổ hợp gen BCR::ABL1' (YHCM26-MRD 3, BV TMHH) + 'tổ hợp gen' YHCM21-CML; molecular-pathology note leaves this to the haematology pack; 'gen dung hợp' 0 in haematology docs"
+BCR-ABL1 fusion gene,tổ hợp gen BCR::ABL1,owner 2026-10-15 18:48 (choice 1: fusion gene = tổ hợp gen); as BCR::ABL1 fusion; = molecular-pathology fusion gene = tổ hợp gen
+mastocytosis,bệnh tế bào mast (mastocytosis),freq 0 VN ('mastocytosis' EN 1 doc); 'tế bào mast' 1 doc (BYT1514); EN gloss kept; UNRESOLVED ('dưỡng bào' 0)
+systemic mastocytosis,bệnh tế bào mast hệ thống,as mastocytosis; UNRESOLVED
+mast cell,tế bào mast,freq 1 doc (BYT1514); 'dưỡng bào' 0; low
+Langerhans cell histiocytosis,bệnh mô bào Langerhans (LCH),"freq 2 docs ('bệnh mô bào Langerhans': BVNTP-HMMD S, TCNCYH-NB N) + 'mô bào Langerhans' 3 docs (BYT1514 9)"
+histiocytic sarcoma,sarcom mô bào,"BUILT: sarcoma = sarcom (user), histiocyte = mô bào (parent)"
+follicular dendritic cell sarcoma,sarcom tế bào tua nang,BUILT from parent follicular dendritic cell = tế bào tua nang
+blastic plasmacytoid dendritic cell neoplasm,blastic plasmacytoid dendritic cell neoplasm (BPDCN),"blast vs -blastic: owner 2026-10-15 17:48 ('có blastic thì mới nguyên bào, không có blastic thì không'); no Vietnamese form: kept English | BUILT: neoplasm = tân sinh; freq 0; UNRESOLVED"
+Rosai-Dorfman disease,bệnh Rosai-Dorfman,'Rosai-Dorfman' kept EN (2 docs); YHCM 2009 (WS) 'bệnh mô bào xoang gây hạch to (bệnh Rosai-Dorfman)'
+sinus histiocytosis with massive lymphadenopathy,bệnh mô bào xoang gây hạch to,"YHCM 2009 Tập 13 số 3 (WS snippet, S); freq 0 in local corpus"
+emperipolesis,hiện tượng xuyên bào (emperipolesis),freq 0 VN; WS snippet keeps 'emperipolesis'; BUILT; UNRESOLVED
+sinus histiocytosis,tăng sinh mô bào xoang,BUILT (parent histiocyte = mô bào; 'xoang bạch huyết' 2 docs S); freq 0; low
+Kikuchi-Fujimoto disease,bệnh Kikuchi-Fujimoto,'Kikuchi' kept (4 docs); TCNCYH 2025 (WS) 'bệnh viêm hạch Kikuchi'
+histiocytic necrotizing lymphadenitis,viêm hạch hoại tử mô bào,"WS snippets (Tâm Anh, TCNCYH): 'viêm hạch hoại tử mô bào'; low"
+Castleman disease,bệnh Castleman,"BVNTP-CAST 'bệnh castleman' ~3 (WF, S); 'Castleman' 3 docs"
+unicentric Castleman disease,bệnh Castleman đơn ổ,WS snippet (Southern hospital page) 'thể đơn ổ'; BVNTP-CAST 'tăng sản hạch bạch huyết khu trú' (WF); low
+multicentric Castleman disease,bệnh Castleman đa ổ,WS snippet 'thể đa ổ'; BVNTP-CAST 'đa cơ quan' (WF); low
+hyaline-vascular type,thể mạch máu - hyalin hóa,WS snippet (Southern) 'thể mạch máu-hyalin hóa'; low
+plasma cell type,thể tương bào,WS snippet 'thể tương bào'; plasma cell = tương bào (parent)
+lollipop lesion,hình ảnh kẹo mút (lollipop),WS snippet keeps 'lollipop'; BUILT; low
+onion-skin pattern,hình ảnh vỏ hành,freq 1 doc ('vỏ hành' BYT1514 2); low
+dermatopathic lymphadenopathy,bệnh hạch do bệnh da (dermatopathic),freq 0 (all variants); BUILT; UNRESOLVED
+progressive transformation of germinal centers,chuyển dạng tiến triển của trung tâm mầm (PTGC),BUILT from germinal center = trung tâm mầm; freq 0; low
+IgG4-related lymphadenopathy,bệnh hạch liên quan IgG4,BUILT from pathology-hpb 'IgG4-related disease = bệnh liên quan IgG4'
+infectious mononucleosis,bệnh tăng bạch cầu đơn nhân nhiễm trùng,BUILT; monocyte = bạch cầu đơn nhân (OWN); low
+granulomatous lymphadenitis,viêm hạch dạng u hạt,parent granuloma = u hạt; BVNTP-HACH1 'viêm hạt' 3 + OWN 'granulomatous inflammation = viêm hạt'; 'viêm hạch dạng u hạt' 0 (BUILT)
+tuberculous lymphadenitis,lao hạch,"freq 2 docs (BVDHYD-HACH 12, BYT1514 4)"
+caseous necrosis,hoại tử bã đậu,"freq 4 docs (BVDHYD-HACH, BVNTP-HACH1, BVNTP-GPB1, BYT1514)"
+lymphadenitis,viêm hạch,BVDHYD-HACH 'viêm hạch phản ứng' 2; TCNCYH 'viêm hạch Kikuchi' (WS)
+reactive lymphadenopathy,hạch phản ứng,"freq 1 doc S (BVDHYD-HACH 'hạch phản ứng' 2, 'viêm hạch phản ứng' 2)"
+reactive lymphoid hyperplasia,tăng sản lympho phản ứng,BVNTP-HACH1 'tăng sản phản ứng' 3 (S); parent hyperplasia = tăng sản
+follicular hyperplasia,tăng sản nang lympho,"OWN 'thymic follicular hyperplasia = tăng sản nang lympho tuyến ức'; 'tăng sản nang' 3 docs S (BVNTP-HACH1, BVNTP-HACH3, BVDHYD-HACH)"
+reactive follicular hyperplasia,tăng sản nang lympho phản ứng,as follicular hyperplasia
+paracortical hyperplasia,tăng sản vùng cận vỏ,'vùng cận vỏ' 3 docs S; parent hyperplasia = tăng sản
+lymphoid follicle,nang lympho,"'nang lympho' 3 docs (BVDHYD-HACH 4, BYT1514 3); BVNTP writes 'nang limphô' (older spelling, 18); OWN 'nang lympho'"
+germinal center,trung tâm mầm,freq 7 docs (S5 O1); OWN 'Germinal center = trung tâm mầm'; = pathology-endocrine 'germinal centre'
+paracortex,vùng cận vỏ,"freq 3 docs S (BVNTP-HACH1 9, BVDHYD-HACH 4, BVNTP-HACH3 1)"
+interfollicular,giữa các nang,"freq 4 docs ('giữa các nang': BVNTP-HACH1, BVNTP-HACH3 S); 'liên nang' 0"
+interfollicular area,vùng giữa các nang,as interfollicular
+subcapsular sinus,xoang dưới vỏ,"freq 2 docs S (BVNTP-HACH1, BVDHYD-HACH)"
+medullary sinus,xoang tủy,"freq 3 docs S (BVNTP-HACH1 3, BVDHYD-HACH 2, BVNTP-HACH3 1)"
+nodal architecture,cấu trúc hạch,BVNTP-HACH2/3 'cấu trúc hạch' (S)
+effacement of nodal architecture,xóa cấu trúc hạch,"'cấu trúc hạch bị xóa' 3 docs (BVNTP-HACH3 3, BVNTP-HACH2 1, BYT1514 1)"
+monocytoid B cells,tế bào B dạng đơn nhân,OWN 'Monocytoid = ?dạng đơn nhân?' (question mark: UNRESOLVED); freq 0
+small lymphocytes,lymphô bào nhỏ,parent lymphocyte = lymphô bào; KHÔNG 'tế bào lympho nhỏ'
+large atypical lymphoid cells,tế bào dạng lympho lớn không điển hình,parent atypical = không điển hình; BUILT; avoids the forbidden 'tế bào lympho'
+atypical lymphoid infiltrate,thâm nhiễm lympho không điển hình,OWN 'lymphoid infiltrates = thâm nhiễm lympho'; parent atypical = không điển hình
+lymphoid infiltrate,thâm nhiễm lympho,OWN
+lymphoid aggregate,ổ tập trung lympho,BUILT (parent bare 'aggregate' = kết tập is the protein sense); freq 0; UNRESOLVED
+plasmacytoid,dạng tương bào,BUILT (plasma cell = tương bào)
+Auer rods,thể Auer,freq 1 doc (BYT1514 3); 'que Auer' 0
+multiple myeloma,đa u tủy (MM),"freq 3 docs ('đa u tủy': BYT1514 11, TCNCYH26-AMY 6, HUE20b) + YHCM19-HH489 5 (S) + bthh.org.vn titles 'đa u tủy' (WS); 'đa u tủy xương' is the same docs' long form"
+plasma cell myeloma,đa u tủy,as multiple myeloma; WHO name
+smoldering myeloma,đa u tủy âm ỉ,BUILT; freq 0; low
+monoclonal gammopathy of undetermined significance,bệnh gammaglobulin đơn dòng có ý nghĩa chưa xác định (MGUS),WS snippet (cfch / Wikipedia VN) 'bệnh gammaglobulin đơn dòng có ý nghĩa chưa xác định'; corpus 'globulin đơn dòng' 2 docs; low
+solitary plasmacytoma,u tương bào đơn độc,OWN 'Plasmacytoma = u tương bào'; parent note 'u tương bào' = plasmacytoma
+extramedullary plasmacytoma,u tương bào ngoài tủy,as solitary plasmacytoma
+clonal plasma cells,tương bào đơn dòng,bthh myeloma page (WS) 'tương bào đơn dòng'; parent monoclonal = đơn dòng
+plasma cell dyscrasia,rối loạn tương bào,OWN 'plasma cell dyscrasias = bệnh lý rối loạn tương bào' (second entry had a question mark); low
+M protein,protein đơn dòng (protein M),"freq 2 docs ('protein đơn dòng': BYT1514 3, TCNCYH26-AMY 1)"
+free light chain,chuỗi nhẹ tự do,WS (bsgiadinh.vn TP.HCM) 'chuỗi nhẹ tự do'; 'chuỗi nhẹ' 4 docs
+hemophagocytic lymphohistiocytosis,hội chứng thực bào máu (HLH),BVNTP + emed.bvbnd.vn + Tâm Anh pages (WS): 'hội chứng thực bào máu'; corpus 'thực bào máu' 1 (BYT1514)
+hemophagocytosis,hiện tượng thực bào máu,as HLH; BUILT
+peripheral T-cell lymphoma,lymphom tế bào T ngoại vi,"'tế bào T ngoại vi' 2 docs (BYT1514 9, BVNTP-HACH3 5 S) vs 'ngoại biên' 1 doc"
+"peripheral T-cell lymphoma, not otherwise specified","lymphom tế bào T ngoại vi, không đặc hiệu (PTCL, NOS)","NOS = 'không đặc hiệu' 10 docs (BYT1514 21, BVNTP-HACH3 2) vs 'không xác định' 9 docs"
+angioimmunoblastic T-cell lymphoma,lymphom tế bào T nguyên bào miễn dịch mạch (AITL),'nguyên bào miễn dịch mạch' 1 doc (BYT1514 2); VICAS / Google 'mạch máu nguyên bào miễn dịch'; parent immunoblast = nguyên bào miễn dịch
+nodal T-follicular helper cell lymphoma,lymphom tế bào T hỗ trợ nang tại hạch,BUILT from parent 'T follicular helper cell = tế bào T hỗ trợ nang (TFH)'; WHO-HAEM5
+adult T-cell leukemia/lymphoma,bệnh bạch cầu/lymphom tế bào T người lớn (ATLL),BUILT (leukemia = bệnh bạch cầu); low
+hepatosplenic T-cell lymphoma,lymphom tế bào T gan-lách,OWN 'lymphôm tế bào T gan-lách'; house lymphom
+blast,blast,"blast vs -blastic: owner 2026-10-15 17:48 ('có blastic thì mới nguyên bào, không có blastic thì không'); corpus keeps 'blast' (YHCM19-HH139 17, BYT1514 21) | kept EN as in BV TMHH 2019 (YHCM19-HH139 17) and BYT1514 ('tế bào blast' 17, 'blast' 21); OWN 'MDS tăng nguyên bào' (decision)"
+increased blasts,tăng blast,"blast vs -blastic: owner 2026-10-15 17:48 ('có blastic thì mới nguyên bào, không có blastic thì không') | as blast"
+blast count,số lượng blast,"blast vs -blastic: owner 2026-10-15 17:48 ('có blastic thì mới nguyên bào, không có blastic thì không') | as blast; 'tỷ lệ' (roadmap 8: tỷ lệ)"
+promyelocyte,tiền tủy bào,freq 1 doc (BYT1514 15)
+myelocyte,tủy bào,freq 1 doc (BYT1514); low
+erythroblast,nguyên hồng cầu,YHCM19-HH139 'nguyên hồng cầu' (S); OWN 'nguyên hồng cầu sắt vòng'
+erythroid precursors,tiền thân dòng hồng cầu,OWN 'erythroid precursors = tiền thân dòng hồng cầu'
+myeloid precursors,tiền thân dòng tủy,OWN 'Myelocytic precursors = tế bào tiền thân dòng tủy'
+megakaryocyte,mẫu tiểu cầu,"OWN 'Megakaryocytes = mẫu tiểu cầu'; 2 docs (BYT1514 6, TCNCYH-NB 2) + BVNTP-STX / BVNTP-MPN ~12 (WF); 'tế bào nhân khổng lồ' rejected by OWN"
+micromegakaryocytes,vi mẫu tiểu cầu,BUILT; freq 0; low
+granulocyte,bạch cầu hạt,OWN 'Granulocyte/monocyte pathway = con đường bạch cầu hạt/bạch cầu đơn nhân'; 'dòng bạch cầu hạt' BYT1514 17
+neutrophil,bạch cầu trung tính,OWN 'Neutrophils = bạch cầu trung tính'
+basophil,bạch cầu ái kiềm,BUILT: parallels parent eosinophil = bạch cầu ái toan; low
+monocyte,bạch cầu đơn nhân,"OWN 'bạch cầu đơn nhân' (granulocyte/monocyte pathway); 'bạch cầu đơn nhân' 2 docs S (BVNTP-HACH1, BVNTP-HACH2)"
+macrophage,đại thực bào,OWN 'Macrophage = đại thực bào'; 12 docs
+myeloid,dòng tủy,"OWN 'myeloid and lymphoid lineage = dòng tủy và dòng lympho'; 3 docs (YHCM26-MRD, YHCM21-CML, BYT1514)"
+erythroid,dòng hồng cầu,"OWN 'Erythroids = dòng hồng cầu'; 2 docs (YHCM19-HH139 6, BYT1514 11)"
+trilineage hematopoiesis,tạo máu ba dòng,OWN
+hematopoiesis,tạo máu,"OWN 'tạo máu ba dòng', 'tế bào tạo máu'; YHCM17-CR322 'tạo máu' (S)"
+extramedullary hematopoiesis,tạo máu ngoài tủy,"BUILT from 'tạo máu'; BVNTP-MPN 'sinh máu ngoài tủy' 1 (WF), YHCM17-CR322 'tạo máu thay tủy' 2 (S)"
+cytopenia,giảm tế bào máu,BUILT; low
+pancytopenia,giảm ba dòng tế bào máu,BUILT; low
+lymphocytosis,tăng lymphô bào,BUILT (lymphô bào); low
+aplastic anemia,suy tủy xương,"Southern pages BVNTP (WS, 4 titles) and bthh.org.vn 'suy tủy xương'; corpus 2 docs; 'thiếu máu bất sản' not used"
+bone marrow,tủy xương,standard; 'tủy xương' every haematology doc
+bone marrow biopsy,sinh thiết tủy xương,"freq 4 docs (BYT1514 9, TCNCYH26-AMY 6, YHCM24-MZL 2 S, BVNTP-XLBP 1 S) + BVNTP-STX + bthh.org.vn (WS)"
+bone marrow trephine biopsy,sinh thiết tủy xương,as bone marrow biopsy; 'trephine' 0 in VN docs
+trephine biopsy,sinh thiết tủy xương,as bone marrow biopsy
+bone marrow aspirate,tủy đồ,"'tủy đồ' 5 docs (BYT1514 19, TCNCYH26-AMY 6) + 4 S docs (YHCM19-HH139 3, YHCM19-HH95, YHCM19-HH489, YHCM21-CML); OWN bare 'aspirate = dịch hút'"
+bone marrow aspiration,chọc hút tủy xương,'chọc hút tủy' 1 doc (BYT1514 2); bthh (WS) 'chọc hút tủy và sinh thiết tủy'; low
+dry tap,chọc hút khô (dry tap),BUILT; EN gloss kept; low
+peripheral blood smear,phết máu ngoại biên,owner 2026-10-15 ('đồng ý'); 'phết máu ngoại biên' YHCM19-HH139 2 (S) | 'phết máu ngoại biên' 1 doc S (YHCM19-HH139 2) vs 'ngoại vi' 0; aligned with molecular 'peripheral blood = máu ngoại vi' (S4 N2 O1); decision
+peripheral smear,phết máu ngoại biên,owner 2026-10-15 ('đồng ý') | as peripheral blood smear
+complete blood count,công thức máu,"owner, recommended column 2026-10-15 18:48 (medicine M10): = medicine; 'công thức máu' 10 docs (S3) vs 'tổng phân tích tế bào máu' 4 (S1 N3), 'huyết đồ' 4 (medicine sources); WAS 'tổng phân tích tế bào máu'"
+cellularity,mật độ tế bào,OWN 'Cellularity = mật độ tế bào' (rejects 'độ tế bào'); 4 docs
+marrow cellularity,mật độ tế bào tủy,OWN 'mật độ tế bào tủy (xương)'; BVNTP-MPN 'mật độ tế bào tuỷ' (WF)
+hypercellular marrow,tủy giàu tế bào,freq 1 doc (BYT1514 4) + BVNTP-MPN 'tuỷ giàu tế bào' ~4 (WF)
+hypocellular marrow,tủy nghèo tế bào,freq 1 doc (BYT1514 1) + BVNTP-MPN 1 (WF); bthh.org.vn title 'tủy giảm sinh' (WS) for hypoplastic
+hypoplastic marrow,tủy giảm sinh,"bthh.org.vn title 'tủy giảm sinh hoặc có xơ tủy' (WS, BV TMHH); 'tủy giảm sinh' BYT1514 1"
+M:E ratio,tỷ lệ dòng tủy/dòng hồng cầu (M:E),as myeloid to erythroid ratio
+iron stores,dự trữ sắt,"BVNTP-STX 'Dự trữ sắt: nhuộm Perls' (WF, S); low"
+Perls stain,nhuộm Perls,bthh.org.vn title 'nhuộm Perls tủy xương' (WS); BVNTP-STX (WF)
+decalcification,khử canxi,"bthh 'khử can-xi', BVNTP-STX 'khử calci' (WS / WF); BUILT spelling canxi; low"
+marrow spaces,khoang tủy,BVNTP-STX 'khoang tạo máu' / 'khoang sinh máu' (WF); BYT1514 'khoang tủy' 1; low
+paratrabecular,cạnh bè xương,BUILT; freq 0; low
+interstitial pattern,kiểu kẽ,BUILT (parent bare 'interstitial' = mô kẽ is the lung / tissue sense); low
+bone marrow involvement,xâm lấn tủy xương,"by rule (D: corpus): 'xâm lấn tủy (xương)' 2 docs (BYT1514 7, TCNCYH-NB 9) vs 'thâm nhiễm tủy' 1 doc (BYT1514 2), 'di căn tủy' 2 docs; no Southern doc has either | 'xâm lấn tủy' 2 docs (BYT1514 7, TCNCYH-NB 9) vs 'thâm nhiễm tủy' 1 doc (BYT1514 2), 'di căn tủy' 2 docs; parent invasion = xâm lấn"
+extranodal,ngoài hạch,"freq 6 docs (BYT1514 61, YHCM18-134 11 S, YHCM24-MZL 7 S, BVNTP-HACH2/3 S)"
+splenectomy,cắt lách,OWN 'splenectomy = cắt lách'; BYT1514 2
+splenomegaly,lách to,"freq 4 docs (BYT1514 18, TCNCYH-NB 4, BVNTP-HACH3 2 S); BVNTP-MPN ~6 (WF)"
+hypersplenism,cường lách,freq 1 doc (BYT1514)
+white pulp,tủy trắng,"WS snippets (hinhanhykhoa, Raffles) 'tủy trắng'; freq 0 in corpus; low"
+red pulp,tủy đỏ,as white pulp
+accessory spleen,lách phụ,OWN 'accessory spleens = lách phụ'
+excisional lymph node biopsy,sinh thiết trọn hạch,freq 1 doc S (BVDHYD-HACH 3); 'sinh thiết hạch' 4 docs; bthh (WS) 'sinh thiết hạch'
+lymph node biopsy,sinh thiết hạch,"freq 4 docs (BYT1514 17, BVDHYD-HACH 7 S, BVNTP-XLBP S)"
+fine needle aspiration of lymph node,chọc hút tế bào bằng kim nhỏ hạch lympho,parent fine needle aspiration = chọc hút tế bào bằng kim nhỏ; BVNTP page title 'FNA các hạch lymphô ngoại vi' (WS)
+touch imprint,tiêu bản áp (touch imprint),"freq 0 (phết áp, in áp, áp lam all 0); EN gloss kept; UNRESOLVED"
+immunophenotype,kiểu hình miễn dịch,"freq 5 docs (BVNTP-HACH1 10, BVNTP-HACH3 10, BVNTP-HACH2 3 S, HUE22 16, BYT1514 1)"
+immunophenotyping,xác định kiểu hình miễn dịch,BUILT from immunophenotype; low
+co-expression,đồng bộc lộ,"YHCM 2008 (WS snippet, S) 'đồng bộc lộ CD5'; IHC expression = bộc lộ (user decision 5); 'đồng biểu hiện' 0"
+coexpression,đồng bộc lộ,as co-expression
+aberrant expression,bộc lộ bất thường,BUILT (expression = bộc lộ); low
+pan-B-cell marker,dấu ấn chung tế bào B,BVDHYD-HACH (WS snippet) 'dấu ấn chung của tế bào B' (S)
+cell of origin,nguồn gốc tế bào,"freq 3 docs (BVNTP-HACH2 3 S, BVNTP-HMMD 2 S, BYT1514 1); a 4th hit (TCNCYH-914) is the generic sense"
+germinal center B-cell-like,dạng tế bào B trung tâm mầm (GCB),BYT1514 'trung tâm mầm (GCB)' 1; BUILT
+activated B-cell-like,dạng tế bào B hoạt hóa (ABC),BUILT; low
+non-germinal center B-cell,không phải tế bào B trung tâm mầm (non-GCB),BUILT; low
+Hans algorithm,bảng phân loại Hans,= parent 'Hans classifier = bảng phân loại Hans' (one VN form for both keys); 'Hans' kept in all docs
+clonality,tính đơn dòng,parent monoclonal = đơn dòng; 'đơn dòng' 11 docs; BUILT
+IG gene rearrangement,tái sắp xếp gen IG,parent gene rearrangement = tái sắp xếp gen; IG kept
+TCR gene rearrangement,tái sắp xếp gen TCR,as IG gene rearrangement
+T-cell receptor,thụ thể tế bào T (TCR),standard; low in corpus
+complex karyotype,nhiễm sắc thể đồ phức tạp,"parent karyotype = nhiễm sắc thể đồ; Southern 'NST đồ' 2 docs S (YHCM21-CML 21, YHCM19-HH139 6) is the abbreviation of the same form"
+cytogenetic abnormality,bất thường di truyền tế bào,parent cytogenetics = di truyền tế bào (cytogenetics); 'di truyền tế bào' YHCM21-CML 3 (S)
+Ann Arbor staging,phân giai đoạn Ann Arbor,parent staging = phân giai đoạn; 'Ann Arbor' kept (13 docs)
+Lugano classification,phân loại Lugano,'Lugano' kept (3 docs); BUILT
+B symptoms,triệu chứng B,"freq 3 docs (YHCM18-134 3 S, BYT1514 3, BVDHYD-HACH 1 S); YHCM19-HH489 3 (S)"
+bulky disease,bệnh khối lớn (bulky),"'khối lớn' 2 docs (BYT1514 4, BVNTP-HACH2 1); 'bulky' kept in EN docs"
+bulky mediastinal disease,bệnh khối lớn ở trung thất (bulky),as bulky disease; eval 2026-10-15: without this row the model wrote bệnh trung thất to
+International Prognostic Index,chỉ số tiên lượng quốc tế (IPI),freq 1 doc (BYT1514); 'IPI' 4 docs
+International Staging System,hệ thống phân giai đoạn quốc tế (ISS),BUILT (myeloma); low
+Deauville score,thang điểm Deauville,BUILT; low
+complete remission,lui bệnh hoàn toàn,"freq 3 docs (BYT1514 7, YHCM22-NĐ1 6, BVNTP-HACH3 1) + YHCM19-HH95 / HH489 (S)"
+refractory disease,bệnh kháng trị,'kháng trị' 2 docs + YHCM19-HH95 / HH489 (S)
+classic follicular lymphoma,lymphom dạng nang kinh điển,WHO-HAEM5; from parent follicular lymphoma + 'kinh điển' (BVNTP-HACH2); low
+no evidence of lymphoma,không thấy bằng chứng lymphom,BUILT report phrase
+involved by lymphoma,bị lymphom xâm lấn,as bone marrow involvement; low
+hematopoietic stem cell transplantation,ghép tế bào gốc tạo máu,YHCM19-HH95 'tế bào gốc tạo máu' 4 (S)
+graft-versus-host disease,bệnh mảnh ghép chống ký chủ (GVHD),YHCM19-HH95 'mảnh ghép chống ký chủ' 2 (S)
+fusion gene,tổ hợp gen,owner 2026-10-15 18:48 (choice 1): = molecular-pathology fusion gene; gene fusion / fusion keep 'dung hợp' (pathology)

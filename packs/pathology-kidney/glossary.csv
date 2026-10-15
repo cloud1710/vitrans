@@ -3,25 +3,25 @@ kidney,thận,"freq 40/40 docs (kidney corpus, see sources.md); profile term"
 renal,thận,freq 40/40 docs; adjective: renal = thận
 renal tumor,u thận,"freq 'u thận' 9 docs (S2 C2 N4 H1); src: YHTPHCM16-116, YHTPHCM18-95, TCNCYH-2046; parent tumor = u"
 renal mass,khối u thận,"freq 3 docs (C1 N2); src: CTUMP-716, TCNCYH-2262, TCNCYH-3992; LOW"
-clear cell renal cell carcinoma,ung thư biểu mô tế bào thận tế bào sáng,"= parent clear cell RCC; freq 'tế bào sáng' 9 docs (S4 C1 N3 L1); src: YHTPHCM16-116, YHTPHCM-a10418, YDLS108-1074; alt South urology/radiology 'carcinôm tế bào sáng thận' (YHTPHCM-a10418), 'uttbt tế bào sáng' (YHTPHCM16-116); carcinoma kept = parent rule"
-papillary renal cell carcinoma,ung thư biểu mô tế bào thận dạng nhú,"= parent papillary RCC; src: YDLS108-1021 ('típ nhú' 14, 'utbm dạng nhú'), YHTPHCM16-116 ('uttbt loại nhú'), YHTPHCM-a10418 ('carcinôm nhú tế bào thận')"
-chromophobe renal cell carcinoma,ung thư biểu mô tế bào thận kỵ màu,"= parent chromophobe RCC; freq 'kỵ màu' 3 docs (S1 N2); src: YHTPHCM16-116, YDLS108-1021, TCNCYH-3992; alt 'kị sắc' (user-corrected textbook, translator/glossary/learned.csv), 'kỵ sắc' 0 docs"
+clear cell renal cell carcinoma,carcinom tế bào thận tế bào sáng,"= parent clear cell RCC; freq 'tế bào sáng' 9 docs (S4 C1 N3 L1); src: YHTPHCM16-116, YHTPHCM-a10418, YDLS108-1074; alt South urology/radiology 'carcinôm tế bào sáng thận' (YHTPHCM-a10418), 'uttbt tế bào sáng' (YHTPHCM16-116); carcinoma kept = parent rule"
+papillary renal cell carcinoma,carcinom tế bào thận dạng nhú,"= parent papillary RCC; src: YDLS108-1021 ('típ nhú' 14, 'utbm dạng nhú'), YHTPHCM16-116 ('uttbt loại nhú'), YHTPHCM-a10418 ('carcinôm nhú tế bào thận')"
+chromophobe renal cell carcinoma,carcinom tế bào thận kị sắc,"= parent chromophobe RCC; freq 'kỵ màu' 3 docs (S1 N2); src: YHTPHCM16-116, YDLS108-1021, TCNCYH-3992; alt 'kị sắc' (user-corrected textbook, translator/glossary/learned.csv), 'kỵ sắc' 0 docs"
 clear cell papillary renal cell tumor,u tế bào thận dạng nhú tế bào sáng,WHO 2022 name; freq 0; BUILT from parent clear cell / papillary rows; keep (CCPRCT) in brackets
-clear cell papillary renal cell carcinoma,ung thư biểu mô tế bào thận dạng nhú tế bào sáng,older WHO 2016 name; src: YDLS108-1021 'utbmtbt nhú tế bào sáng' (N1); learned.csv 'Carcinom tế bào sáng của thận dạng nhú'
+clear cell papillary renal cell carcinoma,carcinom tế bào thận dạng nhú tế bào sáng,older WHO 2016 name; src: YDLS108-1021 'utbmtbt nhú tế bào sáng' (N1); learned.csv 'Carcinom tế bào sáng của thận dạng nhú'
 multilocular cystic renal neoplasm of low malignant potential,tân sinh thận dạng nang nhiều ngăn có tiềm năng ác tính thấp,= parent MCNLMP row (long key added); freq 0 VN docs; learned.csv 'u thận dạng nang nhiều ngăn'
-TFE3-rearranged renal cell carcinoma,ung thư biểu mô tế bào thận tái sắp xếp TFE3,= parent TFE3-rearranged RCC (long key added); freq 0 VN docs
-TFEB-altered renal cell carcinoma,ung thư biểu mô tế bào thận biến đổi TFEB,WHO 2022; freq 0; BUILT: alteration = biến đổi (parent)
-ALK-rearranged renal cell carcinoma,ung thư biểu mô tế bào thận tái sắp xếp ALK,WHO 2022; freq 0; BUILT; sibling row ALK rearrangement = tái sắp xếp gen ALK
-ELOC-mutated renal cell carcinoma,ung thư biểu mô tế bào thận đột biến ELOC,WHO 2022 (formerly TCEB1); freq 0; BUILT
-fumarate hydratase-deficient renal cell carcinoma,ung thư biểu mô tế bào thận thiếu hụt fumarate hydratase,parent FH-/SDH-deficient RCC row (deficient = thiếu hụt); full form instead of 'UTBM'
-succinate dehydrogenase-deficient renal cell carcinoma,ung thư biểu mô tế bào thận thiếu hụt succinate dehydrogenase,parent FH-/SDH-deficient RCC row
-eosinophilic solid and cystic renal cell carcinoma,ung thư biểu mô tế bào thận ái toan dạng đặc và nang,"WHO 2022; freq 0; BUILT: eosinophilic = ái toan (parent oncocytic), solid = dạng đặc, cystic = dạng nang (parent)"
-acquired cystic disease-associated renal cell carcinoma,ung thư biểu mô tế bào thận liên quan bệnh thận nang mắc phải,src: YDLS108-1021 'utbmtbt liên quan với bệnh thận nang...' (N1); LOW
-mucinous tubular and spindle cell carcinoma,ung thư biểu mô dạng ống và tế bào hình thoi chế nhầy,freq 0; BUILT: spindle cell = tế bào hình thoi (parent); mucinous = chế nhầy; LOW
-tubulocystic renal cell carcinoma,ung thư biểu mô tế bào thận dạng ống-nang,freq 0; BUILT; LOW
-renal cell carcinoma with fibromyomatous stroma,ung thư biểu mô tế bào thận có mô đệm sợi-cơ,WHO 2022; freq 0; BUILT: fibro = sợi (house rule); LOW
-unclassified renal cell carcinoma,ung thư biểu mô tế bào thận không xếp loại,freq 0; BUILT; WHO 2022 'RCC NOS' = không đặc hiệu (NOS)
-SMARCB1-deficient renal medullary carcinoma,ung thư biểu mô tủy thận thiếu hụt SMARCB1,parent renal medullary carcinoma + deficient = thiếu hụt
+TFE3-rearranged renal cell carcinoma,carcinom tế bào thận tái sắp xếp TFE3,= parent TFE3-rearranged RCC (long key added); freq 0 VN docs
+TFEB-altered renal cell carcinoma,carcinom tế bào thận biến đổi TFEB,WHO 2022; freq 0; BUILT: alteration = biến đổi (parent)
+ALK-rearranged renal cell carcinoma,carcinom tế bào thận tái sắp xếp ALK,WHO 2022; freq 0; BUILT; sibling row ALK rearrangement = tái sắp xếp gen ALK
+ELOC-mutated renal cell carcinoma,carcinom tế bào thận đột biến ELOC,WHO 2022 (formerly TCEB1); freq 0; BUILT
+fumarate hydratase-deficient renal cell carcinoma,carcinom tế bào thận thiếu hụt fumarate hydratase,parent FH-/SDH-deficient RCC row (deficient = thiếu hụt); full form instead of 'UTBM'
+succinate dehydrogenase-deficient renal cell carcinoma,carcinom tế bào thận thiếu hụt succinate dehydrogenase,parent FH-/SDH-deficient RCC row
+eosinophilic solid and cystic renal cell carcinoma,carcinom tế bào thận ái toan dạng đặc và nang,"WHO 2022; freq 0; BUILT: eosinophilic = ái toan (parent oncocytic), solid = dạng đặc, cystic = dạng nang (parent)"
+acquired cystic disease-associated renal cell carcinoma,carcinom tế bào thận liên quan bệnh thận nang mắc phải,src: YDLS108-1021 'utbmtbt liên quan với bệnh thận nang...' (N1); LOW
+mucinous tubular and spindle cell carcinoma,carcinom dạng ống và tế bào hình thoi chế nhầy,freq 0; BUILT: spindle cell = tế bào hình thoi (parent); mucinous = chế nhầy; LOW
+tubulocystic renal cell carcinoma,carcinom tế bào thận dạng ống-nang,freq 0; BUILT; LOW
+renal cell carcinoma with fibromyomatous stroma,carcinom tế bào thận có mô đệm sợi-cơ,WHO 2022; freq 0; BUILT: fibro = sợi (house rule); LOW
+unclassified renal cell carcinoma,carcinom tế bào thận không xếp loại,freq 0; BUILT; WHO 2022 'RCC NOS' = không đặc hiệu (NOS)
+SMARCB1-deficient renal medullary carcinoma,carcinom tủy thận thiếu hụt SMARCB1,parent renal medullary carcinoma + deficient = thiếu hụt
 papillary adenoma,u tuyến nhú,freq 0; BUILT: adenoma = u tuyến (parent)
 papillary renal neoplasm with reverse polarity,tân sinh thận dạng nhú phân cực đảo ngược,freq 0; BUILT; keep (PRNRP)
 oncocytoma,u tế bào ái toan (oncocytoma),"= sibling pathology-headneck row; parent renal oncocytoma = u tế bào ái toan ở thận; corpus: 'u tế bào lớn (oncocytoma)' YHTPHCM16-116 (S1); web: 'u tế bào lớn ưa toan' (xray.vn), 'u tế bào biểu mô hạt' (hahoangkiem.com); LOW"
@@ -43,11 +43,11 @@ cystic partially differentiated nephroblastoma,u nguyên bào thận dạng nang
 congenital mesoblastic nephroma,u nguyên trung mô thận bẩm sinh,YHTPHCM18-95 'u nguyên trung mô thận' (S1); alt BVNTP-web 'bướu nguyên - trung bì thận'; LOW
 clear cell sarcoma of kidney,sarcom tế bào sáng của thận,parent clear cell sarcoma = sarcom tế bào sáng; BVNTP-web 'sarcom tế bào sáng của thận'; YHTPHCM18-95 'sarcoma tế bào sáng'
 rhabdoid tumor of kidney,u dạng cơ vân của thận,YHTPHCM18-95 'u dạng cơ vân' (S1); BVNTP-web 'bướu ác dạng cơ vân'; parent rhabdoid = dạng cơ vân
-urothelial carcinoma,ung thư biểu mô đường niệu,"src: HueJMP17-22 (C, 7 hits; the paper calls it the now unified term); alt South urology 'bướu tế bào chuyển tiếp' (YHTPHCM19-255); carcinoma = ung thư biểu mô (parent)"
-urothelial carcinoma of the renal pelvis,ung thư biểu mô đường niệu bể thận,built from urothelial carcinoma + parent renal pelvis = bể thận
-upper tract urothelial carcinoma,ung thư biểu mô đường niệu trên,freq 0; BUILT; LOW
-invasive urothelial carcinoma,ung thư biểu mô đường niệu xâm nhập,parent pattern invasive ductal carcinoma = ung thư biểu mô ống xâm nhập
-transitional cell carcinoma,ung thư biểu mô đường niệu (tế bào chuyển tiếp),old name; HueJMP17-22 gives 'ung thư tế bào chuyển tiếp' as the former name; YHTPHCM19-255 'bướu tế bào chuyển tiếp' (S)
+urothelial carcinoma,carcinom đường niệu,"src: HueJMP17-22 (C, 7 hits; the paper calls it the now unified term); alt South urology 'bướu tế bào chuyển tiếp' (YHTPHCM19-255); carcinoma = ung thư biểu mô (parent)"
+urothelial carcinoma of the renal pelvis,carcinom đường niệu bể thận,built from urothelial carcinoma + parent renal pelvis = bể thận
+upper tract urothelial carcinoma,carcinom đường niệu trên,freq 0; BUILT; LOW
+invasive urothelial carcinoma,carcinom đường niệu xâm nhập,parent pattern invasive ductal carcinoma = ung thư biểu mô ống xâm nhập
+transitional cell carcinoma,carcinom đường niệu (tế bào chuyển tiếp),old name; HueJMP17-22 gives 'ung thư tế bào chuyển tiếp' as the former name; YHTPHCM19-255 'bướu tế bào chuyển tiếp' (S)
 ureter,niệu quản,freq 7 docs (S3 C1 N2 L1)
 WHO/ISUP grade,độ WHO/ISUP,"src: YDLS108-1021 'phân độ ... theo hệ thống WHO/ISUP', TCNCYH-3992 'ISUP độ 1'; ISUP kept English"
 ISUP grade,độ ISUP,src: TCNCYH-3992 (N1)
@@ -56,8 +56,8 @@ nuclear grade,độ nhân,"freq 0; BUILT; alt 'độ mô học' (YDLS108-1021, Y
 Fuhrman grade,độ Fuhrman,"src: YDLS108-1021 'phân độ theo Fuhrman', TCNCYH-2262 'Fuhrman: G3' (N2)"
 nucleolus,hạt nhân,"src: YDLS108-1021 (N1, 4 hits: 'hạt nhân rõ'); 'hạch nhân' 0, 'nhân con' 0; matcher also takes nucleoli"
 prominent nucleoli,hạt nhân rõ,src: YDLS108-1021 'hạt nhân rõ và ưa axít'
-sarcomatoid,dạng sarcôm,parent: sarcomatoid = dạng sarcôm (RCC with sarcomatoid features row); corpus keeps 'sarcomatoid' EN once (YDLS108-1021)
-sarcomatoid differentiation,biệt hóa dạng sarcôm,YDLS108-1021 'biệt hóa dạng cơ vân hoặc sarcoma' (N1); parent sarcomatoid = dạng sarcôm
+sarcomatoid,dạng sarcom,parent: sarcomatoid = dạng sarcom (RCC with sarcomatoid features row); corpus keeps 'sarcomatoid' EN once (YDLS108-1021)
+sarcomatoid differentiation,biệt hóa dạng sarcom,YDLS108-1021 'biệt hóa dạng cơ vân hoặc sarcoma' (N1); parent sarcomatoid = dạng sarcôm
 rhabdoid differentiation,biệt hóa dạng cơ vân,"src: YDLS108-1021 (N1, 2 hits); parent rhabdoid = dạng cơ vân"
 coagulative necrosis,hoại tử đông,general pathology term; freq 0 in kidney corpus; LOW
 eosinophilic cytoplasm,bào tương ái toan,'bào tương' 5 docs vs 'tế bào chất' 1; ái toan = parent oncocytic
@@ -89,7 +89,7 @@ renal cyst,nang thận,freq 4 docs (S1 C2 L1)
 polycystic kidney disease,bệnh thận đa nang,src: BVNTP-GPB-P1 (H1); standard term
 acquired cystic kidney disease,bệnh thận nang mắc phải,src: YDLS108-1021 (N1)
 von Hippel-Lindau disease,bệnh von Hippel-Lindau,freq 0 in corpus; eponym kept; LOW
-hereditary leiomyomatosis and renal cell carcinoma,hội chứng u cơ trơn và ung thư biểu mô tế bào thận di truyền,freq 0; BUILT; keep (HLRCC)
+hereditary leiomyomatosis and renal cell carcinoma,hội chứng u cơ trơn và carcinom tế bào thận di truyền,freq 0; BUILT; keep (HLRCC)
 Birt-Hogg-Dubé syndrome,hội chứng Birt-Hogg-Dubé,eponym kept
 tuberous sclerosis complex,phức hợp xơ cứng củ,established VN disease name 'xơ cứng củ' (not parent sclerosis = xơ chai); freq 0 in corpus; LOW
 RCC,RCC,acronym kept (parent note 'giữ viết tắt RCC')
@@ -218,12 +218,12 @@ hypertensive nephrosclerosis,xơ hóa thận do tăng huyết áp,src: TCNCYH-36
 nephrotic syndrome,hội chứng thận hư,freq 14 docs (S10 C1 N3)
 steroid-resistant nephrotic syndrome,hội chứng thận hư kháng steroid,src: YHTPHCM22-188 (S1)
 nephritic syndrome,hội chứng viêm thận,freq 4 docs (S3 N1) vs 'hội chứng viêm cầu thận' S2
-proteinuria,đạm niệu,S6 docs (64 hits) vs 'protein niệu' 10 docs (S5 C1 N4) vs 'tiểu đạm' S4; DECISION
+proteinuria,đạm niệu,"owner, recommended column 2026-10-15 18:48 (medicine M11): S6 docs (64 hits) vs 'protein niệu' 10 docs (S5 C1 N4) vs 'tiểu đạm' S4"
 hematuria,tiểu máu,freq 13 docs (S10 N2 L1) vs 'đái máu' 7 (S2 C2 N3)
 acute kidney injury,tổn thương thận cấp,"freq 4 docs (S4, 19 hits) vs 'suy thận cấp' 5"
 chronic kidney disease,bệnh thận mạn,freq 11 docs (S8 N3)
 end-stage kidney disease,bệnh thận giai đoạn cuối,freq 6 docs (S3 N3)
-end-stage renal disease,suy thận giai đoạn cuối,freq 7 docs (S5 N2)
+end-stage renal disease,bệnh thận giai đoạn cuối,"owner, recommended column 2026-10-15 18:48 (medicine M8): one value with medicine and with this pack's 'end-stage kidney disease' (6 docs S3 N3, KDIGO); this pack's count was 'suy thận giai đoạn cuối' 7 docs (S5 N2); WAS 'suy thận giai đoạn cuối'"
 glomerular filtration rate,độ lọc cầu thận,S7 docs (23 hits) vs 'mức lọc cầu thận' 4 docs (S1 N3)
 dialysis,lọc máu,freq 8 docs (S4 N4)
 kidney transplantation,ghép thận,"freq 10 docs (S5 C1 N4, 110 hits)"

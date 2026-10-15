@@ -1,0 +1,87 @@
+{
+ "file": "refs_plain_inside.docx",
+ "kind": "docx",
+ "options": {
+  "notes": true,
+  "comments": false
+ },
+ "names": [
+  "[Content_Types].xml",
+  "_rels/.rels",
+  "docProps/core.xml",
+  "docProps/app.xml",
+  "word/document.xml",
+  "word/_rels/document.xml.rels",
+  "word/styles.xml",
+  "word/stylesWithEffects.xml",
+  "word/settings.xml",
+  "word/webSettings.xml",
+  "word/fontTable.xml",
+  "word/theme/theme1.xml",
+  "customXml/item1.xml",
+  "customXml/_rels/item1.xml.rels",
+  "customXml/itemProps1.xml",
+  "word/numbering.xml",
+  "docProps/thumbnail.jpeg"
+ ],
+ "parts": [
+  "word/document.xml"
+ ],
+ "labels": {
+  "word/document.xml": "Body"
+ },
+ "items": [
+  {
+   "part": "word/document.xml",
+   "index": 0,
+   "location": "Body",
+   "skip": "references",
+   "text": "References",
+   "seg": null
+  },
+  {
+   "part": "word/document.xml",
+   "index": 1,
+   "location": "Body",
+   "skip": "references",
+   "text": "Louis DN et al. Neuro Oncol 2021",
+   "seg": null
+  },
+  {
+   "part": "word/document.xml",
+   "index": 2,
+   "location": "Body",
+   "skip": "references",
+   "text": "Perry A, Example B. A synthetic study of the lab. Brain Pathol 2020;30:1-9.",
+   "seg": null
+  },
+  {
+   "part": "word/document.xml",
+   "index": 3,
+   "location": "Body",
+   "skip": "references",
+   "text": "Staining protocol for the lab",
+   "seg": null
+  }
+ ],
+ "scenarios": {
+  "identity": {
+   "texts": [],
+   "fixes": [],
+   "fit": [],
+   "changed": {}
+  },
+  "fake": {
+   "texts": [],
+   "fixes": [],
+   "fit": [],
+   "changed": {}
+  },
+  "messy": {
+   "texts": [],
+   "fixes": [],
+   "fit": [],
+   "changed": {}
+  }
+ }
+}

@@ -8,7 +8,8 @@
 // glossary.csv (a leading BOM dropped).
 import { compile } from "./pyre.js";
 import { bounded } from "./qa.js";
-import { pyStrip, pySplit, pySplitlines, pyCasefold, cpLen } from "./py.js";
+import { suspicious } from "./vnsyllable.js";
+import { pyStrip, pySplit, pySplitlines, pyCasefold, cpLen, cmpStr } from "./py.js";
 
 export class TermFix {
   constructor(en, vi, wrong = []) {
@@ -319,6 +320,17 @@ export function mergePacks(packs) {
   return new Pack(packs.map((p) => p.id).join("+"), packs.map((p) => p.version).join("+"),
     packs.map((p) => p.name).join(", "), detect, packs.map((p) => p.prompt).filter((x) => x).join("\n\n"), glossary,
     fixes, packs.flatMap((p) => p.tests), packs.map((p) => p.key()).join("+"));
+}
+
+/** The words of a pack's Vietnamese values (glossary and term-fix values; never a note or a wrong form) that are no
+ * regular Vietnamese syllable (vnsyllable.suspicious), in lower case, sorted (code points): the house forms the pack's
+ * author chose, which the suspicious-word check accepts in a job that uses the pack (qa.suspiciousTokens). */
+export function allowedWords(pack) {
+  const words = new Set();
+  for (const vi of pack.glossary.map((row) => row[1]).concat(pack.termFixes.map((fx) => fx.vi))) {
+    for (const t of suspicious(vi)) words.add(t.toLowerCase());
+  }
+  return [...words].sort(cmpStr);
 }
 
 /** Glossary entries present in text, most frequent (then longest) first, as [en, vi]. */

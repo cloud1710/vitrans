@@ -2,27 +2,83 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
   <title>ViTranslate</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="anh/anh.css">
+  <link rel="stylesheet" href="live/live.css">
+  <script src="theme.js"></script>
 </head>
 <body>
   <header class="top">
     <div class="brand">
-      <h1>ViTranslate</h1>
-      <p>Dịch tài liệu Anh → Việt, giữ nguyên định dạng</p>
+      <h1 class="wordmark"><span class="wm-vi">Vi</span>Translate</h1>
+      <p class="tagline">Dịch Anh → Việt cho y khoa</p>
     </div>
     <div id="status" class="pill" role="status">Đang tải…</div>
   </header>
 
+  <div class="tabs-wrap">
+    <div id="tools" class="tabs" role="tablist" aria-label="Công cụ dịch">
+      <button type="button" role="tab" id="tab-text" data-tool="text" aria-controls="view-app" aria-selected="true" tabindex="0"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 6h14M5 10h14M5 14h9M5 18h11"/></svg><span>Văn bản</span></button>
+      <button type="button" role="tab" id="tab-file" data-tool="file" aria-controls="view-app" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg><span>Tài liệu</span></button>
+      <button type="button" role="tab" id="tab-anh" data-tool="anh" aria-controls="view-anh" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 17l5-4.5 3.5 3 3-2.5L20 17"/></svg><span>Ảnh</span></button>
+      <button type="button" role="tab" id="tab-sub" data-tool="sub" aria-controls="view-app" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 12.5h4M13 12.5h4M7 15.5h8"/></svg><span>Phụ đề</span></button>
+      <button type="button" role="tab" id="tab-live" data-tool="live" aria-controls="view-live" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4"/></svg><span>Dịch đuổi</span></button>
+    </div>
+    <button type="button" id="menu-btn" class="menu-btn" aria-haspopup="dialog" aria-controls="menu" aria-label="Tùy chọn" title="Tùy chọn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="5.5" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="12" cy="18.5" r="1.7"/></svg></button>
+    <div class="menu-scrim" aria-hidden="true"></div>
+    <div id="menu" class="menu" role="dialog" aria-label="Tùy chọn" hidden>
+      <fieldset class="menu-group">
+        <legend>Dịch bằng</legend>
+        <label><input type="radio" name="engine" value="cloud"> Máy chủ (Cloudflare)</label>
+        <label><input type="radio" name="engine" value="local"> Trên máy (ViTranslate)</label>
+      </fieldset>
+      <fieldset class="menu-group">
+        <legend>Phụ đề</legend>
+        <label><input id="menu-bilingual" type="checkbox"> Song ngữ</label>
+        <div class="menu-row"><span>Cỡ chữ</span>
+          <button type="button" id="menu-smaller" aria-label="Chữ nhỏ hơn">A−</button>
+          <button type="button" id="menu-bigger" aria-label="Chữ lớn hơn">A+</button>
+        </div>
+      </fieldset>
+      <fieldset class="menu-group" id="local-options" hidden>
+        <legend>Trên máy</legend>
+        <label><input id="opt-polish" type="checkbox"> Đọc lại cho mượt<span id="polish-hint"></span></label>
+        <label><input id="opt-fast" type="checkbox"> Bản nháp nhanh (Gemma 4 E2B)<span id="fast-hint"></span></label>
+      </fieldset>
+      <fieldset class="menu-group">
+        <legend>Giao diện</legend>
+        <div class="menu-seg">
+          <label><input type="radio" name="theme" value="light"> Sáng</label>
+          <label><input type="radio" name="theme" value="dark"> Tối</label>
+          <label><input type="radio" name="theme" value="auto"> Theo máy</label>
+        </div>
+      </fieldset>
+      <div class="menu-group">
+        <button type="button" id="menu-log" class="menu-item">Nhật ký</button>
+      </div>
+    </div>
+  </div>
+
   <main>
+    <div id="helper-bar" class="note helper-bar" role="status" hidden>
+      <span>Chưa thấy ViTranslate trên máy.</span>
+      <button type="button" id="helper-open">Mở ViTranslate</button>
+    </div>
+    <div id="view-app" role="tabpanel" class="view" aria-labelledby="tab-text">
     <section class="card" id="setup" hidden>
       <h2>Dịch trên máy</h2>
       <p>Tài liệu không rời máy: bộ dịch ViTranslate chạy ngay trên máy tính Windows (địa chỉ 127.0.0.1), dùng Gemma 4 E4B nếu máy có GPU, Qwen 3.5 9B nếu chỉ có CPU, qua Ollama. Lần đầu cần tải mô hình (khoảng 6,6 GB).</p>
+      <p id="setup-status" class="note" hidden></p>
+      <button id="setup-retry" type="button" hidden>Thử cài đặt lại</button>
       <p class="muted">Bộ dịch chỉ kết nối tới kho gói thuật ngữ để tải gói, không gửi nội dung tài liệu. Mã nguồn mở; gỡ cài đặt sẽ xóa toàn bộ dữ liệu của ứng dụng.</p>
       <div id="setup-missing" hidden>
-        <p class="note">Trang chưa thấy bộ dịch trên máy này. Bộ cài cho Windows đang được hoàn thiện; khi bộ dịch chạy, trang sẽ tự kết nối.</p>
+        <p class="note">Trang chưa thấy bộ dịch trên máy này. <a id="dl-helper" href="https://github.com/cloud1710/vitrans/releases/latest/download/ViTranslate-Setup.exe" rel="noopener">Tải bộ dịch cho Windows</a></p>
+        <p class="muted">Nếu Windows báo "Windows protected your PC", bấm "More info" rồi "Run anyway".</p>
+        <p><button id="start-helper" type="button">Mở bộ dịch đã cài</button></p>
         <p class="muted">Nếu trình duyệt hỏi có cho trang này truy cập thiết bị trong mạng cục bộ không, hãy chọn Cho phép: đó là đường nối tới bộ dịch trên chính máy bạn.</p>
         <p id="lna-denied" class="note" hidden>Trình duyệt đang chặn quyền này. Bấm biểu tượng bên trái địa chỉ trang, bật "Mạng cục bộ" (hoặc vào Cài đặt trang web, chọn Cho phép), rồi bấm Thử kết nối lại.</p>
         <button id="retry" type="button">Thử kết nối lại</button>
@@ -35,33 +91,25 @@
       <p id="advice-estimate" class="advice-est" hidden></p>
       <p id="advice-detail" class="muted" hidden></p>
       <p id="advice-status" class="muted" hidden></p>
-      <div id="advice-ask" class="ask" hidden>
-        <button id="ask-a" type="button"></button>
-        <button id="ask-b" type="button"></button>
-      </div>
       <p class="advice-actions">
         <button id="advice-pull" type="button" class="primary" hidden></button>
-        <a id="advice-link" href="lab/" hidden>Mở Phòng đo (/lab/)</a>
         <button id="advice-redo" type="button" class="link">Đo lại</button>
       </p>
     </section>
 
     <section class="card" id="upload">
-      <div class="modes" role="group" aria-label="Dịch văn bản hay tệp">
-        <button id="mode-text" type="button" class="mode" aria-pressed="true">Văn bản</button>
-        <button id="mode-file" type="button" class="mode" aria-pressed="false">Tệp</button>
-      </div>
       <div id="text-panel">
-        <label for="src-text" class="muted">Dán văn bản tiếng Anh vào đây (mỗi dòng là một đoạn).</label>
+        <label for="src-text" class="field-label">Dán văn bản tiếng Anh (mỗi dòng là một đoạn)</label>
         <textarea id="src-text" rows="9" spellcheck="false" lang="en"></textarea>
         <p id="text-count" class="text-count muted">0 / 20.000 ký tự</p>
         <p id="text-note" class="note" hidden></p>
       </div>
+      <p id="file-note" class="note" hidden></p>
       <div id="file-panel" hidden>
         <label id="drop" class="drop" tabindex="0">
-          <input id="file" type="file" accept=".docx,.pptx" hidden>
-          <strong>Kéo thả tệp .docx hoặc .pptx vào đây</strong>
-          <span>hoặc bấm để chọn tệp · PDF sẽ có ở phiên bản sau</span>
+          <input id="file" type="file" accept=".docx,.pptx,.pdf" hidden>
+          <strong>Kéo thả tệp .docx, .pptx hoặc .pdf vào đây</strong>
+          <span>hoặc bấm để chọn tệp · giữ nguyên định dạng</span>
           <span id="filename" class="filename"></span>
         </label>
         <details class="advanced">
@@ -69,16 +117,35 @@
           <div class="options">
             <label><input id="opt-notes" type="checkbox" checked> Dịch cả ghi chú của slide</label>
           </div>
-          <div id="local-options" class="options" hidden>
-            <p class="muted">Trang đã tự chọn theo gợi ý cho máy này; chỉ đổi khi bạn muốn khác.</p>
-            <label><input id="opt-polish" type="checkbox"> Đọc lại cho mượt (mô hình đọc lại từng slide / đoạn để câu chữ tự nhiên hơn; thêm thời gian, mặc định bật khi có GPU)<span id="polish-hint"></span></label>
-            <label><input id="opt-fast" type="checkbox"> Bản nháp nhanh (Gemma 4 E2B: nhanh hơn, kém chính xác hơn)<span id="fast-hint"></span></label>
-          </div>
         </details>
       </div>
+      <div id="sub-panel" hidden>
+        <label id="sub-drop" class="drop" tabindex="0">
+          <input id="sub-file" type="file" accept=".srt,.vtt" hidden>
+          <strong>Kéo thả tệp .srt hoặc .vtt vào đây</strong>
+          <span>hoặc bấm để chọn tệp</span>
+          <span id="sub-filename" class="filename"></span>
+        </label>
+        <label for="sub-src" class="field-label sub-paste">Hoặc dán nội dung phụ đề</label>
+        <textarea id="sub-src" rows="6" spellcheck="false" lang="en"></textarea>
+        <p id="sub-count" class="text-count muted">Chưa có câu thoại</p>
+        <div class="choices">
+          <fieldset class="choice">
+            <legend>Bản dịch</legend>
+            <label><input type="radio" name="sub-kind" value="bi" checked> Song ngữ</label>
+            <label><input type="radio" name="sub-kind" value="vi"> Chỉ tiếng Việt</label>
+          </fieldset>
+          <fieldset class="choice">
+            <legend>Định dạng</legend>
+            <label><input type="radio" name="sub-format" value="srt" checked> SRT</label>
+            <label><input type="radio" name="sub-format" value="vtt"> VTT</label>
+          </fieldset>
+        </div>
+        <p id="sub-note" class="note" hidden></p>
+        <p class="muted soon">Chép lời từ tệp ghi âm: sắp có</p>
+      </div>
       <div id="turnstile-box" class="turnstile"></div>
-      <button id="go" class="primary" disabled>Dịch</button>
-      <label id="engine-local-wrap" class="engine-switch"><input id="engine-local" type="checkbox"> Dịch trên máy (riêng tư, không gửi lên mạng)</label>
+      <p class="go-row"><button id="go" class="primary" disabled>Dịch</button></p>
     </section>
 
     <section class="card" id="text-result" hidden>
@@ -89,6 +156,17 @@
         <button id="text-copy" type="button">Sao chép bản dịch</button>
         <span id="text-copied" class="muted" role="status"></span>
       </p>
+    </section>
+
+    <section class="card" id="sub-result" hidden>
+      <h2>Phụ đề tiếng Việt</h2>
+      <p id="sub-packs" class="muted"></p>
+      <p id="sub-summary"></p>
+      <p class="dialog-actions">
+        <button id="sub-download" type="button" class="primary">Tải phụ đề</button>
+        <span id="sub-name" class="muted"></span>
+      </p>
+      <ol id="sub-out" class="sub-out"></ol>
     </section>
 
     <section class="card" id="progress" hidden>
@@ -116,8 +194,11 @@
       <h2>Kết quả</h2>
       <p id="summary"></p>
       <p id="review" class="review" hidden></p>
-      <a id="download" class="primary button" href="#">Tải bản dịch</a>
-      <button id="delete" type="button" title="Xóa bản dịch và báo cáo">Xóa</button>
+      <p class="dialog-actions">
+        <a id="download" class="primary button" href="#">Tải bản dịch</a>
+        <a id="download-docx" class="button" href="#" hidden>Tải bản DOCX</a>
+        <button id="delete" type="button" title="Xóa bản dịch và báo cáo">Xóa</button>
+      </p>
       <div id="skipped"></div>
       <div id="fonts"></div>
       <h3 id="flagged-title" hidden>Đoạn cần xem lại</h3>
@@ -127,11 +208,146 @@
       </table></div>
     </section>
 
+    <section class="card terms" id="terms" hidden>
+      <details id="terms-box">
+        <summary><h2>Xem lại thuật ngữ</h2></summary>
+        <h3>Từ mới</h3>
+        <p id="terms-new-note" class="muted" role="status" hidden></p>
+        <button id="terms-retry" type="button" class="link" hidden>Thử lại</button>
+        <div class="table-wrap"><table id="terms-new" hidden>
+          <thead><tr><th>Tiếng Anh</th><th>Tiếng Việt</th><th>Số lần</th></tr></thead>
+          <tbody></tbody>
+        </table></div>
+        <div id="terms-fixed-box" hidden>
+          <h3>Đã tự sửa</h3>
+          <div class="table-wrap"><table id="terms-fixed">
+            <thead><tr><th>Tiếng Anh</th><th>Mô hình viết</th><th>Đã sửa thành</th><th>Số lần</th></tr></thead>
+            <tbody></tbody>
+          </table></div>
+        </div>
+        <p class="dialog-actions">
+          <button id="terms-apply" type="button" class="primary" disabled>Áp dụng</button>
+          <button id="terms-send" type="button" disabled>Gửi cho tác giả</button>
+        </p>
+        <p id="terms-status" class="muted" role="status" hidden></p>
+        <p id="terms-sent" class="muted" role="status" hidden></p>
+        <p class="dialog-actions">
+          <a id="terms-download" class="primary button" href="#" hidden>Tải bản đã sửa</a>
+          <a id="terms-download-docx" class="button" href="#" hidden>Tải bản DOCX đã sửa</a>
+          <button id="terms-copy-original" type="button" class="link" hidden>Sao chép bản chưa sửa</button>
+        </p>
+      </details>
+    </section>
+
     <section class="card error" id="error" hidden>
       <h2>Có lỗi</h2>
       <p id="error-text"></p>
       <p id="error-detail" class="detail" hidden></p>
     </section>
+    </div>
+
+    <div id="view-anh" role="tabpanel" class="view" aria-labelledby="tab-anh" hidden>
+      <section class="card" id="anh-pick">
+        <div class="pick-buttons">
+          <label class="button primary" for="anh-camera">Chụp ảnh</label>
+          <input id="anh-camera" type="file" accept="image/*" capture="environment" hidden>
+          <label class="button" for="anh-files">Chọn ảnh</label>
+          <input id="anh-files" type="file" accept="image/*" multiple hidden>
+        </div>
+        <div id="anh-drop" class="drop" tabindex="0">
+          <strong>Kéo thả ảnh vào đây</strong>
+          <span>Nhiều ảnh được dịch lần lượt · Chụp thẳng, rõ nét, tránh lóa</span>
+        </div>
+        <p class="muted privacy">Ảnh không rời máy: chữ được đọc ngay trên máy, chỉ phần chữ được gửi đi dịch.</p>
+        <div id="anh-turnstile-box" class="turnstile"></div>
+        <p id="anh-status" class="status" role="status" aria-live="polite" hidden></p>
+        <div class="bar" id="anh-bar" hidden><div id="anh-bar-fill"></div></div>
+        <button id="anh-cancel" type="button" hidden>Dừng</button>
+      </section>
+
+      <div id="anh-results" class="results"></div>
+
+      <template id="anh-result-tpl">
+        <section class="card result">
+          <h2 class="result-title"></h2>
+          <p class="result-status muted" role="status"></p>
+          <p class="result-note note" hidden></p>
+          <div class="result-text" hidden>
+            <p class="result-packs muted"></p>
+            <ol class="pairs"></ol>
+            <p class="actions">
+              <button type="button" class="copy">Sao chép bản dịch</button>
+              <button type="button" class="share" hidden>Chia sẻ</button>
+              <span class="copied muted" role="status"></span>
+            </p>
+          </div>
+          <div class="result-image" hidden>
+            <h3>Ảnh đã dịch</h3>
+            <canvas class="shot"></canvas>
+            <p class="overflow muted" hidden></p>
+            <p class="actions">
+              <button type="button" class="primary save-png">Tải ảnh PNG</button>
+              <button type="button" class="save-jpg">Tải ảnh JPEG</button>
+              <button type="button" class="share-image" hidden>Chia sẻ ảnh</button>
+            </p>
+          </div>
+        </section>
+      </template>
+    </div>
+
+    <div id="view-live" role="tabpanel" class="view" aria-labelledby="tab-live" hidden>
+      <section class="card" id="live-controls">
+        <div class="modes" role="group" aria-label="Nguồn phụ đề">
+          <button type="button" class="mode" id="live-src-mic" aria-pressed="true">Micro</button>
+          <button type="button" class="mode" id="live-src-helper" aria-pressed="false" hidden>Phụ đề Windows / Chrome</button>
+        </div>
+        <p id="live-note-mic" class="muted small">Nhận dạng giọng nói do trình duyệt thực hiện (Google trên Chrome, Apple trên
+          Safari) và có thể gửi âm thanh lên máy chủ của họ.</p>
+        <div id="live-helper-box" hidden>
+          <label class="pick">Đọc phụ đề của
+            <select id="live-helper-source">
+              <option value="auto">Tự chọn: Windows Live Captions trước, Chrome sau</option>
+              <option value="windows">Windows Live Captions (Win + Ctrl + L)</option>
+              <option value="chrome">Live Caption của Chrome</option>
+            </select>
+          </label>
+          <p class="muted small">Cần ViTranslate đang chạy trên máy này. Trình duyệt có thể hỏi quyền truy cập mạng cục
+            bộ: hãy bấm Cho phép.</p>
+        </div>
+        <div id="live-turnstile-box" class="turnstile"></div>
+        <p class="actions">
+          <button type="button" id="live-start" class="primary">Bắt đầu</button>
+          <button type="button" id="live-stop" hidden>Dừng</button>
+          <button type="button" id="live-open-helper" hidden>Mở ViTranslate</button>
+        </p>
+        <p id="live-speed" class="muted small" hidden></p>
+        <p id="live-status" class="status" role="status" aria-live="polite" hidden></p>
+        <p id="live-packs" class="muted small" hidden></p>
+      </section>
+
+      <section id="live-stage" class="stage" aria-label="Phụ đề">
+        <div class="stage-tools">
+          <button type="button" id="live-fullscreen">Toàn màn hình</button>
+          <button type="button" id="live-pip" hidden>Cửa sổ nổi</button>
+        </div>
+        <div id="live-lines" class="lines" aria-live="polite">
+          <p id="live-stage-empty" class="stage-empty">Phụ đề sẽ hiện ở đây</p>
+        </div>
+      </section>
+
+      <section class="card" id="live-history">
+        <h2>Bản ghi</h2>
+        <p class="muted small">Chỉ nằm trong trình duyệt này, không lưu ở đâu; tự xóa 10 phút sau khi dừng.
+          <span id="live-clear-at"></span></p>
+        <p class="actions">
+          <button type="button" id="live-dl-txt" disabled>Tải TXT</button>
+          <button type="button" id="live-dl-srt" disabled>Tải SRT</button>
+          <button type="button" id="live-dl-docx" disabled>Tải DOCX</button>
+          <button type="button" id="live-clear" disabled>Xóa bản ghi</button>
+        </p>
+        <ol id="live-transcript" class="transcript"></ol>
+      </section>
+    </div>
   </main>
 
   <footer>Bản dịch máy – cần chuyên gia duyệt trước khi dùng.</footer>
@@ -146,6 +362,46 @@
       </ul>
       <label class="agree"><input id="agree" type="checkbox"> Tôi đã đọc và đồng ý</label>
       <button id="consent-ok" class="primary" value="ok" disabled>Tiếp tục</button>
+    </form>
+  </dialog>
+
+  <dialog id="feedback">
+    <form method="dialog">
+      <p>Gửi các thuật ngữ này cho tác giả để cập nhật dữ liệu? Chỉ gửi cặp thuật ngữ, không gửi câu nào của tài liệu.</p>
+      <ul id="feedback-rows" class="feedback-rows"></ul>
+      <p class="dialog-actions">
+        <button id="feedback-send" class="primary" value="send">Gửi</button>
+        <button id="feedback-no" value="no" autofocus>Không</button>
+      </p>
+    </form>
+  </dialog>
+
+  <dialog id="log-view" aria-labelledby="log-view-title">
+    <h2 id="log-view-title">Nhật ký</h2>
+    <p class="muted small">Chỉ lưu trong trình duyệt này, không chứa nội dung bạn dịch.</p>
+    <ol id="log-lines" class="log"></ol>
+    <p id="log-empty" class="muted">Chưa có sự kiện.</p>
+    <p class="dialog-actions">
+      <button id="log-copy" type="button">Sao chép</button>
+      <button id="log-clear" type="button">Xóa</button>
+      <button id="log-close" type="button" class="primary">Đóng</button>
+      <span id="log-copied" class="muted" role="status"></span>
+    </p>
+  </dialog>
+
+  <dialog id="live-consent">
+    <form method="dialog">
+      <h2>Trước khi bắt đầu</h2>
+      <ul>
+        <li>Bản dịch do AI tạo ra, cần đối chiếu với lời người nói.</li>
+        <li>Từng câu tiếng Anh được gửi lên máy chủ để dịch, không lưu lại và không dùng để huấn luyện mô hình. Trang
+          không ghi âm.</li>
+        <li>Nguồn Micro: nhận dạng giọng nói do trình duyệt (Google / Apple) thực hiện và có thể gửi âm thanh lên máy
+          chủ của họ.</li>
+        <li>Không dùng cho buổi có thông tin định danh người bệnh.</li>
+      </ul>
+      <label class="agree"><input id="live-agree" type="checkbox"> Tôi đã đọc và đồng ý</label>
+      <button id="live-consent-ok" class="primary" value="ok" disabled>Tiếp tục</button>
     </form>
   </dialog>
 

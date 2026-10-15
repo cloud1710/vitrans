@@ -114,7 +114,7 @@ try {
   }
   await page.waitForFunction(() => document.getElementById("status").textContent === "Sẵn sàng", null, { timeout: 60000 });
   console.log("engine: " + ascii(await page.textContent("#status")));
-  await page.click("#mode-file");  // the text mode comes first
+  await page.click("#tab-file");  // the text tab comes first
   for (const doc of docs) {
     const name = basename(doc);
     const seen = new Set(calls.map((c) => c.request.job_id));

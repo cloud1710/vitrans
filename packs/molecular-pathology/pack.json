@@ -1,4 +1,4 @@
-{"id": "molecular-pathology", "version": "0.1.0", "name": "Bệnh học phân tử ung thư", "parent": "molecular",
+{"id": "molecular-pathology", "version": "0.1.2", "name": "Bệnh học phân tử ung thư", "parent": "molecular",
  "draft": true,
  "detect": ["next-generation sequencing", "next generation sequencing", "variant allele frequency",
             "tumor mutational burden", "tumour mutational burden", "microsatellite instability", "MSI-H",

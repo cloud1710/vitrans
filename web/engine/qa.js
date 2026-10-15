@@ -415,9 +415,21 @@ function numbers(text) {
   return NUM_RE.findall(text).map((n) => n.replaceAll(",", ".")).sort(cmpStr);
 }
 
+const MONTHS = new Map(Object.entries({ january: "1", jan: "1", february: "2", feb: "2", march: "3", mar: "3",
+  april: "4", apr: "4", may: "5", june: "6", jun: "6", july: "7", jul: "7", august: "8", aug: "8", september: "9",
+  sept: "9", sep: "9", october: "10", oct: "10", november: "11", nov: "11", december: "12", dec: "12" }));
+const MONTH_RE = compile("(?<![A-Za-z])(" + [...MONTHS.keys()].sort((x, y) => y.length - x.length).join("|") +
+  ")(?![A-Za-z])", "i");
+
+/** True when the output's numbers are not the source's; an English month name of the source may come back as its
+ * number ("1-3 November 2026" -> "1-3 tháng 11 năm 2026"), once per name. */
 export function numbersChanged(srcPlain, outPlain) {
   const a = numbers(srcPlain);
   const b = numbers(outPlain);
+  for (const name of MONTH_RE.findall(srcPlain)) {
+    const n = MONTHS.get(name.toLowerCase());
+    if (b.filter((x) => x === n).length > a.filter((x) => x === n).length) b.splice(b.indexOf(n), 1);
+  }
   return a.length !== b.length || a.some((x, k) => x !== b[k]);
 }
 
@@ -464,7 +476,9 @@ function extend(text, s, e, vi, lo) {
   return [ls, reEnd];
 }
 
-function replaceWrong(rx, out, vi, canonSpans) {
+/** out with every match of rx (outside the canonical spans) replaced by vi; each [text found, text written] pair is
+ * added to done. */
+function replaceWrong(rx, out, vi, canonSpans, done) {
   const parts = [];
   let pos = 0;
   for (const m of rx.finditer(out)) {
@@ -477,15 +491,22 @@ function replaceWrong(rx, out, vi, canonSpans) {
     else if (isUpperCh(firstCp(word)) && startsSentence(out, ls)) rep = firstCp(vi).toUpperCase() + vi.slice(firstCp(vi).length);
     else rep = vi;
     parts.push(out.slice(pos, ls), rep);
+    done.push([word, rep]);
     pos = reEnd;
   }
   parts.push(out.slice(pos));
   return parts.join("");
 }
 
+/** Add one fix row {en, from, to} to log unless it is there already. */
+function logFix(log, en, found, written) {
+  if (!log.some((r) => r.en === en && r.from === found && r.to === written)) log.push({ en, from: found, to: written });
+}
+
 /** Source-gated, idempotent VN->VN replacement of known wrong variants (term-lock). fixes: TermFix-like {en, vi,
- * wrong}. Returns [text, applied English keys]. */
-export function applyTermFixes(out, srcPlain, fixes) {
+ * wrong}. Returns [text, applied English keys]. With an array log, every replacement not logged yet is added as
+ * {en: the fix's English key, from: the text found (the whole replaced span), to: the text written}. */
+export function applyTermFixes(out, srcPlain, fixes, log = null) {
   out = nfc(out);
   const srcLow = nfc(srcPlain).toLowerCase();
   const applied = [];
@@ -505,15 +526,52 @@ export function applyTermFixes(out, srcPlain, fixes) {
     let hit = false;
     for (const rx of wrongs) {
       const spans = canon ? [...canon.finditer(out)].map((m) => m.span()) : [];
-      const next = replaceWrong(rx, out, vi, spans);
+      const done = [];
+      const next = replaceWrong(rx, out, vi, spans, done);
       if (next !== out) {
         hit = true;
         out = next;
+        for (const [found, written] of done) if (log && found !== written) logFix(log, fx.en, found, written);
       }
     }
     if (hit) applied.push(fx.en);
   }
   return [out, applied];
+}
+
+// Vietnamese academic titles go before the name, highest first, with a dot after each (his rule): GS. / PGS. (academic
+// rank), TS. (doctorate), ThS. (master), then BS. / CN. / KS. (first degrees); equal ranks keep their order.
+export const TITLE_RANK = new Map([["GS", 0], ["PGS", 0], ["TS", 1], ["ThS", 2], ["BS", 3], ["CN", 3], ["KS", 3]]);
+export const TITLE_FIX = "title-order"; // the "en" of its log rows and its term_fix flag
+const ACADEMIC_RUN_RE = compile(String.raw`(?<![\w.\-])(?:(?:PGS|GS|ThS|TS|BS|CN|KS)\.?[ \t]+)+(?=(?:<g\d+>)*[^\W\d_])`);
+const ACADEMIC_RE = compile("PGS|GS|ThS|TS|BS|CN|KS");
+const NAME_AFTER_RE = compile(String.raw`(?:<g\d+>)*([^\W\d_][\w'\u2019\-]*)`);
+
+/** [text, applied]: each run of Vietnamese academic titles (TITLE_RANK) written right before a capitalised name (a
+ * word with a capital first letter and a lower-case letter; opening tags may come between) is written in TITLE_RANK
+ * order, each title once, with a dot after each: "BS TS Jane Doe" -> "TS. BS. Jane Doe". Titles after a name, titles
+ * split by a tag, a comma or a hyphen, and every other word stay as they are. applied = [TITLE_FIX] when a run
+ * changed; with an array log, every rewrite not logged yet is added as {en: TITLE_FIX, from: the run, to: the run
+ * written}. */
+export function fixTitleOrder(out, log = null) {
+  const parts = [];
+  let pos = 0;
+  for (const m of ACADEMIC_RUN_RE.finditer(out)) {
+    const name = NAME_AFTER_RE.match(out, m.end()).group(1);
+    if (!isUpperCh(firstCp(name)) || pyIsUpper(name)) continue;
+    const run = pyRstrip(m.group(0), " \t");
+    const titles = ACADEMIC_RE.findall(run);
+    const order = [...new Set([...titles].sort((a, b) => TITLE_RANK.get(a) - TITLE_RANK.get(b)))];
+    if (order.length === titles.length && order.every((t, k) => t === titles[k]) &&
+      run.split(".").length - 1 === titles.length) continue;
+    const written = order.map((t) => t + ".").join(" ");
+    parts.push(out.slice(pos, m.start()), written);
+    pos = m.start() + run.length;
+    if (log) logFix(log, TITLE_FIX, run, written);
+  }
+  if (!parts.length) return [out, []];
+  parts.push(out.slice(pos));
+  return [parts.join(""), [TITLE_FIX]];
 }
 
 // Acronyms and codes the output must keep (HER2, CCRCC, ChRCC, UCa, 22q11.2, NM_000546.6, p.V600E).
@@ -591,8 +649,11 @@ export function glossaryMisses(srcPlain, outPlain, hits) {
     .map(([en]) => en);
 }
 
-/** Invalid-looking Vietnamese tokens, ignoring words copied from the source (eponyms). */
-export function suspiciousTokens(outPlain, srcPlain = "") {
+/** Invalid-looking Vietnamese tokens, ignoring words copied from the source (eponyms) and the words of allowed (an
+ * array or Set of lower-case words: the words of the active packs' Vietnamese values that are no regular syllable,
+ * packs.allowedWords) in any case. */
+export function suspiciousTokens(outPlain, srcPlain = "", allowed = []) {
   const srcLow = srcPlain.toLowerCase();
-  return suspicious(outPlain).filter((t) => !srcLow.includes(t.toLowerCase()));
+  const allow = allowed instanceof Set ? allowed : new Set(allowed);
+  return suspicious(outPlain).filter((t) => !srcLow.includes(t.toLowerCase()) && !allow.has(t.toLowerCase()));
 }

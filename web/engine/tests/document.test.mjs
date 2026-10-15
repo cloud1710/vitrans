@@ -5,7 +5,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { describe } from "./describe.mjs";
-import { collectItems, isStopHeading } from "../ooxml/document.js";
+import { collectItems, isStopHeading, isBackMatterHeading } from "../ooxml/document.js";
 import { apply } from "../ooxml/codec.js";
 import { OoxmlPackage } from "../ooxml/package.js";
 import { iterElements } from "../ooxml/lx.js";
@@ -116,18 +116,49 @@ test("a docx text box does not stop", () => {
   assert.ok(byText(its).get("Final diagnosis: atypical meningioma.").segment);
 });
 
-for (const [k, translated] of [[1, true], [2, true], [3, true], [4, false], [5, false]]) {
+// 4 and 5: a plain "References" (no style, outline level 9) is closed by the back-matter title "Appendix A"
+for (let k = 1; k <= 5; k++) {
   test("docx references region " + k, () => {
     const by = byText(items("refs_region_" + k + ".docx"));
     assert.ok(by.get("Body text before the list").segment);
     assert.equal(by.get("References").skip, "references");
     assert.equal(by.get("Louis DN et al. Neuro Oncol 2021").skip, "references");
     for (const text of ["Appendix A", "Staining protocol for the lab"]) {
-      if (translated) assert.ok(by.get(text).segment && !by.get(text).skip, text);
-      else assert.equal(by.get(text).skip, "references", text);
+      assert.ok(by.get(text).segment && !by.get(text).skip, text);
     }
   });
 }
+
+const BACK_MATTER = ["Appendix", "Appendix A", "APPENDIX 2", "Appendix S1: Staining protocols", "Appendices", "Annex 1",
+  "Supplementary", "Supplementary Material", "Supplementary data", "Supplementary Information",
+  "Supplementary methods", "Supplementary Figures", "Supplementary tables", "Supporting Information",
+  "Online Resource 1", "Acknowledgements", "Acknowledgments", "Abbreviations", "Glossary", "Figure legends", "Tables",
+  "Author contributions", "Funding", "Conflict of interest", "Conflicts of Interest", "Competing interests",
+  "Data availability", "About the author", "About the Authors", "7. Acknowledgements", "A. Appendix",
+  "Appendix 1. Questionnaire", "Funding:", "Ph\u{1ee5} l\u{1ee5}c", "PH\u{1ee4} L\u{1ee4}C 2", "Phu luc 1"];
+
+test("back-matter titles (the Python list)", () => {
+  for (const t of BACK_MATTER) assert.ok(isBackMatterHeading(t), t);
+  for (const t of ["References", "Staining protocol for the lab", "Louis DN et al. Neuro Oncol 2021",
+    "Funding. J Synth Path. 2020;1:1-9.", "Tables of the synthetic series in a long form for the lab",
+    "Appendix A. Example AB et al. 2019", "Appendicitis", "Funding was provided by the synthetic fund",
+    "Abbreviations used in the synthetic text are listed below in full"]) assert.ok(!isBackMatterHeading(t), t);
+  assert.ok(isBackMatterHeading("Ph\u{1ee5} l\u{1ee5}c".normalize("NFD")));
+});
+
+test("a back-matter title closes the references region whatever its style or level", () => {
+  for (const name of ["refs_backmatter_plain.docx", "refs_backmatter_deeper.docx"]) {
+    const by = byText(items(name));
+    for (const text of ["References", "Louis DN et al. Neuro Oncol 2021", "Funding. J Synth Path. 2020;1:1-9."]) {
+      assert.equal(by.get(text).skip, "references", name + " " + text);
+    }
+    for (const text of ["Acknowledgements", "Staining protocol for the lab"]) {
+      assert.ok(by.get(text).segment && !by.get(text).skip, name + " " + text);
+    }
+  }
+  // a plain paragraph after a plain "References" that is no back-matter title stays inside
+  assert.ok(items("refs_plain_inside.docx").every((i) => i.skip === "references"));
+});
 
 for (let k = 1; k <= 6; k++) {
   test("docx references sub-headings " + k, () => {

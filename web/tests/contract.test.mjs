@@ -7,19 +7,22 @@ import "../engine/tests/dom-node.mjs";
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { sessionApi, classifyApi, translateApi, statusApi } from "../../functions/_lib/api.js";
-import { makeEnv, echoAI, fakeSiteverify, TEST_PASS, syntheticBundle, ORIGIN } from "../../tests/functions/helpers.mjs";
+import { sessionApi, classifyApi, translateApi, statusApi, termsApi, feedbackApi } from "../../functions/_lib/api.js";
+import { makeEnv, echoAI, fakeSiteverify, TEST_PASS, syntheticBundle, ORIGIN, FakeD1 }
+  from "../../tests/functions/helpers.mjs";
 import { createCloud, cloudJob, BATCH_SIZE, CONCURRENCY } from "../cloud.js";
 import { textSegments, textOutput } from "../text.js";
 import { translateFile } from "../engine/pipeline.js";
+import { TermReview, feedbackBatch, mainPack } from "../terms.js";
 
 const ROUTES = { "/api/v1/session": sessionApi, "/api/v1/classify": classifyApi, "/api/v1/translate": translateApi,
-  "/api/v1/status": statusApi };
+  "/api/v1/status": statusApi, "/api/v1/terms": termsApi, "/api/v1/feedback": feedbackApi };
 
 // fetch for createCloud: every request goes to the handler of its path, as the Pages runtime would route it.
-// answer(source) -> the scripted model's answer (default: echoAI's "Bản dịch: <source>", English the gate refuses).
+// answer(source, inputs) -> the scripted model's answer (default: echoAI's "Bản dịch: <source>", English the gate
+// refuses); feedback goes to an in-memory D1.
 function functionsServer(answer) {
-  const env = makeEnv({ AI: echoAI(answer ? { answer } : {}), ALLOW_TEST_TURNSTILE: "1" });
+  const env = makeEnv({ AI: echoAI(answer ? { answer } : {}), ALLOW_TEST_TURNSTILE: "1", FEEDBACK: new FakeD1() });
   const deps = { bundle: syntheticBundle(), fetch: fakeSiteverify(TEST_PASS).fetch, now: () => Date.now(),
     sleep: async () => {} };
   const calls = [];
@@ -106,4 +109,44 @@ test("a .docx through the page pipeline with the Functions as its engine: writte
   assert.deepEqual(server.calls.filter((c) => c.status !== 200), []);
   assert.equal(new Set(tr.map((c) => c.body.setup_id)).size, 1);
   assert.ok(events.includes("classify") && events.includes("write") && events.at(-1) === "done");
+});
+
+// ---- term review (spec Amendment G): /terms and /feedback ----
+
+const VI_T = {
+  "The biopsy showed a tumour with spindle cells.": "Sinh thiết cho thấy khối bướu có tế bào hình thoi.",
+  "Spindle cells were seen in the tumour.": "Thấy tế bào hình thoi trong khối bướu.",
+  "No necrosis.": "Không có hoại tử.",
+};
+const TERMS_ANSWER = JSON.stringify({ terms: [{ en: "spindle cells", vi: "tế bào hình thoi" },
+  { en: "biopsy", vi: "sinh thiết" }] });
+const termsModel = (src, inputs) => (/You review the terminology/.test(inputs.messages[0].content) ? TERMS_ANSWER
+  : VI_T[src] || "?");
+
+test("term review: the core's fixes come with the results; /terms and /feedback take what the page sends", async () => {
+  const server = functionsServer(termsModel);
+  const cloud = await session(server);
+  const t = textSegments(Object.keys(VI_T).join("\n"));
+  const job = cloudJob(cloud, { jobId: "job-terms-1" });
+  // the synthetic pack "alpha": a term fix tumour -> u (wrong: khối bướu), biopsy one of its glossary keys
+  await job.prepare(t.fullText, { domain: "alpha" });
+  const results = await job.translateSegments(t.segments);
+  const review = new TermReview({ segments: t.segments, results, pack: mainPack(job.setup) });
+  assert.equal(review.pack, "alpha");
+  assert.deepEqual(review.fixed.map((r) => [r.en, r.from, r.used, r.count]), [["tumour", "khối bướu", "u", 2]]);
+  review.setNew(await job.terms(review.items()));
+  // "biopsy" is a key of the job's pack: not a new term
+  assert.deepEqual(review.fresh.map((r) => [r.en, r.used, r.count, [...r.ids]]),
+    [["spindle cells", "tế bào hình thoi", 2, ["0", "1"]]]);
+  const applied = review.apply(new Map([[review.fresh[0].key, "tế bào hình suốt"], [review.fixed[0].key, "khối u"]]));
+  assert.equal(applied.segments, 2);
+  assert.deepEqual(review.current.map((r) => r.text), ["Sinh thiết cho thấy khối u có tế bào hình suốt.",
+    "Thấy tế bào hình suốt trong khối u.", "Không có hoại tử."]);
+  assert.deepEqual(await job.feedback(feedbackBatch(review.pending(), review.pack).items), { ok: true, stored: 2 });
+  assert.deepEqual(server.calls.filter((c) => c.status !== 200).map((c) => c.path + " " + c.status), []);
+  const terms = server.calls.find((c) => c.path === "/api/v1/terms").body;
+  assert.deepEqual(Object.keys(terms).sort(), ["items", "job_id", "session", "setup", "setup_id"]);
+  assert.equal(terms.job_id, "job-terms-1");
+  const fb = server.calls.find((c) => c.path === "/api/v1/feedback").body;
+  assert.deepEqual(Object.keys(fb).sort(), ["items", "session"]);
 });

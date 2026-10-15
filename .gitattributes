@@ -1,3 +1,10 @@
 web/engine/vendor/** -text
 web/engine/tests/fixtures/engine/packs/** -text
 packs/** text eol=lf
+web/engine/tests/vendor/** -text
+web/ocr/vendor/** -text
+web/ocr/models/** -text
+installer/macos/** text eol=lf
+web/pdf/vendor/** -text
+installer/*.iss text eol=crlf
+installer/lang/*.isl text eol=crlf

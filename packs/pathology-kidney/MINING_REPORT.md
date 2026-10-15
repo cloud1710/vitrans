@@ -41,6 +41,13 @@ Xung đột với pack cha `pathology`, với bảng người dùng đã sửa, 
 
 Không có xung đột nào với quyết định 6 (LVI / PNI = xâm nhập, invasion trần = xâm lấn). Các dòng "invasion" ở đây đều là xâm lấn đại thể / giai đoạn (mỡ quanh thận, mỡ xoang thận, tĩnh mạch thận), và đều viết "xâm lấn". Riêng "invasive urothelial carcinoma" = "... xâm nhập" theo mẫu `invasive ductal carcinoma` của pack cha. Ứng viên cho `_shared/specimen_context` (quyết định 11): `nephrectomy specimen`.
 
+### Thay đổi 2026-10-15 18:48 (bản 0.1.3)
+
+- end-stage renal disease = **"bệnh thận giai đoạn cuối"** (trước: "suy thận giai đoạn cuối") theo medicine M8 (cột đề
+  xuất anh đã nhận): một giá trị với `medicine` và với dòng end-stage kidney disease của gói này. Tin xấu: số đếm của
+  gói này nghiêng về "suy thận giai đoạn cuối" (7 tài liệu, S5 N2). proteinuria = "đạm niệu" được xác nhận (M11).
+  Thêm 1 test.
+
 ## 4. Số đếm không xác nhận được offline
 
 Dòng glossary giữ nguyên. Chi tiết từng dòng ở cột cuối của `sources.md`.

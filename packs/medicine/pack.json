@@ -1,0 +1,7 @@
+{"id": "medicine", "version": "0.1.1", "name": "Nội khoa",
+ "detect": ["comorbidity", "comorbidities", "hospitalization", "hospitalisation", "inpatient", "outpatient",
+            "physical examination", "vital signs", "chief complaint", "past medical history", "readmission",
+            "dyspnea", "dyspnoea", "hypertension", "diabetes mellitus", "type 2 diabetes", "heart failure",
+            "chronic kidney disease", "atrial fibrillation", "COPD", "stroke", "serum creatinine", "eGFR", "HbA1c",
+            "hyponatremia", "electrolytes", "polypharmacy", "adverse drug reaction", "geriatric",
+            "orthostatic hypotension"]}

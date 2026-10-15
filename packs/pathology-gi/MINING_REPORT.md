@@ -234,6 +234,12 @@ Các điểm **đồng thuận** với pack cha: metaplasia = dị sản, dyspla
 17. "juvenile polyp": "polyp thiếu niên" (không có bằng chứng).
 18. "Lauren": "thể ruột / thể lan tỏa" (tạp chí 10) hay "típ ruột / típ lan toả" như BYT-GC20.
 
+### Thay đổi 2026-10-15 18:48 (bản 0.1.4)
+
+- neoadjuvant chemoradiotherapy = **"hóa xạ trị tân bổ trợ"** (trước: "hóa xạ trị tiền phẫu"): lựa chọn 2 của anh,
+  neoadjuvant = "tân bổ trợ" ở mọi gói. Tin xấu: số đếm của gói này nghiêng về "tiền phẫu" (5 tài liệu, 4 tiêu đề) so
+  với "tân bổ trợ" 1. Thêm 1 test.
+
 ## 7. File trong pack
 
 - `pack.json`: id pathology-gi, parent pathology, draft true, 30 từ khóa detect.

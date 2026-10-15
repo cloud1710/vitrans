@@ -1,0 +1,7 @@
+{"id": "surgery", "version": "0.1.1", "name": "Ngoại khoa",
+ "detect": ["laparoscopic", "laparoscopy", "laparotomy", "perioperative", "Clavien-Dindo", "anastomotic leak",
+            "conversion to open", "operative time", "trocar", "surgical site infection",
+            "Enhanced Recovery After Surgery", "minimally invasive surgery", "robotic surgery", "robot-assisted",
+            "spinal anesthesia", "general anesthesia", "epidural anesthesia", "nerve block", "ASA physical status",
+            "cholecystectomy", "appendectomy", "hernia repair", "inguinal hernia", "ileostomy", "colostomy",
+            "reoperation", "postoperative ileus", "seroma"]}

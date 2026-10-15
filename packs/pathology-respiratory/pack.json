@@ -1,4 +1,4 @@
-{"id": "pathology-respiratory", "version": "0.1.0", "name": "Giải phẫu bệnh hô hấp", "parent": "pathology", "draft": true,
+{"id": "pathology-respiratory", "version": "0.1.2", "name": "Giải phẫu bệnh hô hấp", "parent": "pathology", "draft": true,
  "detect": ["lung", "pulmonary", "pleura", "pleural", "lepidic",
             "minimally invasive adenocarcinoma", "spread through air spaces", "visceral pleural invasion",
             "non-small cell lung", "small cell lung", "NSCLC", "SCLC", "napsin A", "mesothelioma",

@@ -76,6 +76,9 @@ class Outcome:
     level: int
     flags: list = field(default_factory=list)
     cached: bool = False
+    # the deterministic fixes written into the text: {"en": term-fix key (or qa.TITLE_FIX), "from": the text found,
+    # "to": the text written}, in the order made, each once
+    fixes: list = field(default_factory=list)
 
 
 def build_system(style_prompt, pack, hits):
@@ -144,14 +147,25 @@ def _code_only(plain):
 
 
 _CAPS_WORD_RE = re.compile(r"(?<![A-Za-z])[A-Z]{4,}(?![A-Za-z])")
+_CAPS_ANY_RE = re.compile(r"(?<![A-Za-z0-9])[A-Z]+(?![A-Za-z0-9])")
+# English function words that only prose has (never a gene, marker or degree), and the month names of a date
+_CAPS_FUNCTION = set("I AM AN AS AT BE BY IF IN IS OF ON OR TO WE THE AND FOR ARE WAS WITH FROM YOUR OUR THIS THAT "
+                     "WILL".split())
+_CAPS_MONTHS = set("JANUARY FEBRUARY MARCH APRIL MAY JUNE JULY AUGUST SEPTEMBER OCTOBER NOVEMBER DECEMBER".split())
 
 
 def _caps_prose(plain, hits=()):
     """True for ALL-CAPS English that _code_only would keep ("SEVEN YEARS LATER", "SPINDLE CELL"): two capital words
-    of 4+ letters with 2+ vowels each (gene symbols such as BRAF, KRAS, TERT have one), or a glossary term written
-    with lower-case letters ("spindle cell") found in it."""
+    of 4+ letters with 2+ vowels each (gene symbols such as BRAF, KRAS, TERT have one), one such word with an English
+    function word ("I AM ATTENDING ASDP 2026"), a month name with a number (a date: "1-3 NOVEMBER 2026"), or a
+    glossary term written with lower-case letters ("spindle cell") found in it."""
     wordy = [w for w in _CAPS_WORD_RE.findall(plain) if sum(c in "AEIOU" for c in w) >= 2]
     if len(wordy) >= 2:
+        return True
+    words = _CAPS_ANY_RE.findall(plain)
+    if wordy and any(w in _CAPS_FUNCTION for w in words):
+        return True
+    if any(c.isdigit() for c in plain) and any(w in _CAPS_MONTHS for w in words):
         return True
     low = plain.lower()
     return any(en != en.upper() and len(re.sub(r"[^A-Za-z]", "", en)) >= 4
@@ -314,7 +328,8 @@ def _find_free(text, target, split_left=False, split_right=False):
 
 
 class Translator:
-    def __init__(self, llm, system, model_key, pack_key, fixes=(), hits=(), tm=None):
+    def __init__(self, llm, system, model_key, pack_key, fixes=(), hits=(), tm=None, allowed=()):
+        """allowed: words the suspicious-word check accepts (packs.allowed_words of the job's merged pack)."""
         self.llm = llm
         self.system = system
         self.model_key = model_key
@@ -322,6 +337,7 @@ class Translator:
         self.fixes = list(fixes)
         self.hits = list(hits)
         self.tm = tm
+        self.allowed = frozenset(w.lower() for w in allowed)
         self._system_hash = hashlib.sha256(system.encode("utf-8")).hexdigest()[:12]
         # glossary terms kept in English (vi == en) never count as English left
         self._kept = [re.compile(r"(?<!\w)" + re.escape(en.strip()) + r"(?!\w)", re.I)
@@ -403,10 +419,10 @@ class Translator:
         if memo[t]:
             yield memo[t]
 
-    def _reattach(self, work, prev, nxt, flags):
-        """Levels 4-5: translate without <g> tags, drop markdown emphasis, apply term fixes, then wrap each span's own
-        translation where found verbatim. Returns (text, level); level 3 when no span is left to re-attach,
-        (None, None) for an empty answer."""
+    def _reattach(self, work, prev, nxt, flags, log):
+        """Levels 4-5: translate without <g> tags, drop markdown emphasis, apply term fixes (logged in log), then wrap
+        each span's own translation where found verbatim. Returns (text, level); level 3 when no span is left to
+        re-attach, (None, None) for an empty answer."""
         plain_src = strip_tags(work.tagged, keep_x=True)
         raw = qa.strip_leaks(plain_src, self._ask(plain_src, prev, nxt))
         out = repair(plain_src, _drop_blank_invented(plain_src, normalize_tokens(raw, plain_src)))
@@ -415,7 +431,7 @@ class Translator:
             return None, None
         if stripped:
             flags.append("suspect_output:markdown")
-        out, applied = qa.apply_term_fixes(out, _plain(work.tagged), self.fixes)
+        out, applied = qa.apply_term_fixes(out, _plain(work.tagged), self.fixes, log)
         flags += ["term_fix:" + a for a in applied]
         if not work.spans:
             return out, 3
@@ -462,19 +478,21 @@ class Translator:
         if lost:
             flags.append("acronym_lost:" + ",".join(lost))
         flags += ["suspect_output:" + r for r in _suspect(src_plain, plain, context)]
-        flags += ["suspicious:" + t for t in qa.suspicious_tokens(plain, src_plain)]
+        flags += ["suspicious:" + t for t in qa.suspicious_tokens(plain, src_plain, self.allowed)]
         if stray_markup(work.tagged, out):
             flags.append("stray_markup")
         flags += ["glossary_miss:" + en for en in qa.glossary_misses(src_plain, plain, self.hits)]
         flags += [OMITTED_ISSUE + c for c in qa.omitted_clauses(src_plain, plain)]
         return flags
 
-    def _finish(self, work, out, flags, context=False):
+    def _finish(self, work, out, flags, context=False, log=None):
+        """Deterministic finishing (term fixes and the title order logged in log), then the check flags."""
         out = restore_spaces(work.tagged, out)
         out = qa.fix_latex(_plain(work.tagged), out)  # "$\beta$" -> the symbol; other LaTeX stays for the flag
-        out, applied = qa.apply_term_fixes(out, _plain(work.tagged), self.fixes)
+        out, applied = qa.apply_term_fixes(out, _plain(work.tagged), self.fixes, log)
+        out, titled = qa.fix_title_order(out, log)  # Vietnamese academic titles: before the name, in order
         out = qa.source_case(_plain(work.tagged), out)  # sentence-initial capital from the source, never the model's
-        flags += ["term_fix:" + a for a in applied]
+        flags += ["term_fix:" + a for a in applied + titled]
         flags += self._checks(work, out, context)
         return out
 
@@ -492,14 +510,15 @@ class Translator:
         if _citation_only(_plain(seg.tagged)):
             return Outcome(seg.tagged, seg, 0, ["kept_reference"])
         key = self._key(seg)
+        log = []  # the fixes written into the text (Outcome.fixes)
         if self.tm is not None:
             hit = self.tm.get(key)
             if hit:
                 text, level = hit
                 work = seg if level < 3 else seg.reduced(is_essential)
                 flags = []
-                text = self._finish(work, text, flags)  # same finishing as a fresh run: same text, same flags
-                return Outcome(text, work, level, flags, cached=True)
+                text = self._finish(work, text, flags, log=log)  # same finishing as a fresh run: same text and flags
+                return Outcome(text, work, level, flags, cached=True, fixes=log)
         if len(_plain(seg.tagged).split()) < SHORT_WORDS:
             prev = nxt = ""  # titles and table cells: the neighbours bleed into short answers
         context = bool(prev or nxt)
@@ -522,7 +541,7 @@ class Translator:
             if reduced.spans and reduced.tagged != seg.tagged:  # all spans essential: L3 would repeat L0, go to L4
                 out, _ = self._tagfix(work, self._ask(work.tagged, prev, nxt))
         if out is None:
-            out, level = self._reattach(work, prev, nxt, flags)
+            out, level = self._reattach(work, prev, nxt, flags, log)
             if out is None:
                 # every answer was empty: keep the source as it is (flagged, not cached) rather than erase the text
                 return Outcome(seg.tagged, seg, 5, ["empty_output"] + self._checks(seg, seg.tagged))
@@ -543,7 +562,7 @@ class Translator:
         if stripped:
             flags.append("suspect_output:markdown")
         stored = out  # the TM keeps the text before finishing; every hit runs the same finishing again
-        out = self._finish(work, out, flags, context)
+        out = self._finish(work, out, flags, context, log)
         if self.tm is not None and _cacheable(level, flags):
             self.tm.put(key, stored, level)
-        return Outcome(out, work, level, flags)
+        return Outcome(out, work, level, flags, fixes=log)

@@ -226,20 +226,27 @@ class Calibrator:
         return t is None or not t.is_alive()
 
 
+class PullError(Exception):
+    """Ollama reported an error in the pull stream, or the stream ended without "success"."""
+
+
 class ModelPull:
-    """Download one model through Ollama (/api/pull), only after the user allowed it on the page (the server passes
-    the recommended model); status() names the last model asked for (None before any)."""
+    """Download one model through Ollama (/api/pull, streamed), only after the user allowed it: the page's button or
+    the installed helper's first-run setup (setup.py), each passing the recommended model. status() names the last
+    model asked for (None before any) and the bytes done / to do over the layers seen so far (None before any)."""
 
     def __init__(self, base_url=None, transport=None, timeout=7200.0):
         self.base_url, self.transport, self.timeout = base_url, transport, timeout
         self.model = None
         self._state, self._error = "idle", None
+        self._completed = self._total = None
         self._thread = None
         self._lock = threading.Lock()
 
     def status(self):
         with self._lock:
-            return {"model": self.model, "state": self._state, "error": self._error}
+            return {"model": self.model, "state": self._state, "error": self._error, "completed": self._completed,
+                    "total": self._total}
 
     def start(self, model):
         with self._lock:
@@ -247,6 +254,7 @@ class ModelPull:
                 return
             self.model = model
             self._state, self._error = "running", None
+            self._completed = self._total = None
             self._thread = threading.Thread(target=self._run, name="model-pull", daemon=True)
             self._thread.start()
 
@@ -255,14 +263,37 @@ class ModelPull:
             self._thread.join(timeout)
         return self._thread is None or not self._thread.is_alive()
 
+    def _layer(self, layers, msg):
+        digest, total, done = msg.get("digest"), msg.get("total"), msg.get("completed")
+        if not (isinstance(digest, str) and isinstance(total, int) and total > 0):
+            return
+        layers[digest] = (done if isinstance(done, int) else 0, total)
+        with self._lock:
+            self._completed = sum(d for d, _ in layers.values())
+            self._total = sum(t for _, t in layers.values())
+
     def _run(self):
         base = (self.base_url or config.ollama_url()).rstrip("/")
+        layers, ok = {}, False
         try:
             with httpx.Client(timeout=httpx.Timeout(self.timeout, connect=5.0), transport=self.transport) as c:
-                resp = c.post(base + "/api/pull", json={"model": self.model, "stream": False})
-                resp.raise_for_status()
+                with c.stream("POST", base + "/api/pull", json={"model": self.model, "stream": True}) as resp:
+                    resp.raise_for_status()
+                    for line in resp.iter_lines():
+                        try:
+                            msg = json.loads(line)
+                        except ValueError:
+                            continue
+                        if not isinstance(msg, dict):
+                            continue
+                        if msg.get("error"):
+                            raise PullError(str(msg["error"]))
+                        self._layer(layers, msg)
+                        ok = ok or msg.get("status") == "success"
+            if not ok:
+                raise PullError("the download stopped before it finished")
             state, error = "done", None
-        except httpx.HTTPError as exc:
+        except (httpx.HTTPError, PullError) as exc:
             state, error = "error", (str(exc) or type(exc).__name__)[:200]
         with self._lock:
             self._state, self._error = state, error

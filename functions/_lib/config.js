@@ -1,5 +1,6 @@
 // Configuration of the translation API: wrangler.toml [vars] (strings) with these defaults. Secrets
-// (TURNSTILE_SECRET, SESSION_SECRET) and bindings (AI, COUNTERS) are checked where they are used.
+// (TURNSTILE_SECRET, SESSION_SECRET; ACCESS_AUD, ACCESS_TEAM, ADMIN_EMAILS for the admin pages) and bindings (AI,
+// COUNTERS, FEEDBACK) are checked where they are used.
 import { ApiError } from "./http.js";
 
 export const DEFAULTS = {
@@ -16,7 +17,15 @@ export const DEFAULTS = {
   MONTHLY_BILLED_NEURON_CAP: 1363000, // $15 of billed neurons per UTC month
   USD_PER_1000_NEURONS: 0.011,
   LIVE_BUDGET_SHARE: 0.5, // live captions may use at most this share of the daily budget
-  SESSION_TTL_S: 3600,
+  // live captions (profile "live", the /live/ page; his decisions 2026-10-14 20:15): one live job (job_id) may run
+  // LIVE_MINUTES_PER_DAY active minutes per UTC day (4 h); a request holds at most LIVE_MAX_SEGMENTS sentences of at
+  // most LIVE_MAX_CHARS code points and answers by LIVE_DEADLINE_MS (a sentence not translated by then comes back
+  // empty, flagged "deadline")
+  LIVE_MINUTES_PER_DAY: 240,
+  LIVE_MAX_SEGMENTS: 3,
+  LIVE_MAX_CHARS: 1000,
+  LIVE_DEADLINE_MS: 3000,
+  SESSION_TTL_S: 43200, // 12 h: one browser check (Turnstile) a working day (his report 2026-10-15)
   SESSION_SEGMENTS_PER_DAY: 1500, // segments one session may translate per UTC day
   IP_SEGMENTS_PER_DAY: 3000, // segments one client IP (IPv6: its /64) may translate per UTC day
   MAX_SEGMENTS_PER_REQUEST: 20,
@@ -24,6 +33,10 @@ export const DEFAULTS = {
   MAX_CLASSIFY_BYTES: 2 * 1024 * 1024, // the whole document's text
   MAX_TRANSLATE_BYTES: 1024 * 1024,
   CLASSIFY_CHARS_PER_UNIT: 10000, // a classify call counts as one segment per started 10,000 characters
+  // a /terms call counts as one segment per started 2,000 characters of src + vi: about the neurons of one
+  // translated segment, so the per-session and per-IP caps bound the term review's cost as they bound translation's
+  TERMS_CHARS_PER_UNIT: 2000,
+  FEEDBACK_ROWS_PER_DAY: 500, // term pairs one client IP may send to the author per UTC day
 };
 
 function num(env, name, { integer = false, min = 0, max = Infinity, positive = false } = {}) {
@@ -47,6 +60,10 @@ export function loadConfig(env) {
     monthlyBilledCap: num(env, "MONTHLY_BILLED_NEURON_CAP"),
     usdPer1000: num(env, "USD_PER_1000_NEURONS"),
     liveShare: num(env, "LIVE_BUDGET_SHARE", { max: 1 }),
+    liveMinutes: num(env, "LIVE_MINUTES_PER_DAY", { integer: true }),
+    liveMaxSegments: num(env, "LIVE_MAX_SEGMENTS", { integer: true, min: 1, max: 20 }),
+    liveMaxChars: num(env, "LIVE_MAX_CHARS", { integer: true, positive: true }),
+    liveDeadlineMs: num(env, "LIVE_DEADLINE_MS", { integer: true, positive: true }),
     sessionTtl: num(env, "SESSION_TTL_S", { integer: true, positive: true }),
     sessionSegments: num(env, "SESSION_SEGMENTS_PER_DAY", { integer: true }),
     ipSegments: num(env, "IP_SEGMENTS_PER_DAY", { integer: true }),
@@ -55,7 +72,12 @@ export function loadConfig(env) {
     maxClassifyBytes: num(env, "MAX_CLASSIFY_BYTES", { integer: true, positive: true }),
     maxTranslateBytes: num(env, "MAX_TRANSLATE_BYTES", { integer: true, positive: true }),
     classifyCharsPerUnit: num(env, "CLASSIFY_CHARS_PER_UNIT", { integer: true, positive: true }),
+    termsCharsPerUnit: num(env, "TERMS_CHARS_PER_UNIT", { integer: true, positive: true }),
+    feedbackRowsPerDay: num(env, "FEEDBACK_ROWS_PER_DAY", { integer: true }),
     turnstileHostnames: list(env.TURNSTILE_HOSTNAMES),
     allowTestTurnstile: String(env.ALLOW_TEST_TURNSTILE || "") === "1",
+    accessAud: String(env.ACCESS_AUD || "").trim(),
+    accessTeam: String(env.ACCESS_TEAM || "").trim(),
+    adminEmails: list(env.ADMIN_EMAILS).map((e) => e.toLowerCase()),
   };
 }

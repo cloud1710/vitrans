@@ -1,4 +1,5 @@
 """FastAPI app for the local helper: health, jobs, SSE progress, results and the static UI (127.0.0.1 only)."""
+import contextlib
 import functools
 import json
 import logging
@@ -20,10 +21,14 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 from . import config
 from . import device as device_mod
 from . import hardware as hardware_mod
+from . import sentence_api
 from .calibrate import CalibrationStore, Calibrator, ModelPull
 from .jobs import JobManager, TooLarge
+from .live import api as live_api
+from .live.sources import LiveReader
+from .live.window import CaptionWindow
 from .llm import list_models
-from .pipeline import Options, run_job
+from .pipeline import Options, make_llm, run_job
 from .recommend import job_estimate, rates, recommend
 from .registry import Registry
 
@@ -88,7 +93,12 @@ def refresh_registry(registry, every, stop):
 
 
 def create_app(manager=None, web_root=None, probe=device_mod.probe, models=_models, registry=None,
-               refresh_every=REFRESH_SECONDS, scanner=None, calibrator=None, pull=None, start_hardware=True):
+               refresh_every=REFRESH_SECONDS, scanner=None, calibrator=None, pull=None, start_hardware=True,
+               setup=None, live=None, live_keepalive=live_api.KEEPALIVE_SECONDS, llm_factory=make_llm):
+    """setup: the installed helper's first-run setup (setup.Setup), started here; None when run from source.
+    live: the live caption reader (live/sources.py; its thread starts on the first POST /api/live/start; closed at
+    shutdown, which puts a hidden Live Captions window back).
+    llm_factory(device, model): the model of the sentence routes /api/v1/* (sentence_api.py)."""
     registry = registry or Registry(config.registry_source(), config.app_home())
 
     def estimator(dev, model, words, polish):
@@ -105,7 +115,12 @@ def create_app(manager=None, web_root=None, probe=device_mod.probe, models=_mode
     calibrator = calibrator or Calibrator(scanner, CalibrationStore(config.app_home()), job_active=manager.active)
     pull = pull or ModelPull()
     origins = _origins()
-    app = FastAPI(title="ViTranslate helper", docs_url=None, redoc_url=None, openapi_url=None)
+    @contextlib.asynccontextmanager
+    async def lifespan(app):
+        yield
+        app.state.live.close()  # shutdown: Live Captions shown again (or closed when the helper started it)
+
+    app = FastAPI(title="ViTranslate helper", docs_url=None, redoc_url=None, openapi_url=None, lifespan=lifespan)
     @app.middleware("http")
     async def guard_uploads(request, call_next):
         if request.method == "POST":  # every state-changing call: only the helper's own page and the published site
@@ -172,6 +187,22 @@ def create_app(manager=None, web_root=None, probe=device_mod.probe, models=_mode
         out["calibration"] = cal.get("state")
         return out
 
+    def model_needed():
+        """The recommended model of this device when Ollama does not have it (what the setup pulls), else None."""
+        prof = scanner.profile(fresh=True)
+        rec = recommend(prof, calibrator.results(prof) or {})
+        return rec["model"] if rec["needs_download"] else None
+
+    if setup is not None:
+        setup.attach(model_needed, pull)  # one ModelPull: the page's button and the setup show the same download
+        setup.start()
+
+    def setup_short():
+        if setup is None:
+            return {"state": "off"}
+        st = setup.status()
+        return {k: st.get(k) for k in ("state", "step", "mode", "error")}
+
     @app.get("/api/health")
     def health():
         device, names = probed()
@@ -183,7 +214,20 @@ def create_app(manager=None, web_root=None, probe=device_mod.probe, models=_mode
                 "model_ready": bool(names) and model in names,
                 "model_fast_ready": bool(names) and config.MODEL_FAST in names,
                 "packs_installed": registry.installed(), "registry_offline": registry.offline,
-                "recommendation": short_recommendation()}
+                "recommendation": short_recommendation(), "setup": setup_short()}
+
+    @app.get("/api/setup")
+    def setup_status():
+        """First-run setup progress of the installed helper ({"state": "off"} when run from source)."""
+        return setup.status() if setup is not None else {"state": "off"}
+
+    @app.post("/api/setup/start")
+    def setup_start():
+        """Run the setup steps again now (after an error, or once the user started their own Ollama)."""
+        if setup is None:
+            raise HTTPException(404, "no_setup")
+        setup.start()
+        return setup.status()
 
     @app.get("/api/hardware")
     def hardware_info():
@@ -280,6 +324,11 @@ def create_app(manager=None, web_root=None, probe=device_mod.probe, models=_mode
         if job.report is None:
             raise HTTPException(409, "not_ready")
         return job.report
+
+    app.state.live = live or LiveReader(window_factory=CaptionWindow)
+    app.include_router(live_api.router(app.state.live, origins, live_keepalive))
+    # the cloud API's sentence routes on this machine (the page's "Tren may" mode for every tool)
+    app.include_router(sentence_api.router(registry, lambda: probed()[0], lambda: probed()[1], llm_factory))
 
     root = Path(web_root or config.web_dir())
     if root.is_dir():

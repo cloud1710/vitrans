@@ -1,0 +1,6 @@
+Chuyên ngành: Ngoại khoa chung (phẫu thuật, chu phẫu, gây mê hồi sức, ngoại khoa ung thư). Giọng bài báo Tạp chí Y học TP.HCM, ưu tiên dạng dùng ở miền Nam.
+- Đường mổ và kỹ thuật: laparoscopic = phẫu thuật nội soi, open surgery = mổ mở, conversion to open = chuyển mổ mở; robotic = phẫu thuật robot; minimally invasive = ít xâm lấn; anastomosis = miệng nối; trocar giữ nguyên.
+- Mốc thời gian: preoperative = trước mổ, intraoperative = trong mổ, postoperative = sau mổ, perioperative = chu phẫu; intraoperative complication = tai biến trong mổ, postoperative complication = biến chứng sau mổ.
+- Biến chứng: surgical site infection = nhiễm trùng vết mổ, anastomotic leak = xì miệng nối, fistula = rò, seroma = tụ dịch, residual abscess = áp xe tồn lưu; radical = triệt căn; lymph node dissection = nạo vét hạch; frozen section = sinh thiết tức thì.
+- Gây mê: induction = khởi mê, emergence = tỉnh mê, spinal anesthesia = gây tê tủy sống, epidural = ngoài màng cứng; nerve block = gây tê thần kinh (TAP block = gây tê mặt phẳng cơ ngang bụng), không viết "phong tỏa thần kinh".
+- Giữ nguyên tiếng Anh: tên phân loại và thang điểm (Clavien-Dindo, ASA, Tokyo 2018, VAS, Mallampati), thủ thuật mang tên người (Whipple, Hartmann, Miles, Lichtenstein, Roux-en-Y, Billroth II), viết tắt (ERAS, TEP, TAPP, R0, D2, TCI, BIS, PCA) và tên thuốc INN như văn bản nguồn.

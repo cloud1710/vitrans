@@ -1,0 +1,53 @@
+{
+ "page": [
+  827,
+  1169
+ ],
+ "lines": [
+  {
+   "text": "Case report",
+   "box": [
+    0.10883,
+    0.1095,
+    0.3156,
+    0.13944
+   ]
+  },
+  {
+   "text": "A synthetic scanned page with English text lines.",
+   "box": [
+    0.10883,
+    0.16595,
+    0.66989,
+    0.1882
+   ]
+  },
+  {
+   "text": "The lesion is composed of bland spindle cells",
+   "box": [
+    0.10883,
+    0.18991,
+    0.6312,
+    0.21215
+   ]
+  },
+  {
+   "text": "arranged in short fascicles without necrosis.",
+   "box": [
+    0.10883,
+    0.21386,
+    0.62031,
+    0.2361
+   ]
+  },
+  {
+   "text": "Immunohistochemistry was negative for S100 protein.",
+   "box": [
+    0.10883,
+    0.26861,
+    0.73519,
+    0.29085
+   ]
+  }
+ ]
+}

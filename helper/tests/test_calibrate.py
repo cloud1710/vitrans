@@ -208,10 +208,11 @@ def test_model_pull_runs_once_and_reports_its_state():
         seen.append(json.loads(request.content))
         return httpx.Response(200, json={"status": "success"})
     pull = ModelPull("http://x", transport=httpx.MockTransport(ok))
-    assert pull.status() == {"model": None, "state": "idle", "error": None}
+    assert pull.status() == {"model": None, "state": "idle", "error": None, "completed": None, "total": None}
     pull.start(config.MODEL_DEFAULT_GPU)  # the model the page offered (the recommended one)
-    assert pull.wait(5) and pull.status() == {"model": config.MODEL_DEFAULT_GPU, "state": "done", "error": None}
-    assert seen == [{"model": config.MODEL_DEFAULT_GPU, "stream": False}]
+    assert pull.wait(5) and pull.status() == {"model": config.MODEL_DEFAULT_GPU, "state": "done", "error": None,
+                                              "completed": None, "total": None}
+    assert seen == [{"model": config.MODEL_DEFAULT_GPU, "stream": True}]  # streamed: progress per layer
     pull.start(config.MODEL_FAST)
     assert pull.wait(5) and pull.status()["model"] == config.MODEL_FAST and len(seen) == 2
 
@@ -220,6 +221,35 @@ def test_model_pull_runs_once_and_reports_its_state():
     bad = ModelPull("http://x", transport=httpx.MockTransport(down))
     bad.start(config.MODEL_FAST)
     assert bad.wait(5) and bad.status()["state"] == "error" and bad.status()["error"]
+
+
+def stream_body(*messages):
+    return ("\n".join(json.dumps(m) for m in messages) + "\n").encode("utf-8")
+
+
+def test_model_pull_reports_the_bytes_of_every_layer():
+    body = stream_body({"status": "pulling manifest"},
+                       {"status": "pulling aaa", "digest": "sha256:aaa", "total": 1000, "completed": 0},
+                       {"status": "pulling aaa", "digest": "sha256:aaa", "total": 1000, "completed": 600},
+                       {"status": "pulling bbb", "digest": "sha256:bbb", "total": 200, "completed": 200},
+                       {"status": "pulling aaa", "digest": "sha256:aaa", "total": 1000, "completed": 1000},
+                       {"status": "verifying sha256 digest"}, {"status": "success"})
+    pull = ModelPull("http://x", transport=httpx.MockTransport(lambda r: httpx.Response(200, content=body)))
+    pull.start(config.MODEL_DEFAULT_GPU)
+    assert pull.wait(5)
+    assert pull.status() == {"model": config.MODEL_DEFAULT_GPU, "state": "done", "error": None, "completed": 1200,
+                             "total": 1200}
+
+
+def test_model_pull_reports_an_error_line_and_a_stream_without_success():
+    body = stream_body({"status": "pulling manifest"}, {"error": "pull model manifest: file does not exist"})
+    bad = ModelPull("http://x", transport=httpx.MockTransport(lambda r: httpx.Response(200, content=body)))
+    bad.start("nope:1b")
+    assert bad.wait(5) and bad.status()["state"] == "error" and "file does not exist" in bad.status()["error"]
+    cut = stream_body({"status": "pulling aaa", "digest": "sha256:aaa", "total": 1000, "completed": 10})
+    short = ModelPull("http://x", transport=httpx.MockTransport(lambda r: httpx.Response(200, content=cut)))
+    short.start(config.MODEL_FAST)
+    assert short.wait(5) and short.status()["state"] == "error" and short.status()["completed"] == 10
 
 
 def test_calibration_does_not_hold_the_model_in_memory_for_long():

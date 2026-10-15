@@ -1,4 +1,4 @@
-{"id": "pathology-kidney", "version": "0.1.0", "name": "Giải phẫu bệnh thận", "parent": "pathology", "draft": true,
+{"id": "pathology-kidney", "version": "0.1.3", "name": "Giải phẫu bệnh thận", "parent": "pathology", "draft": true,
  "detect": ["renal cell carcinoma", "RCC", "ccRCC", "nephrectomy", "chromophobe", "oncocytoma", "angiomyolipoma",
             "Wilms", "nephroblastoma", "Fuhrman", "renal sinus", "perinephric",
             "glomerulus", "glomerular", "glomerulonephritis", "glomerulosclerosis", "IgA nephropathy",

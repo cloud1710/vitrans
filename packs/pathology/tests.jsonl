@@ -13,7 +13,7 @@
 {"src": "Abnormal functioning hepatocytes and hepatocyte loss", "must": ["rối loạn chức năng tế bào gan"], "must_not": ["các ", "những ", "hoạt động"]}
 {"src": "The patient underwent a left neck dissection.", "must": ["nạo vét hạch"], "must_not": ["cắt bỏ hạch", "cắt cổ"]}
 {"src": "Clear cell renal cell carcinoma (CCRCC) is the most common subtype.", "must": ["CCRCC", "tế bào sáng"]}
-{"src": "A papillary microcarcinoma was found incidentally in the right lobe.", "must": ["carcinôm nhú vi thể"], "must_not": ["ung thư biểu mô tuyến vi thể"]}
+{"src": "A papillary microcarcinoma was found incidentally in the right lobe.", "must": ["carcinom nhú vi thể"], "must_not": ["ung thư biểu mô tuyến vi thể", "carcinôm"]}
 {"src": "Metastatic carcinoma was present in two level II lymph nodes.", "must": ["nhóm II"]}
 {"src": "Diffuse neocortical (five areas)", "must": ["vỏ não mới lan tỏa"], "must_not": ["lan tỏa vỏ não mới"]}
 {"src": "The follicular cells show atypical features but no capsular invasion.", "must": ["không điển hình"], "must_not": ["bất thường"]}
@@ -33,3 +33,17 @@
 {"src": "Imaging showed invasion of the adjacent pancreas.", "must": ["xâm lấn"], "must_not": ["xâm nhập"]}
 {"src": "Invasion beyond the muscularis propria defines a T3 tumour.", "must": ["xâm lấn"], "must_not": ["xâm nhập"]}
 {"src": "Invasion into the peripancreatic fat was seen together with perineural invasion.", "must": ["xâm lấn", "xâm nhập quanh thần kinh"], "must_not": ["xâm lấn quanh thần kinh"]}
+{"src": "Frozen section showed a well-differentiated carcinoma.", "must": ["sinh thiết tức thì"], "must_not": ["lát cắt lạnh", "phần đông lạnh"]}
+{"src": "The frozen section slides were reviewed with the permanent sections.", "must": ["tiêu bản cắt lạnh"], "must_not": ["lát cắt lạnh"]}
+{"src": "The thyroidectomy specimen showed nodular goiter without malignancy.", "must": ["phình giáp"], "must_not": ["bướu giáp nhân"]}
+{"src": "Each allele was tested separately.", "must": ["alen"], "must_not": ["allele"]}
+{"src": "Metastatic adenocarcinoma was identified in two of twelve lymph nodes.", "must": ["carcinom tuyến", "hạch"], "must_not": ["ung thư biểu mô", "carcinôm", "nút bạch huyết"]}
+{"src": "Hepatocellular carcinoma arose in a cirrhotic liver.", "must": ["carcinom tế bào gan"], "must_not": ["ung thư biểu mô", "carcinôm"]}
+{"src": "Mantle cell lymphoma expresses cyclin D1, whereas marginal zone lymphoma does not.", "must": ["lymphom tế bào áo nang", "lymphom vùng rìa", "cyclin D1"], "must_not": ["u lympho", "lymphôm"]}
+{"src": "Ewing sarcoma and osteosarcoma are the commonest bone sarcomas in children.", "must": ["sarcom Ewing", "sarcom xương"], "must_not": ["sarcôm"]}
+{"src": "The cervical biopsy showed a high-grade squamous intraepithelial lesion (HSIL).", "must": ["tổn thương trong biểu mô gai độ cao", "HSIL"], "must_not": ["vảy", "vẩy"]}
+{"src": "The infiltrate consists of small lymphocytes, plasma cells and histiocytes.", "must": ["lymphô bào", "tương bào", "mô bào"], "must_not": ["tế bào lympho"]}
+{"src": "Chromophobe renal cell carcinoma shows perinuclear halos and pale cytoplasm.", "must": ["kị sắc", "carcinom tế bào thận"], "must_not": ["kỵ màu", "ung thư biểu mô"]}
+{"src": "Goblet cells are seen in the metaplastic epithelium.", "must": ["tế bào hình đài"]}
+{"src": "Jen-Fan Hang, M.D., Ph.D., reviewed all the slides.", "must": ["TS. BS. Jen-Fan Hang"]}
+{"src": "The biopsy shows a spindle cell neoplasm of uncertain behaviour.", "must": ["tân sinh"], "must_not": []}

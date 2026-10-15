@@ -1,21 +1,21 @@
 en,vi,note
-squamous cell carcinoma,carcinôm tế bào gai,"REVERTED to parent value (binding: user chose 'gai, KHÔNG vảy; carcinoma = carcinôm'); head-neck evidence favours 'ung thư biểu mô tế bào gai' 13 vs 'ung thư biểu mô (tế bào) vảy' 10 vs 'carcinôm tế bào gai' 2 -- pending user decision; src: VMJ-10132, TCNCYH-171209, VMJ-260349"
-head and neck squamous cell carcinoma,carcinôm tế bào gai vùng đầu cổ,"ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai vùng đầu cổ', freq 3) -- pending user decision; src: YDLS108-192298, YDCT-251276, YHCM-2016-p16"
-oral squamous cell carcinoma,carcinôm tế bào gai khoang miệng,"ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai khoang miệng', freq 3) -- pending user decision; src: VMJ-257975, YHLS-153585, VMJ-338; khoang miệng ~22 vs hốc miệng ~9"
+squamous cell carcinoma,carcinom tế bào gai,"REVERTED to parent value (binding: user chose 'gai, KHÔNG vảy; carcinoma = carcinom'); head-neck evidence favours 'ung thư biểu mô tế bào gai' 13 vs 'ung thư biểu mô (tế bào) vảy' 10 vs 'carcinôm tế bào gai' 2 -- pending user decision; src: VMJ-10132, TCNCYH-171209, VMJ-260349"
+head and neck squamous cell carcinoma,carcinom tế bào gai vùng đầu cổ,"ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai vùng đầu cổ', freq 3) -- pending user decision; src: YDLS108-192298, YDCT-251276, YHCM-2016-p16"
+oral squamous cell carcinoma,carcinom tế bào gai khoang miệng,"ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai khoang miệng', freq 3) -- pending user decision; src: VMJ-257975, YHLS-153585, VMJ-338; khoang miệng ~22 vs hốc miệng ~9"
 oral cavity,khoang miệng,"freq 22; src: VMJ-257975, VMJ-338, YHLS-153585; hits: VMJ 15 + VJOL 12 (trùng một phần) vs VMJ 4 + VJOL 6; hốc miệng = văn phong phía Nam"
-keratinizing squamous cell carcinoma,carcinôm tế bào gai sừng hóa,"ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai sừng hóa', freq 3) -- pending user decision; src: TCNCYH-504, VMJ-vomhong-vay, QS-174775; hóa/hoá đều chấp nhận"
-non-keratinizing squamous cell carcinoma,carcinôm tế bào gai không sừng hóa,"ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai không sừng hóa', freq 3) -- pending user decision; src: TCNCYH-504, VMJ-vomhong-vay, QS-174775; hóa/hoá đều chấp nhận"
+keratinizing squamous cell carcinoma,carcinom tế bào gai sừng hóa,"ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai sừng hóa', freq 3) -- pending user decision; src: TCNCYH-504, VMJ-vomhong-vay, QS-174775; hóa/hoá đều chấp nhận"
+non-keratinizing squamous cell carcinoma,carcinom tế bào gai không sừng hóa,"ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai không sừng hóa', freq 3) -- pending user decision; src: TCNCYH-504, VMJ-vomhong-vay, QS-174775; hóa/hoá đều chấp nhận"
 oropharynx,khẩu hầu,"freq 6; src: VMJ-10132, TCNCYH-171209, YDCT-251131; gần hòa - cần người quyết; 6 vs 5; khẩu hầu = phía Nam + TCNCYH; họng miệng = BV K/Hà Nội; chấp nhận cả hai"
-HPV-associated oropharyngeal squamous cell carcinoma,carcinôm tế bào gai vùng khẩu hầu liên quan HPV,"ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai vùng khẩu hầu liên quan HPV', freq 4) -- pending user decision; src: VMJ-10132, TCNCYH-171209, YDCT-251131; khẩu hầu vs họng miệng gần hòa - cần người quyết"
+HPV-associated oropharyngeal squamous cell carcinoma,carcinom tế bào gai vùng khẩu hầu liên quan HPV,"ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai vùng khẩu hầu liên quan HPV', freq 4) -- pending user decision; src: VMJ-10132, TCNCYH-171209, YDCT-251131; khẩu hầu vs họng miệng gần hòa - cần người quyết"
 hypopharynx,hạ họng,"freq 3; src: VMJ-260349, VMJ-259198, VMJ-7162"
 p16 immunohistochemistry,hóa mô miễn dịch p16,"freq 3; src: TCNCYH-171209, YDCT-251131, YHCM-2016-p16; bài đầu cổ viết 'biểu hiện p16' (2); pack cha: expression = bộc lộ -> giữ 'bộc lộ p16'"
-nasopharyngeal carcinoma,ung thư biểu mô vòm mũi họng,"freq 80; src: TCNCYH-170701, QS-173559, VMJ-2078; hits: vòm mũi họng VMJ 32 + VJOL 48; vòm họng VMJ 16 + VJOL 30"
+nasopharyngeal carcinoma,carcinom vòm mũi họng,"freq 80; src: TCNCYH-170701, QS-173559, VMJ-2078; hits: vòm mũi họng VMJ 32 + VJOL 48; vòm họng VMJ 16 + VJOL 30"
 nasopharynx,vòm mũi họng,"freq 80; src: VMJ-2078, TCNCYH-170701, QS-174775; hits như dòng trên"
 EBER in situ hybridization,lai tại chỗ EBER (EBER-ISH),"freq 2; src: TCNCYH-504, TCNCYH-170957; bằng chứng thấp; EBER giữ EN; khớp pack cha FISH = lai tại chỗ huỳnh quang"
-verrucous carcinoma,ung thư biểu mô dạng mụn cóc (verrucous carcinoma),freq 0; src: none; chưa giải quyết; mô tả; giữ gloss EN
-basaloid squamous cell carcinoma,carcinôm tế bào gai dạng đáy,"ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai dạng đáy'); freq 0; src: none; bằng chứng thấp; theo pack cha basaloid = dạng đáy ('carcinôm tế bào gai dạng đáy ở phổi')"
-spindle cell carcinoma,ung thư biểu mô tế bào hình thoi,freq 0; src: none; bằng chứng thấp; theo pack cha spindle cell = tế bào hình thoi; đồng nghĩa sarcomatoid = dạng sarcôm
-lymphoepithelial carcinoma,ung thư biểu mô dạng lympho - biểu mô,freq 1; src: TCNCYH-1442; bằng chứng thấp
+verrucous carcinoma,carcinom dạng mụn cóc (verrucous carcinoma),freq 0; src: none; chưa giải quyết; mô tả; giữ gloss EN
+basaloid squamous cell carcinoma,carcinom tế bào gai dạng đáy,ALIGNED to the parent SCC row (was 'ung thư biểu mô tế bào gai dạng đáy'); freq 0; src: none; bằng chứng thấp; theo pack cha basaloid = dạng đáy ('carcinôm tế bào gai dạng đáy ở phổi')
+spindle cell carcinoma,carcinom tế bào hình thoi,freq 0; src: none; bằng chứng thấp; theo pack cha spindle cell = tế bào hình thoi; đồng nghĩa sarcomatoid = dạng sarcom
+lymphoepithelial carcinoma,carcinom dạng lympho - biểu mô,freq 1; src: TCNCYH-1442; bằng chứng thấp
 oral leukoplakia,bạch sản miệng,"freq 5; src: VMJ-18081, VMJ-11242, HIU-166609"
 erythroplakia,hồng sản,freq 0; src: none; bằng chứng thấp
 oral epithelial dysplasia,loạn sản biểu mô miệng,freq 0; src: none; bằng chứng thấp
@@ -38,13 +38,13 @@ pleomorphic adenoma,u tuyến đa hình,"freq 4; src: TMH-255037, YHLS-144051, V
 Warthin tumour,u Warthin,"freq 8; src: PNT-80213, YHLS-144051, TMH-255037"
 basal cell adenoma,u tuyến tế bào đáy,freq 1; src: YHLS-144051; bằng chứng thấp
 oncocytoma,u tế bào ái toan (oncocytoma),freq 2; src: JMP-197580; bằng chứng thấp; theo pack cha oncocytic = ái toan; renal oncocytoma = u tế bào ái toan ở thận
-mucoepidermoid carcinoma,ung thư biểu mô biểu bì nhầy,"freq 8; src: VMJ-4950, VMJ-1639, TMH-255037"
-adenoid cystic carcinoma,ung thư biểu mô dạng tuyến nang,"freq 6; src: VMJ-17506, VMJ-4950, VMJ-12915"
-acinic cell carcinoma,ung thư biểu mô tế bào túi tuyến,freq 1; src: TMH-255037; chưa giải quyết; theo pack cha acinar = túi tuyến; cần người quyết
-secretory carcinoma,ung thư biểu mô chế tiết,freq 0; src: none; bằng chứng thấp; pack cha secretory = chế tiết; giữ ETV6::NTRK3
-salivary duct carcinoma,ung thư biểu mô ống tuyến nước bọt,freq 0; src: none; giữ theo pack cha; giữ viết tắt SDC
-polymorphous adenocarcinoma,ung thư biểu mô tuyến đa hình,freq 0; src: none; bằng chứng thấp; dễ nhầm với u tuyến đa hình (pleomorphic adenoma); nên kèm EN lần đầu
-carcinoma ex pleomorphic adenoma,ung thư biểu mô trên nền u tuyến đa hình,"freq 2; src: TMH-255037, BVNTP-GPB-TNB"
+mucoepidermoid carcinoma,carcinom biểu bì nhầy,"freq 8; src: VMJ-4950, VMJ-1639, TMH-255037"
+adenoid cystic carcinoma,carcinom dạng tuyến nang,"freq 6; src: VMJ-17506, VMJ-4950, VMJ-12915"
+acinic cell carcinoma,carcinom tế bào túi tuyến,freq 1; src: TMH-255037; chưa giải quyết; theo pack cha acinar = túi tuyến; cần người quyết
+secretory carcinoma,carcinom chế tiết,freq 0; src: none; bằng chứng thấp; pack cha secretory = chế tiết; giữ ETV6::NTRK3
+salivary duct carcinoma,carcinom ống tuyến nước bọt,freq 0; src: none; giữ theo pack cha; giữ viết tắt SDC
+polymorphous adenocarcinoma,carcinom tuyến đa hình,freq 0; src: none; bằng chứng thấp; dễ nhầm với u tuyến đa hình (pleomorphic adenoma); nên kèm EN lần đầu
+carcinoma ex pleomorphic adenoma,carcinom trên nền u tuyến đa hình,"freq 2; src: TMH-255037, BVNTP-GPB-TNB"
 Milan System for Reporting Salivary Gland Cytopathology,phân loại Milan về tế bào học tuyến nước bọt,"freq 2; src: YHLS-260951, YHLS-144051; giữ tên Milan; viết tắt MSRSGC"
 fine needle aspiration,chọc hút tế bào bằng kim nhỏ (FNA),"freq 4; src: TNU-154619, BVNTP-FNA, VMJ-864; giữ theo pack cha; user đã chốt; dạng ngắn 'chọc hút kim nhỏ' phổ biến hơn trong tiêu đề -> xem conflicts"
 frozen section,sinh thiết tức thì,"freq 7; src: VMJ-7162, YHCM-193853, HIU-166580; XUNG ĐỘT pack cha (lát cắt lạnh); tiêu bản = tiêu bản cắt lạnh"
@@ -53,8 +53,8 @@ inverted sinonasal papilloma,u nhú đảo ngược mũi xoang,"freq 3; src: TMH
 oncocytic sinonasal papilloma,u nhú mũi xoang tế bào ái toan,freq 0; src: none; bằng chứng thấp; theo pack cha oncocytic = ái toan
 exophytic sinonasal papilloma,u nhú mũi xoang ngoại sinh,freq 0; src: none; bằng chứng thấp
 olfactory neuroblastoma,u nguyên bào thần kinh khứu giác,"freq 2; src: VMJ-1798, BVNTP-UTXM"
-sinonasal undifferentiated carcinoma,ung thư biểu mô mũi xoang không biệt hóa (SNUC),freq 0; src: none; bằng chứng thấp; mô tả; giữ SNUC
-NUT carcinoma,ung thư biểu mô NUT,freq 0; src: none; bằng chứng thấp; giữ NUT/NUTM1 bằng EN
+sinonasal undifferentiated carcinoma,carcinom mũi xoang không biệt hóa (SNUC),freq 0; src: none; bằng chứng thấp; mô tả; giữ SNUC
+NUT carcinoma,carcinom NUT,freq 0; src: none; bằng chứng thấp; giữ NUT/NUTM1 bằng EN
 juvenile nasopharyngeal angiofibroma,u sợi mạch vòm mũi họng,"freq 3; src: VMJ-8849, VMJ-11478, VMJ-11888; tiêu đề VN bỏ 'juvenile'; fibro = sợi khớp pack cha"
 ameloblastoma,u nguyên bào men,"freq 8; src: VMJ-15504, VMJ-6009, YHLS-156144"
 odontogenic keratocyst,nang sừng do răng,freq 1; src: VMJ-14829; bằng chứng thấp

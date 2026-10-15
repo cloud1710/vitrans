@@ -828,6 +828,22 @@ def synthetic_builders():
         _para(d, "Appendix A", h3)
         d.add_paragraph("Staining protocol for the lab")
 
+    # a back-matter title closes the references region whatever its style or level (his report 2026-10-15)
+    def refs_backmatter(stop, title):
+        def build(d):
+            _para(d, "References", stop)
+            d.add_paragraph("Louis DN et al. Neuro Oncol 2021")
+            d.add_paragraph("Funding. J Synth Path. 2020;1:1-9.")
+            _para(d, "Acknowledgements", title)
+            d.add_paragraph("Staining protocol for the lab")
+        return build
+
+    def refs_plain_inside(d):
+        d.add_paragraph("References")
+        d.add_paragraph("Louis DN et al. Neuro Oncol 2021")
+        d.add_paragraph("Perry A, Example B. A synthetic study of the lab. Brain Pathol 2020;30:1-9.")
+        d.add_paragraph("Staining protocol for the lab")
+
     out = {
         "deck.pptx": make_pptx,
         "deck_reordered.pptx": lambda p: reorder_slides(make_pptx(p), [4, 3, 2, 1, 0]),
@@ -843,6 +859,9 @@ def synthetic_builders():
         "refs_column.docx": lambda p: _docx_build(p, refs_column),
         "refs_textbox.docx": lambda p: _docx_build(p, refs_textbox),
         "refs_nolevel.docx": lambda p: _docx_build(p, refs_nolevel),
+        "refs_backmatter_plain.docx": lambda p: _docx_build(p, refs_backmatter(("style", "Normal"), ("style", "Normal"))),
+        "refs_backmatter_deeper.docx": lambda p: _docx_build(p, refs_backmatter(h1, h3)),
+        "refs_plain_inside.docx": lambda p: _docx_build(p, refs_plain_inside),
         "notes_shared.pptx": _notes_shared,
         "zip64.docx": _zip64,
         "zip_datadesc.docx": _datadesc,

@@ -12,3 +12,4 @@
 {"src": "Measurable residual disease was monitored by RT-qPCR in peripheral blood after transplantation.", "must": ["RT-qPCR", "máu ngoại vi"], "must_any": [["bệnh tồn lưu đo được", "bệnh tồn dư đo được"]]}
 {"src": "A somatic mutation in TP53 and a germline variant in MLH1 were found in the same patient with Lynch syndrome.", "must": ["đột biến sinh dưỡng", "TP53", "MLH1", "dòng mầm", "hội chứng Lynch"]}
 {"src": "Formalin-fixed paraffin-embedded tissue with a tumour cell content of at least 20% was required for DNA extraction.", "must": ["tách chiết DNA", "20%"], "must_any": [["vùi nến", "vùi paraffin", "FFPE"], ["tỷ lệ tế bào u", "tỷ lệ tế bào ung thư"]]}
+{"src": "RT-PCR confirmed the fusion gene in the tumour sample, while NGS found no other gene fusion.", "must": ["tổ hợp gen", "dung hợp gen", "RT-PCR", "NGS"], "must_not": ["gen dung hợp"], "note": "owner 2026-10-15 18:48 choice 1: fusion gene = tổ hợp gen, gene fusion = dung hợp gen"}

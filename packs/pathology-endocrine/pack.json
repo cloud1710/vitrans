@@ -1,4 +1,4 @@
-{"id": "pathology-endocrine", "version": "0.1.0", "name": "Giải phẫu bệnh nội tiết", "parent": "pathology", "draft": true,
+{"id": "pathology-endocrine", "version": "0.1.2", "name": "Giải phẫu bệnh nội tiết", "parent": "pathology", "draft": true,
  "detect": ["Bethesda", "TI-RADS", "TIRADS", "NIFTP", "papillary thyroid carcinoma", "follicular thyroid carcinoma",
             "medullary thyroid carcinoma", "anaplastic thyroid carcinoma", "thyroglobulin", "Hashimoto", "thyroiditis",
             "thyroidectomy", "goiter", "goitre", "Graves disease", "Hürthle", "Hurthle", "calcitonin", "thyroid nodule",

@@ -4,7 +4,8 @@
 # This file is the project's configuration (source of truth) once a deploy carries it.
 # Secrets are not here: TURNSTILE_SECRET and SESSION_SECRET are set per environment with
 #   npx wrangler pages secret put <NAME> --project-name vitrans [--env preview]
-# (ALLOW_TEST_TURNSTILE=1 only for the preview environment and local dev, never for production).
+# (ALLOW_TEST_TURNSTILE=1 only for the preview environment and local dev, never for production); so are the admin
+# page's ACCESS_AUD, ACCESS_TEAM and ADMIN_EMAILS (Cloudflare Access; README "Term review and feedback").
 name = "vitrans"
 pages_build_output_dir = "web"
 compatibility_date = "2026-10-01"
@@ -18,6 +19,13 @@ binding = "AI"
 binding = "COUNTERS"
 id = "a892e524d522492da35d0cf85e688bd7"
 
+# Term-pair feedback to the author (spec Amendment G): term pairs, counts, days, review status and per-day counts
+# under a keyed IP hash -- no sentence, no document text, no IP. Schema: migrations/ (wrangler d1 migrations apply).
+[[d1_databases]]
+binding = "FEEDBACK"
+database_name = "vitrans-feedback"
+database_id = "b16bc34c-eadb-455b-b0d1-14eefe7d4b56"
+
 [vars]
 MODEL = "@cf/google/gemma-4-26b-a4b-it"
 NEURONS_PER_M_INPUT = "9091"
@@ -29,7 +37,7 @@ FREE_NEURONS_PER_DAY = "10000"
 MONTHLY_BILLED_NEURON_CAP = "1363000"
 USD_PER_1000_NEURONS = "0.011"
 LIVE_BUDGET_SHARE = "0.5"
-SESSION_TTL_S = "3600"
+SESSION_TTL_S = "43200"
 SESSION_SEGMENTS_PER_DAY = "1500"
 IP_SEGMENTS_PER_DAY = "3000"
 MAX_SEGMENTS_PER_REQUEST = "20"
@@ -37,4 +45,6 @@ MAX_SEGMENT_CHARS = "10000"
 MAX_CLASSIFY_BYTES = "2097152"
 MAX_TRANSLATE_BYTES = "1048576"
 CLASSIFY_CHARS_PER_UNIT = "10000"
+TERMS_CHARS_PER_UNIT = "2000"
+FEEDBACK_ROWS_PER_DAY = "500"
 TURNSTILE_HOSTNAMES = "vitrans.pages.dev,*.vitrans.pages.dev"

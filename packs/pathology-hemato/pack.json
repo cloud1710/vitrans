@@ -1,0 +1,6 @@
+{"id": "pathology-hemato", "version": "0.1.2", "name": "Huyết học GPB (hạch - lách - tủy xương)", "parent": "pathology",
+ "detect": ["hematopathology", "haematopathology", "bone marrow biopsy", "trephine", "marrow aspirate", "cellularity",
+            "megakaryocytes", "blasts", "myelodysplastic", "myeloproliferative", "myelofibrosis", "leukemia",
+            "myeloma", "Hodgkin", "Reed-Sternberg", "DLBCL", "germinal centers", "paracortex",
+            "follicular hyperplasia", "lymphadenitis", "lymphadenopathy", "Castleman", "Kikuchi", "Rosai-Dorfman",
+            "splenectomy", "BCR::ABL1", "JAK2", "Ann Arbor"]}

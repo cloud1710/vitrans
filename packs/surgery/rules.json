@@ -1,0 +1,42 @@
+{
+ "term_fixes": [
+  {
+   "en": "nerve block",
+   "vi": "gây tê thần kinh",
+   "wrong": [
+    "phong tỏa thần kinh"
+   ]
+  },
+  {
+   "en": "radical",
+   "vi": "triệt căn",
+   "wrong": [
+    "tiệt căn",
+    "cấp tiến"
+   ]
+  },
+  {
+   "en": "anastomotic leak",
+   "vi": "xì miệng nối",
+   "wrong": [
+    "rò rỉ miệng nối"
+   ]
+  },
+  {
+   "en": "conversion to open surgery",
+   "vi": "chuyển mổ mở",
+   "wrong": [
+    "chuyển đổi sang mổ mở",
+    "chuyển đổi sang phẫu thuật mở"
+   ]
+  },
+  {
+   "en": "induction of anesthesia",
+   "vi": "khởi mê",
+   "wrong": [
+    "cảm ứng gây mê",
+    "cảm ứng mê"
+   ]
+  }
+ ]
+}

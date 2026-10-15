@@ -27,7 +27,7 @@ import build_registry  # noqa: E402
 import bundle_packs  # noqa: E402
 from vitranslate import config  # noqa: E402
 from vitranslate.ooxml.codec import encode  # noqa: E402
-from vitranslate.packs import glossary_hits, load_pack  # noqa: E402
+from vitranslate.packs import allowed_words, glossary_hits, load_pack  # noqa: E402
 from vitranslate.pipeline import choose_packs, load_packs, top_candidates  # noqa: E402
 from vitranslate.registry import Registry  # noqa: E402
 from vitranslate.translate import Translator, build_system, is_essential  # noqa: E402
@@ -84,6 +84,12 @@ SLIDE_DOC = [
     (para("Margins: ", ("i", "clear"), " (nearest 4 mm)."),
      ["Diện cắt: âm tính (gần nhất 4 mm)."],
      "Diện cắt: <g1>âm tính</g1> (gần nhất 4 mm)."),
+    # the pack's term-lock writes its house form (lymphocyte = "lymph\u00f4 b\u00e0o"): no strange word
+    (para("Many lymphocytes surround the tumour nests."), [],
+     "Nhi\u1ec1u t\u1ebf b\u00e0o lympho bao quanh c\u00e1c \u1ed5 u."),
+    # Vietnamese academic titles before the name, in order, a dot after each
+    (para("Reviewed by ", ("b", "Jane Doe"), ", MD, PhD."), [],
+     "Xem l\u1ea1i b\u1edfi BS. TS. <g1>Jane Doe</g1>."),
 ]
 
 
@@ -116,14 +122,14 @@ def run_document(name, doc, registry, manifest, style):
         prev = segs[n - 1].plain if n > 0 else ""
         nxt = segs[n + 1].plain if n + 1 < len(segs) else ""
         llm = ScriptedLLM(replies, default)
-        t = Translator(llm, system, MODEL, scope, pack.term_fixes, hits, None)
+        t = Translator(llm, system, MODEL, scope, pack.term_fixes, hits, None, allowed=allowed_words(pack))
         res = t.translate(seg, prev, nxt)
         out.append({"id": n, "tagged": seg.tagged, "plain": seg.plain, "prev": prev, "nxt": nxt,
                     "essential": sorted(k for k, sp in seg.spans.items() if is_essential(sp)),
                     "where": "Doan %d" % (n + 1), "replies": replies, "default": default,
                     "calls": [{"user": c["user"], "reply": c["reply"]} for c in llm.calls],
                     "result": {"text": res.text, "level": res.level, "flags": list(res.flags),
-                               "reduced": res.segment is not seg}})
+                               "fixes": res.fixes, "reduced": res.segment is not seg}})
         assert all(c["system"] == system for c in llm.calls)
     return {"name": name, "full_text": full_text, "system": system, "scope": scope,
             "hits": [list(h) for h in hits], "classify": classify, "segments": out}

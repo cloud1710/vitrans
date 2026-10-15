@@ -1,5 +1,5 @@
 from vitranslate.config import REPO_ROOT
-from vitranslate.packs import EMPTY_PACK, Pack, TermFix, glossary_hits, load_pack, merge_packs
+from vitranslate.packs import EMPTY_PACK, Pack, TermFix, allowed_words, glossary_hits, load_pack, merge_packs
 from vitranslate.qa import apply_term_fixes
 
 PACKS = REPO_ROOT / "packs"
@@ -15,7 +15,7 @@ def test_load_real_packs():
     style = load_pack(packs_dir(), "_style")
     assert "\u0110\u1ecbnh ng\u1eef" in style.prompt
     path = load_pack(packs_dir(), "pathology")
-    assert path.key() == "pathology@0.1.8"
+    assert path.key() == "pathology@0.2.1"
     assert len(path.glossary) > 400
     assert any(f.en == "meningioma" for f in path.term_fixes)
     assert len(path.tests) >= 8 and all("must" in t for t in path.tests)
@@ -143,14 +143,14 @@ def test_merge_packs_first_wins():
 
 def test_style_pack_is_domain_neutral_and_pathology_keeps_the_medical_rules():
     style = load_pack(packs_dir(), "_style").prompt.lower()
-    medical = ("b\u1ec7nh", "y khoa", "tnm", "marker", "gi\u1ea3i ph\u1eabu", "bs ts", "nhu\u1ed9m", "di c\u0103n",
+    medical = ("b\u1ec7nh", "y khoa", "tnm", "marker", "gi\u1ea3i ph\u1eabu", "ts. bs.", "nhu\u1ed9m", "di c\u0103n",
                "kh\u00e1ng th\u1ec3", "tert")
     assert [w for w in medical if w in style] == []
     for rule in ("\u0111\u01b0\u1ee3c/b\u1ecb", "m\u1ed9t / c\u1ee7a / s\u1ef1 / vi\u1ec7c", "d\u1ea5u ph\u1ea9y",
                  "vi\u1ebft hoa", "it is / there is", "c\u1ee5m danh t\u1eeb", "c\u00e1c/nh\u1eefng", "normal functioning"):
         assert rule in style, rule
     path = load_pack(packs_dir(), "pathology").prompt.lower()
-    for rule in ("b\u1ec7nh nh\u00e2n nam", "tnm", "bs ts", "y khoa", "tert"):
+    for rule in ("b\u1ec7nh nh\u00e2n nam", "tnm", "ts. bs.", "y khoa", "tert"):
         assert rule in path, rule
 
 
@@ -259,7 +259,7 @@ def test_pathology_narrow_term_fixes():
     path = load_pack(packs_dir(), "pathology")
     cases = [("Malignant transformation occurred.", "Chuy\u1ec3n h\u00f3a \u00e1c t\u00ednh x\u1ea3y ra.",
               "Chuy\u1ec3n d\u1ea1ng \u00e1c t\u00ednh x\u1ea3y ra."),
-             ("Squamous cell carcinoma.", "Carcinom t\u1ebf b\u00e0o gai.", "Carcin\u00f4m t\u1ebf b\u00e0o gai."),
+             ("Squamous cell carcinoma.", "Carcin\u00f4m t\u1ebf b\u00e0o gai.", "Carcinom t\u1ebf b\u00e0o gai."),
              ("Many plasma cells.", "Nhi\u1ec1u t\u1ebf b\u00e0o huy\u1ebft t\u01b0\u01a1ng.",
               "Nhi\u1ec1u t\u01b0\u01a1ng b\u00e0o.")]
     for src, out, want in cases:
@@ -283,3 +283,74 @@ def test_user_confirmed_partial_fixes_present():
     path = load_pack(packs_dir(), "pathology")
     by = {f.en: f for f in path.term_fixes}
     assert "fine needle aspiration" in by and "targeted therapy" in by
+
+
+SINH_THIET_TUC_THI = "sinh thi\u1ebft t\u1ee9c th\u00ec"
+
+
+def test_frozen_section_is_sinh_thiet_tuc_thi_decision_6():
+    # roadmap decision 6 (user 2026-10-14): the procedure = "sinh thiet tuc thi", the slide = "tieu ban cat lanh";
+    # production 2026-10-14 wrote "Lat cat lanh cho thay..." for "Frozen section showed..."
+    from vitranslate.qa import apply_term_fixes
+    path = load_pack(packs_dir(), "pathology")
+    g = {en.lower(): vi for en, vi, _ in path.glossary}
+    assert g["frozen section"] == SINH_THIET_TUC_THI
+    assert g["frozen section slide"] == "ti\u00eau b\u1ea3n c\u1eaft l\u1ea1nh"
+    wrong = "L\u00e1t c\u1eaft l\u1ea1nh cho th\u1ea5y carcinom."
+    out, applied = apply_term_fixes(wrong, "Frozen section showed a carcinoma.", path.term_fixes)
+    assert out == "S" + SINH_THIET_TUC_THI[1:] + " cho th\u1ea5y carcinom." and applied == ["frozen section"]
+    assert g["nodular goiter"] == "ph\u00ecnh gi\u00e1p" and g["allele"] == "alen"
+    assert "infiltrating" not in g and "villous" not in g  # broken split keys of 0.1.8
+
+
+def test_families_decided_2026_10_14_evening():
+    # user 2026-10-14 22:20-22:39: carcinom / lymphom / sarcom without the circumflex (choriocarcinoma stays
+    # "ung thu nguyen bao nuoi"), Bethesda squamous = gai, lymphocyte = "lymph\u00f4 b\u00e0o" as he typed it, chromophobe = k\u1ecb s\u1eafc
+    from vitranslate.qa import apply_term_fixes
+    path = load_pack(packs_dir(), "pathology")
+    g = {en.lower(): vi for en, vi, _ in path.glossary}
+    assert g["carcinoma"] == "carcinom" and g["adenocarcinoma"] == "carcinom tuy\u1ebfn"
+    assert g["squamous cell carcinoma"] == "carcinom t\u1ebf b\u00e0o gai"
+    assert g["papillary microcarcinoma"] == "carcinom nh\u00fa vi th\u1ec3"
+    assert g["choriocarcinoma"].startswith("ung th\u01b0 nguy\u00ean b\u00e0o nu\u00f4i")
+    assert g["lymphoma"] == "lymphom" and g["mantle cell lymphoma"] == "lymphom t\u1ebf b\u00e0o \u00e1o nang (MCL)"
+    assert g["marginal zone lymphoma"] == "lymphom v\u00f9ng r\u00eca (MZL)" and g["mantle zone"] == "v\u00f9ng \u00e1o nang"
+    assert g["sarcoma"] == "sarcom" and g["myxofibrosarcoma"] == "sarcom s\u1ee3i ni\u00eam"
+    assert g["lymphocyte"] == "lymph\u00f4 b\u00e0o" and g["chromophobe"] == "k\u1ecb s\u1eafc"
+    assert g["high-grade squamous intraepithelial lesion"] == "t\u1ed5n th\u01b0\u01a1ng trong bi\u1ec3u m\u00f4 gai \u0111\u1ed9 cao (HSIL)"
+    assert g["pilocytic astrocytoma"] == "u sao b\u00e0o l\u00f4ng" and g["lymph node"] == "h\u1ea1ch lympho"
+    vis = " ".join(g.values())
+    for old in ("carcin\u00f4m", "lymph\u00f4m", "sarc\u00f4m", "ung th\u01b0 bi\u1ec3u m\u00f4", "u lympho ", "k\u1ef5 m\u00e0u"):
+        assert old not in vis, old
+    assert not any("(" in en for en, _, _ in path.glossary)  # the 27 dead parenthesised keys are rewritten
+    cases = [("Adenocarcinoma.", "Carcin\u00f4m tuy\u1ebfn.", "Carcinom tuy\u1ebfn."),
+             ("Adenocarcinoma.", "Ung th\u01b0 bi\u1ec3u m\u00f4 tuy\u1ebfn.", "Carcinom tuy\u1ebfn."),
+             ("Lymphoma.", "U lympho.", "Lymphom."),
+             ("Mantle cell lymphoma.", "Lymph\u00f4m t\u1ebf b\u00e0o \u00e1o nang.", "Lymphom t\u1ebf b\u00e0o \u00e1o nang."),
+             ("Ewing sarcoma.", "Sarc\u00f4m Ewing.", "Sarcom Ewing."),
+             ("Small lymphocytes.", "T\u1ebf b\u00e0o lympho nh\u1ecf.", "Lymph\u00f4 b\u00e0o nh\u1ecf."),
+             ("High-grade squamous intraepithelial lesion.", "T\u1ed5n th\u01b0\u01a1ng n\u1ed9i bi\u1ec3u m\u00f4 v\u1ea3y \u0111\u1ed9 cao.",
+              "T\u1ed5n th\u01b0\u01a1ng trong bi\u1ec3u m\u00f4 gai \u0111\u1ed9 cao.")]
+    for src, out, want in cases:
+        assert apply_term_fixes(out, src, path.term_fixes)[0] == want, src
+    # choriocarcinoma is not touched by the carcinoma fixes
+    chorio = "Ung th\u01b0 nguy\u00ean b\u00e0o nu\u00f4i."
+    assert apply_term_fixes(chorio, "Choriocarcinoma.", path.term_fixes)[0] == chorio
+
+
+def test_allowed_words_are_the_non_syllable_words_of_the_pack_values():
+    pk = Pack("p", "1", "P", [], "", [("lymphocyte", "lymph\u00f4 b\u00e0o", "not lymph\u00f4\u00f4"),
+                                     ("Sezary syndrome", "h\u1ed9i ch\u1ee9ng S\u00e9zary", "")],
+              [TermFix("lymphoma", "Lymph\u00f4m h\u00f3a", ["lymph\u00f4\u00f4m"]), TermFix("carcinoma", "carcinom",
+                                                                                        ["carcin\u00f4m"])], [])
+    # glossary and term-fix values only (never a note or a wrong form), lower case, sorted
+    assert allowed_words(pk) == ["lymph\u00f4", "lymph\u00f4m", "s\u00e9zary"]
+    assert allowed_words(EMPTY_PACK) == []
+
+
+def test_pathology_allows_its_house_forms_and_nothing_it_calls_wrong():
+    path = load_pack(packs_dir(), "pathology")
+    words = allowed_words(path)
+    assert "lymph\u00f4" in words  # lymphocyte = lymph\u00f4 b\u00e0o (user 2026-10-14)
+    for wrong in ("carcin\u00f4m", "lymph\u00f4m", "sarc\u00f4m", "pulm\u00f4n"):
+        assert wrong not in words, wrong

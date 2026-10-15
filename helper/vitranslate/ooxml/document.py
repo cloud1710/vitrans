@@ -48,6 +48,40 @@ def is_stop_heading(text):
     return t.rstrip(":").strip() in STOP_HEADINGS
 
 
+# The section titles of the back matter that follows a reference list (his report 2026-10-15: "dich phu luc, chi ko
+# dich tai lieu tham khao"): optional numbering ("7.", "A.", "IV)"), the title, an optional number / letter ("A",
+# "2", "S1", "II"), then nothing, a colon, or a separator and the rest of a short title.
+_BACK_MATTER = re.compile(
+    r"(?:(?:\d+(?:\.\d+)*|[a-z]|[ivxlc]+)[.)]\s*)?"
+    r"(?:appendix|appendices|annex(?:es)?"
+    r"|supplementary(?:\s+(?:materials?|data|information|methods|figures?|tables?))?"
+    r"|supporting\s+information|online\s+resources?|acknowledge?ments?|abbreviations?|glossary"
+    r"|figure\s+legends?|tables?|authors?\s+contributions?|author's\s+contributions?|funding"
+    r"|conflicts?\s+of\s+interests?|competing\s+interests?|data\s+availability(?:\s+statement)?"
+    r"|about\s+the\s+authors?|phu\s+luc)"
+    r"(?:\s+(?:[a-z]?\d+(?:\.\d+)*|[a-z]|[ivx]+))?"
+    r"(?P<rest>\s*[:.–—-]\s*.*)?")
+_CITATION = re.compile(r"\b(?:19|20)\d\d\b|\bet al\b|\d\s*[;:(]\s*\d")
+
+
+def _fold(text):
+    """NFC lower case, white space squashed, diacritics dropped (d with stroke as d): "PHU LUC" with or without its
+    marks reads the same."""
+    t = " ".join(unicodedata.normalize("NFC", text).lower().split())
+    t = t.replace("đ", "d")
+    return "".join(c for c in unicodedata.normalize("NFD", t) if unicodedata.category(c) != "Mn")
+
+
+def is_back_matter_heading(text):
+    """A short paragraph (<= 8 words) that reads as the title of a back-matter section (Appendix, Supplementary
+    material, Acknowledgements, Abbreviations, Funding, Phu luc ...); not one whose rest looks like a citation (a
+    year, "et al", volume:page)."""
+    if len(text.split()) > 8:
+        return False
+    m = _BACK_MATTER.fullmatch(_fold(text))
+    return m is not None and not (m.group("rest") and _CITATION.search(m.group("rest")))
+
+
 def _non_latin(text):
     """A letter outside the Latin and Greek scripts (CJK, Thai, Cyrillic...). Greek is notation here (34betaE12);
     NFKC first folds letter-like symbols (micro sign, angstrom sign) into their script, and modifier letters
@@ -113,7 +147,8 @@ def collect_items(pkg, notes=True, comments=False):
         # DOCX: only body-level paragraphs open or close the references region. A heading stop heading closes at the
         # next heading of the same or a higher level (sub-headings of the list stay inside); a heading-like style
         # without a level counts as the stop heading's level, and a stop heading without a level closes at any
-        # heading. A plain paragraph stop heading runs to the end of the body.
+        # heading. A plain paragraph stop heading runs to the end of the body. A back-matter title (Appendix,
+        # Acknowledgements, Phu luc ...) always closes it, whatever its style or level.
         body = root.find(q("w:body")) if pkg.kind == "docx" and part == "word/document.xml" else None
         in_refs, close_at = False, None  # close_at: level that closes the region, None = never
         for i, (p, text) in enumerate(zip(paras, texts)):
@@ -122,6 +157,8 @@ def collect_items(pkg, notes=True, comments=False):
                 level = _heading_level(p)
                 if in_refs and close_at is not None and level is not None:
                     in_refs = not (level == _UNKNOWN or level <= close_at)
+                if in_refs and is_back_matter_heading(text):
+                    in_refs = False
                 if not in_refs and is_stop_heading(text):
                     in_refs = True
                     close_at = None if level is None else (_DEEPEST if level == _UNKNOWN else level)

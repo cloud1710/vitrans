@@ -1,0 +1,86 @@
+# macOS installer of the local helper: ViTranslate-macOS.dmg for Apple-silicon Macs (unsigned; first open needs
+# System Settings -> Privacy & Security -> Open Anyway, see installer/README.md).
+# - Every run: the darwin tests of the helper (platform mocked, plus the real Ollama darwin build: download,
+#   SHA-256, unpack, serve on 11435), installer/macos/build.sh, installer/macos/smoke.sh on the built image, and the
+#   image as the workflow artifact "ViTranslate-macOS".
+# - Publishing a GitHub release (tag) or a manual run with release_tag attaches ViTranslate-macOS.dmg and
+#   SHA256SUMS-macOS.txt to that existing release (the page links releases/latest/download/ViTranslate-macOS.dmg).
+#   A release is never created here, so the Windows asset of the latest release is never shadowed.
+name: macOS installer
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Attach the dmg to this existing release tag (empty: build + artifact only)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: macos-installer-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: macos-14
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install the helper, pytest and PyInstaller
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install "./helper[dev,installer]"
+
+      - name: Darwin tests
+        working-directory: helper
+        env:
+          VITRANSLATE_NET_TESTS: "1"
+        run: >
+          python -m pytest -q
+          tests/test_macos_device.py tests/test_macos_setup.py tests/test_macos_installer.py
+          tests/test_recommend.py
+
+      - name: Build the disk image
+        run: bash installer/macos/build.sh --python python
+
+      - name: Smoke test the disk image
+        run: bash installer/macos/smoke.sh out/installer/ViTranslate-macOS.dmg
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ViTranslate-macOS
+          path: |
+            out/installer/ViTranslate-macOS*.dmg
+            out/installer/SHA256SUMS-macOS.txt
+          if-no-files-found: error
+
+  release:
+    needs: build
+    if: github.event_name == 'release' || inputs.release_tag != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: ViTranslate-macOS
+          path: dist
+
+      - name: Attach to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event_name == 'release' && github.event.release.tag_name || inputs.release_tag }}
+        run: |
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" > /dev/null
+          gh release upload "$TAG" dist/ViTranslate-macOS.dmg dist/SHA256SUMS-macOS.txt \
+            --repo "$GITHUB_REPOSITORY" --clobber

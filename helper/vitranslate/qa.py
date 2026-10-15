@@ -433,8 +433,23 @@ def _numbers(text):
     return sorted(n.replace(",", ".") for n in _NUM_RE.findall(text))
 
 
+_MONTHS = {"january": "1", "jan": "1", "february": "2", "feb": "2", "march": "3", "mar": "3", "april": "4",
+           "apr": "4", "may": "5", "june": "6", "jun": "6", "july": "7", "jul": "7", "august": "8", "aug": "8",
+           "september": "9", "sept": "9", "sep": "9", "october": "10", "oct": "10", "november": "11", "nov": "11",
+           "december": "12", "dec": "12"}
+_MONTH_RE = re.compile(r"(?<![A-Za-z])(" + "|".join(sorted(_MONTHS, key=len, reverse=True)) + r")(?![A-Za-z])",
+                       re.I)
+
+
 def numbers_changed(src_plain, out_plain):
-    return _numbers(src_plain) != _numbers(out_plain)
+    """True when the output's numbers are not the source's; an English month name of the source may come back as its
+    number ("1-3 November 2026" -> "1-3 thang 11 nam 2026", with the marks), once per name."""
+    src, out = _numbers(src_plain), _numbers(out_plain)
+    for name in _MONTH_RE.findall(src_plain):
+        n = _MONTHS[name.lower()]
+        if out.count(n) > src.count(n):
+            out.remove(n)
+    return src != out
 
 
 def _wb(pattern):
@@ -475,7 +490,9 @@ def _extend(text, s, e, vi, lo):
     return ls, re_end
 
 
-def _replace_all(rx, out, vi, canon_spans):
+def _replace_all(rx, out, vi, canon_spans, done):
+    """out with every match of rx (outside the canonical spans) replaced by vi; each (text found, text written) pair is
+    added to done."""
     parts, pos = [], 0
     for m in rx.finditer(out):
         s, e = m.span()
@@ -491,13 +508,23 @@ def _replace_all(rx, out, vi, canon_spans):
             rep = vi
         parts.append(out[pos:ls])
         parts.append(rep)
+        done.append((word, rep))
         pos = re_end
     parts.append(out[pos:])
     return "".join(parts)
 
 
-def apply_term_fixes(out, src_plain, fixes):
-    """Source-gated, idempotent VN->VN replacement of known wrong variants."""
+def _log(log, en, found, written):
+    """Add one fix row {en, from, to} to log unless it is there already."""
+    row = {"en": en, "from": found, "to": written}
+    if row not in log:
+        log.append(row)
+
+
+def apply_term_fixes(out, src_plain, fixes, log=None):
+    """Source-gated, idempotent VN->VN replacement of known wrong variants: (text, English keys of the fixes applied).
+    With a list `log`, every replacement not logged yet is added as {"en": the fix's English key, "from": the text
+    found (the whole replaced span), "to": the text written}."""
     out = _nfc(out)
     src_low = _nfc(src_plain).lower()
     applied = []
@@ -517,13 +544,55 @@ def apply_term_fixes(out, src_plain, fixes):
         hit = False
         for rx in wrongs:
             spans = [m.span() for m in canon.finditer(out)] if canon else []
-            new = _replace_all(rx, out, vi, spans)
+            done = []
+            new = _replace_all(rx, out, vi, spans, done)
             if new != out:
                 hit = True
                 out = new
+                for found, written in done:
+                    if log is not None and found != written:
+                        _log(log, fx.en, found, written)
         if hit:
             applied.append(fx.en)
     return out, applied
+
+
+# Vietnamese academic titles go before the name, highest first, with a dot after each (his rule): GS. / PGS. (academic
+# rank), TS. (doctorate), ThS. (master), then BS. / CN. / KS. (first degrees); equal ranks keep their order.
+TITLE_RANK = {"GS": 0, "PGS": 0, "TS": 1, "ThS": 2, "BS": 3, "CN": 3, "KS": 3}
+TITLE_FIX = "title-order"  # the "en" of its log rows and its term_fix flag
+_ACADEMIC_RUN_RE = re.compile(r"(?<![\w.\-])(?:(?:PGS|GS|ThS|TS|BS|CN|KS)\.?[ \t]+)+(?=(?:<g\d+>)*[^\W\d_])")
+_ACADEMIC_RE = re.compile(r"PGS|GS|ThS|TS|BS|CN|KS")
+_NAME_AFTER_RE = re.compile(r"(?:<g\d+>)*([^\W\d_][\w'\u2019\-]*)")
+
+
+def fix_title_order(out, log=None):
+    """(text, applied): each run of Vietnamese academic titles (TITLE_RANK) written right before a capitalised name (a
+    word with a capital first letter and a lower-case letter: "Jane", "Nguy\u1ec5n"; not "VII" or "CKII"; opening tags
+    may come between: "BS TS <g1>Jane Doe</g1>") is written in TITLE_RANK order, each title once, with a dot after
+    each: "BS TS Jane Doe" -> "TS. BS. Jane Doe". Titles after a name, titles split by a tag, a comma or a hyphen, and
+    every other word stay as they are. applied = [TITLE_FIX] when a run changed; with a list `log`, every rewrite not
+    logged yet is added as {"en": TITLE_FIX, "from": the run, "to": the run written}."""
+    parts, pos = [], 0
+    for m in _ACADEMIC_RUN_RE.finditer(out):
+        name = _NAME_AFTER_RE.match(out, m.end()).group(1)
+        if not name[0].isupper() or name.isupper():
+            continue
+        run = m.group(0).rstrip(" \t")
+        titles = _ACADEMIC_RE.findall(run)
+        order = list(dict.fromkeys(sorted(titles, key=TITLE_RANK.get)))
+        if order == titles and run.count(".") == len(titles):
+            continue
+        new = " ".join(t + "." for t in order)
+        parts.append(out[pos:m.start()])
+        parts.append(new)
+        pos = m.start() + len(run)
+        if log is not None:
+            _log(log, TITLE_FIX, run, new)
+    if not parts:
+        return out, []
+    parts.append(out[pos:])
+    return "".join(parts), [TITLE_FIX]
 
 
 # Acronyms and codes the output must keep (HER2, CCRCC, ChRCC, UCa, 22q11.2, NM_000546.6, p.V600E). Not tokens:
@@ -597,7 +666,9 @@ def glossary_misses(src_plain, out_plain, hits):
     return [en for en, vi in hits if re.search(_bounded(en), low_src) and vi.lower() not in low_out]
 
 
-def suspicious_tokens(out_plain, src_plain=""):
-    """Invalid-looking Vietnamese tokens, ignoring words copied from the source (eponyms: Sezary, Barre...)."""
+def suspicious_tokens(out_plain, src_plain="", allowed=frozenset()):
+    """Invalid-looking Vietnamese tokens, ignoring words copied from the source (eponyms: Sezary, Barre...) and the
+    words of `allowed` in any case (lower case: the words of the active packs' Vietnamese values that are no regular
+    syllable, packs.allowed_words: the house form lympho with a circumflex...)."""
     src_low = src_plain.lower()
-    return [t for t in suspicious(out_plain) if t.lower() not in src_low]
+    return [t for t in suspicious(out_plain) if t.lower() not in src_low and t.lower() not in allowed]

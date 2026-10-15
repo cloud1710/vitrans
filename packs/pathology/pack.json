@@ -1,4 +1,4 @@
-{"id": "pathology", "version": "0.1.8", "name": "Giải phẫu bệnh",
+{"id": "pathology", "version": "0.2.1", "name": "Giải phẫu bệnh",
  "detect": ["histopathology", "histologic", "histology", "biopsy", "biopsies", "tumor", "tumour", "sarcoma",
             "carcinoma", "meningioma", "glioma", "astrocytoma", "neuropathology", "neurodegeneration",
             "dementia", "immunohistochemistry", "IHC", "cytology", "lymphoma", "neoplasm",

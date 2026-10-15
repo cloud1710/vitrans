@@ -10,7 +10,7 @@ from fixtures import (CHINESE, GREEK_CLONE, MICRO_UNIT, PRIME_END, add_text_box_
                       reorder_slides, set_outline_level)
 from vitranslate.config import REPO_ROOT
 from vitranslate.ooxml.codec import apply
-from vitranslate.ooxml.document import collect_items, is_stop_heading
+from vitranslate.ooxml.document import collect_items, is_back_matter_heading, is_stop_heading
 from vitranslate.ooxml.ns import q
 from vitranslate.ooxml.package import OoxmlPackage
 
@@ -151,14 +151,14 @@ def test_docx_text_box_does_not_stop(tmp_path):
     assert _by_text(items)["Final diagnosis: atypical meningioma."].segment
 
 
-@pytest.mark.parametrize("style, outline, appendix_translated", [
-    ("Heading 1", None, True),   # heading-styled stop: the region ends at the next heading
-    ("Title", None, True),
-    (None, 0, True),             # direct outline level 0 = heading
-    (None, None, False),         # plain paragraph "References": the region runs to the end of the body
-    (None, 9, False),            # outline level 9 = body text
+@pytest.mark.parametrize("style, outline", [
+    ("Heading 1", None),   # heading-styled stop: the region ends at the next heading
+    ("Title", None),
+    (None, 0),             # direct outline level 0 = heading
+    (None, None),          # plain paragraph "References": a back-matter title ends it (his report 2026-10-15)
+    (None, 9),             # outline level 9 = body text: likewise
 ])
-def test_docx_references_region(tmp_path, style, outline, appendix_translated):
+def test_docx_references_region(tmp_path, style, outline):
     def build(d):
         d.add_paragraph("Body text before the list")
         head = d.add_paragraph("References", style=style)
@@ -173,10 +173,58 @@ def test_docx_references_region(tmp_path, style, outline, appendix_translated):
     assert by["References"].skip == "references"
     assert by["Louis DN et al. Neuro Oncol 2021"].skip == "references"
     for text in ("Appendix A", "Staining protocol for the lab"):
-        if appendix_translated:
-            assert by[text].segment and not by[text].skip, text
-        else:
-            assert by[text].skip == "references", text
+        assert by[text].segment and not by[text].skip, text
+
+
+BACK_MATTER = ["Appendix", "Appendix A", "APPENDIX 2", "Appendix S1: Staining protocols", "Appendices", "Annex 1",
+               "Supplementary", "Supplementary Material", "Supplementary data", "Supplementary Information",
+               "Supplementary methods", "Supplementary Figures", "Supplementary tables", "Supporting Information",
+               "Online Resource 1", "Acknowledgements", "Acknowledgments", "Abbreviations", "Glossary",
+               "Figure legends", "Tables", "Author contributions", "Funding", "Conflict of interest",
+               "Conflicts of Interest", "Competing interests", "Data availability", "About the author",
+               "About the Authors", "7. Acknowledgements", "A. Appendix", "Appendix 1. Questionnaire", "Funding:",
+               "Phụ lục", "PHỤ LỤC 2", "Phu luc 1"]
+
+
+def test_back_matter_heading():
+    for text in BACK_MATTER:
+        assert is_back_matter_heading(text), text
+    for text in ["References", "Staining protocol for the lab", "Louis DN et al. Neuro Oncol 2021",
+                 "Funding. J Synth Path. 2020;1:1-9.", "Tables of the synthetic series in a long form for the lab",
+                 "Appendix A. Example AB et al. 2019", "Appendicitis", "Funding was provided by the synthetic fund",
+                 "Abbreviations used in the synthetic text are listed below in full"]:
+        assert not is_back_matter_heading(text), text
+
+
+@pytest.mark.parametrize("title", BACK_MATTER)
+@pytest.mark.parametrize("stop", [("style", "Normal"), ("outline", 9), ("style", "Heading 1"), ("outline", 0)])
+def test_docx_back_matter_closes_references(tmp_path, title, stop):
+    """A back-matter title closes the references region whatever its style or level: a plain paragraph after a
+    plain "References", a deeper heading after a level-0 one. The title and what follows are translated, the
+    entries before it are not, nor a citation-looking paragraph."""
+    def build(d):
+        _para(d, "References", stop)
+        d.add_paragraph("Louis DN et al. Neuro Oncol 2021")
+        d.add_paragraph("Funding. J Synth Path. 2020;1:1-9.")
+        _para(d, title, ("style", "Normal") if stop[0] == "style" and stop[1] == "Normal" else H3)
+        d.add_paragraph("Staining protocol for the lab")
+
+    by = _by_text(_docx_items(tmp_path, build))
+    for text in ("References", "Louis DN et al. Neuro Oncol 2021", "Funding. J Synth Path. 2020;1:1-9."):
+        assert by[text].skip == "references", text
+    for text in (title, "Staining protocol for the lab"):
+        assert by[text].segment and not by[text].skip, text
+
+
+def test_docx_plain_paragraph_after_plain_references_stays_inside(tmp_path):
+    def build(d):
+        d.add_paragraph("References")
+        d.add_paragraph("Louis DN et al. Neuro Oncol 2021")
+        d.add_paragraph("Perry A, Example B. A synthetic study of the lab. Brain Pathol 2020;30:1-9.")
+        d.add_paragraph("Staining protocol for the lab")
+
+    items = _docx_items(tmp_path, build)
+    assert all(i.skip == "references" for i in items)
 
 
 def _para(d, text, how):

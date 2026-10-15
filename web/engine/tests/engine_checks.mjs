@@ -8,7 +8,8 @@ import * as qa from "../qa.js";
 import * as vn from "../vnsyllable.js";
 import * as tr from "../translate.js";
 import * as matching from "../matching.js";
-import { Pack, TermFix, PackError, loadPack, mergePacks, glossaryHits, readGlossary } from "../packs.js";
+import * as repair from "../repair.js";
+import { Pack, TermFix, PackError, loadPack, mergePacks, glossaryHits, readGlossary, allowedWords } from "../packs.js";
 import { translateFile } from "../pipeline.js";
 import { choosePacks, topCandidates, translateSegments, prepareTranslation, selectPacks, buildPackSet, packToData,
   packFromData } from "../core.js";
@@ -142,6 +143,7 @@ function pairFns(data) {
     "qa.fix_latex": (s, o) => qa.fixLatex(s, o),
     "qa.source_case": (s, o) => qa.sourceCase(s, o),
     "qa.suspicious_tokens": (s, o) => qa.suspiciousTokens(o, s),
+    "qa.suspicious_tokens.allowed": (s, o) => qa.suspiciousTokens(o, s, data.suspicious_allowed),
     "qa.glossary_misses": (s, o) => qa.glossaryMisses(s, o, hits),
     "qa.strip_leaks": (s, o) => qa.stripLeaks(s, o),
     "tr._suspect": (s, o) => tr.suspect(s, o),
@@ -174,6 +176,11 @@ function singleFns(data) {
     "qa._bounded": (t) => qa.bounded(t),
     "vn.is_valid": (w) => vn.isValid(w),
     "vn._needs_check": (w) => vn.needsCheck(w),
+    "qa.fix_title_order": (t) => {
+      const log = [];
+      const [text, applied] = qa.fixTitleOrder(t, log);
+      return [text, applied, log];
+    },
   };
 }
 
@@ -238,8 +245,11 @@ export function unitChecks(data) {
   // explicit cases
   const c = data.cases;
   const fixes = c.term_fix.fixes.map(fixOf);
-  compareList("units qa.apply_term_fixes", c.term_fix.rows.map((r) => [r[0], r[1]]), c.term_fix.rows.map((r) => [r[2], r[3]]),
-    (src, out) => qa.applyTermFixes(out, src, fixes), rows, null);
+  compareList("units qa.apply_term_fixes (+ log)", c.term_fix.rows.map((r) => [r[0], r[1]]),
+    c.term_fix.rows.map((r) => [r[2], r[3], r[4]]), (src, out) => {
+      const log = [];
+      return [...qa.applyTermFixes(out, src, fixes, log), log];
+    }, rows, null);
   compareList("units tr._gate_note + _retried", c.gate.map((r) => [r[0], r[1], r[2]]), c.gate.map((r) => [r[3], r[4]]),
     (issues, ans, src) => [tr.gateNote(issues, ans, src), tr.retried(issues)], rows, null);
   compareList("units tr._cacheable", c.cache.map((r) => [r[0], r[1]]), c.cache.map((r) => r[2]), tr.cacheable, rows, null);
@@ -270,7 +280,7 @@ async function textSha(text) {
 export function packSummary(p) {
   return { id: p.id, version: p.version, name: p.name, detect: [...p.detect], prompt: p.prompt,
     glossary: p.glossary.map((r) => [...r]), term_fixes: p.termFixes.map((f) => [f.en, f.vi, [...f.wrong]]),
-    tests: p.tests, key: p.key() };
+    tests: p.tests, key: p.key(), allowed: allowedWords(p) };
 }
 
 const packOf = (s) => new Pack(s.id, s.version, s.name, s.detect, s.prompt, s.glossary, s.term_fixes.map(fixOf), s.tests);
@@ -440,11 +450,11 @@ function taggedOf(xml) {
 
 function translatorFor(cfg, model, tm) {
   return new tr.Translator({ model, system: cfg.system, modelKey: cfg.model, packKey: cfg.pack_key,
-    fixes: cfg.fixes.map(fixOf), hits: cfg.hits, tm });
+    fixes: cfg.fixes.map(fixOf), hits: cfg.hits, tm, allowed: cfg.allowed });
 }
 
 const setupOf = (cfg) => ({ system: cfg.system, scope: cfg.pack_key, hits: cfg.hits,
-  fixes: cfg.fixes.map(([en, vi, wrong]) => ({ en, vi, wrong })) });
+  fixes: cfg.fixes.map(([en, vi, wrong]) => ({ en, vi, wrong })), allowed: cfg.allowed });
 
 async function tmRows(tm) {
   if (tm instanceof MemoryTM) return [...tm.rows].map(([k, v]) => [k, v.out, v.level]).sort((a, b) => py.cmpStr(a[0], b[0]));
@@ -497,8 +507,8 @@ export async function translateChecks(data, makeTm = async () => new MemoryTM(),
         const work = r.reduced ? tseg.reduced(tr.isEssential) : tseg;
         const clientWork = r.reduced ? codecSeg.reduced(isEssentialSpan) : codecSeg; // what the client writes back
         if (clientWork.tagged !== work.tagged) problems.push(at + "client reduction " + show(clientWork.tagged));
-        const got = { text: r.text, level: r.level, flags: r.flags, cached: r.cached, work_tagged: work.tagged,
-          work_spans: [...r.spans].sort((a, b) => a - b) };
+        const got = { text: r.text, level: r.level, flags: r.flags, fixes: r.fixes, cached: r.cached,
+          work_tagged: work.tagged, work_spans: [...r.spans].sort((a, b) => a - b) };
         for (const f of Object.keys(got)) {
           if (!jsonEqual(got[f], want[f])) problems.push(at + f + " js " + show(got[f]) + " != py " + show(want[f]));
         }
@@ -701,6 +711,34 @@ export function reportChecks(data) {
   });
 }
 
+// ---------------------------------------------------------------- repair: term repair candidates vs repair.py
+
+export async function repairChecks(data, source, load) {
+  const rows = [];
+  const keys = (await packLoader(source, "repo", data.pack)).glossary.map((r) => r[0]).concat(data.extra_keys);
+  rows.push({ name: "repair keys of " + data.pack + " + " + data.extra_keys.length + " synthetic (" + keys.length + ")",
+    ok: keys.length === data.key_count, detail: keys.length + " != " + data.key_count });
+  const lex = await load("../../../medical_words.json");
+  const index = repair.termIndex(keys, lex.terms.concat(lex.corpus));
+  const sounds = Object.entries(data.sounds).filter(([w, code]) => repair.soundKey(w) !== code);
+  rows.push({ name: "repair sound keys (" + (Object.keys(data.sounds).length - sounds.length) + "/" +
+    Object.keys(data.sounds).length + ")", ok: sounds.length === 0,
+  detail: sounds.slice(0, 5).map(([w, code]) => w + ": js " + repair.soundKey(w) + " != py " + code).join("; ") });
+  for (const [name, get, want] of [
+    ["words", (t) => repair.words(t).map((w) => w[2]), (c) => c.words],
+    ["candidates", (t) => repair.findCandidates(t, index), (c) => c.candidates],
+    ["candidates gate off", (t) => repair.findCandidates(t, index, { gate: "off" }), (c) => c.off],
+    ["candidates gate any", (t) => repair.findCandidates(t, index, { gate: "any" }), (c) => c.any],
+    ["candidates limit 3, min score 700", (t) => repair.findCandidates(t, index, { limit: 3, minScore: 700 }),
+      (c) => c.small]]) {
+    const bad = data.cases.filter((c) => !jsonEqual(get(c.text), want(c)));
+    rows.push({ name: "repair " + name + " (" + (data.cases.length - bad.length) + "/" + data.cases.length + ")",
+      ok: bad.length === 0, detail: bad.slice(0, 3).map((c) => show(c.text) + ": js " + show(get(c.text)) + " != py " +
+        show(want(c))).join("; ") });
+  }
+  return rows;
+}
+
 // ---------------------------------------------------------------- every area
 
 /** All M2 parity rows ({area, name, ok, detail}), the same in Node and Chrome. load(name) -> parsed fixture of
@@ -719,6 +757,7 @@ export async function engineChecks({ load, source, makeTm, disposeTm, reopen = n
   add("packs", await packChecks(await load("packs.json"), source));
   const matchingData = await load("matching.json");
   add("matching", matchingChecks(matchingData));
+  add("repair", await repairChecks(await load("repair.json"), source, load));
   add("translate", await translateChecks(await load("translate.json"), makeTm, disposeTm));
   add("report", reportChecks(await load("report.json")));
   const e2e = await load("e2e.json");

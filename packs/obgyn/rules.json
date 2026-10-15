@@ -1,0 +1,13 @@
+{
+ "term_fixes": [
+  {"en": "placenta previa", "vi": "nhau tiền đạo", "wrong": ["rau tiền đạo"]},
+  {"en": "placenta praevia", "vi": "nhau tiền đạo", "wrong": ["rau tiền đạo"]},
+  {"en": "placental abruption", "vi": "nhau bong non", "wrong": ["rau bong non"]},
+  {"en": "placenta accreta", "vi": "nhau cài răng lược", "wrong": ["rau cài răng lược"]},
+  {"en": "postpartum haemorrhage", "vi": "băng huyết sau sinh", "wrong": ["chảy máu sau đẻ", "băng huyết sau đẻ"]},
+  {"en": "preterm birth", "vi": "sinh non", "wrong": ["đẻ non"]},
+  {"en": "caesarean section", "vi": "mổ lấy thai", "wrong": ["mổ đẻ"]},
+  {"en": "cesarean section", "vi": "mổ lấy thai", "wrong": ["mổ đẻ"]},
+  {"en": "ectopic pregnancy", "vi": "thai ngoài tử cung", "wrong": ["chửa ngoài tử cung"]}
+ ]
+}

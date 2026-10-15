@@ -5,6 +5,7 @@ Overridable by environment variable: app home (VITRANSLATE_HOME), Ollama URL (VI
 (VITRANSLATE_WEB). Everything else here (ports, model names, limits) is a constant.
 """
 import os
+import sys
 from pathlib import Path
 
 APP_NAME = "ViTranslate"
@@ -37,17 +38,46 @@ def default_model(kind) -> str:
     return MODEL_DEFAULT_GPU if kind == "gpu" else MODEL_DEFAULT_CPU
 
 
+def default_home(platform=None, environ=None, user_home=None) -> Path:
+    """VITRANSLATE_HOME, else %LOCALAPPDATA%\\ViTranslate (Windows) or ~/Library/Application Support/ViTranslate
+    (macOS)."""
+    platform = sys.platform if platform is None else platform
+    environ = os.environ if environ is None else environ
+    user_home = Path.home() if user_home is None else Path(user_home)
+    base = environ.get("VITRANSLATE_HOME")
+    if base:
+        return Path(base)
+    if platform == "darwin":
+        return user_home / "Library" / "Application Support" / APP_NAME
+    return Path(os.path.join(environ.get("LOCALAPPDATA", str(user_home)), APP_NAME))
+
+
 def app_home() -> Path:
-    base = os.environ.get("VITRANSLATE_HOME")
-    if not base:
-        base = os.path.join(os.environ.get("LOCALAPPDATA", str(Path.home())), APP_NAME)
-    home = Path(base)
+    home = default_home()
     home.mkdir(parents=True, exist_ok=True)
     return home
 
 
+def logs_dir(home, platform=None, environ=None, user_home=None) -> Path:
+    """<home>/logs; on macOS ~/Library/Logs/ViTranslate (Console.app shows it) unless VITRANSLATE_HOME is set."""
+    platform = sys.platform if platform is None else platform
+    environ = os.environ if environ is None else environ
+    if platform == "darwin" and not environ.get("VITRANSLATE_HOME"):
+        return (Path.home() if user_home is None else Path(user_home)) / "Library" / "Logs" / APP_NAME
+    return Path(home) / "logs"
+
+
+_ollama_override = None  # set by the installed helper's setup (setup.py): the system Ollama or its portable copy
+
+
+def set_ollama_url(url):
+    global _ollama_override
+    _ollama_override = url
+
+
 def ollama_url() -> str:
-    return os.environ.get("VITRANSLATE_OLLAMA", "http://127.0.0.1:11434")
+    """VITRANSLATE_OLLAMA when set, else the Ollama the setup chose, else the standard local port."""
+    return os.environ.get("VITRANSLATE_OLLAMA") or _ollama_override or "http://127.0.0.1:11434"
 
 
 def registry_source():

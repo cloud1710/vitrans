@@ -368,9 +368,10 @@ def _first_case(src_plain, draft, edit):
     return edit[:j] + (edit[j].upper() if s.isupper() else edit[j].lower()) + edit[j + 1:]
 
 
-def _reason(seg, draft, edit, hits):
+def _reason(seg, draft, edit, hits, allowed=frozenset()):
     """First failing guard of an edit (tags already exact) against its draft, or None. Leaked prompt pieces come
-    first: a "[2]" copied from the next line is scaffold, not a changed number."""
+    first: a "[2]" copied from the next line is scaffold, not a changed number. allowed: the words the suspicious-word
+    check accepts (packs.allowed_words)."""
     src, d, e = _plain(seg.tagged), _plain(draft), _plain(edit)
     if _EDITOR_SCAFFOLD_RE.search(e) and not _EDITOR_SCAFFOLD_RE.search(d):
         return "scaffold"
@@ -399,7 +400,7 @@ def _reason(seg, draft, edit, hits):
     if (_same(src, e) or (qa.english_left(src, e) and not qa.english_left(src, d))
             or _english_back(src, d, e, hits)):
         return "english"
-    if set(qa.suspicious_tokens(e, src)) - set(qa.suspicious_tokens(d, src)):
+    if set(qa.suspicious_tokens(e, src, allowed)) - set(qa.suspicious_tokens(d, src, allowed)):
         return "suspicious"
     if _weakened(src, d, e):
         return "term_weakened"
@@ -410,11 +411,12 @@ def _reason(seg, draft, edit, hits):
     return None
 
 
-def guard_line(seg, draft, edit, hits, fixes):
+def guard_line(seg, draft, edit, hits, fixes, allowed=frozenset()):
     """(text, reason, term fixes applied) for one edited line against its draft: leaks stripped and the draft's edge
-    whitespace kept, tags exact (level-1 repair allowed), tag-edge spaces restored, term-lock re-applied, the draft's
-    final period and first-letter case kept where the editor only toggled them, then the guards of _reason. On any
-    failure the draft comes back with the reason; reason None = accepted (the text may be the draft itself)."""
+    whitespace kept, tags exact (level-1 repair allowed), tag-edge spaces restored, term-lock and title order
+    re-applied, the draft's final period and first-letter case kept where the editor only toggled them, then the guards
+    of _reason (allowed: the words the suspicious-word check accepts). On any failure the draft comes back with the
+    reason; reason None = accepted (the text may be the draft itself)."""
     edit = qa.strip_leaks(draft, edit)
     if not edit.strip():
         return draft, "empty", []
@@ -424,12 +426,13 @@ def guard_line(seg, draft, edit, hits, fixes):
             return draft, "tags", []
     edit = restore_spaces(seg.tagged, edit)
     edit, applied = qa.apply_term_fixes(edit, _plain(seg.tagged), fixes)
+    edit, titled = qa.fix_title_order(edit)
     edit = _first_case(_plain(seg.tagged), draft, _end_period(_plain(seg.tagged), draft, edit))
     edit = qa.source_case(_plain(seg.tagged), edit)
     if edit == draft:
         return draft, None, []
-    reason = _reason(seg, draft, edit, hits)
-    return (draft, reason, []) if reason else (edit, None, applied)
+    reason = _reason(seg, draft, edit, hits, allowed)
+    return (draft, reason, []) if reason else (edit, None, applied + titled)
 
 
 # ---- editor and job pass ------------------------------------------------------------------------------------------
@@ -438,7 +441,8 @@ class Polisher:
     """One editor call per group (one retry when the numbering is incomplete), guards per line, TM per group. The
     TM keeps the raw answer; every hit is parsed and guarded again, as in the translator."""
 
-    def __init__(self, llm, system, model_key, scope_key, fixes=(), hits=(), tm=None):
+    def __init__(self, llm, system, model_key, scope_key, fixes=(), hits=(), tm=None, allowed=()):
+        """allowed: words the suspicious-word guard accepts (packs.allowed_words of the job's merged pack)."""
         self.llm = llm
         self.system = system
         self.model_key = model_key
@@ -446,10 +450,12 @@ class Polisher:
         self.fixes = list(fixes)
         self.hits = list(hits)
         self.tm = tm
+        self.allowed = frozenset(w.lower() for w in allowed)
         self._system_hash = hashlib.sha256(system.encode("utf-8")).hexdigest()[:12]
 
     def _guarded(self, lines, parsed, hits):
-        return [guard_line(seg, draft, parsed[n], hits, self.fixes) for n, (seg, draft) in enumerate(lines, 1)]
+        return [guard_line(seg, draft, parsed[n], hits, self.fixes, self.allowed)
+                for n, (seg, draft) in enumerate(lines, 1)]
 
     def edit(self, lines):
         """lines: [(work segment, tagged draft)] -> ([(text, reason, term fixes)] per line, from the TM)."""

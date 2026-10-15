@@ -1,0 +1,8 @@
+{"id": "nutrition", "version": "0.1.2", "name": "Dinh dưỡng y khoa",
+ "detect": ["malnutrition", "malnourished", "undernutrition", "nutritional status", "nutrition screening",
+            "nutritional risk", "NRS-2002", "Subjective Global Assessment", "PG-SGA", "Mini Nutritional Assessment",
+            "GLIM criteria", "sarcopenia", "cachexia", "refeeding syndrome", "enteral nutrition",
+            "parenteral nutrition", "tube feeding", "oral nutritional supplement", "dietitian",
+            "medical nutrition therapy", "energy requirement", "indirect calorimetry", "handgrip strength",
+            "anthropometry", "stunting", "severe acute malnutrition", "exclusive breastfeeding",
+            "complementary feeding", "RUTF"]}

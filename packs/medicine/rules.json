@@ -1,0 +1,34 @@
+{
+ "term_fixes": [
+  {
+   "en": "chronic",
+   "vi": "mạn tính",
+   "wrong": [
+    "mãn tính"
+   ]
+  },
+  {
+   "en": "diabetes mellitus",
+   "vi": "đái tháo đường",
+   "wrong": [
+    "tiểu đường"
+   ]
+  },
+  {
+   "en": "diabetes",
+   "vi": "đái tháo đường",
+   "wrong": [
+    "tiểu đường"
+   ]
+  },
+  {
+   "en": "low-grade fever",
+   "vi": "sốt nhẹ",
+   "wrong": [
+    "sốt độ thấp",
+    "sốt mức độ thấp",
+    "sốt cấp độ thấp"
+   ]
+  }
+ ]
+}

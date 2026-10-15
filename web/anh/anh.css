@@ -1,0 +1,21 @@
+/* The image tool ("Ảnh" tab of the shell): on top of ../style.css, scoped to its view */
+#view-anh .pick-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 14px; }
+#view-anh .pick-buttons .button { flex: 1 1 160px; text-align: center; }
+#view-anh .privacy { margin: 12px 0 0; font-size: .92rem; }
+#view-anh .status { margin: 12px 0 8px; font-weight: 700; }
+#anh-cancel { margin-top: 12px; }
+#view-anh .results { display: grid; gap: 16px; }
+#view-anh .results:empty { display: none; }
+#view-anh .result h3 { margin: 18px 0 8px; font-size: 1rem; }
+#view-anh .result-status:empty { display: none; }
+#view-anh .pairs { margin: 0; padding-left: 28px; }
+#view-anh .pairs li { margin: 0 0 12px; }
+#view-anh .pairs .en { margin: 0; color: var(--muted); font-size: .92rem; }
+#view-anh .pairs .vi { margin: 2px 0 0; }
+#view-anh .pairs .kept { margin: 2px 0 0; color: var(--muted); font-style: italic; }
+#view-anh .pairs .flags { margin: 2px 0 0; color: var(--warn); font-size: .88rem; }
+#view-anh .actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 12px 0 0; }
+#view-anh canvas.shot { display: block; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; }
+@media (max-width: 640px) {
+  #view-anh .pick-buttons .button { flex-basis: 100%; }
+}

@@ -4,6 +4,7 @@
 //   v1:m:<month>      billed neurons of the month: what each day used above the free allocation
 //   v1:s:<day>:<sid>  segments translated by one session
 //   v1:i:<day>:<iph>  segments translated by one client IP hash (session.js)
+//   v1:t / v1:u:<day>:<job>  active minutes of one live job (live captions, below)
 // <day> / <month> are UTC (2026-10-14 / 2026-10); day keys expire after KEY_TTL_S, month keys after MONTH_TTL_S.
 // Counters are read, then written (read-modify-write): two requests at the same moment can lose an increment, and KV
 // reads may lag up to 60 s between Cloudflare locations, so the limits are approximate -- a little overshoot is
@@ -67,6 +68,38 @@ export function enforce(state, cfg, profile = "file") {
   if (state.sessionUsed >= cfg.sessionSegments || state.ipUsed >= cfg.ipSegments) {
     throw new ApiError(429, "quota_exceeded", "The daily translation limit is reached; try again after 00:00 UTC.");
   }
+}
+
+// Live captions: active minutes of one live job (its job_id) per UTC day.
+//   v1:t:<day>:<job>  minutes in which the job sent at least one request
+//   v1:u:<day>:<job>  the last minute counted (minutes since the epoch)
+// Written once a minute per job at most; approximate like every counter here.
+const liveTimeKey = (day, job) => "v1:t:" + day + ":" + job;
+const liveMinuteKey = (day, job) => "v1:u:" + day + ":" + job;
+
+/** {used (active minutes today), last (the last minute counted, or 0)} of a live job. */
+export async function readLiveTime(kv, { now, job }) {
+  const day = utcDay(now);
+  const [used, last] = await Promise.all([readNum(kv, liveTimeKey(day, job)), readNum(kv, liveMinuteKey(day, job))]);
+  return { used, last };
+}
+
+/** 429 live_time_exceeded once a live job has used its minutes of the day. */
+export function enforceLiveTime(t, cfg) {
+  if (t.used >= cfg.liveMinutes) {
+    throw new ApiError(429, "live_time_exceeded", "This live session has used its " + Math.round(cfg.liveMinutes / 60) +
+      " hours for today; try again after 00:00 UTC.");
+  }
+}
+
+/** Count this request's minute for a live job (once per minute) -> the minutes used today, this one included. */
+export async function recordLiveMinute(kv, { now, job }, t) {
+  const minute = Math.floor(now / 60000);
+  if (t.last === minute) return t.used;
+  const day = utcDay(now);
+  await Promise.all([put(kv, liveTimeKey(day, job), t.used + 1, KEY_TTL_S, "live_time"),
+    put(kv, liveMinuteKey(day, job), minute, KEY_TTL_S, "live_minute")]);
+  return t.used + 1;
 }
 
 async function put(kv, key, value, ttl, kind) {

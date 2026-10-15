@@ -58,6 +58,10 @@ test("cloud errors read in Vietnamese: quota, budget, model, Turnstile, network,
   assert.match(cloudErrorText("network"), /kiểm tra mạng/);
   assert.equal(cloudErrorText("aborted"), "Đã dừng dịch.");
   assert.match(cloudErrorText("something_new"), /Có lỗi/);
+  // Trên máy (the helper's sentence routes): no helper, no Ollama, no model -- never a hint to use the server
+  assert.match(cloudErrorText("helper_not_found"), /Mở ViTranslate/);
+  assert.match(cloudErrorText("ollama_unavailable"), /Ollama/);
+  assert.match(cloudErrorText("model_missing"), /mô hình/);
 });
 
 test("the cloud's lines name the model only, short: no device, no provider (his 20:48 copy)", () => {

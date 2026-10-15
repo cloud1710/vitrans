@@ -1,8 +1,8 @@
 // Local static server for the page-level runners (page.mjs, accept_browser.mjs): serves a built site
 // (tools/build_site.py) on 127.0.0.1 with the headers of the site's _headers file, applied as Cloudflare Pages does
 // (every matching rule in order; "! Name" detaches a header an earlier rule set; a header set twice is joined with a
-// comma), so the page runs under its real CSP. `overrides` maps a URL path to a local file served instead (the
-// stub pipeline of page.mjs). Test infrastructure only (web/engine/tests/ is never deployed).
+// comma), so the page runs under its real CSP. `overrides` maps a URL path to a local file served instead.
+// Test infrastructure only (web/engine/tests/ is never deployed).
 import { createServer } from "node:http";
 import { readFileSync, statSync } from "node:fs";
 import { join, extname, normalize, sep } from "node:path";

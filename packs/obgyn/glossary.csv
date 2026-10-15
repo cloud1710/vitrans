@@ -1,0 +1,314 @@
+en,vi,note
+obstetrics,sản khoa,"freq S8 N5 C2 O1 docs; src: YHCM16-CR207, YHCM10-211216, YHCM16-104"
+gynaecology,phụ khoa,"freq S16 N5 C2 O1 docs; src: YHCM22-98, BVBND-PD20, BVNTP-giai-phau-benh-ly-benh-l"
+obstetrics and gynaecology,sản phụ khoa,"freq S5 N4 C1 O1 docs; src: BVBND-PD20, YHCM21-93, YHCM26-20"
+pregnant woman,thai phụ,"freq S9 N2 C1 O1 docs; alt: 'phụ nữ mang thai' S5 N1 C1 O1, 'phụ nữ có thai' S7 N2 O1, 'sản phụ' S12 N6 C2 O1; src: YHCM16-SG001, YHCM16-104, MD-YHSS47-13; sản phụ = woman in labour or after birth (parturient)"
+parturient,sản phụ,"freq S12 N6 C2 O1 docs; src: BVBND-PD20, YHCM16-CR207, YHCM18-166"
+pregnancy outcome,kết cục thai kỳ,"freq S2 C1 docs; src: YHCM12-TDU-PAS, YHCD25-CT2494, HUE22-PROM"
+perinatal outcome,kết cục chu sinh,"freq S4 docs; src: MD-YHSS47-13, MD-YHSS47-16, MD-YHSS47-14"
+neonatal outcome,kết cục sơ sinh,freq C1 docs; src: HUE22-PROM
+perinatal mortality,tử vong chu sinh,"freq S2 N1 C1 O1 docs; src: YHCM16-CR207, AG-PREVIA, BYT315"
+maternal mortality,tử vong mẹ,"freq S2 C1 O1 docs; src: YHCM26-20, YHCM12-TDU-PAS, BYT315"
+high-risk pregnancy,thai kỳ nguy cơ cao,"freq N1 O1 docs; src: BYT315, VJOG25-1889"
+gestational age,tuổi thai,"freq S14 N6 C2 O1 docs; src: YHCM16-CR207, YHCM17-247, YHCM26-69; ""at 32 weeks of gestation"" = ""lúc thai 32 tuần"""
+first trimester,3 tháng đầu thai kỳ,"owner, recommended column 2026-10-15 18:48 (T1); freq '3 tháng đầu' S2 N2 O1 docs; alt: 'tam cá nguyệt' S1, 'ba tháng đầu' O1; src: YHCM16-SG001, YHCM21-93, BYT315; T1: Southern ĐHYD textbooks write ""tam cá nguyệt I""; corpus counts favour ""3 tháng đầu"""
+second trimester,3 tháng giữa thai kỳ,"owner, recommended column 2026-10-15 18:48 (T1); freq '3 tháng giữa' S2 O1 docs; alt: 'tam cá nguyệt' S1; src: YHCM16-SG001, HV-ANEMIA, BYT315; T1"
+third trimester,3 tháng cuối thai kỳ,"owner, recommended column 2026-10-15 18:48 (T1); freq '3 tháng cuối' S1 O1 docs; alt: 'tam cá nguyệt' S1, 'ba tháng cuối' O1; src: YHCM16-SG001, BYT315; T1"
+trimester,tam cá nguyệt,"owner, recommended column 2026-10-15 18:48 (T1); freq S1 docs; src: BVNTP-u-tuy-thuong-than-pheoch; bare key; ordinal forms use 3 tháng đầu / giữa / cuối (T1)"
+antenatal care,chăm sóc tiền sản,"freq S1 docs; alt: 'khám thai' S2 N1 O1, 'chăm sóc trước sinh' S1, 'quản lý thai nghén' N1 C1 O1; src: VNUHS25-TDU670"
+estimated date of delivery,ngày dự sinh,freq S1 docs; src: YHCM16-CR207
+due date,ngày dự sinh,freq S1 docs; src: YHCM16-CR207
+last menstrual period,kỳ kinh cuối,"freq N1 C1 O1 docs; src: BYT315, VJOG25-1889, HUE22-PROM"
+parity,số lần sinh,"freq S3 docs; alt: 'para' N1 O1; src: YHCM18-166, YHCD25-CT2494, HV-ANEMIA; PARA code kept as written"
+nulliparous,chưa sinh lần nào,"freq 'chưa sinh' S3 O1 docs; alt: 'con so' N3 C1 O1; src: BVBND-PD20, BVNTP-mo-benh-hoc-ung-thu-co-t, YHCM18-166; con so = first birth (primiparous); key kept for nulliparous women"
+primiparous,con so,"freq N3 C1 O1 docs; src: BYT315, VJOG25-1879, VJOG25-1913"
+multiparous,con rạ,"freq N2 O1 docs; src: BYT315, VJOG25-1879, VJOG25-1913"
+singleton pregnancy,đơn thai,"freq S1 N1 docs; src: VNUHS25-TDU670, VJOG25-1903"
+twin pregnancy,song thai,"freq S1 O1 docs; alt: 'sinh đôi' S1 C1 O1; src: YHCM16-104, BYT315"
+multiple pregnancy,đa thai,"freq S3 N2 C1 O1 docs; src: YHCM16-104, HOSREM-ART, VNUHS25-TDU670"
+monochorionic diamniotic twins,song thai một bánh nhau hai buồng ối,"freq 'một bánh nhau' 0 docs; nhau rule (Southern); Northern ""một bánh rau hai buồng ối"""
+dichorionic diamniotic twins,song thai hai bánh nhau hai buồng ối,freq 'hai bánh nhau' 0 docs; nhau rule
+monochorionic monoamniotic twins,song thai một bánh nhau một buồng ối,freq 'một bánh nhau' 0 docs; nhau rule
+twin-to-twin transfusion syndrome,hội chứng truyền máu song thai (TTTS),freq 'truyền máu song thai' 0 docs; keep TTTS
+hyperemesis gravidarum,nghén nặng,freq O1 docs; alt: 'nôn nặng' O1; src: BYT315
+anaemia in pregnancy,thiếu máu thai kỳ,freq S1 docs; src: HV-ANEMIA
+fundal height,bề cao tử cung,freq 0 docs; alt: 'chiều cao tử cung' N1 O1
+fetal movements,cử động thai,freq O1 docs; alt: 'thai máy' O1; src: BYT315
+obstetric history,tiền sử sản khoa,"freq N3 C1 O1 docs; src: BYT315, VJOG25-1905, VJOG25-1879; tiền sử S44 docs vs tiền căn S30 (generic counts)"
+previous caesarean section,tiền sử mổ lấy thai,"freq N1 docs; alt: 'tiền căn mổ lấy thai' C1, 'tiền sử mổ đẻ' N2; src: VJOG25-1889"
+transvaginal ultrasound,siêu âm ngả âm đạo,freq S1 docs; alt: 'siêu âm đầu dò âm đạo' S1 O1; src: MD-YHSS47-16
+gestational sac,túi thai,freq O1 docs; src: BYT315
+yolk sac,túi noãn hoàng,"freq S3 O1 docs; src: YHCM22-98, BVBND-PD20, BYT315"
+crown-rump length,chiều dài đầu mông (CRL),freq 0 docs
+nuchal translucency,độ mờ da gáy (NT),"freq 0 docs; UNRESOLVED: 0 docs for any form; Southern prenatal units (Từ Dũ, Hùng Vương) are known to write ""độ mờ da gáy"", Northern ""khoảng sáng sau gáy"""
+biparietal diameter,đường kính lưỡng đỉnh (BPD),freq O1 docs; src: BYT315
+femur length,chiều dài xương đùi (FL),freq O1 docs; src: BYT315
+estimated fetal weight,ước lượng trọng lượng thai (EFW),"freq O1 docs; alt: 'ước lượng cân nặng thai' N1, 'trọng lượng thai' S1 N2 O1; src: BYT315"
+amniotic fluid index,chỉ số ối (AFI),freq O1 docs; src: BYT315
+oligohydramnios,thiểu ối,"freq S1 N1 O1 docs; src: VNUHS25-TDU670, BYT315, VJOG25-1889"
+polyhydramnios,đa ối,"freq S1 N1 O1 docs; src: VNUHS25-TDU670, BYT315, VJOG25-1889"
+fetal anomaly,dị tật thai,"freq S2 O1 docs; alt: 'bất thường thai' N1 O1; src: YHCM16-CR207, VNUHS25-TDU670, BYT315"
+prenatal screening,tầm soát trước sinh,"owner, recommended column 2026-10-15 18:48 (T2); freq 0 docs; alt: 'sàng lọc trước sinh' S1 N1, 'tầm soát' S36 N3 C3 O1, 'sàng lọc' S14 N17 C4 O1; T2: exact phrase tie; bare tầm soát S36 vs sàng lọc S14 docs; pathology already uses tầm soát"
+prenatal diagnosis,chẩn đoán trước sinh,"freq S1 N1 O1 docs; alt: 'chẩn đoán tiền sản' S2; src: YHCM17-247, BYT315, TCNCYH-508"
+non-invasive prenatal testing,xét nghiệm tiền sản không xâm lấn (NIPT),"freq 'tiền sản không xâm lấn' 0 docs; alt: 'không xâm lấn' S15 N2 O1, 'nipt' N1; keep NIPT; molecular / genetics may later own the test name"
+amniocentesis,chọc ối,freq O1 docs; src: BYT315
+chorionic villus sampling,sinh thiết gai nhau (CVS),freq 0 docs; alt: 'sinh thiết gai rau' N1 O1; = pathology chorionic villi = gai nhau
+fetal echocardiography,siêu âm tim thai,freq O1 docs; src: BYT315
+umbilical artery Doppler,Doppler động mạch rốn,freq 'động mạch rốn' O1 docs; src: BYT315
+middle cerebral artery Doppler,Doppler động mạch não giữa,freq 'động mạch não giữa' O1 docs; src: BYT315
+uterine artery Doppler,Doppler động mạch tử cung,"freq 'động mạch tử cung' C1 O1 docs; src: BYT315, HUE17-PPH"
+absent end-diastolic flow,mất sóng tâm trương,freq 0 docs; LOW
+fetal growth restriction,thai chậm phát triển trong tử cung (FGR),"owner, recommended column 2026-10-15 18:48 (T3); freq 'thai chậm phát triển' S1 N1 O1 docs; src: BVBND-PD20, BYT315, VJOG25-1903; T3: only ""chậm phát triển"" in corpus (S1 N2 O1); Southern prenatal units are known to write ""chậm tăng trưởng"""
+intrauterine growth restriction,thai chậm phát triển trong tử cung (IUGR),"owner, recommended column 2026-10-15 18:48 (T3); freq 'thai chậm phát triển' S1 N1 O1 docs; src: BVBND-PD20, BYT315, VJOG25-1903; T3"
+small for gestational age,nhỏ so với tuổi thai (SGA),freq 0 docs
+large for gestational age,lớn so với tuổi thai (LGA),freq 0 docs
+macrosomia,thai to,"freq N2 O1 docs; src: BYT315, VJOG25-1879, VJOG25-1889"
+biophysical profile,trắc đồ sinh vật lý (BPP),freq 0 docs
+fetal heart rate,nhịp tim thai,freq O1 docs; alt: 'tim thai' S1 N1 C1 O1; src: BYT315
+late deceleration,nhịp giảm muộn,freq 0 docs
+cardiotocography,biểu đồ tim thai - cơn co (CTG),"freq 'biểu đồ tim thai' 0 docs; alt: 'ctg' S1 N1, 'monitoring' S12 N1 C1 O1; UNRESOLVED: clinicians say ""monitor sản khoa / băng CTG""; keep CTG"
+non-stress test,non-stress test (NST),freq 0 docs; kept EN; beware Vietnamese NST = nhiễm sắc thể
+fetal distress,suy thai,"freq S1 N1 O1 docs; src: AG-PREVIA, BYT315, VJOG25-1879"
+labour,chuyển dạ,"freq S2 N4 C2 O1 docs; src: BVBND-PD20, YHCM26-20, BYT315"
+labor,chuyển dạ,"freq S2 N4 C2 O1 docs; src: BVBND-PD20, YHCM26-20, BYT315"
+first stage of labour,giai đoạn 1 của chuyển dạ,freq 0 docs
+second stage of labour,giai đoạn 2 của chuyển dạ,freq 0 docs; alt: 'giai đoạn sổ thai' O1
+third stage of labour,giai đoạn 3 của chuyển dạ,freq O1 docs; src: BYT315
+latent phase,pha tiềm thời,freq 0 docs; UNRESOLVED: 0 docs both forms; Southern teaching form
+active phase,pha hoạt động,freq N1 docs; alt: 'pha tích cực' N1; src: VJOG25-1913; LOW: N1 vs N1
+cervical dilatation,độ mở cổ tử cung,freq N1 docs; alt: 'cổ tử cung mở' N1 O1; src: VJOG25-1903
+cervical effacement,độ xóa cổ tử cung,freq 0 docs; alt: 'xóa mở' N1 O1
+fetal presentation,ngôi thai,"freq N3 O1 docs; src: BYT315, VJOG25-1879, VJOG25-1913"
+cephalic presentation,ngôi đầu,freq O1 docs; src: BYT315
+breech presentation,ngôi mông,"freq S4 O1 docs; src: MD-YHSS47-13, MD-YHSS47-16, MD-YHSS47-14"
+malpresentation,ngôi bất thường,freq O1 docs; src: BYT315
+uterine contraction,cơn co tử cung,"owner, recommended column 2026-10-15 18:48 (T4); freq S1 N3 O1 docs; alt: 'cơn gò tử cung' N1 O1, 'cơn gò' N1 O1; src: MD-YHSS47-16, BYT315, VJOG25-1905; T4: corpus S1 N3 O1 for ""cơn co tử cung"", 0 Southern doc for ""cơn gò""; Từ Dũ clinical speech says ""cơn gò"""
+partograph,biểu đồ chuyển dạ,freq 0 docs
+amniotomy,bấm ối,freq O1 docs; src: BYT315
+premature rupture of membranes,ối vỡ non (PROM),"freq C1 O1 docs; alt: 'vỡ ối non' N1 O1, 'ối vỡ sớm' O1; src: BYT315, HUE22-PROM; ối vỡ sớm = rupture during labour before full dilatation (different)"
+preterm premature rupture of membranes,ối vỡ non trên thai non tháng (PPROM),"freq 'ối vỡ non' C1 O1 docs; alt: 'thai non tháng' S1 N1 C1 O1; src: BYT315, HUE22-PROM; built"
+meconium,phân su,freq O1 docs; src: BYT315
+chorioamnionitis,nhiễm trùng ối,"freq C1 O1 docs; alt: 'nhiễm khuẩn ối' C2 O1; src: BYT315, HUE22-PROM; Southern generic nhiễm trùng S65 vs nhiễm khuẩn S30 docs; national guideline writes nhiễm khuẩn"
+intrapartum,trong chuyển dạ,"freq N2 C2 O1 docs; src: BYT315, VJOG25-1879, VJOG25-1913"
+induction of labour,khởi phát chuyển dạ,"freq C1 O1 docs; alt: 'gây chuyển dạ' O1; src: BYT315, HUE22-PROM"
+induction of labor,khởi phát chuyển dạ,"freq C1 O1 docs; src: BYT315, HUE22-PROM"
+cervical ripening,làm chín muồi cổ tử cung,freq O1 docs; alt: 'chín muồi cổ tử cung' O1; src: BYT315
+Bishop score,chỉ số Bishop,"freq C1 O1 docs; src: BYT315, HUE22-PROM"
+Foley balloon,bóng Foley,"freq 0 docs; LOW; ""Foley catheter"" left to surgery"
+labour analgesia,giảm đau trong chuyển dạ,freq N1 docs; src: VJOG25-1913
+vaginal delivery,sinh ngả âm đạo,"freq S8 N1 docs; alt: 'sinh đường âm đạo' S1 N2, 'đẻ đường âm đạo' O1, 'sinh thường' S10 N2 C1 O1; src: YHCM18-166, YHCM26-20, TDU-PPH2; sinh rule"
+instrumental delivery,sinh giúp bằng dụng cụ,"freq 'giúp sinh' S1 C1 O1 docs; src: BVBND-PD20, BYT315, HUE17-PPH; LOW"
+vacuum extraction,giác hút,"freq S1 O1 docs; src: YHCM26-20, BYT315"
+forceps delivery,sinh giúp bằng kềm (forceps),"freq 'kềm' S2 docs; alt: 'forceps' S1 O1, 'kìm' S4 N2 O1; src: YHCM19-11, YHCM21-93; Southern kềm (S2) vs kìm"
+episiotomy,cắt tầng sinh môn,"freq S1 O1 docs; src: TDU-PPH2, BYT315"
+perineal tear,rách tầng sinh môn,freq 0 docs
+shoulder dystocia,kẹt vai,freq 0 docs; LOW
+prolonged labour,chuyển dạ kéo dài,"freq N1 C1 O1 docs; src: BYT315, VJOG25-1889, HUE17-PPH"
+cephalopelvic disproportion,bất xứng đầu chậu,freq 0 docs
+vaginal birth after caesarean,sinh ngả âm đạo sau mổ lấy thai (VBAC),freq 0 docs
+active management of the third stage of labour,xử trí tích cực giai đoạn 3 của chuyển dạ,freq 'xử trí tích cực giai đoạn 3' O1 docs; src: BYT315
+umbilical cord,dây rốn,"freq S1 C1 O1 docs; alt: 'dây rau' O1, 'cuống rốn' O1; src: AG-PREVIA, BYT315, HUE17-PPH"
+delayed cord clamping,kẹp dây rốn muộn,freq 0 docs
+umbilical cord prolapse,sa dây rốn,freq O1 docs; src: BYT315
+placenta,bánh nhau,"freq S2 C1 docs; alt: 'bánh rau' N1 O1, 'nhau thai' S4 N1, 'rau thai' N2 O1; src: MD-YHSS47-13, YHCD25-CT2494, HUE17-PPH; nhau rule: Southern bánh nhau / nhau thai (S2 + S4) vs bánh rau / rau thai (N, O)"
+placental delivery,sổ nhau,freq 0 docs; alt: 'sổ rau' O1; nhau rule
+retained placenta,sót nhau,"freq C1 O1 docs; alt: 'sót rau' O1; src: BYT315, HUE17-PPH"
+manual removal of the placenta,bóc nhau nhân tạo,"freq 0 docs; alt: 'bóc rau nhân tạo' O1; nhau rule; only BYT form ""bóc rau"" in corpus"
+placenta previa,nhau tiền đạo,"freq S5 C1 docs; alt: 'rau tiền đạo' S2 N3 O1; src: YHCM16-104, YHCM12-TDU-PAS, YHCD25-CT2494"
+placenta praevia,nhau tiền đạo,"freq S5 C1 docs; alt: 'rau tiền đạo' S2 N3 O1; src: YHCM16-104, YHCM12-TDU-PAS, YHCD25-CT2494"
+low-lying placenta,nhau bám thấp,freq 0 docs; alt: 'rau bám thấp' N1 O1
+placental abruption,nhau bong non,"freq S3 C1 O1 docs; alt: 'rau bong non' N1 O1; src: YHCM16-CR207, YHCM16-104, VNUHS25-TDU670"
+placenta accreta,nhau cài răng lược,"freq S4 C1 docs; alt: 'rau cài răng lược' N2 O1, 'nhau bám chặt' C1; src: MD-YHSS47-13, YHCM12-TDU-PAS, YHCD25-CT2494"
+placenta accreta spectrum,phổ nhau cài răng lược (PAS),freq 0 docs; alt: 'nhau cài răng lược' S4 C1; LOW: phrase built
+antepartum haemorrhage,xuất huyết trước sinh,"freq N1 C1 docs; src: VJOG25-1905, HUE17-PPH; LOW"
+caesarean section,mổ lấy thai,"freq S11 N4 C2 O1 docs; alt: 'mổ đẻ' N4 O1, 'sinh mổ' S5 C1, 'phẫu thuật lấy thai' S1 N1; src: YHCM18-005, YHCM10-211216, YHCM16-104; sinh mổ = lay word"
+cesarean section,mổ lấy thai,"freq S11 N4 C2 O1 docs; src: YHCM18-005, YHCM10-211216, YHCM16-104"
+caesarean,mổ lấy thai,"freq S11 N4 C2 O1 docs; src: YHCM18-005, YHCM10-211216, YHCM16-104"
+cesarean,mổ lấy thai,"freq S11 N4 C2 O1 docs; src: YHCM18-005, YHCM10-211216, YHCM16-104"
+emergency caesarean section,mổ lấy thai cấp cứu,"freq S1 O1 docs; src: AG-PREVIA, BYT315"
+elective caesarean section,mổ lấy thai chủ động,"freq N1 C1 O1 docs; src: BYT315, VJOG25-1889, HUE17-PPH"
+caesarean section rate,tỷ lệ mổ lấy thai,freq 0 docs; alt: 'tỉ lệ mổ lấy thai' S2 N1; _style: tỷ lệ
+caesarean scar pregnancy,thai bám sẹo mổ lấy thai,freq 'thai bám sẹo mổ' 0 docs; LOW
+Robson classification,phân loại Robson,freq 0 docs
+uterine rupture,vỡ tử cung,"freq C1 O1 docs; src: BYT315, HUE17-PPH"
+emergency hysterectomy,cắt tử cung cấp cứu,freq S1 docs; src: TDU-PPH1
+pre-eclampsia,tiền sản giật,"freq S5 N2 O1 docs; src: YHCM16-SG001, YHCM16-CR207, YHCM16-104"
+preeclampsia,tiền sản giật,"freq S5 N2 O1 docs; src: YHCM16-SG001, YHCM16-CR207, YHCM16-104"
+severe preeclampsia,tiền sản giật nặng,"freq N1 O1 docs; src: BYT315, VJOG25-1879"
+preeclampsia with severe features,tiền sản giật có dấu hiệu nặng,freq N1 docs; alt: 'dấu hiệu nặng' S1 N1 O1; src: VJOG25-1903
+eclampsia,sản giật,"freq S5 N2 O1 docs; src: YHCM16-SG001, YHCM16-CR207, YHCM16-104"
+gestational hypertension,tăng huyết áp do thai,freq S1 docs; alt: 'tăng huyết áp thai kỳ' N1; src: YHCM16-CR207; LOW: S1 (YHCM16-CR207) vs N1 (VJOG-1879)
+hypertensive disorders of pregnancy,rối loạn tăng huyết áp trong thai kỳ,freq 0 docs
+HELLP syndrome,hội chứng HELLP,"freq N1 C1 O1 docs; src: BYT315, VJOG25-1879, HUE17-PPH"
+low-dose aspirin,aspirin liều thấp,"freq S5 O1 docs; src: YHCM26-20, MD-YHSS47-13, MD-YHSS47-16"
+magnesium sulfate,magnesium sulfate,"freq C1 O1 docs; src: BYT315, HUE17-PPH; kept EN (INN as in source; BYT 315 writes it so)"
+gestational diabetes mellitus,đái tháo đường thai kỳ (GDM),"freq S1 N1 docs; src: VNUHS25-TDU670, VJOG25-1889"
+gestational diabetes,đái tháo đường thai kỳ,"freq S1 N1 docs; src: VNUHS25-TDU670, VJOG25-1889"
+intrahepatic cholestasis of pregnancy,ứ mật trong gan thai kỳ,freq 0 docs; built
+Rh alloimmunization,bất đồng nhóm máu Rh,freq O1 docs; src: BYT315
+hydrops fetalis,phù thai,freq O1 docs; src: BYT315
+postpartum haemorrhage,băng huyết sau sinh,"freq S7 C1 O1 docs; alt: 'chảy máu sau đẻ' N1 O1, 'chảy máu sau sinh' C1; src: YHCM16-SG001, YHCM18-166, TDU-PPH1; sinh rule; Từ Dũ abbreviates BHSS"
+primary postpartum haemorrhage,băng huyết sau sinh sớm,freq 0 docs
+uterine atony,đờ tử cung,"freq C1 O1 docs; src: BYT315, HUE17-PPH"
+uterotonic,thuốc co hồi tử cung,"freq C1 O1 docs; alt: 'thuốc tăng co' S1 O1; src: BYT315, HUE17-PPH"
+Bakri balloon,bóng chèn Bakri,freq 0 docs; LOW
+B-Lynch suture,mũi khâu B-Lynch,freq 'khâu b-lynch' 0 docs
+uterine artery ligation,thắt động mạch tử cung,freq O1 docs; src: BYT315
+internal iliac artery ligation,thắt động mạch chậu trong,freq O1 docs; alt: 'thắt động mạch hạ vị' C1 O1; src: BYT315; hạ vị = older name (C1 O1)
+amniotic fluid embolism,tắc mạch ối,"owner, recommended column 2026-10-15 18:48 (T5); freq C1 O1 docs; src: BYT315, HUE17-PPH; T5: only tắc mạch ối found (C1 O1); Southern clinicians write thuyên tắc ối"
+ectopic pregnancy,thai ngoài tử cung,"freq S2 O1 docs; alt: 'chửa ngoài tử cung' O1; src: MD-YHSS47-16, YHCD25-CT2494, BYT315"
+tubal ectopic pregnancy,thai ngoài tử cung ở ống dẫn trứng,"freq 'thai ngoài tử cung' S2 O1 docs; alt: 'ống dẫn trứng' S4 O1; src: MD-YHSS47-16, YHCD25-CT2494, BYT315; built; tube rule T6"
+ruptured ectopic pregnancy,thai ngoài tử cung vỡ,freq 0 docs
+interstitial pregnancy,thai đoạn kẽ,freq 0 docs; LOW
+pregnancy of unknown location,thai không rõ vị trí (PUL),freq 0 docs
+intrauterine pregnancy,thai trong tử cung,freq O1 docs; src: BYT315
+salpingectomy,cắt ống dẫn trứng,"owner, recommended column 2026-10-15 18:48 (T6); freq S1 docs; src: MD-YHSS47-14; T6"
+salpingostomy,mở ống dẫn trứng lấy khối thai,freq 'mở vòi tử cung' 0 docs; LOW; T6
+fallopian tube,ống dẫn trứng,"owner, recommended column 2026-10-15 18:48 (T6); freq S4 O1 docs; alt: 'vòi trứng' S2 O1, 'vòi tử cung' O1; src: BVBND-PD20, MD-YHSS47-16, MD-YHSS47-14; T6: Southern S4 (ống dẫn trứng) vs S2 (vòi trứng) vs S0 (vòi tử cung, BYT 315 32 hits)"
+hydrosalpinx,ứ dịch ống dẫn trứng,"freq 'ứ dịch' S1 O1 docs; alt: 'ứ nước vòi tử cung' O1; src: BVBND-PD20, BYT315; built; T6"
+tubal ligation,thắt ống dẫn trứng,"owner, recommended column 2026-10-15 18:48 (T6); freq 0 docs; alt: 'triệt sản' O1; T6"
+miscarriage,sẩy thai,"freq S6 O1 docs; src: YHCM16-SG001, BVBND-PD20, YHCM16-CR207"
+spontaneous abortion,sẩy thai tự nhiên,"freq S2 O1 docs; src: BVBND-PD20, YHCM16-CR207, BYT315"
+threatened miscarriage,dọa sẩy thai,"freq S1 O1 docs; src: VNUHS25-TDU670, BYT315"
+incomplete miscarriage,sẩy thai không trọn,"freq 0 docs; alt: 'sẩy thai không hoàn toàn' O1; LOW: O1 has ""không hoàn toàn"""
+missed miscarriage,sẩy thai lưu,freq O1 docs; alt: 'thai lưu' C1 O1; src: BYT315; LOW
+recurrent pregnancy loss,sẩy thai liên tiếp,freq O1 docs; alt: 'sẩy thai tái phát' S1; src: BYT315
+induced abortion,phá thai,"freq S5 O1 docs; src: BVNTP-giai-phau-benh-hoc-benh-, BVNTP-choc-hut-te-bao-tuyen-gi, YHCM16-CR207"
+medical abortion,phá thai nội khoa,freq 0 docs
+termination of pregnancy,chấm dứt thai kỳ,"freq S2 C2 O1 docs; alt: 'đình chỉ thai nghén' N2 O1, 'đình chỉ thai kỳ' N1; src: YHCM16-CR207, YHCD25-CT2494, BYT315"
+stillbirth,thai chết lưu,"freq S5 N2 C1 O1 docs; alt: 'thai lưu' C1 O1; src: YHCM16-SG001, BVBND-PD20, YHCM16-CR207"
+intrauterine fetal death,thai chết trong tử cung (IUFD),freq O1 docs; alt: 'thai chết lưu' S5 N2 C1 O1; src: BYT315
+preterm birth,sinh non,"freq S7 N4 C1 O1 docs; alt: 'đẻ non' N2 C1 O1, 'sanh non' S1; src: YHCM16-SG001, BVBND-PD20, YHCM16-CR207; sinh rule"
+preterm labour,chuyển dạ sinh non,freq C1 docs; src: HUE22-PROM
+preterm labor,chuyển dạ sinh non,freq C1 docs; src: HUE22-PROM
+threatened preterm labour,dọa sinh non,"freq S1 N2 docs; alt: 'dọa đẻ non' O1; src: VNUHS25-TDU670, VJOG25-1903, VJOG25-1879"
+tocolysis,giảm co,"owner, recommended column 2026-10-15 18:48 (T4); freq S1 C1 O1 docs; alt: 'thuốc giảm co' O1; src: MD-YHSS47-16, BYT315, HUE22-PROM; T4 (consistent with cơn co)"
+tocolytic,thuốc giảm co,freq O1 docs; alt: 'giảm co' S1 C1 O1; src: BYT315; T4
+antenatal corticosteroids,corticosteroid trước sinh,"freq 0 docs; alt: 'liệu pháp corticosteroid' S1, 'trưởng thành phổi' N1 O1; LOW"
+cervical insufficiency,hở eo tử cung,freq O1 docs; src: BYT315
+cervical cerclage,khâu vòng cổ tử cung,freq O1 docs; src: BYT315
+term pregnancy,thai đủ tháng,"freq N1 C1 O1 docs; src: BYT315, VJOG25-1889, HUE22-PROM"
+post-term pregnancy,thai quá ngày,freq O1 docs; alt: 'thai già tháng' N1 O1; src: BYT315; LOW
+puerperium,thời kỳ hậu sản,"freq S1 O1 docs; alt: 'hậu sản' S7 O1; src: YHCM18-166, BYT315"
+postpartum,sau sinh,"freq S17 N4 C1 O1 docs; alt: 'sau sanh' S3, 'sau đẻ' S1 N2 O1, 'hậu sản' S7 O1; src: YHCM25-185, YHCM16-SG001, YHCM19-291; sinh rule"
+puerperal infection,nhiễm trùng hậu sản,freq O1 docs; alt: 'nhiễm khuẩn hậu sản' O1; src: BYT315; Southern generic nhiễm trùng (S65 vs S30 docs); BYT 315 nhiễm khuẩn
+lochia,sản dịch,freq O1 docs; src: BYT315
+postpartum depression,trầm cảm sau sinh,freq 0 docs
+breastfeeding,nuôi con bằng sữa mẹ,"freq S4 docs; alt: 'bú mẹ' S8 O1; src: YHCM18-166, YHCM16-086, YHCM18-005"
+Apgar score,chỉ số Apgar,"freq S1 N2 O1 docs; alt: 'điểm apgar' S1 N1; src: YHCM16-104, BYT315, VJOG25-1905"
+newborn,trẻ sơ sinh,"freq S15 N9 C1 O1 docs; src: YHCM16-144, YHCM25-185, BVNTP-giai-phau-benh-hoc-benh-"
+birth weight,cân nặng lúc sinh,"freq S5 N1 docs; alt: 'cân nặng khi sinh' N1, 'cân nặng sơ sinh' S1 N2; src: YHCM16-CR207, YHCM17-247, YHCM26-69"
+low birth weight,nhẹ cân,"Southern-frequency rule 2026-10-15 18:48 (one value with nutrition): freq S8 N1 O1 docs; alt: 'sơ sinh nhẹ cân' S1; nutrition's 'cân nặng lúc sinh thấp' 1 doc (S1); src: YHCM16-SG001, YHCM16-CR207, YHCM17-247"
+preterm infant,trẻ sinh non,"freq S1 N1 O1 docs; alt: 'trẻ non tháng' S1 O1; src: YHCM26-69, BYT315, YDLS108-514"
+neonatal asphyxia,ngạt sơ sinh,freq 0 docs; alt: 'ngạt' S1 O1
+neonatal resuscitation,hồi sức sơ sinh,"freq N1 O1 docs; src: BYT315, YDLS108-514"
+neonatal intensive care unit,đơn vị hồi sức tích cực sơ sinh (NICU),"freq 'hồi sức tích cực sơ sinh' 0 docs; alt: 'nicu' N1, 'khoa sơ sinh' S1 N1 O1; LOW"
+skin-to-skin contact,da kề da,"freq S1 O1 docs; src: YHCM18-166, BYT315"
+delivery room,phòng sinh,"freq S2 C1 O1 docs; alt: 'phòng đẻ' N1 O1; src: YHCM26-20, TDU-PPH2, BYT315; sinh rule"
+uterine fibroids,u xơ tử cung,"freq N2 O1 docs; alt: 'nhân xơ tử cung' S1; src: BYT315, TCNCYH-914, VJOG25-1889; S0 vs S1 (nhân xơ, MD-YHSS13); national u xơ tử cung N2 O1"
+myomectomy,bóc nhân xơ tử cung,"freq 'bóc nhân xơ' S2 C1 O1 docs; alt: 'bóc nhân xơ tử cung' S1, 'bóc u xơ' C1; src: MD-YHSS47-13, YHCD25-CT2494, BYT315"
+submucosal fibroid,u xơ tử cung dưới niêm mạc,"freq 'dưới niêm mạc' S3 C1 O1 docs; src: BVBND-PD20, YHCM21-93, MD-YHSS47-13; built"
+subserosal fibroid,u xơ tử cung dưới thanh mạc,"freq 'dưới thanh mạc' S2 N1 docs; src: BVBND-PD20, YHCM22-159, YDLS108-930; built"
+endometriosis,lạc nội mạc tử cung,"freq S5 C1 O1 docs; src: BVNTP-mo-benh-hoc-ung-thu-co-t, MD-YHSS47-13, MD-YHSS47-16"
+deep infiltrating endometriosis,lạc nội mạc tử cung thâm nhiễm sâu,freq 'lạc nội mạc tử cung sâu' 0 docs; LOW
+endometrioma,u lạc nội mạc tử cung ở buồng trứng,"freq 'u lạc nội mạc tử cung' S1 O1 docs; alt: 'nang lạc nội mạc tử cung' S1 O1, 'lạc nội mạc tử cung ở buồng trứng' S1; src: MD-YHSS47-15, BYT315; LOW"
+adenomyosis,lạc nội mạc tử cung trong cơ tử cung (adenomyosis),"freq 0 docs; UNRESOLVED: only ""adenomyosis"" (EN) in corpus"
+chronic pelvic pain,đau vùng chậu mạn tính,freq S1 docs; alt: 'đau vùng chậu mạn' S1; src: MD-YHSS47-14
+dysmenorrhoea,thống kinh,freq S1 docs; alt: 'đau bụng kinh' O1; src: MD-YHSS47-14
+dysmenorrhea,thống kinh,freq S1 docs; src: MD-YHSS47-14
+dyspareunia,giao hợp đau,"freq S1 O1 docs; alt: 'đau khi giao hợp' O1; src: MD-YHSS47-14, BYT315"
+adnexa,phần phụ,"freq S4 N2 O1 docs; src: YHCM22-98, BVBND-PD20, BVNTP-giai-phau-benh-ly-benh-l"
+adnexal mass,khối phần phụ,"freq S2 O1 docs; src: YHCM22-98, BYT315"
+ovarian tumour,u buồng trứng,"freq S7 O1 docs; alt: 'khối u buồng trứng' S7 O1; src: YHCM22-98, BVBND-PD20, MD-YHSS47-13; pathology-gyn will own histologic types"
+ovarian cyst,nang buồng trứng,"freq S1 O1 docs; alt: 'u nang buồng trứng' O1; src: HOSREM-ART, BYT315"
+corpus luteum cyst,nang hoàng thể,freq O1 docs; src: BYT315
+ovarian torsion,xoắn buồng trứng,freq 0 docs; LOW (only X docs)
+tubo-ovarian abscess,áp xe phần phụ,freq O1 docs; src: BYT315; LOW (O1)
+pelvic inflammatory disease,viêm vùng chậu,"owner, recommended column 2026-10-15 18:48 (T7); freq O1 docs; alt: 'viêm tiểu khung' O1, 'viêm phần phụ' O1; src: BYT315; T7: no Southern doc; BYT 315 has viêm vùng chậu and viêm tiểu khung 3 hits each"
+risk of malignancy index,chỉ số nguy cơ ác tính (RMI),freq 0 docs
+abnormal uterine bleeding,xuất huyết tử cung bất thường (AUB),freq S1 docs; alt: 'chảy máu tử cung bất thường' O1; src: MD-YHSS47-14
+menorrhagia,rong kinh,"freq S8 O1 docs; src: YHCM16-SG001, BVNTP-viem-tuyen-giap-hashimot, BVNTP-chan-doan-va-dieu-tri-un"
+postmenopausal bleeding,xuất huyết sau mãn kinh,"freq S4 docs; src: MD-YHSS47-13, MD-YHSS47-16, MD-YHSS47-14"
+vaginal bleeding,xuất huyết âm đạo,"freq S3 O1 docs; alt: 'ra huyết âm đạo' S1, 'chảy máu âm đạo' S1 O1; src: BVNTP-giai-phau-benh-ly-benh-l, MD-YHSS47-14, VNUHS25-TDU670"
+PALM-COEIN,PALM-COEIN,freq 0 docs; kept EN
+amenorrhoea,vô kinh,"freq S3 O1 docs; src: BVBND-PD20, BVNTP-ung-thu-tuyen-thuong-tha, MD-YHSS47-14"
+amenorrhea,vô kinh,"freq S3 O1 docs; src: BVBND-PD20, BVNTP-ung-thu-tuyen-thuong-tha, MD-YHSS47-14"
+menopause,mãn kinh,"freq S13 O1 docs; src: YHCM22-98, BVBND-PD20, BVNTP-giai-phau-benh-hoc-benh-"
+endometrium,nội mạc tử cung,"freq S10 N1 C1 O1 docs; alt: 'niêm mạc tử cung' O1; src: YHCM22-98, BVBND-PD20, YHCM16-CR207"
+endometrial thickness,độ dày nội mạc tử cung,freq S1 docs; src: MD-YHSS47-13
+thin endometrium,nội mạc tử cung mỏng,"freq S4 O1 docs; src: MD-YHSS47-13, MD-YHSS47-16, MD-YHSS47-14"
+endometrial polyp,polyp nội mạc tử cung,freq S1 docs; src: MD-YHSS47-13; pathology-gyn may own later
+endometrial biopsy,sinh thiết nội mạc tử cung,"freq S2 O1 docs; src: BVBND-PD20, YHCM22-86, BYT315"
+dilation and curettage,nong và nạo buồng tử cung,freq 'nong và nạo' O1 docs; alt: 'nạo buồng tử cung' S1 C1 O1; src: BYT315
+uterine curettage,nạo buồng tử cung,"freq S1 C1 O1 docs; alt: 'hút buồng tử cung' S1 O1; src: MD-YHSS47-13, BYT315, HUE17-PPH"
+uterine cavity,buồng tử cung,"freq S7 N1 C1 O1 docs; alt: 'lòng tử cung' S3 C1; src: BVBND-PD20, YHCM16-CR207, BVNTP-giai-phau-benh-ly-benh-l"
+hysteroscopy,nội soi buồng tử cung,freq S1 docs; alt: 'soi buồng tử cung' S2 O1; src: BVBND-PD20
+gynaecologic laparoscopy,phẫu thuật nội soi phụ khoa,freq 'nội soi phụ khoa' 0 docs; built; bare laparoscopy left to surgery
+hysterectomy,cắt tử cung,"freq S7 N2 C1 O1 docs; src: YHCM22-98, BVBND-PD20, YHCM24-12"
+total hysterectomy,cắt tử cung hoàn toàn,"owner, recommended column 2026-10-15 18:48 (T8); freq N1 O1 docs; alt: 'cắt tử cung toàn phần' N1 O1; src: BYT315, VJOG25-1905; T8: no Southern doc; BYT 315 hoàn toàn 12 hits vs toàn phần 2"
+subtotal hysterectomy,cắt tử cung bán phần,"freq N1 C1 O1 docs; src: BYT315, VJOG25-1905, HUE17-PPH"
+vaginal hysterectomy,cắt tử cung ngả âm đạo,"freq 0 docs; built (ngả, S)"
+laparoscopic hysterectomy,cắt tử cung qua nội soi,freq 0 docs; built
+total laparoscopic hysterectomy,cắt tử cung hoàn toàn qua nội soi,"freq 'cắt tử cung hoàn toàn' N1 O1 docs; src: BYT315, VJOG25-1905; built; T8"
+radical hysterectomy,cắt tử cung triệt căn,"owner, recommended column 2026-10-15 18:48 (T9): radical = triệt căn as in surgery (S3); 0 docs in the corpus for either form; plan: VJOL uses both; WAS 'cắt tử cung tận gốc'"
+bilateral salpingo-oophorectomy,cắt hai phần phụ,freq 0 docs; alt: 'cắt phần phụ' S1 O1
+oophorectomy,cắt buồng trứng,freq 0 docs
+ovarian cystectomy,bóc nang buồng trứng,freq 0 docs; LOW
+uterine artery embolisation,thuyên tắc động mạch tử cung,freq 0 docs; alt: 'nút động mạch tử cung' O1; LOW: O1 nút; radiology may own embolization
+pelvic organ prolapse,sa sinh dục,"owner, recommended column 2026-10-15 18:48 (T10); freq O1 docs; src: BYT315; T10: only BYT 315 (26 hits) for sa sinh dục, 0 for sa tạng chậu"
+uterine prolapse,sa tử cung,freq 0 docs
+vaginal discharge,khí hư,"freq S2 O1 docs; alt: 'huyết trắng' S1; src: BVBND-PD20, YHCM19-144, BYT315; S2 vs S1"
+cervical ectropion,lộ tuyến cổ tử cung,"freq S1 O1 docs; src: BVBND-PD20, BYT315"
+colposcopy,soi cổ tử cung,"freq S2 O1 docs; src: BVBND-PD20, BVNTP-giai-phau-benh-ly-benh-l, BYT315"
+loop electrosurgical excision procedure,khoét chóp cổ tử cung bằng vòng điện (LEEP),"freq 'khoét chóp cổ tử cung' S1 O1 docs; alt: 'leep' S2 O1; src: BVBND-PD20, BYT315"
+cervical conization,khoét chóp cổ tử cung,"freq S1 O1 docs; alt: 'khoét chóp' S1 O1; src: BVBND-PD20, BYT315"
+Pap smear,phết tế bào cổ tử cung (Pap),freq 0 docs; = pathology cervical cytology = tế bào học cổ tử cung
+contraception,tránh thai,"freq S7 O1 docs; src: BVNTP-giai-phau-benh-hoc-benh-, BVNTP-giai-phau-benh-ly-benh-l, BVNTP-mo-benh-hoc-ung-thu-co-t"
+intrauterine device,dụng cụ tử cung (IUD),"freq S1 O1 docs; src: MD-YHSS47-14, BYT315"
+combined oral contraceptive,thuốc viên tránh thai kết hợp (COC),freq 0 docs; alt: 'thuốc tránh thai kết hợp' O1
+emergency contraception,tránh thai khẩn cấp,freq O1 docs; src: BYT315
+infertility,vô sinh,"freq S7 O1 docs; alt: 'hiếm muộn' S4 O1; src: YHCM16-SG001, YHCM16-CR207, MD-YHSS47-13; hiếm muộn = lay / clinic name (S4 docs, 59 hits in clinic names)"
+primary infertility,vô sinh nguyên phát,freq O1 docs; src: BYT315
+secondary infertility,vô sinh thứ phát,freq O1 docs; src: BYT315
+male infertility,vô sinh nam,"freq S4 O1 docs; src: MD-YHSS47-13, MD-YHSS47-16, MD-YHSS47-14"
+assisted reproductive technology,kỹ thuật hỗ trợ sinh sản (ART),"freq 'hỗ trợ sinh sản' S5 N4 O1 docs; src: MD-YHSS47-13, MD-YHSS47-16, HOSREM-ART"
+in vitro fertilization,thụ tinh trong ống nghiệm (IVF),"freq S3 O1 docs; src: MD-YHSS47-16, HOSREM-ART, MD-YHSS47-15"
+intracytoplasmic sperm injection,tiêm tinh trùng vào bào tương noãn (ICSI),"freq S1 O1 docs; src: HOSREM-ART, BYT315"
+intrauterine insemination,bơm tinh trùng vào buồng tử cung (IUI),freq S1 docs; src: HOSREM-ART
+ovarian stimulation,kích thích buồng trứng,"freq S4 O1 docs; src: MD-YHSS47-13, MD-YHSS47-16, HOSREM-ART"
+controlled ovarian stimulation,kích thích buồng trứng,"freq S4 O1 docs; src: MD-YHSS47-13, MD-YHSS47-16, HOSREM-ART"
+ovulation,phóng noãn,"freq S4 O1 docs; alt: 'rụng trứng' S2 O1; src: BVBND-PD20, MD-YHSS47-13, MD-YHSS47-14"
+ovulation induction,kích thích phóng noãn,freq O1 docs; src: BYT315
+oocyte,noãn,"freq S10 O1 docs; alt: 'trứng' S26 N2 C1 O1; src: YHCM22-98, BVBND-PD20, BVNTP-ung-thu-tuyen-thuong-tha"
+oocyte retrieval,chọc hút noãn,"freq S2 O1 docs; src: MD-YHSS47-13, MD-YHSS47-16, BYT315"
+oocyte donation,xin noãn,"freq S3 O1 docs; alt: 'cho noãn' S1; src: MD-YHSS47-13, HOSREM-ART, MD-YHSS47-15"
+embryo,phôi,"freq S12 N6 O1 docs; src: YHCM21-126, YHCM21-163, YHCM16-160"
+embryo transfer,chuyển phôi,"freq S4 N2 O1 docs; src: MD-YHSS47-13, MD-YHSS47-16, MD-YHSS47-14"
+frozen embryo transfer,chuyển phôi trữ,"freq S2 docs; src: MD-YHSS47-13, MD-YHSS47-16"
+fresh embryo transfer,chuyển phôi tươi,freq S1 docs; src: MD-YHSS47-13
+blastocyst,phôi nang,"freq S2 N1 docs; src: HOSREM-ART, MD-YHSS47-15, TCNCYH-3953"
+embryo cryopreservation,trữ phôi,"freq S2 docs; alt: 'đông lạnh phôi' S1; src: MD-YHSS47-13, HOSREM-ART"
+luteal phase support,hỗ trợ hoàng thể,freq 0 docs; alt: 'pha hoàng thể' S1; LOW
+ovarian hyperstimulation syndrome,hội chứng quá kích buồng trứng (OHSS),freq 0 docs; alt: 'quá kích buồng trứng' S1
+poor ovarian response,đáp ứng buồng trứng kém,"freq 'đáp ứng kém' S5 N1 docs; src: YHCM21-126, YHCM25-197, YHCM18-289"
+ovarian reserve,dự trữ buồng trứng,"freq S2 O1 docs; src: MD-YHSS47-13, MD-YHSS47-15, BYT315"
+anti-Mullerian hormone,AMH,freq S1 docs; src: BVBND-PD20; kept EN
+antral follicle count,số nang noãn thứ cấp (AFC),freq 'nang noãn thứ cấp' 0 docs; alt: 'afc' S1; LOW
+ovarian follicle,nang noãn,"freq S4 O1 docs; src: MD-YHSS47-13, HOSREM-ART, MD-YHSS47-14"
+clinical pregnancy,thai lâm sàng,"freq S3 O1 docs; src: MD-YHSS47-13, MD-YHSS47-16, MD-YHSS47-15"
+clinical pregnancy rate,tỷ lệ thai lâm sàng,"freq S3 docs; src: MD-YHSS47-13, MD-YHSS47-16, MD-YHSS47-15"
+ongoing pregnancy,thai diễn tiến,"freq S2 docs; src: YHCM16-CR207, MD-YHSS47-13"
+implantation rate,tỷ lệ làm tổ,"freq S3 docs; src: MD-YHSS47-13, MD-YHSS47-16, MD-YHSS47-15"
+live birth rate,tỷ lệ sinh sống,"freq S2 docs; alt: 'trẻ sinh sống' S1; src: MD-YHSS47-13, MD-YHSS47-15"
+semen analysis,tinh dịch đồ,freq O1 docs; src: BYT315
+azoospermia,vô tinh,"freq S4 docs; src: MD-YHSS47-13, MD-YHSS47-16, MD-YHSS47-14"
+polycystic ovary syndrome,hội chứng buồng trứng đa nang (PCOS),"freq S5 docs; alt: 'buồng trứng đa nang' S5 O1; src: MD-YHSS47-13, MD-YHSS47-16, HOSREM-ART"
+hysterosalpingography,chụp tử cung - ống dẫn trứng (HSG),freq 'chụp tử cung vòi trứng' O1 docs; alt: 'chụp buồng tử cung' S1 O1; src: BYT315; LOW; T6
+surrogacy,mang thai hộ,freq S1 docs; src: HOSREM-ART
+preimplantation genetic testing,xét nghiệm di truyền tiền làm tổ (PGT),freq N1 docs; src: TCNCYH-3953; LOW (N1)
+molar pregnancy,thai trứng,freq O1 docs; alt: 'chửa trứng' O1; src: BYT315; = pathology hydatidiform mole (Southern Từ Dũ form)
+suction evacuation,hút nạo buồng tử cung,freq 'hút nạo' 0 docs; alt: 'hút buồng tử cung' S1 O1; LOW
+post-molar surveillance,theo dõi sau thai trứng,freq 0 docs; built
+beta-hCG,β-hCG,"freq 'beta hcg' S2 O1 docs; alt: 'β-hcg' S1, 'βhcg' O1; src: YHCM18-30, BVBND-PD20, BYT315; kept EN symbol"
+low-risk gestational trophoblastic neoplasia,u nguyên bào nuôi nguy cơ thấp,freq 'u nguyên bào nuôi' O1 docs; src: BYT315; = pathology GTN = u nguyên bào nuôi
+high-risk gestational trophoblastic neoplasia,u nguyên bào nuôi nguy cơ cao,freq 'u nguyên bào nuôi' O1 docs; src: BYT315; = pathology

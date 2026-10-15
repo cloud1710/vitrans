@@ -10,8 +10,8 @@ import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 const ENGINE = new URL("../", import.meta.url);
-export const CORE = ["core.js", "translate.js", "qa.js", "tags.js", "vnsyllable.js", "matching.js", "packs.js", "tm.js",
-  "report.js", "pyre.js", "py.js", "unitables.js"];
+export const CORE = ["core.js", "translate.js", "qa.js", "tags.js", "vnsyllable.js", "matching.js", "repair.js",
+  "packs.js", "tm.js", "report.js", "pyre.js", "py.js", "unitables.js"];
 const FORBIDDEN = [
   [/\bfrom\s+["']node:/, "a node: import"], [/\brequire\s*\(/, "require()"], [/\bBuffer\b/, "Buffer"],
   [/\bprocess\./, "process"], [/\bDOMParser\b/, "DOMParser"], [/\bXMLSerializer\b/, "XMLSerializer"],

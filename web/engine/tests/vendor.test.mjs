@@ -26,6 +26,20 @@ test("vendored fflate 0.8.2 matches the published build and ships its licence", 
   assert.ok(readme.includes(FFLATE_SHA256), "the README records the sha256");
 });
 
+test("vendored @xmldom/xmldom 0.9.12 (the Node tests' DOMParser) matches the npm package's files", () => {
+  const dir = new URL("tests/vendor/xmldom-0.9.12/", ENGINE);
+  const readme = readFileSync(new URL("README.md", dir), "utf8");
+  const files = ["LICENSE", ...readdirSync(new URL("lib/", dir)).map((f) => "lib/" + f)].sort();
+  assert.deepEqual(files, ["LICENSE", "lib/conventions.js", "lib/dom-parser.js", "lib/dom.js", "lib/entities.js",
+    "lib/errors.js", "lib/grammar.js", "lib/index.js", "lib/sax.js"]);
+  for (const f of files) {
+    const sha = createHash("sha256").update(readFileSync(new URL(f, dir))).digest("hex");
+    assert.ok(readme.includes("sha256 " + f + ": " + sha), f + " is the published file");
+  }
+  assert.match(readFileSync(new URL("LICENSE", dir), "utf8"), /^Copyright 2019 - present Christopher J. Brody/);
+  assert.equal(JSON.parse(readFileSync(new URL("package.json", dir), "utf8")).type, "commonjs");
+});
+
 test("the specifier scan sees every import form", () => {
   const src = [
     "import { a } from \"./a.js\";",

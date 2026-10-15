@@ -1,0 +1,7 @@
+{
+  "name": "@xmldom/xmldom",
+  "version": "0.9.12",
+  "private": true,
+  "type": "commonjs",
+  "main": "lib/index.js"
+}

@@ -1,0 +1,312 @@
+en,vi,note
+chief complaint,lý do vào viện,"freq 'lý do vào viện' 5 docs (S2 N3 H0 B0); vs 'lý do nhập viện' 0, 'lý do khám' 3, 'triệu chứng chính' 3; ""lý do nhập viện"" 0"
+history of present illness,bệnh sử,freq 'bệnh sử' 19 docs (S10 N5 H2 B2); vs 'quá trình bệnh lý' 1
+past medical history,tiền sử bệnh,"freq 'tiền sử' 67 docs (S29 N26 H10 B2); vs 'tiền căn' 19, 'tiền sử bệnh' 16, 'tiền căn bệnh' 4; Southern ""tiền căn"" 19 docs (S14) also correct; family history = tiền sử gia đình (pathology)"
+medical history,tiền sử bệnh,"freq 'tiền sử' 67 docs (S29 N26 H10 B2); vs 'tiền căn' 19, 'tiền sử bệnh' 16, 'tiền căn bệnh' 4"
+medication history,tiền sử dùng thuốc,"freq 'tiền sử dùng thuốc' 1 docs (S0 N0 H0 B1); vs 'tiền căn dùng thuốc' 0, 'tiền sử sử dụng thuốc' 1; BYT"
+allergy history,tiền sử dị ứng,freq 'tiền sử dị ứng' 4 docs (S2 N0 H1 B1); vs 'tiền căn dị ứng' 0
+smoking history,tiền sử hút thuốc lá,freq 'hút thuốc lá' 22 docs (S12 N4 H5 B1); vs 'hút thuốc' 23
+former smoker,đã ngưng hút thuốc lá,"freq 'hút thuốc lá' 22 docs (S12 N4 H5 B1); vs 'hút thuốc' 23; ""đã bỏ thuốc"" 1 doc; Southern ""ngưng"""
+pack-years,gói-năm,"freq 'gói-năm' 2 docs (S2 N0 H0 B0); vs 'gói.năm' 0, 'bao-năm' 0, 'bao.năm' 0, 'gói năm' 0, 'bao năm' 0; keep the number: ""30 pack-years"" = ""30 gói-năm"""
+alcohol abuse,nghiện rượu,freq 'nghiện rượu' 6 docs (S3 N0 H1 B2); vs 'lạm dụng rượu' 2
+physical examination,khám lâm sàng,"freq 'khám lâm sàng' 35 docs (S21 N7 H5 B2); vs 'khám thực thể' 7, 'thăm khám lâm sàng' 12; ""khám thực thể"" 7 docs"
+on examination,khi khám,case-report phrase; synthetic choice; no corpus count
+vital signs,sinh hiệu,"owner, recommended column 2026-10-15 18:48 (M1); freq 'sinh hiệu' 4 docs (S3 N1 H0 B0); vs 'dấu hiệu sinh tồn' 6, 'chỉ số sinh tồn' 0; South S3 vs ""dấu hiệu sinh tồn"" S2 (national 6 docs)"
+general condition,tổng trạng,"owner, recommended column 2026-10-15 18:48 (M2); freq 'tổng trạng' 2 docs (S2 N0 H0 B0); vs 'thể trạng' 18, 'toàn trạng' 6, 'tình trạng chung' 2; Southern exam heading; ""thể trạng"" 18 docs mixes the body-build sense; = pathology ""performance status"" value"
+level of consciousness,tri giác,"freq 'tri giác' 12 docs (S9 N3 H0 B0); vs 'ý thức' 10; South S9 vs ""ý thức"" S4"
+altered mental status,rối loạn tri giác,"freq 'rối loạn tri giác' 7 docs (S5 N2 H0 B0); vs 'rối loạn ý thức' 3, 'thay đổi tri giác' 1"
+loss of consciousness,mất ý thức,"freq 'mất ý thức' 3 docs (S1 N2 H0 B0); vs 'mất tri giác' 1, 'bất tỉnh' 0"
+Glasgow Coma Scale,thang điểm Glasgow,"freq 'thang điểm Glasgow' 7 docs (S7 N0 H0 B0); vs 'thang điểm hôn mê Glasgow' 0, 'điểm Glasgow' 7; keep GCS"
+palpation,sờ,exam sequence; no corpus count
+percussion,gõ,exam sequence; no corpus count
+auscultation,nghe,"freq 'nghe phổi' 3 docs (S2 N1 H0 B0); vs 'nghe tim' 2, 'thính chẩn' 0; nghe tim / nghe phổi"
+tenderness,ấn đau,"freq 'ấn đau' 5 docs (S3 N2 H0 B0); vs 'đau khi ấn' 0, 'điểm đau' 7"
+systolic blood pressure,huyết áp tâm thu,freq 'huyết áp tâm thu' 15 docs (S10 N1 H3 B1); vs 'huyết áp tối đa' 1
+mean arterial pressure,huyết áp động mạch trung bình,freq 'huyết áp trung bình' 6 docs (S2 N3 H1 B0); vs 'huyết áp động mạch trung bình' 0; keep MAP
+heart rate,nhịp tim,"freq 'nhịp tim' 18 docs (S11 N4 H2 B1); vs 'tần số tim' 1; ""tần số tim"" 1 doc"
+respiratory rate,nhịp thở,"freq 'nhịp thở' 9 docs (S4 N5 H0 B0); vs 'tần số thở' 1; ""tần số thở"" 1 doc"
+beats per minute,lần/phút,"freq 'lần/phút' 13 docs (S9 N3 H1 B0); vs 'nhịp/phút' 0; bpm = lần/phút; ""nhịp/phút"" 0"
+breaths per minute,lần/phút,freq 'lần/phút' 13 docs (S9 N3 H1 B0); vs 'nhịp/phút' 0
+body temperature,thân nhiệt,freq 'thân nhiệt' 8 docs (S5 N2 H1 B0); vs 'nhiệt độ cơ thể' 1
+oxygen saturation,độ bão hòa oxy,freq 'độ bão hòa oxy' 3 docs (S3 N0 H0 B0); vs 'bão hòa oxy' 3; keep SpO2
+capillary refill time,thời gian đổ đầy mao mạch,freq 'thời gian đổ đầy mao mạch' 0 docs (S0 N0 H0 B0); vs 'thời gian làm đầy mao mạch' 0; freq 0 in corpus; textbook form
+tachycardia,nhịp tim nhanh,"freq 'nhịp tim nhanh' 8 docs (S5 N1 H1 B1); vs 'nhịp nhanh' 8, 'tim nhanh' 11"
+bradycardia,nhịp tim chậm,freq 'nhịp tim chậm' 2 docs (S1 N1 H0 B0); vs 'nhịp chậm' 5
+tachypnea,thở nhanh,freq 'thở nhanh' 8 docs (S5 N1 H0 B2)
+hypotension,hạ huyết áp,"freq 'hạ huyết áp' 12 docs (S7 N1 H2 B2); vs 'tụt huyết áp' 11, 'huyết áp thấp' 3; ""tụt huyết áp"" 11 docs"
+orthostatic hypotension,hạ huyết áp tư thế,"freq 'hạ huyết áp tư thế' 6 docs (S4 N0 H0 B2); vs 'hạ huyết áp tư thế đứng' 1, 'hạ huyết áp thế đứng' 0"
+hypertension,tăng huyết áp,"freq 'tăng huyết áp' 51 docs (S28 N11 H10 B2); vs 'cao huyết áp' 8, 'huyết áp cao' 5; ""cao huyết áp"" 8 docs (lay register)"
+low-grade fever,sốt nhẹ,"freq 'sốt nhẹ' 7 docs (S4 N3 H0 B0); vs 'sốt nhẹ về chiều' 0, 'sốt độ thấp' 0; ""sốt độ thấp"" 0 (calque, term fix)"
+high-grade fever,sốt cao,freq 'sốt cao' 5 docs (S1 N3 H0 B1)
+afebrile,không sốt,no corpus count
+hypothermia,hạ thân nhiệt,freq 'hạ thân nhiệt' 2 docs (S0 N1 H1 B0)
+dyspnea,khó thở,freq 'khó thở' 22 docs (S14 N5 H2 B1)
+exertional dyspnea,khó thở khi gắng sức,freq 'khó thở khi gắng sức' 2 docs (S1 N1 H0 B0)
+orthopnea,khó thở khi nằm,"freq 'khó thở khi nằm' 2 docs (S2 N0 H0 B0); vs 'khó thở phải ngồi' 1, 'khó thở tư thế' 1"
+paroxysmal nocturnal dyspnea,khó thở kịch phát về đêm,textbook form; no corpus count
+palpitations,hồi hộp,"freq 'hồi hộp' 7 docs (S3 N1 H1 B2); vs 'đánh trống ngực' 4, 'hồi hộp đánh trống ngực' 0; ""đánh trống ngực"" 4 docs"
+anorexia,chán ăn,freq 'chán ăn' 20 docs (S13 N4 H1 B2); vs 'biếng ăn' 3; symptom sense (loss of appetite); anorexia nervosa = chán ăn tâm thần
+vomiting,nôn,"freq 'nôn' 39 docs (S27 N7 H3 B2); vs 'ói' 13, 'nôn ói' 9; ""ói"" 13 docs (S12, spoken South)"
+hematemesis,nôn ra máu,freq 'nôn ra máu' 1 docs (S1 N0 H0 B0); vs 'ói ra máu' 1
+melena,tiêu phân đen,"freq 'tiêu phân đen' 3 docs (S3 N0 H0 B0); vs 'đi cầu phân đen' 0, 'đi ngoài phân đen' 1, 'phân đen' 5; Southern; national ""đi ngoài phân đen"" 1 doc"
+hematochezia,tiêu máu,"freq 'tiêu máu' 2 docs (S2 N0 H0 B0); vs 'tiêu ra máu' 0, 'đi cầu ra máu' 0, 'đi ngoài ra máu' 1; LOW; Southern; national ""đi ngoài ra máu"" 1 doc"
+diarrhea,tiêu chảy,freq 'tiêu chảy' 19 docs (S10 N5 H2 B2); vs 'ỉa chảy' 3
+epigastric pain,đau thượng vị,freq 'đau thượng vị' 1 docs (S0 N0 H0 B1); vs 'đau vùng thượng vị' 1
+abdominal distension,chướng bụng,freq 'chướng bụng' 3 docs (S2 N1 H0 B0); vs 'bụng chướng' 3
+dysphagia,khó nuốt,freq 'khó nuốt' 9 docs (S7 N1 H0 B1); vs 'nuốt khó' 2; = nutrition 0.1.1 (D6)
+jaundice,vàng da,"freq 'vàng da' 7 docs (S3 N3 H0 B1); vs 'vàng da vàng mắt' 0, 'vàng da niêm' 0"
+edema,phù,freq 'phù' 159 docs (S89 N54 H14 B2)
+generalized edema,phù toàn thân,freq 'phù toàn thân' 10 docs (S6 N3 H1 B0)
+pitting edema,phù ấn lõm,freq 'phù ấn lõm' 0 docs (S0 N0 H0 B0); vs 'phù mềm ấn lõm' 0; freq 0; textbook form
+ascites,báng bụng,"freq 'báng bụng' 3 docs (S2 N1 H0 B0); vs 'cổ trướng' 2, 'dịch báng' 1, 'tràn dịch màng bụng' 2; Southern; ""cổ trướng"" 2, ""tràn dịch màng bụng"" 2 docs"
+lymphadenopathy,hạch to,"freq 'hạch to' 8 docs (S5 N3 H0 B0); vs 'nổi hạch' 3, 'bệnh hạch' 3, 'hạch ngoại biên' 1; clinical sign; pathology-hemato uses compound keys (reactive lymphadenopathy = hạch phản ứng)"
+dry cough,ho khan,freq 'ho khan' 5 docs (S3 N2 H0 B0)
+productive cough,ho khạc đàm,"freq 'ho khạc đàm' 1 docs (S1 N0 H0 B0); vs 'ho có đàm' 0, 'ho có đờm' 1, 'ho khạc đờm' 1; Southern ""đàm"""
+sputum,đàm,"freq 'đàm' 8 docs (S6 N1 H0 B1); vs 'đờm' 4; Southern; ""đờm"" 4 docs (North)"
+hemoptysis,ho ra máu,freq 'ho ra máu' 9 docs (S7 N2 H0 B0)
+wheezing,khò khè,freq 'khò khè' 8 docs (S7 N0 H0 B1); vs 'thở rít' 2
+wheezes,ran rít,freq 'ran rít' 1 docs (S1 N0 H0 B0); vs 'ran ngáy' 0; auscultation finding
+crackles,ran nổ,freq 'ran nổ' 2 docs (S1 N1 H0 B0); vs 'ran ẩm' 2
+rhonchi,ran ngáy,freq 'ran ngáy' 0 docs (S0 N0 H0 B0); vs 'ran rít' 1; freq 0; textbook form
+cyanosis,tím tái,freq 'tím tái' 5 docs (S3 N1 H0 B1); vs 'tím' 23
+digital clubbing,ngón tay dùi trống,freq 'ngón tay dùi trống' 2 docs (S1 N1 H0 B0)
+dysuria,tiểu buốt,"freq 'tiểu buốt' 1 docs (S1 N0 H0 B0); vs 'tiểu khó' 4, 'tiểu gắt' 0, 'tiểu rát' 0; LOW; ""tiểu khó"" (4 docs) also means difficult voiding"
+polyuria,tiểu nhiều,freq 'tiểu nhiều' 3 docs (S2 N1 H0 B0); vs 'đa niệu' 2
+oliguria,thiểu niệu,freq 'thiểu niệu' 6 docs (S4 N2 H0 B0); vs 'tiểu ít' 6
+anuria,vô niệu,freq 'vô niệu' 4 docs (S3 N1 H0 B0)
+hematuria,tiểu máu,"freq 'tiểu máu' 14 docs (S10 N3 H1 B0); vs 'đái máu' 10, 'huyết niệu' 1; = pathology-kidney"
+nocturia,tiểu đêm,freq 'tiểu đêm' 0 docs (S0 N0 H0 B0); freq 0; common form
+urinary incontinence,tiểu không tự chủ,"freq 'tiểu không tự chủ' 3 docs (S2 N1 H0 B0); vs 'són tiểu' 1, 'tiểu không kiểm soát' 0"
+urine output,lượng nước tiểu,"freq 'lượng nước tiểu' 5 docs (S3 N2 H0 B0); vs 'thể tích nước tiểu' 2, 'nước tiểu 24 giờ' 3"
+polydipsia,uống nhiều,freq 'uống nhiều' 3 docs (S1 N1 H0 B1); vs 'khát nhiều' 0
+delirium,mê sảng,"freq 'mê sảng' 2 docs (S1 N1 H0 B0); vs 'sảng' 3; LOW; Southern ""sảng"" 3 docs"
+rash,phát ban,freq 'phát ban' 5 docs (S3 N1 H0 B1); vs 'ban' 138
+petechiae,chấm xuất huyết,"freq 'chấm xuất huyết' 1 docs (S1 N0 H0 B0); vs 'xuất huyết dạng chấm' 1, 'nốt xuất huyết' 1"
+purpura,ban xuất huyết,freq 'ban xuất huyết' 4 docs (S2 N1 H0 B1); vs 'tử ban' 0
+ecchymosis,vết bầm,"freq 'vết bầm' 2 docs (S2 N0 H0 B0); vs 'mảng bầm' 0, 'bầm máu' 0, 'mảng xuất huyết' 1; LOW"
+heart murmur,âm thổi,"freq 'âm thổi' 2 docs (S2 N0 H0 B0); vs 'tiếng thổi' 1; Southern; ""tiếng thổi"" 1 doc"
+jugular venous distension,tĩnh mạch cổ nổi,freq 'tĩnh mạch cổ nổi' 2 docs (S1 N1 H0 B0); vs 'tĩnh mạch cổ phồng' 0
+chills,lạnh run,"freq 'lạnh run' 3 docs (S3 N0 H0 B0); vs 'ớn lạnh' 1, 'rét run' 1; Southern; ""rét run"" 1 doc (North)"
+night sweats,đổ mồ hôi đêm,"freq 'đổ mồ hôi đêm' 3 docs (S3 N0 H0 B0); vs 'ra mồ hôi đêm' 1, 'vã mồ hôi đêm' 1"
+weight loss,sụt cân,freq 'sụt cân' 20 docs (S13 N7 H0 B0); vs 'giảm cân' 8; = nutrition
+asymptomatic,không có triệu chứng,freq 'không có triệu chứng' 22 docs (S14 N6 H1 B1); vs 'không triệu chứng' 9
+complete blood count,công thức máu,"owner, recommended column 2026-10-15 18:48 (M10): freq 'công thức máu' 10 docs (S3) vs 'tổng phân tích tế bào máu' 4 (S1 N3 H0 B0), 'huyết đồ' 4, 'tổng phân tích máu' 0; = pathology-hemato; WAS 'tổng phân tích tế bào máu'"
+hemoglobin,hemoglobin,"freq 'hemoglobin' 18 docs (S11 N6 H0 B1); vs 'huyết sắc tố' 9, 'hémoglobin' 0; keep Hb; ""huyết sắc tố"" 9 docs"
+hematocrit,hematocrit,freq 'hematocrit' 6 docs (S4 N2 H0 B0); vs 'dung tích hồng cầu' 0
+white blood cell count,số lượng bạch cầu,"freq 'số lượng bạch cầu' 13 docs (S8 N3 H1 B1); vs 'bạch cầu' 48, 'số bạch cầu' 2"
+platelet count,số lượng tiểu cầu,freq 'số lượng tiểu cầu' 7 docs (S3 N3 H0 B1); vs 'tiểu cầu' 29
+neutrophil count,số lượng bạch cầu trung tính,"freq 'bạch cầu trung tính' 10 docs (S4 N5 H0 B1); vs 'bạch cầu đa nhân trung tính' 12, 'bạch cầu hạt trung tính' 2, 'neutrophil' 4; neutrophil = bạch cầu trung tính (pathology-hemato)"
+anemia,thiếu máu,"freq 'thiếu máu' 50 docs (S26 N19 H3 B2); NOT ""thiếu máu cục bộ"" (= ischemia)"
+leukocytosis,tăng bạch cầu,freq 'tăng bạch cầu' 12 docs (S7 N4 H0 B1)
+leukopenia,giảm bạch cầu,freq 'giảm bạch cầu' 4 docs (S1 N1 H1 B1)
+thrombocytopenia,giảm tiểu cầu,freq 'giảm tiểu cầu' 16 docs (S9 N4 H2 B1)
+blood glucose,đường huyết,"owner, recommended column 2026-10-15 18:48 (M6); freq 'đường huyết' 12 docs (S8 N1 H1 B2); vs 'glucose máu' 12, 'glucose huyết' 5; South S8 vs ""glucose máu"" S5 (BYT form)"
+plasma glucose,glucose huyết tương,"freq 'glucose huyết' 5 docs (S0 N1 H2 B2); vs 'đường huyết' 12, 'glucose máu' 12; BYT 5481"
+fasting plasma glucose,glucose huyết tương lúc đói,"owner, recommended column 2026-10-15 18:48 (M6, QĐ 5481); freq 'glucose huyết tương lúc đói' 2 docs (S0 N0 H1 B1); vs 'đường huyết lúc đói' 2, 'glucose máu lúc đói' 1, 'đường huyết đói' 1; BYT 5481; tie with ""đường huyết lúc đói"" 2 docs"
+fasting blood glucose,đường huyết lúc đói,"freq 'đường huyết lúc đói' 2 docs (S0 N0 H1 B1); vs 'glucose huyết tương lúc đói' 2, 'glucose máu lúc đói' 1, 'đường huyết đói' 1"
+glycated hemoglobin,HbA1c,"freq 'HbA1c' 9 docs (S4 N2 H2 B1); vs 'hemoglobin gắn glucose' 0, 'huyết sắc tố gắn glucose' 0, 'hemoglobin glycosyl hóa' 0; literature keeps HbA1c"
+oral glucose tolerance test,nghiệm pháp dung nạp glucose đường uống,"owner, recommended column 2026-10-15 18:48 (M6, QĐ 5481); freq 'nghiệm pháp dung nạp glucose đường uống' 1 docs (S0 N0 H0 B1); vs 'nghiệm pháp dung nạp glucose' 2, 'nghiệm pháp tăng đường huyết' 0; BYT 5481; keep OGTT"
+postprandial,sau ăn,freq 'sau ăn' 7 docs (S4 N2 H0 B1)
+creatinine,creatinin,"freq 'creatinin' 28 docs (S14 N8 H4 B2); vs 'creatinine' 23, 'créatinine' 1; ""creatinine"" 23 docs"
+serum creatinine,creatinin máu,"freq 'creatinin máu' 15 docs (S5 N5 H3 B2); vs 'creatinin huyết thanh' 6, 'creatinine huyết thanh' 6; ""creatinin huyết thanh"" 6 docs"
+urea,ure,"freq 'ure' 12 docs (S3 N5 H3 B1); vs 'urê' 6, 'urea' 1"
+blood urea nitrogen,BUN,"freq 'BUN' 5 docs (S4 N1 H0 B0); vs 'urê máu' 1, 'ure máu' 5, 'nitơ urê máu' 0; literature keeps BUN"
+glomerular filtration rate,độ lọc cầu thận,"freq 'độ lọc cầu thận' 9 docs (S7 N0 H1 B1); vs 'mức lọc cầu thận' 8, 'độ thanh lọc cầu thận' 1, 'tốc độ lọc cầu thận' 1; = pathology-kidney; South S7 vs ""mức lọc cầu thận"" S1 N3 H3"
+estimated glomerular filtration rate,độ lọc cầu thận ước đoán,"freq 'độ lọc cầu thận ước đoán' 4 docs (S4 N0 H0 B0); vs 'mức lọc cầu thận ước tính' 1, 'độ lọc cầu thận ước tính' 1, 'mức lọc cầu thận ước đoán' 0; keep eGFR; ""mức lọc cầu thận ước tính"" N1"
+electrolytes,điện giải,freq 'điện giải' 12 docs (S6 N5 H0 B1); vs 'ion đồ' 1
+serum electrolytes,điện giải đồ,freq 'điện giải' 12 docs (S6 N5 H0 B1); vs 'ion đồ' 1
+calcium,canxi,"owner, recommended column 2026-10-15 18:48 (M7); freq 'canxi' 24 docs (S12 N11 H1 B0); vs 'calci' 17; ""calci"" 17 docs (Dược thư spelling)"
+magnesium,magie,freq 'magie' 6 docs (S2 N3 H0 B1); vs 'magnesi' 0; = nutrition (hạ magie máu)
+phosphate,phosphat,"freq 'phosphat' 8 docs (S4 N3 H0 B1); vs 'phospho' 10, 'phốt pho' 1; ""phospho"" 10 docs (= phosphorus)"
+phosphorus,phospho,"freq 'phospho' 10 docs (S3 N7 H0 B0); vs 'phosphat' 8, 'phốt pho' 1; = nutrition (hạ phospho máu)"
+hyponatremia,hạ natri máu,freq 'hạ natri máu' 2 docs (S2 N0 H0 B0); vs 'giảm natri máu' 0
+hypernatremia,tăng natri máu,freq 'tăng natri máu' 0 docs (S0 N0 H0 B0); freq 0; pattern of hạ/tăng ... máu
+hyperkalemia,tăng kali máu,freq 'tăng kali máu' 3 docs (S2 N0 H0 B1)
+hypokalemia,hạ kali máu,freq 'hạ kali máu' 3 docs (S2 N1 H0 B0); vs 'giảm kali máu' 1; = nutrition
+hypocalcemia,hạ canxi máu,"freq 'hạ canxi máu' 3 docs (S1 N2 H0 B0); vs 'hạ calci máu' 2, 'giảm canxi máu' 0"
+hypercalcemia,tăng canxi máu,freq 'tăng canxi máu' 5 docs (S1 N4 H0 B0); vs 'tăng calci máu' 3
+liver function tests,xét nghiệm chức năng gan,"freq 'xét nghiệm chức năng gan' 3 docs (S2 N0 H0 B1); vs 'chức năng gan' 13, 'men gan' 11"
+liver enzymes,men gan,freq 'men gan' 11 docs (S4 N4 H3 B0); vs 'men gan tăng' 2
+hypoalbuminemia,giảm albumin máu,freq 'giảm albumin máu' 7 docs (S5 N2 H0 B0); vs 'hạ albumin máu' 1
+lipid profile,bilan lipid,"freq 'bilan lipid' 5 docs (S1 N0 H4 B0); vs 'xét nghiệm mỡ máu' 0, 'bộ mỡ máu' 0, 'chỉ số lipid máu' 2"
+triglycerides,triglycerid,"freq 'triglycerid' 11 docs (S4 N2 H4 B1); vs 'triglyceride' 10; ""triglyceride"" 10 docs"
+hypercholesterolemia,tăng cholesterol máu,freq 'tăng cholesterol máu' 2 docs (S0 N1 H1 B0); vs 'tăng cholesterol' 6
+hypertriglyceridemia,tăng triglycerid máu,"freq 'tăng triglycerid' 1 docs (S1 N0 H0 B0); vs 'tăng triglycerid máu' 0, 'tăng triglyceride máu' 0"
+hyperuricemia,tăng acid uric máu,"freq 'tăng acid uric máu' 4 docs (S2 N0 H1 B1); vs 'tăng axit uric máu' 1, 'tăng acid uric' 4"
+C-reactive protein,protein phản ứng C,freq 'protein phản ứng C' 1 docs (S0 N1 H0 B0); vs 'CRP' 18; literature keeps CRP (18 docs)
+erythrocyte sedimentation rate,tốc độ máu lắng,"freq 'tốc độ máu lắng' 2 docs (S1 N1 H0 B0); vs 'tốc độ lắng máu' 2, 'tốc độ lắng hồng cầu' 0, 'máu lắng' 4; keep ESR"
+prothrombin time,thời gian prothrombin,"freq 'thời gian prothrombin' 1 docs (S0 N0 H0 B1); vs 'tỷ lệ prothrombin' 0, 'thời gian Quick' 1; keep PT, INR"
+arterial blood gas,khí máu động mạch,freq 'khí máu động mạch' 3 docs (S1 N1 H0 B1); vs 'khí máu' 6
+lactate,lactate,freq 'lactate' 8 docs (S5 N1 H0 B2); vs 'lactat' 1
+urinalysis,tổng phân tích nước tiểu,"freq 'tổng phân tích nước tiểu' 6 docs (S4 N1 H0 B1); vs 'xét nghiệm nước tiểu' 12, 'tổng phân tích nước tiểu 10 thông số' 0"
+proteinuria,đạm niệu,"owner, recommended column 2026-10-15 18:48 (M11): freq 'đạm niệu' 7 docs (S5 N0 H1 B1); vs 'protein niệu' 14 (S5 N7), 'protein nước tiểu' 0; = pathology-kidney"
+albuminuria,albumin niệu,"freq 'albumin niệu' 1 docs (S0 N0 H0 B1); vs 'đạm niệu vi lượng' 0, 'albumin nước tiểu' 0"
+blood culture,cấy máu,freq 'cấy máu' 6 docs (S2 N3 H0 B1)
+urine culture,cấy nước tiểu,freq 'cấy nước tiểu' 2 docs (S1 N0 H0 B1)
+sputum culture,cấy đàm,freq 'cấy đàm' 1 docs (S1 N0 H0 B0); vs 'cấy đờm' 1
+reference range,khoảng tham chiếu,"freq 'khoảng tham chiếu' 2 docs (S0 N2 H0 B0); vs 'giới hạn bình thường' 13, 'trị số bình thường' 2, 'giá trị bình thường' 3, 'khoảng tham khảo' 0; lab term"
+within normal limits,trong giới hạn bình thường,freq 'trong giới hạn bình thường' 13 docs (S5 N5 H3 B0); vs 'trong giới hạn cho phép' 3
+electrocardiogram,điện tâm đồ,freq 'điện tâm đồ' 10 docs (S5 N1 H2 B2); vs 'điện tim' 10; keep ECG
+hospital admission,nhập viện,"owner, recommended column 2026-10-15 18:48 (M5); freq 'nhập viện' 48 docs (S27 N13 H6 B2); vs 'vào viện' 32; ""vào viện"" 32 docs (N13)"
+on admission,lúc nhập viện,freq 'nhập viện' 48 docs (S27 N13 H6 B2); vs 'vào viện' 32
+hospitalized,nhập viện,freq 'nhập viện' 48 docs (S27 N13 H6 B2); vs 'vào viện' 32
+hospitalization,nhập viện,freq 'nhập viện' 48 docs (S27 N13 H6 B2); vs 'vào viện' 32; stay sense = nằm viện
+hospital discharge,xuất viện,"owner, recommended column 2026-10-15 18:48 (M5); freq 'xuất viện' 21 docs (S13 N7 H0 B1); vs 'ra viện' 18; South S13 vs ""ra viện"" S5 N10"
+discharge summary,giấy ra viện,"freq 'giấy ra viện' 0 docs (S0 N0 H0 B0); vs 'tóm tắt ra viện' 0, 'tóm tắt hồ sơ bệnh án' 0, 'tóm tắt bệnh án' 0; official form name (BYT); freq 0 in corpus"
+readmission,tái nhập viện,"freq 'tái nhập viện' 5 docs (S3 N1 H0 B1); vs 'nhập viện lại' 0, 'tái nhập' 5"
+inpatient,nội trú,freq 'nội trú' 23 docs (S13 N6 H2 B2)
+outpatient,ngoại trú,freq 'ngoại trú' 19 docs (S12 N5 H0 B2)
+emergency department,khoa Cấp cứu,"freq 'khoa Cấp cứu' 4 docs (S2 N1 H1 B0); vs 'khoa cấp cứu' 4, 'phòng cấp cứu' 1"
+department of internal medicine,khoa Nội,freq 'khoa Nội' 17 docs (S11 N1 H4 B1); vs 'khoa nội' 17
+medical record,hồ sơ bệnh án,"freq 'hồ sơ bệnh án' 32 docs (S19 N12 H0 B1); vs 'bệnh án' 44, 'hồ sơ bệnh' 32"
+referral,chuyển viện,"freq 'chuyển viện' 4 docs (S3 N1 H0 B0); vs 'chuyển tuyến' 7; South S3; ""chuyển tuyến"" N4 (referral system sense)"
+attending physician,bác sĩ điều trị,freq 'bác sĩ điều trị' 8 docs (S4 N3 H0 B1)
+caregiver,người chăm sóc,freq 'người chăm sóc' 5 docs (S3 N0 H0 B2); vs 'người chăm sóc chính' 0
+in-hospital,nội viện,"freq 'nội viện' 6 docs (S5 N1 H0 B0); vs 'trong bệnh viện' 6, 'trong thời gian nằm viện' 4; Southern (S5 of 6 docs)"
+red blood cell transfusion,truyền hồng cầu,freq 'truyền hồng cầu' 5 docs (S0 N5 H0 B0); vs 'truyền khối hồng cầu' 2
+oxygen therapy,thở oxy,"freq 'thở oxy' 4 docs (S1 N3 H0 B0); vs 'liệu pháp oxy' 0, 'oxy liệu pháp' 2"
+nasal cannula,cannula mũi,"freq 'cannula mũi' 1 docs (S0 N1 H0 B0); vs 'ống thông mũi' 1, 'gọng mũi' 0; LOW"
+nasogastric tube,ống thông mũi dạ dày,"freq 'ống thông mũi dạ dày' 1 docs (S1 N0 H0 B0); vs 'sonde dạ dày' 3, 'ống thông dạ dày' 5; = nutrition (reused)"
+urinary catheter,ống thông tiểu,"freq 'ống thông tiểu' 1 docs (S1 N0 H0 B0); vs 'sonde tiểu' 1, 'thông tiểu' 3; LOW"
+central venous catheter,catheter tĩnh mạch trung tâm,freq 'catheter tĩnh mạch trung tâm' 3 docs (S2 N0 H0 B1); vs 'ống thông tĩnh mạch trung tâm' 0; = nutrition
+provisional diagnosis,chẩn đoán sơ bộ,freq 'chẩn đoán sơ bộ' 4 docs (S4 N0 H0 B0); vs 'chẩn đoán tạm thời' 0
+definitive diagnosis,chẩn đoán xác định,freq 'chẩn đoán xác định' 56 docs (S32 N21 H2 B1)
+admission diagnosis,chẩn đoán lúc nhập viện,"freq 'chẩn đoán lúc vào viện' 1 docs (S0 N0 H1 B0); vs 'chẩn đoán vào viện' 1, 'chẩn đoán nhập viện' 0; LOW; aligned with nhập viện"
+discharge diagnosis,chẩn đoán lúc xuất viện,"freq 'chẩn đoán ra viện' 1 docs (S1 N0 H0 B0); vs 'chẩn đoán xuất viện' 0, 'chẩn đoán lúc ra viện' 0; LOW; aligned with xuất viện"
+diagnostic criteria,tiêu chuẩn chẩn đoán,freq 'tiêu chuẩn chẩn đoán' 23 docs (S8 N10 H4 B1); vs 'tiêu chí chẩn đoán' 3
+clinical manifestations,biểu hiện lâm sàng,freq 'biểu hiện lâm sàng' 40 docs (S24 N11 H3 B2); vs 'triệu chứng lâm sàng' 50; roadmap 4.2: medicine owns this sense of expression / presentation
+clinical presentation,biểu hiện lâm sàng,"freq 'biểu hiện lâm sàng' 40 docs (S24 N11 H3 B2); vs 'bệnh cảnh lâm sàng' 7; bare ""presentation"" has no owner (owners.csv)"
+clinical features,đặc điểm lâm sàng,features = đặc điểm (pathology); no corpus count
+comorbidity,bệnh đồng mắc,"freq 'bệnh đồng mắc' 12 docs (S9 N1 H1 B1); vs 'bệnh kèm' 10, 'bệnh kèm theo' 9, 'bệnh lý đi kèm' 8, 'bệnh đi kèm' 5, 'bệnh phối hợp' 1, 'bệnh lý kèm theo' 6; South S9; ""bệnh kèm (theo)"" 10 docs"
+underlying disease,bệnh nền,"freq 'bệnh nền' 8 docs (S4 N3 H1 B0); vs 'bệnh lý nền' 10, 'bệnh căn nguyên' 2; ""bệnh lý nền"" 10 docs (N6)"
+multimorbidity,đa bệnh,"freq 'đa bệnh' 2 docs (S2 N0 H0 B0); vs 'đa bệnh lý' 0, 'đồng mắc nhiều bệnh' 0, 'nhiều bệnh mạn tính' 1; LOW"
+pathogenesis,cơ chế bệnh sinh,freq 'cơ chế bệnh sinh' 24 docs (S17 N5 H1 B1); vs 'bệnh sinh' 29
+idiopathic,vô căn,freq 'vô căn' 10 docs (S7 N1 H1 B1); vs 'không rõ nguyên nhân' 15
+subacute,bán cấp,freq 'bán cấp' 6 docs (S5 N1 H0 B0)
+chronic,mạn tính,"freq 'mạn tính' 58 docs (S35 N17 H4 B2); vs 'mãn tính' 17, 'mạn' 70; 58 vs ""mãn tính"" 17 docs (lay form; term fix)"
+exacerbation,đợt cấp,freq 'đợt cấp' 3 docs (S3 N0 H0 B0); vs 'đợt kịch phát' 0
+self-limiting,tự giới hạn,freq 'tự giới hạn' 2 docs (S2 N0 H0 B0); vs 'tự khỏi' 5
+route of administration,đường dùng,"freq 'đường dùng' 6 docs (S5 N0 H0 B1); vs 'đường dùng thuốc' 1, 'đường đưa thuốc' 0"
+orally,đường uống,freq 'đường uống' 9 docs (S3 N2 H2 B2); vs 'uống' 51
+intravenous infusion,truyền tĩnh mạch,freq 'truyền tĩnh mạch' 15 docs (S8 N2 H3 B2); vs 'truyền dịch' 5
+continuous infusion,truyền tĩnh mạch liên tục,freq 'truyền tĩnh mạch liên tục' 2 docs (S1 N1 H0 B0); vs 'truyền liên tục' 1
+intravenous fluids,dịch truyền tĩnh mạch,freq 'truyền dịch' 5 docs (S1 N2 H1 B1); vs 'truyền tĩnh mạch' 15
+intramuscular injection,tiêm bắp,freq 'tiêm bắp' 5 docs (S2 N1 H1 B1); vs 'đường tiêm bắp' 0
+subcutaneous injection,tiêm dưới da,freq 'tiêm dưới da' 5 docs (S2 N0 H1 B2); vs 'dưới da' 21
+sublingual,ngậm dưới lưỡi,freq 'ngậm dưới lưỡi' 1 docs (S0 N0 H1 B0); vs 'dưới lưỡi' 1
+once daily,1 lần/ngày,"freq '1 lần/ngày' 3 docs (S1 N1 H0 B1); vs 'ngày 1 lần' 1, 'một lần mỗi ngày' 1, 'ngày một lần' 3, '1 lần mỗi ngày' 1"
+twice daily,2 lần/ngày,"freq '2 lần/ngày' 6 docs (S3 N2 H0 B1); vs 'ngày 2 lần' 2, 'hai lần mỗi ngày' 0, 'ngày hai lần' 1"
+three times daily,3 lần/ngày,"freq '2 lần/ngày' 6 docs (S3 N2 H0 B1); vs 'ngày 2 lần' 2, 'hai lần mỗi ngày' 0, 'ngày hai lần' 1; pattern N lần/ngày"
+as needed,khi cần,freq 'khi cần' 22 docs (S13 N6 H1 B2)
+loading dose,liều tấn công,"freq 'liều tấn công' 4 docs (S1 N3 H0 B0); vs 'liều nạp' 0; ""liều nạp"" 0"
+maintenance dose,liều duy trì,freq 'liều duy trì' 2 docs (S1 N1 H0 B0)
+dose adjustment,điều chỉnh liều,"freq 'điều chỉnh liều' 6 docs (S3 N1 H1 B1); vs 'hiệu chỉnh liều' 2, 'chỉnh liều' 9"
+adverse drug reaction,phản ứng có hại của thuốc,"freq 'phản ứng có hại của thuốc' 1 docs (S0 N0 H0 B1); vs 'phản ứng bất lợi của thuốc' 1, 'phản ứng có hại' 1, 'tác dụng không mong muốn' 10, 'phản ứng phụ' 2; BYT pharmacovigilance guideline (2015); keep ADR"
+adverse event,biến cố bất lợi,"freq 'biến cố bất lợi' 4 docs (S3 N0 H0 B1); vs 'tác dụng không mong muốn' 10, 'tác dụng phụ' 18, 'biến cố có hại' 1, 'tác dụng ngoại ý' 0; S3, BYT; oncology child may refine grading"
+side effect,tác dụng phụ,freq 'tác dụng phụ' 18 docs (S7 N7 H2 B2); vs 'tác dụng không mong muốn' 10
+contraindication,chống chỉ định,freq 'chống chỉ định' 27 docs (S13 N9 H3 B2)
+anaphylaxis,phản vệ,freq 'phản vệ' 4 docs (S2 N0 H1 B1); vs 'sốc phản vệ' 3; BYT
+hypersensitivity reaction,phản ứng quá mẫn,freq 'phản ứng quá mẫn' 3 docs (S2 N0 H0 B1); vs 'quá mẫn' 5
+polypharmacy,đa thuốc,"freq 'đa thuốc' 2 docs (S2 N0 H0 B0); vs 'đa dược' 0, 'sử dụng nhiều thuốc' 2, 'dùng nhiều thuốc' 2; LOW"
+medication adherence,tuân thủ điều trị,"freq 'tuân thủ điều trị' 7 docs (S4 N0 H1 B2); vs 'tuân thủ dùng thuốc' 2, 'tuân thủ' 24"
+prescription,đơn thuốc,"freq 'đơn thuốc' 3 docs (S1 N1 H0 B1); vs 'kê đơn' 6, 'toa thuốc' 0"
+elimination half-life,thời gian bán thải,"freq 'thời gian bán hủy' 3 docs (S1 N1 H0 B1); vs 'thời gian bán thải' 0; LOW; Dược thư form; ""bán hủy"" 3 docs: bare ""half-life"" left to owner decision"
+bioavailability,sinh khả dụng,freq 'sinh khả dụng' 2 docs (S0 N0 H0 B2)
+pharmacokinetics,dược động học,freq 'dược động học' 2 docs (S0 N0 H1 B1)
+pharmacodynamics,dược lực học,freq 'dược lực học' 1 docs (S0 N0 H0 B1)
+hepatotoxicity,độc tính trên gan,"freq 'độc tính trên gan' 0 docs (S0 N0 H0 B0); vs 'độc tính gan' 1, 'nhiễm độc gan' 0, 'độc gan' 0; LOW"
+nephrotoxicity,độc tính trên thận,"freq 'độc tính trên thận' 3 docs (S1 N0 H1 B1); vs 'độc tính thận' 0, 'độc thận' 2, 'nhiễm độc thận' 0"
+drug-induced liver injury,tổn thương gan do thuốc,freq 'tổn thương gan do thuốc' 0 docs (S0 N0 H0 B0); vs 'viêm gan do thuốc' 1; LOW
+proton pump inhibitor,thuốc ức chế bơm proton,freq 'thuốc ức chế bơm proton' 1 docs (S1 N0 H0 B0); vs 'ức chế bơm proton' 2; keep PPI
+nonsteroidal anti-inflammatory drug,thuốc kháng viêm không steroid,"freq 'thuốc kháng viêm không steroid' 1 docs (S1 N0 H0 B0); vs 'thuốc chống viêm không steroid' 2, 'kháng viêm không steroid' 2, 'chống viêm không steroid' 2; Southern ""kháng viêm""; North / BYT ""chống viêm""; keep NSAID"
+anticoagulant,thuốc kháng đông,"owner, recommended column 2026-10-15 18:48 (M4); freq 'kháng đông' 9 docs (S8 N1 H0 B0); vs 'thuốc kháng đông' 1, 'thuốc chống đông' 8, 'chống đông' 13; South S8 vs ""chống đông"" S6 (N4, BYT)"
+antiplatelet,kháng kết tập tiểu cầu,"owner, recommended column 2026-10-15 18:48 (M4); freq 'chống kết tập tiểu cầu' 2 docs (S0 N0 H0 B2); vs 'thuốc kháng kết tập tiểu cầu' 0, 'thuốc chống kết tập tiểu cầu' 2, 'kháng kết tập tiểu cầu' 0, 'kháng tiểu cầu' 1; LOW: ""chống"" in BYT (2 docs); ""kháng"" chosen to match anticoagulant"
+diuretic,thuốc lợi tiểu,freq 'thuốc lợi tiểu' 4 docs (S2 N1 H0 B1); vs 'lợi tiểu' 10
+beta-blocker,thuốc chẹn beta,"freq 'thuốc chẹn beta' 1 docs (S1 N0 H0 B0); vs 'chẹn beta' 1, 'ức chế beta' 1"
+ACE inhibitor,thuốc ức chế men chuyển,freq 'thuốc ức chế men chuyển' 4 docs (S1 N2 H0 B1); vs 'ức chế men chuyển' 5; keep ACEI
+angiotensin receptor blocker,thuốc ức chế thụ thể angiotensin,"freq 'ức chế thụ thể angiotensin' 2 docs (S1 N0 H0 B1); vs 'thuốc chẹn thụ thể angiotensin' 0, 'chẹn thụ thể angiotensin' 0; keep ARB"
+calcium channel blocker,thuốc chẹn kênh canxi,"freq 'chẹn kênh canxi' 1 docs (S0 N0 H1 B0); vs 'thuốc chẹn kênh canxi' 0, 'chẹn kênh calci' 1, 'ức chế kênh canxi' 0, 'ức chế canxi' 0"
+antihypertensive drug,thuốc hạ huyết áp,"freq 'thuốc hạ huyết áp' 6 docs (S3 N1 H1 B1); vs 'thuốc hạ áp' 3, 'thuốc điều trị tăng huyết áp' 2"
+oral antidiabetic drug,thuốc hạ đường huyết đường uống,"freq 'thuốc uống hạ đường huyết' 1 docs (S0 N0 H0 B1); vs 'thuốc hạ đường huyết đường uống' 0, 'thuốc viên hạ đường huyết' 0, 'thuốc hạ glucose máu' 1; LOW; BYT ""thuốc hạ glucose máu"""
+heart failure,suy tim,freq 'suy tim' 38 docs (S24 N7 H5 B2)
+coronary artery disease,bệnh mạch vành,freq 'bệnh mạch vành' 13 docs (S7 N3 H2 B1); vs 'bệnh động mạch vành' 9
+myocardial infarction,nhồi máu cơ tim,freq 'nhồi máu cơ tim' 18 docs (S11 N2 H4 B1)
+acute coronary syndrome,hội chứng vành cấp,freq 'hội chứng vành cấp' 5 docs (S3 N0 H2 B0)
+atrial fibrillation,rung nhĩ,freq 'rung nhĩ' 8 docs (S5 N2 H1 B0)
+arrhythmia,rối loạn nhịp tim,"freq 'rối loạn nhịp tim' 7 docs (S3 N2 H2 B0); vs 'loạn nhịp tim' 10, 'rối loạn nhịp' 13"
+sinus rhythm,nhịp xoang,freq 'nhịp xoang' 3 docs (S2 N0 H1 B0)
+sinus tachycardia,nhịp nhanh xoang,freq 'nhịp nhanh xoang' 3 docs (S2 N1 H0 B0); vs 'nhịp tim nhanh xoang' 0
+ejection fraction,phân suất tống máu,"freq 'phân suất tống máu' 5 docs (S3 N0 H1 B1); vs 'phân suất tống máu thất trái' 4, 'EF' 9; keep EF / LVEF"
+ischemia,thiếu máu cục bộ,freq 'thiếu máu cục bộ' 7 docs (S1 N4 H1 B1); NOT anemia (= thiếu máu)
+myocardial ischemia,thiếu máu cơ tim,freq 'thiếu máu cơ tim' 2 docs (S1 N1 H0 B0); vs 'thiếu máu cục bộ cơ tim' 1
+angina pectoris,đau thắt ngực,freq 'đau thắt ngực' 7 docs (S3 N2 H1 B1); vs 'cơn đau thắt ngực' 4
+stroke,đột quỵ,"freq 'đột quỵ' 14 docs (S11 N0 H2 B1); vs 'tai biến mạch máu não' 8; ""tai biến mạch máu não"" 8 docs"
+ischemic stroke,nhồi máu não,"freq 'nhồi máu não' 6 docs (S4 N1 H1 B0); vs 'đột quỵ thiếu máu não' 0, 'đột quỵ thiếu máu cục bộ' 1, 'đột quỵ nhồi máu não' 0"
+hemorrhagic stroke,xuất huyết não,"freq 'xuất huyết não' 3 docs (S2 N1 H0 B0); vs 'đột quỵ xuất huyết não' 0, 'chảy máu não' 0"
+transient ischemic attack,cơn thiếu máu não thoáng qua,freq 'cơn thiếu máu não thoáng qua' 1 docs (S1 N0 H0 B0); vs 'cơn thiếu máu não cục bộ thoáng qua' 0
+deep vein thrombosis,huyết khối tĩnh mạch sâu,freq 'huyết khối tĩnh mạch sâu' 4 docs (S4 N0 H0 B0)
+pulmonary embolism,thuyên tắc phổi,"freq 'thuyên tắc phổi' 7 docs (S6 N1 H0 B0); vs 'tắc mạch phổi' 4, 'nhồi máu phổi' 2, 'thuyên tắc động mạch phổi' 3; South S6"
+venous thromboembolism,thuyên tắc huyết khối tĩnh mạch,"freq 'thuyên tắc huyết khối tĩnh mạch' 2 docs (S2 N0 H0 B0); vs 'huyết khối tĩnh mạch' 11, 'thuyên tắc tĩnh mạch' 2"
+dyslipidemia,rối loạn lipid máu,"freq 'rối loạn lipid máu' 15 docs (S7 N1 H6 B1); vs 'rối loạn mỡ máu' 1, 'rối loạn chuyển hóa lipid' 2"
+cardiac arrest,ngưng tim,"freq 'ngưng tim' 3 docs (S3 N0 H0 B0); vs 'ngừng tim' 3, 'ngưng tuần hoàn' 0, 'ngừng tuần hoàn' 2; Southern; ""ngừng tim"" N/BYT"
+cardiopulmonary resuscitation,hồi sinh tim phổi,freq 'hồi sinh tim phổi' 0 docs (S0 N0 H0 B0); vs 'cấp cứu ngưng tim' 0; freq 0; standard form; keep CPR
+cardiogenic shock,sốc tim,freq 'sốc tim' 3 docs (S3 N0 H0 B0); vs 'sốc do tim' 0
+hypovolemic shock,sốc giảm thể tích,"freq 'sốc giảm thể tích' 5 docs (S2 N0 H2 B1); vs 'sốc giảm thể tích tuần hoàn' 1, 'sốc mất máu' 2"
+pneumonia,viêm phổi,freq 'viêm phổi' 28 docs (S21 N4 H1 B2)
+community-acquired pneumonia,viêm phổi cộng đồng,"freq 'viêm phổi cộng đồng' 2 docs (S2 N0 H0 B0); vs 'viêm phổi mắc phải cộng đồng' 1, 'viêm phổi mắc phải tại cộng đồng' 0"
+hospital-acquired pneumonia,viêm phổi bệnh viện,"freq 'viêm phổi bệnh viện' 4 docs (S3 N1 H0 B0); vs 'viêm phổi mắc phải bệnh viện' 0, 'viêm phổi mắc phải tại bệnh viện' 0"
+chronic obstructive pulmonary disease,bệnh phổi tắc nghẽn mạn tính,freq 'bệnh phổi tắc nghẽn mạn tính' 6 docs (S5 N0 H0 B1); vs 'bệnh phổi tắc nghẽn mạn' 6; keep COPD; no Vietnamese acronym
+asthma,hen phế quản,"freq 'hen phế quản' 3 docs (S3 N0 H0 B0); vs 'hen suyễn' 0, 'bệnh hen' 0"
+respiratory failure,suy hô hấp,freq 'suy hô hấp' 23 docs (S13 N5 H4 B1)
+pleural effusion,tràn dịch màng phổi,freq 'tràn dịch màng phổi' 11 docs (S7 N4 H0 B0); = pathology-respiratory
+hypoxemia,giảm oxy máu,"freq 'giảm oxy máu' 2 docs (S2 N0 H0 B0); vs 'thiếu oxy máu' 3, 'giảm oxy hóa máu' 1"
+upper respiratory tract infection,nhiễm trùng hô hấp trên,"owner, recommended column 2026-10-15 18:48 (M3); freq 'nhiễm trùng hô hấp trên' 3 docs (S2 N0 H0 B1); vs 'nhiễm khuẩn hô hấp trên' 0, 'nhiễm trùng đường hô hấp trên' 1, 'viêm đường hô hấp trên' 0"
+gastrointestinal bleeding,xuất huyết tiêu hóa,freq 'xuất huyết tiêu hóa' 7 docs (S6 N0 H0 B1); vs 'chảy máu tiêu hóa' 3
+upper gastrointestinal bleeding,xuất huyết tiêu hóa trên,freq 'xuất huyết tiêu hóa trên' 3 docs (S3 N0 H0 B0); vs 'chảy máu tiêu hóa trên' 1
+peptic ulcer disease,bệnh loét dạ dày tá tràng,"freq 'loét dạ dày tá tràng' 2 docs (S2 N0 H0 B0); vs 'loét tiêu hóa' 0, 'loét dạ dày - tá tràng' 1"
+gastroesophageal reflux disease,bệnh trào ngược dạ dày thực quản,"freq 'trào ngược dạ dày thực quản' 1 docs (S1 N0 H0 B0); vs 'bệnh trào ngược dạ dày thực quản' 0, 'bệnh trào ngược dạ dày - thực quản' 0; keep GERD"
+hepatic encephalopathy,bệnh não gan,freq 'bệnh não gan' 2 docs (S2 N0 H0 B0); vs 'hôn mê gan' 1
+viral hepatitis,viêm gan siêu vi,"owner, recommended column 2026-10-15 18:48 (M9): freq 'viêm gan siêu vi' 7 docs (S5) vs 'viêm gan virus' 4 docs (S2 N2 H0 B0), 'viêm gan vi rút' 0; pathology-hpb chronic viral hepatitis follows; WAS 'viêm gan virus'"
+acute kidney injury,tổn thương thận cấp,freq 'tổn thương thận cấp' 8 docs (S6 N1 H0 B1); vs 'suy thận cấp' 8; = pathology-kidney
+chronic kidney disease,bệnh thận mạn,"freq 'bệnh thận mạn' 19 docs (S10 N4 H4 B1); vs 'bệnh thận mạn tính' 3, 'suy thận mạn' 12; = pathology-kidney"
+end-stage renal disease,bệnh thận giai đoạn cuối,"owner, recommended column 2026-10-15 18:48 (M8): freq 'bệnh thận giai đoạn cuối' 7 docs vs 'suy thận giai đoạn cuối' 3 docs (S1 N2 H0 B0) (KDIGO wording); = pathology-kidney; WAS 'suy thận giai đoạn cuối'"
+dialysis,lọc máu,"freq 'lọc máu' 18 docs (S9 N4 H3 B2); vs 'chạy thận nhân tạo' 7, 'thận nhân tạo' 9, 'lọc máu chu kỳ' 6, 'chạy thận' 7, 'lọc máu ngắt quãng' 1; = pathology-kidney"
+hemodialysis,chạy thận nhân tạo,"freq 'chạy thận nhân tạo' 7 docs (S5 N0 H1 B1); vs 'lọc máu' 18, 'thận nhân tạo' 9, 'lọc máu chu kỳ' 6, 'chạy thận' 7, 'lọc máu ngắt quãng' 1; = pathology-kidney"
+peritoneal dialysis,thẩm phân phúc mạc,"freq 'thẩm phân phúc mạc' 1 docs (S0 N0 H0 B1); vs 'lọc màng bụng' 2, 'thẩm tách màng bụng' 0; = pathology-kidney"
+urinary tract infection,nhiễm trùng đường tiểu,"owner, recommended column 2026-10-15 18:48 (M3); freq 'nhiễm trùng đường tiểu' 3 docs (S1 N0 H2 B0); vs 'nhiễm trùng tiểu' 3, 'nhiễm khuẩn tiết niệu' 1, 'nhiễm khuẩn đường tiết niệu' 1, 'nhiễm trùng tiết niệu' 2; Southern; BYT ""nhiễm khuẩn đường tiết niệu"""
+infection,nhiễm trùng,"owner, recommended column 2026-10-15 18:48 (M3); freq 'nhiễm trùng' 68 docs (S40 N19 H7 B2); vs 'nhiễm khuẩn' 33; South S40 vs ""nhiễm khuẩn"" S20 (BYT form)"
+sepsis,nhiễm trùng huyết,"owner, recommended column 2026-10-15 18:48 (M3); freq 'nhiễm trùng huyết' 10 docs (S8 N1 H1 B0); vs 'nhiễm khuẩn huyết' 6; = nutrition (CRBSI); infectious child may refine"
+septic shock,sốc nhiễm trùng,"owner, recommended column 2026-10-15 18:48 (M3); freq 'sốc nhiễm trùng' 5 docs (S2 N2 H1 B0); vs 'sốc nhiễm khuẩn' 4"
+diabetes mellitus,đái tháo đường,"freq 'đái tháo đường' 50 docs (S26 N12 H10 B2); vs 'tiểu đường' 8; ""tiểu đường"" 8 docs (lay; term fix)"
+diabetes,đái tháo đường,freq 'đái tháo đường' 50 docs (S26 N12 H10 B2); vs 'tiểu đường' 8
+type 2 diabetes,đái tháo đường típ 2,"freq 'đái tháo đường típ 2' 2 docs (S1 N0 H0 B1); vs 'đái tháo đường type 2' 3, 'đái tháo đường týp 2' 1, 'đái tháo đường tuýp 2' 0, 'đái tháo đường loại 2' 0; BYT 5481 ""típ"""
+type 1 diabetes,đái tháo đường típ 1,"freq 'đái tháo đường típ 1' 1 docs (S0 N0 H0 B1); vs 'đái tháo đường type 1' 1, 'đái tháo đường týp 1' 0"
+hypoglycemia,hạ đường huyết,"freq 'hạ đường huyết' 5 docs (S3 N0 H0 B2); vs 'hạ glucose máu' 1; BYT ""hạ glucose máu"" 1 doc"
+hyperglycemia,tăng đường huyết,"freq 'tăng đường huyết' 4 docs (S2 N1 H0 B1); vs 'tăng glucose máu' 4; tie with BYT ""tăng glucose máu"" (4 / 4)"
+diabetic ketoacidosis,nhiễm toan ceton do đái tháo đường,"freq 'nhiễm toan ceton' 2 docs (S0 N1 H0 B1); vs 'nhiễm toan ceton do đái tháo đường' 0, 'nhiễm toan keton' 0; keep DKA"
+hypothyroidism,suy giáp,"freq 'suy giáp' 12 docs (S7 N3 H1 B1); vs 'suy tuyến giáp' 3, 'nhược giáp' 3; = pathology-endocrine"
+obesity,béo phì,freq 'béo phì' 41 docs (S27 N4 H8 B2); = nutrition
+metabolic syndrome,hội chứng chuyển hóa,freq 'hội chứng chuyển hóa' 4 docs (S2 N0 H1 B1)
+gout,gút,"freq 'gút' 3 docs (S2 N0 H0 B1); vs 'gout' 2, 'thống phong' 0"
+osteoarthritis,thoái hóa khớp,freq 'thoái hóa khớp' 2 docs (S0 N1 H0 B1)
+rheumatoid arthritis,viêm khớp dạng thấp,freq 'viêm khớp dạng thấp' 2 docs (S2 N0 H0 B0)
+metabolic acidosis,toan chuyển hóa,freq 'toan chuyển hóa' 4 docs (S2 N1 H0 B1); vs 'nhiễm toan chuyển hóa' 0
+fever of unknown origin,sốt không rõ nguyên nhân,freq 'sốt không rõ nguyên nhân' 1 docs (S0 N1 H0 B0); vs 'sốt kéo dài không rõ nguyên nhân' 0
+geriatrics,lão khoa,freq 'lão khoa' 10 docs (S8 N0 H2 B0)
+older adults,người cao tuổi,"freq 'người cao tuổi' 21 docs (S13 N2 H4 B2); vs 'người lớn tuổi' 11, 'người già' 7"
+elderly,người cao tuổi,"freq 'người cao tuổi' 21 docs (S13 N2 H4 B2); vs 'người lớn tuổi' 11, 'người già' 7"
+frailty,suy yếu,"freq 'suy yếu' 11 docs (S8 N1 H1 B1); vs 'hội chứng dễ bị tổn thương' 0, 'lão suy' 0, 'frailty' 5; = nutrition"
+fall risk,nguy cơ té ngã,"freq 'té ngã' 7 docs (S7 N0 H0 B0); vs 'ngã' 13; Southern ""té ngã"" (S7)"
+history of falls,tiền sử té ngã,freq 'té ngã' 7 docs (S7 N0 H0 B0); vs 'ngã' 13
+activities of daily living,hoạt động sinh hoạt hằng ngày,"freq 'hoạt động sinh hoạt hằng ngày' 1 docs (S1 N0 H0 B0); vs 'hoạt động sống hằng ngày' 0, 'hoạt động hằng ngày' 1, 'hoạt động sinh hoạt hàng ngày' 0, 'hoạt động hàng ngày' 1; LOW; keep ADL"
+comprehensive geriatric assessment,đánh giá lão khoa toàn diện,freq 'đánh giá lão khoa toàn diện' 0 docs (S0 N0 H0 B0); freq 0; keep CGA
+cognitive impairment,suy giảm nhận thức,freq 'suy giảm nhận thức' 5 docs (S5 N0 H0 B0)
+mild cognitive impairment,suy giảm nhận thức nhẹ,freq 'suy giảm nhận thức nhẹ' 1 docs (S1 N0 H0 B0)
+functional decline,suy giảm chức năng,freq 'suy giảm chức năng' 20 docs (S10 N8 H1 B1); vs 'giảm chức năng' 25
+functional status,tình trạng chức năng,"freq 'tình trạng chức năng' 2 docs (S1 N1 H0 B0); vs 'khả năng chức năng' 1, 'tình trạng hoạt động chức năng' 1"
+pressure ulcer,loét do tì đè,"freq 'loét do tì đè' 0 docs (S0 N0 H0 B0); vs 'loét tì đè' 0, 'loét điểm tì' 0, 'loét tỳ đè' 0; freq 0"
+immobility,bất động,"freq 'bất động' 6 docs (S5 N1 H0 B0); vs 'hạn chế vận động' 4, 'nằm lâu' 4"
+hearing loss,giảm thính lực,"freq 'giảm thính lực' 3 docs (S2 N0 H0 B1); vs 'nghe kém' 2, 'suy giảm thính lực' 0"
+visual impairment,giảm thị lực,"freq 'giảm thị lực' 5 docs (S2 N2 H0 B1); vs 'suy giảm thị lực' 0, 'khiếm thị' 0"
+potentially inappropriate medication,thuốc có khả năng không phù hợp,"freq 'thuốc có khả năng không phù hợp' 0 docs (S0 N0 H0 B0); vs 'thuốc không phù hợp' 0, 'thuốc có nguy cơ không phù hợp' 0; freq 0; keep PIM, Beers, STOPP/START"
+sarcopenia,sarcopenia,"freq 'sarcopenia' 7 docs (S7 N0 H0 B0); vs 'thiểu cơ' 1, 'suy giảm khối cơ' 0; = nutrition 0.1.1 (owner D3: keep EN)"

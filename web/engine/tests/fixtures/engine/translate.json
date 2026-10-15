@@ -4,7 +4,8 @@
   "model": "m",
   "pack_key": "p@1",
   "fixes": [],
-  "hits": []
+  "hits": [],
+  "allowed": []
  },
  "span_prompt": "Translate this short phrase into Vietnamese. Output only the translation:\n",
  "cases": [
@@ -37,6 +38,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -83,6 +85,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 1,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -127,6 +130,7 @@
      "text": "Nhu\u1ed9m \u00e2m t\u00ednh",
      "level": 1,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Negative staining",
      "work_spans": [],
@@ -168,6 +172,7 @@
      "text": "Nhu\u1ed9m \u00e2m t\u00ednh",
      "level": 1,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Negative staining",
      "work_spans": [],
@@ -209,6 +214,7 @@
      "text": "Nhu\u1ed9m \u00e2m t\u00ednh",
      "level": 1,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Negative staining",
      "work_spans": [],
@@ -261,6 +267,7 @@
      "flags": [
       "retried:tags"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -323,6 +330,7 @@
      "flags": [
       "retried:tags"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In NF2-altered meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -398,6 +406,7 @@
      "flags": [
       "retried:tags"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In NF2-altered meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -473,6 +482,7 @@
      "flags": [
       "retried:tags"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In NF2-altered meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -557,6 +567,7 @@
       "retried:tags",
       "formatting_lost"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In NF2-altered meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -581,6 +592,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -658,6 +670,7 @@
       "retried:tags",
       "formatting_lost"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -685,6 +698,7 @@
      "flags": [
       "formatting_lost"
      ],
+     "fixes": [],
      "cached": true,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -748,6 +762,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -772,6 +787,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": true,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -803,6 +819,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -873,6 +890,13 @@
      "flags": [
       "term_fix:lung"
      ],
+     "fixes": [
+      {
+       "en": "lung",
+       "from": "pulm\u00f4n",
+       "to": "ph\u1ed5i"
+      }
+     ],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -898,6 +922,13 @@
      "level": 0,
      "flags": [
       "term_fix:lung"
+     ],
+     "fixes": [
+      {
+       "en": "lung",
+       "from": "pulm\u00f4n",
+       "to": "ph\u1ed5i"
+      }
      ],
      "cached": true,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
@@ -958,6 +989,13 @@
      "flags": [
       "term_fix:lung"
      ],
+     "fixes": [
+      {
+       "en": "lung",
+       "from": "pulm\u00f4n",
+       "to": "ph\u1ed5i"
+      }
+     ],
      "cached": false,
      "work_tagged": "<g1>Sub optimal fixation </g1>of the lung tissue in this case",
      "work_spans": [
@@ -1007,6 +1045,7 @@
      "text": "Ph\u00e2n \u0111\u1ed9 c\u1ee7a t\u1ed5n th\u01b0\u01a1ng",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Grade of the lesion",
      "work_spans": [],
@@ -1026,6 +1065,7 @@
      "text": "Ph\u00e2n \u0111\u1ed9 c\u1ee7a t\u1ed5n th\u01b0\u01a1ng",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": true,
      "work_tagged": "Grade of the lesion",
      "work_spans": [],
@@ -1076,6 +1116,7 @@
      "flags": [
       "retried:english"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "The tumor of the lung is small",
      "work_spans": [],
@@ -1126,6 +1167,7 @@
      "flags": [
       "retried:english"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Spleen, upper pole, partial resection --- Congested red pulp with small granulomas",
      "work_spans": [],
@@ -1177,6 +1219,7 @@
       "retried:english",
       "english_left"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Spleen, upper pole, partial resection --- Congested red pulp with small granulomas",
      "work_spans": [],
@@ -1230,6 +1273,7 @@
       "retried:english",
       "english_left"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Spleen, upper pole, partial resection --- Congested red pulp with small granulomas",
      "work_spans": [],
@@ -1250,6 +1294,7 @@
      "text": "L\u00e1ch, c\u1ef1c tr\u00ean, c\u1eaft m\u1ed9t ph\u1ea7n --- T\u1ee7y \u0111\u1ecf sung huy\u1ebft k\u00e8m u h\u1ea1t nh\u1ecf",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Spleen, upper pole, partial resection --- Congested red pulp with small granulomas",
      "work_spans": [],
@@ -1300,6 +1345,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Breast, left upper outer quadrant, ultrasound-guided core needle biopsy --- Fibroadenoma with apocrine metaplasia",
      "work_spans": [],
@@ -1359,6 +1405,7 @@
       "retried:gate",
       "omitted:Fibroadenoma with apocrine metaplasia"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Breast, left upper outer quadrant, ultrasound-guided core needle biopsy --- Fibroadenoma with apocrine metaplasia",
      "work_spans": [],
@@ -1379,6 +1426,7 @@
      "text": "V\u00fa tr\u00e1i, g\u00f3c ph\u1ea7n t\u01b0 tr\u00ean ngo\u00e0i, sinh thi\u1ebft l\u00f5i kim d\u01b0\u1edbi h\u01b0\u1edbng d\u1eabn si\u00eau \u00e2m --- U x\u01a1 tuy\u1ebfn k\u00e8m d\u1ecb s\u1ea3n \u0111\u1ea1i h\u00e3n",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Breast, left upper outer quadrant, ultrasound-guided core needle biopsy --- Fibroadenoma with apocrine metaplasia",
      "work_spans": [],
@@ -1429,6 +1477,7 @@
      "flags": [
       "retried:empty"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "The tumor of the lung is small",
      "work_spans": [],
@@ -1479,6 +1528,7 @@
      "flags": [
       "retried:empty"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "The tumor of the lung is small",
      "work_spans": [],
@@ -1529,6 +1579,7 @@
      "flags": [
       "retried:empty"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "The tumor of the lung is small",
      "work_spans": [],
@@ -1579,6 +1630,7 @@
      "flags": [
       "retried:empty"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "The tumor of the lung is small",
      "work_spans": [],
@@ -1654,6 +1706,7 @@
       "empty_output",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -1679,6 +1732,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -1753,6 +1807,7 @@
      "flags": [
       "retried:tags"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In NF2 tumours of the lung",
      "work_spans": [],
@@ -1772,6 +1827,7 @@
      "text": "Trong u NF2 \u1edf ph\u1ed5i",
      "level": 3,
      "flags": [],
+     "fixes": [],
      "cached": true,
      "work_tagged": "In NF2 tumours of the lung",
      "work_spans": [],
@@ -1800,6 +1856,7 @@
      "text": "Trong u <g1>NF2</g1> \u1edf ph\u1ed5i",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2</g1> tumours of the lung",
      "work_spans": [
@@ -1866,6 +1923,7 @@
      "flags": [
       "retried:tags"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "The coefficient <g1>x1</g1> of the model<x1/>is small",
      "work_spans": [
@@ -1935,6 +1993,7 @@
      "flags": [
       "retried:tags"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Area 5 cm<g1>2</g1> around the <g2>tumor</g2>.",
      "work_spans": [
@@ -2061,6 +2120,7 @@
       "acronym_lost:word1,s11",
       "suspect_output:ratio"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "word1 <g1>dup</g1>word2 <g2>dup</g2>word3 <g3>s3</g3>word4 <g4>s4</g4>word5 <g5>s5</g5>word6 <g6>s6</g6>word7 <g7>s7</g7>word8 <g8>s8</g8>word9 <g9>s9</g9>word10 <g10>s10</g10>word11 <g11>s11</g11>",
      "work_spans": [
@@ -2145,6 +2205,13 @@
       "suspect_output:markdown",
       "term_fix:lung"
      ],
+     "fixes": [
+      {
+       "en": "lung",
+       "from": "pulm\u00f4n",
+       "to": "ph\u1ed5i"
+      }
+     ],
      "cached": false,
      "work_tagged": "Tissue of the <g1>lung</g1> was fixed",
      "work_spans": [
@@ -2219,6 +2286,13 @@
       "suspect_output:markdown",
       "term_fix:lung"
      ],
+     "fixes": [
+      {
+       "en": "lung",
+       "from": "pulm\u00f4n",
+       "to": "ph\u1ed5i"
+      }
+     ],
      "cached": false,
      "work_tagged": "Tissue of the <g1>lung</g1> was fixed",
      "work_spans": [
@@ -2262,6 +2336,7 @@
       "acronym_lost:word1,red12",
       "suspect_output:ratio"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "word1 red1word2 red2word3 red3word4 red4word5 red5word6 red6word7 red7word8 red8word9 red9word10 red10word11 red11word12 red12 and the <g13>last one</g13>",
      "work_spans": [
@@ -2314,6 +2389,7 @@
       "tags_broken",
       "suspect_output:ratio"
      ],
+     "fixes": [],
      "cached": true,
      "work_tagged": "<g1>Sub optimal fixation </g1>of the lung tissue in this case",
      "work_spans": [
@@ -2370,6 +2446,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2434,6 +2511,7 @@
       "retried:gate",
       "suspect_output:angle"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2459,6 +2537,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2516,6 +2595,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2580,6 +2660,7 @@
       "retried:gate",
       "suspect_output:script"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2605,6 +2686,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2662,6 +2744,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2727,6 +2810,7 @@
       "numbers_changed",
       "suspect_output:latex"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2752,6 +2836,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2809,6 +2894,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2873,6 +2959,7 @@
       "retried:gate",
       "suspect_output:markdown"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2898,6 +2985,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -2955,6 +3043,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3019,6 +3108,7 @@
       "retried:gate",
       "suspect_output:ratio"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3044,6 +3134,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3101,6 +3192,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3165,6 +3257,7 @@
       "retried:gate",
       "suspect_output:ratio"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3190,6 +3283,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3247,6 +3341,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3311,6 +3406,7 @@
       "retried:gate",
       "suspect_output:scaffold"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3336,6 +3432,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3393,6 +3490,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3457,6 +3555,7 @@
       "retried:gate",
       "suspect_output:markdown"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3482,6 +3581,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3539,6 +3639,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3603,6 +3704,7 @@
       "retried:gate",
       "suspect_output:ratio"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3628,6 +3730,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3685,6 +3788,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3749,6 +3853,7 @@
       "retried:gate",
       "suspect_output:script"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3774,6 +3879,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3822,6 +3928,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p \u03b2 \u00b5m</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -3875,6 +3982,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Stage IIA \u2192 IIB after review",
      "work_spans": [],
@@ -3931,6 +4039,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Stage IIA \u2192 IIB after review",
      "work_spans": [],
@@ -3950,6 +4059,7 @@
      "text": "Giai \u0111o\u1ea1n IIA \u2192 IIB sau khi xem l\u1ea1i",
      "level": 2,
      "flags": [],
+     "fixes": [],
      "cached": true,
      "work_tagged": "Stage IIA \u2192 IIB after review",
      "work_spans": [],
@@ -4009,6 +4119,7 @@
       "retried:gate",
       "suspect_output:latex"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "The ratio a over b was low",
      "work_spans": [],
@@ -4029,6 +4140,7 @@
      "text": "T\u1ec9 s\u1ed1 a tr\u00ean b th\u1ea5p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "The ratio a over b was low",
      "work_spans": [],
@@ -4070,6 +4182,7 @@
      "text": "Vi\u1ebft $\\alpha$ trong c\u00f4ng th\u1ee9c",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Write $\\alpha$ in the formula",
      "work_spans": [],
@@ -4120,6 +4233,7 @@
      "flags": [
       "retried:english"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Swollen hepatocytes around the central vein",
      "work_spans": [],
@@ -4179,6 +4293,7 @@
       "retried:english",
       "english_left"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Swollen hepatocytes around the central vein",
      "work_spans": [],
@@ -4199,6 +4314,7 @@
      "text": "T\u1ebf b\u00e0o gan ph\u00ecnh to quanh t\u0129nh m\u1ea1ch trung t\u00e2m",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Swollen hepatocytes around the central vein",
      "work_spans": [],
@@ -4259,6 +4375,7 @@
       "english_left",
       "glossary_miss:deletion"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "A deletion of 1p was found",
      "work_spans": [],
@@ -4294,6 +4411,7 @@
      "text": "Ph\u00e1t hi\u1ec7n deletion 1p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "A deletion of 1p was found",
      "work_spans": [],
@@ -4343,6 +4461,7 @@
      "text": "Hepatocyte ph\u00ecnh to quanh t\u0129nh m\u1ea1ch trung t\u00e2m",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Swollen hepatocytes around the central vein",
      "work_spans": [],
@@ -4404,6 +4523,7 @@
       "retried:tags",
       "suspect_output:markdown"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -4429,6 +4549,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -4488,6 +4609,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Outline",
      "work_spans": [],
@@ -4517,6 +4639,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Outline",
      "work_spans": [],
@@ -4567,6 +4690,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Classification",
      "work_spans": [],
@@ -4596,6 +4720,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Classification",
      "work_spans": [],
@@ -4646,6 +4771,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Curriculum Vitae",
      "work_spans": [],
@@ -4675,6 +4801,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Curriculum Vitae",
      "work_spans": [],
@@ -4725,6 +4852,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Six Major Patterns of Renal Tumors",
      "work_spans": [],
@@ -4754,6 +4882,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Six Major Patterns of Renal Tumors",
      "work_spans": [],
@@ -4804,6 +4933,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "External Quality Assessment (EQA)",
      "work_spans": [],
@@ -4833,6 +4963,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "External Quality Assessment (EQA)",
      "work_spans": [],
@@ -4883,6 +5014,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Contact Information",
      "work_spans": [],
@@ -4912,6 +5044,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Contact Information",
      "work_spans": [],
@@ -4962,6 +5095,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Jane Doe, MD, PhD",
      "work_spans": [],
@@ -4991,6 +5125,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Jane Doe, MD, PhD",
      "work_spans": [],
@@ -5048,6 +5183,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -5073,6 +5209,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p v\u00e0 th\u01b0\u1eddng g\u1eb7p \u1edf ng\u01b0\u1eddi l\u1edbn tu\u1ed5i h\u01a1n",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -5120,6 +5257,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Meningioma grading",
      "work_spans": [],
@@ -5163,6 +5301,7 @@
      "text": "Nhu\u1ed9m \u00e2m t\u00ednh",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Negative staining",
      "work_spans": [],
@@ -5216,6 +5355,7 @@
      "text": "K\u00edch th\u01b0\u1edbc t\u1ed1i \u0111a (mm), trung v\u1ecb",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Maximal dimension in millimetres, median value",
      "work_spans": [],
@@ -5242,6 +5382,7 @@
      "text": "C\u00e1c m\u1eabu \u0111\u01b0\u1ee3c c\u1ed1 \u0111\u1ecbnh trong formalin",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "All samples were fixed in buffered formalin",
      "work_spans": [],
@@ -5299,6 +5440,7 @@
      "flags": [
       "retried:english"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Negative staining",
      "work_spans": [],
@@ -5358,6 +5500,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Negative staining",
      "work_spans": [],
@@ -5378,6 +5521,7 @@
      "text": "Nhu\u1ed9m \u00e2m t\u00ednh",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Negative staining",
      "work_spans": [],
@@ -5429,6 +5573,7 @@
      "flags": [
       "kept_english"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "trastuzumab",
      "work_spans": [],
@@ -5486,6 +5631,7 @@
      "flags": [
       "kept_english"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Tau",
      "work_spans": [],
@@ -5507,6 +5653,7 @@
      "flags": [
       "kept_english"
      ],
+     "fixes": [],
      "cached": true,
      "work_tagged": "Tau",
      "work_spans": [],
@@ -5564,6 +5711,7 @@
       "retried:english",
       "kept_english"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "trastuzumab",
      "work_spans": [],
@@ -5585,6 +5733,7 @@
      "flags": [
       "kept_english"
      ],
+     "fixes": [],
      "cached": true,
      "work_tagged": "trastuzumab",
      "work_spans": [],
@@ -5619,6 +5768,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "BRAF VE1",
      "work_spans": [],
@@ -5647,6 +5797,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Ki-67 (MIB-1)",
      "work_spans": [],
@@ -5675,6 +5826,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "pT1a",
      "work_spans": [],
@@ -5703,6 +5855,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "p<0.001",
      "work_spans": [],
@@ -5731,6 +5884,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "CD20+",
      "work_spans": [],
@@ -5759,6 +5913,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "HER2 3+",
      "work_spans": [],
@@ -5787,6 +5942,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "<5 mm",
      "work_spans": [],
@@ -5815,6 +5971,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Ki-67",
      "work_spans": [],
@@ -5843,6 +6000,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "p53",
      "work_spans": [],
@@ -5873,6 +6031,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "<g1>BRAF</g1> V600E",
      "work_spans": [
@@ -5910,6 +6069,7 @@
      "text": "C\u00f3",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "OVERVIEW OF STAINING METHODS",
      "work_spans": [],
@@ -5953,6 +6113,7 @@
      "flags": [
       "numbers_changed"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "SEVEN YEARS LATER (2019)",
      "work_spans": [],
@@ -5994,6 +6155,7 @@
      "text": "C\u00f3",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "QUALITY CONTROL IN DAILY PRACTICE",
      "work_spans": [],
@@ -6043,6 +6205,7 @@
      "text": "T\u1ebf b\u00e0o h\u00ecnh thoi",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "SPINDLE CELL",
      "work_spans": [],
@@ -6077,6 +6240,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "BRAF NRAS KRAS",
      "work_spans": [],
@@ -6105,6 +6269,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "TERT",
      "work_spans": [],
@@ -6133,6 +6298,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "CDKN2A/B",
      "work_spans": [],
@@ -6161,6 +6327,7 @@
      "flags": [
       "kept_code"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "ALK ROS1 RET",
      "work_spans": [],
@@ -6206,6 +6373,7 @@
       "retried:english",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Kidney, right, nephrectomy --- Oncocytoma with focal necrosis",
      "work_spans": [],
@@ -6234,6 +6402,7 @@
      "flags": [
       "kept_reference"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Smith et al. J Clin Pathol 2001; 54:120-125",
      "work_spans": [],
@@ -6262,6 +6431,7 @@
      "flags": [
       "kept_reference"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Nguyen A et al. Mod Pathol. 2019.",
      "work_spans": [],
@@ -6290,6 +6460,7 @@
      "flags": [
       "kept_reference"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Brown et al. (Am J Surg Pathol 2010)",
      "work_spans": [],
@@ -6318,6 +6489,7 @@
      "flags": [
       "kept_reference"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Histopathology. 2021 May;79(2):100-110.",
      "work_spans": [],
@@ -6346,6 +6518,7 @@
      "flags": [
       "kept_reference"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Garcia L et al. examplejournal.org 2018:",
      "work_spans": [],
@@ -6374,6 +6547,7 @@
      "flags": [
       "kept_reference"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Example J. 2024 Mar 2;16(3):e51234.",
      "work_spans": [],
@@ -6410,6 +6584,7 @@
      "flags": [
       "numbers_changed"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Conclusion from Smith et al. (2017):",
      "work_spans": [],
@@ -6452,6 +6627,7 @@
      "flags": [
       "numbers_changed"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Benign (Am J Pathol 1981)",
      "work_spans": [],
@@ -6502,6 +6678,7 @@
       "numbers_changed",
       "suspect_output:ratio"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Results for ER agree with Smith et al. Example J Pathol 2000; 61: 101-108.",
      "work_spans": [],
@@ -6548,6 +6725,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Clear cell type (CCRCC)",
      "work_spans": [],
@@ -6599,6 +6777,7 @@
       "retried:gate",
       "acronym_lost:CCRCC"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Clear cell type (CCRCC)",
      "work_spans": [],
@@ -6650,6 +6829,7 @@
       "retried:gate",
       "acronym_lost:CCRCC"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Clear cell type (CCRCC)",
      "work_spans": [],
@@ -6691,6 +6871,7 @@
      "text": "C\u00f3",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Negative staining",
      "work_spans": [],
@@ -6732,6 +6913,7 @@
      "text": "C\u00f3",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "trastuzumab",
      "work_spans": [],
@@ -6773,6 +6955,7 @@
      "text": "C\u00f3",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Left",
      "work_spans": [],
@@ -6814,6 +6997,7 @@
      "text": "C\u00f3",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "No",
      "work_spans": [],
@@ -6857,6 +7041,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -6955,6 +7140,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -6986,6 +7172,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -7022,6 +7209,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -7063,6 +7251,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -7107,6 +7296,7 @@
      "text": "D\u1ecbch: trong",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Fluid: clear",
      "work_spans": [],
@@ -7155,6 +7345,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -7285,6 +7476,7 @@
      "text": "Xem <g1>trang WHO</g1> v\u1ec1 <g2>ph\u00e2n \u0111\u1ed9</g2> v\u00e0 <g3>giai \u0111o\u1ea1n</g3> c\u1ee7a <g4>2</g4> u<x1/>\u1edf ph\u1ed5i",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "See the <g1>WHO site</g1> for <g2>grading</g2> and <g3>staging</g3> of <g4>2</g4> tumours<x1/>in the lung",
      "work_spans": [
@@ -7313,6 +7505,7 @@
      "text": "Xem <g1>trang WHO</g1> v\u1ec1 <g2>ph\u00e2n \u0111\u1ed9</g2> v\u00e0 <g3>giai \u0111o\u1ea1n</g3> c\u1ee7a <g4>2</g4> u<x1/>\u1edf ph\u1ed5i",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": true,
      "work_tagged": "See the <g1>WHO site</g1> for <g2>grading</g2> and <g3>staging</g3> of <g4>2</g4> tumours<x1/>in the lung",
      "work_spans": [
@@ -7400,6 +7593,7 @@
      "flags": [
       "retried:tags"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "See the <g1>WHO site</g1> for <g2>grading</g2> and staging of <g4>2</g4> tumours<x1/>in the lung",
      "work_spans": [
@@ -7458,6 +7652,7 @@
      "text": "Nhu\u1ed9m <g1>\u0111\u1ecf</g1> v\u00e0 <g2>g\u1ea1ch ch\u00e2n</g2> t\u1eeb c\u1ee7a m\u00f4 ph\u1ed5i<x1/>x",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Stained <g1>red</g1> and <g2>underlined</g2> words of the lung tissue<x1/>x",
      "work_spans": [
@@ -7501,6 +7696,7 @@
      "flags": [
       "retried:tags"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Stained red and underlined words of the lung tissue<x1/>x",
      "work_spans": [],
@@ -7549,6 +7745,7 @@
      "text": "H\u1ec7 s\u1ed1 <g1>x1</g1> c\u1ee7a m\u00f4 h\u00ecnh<x1/> nh\u1ecf",
      "level": 1,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "The coefficient <g1>x1</g1> of the model<x1/>is small",
      "work_spans": [
@@ -7595,6 +7792,7 @@
       "numbers_changed",
       "suspicious:pulm\u00f4n"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In 2 of 7,016 cases the lung was involved",
      "work_spans": [],
@@ -7671,6 +7869,7 @@
       "suspect_output:angle",
       "stray_markup"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In NF2-altered meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -7710,6 +7909,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 1,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -7768,6 +7968,7 @@
      "flags": [
       "glossary_miss:lung"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "Lung biopsy of the left lobe was done",
      "work_spans": [],
@@ -7824,6 +8025,13 @@
      "flags": [
       "term_fix:lung"
      ],
+     "fixes": [
+      {
+       "en": "lung",
+       "from": "pulm\u00f4n",
+       "to": "ph\u1ed5i"
+      }
+     ],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -7870,6 +8078,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -7927,6 +8136,7 @@
      "flags": [
       "retried:gate"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -7983,6 +8193,7 @@
       "retried:gate",
       "suspect_output:scaffold"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -8035,6 +8246,7 @@
       "retried:gate",
       "suspect_output:scaffold"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -8105,6 +8317,7 @@
      "flags": [
       "retried:tags"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In NF2-altered meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -8174,6 +8387,7 @@
       "empty_output",
       "unchanged"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -8223,6 +8437,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -8248,6 +8463,7 @@
      "text": "Trong u m\u00e0ng n\u00e3o <g1>NF2-altered</g1> \u1edf ph\u1ed5i, <g2>m\u1ea5t 1p</g2> th\u01b0\u1eddng g\u1eb7p",
      "level": 0,
      "flags": [],
+     "fixes": [],
      "cached": false,
      "work_tagged": "In <g1>NF2-altered</g1> meningiomas of the lung, <g2>1p loss</g2> is common",
      "work_spans": [
@@ -8306,6 +8522,7 @@
       "formatting_lost",
       "acronym_lost:WHO"
      ],
+     "fixes": [],
      "cached": false,
      "work_tagged": "The <g1>WHO GRADE</g1> of this small lesion is low",
      "work_spans": [
@@ -8313,6 +8530,421 @@
      ],
      "key": "817225d58b72376a9c3730ab6e8d950b4586f4f536e5bdd8d75729e1ccd4b2a8",
      "tm": []
+    }
+   ]
+  },
+  {
+   "name": "title order fixed, listed and cached",
+   "steps": [
+    {
+     "para": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\"/><a:t>Jane Doe, M.D., Ph.D., reviewed all the slides.</a:t></a:r></a:p>",
+     "script": {
+      "replies": [
+       "BS. TS. Jane Doe \u0111\u00e3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\u00eau b\u1ea3n."
+      ]
+     }
+    },
+    {
+     "para": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\"/><a:t>Jane Doe, M.D., Ph.D., reviewed all the slides.</a:t></a:r></a:p>",
+     "script": {
+      "replies": []
+     }
+    }
+   ],
+   "results": [
+    {
+     "tagged": "Jane Doe, M.D., Ph.D., reviewed all the slides.",
+     "essential": [],
+     "calls": [
+      [
+       "SYS",
+       "This text has no tags; do not add any.\n\nTranslate:\nJane Doe, M.D., Ph.D., reviewed all the slides.",
+       "BS. TS. Jane Doe \u0111\u00e3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\u00eau b\u1ea3n.",
+       260
+      ]
+     ],
+     "text": "TS. BS. Jane Doe \u0111\u00e3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\u00eau b\u1ea3n.",
+     "level": 0,
+     "flags": [
+      "term_fix:title-order"
+     ],
+     "fixes": [
+      {
+       "en": "title-order",
+       "from": "BS. TS.",
+       "to": "TS. BS."
+      }
+     ],
+     "cached": false,
+     "work_tagged": "Jane Doe, M.D., Ph.D., reviewed all the slides.",
+     "work_spans": [],
+     "key": "eb50c37b4831e4f709f6c73c7c7a5e0df3686e9b86700e4d8781491b4047bfca",
+     "tm": [
+      [
+       "eb50c37b4831e4f709f6c73c7c7a5e0df3686e9b86700e4d8781491b4047bfca",
+       "BS. TS. Jane Doe \u0111\u00e3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\u00eau b\u1ea3n.",
+       0
+      ]
+     ]
+    },
+    {
+     "tagged": "Jane Doe, M.D., Ph.D., reviewed all the slides.",
+     "essential": [],
+     "calls": [],
+     "text": "TS. BS. Jane Doe \u0111\u00e3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\u00eau b\u1ea3n.",
+     "level": 0,
+     "flags": [
+      "term_fix:title-order"
+     ],
+     "fixes": [
+      {
+       "en": "title-order",
+       "from": "BS. TS.",
+       "to": "TS. BS."
+      }
+     ],
+     "cached": true,
+     "work_tagged": "Jane Doe, M.D., Ph.D., reviewed all the slides.",
+     "work_spans": [],
+     "key": "eb50c37b4831e4f709f6c73c7c7a5e0df3686e9b86700e4d8781491b4047bfca",
+     "tm": [
+      [
+       "eb50c37b4831e4f709f6c73c7c7a5e0df3686e9b86700e4d8781491b4047bfca",
+       "BS. TS. Jane Doe \u0111\u00e3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\u00eau b\u1ea3n.",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "title order and term fixes listed together",
+   "steps": [
+    {
+     "para": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\"/><a:t>Jane Doe, MD, PhD: lung and lung</a:t></a:r></a:p>",
+     "script": {
+      "replies": [
+       "BS TS Jane Doe: pulm\u00f4n v\u00e0 Pulm\u00f4n"
+      ]
+     }
+    }
+   ],
+   "cfg": {
+    "fixes": [
+     [
+      "lung",
+      "ph\u1ed5i",
+      [
+       "pulm\u00f4n"
+      ]
+     ]
+    ]
+   },
+   "results": [
+    {
+     "tagged": "Jane Doe, MD, PhD: lung and lung",
+     "essential": [],
+     "calls": [
+      [
+       "SYS",
+       "This text has no tags; do not add any.\n\nTranslate:\nJane Doe, MD, PhD: lung and lung",
+       "BS TS Jane Doe: pulm\u00f4n v\u00e0 Pulm\u00f4n",
+       230
+      ]
+     ],
+     "text": "TS. BS. Jane Doe: ph\u1ed5i v\u00e0 ph\u1ed5i",
+     "level": 0,
+     "flags": [
+      "term_fix:lung",
+      "term_fix:title-order"
+     ],
+     "fixes": [
+      {
+       "en": "lung",
+       "from": "pulm\u00f4n",
+       "to": "ph\u1ed5i"
+      },
+      {
+       "en": "lung",
+       "from": "Pulm\u00f4n",
+       "to": "ph\u1ed5i"
+      },
+      {
+       "en": "title-order",
+       "from": "BS TS",
+       "to": "TS. BS."
+      }
+     ],
+     "cached": false,
+     "work_tagged": "Jane Doe, MD, PhD: lung and lung",
+     "work_spans": [],
+     "key": "0b5886bf00bbc1e0402de03333fa96cba22b0fa1012e4d2c9754b965ec492c89",
+     "tm": [
+      [
+       "0b5886bf00bbc1e0402de03333fa96cba22b0fa1012e4d2c9754b965ec492c89",
+       "BS TS Jane Doe: pulm\u00f4n v\u00e0 Pulm\u00f4n",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "title order inside a formatted span",
+   "steps": [
+    {
+     "para": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\"/><a:t>Signed by </a:t></a:r><a:r><a:rPr lang=\"en-US\" b=\"1\"/><a:t>Jane Doe, MD, PhD</a:t></a:r></a:p>",
+     "script": {
+      "replies": [
+       "K\u00fd b\u1edfi <g1>BS TS Jane Doe</g1>"
+      ]
+     }
+    }
+   ],
+   "results": [
+    {
+     "tagged": "<g1>Signed by </g1>Jane Doe, MD, PhD",
+     "essential": [],
+     "calls": [
+      [
+       "SYS",
+       "Keep these tags exactly once each, around the matching Vietnamese words: <g1>\u2026</g1>\n\nTranslate:\n<g1>Signed by </g1>Jane Doe, MD, PhD",
+       "K\u00fd b\u1edfi <g1>BS TS Jane Doe</g1>",
+       328
+      ]
+     ],
+     "text": "K\u00fd b\u1edfi <g1>TS. BS. Jane Doe</g1>",
+     "level": 0,
+     "flags": [
+      "term_fix:title-order"
+     ],
+     "fixes": [
+      {
+       "en": "title-order",
+       "from": "BS TS",
+       "to": "TS. BS."
+      }
+     ],
+     "cached": false,
+     "work_tagged": "<g1>Signed by </g1>Jane Doe, MD, PhD",
+     "work_spans": [
+      1
+     ],
+     "key": "aaca9fb972ebd579ab7a51022aa55bd8be282614d7a1f9a394c163e9b65a3720",
+     "tm": [
+      [
+       "aaca9fb972ebd579ab7a51022aa55bd8be282614d7a1f9a394c163e9b65a3720",
+       "K\u00fd b\u1edfi <g1>BS TS Jane Doe</g1>",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "title order before a formatted name",
+   "steps": [
+    {
+     "para": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\"/><a:t>Reviewed by </a:t></a:r><a:r><a:rPr lang=\"en-US\" b=\"1\"/><a:t>Jane Doe</a:t></a:r><a:r><a:rPr lang=\"en-US\"/><a:t>, MD, PhD</a:t></a:r></a:p>",
+     "script": {
+      "replies": [
+       "Xem l\u1ea1i b\u1edfi BS. TS. <g1>Jane Doe</g1>"
+      ]
+     }
+    }
+   ],
+   "results": [
+    {
+     "tagged": "Reviewed by <g1>Jane Doe</g1>, MD, PhD",
+     "essential": [
+      1
+     ],
+     "calls": [
+      [
+       "SYS",
+       "Keep these tags exactly once each, around the matching Vietnamese words: <g1>\u2026</g1>\n\nTranslate:\nReviewed by <g1>Jane Doe</g1>, MD, PhD",
+       "Xem l\u1ea1i b\u1edfi BS. TS. <g1>Jane Doe</g1>",
+       332
+      ]
+     ],
+     "text": "Xem l\u1ea1i b\u1edfi TS. BS. <g1>Jane Doe</g1>",
+     "level": 0,
+     "flags": [
+      "term_fix:title-order"
+     ],
+     "fixes": [
+      {
+       "en": "title-order",
+       "from": "BS. TS.",
+       "to": "TS. BS."
+      }
+     ],
+     "cached": false,
+     "work_tagged": "Reviewed by <g1>Jane Doe</g1>, MD, PhD",
+     "work_spans": [
+      1
+     ],
+     "key": "6b2ac907611bc1aea08f4062cc8551dc373a81be34707b346c07197762c55bb8",
+     "tm": [
+      [
+       "6b2ac907611bc1aea08f4062cc8551dc373a81be34707b346c07197762c55bb8",
+       "Xem l\u1ea1i b\u1edfi BS. TS. <g1>Jane Doe</g1>",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "title order kept when right",
+   "steps": [
+    {
+     "para": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\"/><a:t>Jane Doe, M.D., Ph.D., reviewed all the slides.</a:t></a:r></a:p>",
+     "script": {
+      "replies": [
+       "TS. BS. Jane Doe \u0111\u00e3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\u00eau b\u1ea3n."
+      ]
+     }
+    }
+   ],
+   "results": [
+    {
+     "tagged": "Jane Doe, M.D., Ph.D., reviewed all the slides.",
+     "essential": [],
+     "calls": [
+      [
+       "SYS",
+       "This text has no tags; do not add any.\n\nTranslate:\nJane Doe, M.D., Ph.D., reviewed all the slides.",
+       "TS. BS. Jane Doe \u0111\u00e3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\u00eau b\u1ea3n.",
+       260
+      ]
+     ],
+     "text": "TS. BS. Jane Doe \u0111\u00e3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\u00eau b\u1ea3n.",
+     "level": 0,
+     "flags": [],
+     "fixes": [],
+     "cached": false,
+     "work_tagged": "Jane Doe, M.D., Ph.D., reviewed all the slides.",
+     "work_spans": [],
+     "key": "eb50c37b4831e4f709f6c73c7c7a5e0df3686e9b86700e4d8781491b4047bfca",
+     "tm": [
+      [
+       "eb50c37b4831e4f709f6c73c7c7a5e0df3686e9b86700e4d8781491b4047bfca",
+       "TS. BS. Jane Doe \u0111\u00e3 xem l\u1ea1i t\u1ea5t c\u1ea3 ti\u00eau b\u1ea3n.",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "house forms of the active packs",
+   "steps": [
+    {
+     "para": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\"/><a:t>Many lymphocytes and a carcinoma in the node</a:t></a:r></a:p>",
+     "script": {
+      "replies": [
+       "Nhi\u1ec1u lymph\u00f4 b\u00e0o v\u00e0 carcin\u00f4m trong h\u1ea1ch"
+      ]
+     },
+     "cfg": {
+      "allowed": [
+       "lymph\u00f4"
+      ]
+     }
+    },
+    {
+     "para": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\"/><a:t>Many lymphocytes and a carcinoma in the node</a:t></a:r></a:p>",
+     "script": {
+      "replies": []
+     }
+    },
+    {
+     "para": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\"/><a:t>Many lymphocytes and a carcinoma in the node</a:t></a:r></a:p>",
+     "script": {
+      "replies": []
+     },
+     "cfg": {
+      "allowed": [
+       "lymph\u00f4"
+      ]
+     }
+    }
+   ],
+   "results": [
+    {
+     "tagged": "Many lymphocytes and a carcinoma in the node",
+     "essential": [],
+     "calls": [
+      [
+       "SYS",
+       "This text has no tags; do not add any.\n\nTranslate:\nMany lymphocytes and a carcinoma in the node",
+       "Nhi\u1ec1u lymph\u00f4 b\u00e0o v\u00e0 carcin\u00f4m trong h\u1ea1ch",
+       254
+      ]
+     ],
+     "text": "Nhi\u1ec1u lymph\u00f4 b\u00e0o v\u00e0 carcin\u00f4m trong h\u1ea1ch",
+     "level": 0,
+     "flags": [
+      "suspicious:carcin\u00f4m"
+     ],
+     "fixes": [],
+     "cached": false,
+     "work_tagged": "Many lymphocytes and a carcinoma in the node",
+     "work_spans": [],
+     "key": "0d4d2ed91aead86cf784ea695646634d06f039b7e73ac9662482c02ae45302e3",
+     "tm": [
+      [
+       "0d4d2ed91aead86cf784ea695646634d06f039b7e73ac9662482c02ae45302e3",
+       "Nhi\u1ec1u lymph\u00f4 b\u00e0o v\u00e0 carcin\u00f4m trong h\u1ea1ch",
+       0
+      ]
+     ]
+    },
+    {
+     "tagged": "Many lymphocytes and a carcinoma in the node",
+     "essential": [],
+     "calls": [],
+     "text": "Nhi\u1ec1u lymph\u00f4 b\u00e0o v\u00e0 carcin\u00f4m trong h\u1ea1ch",
+     "level": 0,
+     "flags": [
+      "suspicious:lymph\u00f4",
+      "suspicious:carcin\u00f4m"
+     ],
+     "fixes": [],
+     "cached": true,
+     "work_tagged": "Many lymphocytes and a carcinoma in the node",
+     "work_spans": [],
+     "key": "0d4d2ed91aead86cf784ea695646634d06f039b7e73ac9662482c02ae45302e3",
+     "tm": [
+      [
+       "0d4d2ed91aead86cf784ea695646634d06f039b7e73ac9662482c02ae45302e3",
+       "Nhi\u1ec1u lymph\u00f4 b\u00e0o v\u00e0 carcin\u00f4m trong h\u1ea1ch",
+       0
+      ]
+     ]
+    },
+    {
+     "tagged": "Many lymphocytes and a carcinoma in the node",
+     "essential": [],
+     "calls": [],
+     "text": "Nhi\u1ec1u lymph\u00f4 b\u00e0o v\u00e0 carcin\u00f4m trong h\u1ea1ch",
+     "level": 0,
+     "flags": [
+      "suspicious:carcin\u00f4m"
+     ],
+     "fixes": [],
+     "cached": true,
+     "work_tagged": "Many lymphocytes and a carcinoma in the node",
+     "work_spans": [],
+     "key": "0d4d2ed91aead86cf784ea695646634d06f039b7e73ac9662482c02ae45302e3",
+     "tm": [
+      [
+       "0d4d2ed91aead86cf784ea695646634d06f039b7e73ac9662482c02ae45302e3",
+       "Nhi\u1ec1u lymph\u00f4 b\u00e0o v\u00e0 carcin\u00f4m trong h\u1ea1ch",
+       0
+      ]
+     ]
     }
    ]
   }

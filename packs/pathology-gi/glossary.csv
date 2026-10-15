@@ -4,35 +4,35 @@ Barrett's esophagus,Barrett thực quản,"freq 4 (BYT-QTKT21 3 + VJOL 1) vs 'th
 intestinal metaplasia,dị sản ruột,"freq 12 (VJOL) + OJS3 5 vs 'chuyển sản ruột' 0; src: YDH23-Kimura, TCNCYH26-NBI, BYT-GC20, BYT-QTKT21; = pack cha metaplasia=dị sản"
 low-grade dysplasia,loạn sản độ thấp,"freq 13 vs 'loạn sản mức độ thấp' 2, 'loạn sản nhẹ' 2; src: YHCM26-mucin, KHSK26-EMR; = pack cha low-grade=độ thấp"
 high-grade dysplasia,loạn sản độ cao,"freq 15 vs 'loạn sản nặng' 3 (+BYT-QTKT21 4), 'loạn sản mức độ cao' 1; src: YDLS25-NBI, KHSK26-EMR; = pack cha high-grade=độ cao"
-esophageal squamous cell carcinoma,carcinôm tế bào gai thực quản,"ALIGNED to the parent SCC row (binding: user chose 'gai, KHÔNG vảy; carcinoma = carcinôm'); GI evidence favours 'ung thư biểu mô (tế bào) vảy thực quản' 6:1 vs 'tế bào gai thực quản' -- pending user decision; src: YHQS26-Mandard, YHLS25-ESCC, UTH26-ESCC"
-oesophageal squamous cell carcinoma,carcinôm tế bào gai thực quản,"ALIGNED to the parent SCC row (binding: user chose 'gai, KHÔNG vảy; carcinoma = carcinôm'); GI evidence favours 'ung thư biểu mô (tế bào) vảy thực quản' 6:1 vs 'tế bào gai thực quản' -- pending user decision; src: YHQS26-Mandard, YHLS25-ESCC, UTH26-ESCC"
-esophageal adenocarcinoma,ung thư biểu mô tuyến thực quản,"freq 0 trực tiếp (VJOL timeout, OJS3 0); theo mẫu UTBM tuyến dạ dày/đại trực tràng (UTBM tuyến 183 vs carcinôm tuyến 23); src: pattern; bằng chứng thấp"
-oesophageal adenocarcinoma,ung thư biểu mô tuyến thực quản,"freq 0 trực tiếp (VJOL timeout, OJS3 0); theo mẫu UTBM tuyến dạ dày/đại trực tràng (UTBM tuyến 183 vs carcinôm tuyến 23); src: pattern; bằng chứng thấp"
+esophageal squamous cell carcinoma,carcinom tế bào gai thực quản,"ALIGNED to the parent SCC row (binding: user chose 'gai, KHÔNG vảy; carcinoma = carcinom'); GI evidence favours 'ung thư biểu mô (tế bào) vảy thực quản' 6:1 vs 'tế bào gai thực quản' -- pending user decision; src: YHQS26-Mandard, YHLS25-ESCC, UTH26-ESCC"
+oesophageal squamous cell carcinoma,carcinom tế bào gai thực quản,"ALIGNED to the parent SCC row (binding: user chose 'gai, KHÔNG vảy; carcinoma = carcinom'); GI evidence favours 'ung thư biểu mô (tế bào) vảy thực quản' 6:1 vs 'tế bào gai thực quản' -- pending user decision; src: YHQS26-Mandard, YHLS25-ESCC, UTH26-ESCC"
+esophageal adenocarcinoma,carcinom tuyến thực quản,"freq 0 trực tiếp (VJOL timeout, OJS3 0); theo mẫu UTBM tuyến dạ dày/đại trực tràng (UTBM tuyến 183 vs carcinôm tuyến 23); src: pattern; bằng chứng thấp"
+oesophageal adenocarcinoma,carcinom tuyến thực quản,"freq 0 trực tiếp (VJOL timeout, OJS3 0); theo mẫu UTBM tuyến dạ dày/đại trực tràng (UTBM tuyến 183 vs carcinôm tuyến 23); src: pattern; bằng chứng thấp"
 eosinophilic esophagitis,viêm thực quản tăng bạch cầu ái toan,"freq 0 tạp chí; lay Vinmec 3 = 'viêm thực quản bạch cầu ái toan' 3; mẫu 'viêm đại tràng tăng bạch cầu ái toan' (YHCM26-EoC); src: Vinmec-EoE, YHCM26-EoC; hòa -> cần người quyết"
 eosinophilic oesophagitis,viêm thực quản tăng bạch cầu ái toan,"freq 0 tạp chí; lay Vinmec 3 = 'viêm thực quản bạch cầu ái toan' 3; mẫu 'viêm đại tràng tăng bạch cầu ái toan' (YHCM26-EoC); src: Vinmec-EoE, YHCM26-EoC; hòa -> cần người quyết"
 eosinophil,bạch cầu ái toan,"freq 78 vs 'bạch cầu ưa acid' 3; src: VJOL (TCNK24, TMH23)"
 Helicobacter pylori gastritis,viêm dạ dày do Helicobacter pylori,"freq 3 (dạng 'viêm dạ dày do H. pylori'; tóm tắt hay viết tắt tên vi khuẩn); src: YDHCT23-HP, KHTH26-Kyoto; giữ tên vi khuẩn"
 chronic atrophic gastritis,viêm dạ dày mạn teo,"freq 2 (VJOL 1 + YHLS15) vs 'viêm teo dạ dày' 1, 'viêm dạ dày teo' 1; src: YHLS15-pepsinogen, YHCD26-PPI"
 atrophic gastritis,viêm teo niêm mạc dạ dày,"freq 4 (VJOL) + 3 tiêu đề vs 'viêm teo dạ dày' 1; src: YHQS26-Kimura, YHLS21-OLGA, KHCNVN21-teo"
-OLGA staging,phân giai đoạn OLGA,"freq 0 đúng dạng; y văn 'phân loại OLGA' 1 (YHLS21-OLGA); pack cha staging=phân giai đoạn; src: YHLS21-OLGA; cần người quyết"
-OLGIM staging,phân giai đoạn OLGIM,"freq 0; theo OLGA; src: none; cần người quyết"
-gastric adenocarcinoma,ung thư biểu mô tuyến dạ dày,"freq 25 (VJOL) + OJS3 10 vs 'carcinôm tuyến dạ dày' 4 (YHCM26 x2, VMJ); src: TNU23-HER2, YDLS22-IHC, BYT-GC20"
+OLGA staging,phân giai đoạn OLGA,freq 0 đúng dạng; y văn 'phân loại OLGA' 1 (YHLS21-OLGA); pack cha staging=phân giai đoạn; src: YHLS21-OLGA; cần người quyết
+OLGIM staging,phân giai đoạn OLGIM,freq 0; theo OLGA; src: none; cần người quyết
+gastric adenocarcinoma,carcinom tuyến dạ dày,"freq 25 (VJOL) + OJS3 10 vs 'carcinôm tuyến dạ dày' 4 (YHCM26 x2, VMJ); src: TNU23-HER2, YDLS22-IHC, BYT-GC20"
 intestinal type,thể ruột,"freq 10 (Lauren) vs 'typ ruột' 1, 'típ ruột' 0 (BYT-GC20 'típ ruột'); src: TNU23-hangvi, BYT-GC20"
 diffuse type,thể lan tỏa,"freq 10 (Lauren) vs 'typ lan tỏa' 1 (BYT-GC20 'típ lan toả'); src: TNU23-hangvi, BYT-GC20; chính tả 'tỏa' 10 vs 'toả' 0"
-poorly cohesive carcinoma,ung thư biểu mô kém kết dính,"freq 10 ('kém kết dính' VJOL 3 + VMJ 7) vs 'ít kết dính' 1 (OJS3); src: BYT-GC20, VMJ-17951, YHCM26-catenin"
-signet ring cell carcinoma,ung thư biểu mô tế bào nhẫn,"freq 1 đúng dạng + 'tế bào nhẫn' 11 vs 'carcinôm tế bào nhẫn' 0, 'tế bào mặt nhẫn' 0 (chỉ Vinmec); src: VMJ25-CRCTN, BYT-GC20; = pack cha signet ring cell=tế bào nhẫn"
-MALT lymphoma,lymphôm MALT,"ALIGNED to the parent lymphoma row (binding: user chose 'lymphôm', KHÔNG 'u lympho' for EN->VI); evidence favours 'u lympho' (u lympho không Hodgkin 23:2; u lympho tế bào B 57:3; MALT titles all 'u lympho') -- pending user decision; freq 0 exact form; src: VMJ-9125, YHCM26-MALT, YHLS20-MALT"
-gastric MALT lymphoma,lymphôm MALT dạ dày,"ALIGNED to the parent lymphoma row (see MALT lymphoma); evidence 'u lympho dạ dày' 3 + 2 YDH23 titles -- pending user decision; src: YDH23-GIlym, YHLS20-MALT"
+poorly cohesive carcinoma,carcinom kém kết dính,"freq 10 ('kém kết dính' VJOL 3 + VMJ 7) vs 'ít kết dính' 1 (OJS3); src: BYT-GC20, VMJ-17951, YHCM26-catenin"
+signet ring cell carcinoma,carcinom tế bào nhẫn,"freq 1 đúng dạng + 'tế bào nhẫn' 11 vs 'carcinôm tế bào nhẫn' 0, 'tế bào mặt nhẫn' 0 (chỉ Vinmec); src: VMJ25-CRCTN, BYT-GC20; = pack cha signet ring cell=tế bào nhẫn"
+MALT lymphoma,lymphom MALT,"ALIGNED to the parent lymphoma row (binding: user chose 'lymphom', KHÔNG 'u lympho' for EN->VI); evidence favours 'u lympho' (u lympho không Hodgkin 23:2; u lympho tế bào B 57:3; MALT titles all 'u lympho') -- pending user decision; freq 0 exact form; src: VMJ-9125, YHCM26-MALT, YHLS20-MALT"
+gastric MALT lymphoma,lymphom MALT dạ dày,"ALIGNED to the parent lymphoma row (see MALT lymphoma); evidence 'u lympho dạ dày' 3 + 2 YDH23 titles -- pending user decision; src: YDH23-GIlym, YHLS20-MALT"
 gastrointestinal stromal tumour,u mô đệm đường tiêu hóa (GIST),"freq 13 (VJOL 11 'hóa' + 2 'hoá') + VMJ 19 tiêu đề vs 'u mô đệm dạ dày ruột' 0, 'bướu mô đệm' 1; src: PNT25-GIST, KHSK26-GIST, VMJ-10227"
 gastrointestinal stromal tumor,u mô đệm đường tiêu hóa (GIST),"freq 13 (VJOL 11 'hóa' + 2 'hoá') + VMJ 19 tiêu đề vs 'u mô đệm dạ dày ruột' 0, 'bướu mô đệm' 1; src: PNT25-GIST, KHSK26-GIST, VMJ-10227"
 neuroendocrine tumour,u thần kinh nội tiết (NET),"freq 28* vs 'u nội tiết thần kinh' 12* (*OJS bỏ từ 'u'); BYT-GC20 5; src: VMJ25-NET, BYT-GC20; 'bướu tân sinh thần kinh nội tiết' 1 (YHLS26)"
 neuroendocrine tumor,u thần kinh nội tiết (NET),"freq 28* vs 'u nội tiết thần kinh' 12* (*OJS bỏ từ 'u'); BYT-GC20 5; src: VMJ25-NET, BYT-GC20; 'bướu tân sinh thần kinh nội tiết' 1 (YHLS26)"
-neuroendocrine carcinoma,ung thư biểu mô thần kinh nội tiết (NEC),"freq 2 = 'ung thư thần kinh nội tiết' 2 vs 'carcinôm thần kinh nội tiết' 0; src: VJOL; bằng chứng thấp, chọn theo quy ước carcinoma=UTBM"
-celiac disease,bệnh celiac,"freq 1 (YHCM26-celiac 'bệnh Celiac'); lay Vinmec 'celiac'; src: YHCM26-celiac"
-coeliac disease,bệnh celiac,"freq 1 (YHCM26-celiac 'bệnh Celiac'); lay Vinmec 'celiac'; src: YHCM26-celiac"
-Marsh classification,phân loại Marsh,"freq 0 (VJOL 'Marsh' toàn ngoài y khoa); giữ tên Marsh (Marsh-Oberhuber); src: none"
-intraepithelial lymphocytes,lympho bào trong biểu mô,"freq 0 (5 biến thể đều 0); theo pack cha lymphocyte=lympho bào; Vinmec mô tả 'tế bào lympho trong lớp biểu mô'; src: Vinmec-MC; cần người quyết"
-villous atrophy,teo nhung mao,"freq 1 vs 'teo lông ruột' 0; src: KHCNVN23-sonde"
+neuroendocrine carcinoma,carcinom thần kinh nội tiết (NEC),"freq 2 = 'ung thư thần kinh nội tiết' 2 vs 'carcinôm thần kinh nội tiết' 0; src: VJOL; bằng chứng thấp, chọn theo quy ước carcinoma=UTBM"
+celiac disease,bệnh celiac,freq 1 (YHCM26-celiac 'bệnh Celiac'); lay Vinmec 'celiac'; src: YHCM26-celiac
+coeliac disease,bệnh celiac,freq 1 (YHCM26-celiac 'bệnh Celiac'); lay Vinmec 'celiac'; src: YHCM26-celiac
+Marsh classification,phân loại Marsh,freq 0 (VJOL 'Marsh' toàn ngoài y khoa); giữ tên Marsh (Marsh-Oberhuber); src: none
+intraepithelial lymphocytes,lymphô bào trong biểu mô,freq 0 (5 biến thể đều 0); theo pack cha lymphocyte=lympho bào; Vinmec mô tả 'tế bào lympho trong lớp biểu mô'; src: Vinmec-MC; cần người quyết
+villous atrophy,teo nhung mao,freq 1 vs 'teo lông ruột' 0; src: KHCNVN23-sonde
 villous,nhung mao,"freq 2 ('teo nhung mao' 1, 'u tuyến ống nhung mao' 1); nghĩa ruột (nhung mao ruột non, cấu trúc nhung mao); src: KHCNVN23-sonde, KHSK26-EMR; XUNG ĐỘT pack cha villous=nguyên bào nuôi gai nhau (nghĩa nhau thai)"
 Crohn disease,bệnh Crohn,"freq 15 (VJOL) + BYT-CRC18 2 + BYT-QTKT21 7; src: TCNCYH25-Crohn, KHTH26-Crohn, BYT-QTKT21"
 Crohn's disease,bệnh Crohn,"freq 15 (VJOL) + BYT-CRC18 2 + BYT-QTKT21 7; src: TCNCYH25-Crohn, KHTH26-Crohn, BYT-QTKT21"
@@ -40,58 +40,58 @@ ulcerative colitis,viêm loét đại tràng,"freq 16 vs 'viêm loét đại tr�
 inflammatory bowel disease,bệnh viêm ruột mạn tính,"freq 'viêm ruột mạn tính' 7 (+tiêu đề YHCD26, YDLS23) vs 'bệnh viêm ruột' 41* (lẫn thú y 'bệnh viêm ruột hoại tử'); src: YHCD26-IBD, YDLS23-IBD; giữ IBD; cần người quyết"
 crypt,khe tuyến,"freq 2 (ngữ cảnh khe hậu môn) vs 'hẽm tuyến' 0, 'hốc tuyến' 0; Vinmec 'cấu trúc khe tuyến'; src: YDHCT20-ro, Vinmec-MC"
 crypt abscess,áp xe khe tuyến,"freq 2 (ngữ cảnh hậu môn) vs 'áp xe hẽm tuyến' 0, 'áp xe hốc tuyến' 0; Vinmec 'áp xe hốc'; src: YDHCT20-ro, Vinmec-UC; bằng chứng thấp"
-crypt distortion,biến dạng khe tuyến,"freq 0 đúng dạng ('biến dạng tuyến' 2); ghép từ 'khe tuyến'; src: none; bằng chứng thấp"
-granuloma,u hạt,"freq không đo được (OJS bỏ từ 'u'); = pack cha; src: pack cha"
-microscopic colitis,viêm đại tràng vi thể,"freq 0 tạp chí; lay Vinmec 5 + Long Châu 1; src: Vinmec-MC"
-collagenous colitis,viêm đại tràng collagen,"freq 0 tạp chí; lay Vinmec ('viêm đại tràng collagen'); src: Vinmec-MC"
-lymphocytic colitis,viêm đại tràng lympho bào,"freq 0 tạp chí; Vinmec 'viêm đại tràng lympho' / 'tế bào lympho'; theo pack cha lymphocyte=lympho bào; src: Vinmec-MC; cần người quyết"
+crypt distortion,biến dạng khe tuyến,freq 0 đúng dạng ('biến dạng tuyến' 2); ghép từ 'khe tuyến'; src: none; bằng chứng thấp
+granuloma,u hạt,freq không đo được (OJS bỏ từ 'u'); = pack cha; src: pack cha
+microscopic colitis,viêm đại tràng vi thể,freq 0 tạp chí; lay Vinmec 5 + Long Châu 1; src: Vinmec-MC
+collagenous colitis,viêm đại tràng collagen,freq 0 tạp chí; lay Vinmec ('viêm đại tràng collagen'); src: Vinmec-MC
+lymphocytic colitis,viêm đại tràng lymphô bào,freq 0 tạp chí; Vinmec 'viêm đại tràng lympho' / 'tế bào lympho'; theo pack cha lymphocyte=lympho bào; src: Vinmec-MC; cần người quyết
 pseudomembranous colitis,viêm đại tràng giả mạc,"freq 0 tạp chí; lay 3 (Vinmec, Long Châu) vs 'viêm đại tràng màng giả' 1 (Pharmacity); src: Vinmec-PMC, LC-PMC"
 ischemic colitis,viêm đại tràng do thiếu máu cục bộ,"freq 0 đúng dạng; 'viêm đại tràng thiếu máu' 1, 'viêm đại tràng do thiếu máu' 1; thêm 'cục bộ' để khỏi lẫn thiếu máu (anaemia); src: VMJ26-ro; cần người quyết"
 ischaemic colitis,viêm đại tràng do thiếu máu cục bộ,"freq 0 đúng dạng; 'viêm đại tràng thiếu máu' 1, 'viêm đại tràng do thiếu máu' 1; thêm 'cục bộ' để khỏi lẫn thiếu máu (anaemia); src: VMJ26-ro; cần người quyết"
 tubular adenoma,u tuyến ống,"freq ~3* (OJS3; OJS bỏ từ 'u') vs 'polyp tuyến ống' 2; pack cha adenoma=u tuyến; BYT-CRC18 'u tuyến'; src: YHQS26-polyp, BYT-CRC18"
-tubulovillous adenoma,u tuyến ống nhung mao,"freq 1 ('u tuyến ống - nhung mao') vs 'polyp tuyến ống nhung mao' 0; src: KHSK26-EMR"
-villous adenoma,u tuyến nhung mao,"freq 0; ghép theo pack cha u tuyến + nhung mao; src: none"
-sessile serrated lesion,tổn thương răng cưa không cuống,"freq 1 (tiêu đề KHTH26) vs 'polyp/u tuyến răng cưa không cuống' 0; src: KHTH26-SSL"
-traditional serrated adenoma,u tuyến răng cưa truyền thống,"freq 0; ghép từ u tuyến + răng cưa; src: none; bằng chứng thấp"
+tubulovillous adenoma,u tuyến ống nhung mao,freq 1 ('u tuyến ống - nhung mao') vs 'polyp tuyến ống nhung mao' 0; src: KHSK26-EMR
+villous adenoma,u tuyến nhung mao,freq 0; ghép theo pack cha u tuyến + nhung mao; src: none
+sessile serrated lesion,tổn thương răng cưa không cuống,freq 1 (tiêu đề KHTH26) vs 'polyp/u tuyến răng cưa không cuống' 0; src: KHTH26-SSL
+traditional serrated adenoma,u tuyến răng cưa truyền thống,freq 0; ghép từ u tuyến + răng cưa; src: none; bằng chứng thấp
 hyperplastic polyp,polyp tăng sản,"freq 5 vs 'polyp quá sản' 1 (YDH22-polyp); src: KHSK26-polyp, YDH22-polyp"
-juvenile polyp,polyp thiếu niên,"freq 0 vs 'polyp trẻ em' 1 (nghĩa khác: polyp ở trẻ em); src: none; cần người quyết"
-Peutz-Jeghers polyp,polyp Peutz-Jeghers,"freq 2 + tiêu đề TCNCYH26; 'hội chứng Peutz-Jeghers' 3; src: TCNCYH26-PJ"
+juvenile polyp,polyp thiếu niên,freq 0 vs 'polyp trẻ em' 1 (nghĩa khác: polyp ở trẻ em); src: none; cần người quyết
+Peutz-Jeghers polyp,polyp Peutz-Jeghers,freq 2 + tiêu đề TCNCYH26; 'hội chứng Peutz-Jeghers' 3; src: TCNCYH26-PJ
 familial adenomatous polyposis,bệnh đa polyp tuyến gia đình (FAP),"freq 2 ('đa polyp tuyến gia đình'; VMJ26 'hội chứng đa polyp tuyến gia đình') vs BYT-CRC18 'bệnh đa polyp đại trực tràng gia đình (FAP)' 1; src: VMJ26-FAP, BYT-CRC18"
-colorectal adenocarcinoma,ung thư biểu mô tuyến đại trực tràng,"freq 10 (OJS3; VJOL timeout) + nhiều tiêu đề VMJ vs 'carcinôm tuyến đại trực tràng' 3 (VJOL) + 1 (CTUMP); src: YDLS23-MSI, YDHCT26-MMR, VMJ-14726"
-mucinous adenocarcinoma,ung thư biểu mô tuyến nhầy,"freq ~3 (OJS3 1, BYT-GC20, TCNCYH24-LAMN) vs 'tuyến nhày' 2, 'tuyến dạng nhầy' 2; chất nhầy 21 vs nhày 2; src: BYT-GC20, YDLS24-CRC"
-medullary carcinoma,ung thư biểu mô thể tủy,"freq 0 tiêu hóa; 'thể tủy' 7 (chủ yếu giáp/vú); ghép theo pack vú (BYT20); src: none; bằng chứng thấp"
-intramucosal carcinoma,ung thư biểu mô trong niêm mạc,"freq 0 (4 biến thể đều 0); ghép theo mẫu 'trong biểu mô'; src: none; bằng chứng thấp"
+colorectal adenocarcinoma,carcinom tuyến đại trực tràng,"freq 10 (OJS3; VJOL timeout) + nhiều tiêu đề VMJ vs 'carcinôm tuyến đại trực tràng' 3 (VJOL) + 1 (CTUMP); src: YDLS23-MSI, YDHCT26-MMR, VMJ-14726"
+mucinous adenocarcinoma,carcinom tuyến nhầy,"freq ~3 (OJS3 1, BYT-GC20, TCNCYH24-LAMN) vs 'tuyến nhày' 2, 'tuyến dạng nhầy' 2; chất nhầy 21 vs nhày 2; src: BYT-GC20, YDLS24-CRC"
+medullary carcinoma,carcinom thể tủy,freq 0 tiêu hóa; 'thể tủy' 7 (chủ yếu giáp/vú); ghép theo pack vú (BYT20); src: none; bằng chứng thấp
+intramucosal carcinoma,carcinom trong niêm mạc,freq 0 (4 biến thể đều 0); ghép theo mẫu 'trong biểu mô'; src: none; bằng chứng thấp
 tumour budding,nảy chồi u,"freq tiêu đề 7 (VJOL 4 + VMJ 3) vs 'nảy chồi bướu' 2 (YHLS25-buou, VMJ-12193 hốc miệng); src: YDLS22-bud, YHLS21-bud, YDHCT24-bud"
 tumor budding,nảy chồi u,"freq tiêu đề 7 (VJOL 4 + VMJ 3) vs 'nảy chồi bướu' 2 (YHLS25-buou, VMJ-12193 hốc miệng); src: YDLS22-bud, YHLS21-bud, YDHCT24-bud"
 perineural invasion,xâm nhập quanh thần kinh,"decision 6 applied (user 2026-10-14: LVI / PNI = xâm nhập; = pack cha 0.1.7); evidence 'xâm nhập quanh thần kinh' 3:1 exact, all forms 9:6, OJS3 5:1 (BYT-CRC18 'xâm lấn thần kinh'); src: YHCM26-catenin, YDLS25-PDL1, YDHCT26-PDL1"
 lymphovascular invasion,xâm nhập mạch bạch huyết,"decision 6 applied (user 2026-10-14: LVI / PNI = xâm nhập; = pack cha 0.1.7); evidence 'xâm nhập mạch bạch huyết' 3:2 exact (VJOL 1 + BYT-GC20 2 vs BYT-CRC18 2), 'xâm nhập mạch' ~13:3; src: TCNCYH25-TRG, VMJ26-K, BYT-GC20"
 extramural venous invasion,xâm lấn mạch máu ngoài thành (EMVI),"freq 2 vs 'xâm lấn tĩnh mạch ngoài thành' 0; 'EMVI' 5 (y văn cộng hưởng từ giữ EMVI); src: YDHCT24-EMVI, VMJ25-TNT"
-tumour deposit,nhân lắng đọng,"freq 1 (BYT-CRC18 N1c 'nhân lắng đọng dưới thanh mạc') vs 'nốt/ổ lắng đọng u' 0; tạp chí 0; src: BYT-CRC18; cần người quyết"
-tumor deposit,nhân lắng đọng,"freq 1 (BYT-CRC18 N1c 'nhân lắng đọng dưới thanh mạc') vs 'nốt/ổ lắng đọng u' 0; tạp chí 0; src: BYT-CRC18; cần người quyết"
+tumour deposit,nhân lắng đọng,freq 1 (BYT-CRC18 N1c 'nhân lắng đọng dưới thanh mạc') vs 'nốt/ổ lắng đọng u' 0; tạp chí 0; src: BYT-CRC18; cần người quyết
+tumor deposit,nhân lắng đọng,freq 1 (BYT-CRC18 N1c 'nhân lắng đọng dưới thanh mạc') vs 'nốt/ổ lắng đọng u' 0; tạp chí 0; src: BYT-CRC18; cần người quyết
 circumferential resection margin,diện cắt vòng quanh (CRM),"freq 6 (VJOL; CTUMP 5; VMJ-9998) vs 'diện cắt chu vi' 4 (YDLS108 4); BYT-CRC18 'diện cắt xung quanh u'; src: YDHCT22-CRM, VMJ-9998; sát nút -> cần người quyết"
 total mesorectal excision,cắt toàn bộ mạc treo trực tràng (TME),"freq 10 (VJOL) + BYT-CRC18; src: YDLS23-TME, YHLS18-TaTME, BYT-CRC18"
 tumour regression grade,độ thoái triển u (TRG),"freq 1 (tiêu đề 'thoái triển u' TCNCYH25 'phân độ thoái triển u') vs 'đáp ứng mô bệnh học' 10* (YHQS26 Mandard, YDLS108 5); src: TCNCYH25-TRG, YHQS26-Mandard; cần người quyết"
 tumor regression grade,độ thoái triển u (TRG),"freq 1 (tiêu đề 'thoái triển u' TCNCYH25 'phân độ thoái triển u') vs 'đáp ứng mô bệnh học' 10* (YHQS26 Mandard, YDLS108 5); src: TCNCYH25-TRG, YHQS26-Mandard; cần người quyết"
-neoadjuvant chemoradiotherapy,hóa xạ trị tiền phẫu,"freq 5 (tiêu đề 4: TCNCYH25-TRG, YHQS26-Mandard, YDLS23-HXTTP, UTH26-HXTTP) + BYT-CRC18 vs 'hóa xạ trị tân bổ trợ' 1 (VMJ25-TNT); số đếm OJS không tin được (bỏ 'xạ','bổ')"
+neoadjuvant chemoradiotherapy,hóa xạ trị tân bổ trợ,"owner 2026-10-15 18:48 (choice 2: neoadjuvant = tân bổ trợ in every pack); this pack's count: 'hóa xạ trị tiền phẫu' 5 (titles 4: TCNCYH25-TRG, YHQS26-Mandard, YDLS23-HXTTP, UTH26-HXTTP) + BYT-CRC18 vs 'hóa xạ trị tân bổ trợ' 1 (VMJ25-TNT); WAS 'hóa xạ trị tiền phẫu'"
 mismatch repair deficiency,thiếu hụt hệ thống sửa chữa ghép cặp sai (dMMR),"freq 3 (VJOL) + 3 tiêu đề + BYT-GC20 4 vs 'bắt cặp sai' 2 + BYT-CRC18 1; src: TCNCYH21-MMR, YDH23-MMR, TCNCYH24-MMR"
 mismatch repair protein,protein sửa chữa ghép cặp sai (MMR),"freq 3 tiêu đề vs 'bắt cặp sai' 1 tiêu đề; như dMMR; src: TCNCYH21-MMR, YDH23-MMR, TCNCYH24-MMR"
 microsatellite instability,mất ổn định vi vệ tinh (MSI),"freq 6 + BYT 4 vs 'bất ổn định vi vệ tinh' 1, 'tiểu vệ tinh' 0; src: YDLS23-MSI, VMJ26-MSI; = pack cha microsatellite=vi vệ tinh"
 loss of expression,mất bộc lộ,"REVERTED to parent value (binding: expression = bộc lộ, KHÔNG 'biểu hiện' in protein/IHC context); evidence favours 'mất biểu hiện' 8 vs 'mất bộc lộ' <=2 -- pending user decision; src: YHLS23-MMRD, YDHCT26-MMR"
 Lynch syndrome,hội chứng Lynch,"freq 2 + BYT-CRC18; src: TCNCYH24-MMR, YHLS18-Lynch, BYT-CRC18"
-MLH1,MLH1,"freq 1 tiêu đề (YDHCT26-MMR) + VJOL dMMR 7; giữ nguyên tên gen/protein; src: YDHCT26-MMR"
-PMS2,PMS2,"freq 1 tiêu đề (YDHCT26-MMR) + VJOL dMMR 7; giữ nguyên tên gen/protein; src: YDHCT26-MMR"
-MSH2,MSH2,"freq 1 tiêu đề (YDHCT26-MMR) + VJOL dMMR 7; giữ nguyên tên gen/protein; src: YDHCT26-MMR"
-MSH6,MSH6,"freq 1 tiêu đề (YDHCT26-MMR) + VJOL dMMR 7; giữ nguyên tên gen/protein; src: YDHCT26-MMR"
+MLH1,MLH1,freq 1 tiêu đề (YDHCT26-MMR) + VJOL dMMR 7; giữ nguyên tên gen/protein; src: YDHCT26-MMR
+PMS2,PMS2,freq 1 tiêu đề (YDHCT26-MMR) + VJOL dMMR 7; giữ nguyên tên gen/protein; src: YDHCT26-MMR
+MSH2,MSH2,freq 1 tiêu đề (YDHCT26-MMR) + VJOL dMMR 7; giữ nguyên tên gen/protein; src: YDHCT26-MMR
+MSH6,MSH6,freq 1 tiêu đề (YDHCT26-MMR) + VJOL dMMR 7; giữ nguyên tên gen/protein; src: YDHCT26-MMR
 low-grade appendiceal mucinous neoplasm,u tân sinh nhầy ruột thừa độ thấp (LAMN),"freq 1 tiêu đề (VMJ25-LAMN) = 'u nhầy ruột thừa độ thấp' 1 (TCNCYH24-LAMN); chọn dạng có 'tân sinh' (pack cha neoplasm=tân sinh) để không lẫn mucocele; src: VMJ25-LAMN, TCNCYH24-LAMN; cần người quyết"
 pseudomyxoma peritonei,giả u nhầy phúc mạc,"freq 1 tạp chí (TCNCYH24-LAMN; cùng bài có 'giả nhầy phúc mạc' 1) + lay Vinmec, BV Nguyễn Tri Phương; src: TCNCYH24-LAMN, BVNTP-PMP"
-anal squamous intraepithelial lesion,tổn thương nội biểu mô vảy ống hậu môn,"freq 0 tiêu hóa; theo pack cha SIL='tổn thương nội biểu mô vảy' (VJOL 1, cổ tử cung); giữ LSIL/HSIL; src: pack cha"
+anal squamous intraepithelial lesion,tổn thương trong biểu mô gai ống hậu môn,"freq 0 tiêu hóa; theo pack cha SIL='tổn thương nội biểu mô vảy' (VJOL 1, cổ tử cung); giữ LSIL/HSIL; src: pack cha"
 haemorrhoid,trĩ,"freq 24 ('bệnh trĩ'), 'trĩ nội' 9, 'búi trĩ' 4; BYT-QTKT21 35; src: VJOL, BYT-QTKT21"
 hemorrhoid,trĩ,"freq 24 ('bệnh trĩ'), 'trĩ nội' 9, 'búi trĩ' 4; BYT-QTKT21 35; src: VJOL, BYT-QTKT21"
-polypectomy margin,diện cắt polyp,"freq 0 đúng dạng; pack cha resection margin=diện cắt; 'bờ cắt polyp' đếm không tin được (OJS bỏ 'bờ'); src: pack cha; bằng chứng thấp"
-lamina propria,lớp đệm,"freq không tin được (VJOL 21 lẫn ngoài y khoa); 'mô đệm niêm mạc' 1; Vinmec 'lớp đệm niêm mạc'; quy ước mô học; src: Vinmec-MC"
+polypectomy margin,diện cắt polyp,freq 0 đúng dạng; pack cha resection margin=diện cắt; 'bờ cắt polyp' đếm không tin được (OJS bỏ 'bờ'); src: pack cha; bằng chứng thấp
+lamina propria,lớp đệm,freq không tin được (VJOL 21 lẫn ngoài y khoa); 'mô đệm niêm mạc' 1; Vinmec 'lớp đệm niêm mạc'; quy ước mô học; src: Vinmec-MC
 muscularis mucosae,lớp cơ niêm,"freq 3 (BYT-CRC18 1, BYT-QTKT21 1, OJS3 1); BYT-GC20 'cơ niêm'; src: BYT-CRC18, BYT-QTKT21"
 submucosa,lớp dưới niêm mạc,"freq 9 + tiêu đề 'dưới niêm mạc' 11 vs 'lớp hạ niêm mạc' (BYT-GC20 2, OJS3 1); BYT-CRC18 TNM T1; src: YHLS26-ESD, BYT-CRC18"
 muscularis propria,lớp cơ thực sự,"freq 2 (OJS3: TCNCYH 1, YDLS108 1) vs 'lớp cơ riêng' 0; BYT-CRC18 TNM chỉ ghi 'lớp cơ'; src: OJS3, BYT-CRC18; cần người quyết"
-subserosa,lớp dưới thanh mạc,"freq 6 ('dưới thanh mạc') + BYT-CRC18 2; src: BYT-CRC18"
+subserosa,lớp dưới thanh mạc,freq 6 ('dưới thanh mạc') + BYT-CRC18 2; src: BYT-CRC18
 mucin,chất nhầy,"freq 21 vs 'chất nhày' 2; src: YHCM26-mucin, VMJ-17931"
-adenocarcinoma,ung thư biểu mô tuyến,"freq 183 vs 'carcinôm tuyến' 20 + 'carcinom tuyến' 3 (~8:1; carcinôm = tác giả TP.HCM/Cần Thơ); src: VJOL, OJS3, BYT-CRC18; = pack cha carcinoma=ung thư biểu mô"
+adenocarcinoma,carcinom tuyến,"freq 183 vs 'carcinôm tuyến' 20 + 'carcinom tuyến' 3 (~8:1; carcinôm = tác giả TP.HCM/Cần Thơ); src: VJOL, OJS3, BYT-CRC18; = pack cha carcinoma=ung thư biểu mô"

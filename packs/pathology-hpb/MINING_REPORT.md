@@ -108,6 +108,12 @@ fetches.
 7. **steatosis root** for the parent's macrovesicular row (conflict 5).
 8. **Built terms** in the Unresolved table (ductular reaction, BilIN, IPNB, PanIN, XGC, pancreatoblastoma).
 
+### Changes 2026-10-15 18:48 (version 0.1.4)
+
+- chronic viral hepatitis = "viêm gan siêu vi mạn tính" (was "viêm gan virus mạn tính"), following medicine M9 (the
+  recommended column he accepted): viral hepatitis = "viêm gan siêu vi" (medicine sources 7 docs, S5, vs "viêm gan
+  virus" S2). This pack's own sources for the old value were not Southern. One test added.
+
 ## Caveats
 
 - Counts are relative to this corpus (116 documents), not exhaustive journal-wide counts.

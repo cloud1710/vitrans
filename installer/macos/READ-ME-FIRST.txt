@@ -1,0 +1,45 @@
+﻿ViTranslate cho máy Mac (chip Apple M1/M2/M3/M4)
+=================================================
+
+CÀI ĐẶT
+1. Kéo ViTranslate.app vào thư mục Applications.
+2. Mở ViTranslate trong Applications (bấm đúp). Lần đầu macOS báo
+   "ViTranslate" chưa được xác minh / "Apple could not verify..." -> bấm Done (Xong).
+   Ứng dụng chưa ký số với Apple (miễn phí, mã nguồn mở), nên cần cho phép một lần:
+3. Mở System Settings (Cài đặt hệ thống) -> Privacy & Security (Quyền riêng tư & Bảo mật),
+   kéo xuống mục Security, thấy dòng "ViTranslate was blocked..." -> bấm "Open Anyway" (Vẫn mở),
+   nhập mật khẩu máy, rồi bấm "Open Anyway" lần nữa.
+4. Từ đó ViTranslate mở bình thường. Lần đầu nó hỏi có khởi động cùng máy Mac không
+   (mặc định: Không), rồi tự tải Ollama (~160 MB) và mô hình dịch (4,6-6,6 GB) nếu máy chưa có.
+   Ollama.app đang chạy thì dùng lại, không tải thêm.
+
+Trang dịch: https://vitrans.pages.dev -> chọn "Dịch trên máy".
+Không có biểu tượng trên Dock: ViTranslate chạy nền. Mở lại ứng dụng để mở trang của nó.
+Nhật ký (log): ~/Library/Logs/ViTranslate
+
+GỠ CÀI ĐẶT
+Bấm đúp "Uninstall ViTranslate.command" (nếu macOS chặn: cho phép như bước 3, "Open Anyway"), hoặc kéo
+ViTranslate.app vào Thùng rác rồi chạy trong Terminal:
+  pkill -f ViTranslate.app; pkill -f "Application Support/ViTranslate/ollama"; rm -rf "$HOME/Library/Application Support/ViTranslate" "$HOME/Library/Logs/ViTranslate" "$HOME/Library/LaunchAgents/io.github.cloud1710.vitranslate.helper.plist"
+
+
+ViTranslate for Mac (Apple silicon)
+===================================
+
+INSTALL
+1. Drag ViTranslate.app into Applications.
+2. Open it (double-click). macOS says it cannot verify "ViTranslate" -> click Done.
+   The app is not notarized by Apple (free, open source), so allow it once:
+3. System Settings -> Privacy & Security -> scroll to Security -> "ViTranslate was blocked..."
+   -> "Open Anyway", enter your password, then "Open Anyway" again.
+4. From then on it opens normally. On the first start it asks whether to start at login
+   (default: No), then downloads Ollama (~160 MB) and the translation model (4.6-6.6 GB) when missing.
+   A running Ollama.app is reused.
+
+Page: https://vitrans.pages.dev -> "Dịch trên máy" (translate on this computer).
+No Dock icon: ViTranslate runs in the background; open the app again to open its page.
+Logs: ~/Library/Logs/ViTranslate
+
+UNINSTALL
+Double-click "Uninstall ViTranslate.command" (if macOS blocks it: allow it as in step 3, "Open Anyway"), or drag
+ViTranslate.app to the Trash and run in Terminal the command above.

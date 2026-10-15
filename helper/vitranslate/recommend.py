@@ -111,7 +111,8 @@ def job_estimate(r, device, words, polish):
 
 
 def recommend(profile, calibration):
-    """{engine: helper-gpu | helper-cpu | helper-cpu-fast, device, model, polish_default, fast_default,
+    """{engine: helper-gpu | helper-gpu-fast (Apple silicon, small memory) | helper-cpu | helper-cpu-fast, device,
+    model, polish_default, fast_default,
     needs_download, reasons [{code, ...}], estimates {seconds_per_a4_page, seconds_per_slide, polish, basis}}.
     The device follows the rule a job applies (device.gpu_fits on free VRAM now) and the model is the one a job uses
     there (config.default_model, or the fast draft); a model that Ollama does not have is only recommended, never
@@ -123,6 +124,10 @@ def recommend(profile, calibration):
     if g.get("usable"):
         device, engine = "gpu", "helper-gpu"
         reasons.append({"code": "gpu_ok", "name": g.get("name"), "free_mb": g.get("free_mb")})
+    elif g.get("unified"):  # Apple silicon: always Metal; a budget too small for the default model -> the fast draft
+        device, engine = "gpu", "helper-gpu-fast"
+        reasons.append({"code": "gpu_ok", "name": g.get("name"), "free_mb": g.get("free_mb")})
+        reasons.append({"code": "ram_low", "ram_mb": ram})
     else:
         device, engine = "cpu", "helper-cpu"
         if g.get("busy"):
@@ -142,7 +147,7 @@ def recommend(profile, calibration):
             engine = "helper-cpu-fast"
             reasons.append({"code": "cpu_slow", "seconds_per_a4_page": round(cpu_page)})
         reasons.append({"code": "polish_off_cpu"})
-    fast = engine == "helper-cpu-fast"
+    fast = engine.endswith("-fast")
     model = config.MODEL_FAST if fast else config.default_model(device)
     polish = device == "gpu"
     r = rates(device, model, calibration)

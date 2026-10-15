@@ -16,7 +16,7 @@ from .ooxml.codec import apply
 from .ooxml.document import collect_items
 from .ooxml.package import OoxmlPackage, UnsupportedFile
 from .matching import families, score_packs, select_packs  # noqa: F401 (score_packs: choose_packs, top_candidates)
-from .packs import EMPTY_PACK, glossary_hits, load_pack, merge_packs
+from .packs import EMPTY_PACK, allowed_words, glossary_hits, load_pack, merge_packs
 from .polish import Polisher, build_editor_system, run_polish
 from .registry import PackUnavailable, Registry
 from .report import build_report
@@ -169,6 +169,7 @@ def run_job(src, out_dir, options=None, progress=lambda event: None, llm_factory
               "packs": [{k: r[k] for k in ("id", "name", "score", "matched", "reason")} for r in pack_rows],
               "candidates": top_candidates(full_text, manifest, {m.entry.get("id") for m in matches})})
     hits = glossary_hits(full_text, pack.glossary)
+    allowed = allowed_words(pack)  # the house forms of the active packs are no strange words
 
     dev = probe()
     model = config.MODEL_FAST if options.fast else config.default_model(dev.kind)
@@ -186,7 +187,8 @@ def run_job(src, out_dir, options=None, progress=lambda event: None, llm_factory
             tm = TM(config.app_home() / "tm.sqlite")
         # app version in the cache key: prompt / QA changes between releases must not reuse old translations
         scope = pack_key + "+" + style.key() + "+" + config.VERSION
-        translator = Translator(llm, build_system(style.prompt, pack, hits), model, scope, pack.term_fixes, hits, tm)
+        translator = Translator(llm, build_system(style.prompt, pack, hits), model, scope, pack.term_fixes, hits, tm,
+                                allowed=allowed)
         t_translate = time.time()
         for n, item in enumerate(work):
             prev = work[n - 1].segment.plain if n > 0 else ""
@@ -212,7 +214,8 @@ def run_job(src, out_dir, options=None, progress=lambda event: None, llm_factory
                     event = dict(event, eta_s=round(estimate.remaining_polish(
                         event["done"], event["total"], time.time() - t_polish, ratio)))
                 progress(event)
-            polisher = Polisher(llm, build_editor_system(style.prompt, pack), model, scope, pack.term_fixes, hits, tm)
+            polisher = Polisher(llm, build_editor_system(style.prompt, pack), model, scope, pack.term_fixes, hits, tm,
+                                allowed=allowed)
             polish, changed = run_polish(pairs, pkg.kind, polisher, polish_progress, translator.recheck)
             for n in changed:
                 rows[n]["out"], rows[n]["flags"] = _shown(pairs[n][1].text), list(pairs[n][1].flags)

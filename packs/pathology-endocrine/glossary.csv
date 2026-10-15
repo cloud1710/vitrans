@@ -1,80 +1,80 @@
 en,vi,note
-papillary thyroid carcinoma,carcinôm tuyến giáp dạng nhú (PTC),"freq 3 docs exact (+ 'carcinôm dạng nhú' 1, 'carcinoma tuyến giáp dạng nhú' 1); src: YHCM19-BGN, BVNTP-GPB1, YHCM09-FNA; 'dạng nhú' 10 docs (S8 N1 O1) vs 'thể nhú' 5 (S1 N3 O1); North / BYT 'ung thư biểu mô tuyến giáp thể nhú' 2; user decisions: thyroid deck 2026-07-17 (carcinôm, dạng nhú) + parent 'carcinôm nhú vi thể'"
-papillary carcinoma,carcinôm dạng nhú,"freq 1 doc (8 hits) + title YHCM09-FNA; src: BVNTP-GPB3, YHCM09-FNA"
-follicular thyroid carcinoma,carcinôm tuyến giáp dạng nang (FTC),"freq 2 docs S ('carcinôm tuyến giáp dạng nang' BVNTP-GPB2, 'carcinôm dạng nang' BVNTP-GPB3 x10) vs 'ung thư (biểu mô) tuyến giáp thể nang' 3 docs (S1 N1 O1); src: BVNTP-GPB2, BVNTP-GPB3, BYT1514; house form carcinôm + 'dạng' as PTC"
-follicular carcinoma,carcinôm dạng nang,"freq 1 doc (10 hits); src: BVNTP-GPB3"
-minimally invasive follicular carcinoma,carcinôm dạng nang xâm lấn tối thiểu,"freq 2 docs ('xâm lấn tối thiểu'); src: BYT1514, BV103-UTTG; Southern GPB BVNTP-GPB3 writes 'xâm nhập tối thiểu' (1 doc, 3 hits); parent capsular / vascular invasion = xâm lấn; DECISION (invasion verb)"
-widely invasive follicular carcinoma,carcinôm dạng nang xâm lấn rộng,"freq 4 docs ('xâm lấn rộng', S1 N2 O1); src: BYT1514, BV103-UTTG, TCNCYH-PDTC; vs 'xâm nhập lan rộng' 1 (BVNTP-GPB3)"
-medullary thyroid carcinoma,carcinôm tuyến giáp dạng tủy (MTC),"freq 2 docs S for 'dạng tủy' (BVNTP-GPB3 'carcinôm tuyến giáp dạng tủy', BVNTP-UTTG2); src: BVNTP-GPB3, TCNCYH-MTC, BYT1514; 'thể tủy' 4 docs (S1 N2 O1; TCNCYH-MTC 'ung thư tuyến giáp thể tủy' x20); South first, same pattern as PTC; DECISION (near tie)"
-poorly differentiated thyroid carcinoma,carcinôm tuyến giáp kém biệt hóa (PDTC),"freq 2 docs S exact; src: YHCM19-BGN, BVNTP-FNA, TCNCYH-PDTC; OVERRIDES parent 'ung thư biểu mô tuyến giáp biệt hóa kém': 'kém biệt hóa' 6 docs (S4 N1 O1) vs 'biệt hóa kém' 2 (S1 O1); North 'ung thư tuyến giáp thể kém biệt hóa' (TCNCYH-PDTC x15)"
-anaplastic thyroid carcinoma,carcinôm tuyến giáp thoái sản (ATC),"freq 0 exact; src: parent rule anaplastic = thoái sản (BYT1514 1 hit); OVERRIDES parent UTBM form with the carcinôm house form only; DECISION: VN literature names ATC 'không biệt hóa' 9 docs (S5 N3 O1) vs 'thoái sản' 1; 'carcinôm tuyến giáp không biệt hóa' 2 docs S (YHCM19-BGN, BVNTP-FNA)"
-undifferentiated thyroid carcinoma,carcinôm tuyến giáp không biệt hóa,"freq 2 docs S; src: YHCM19-BGN, BVNTP-FNA, TCNCYH-PDTC; parent undifferentiated = không biệt hóa"
-differentiated thyroid carcinoma,ung thư tuyến giáp thể biệt hóa (DTC),"freq 5 docs (S3 N1 O1); src: CTUMP23-ATG, BVNTP-UTTG, TCNCYH-LN; vs 'ung thư tuyến giáp biệt hóa' 3, 'carcinôm tuyến giáp biệt hóa' 0; clinical umbrella term, VN keeps 'ung thư'"
-differentiated thyroid cancer,ung thư tuyến giáp thể biệt hóa (DTC),"freq 5 docs (S3 N1 O1); src: CTUMP23-ATG, BVNTP-UTTG, TCNCYH-LN"
-differentiated high-grade thyroid carcinoma,carcinôm tuyến giáp biệt hóa độ cao (DHGTC),"freq 0; src: none (WHO 2022 entity); built: differentiated = biệt hóa, high-grade = độ cao (parent); UNRESOLVED"
-thyroid carcinoma,carcinôm tuyến giáp,"freq 5 docs S (YHCM19-BGN x19); src: YHCM19-BGN, BVNTP-GPB2, BVNTP-FNA; vs 'ung thư biểu mô tuyến giáp' 5 docs (S2 N2 O1); house form"
+papillary thyroid carcinoma,carcinom tuyến giáp dạng nhú (PTC),"freq 3 docs exact (+ 'carcinôm dạng nhú' 1, 'carcinoma tuyến giáp dạng nhú' 1); src: YHCM19-BGN, BVNTP-GPB1, YHCM09-FNA; 'dạng nhú' 10 docs (S8 N1 O1) vs 'thể nhú' 5 (S1 N3 O1); North / BYT 'ung thư biểu mô tuyến giáp thể nhú' 2; user decisions: thyroid deck 2026-07-17 (carcinôm, dạng nhú) + parent 'carcinôm nhú vi thể'"
+papillary carcinoma,carcinom dạng nhú,"freq 1 doc (8 hits) + title YHCM09-FNA; src: BVNTP-GPB3, YHCM09-FNA"
+follicular thyroid carcinoma,carcinom tuyến giáp dạng nang (FTC),"freq 2 docs S ('carcinôm tuyến giáp dạng nang' BVNTP-GPB2, 'carcinôm dạng nang' BVNTP-GPB3 x10) vs 'ung thư (biểu mô) tuyến giáp thể nang' 3 docs (S1 N1 O1); src: BVNTP-GPB2, BVNTP-GPB3, BYT1514; house form carcinôm + 'dạng' as PTC"
+follicular carcinoma,carcinom dạng nang,freq 1 doc (10 hits); src: BVNTP-GPB3
+minimally invasive follicular carcinoma,carcinom dạng nang xâm lấn tối thiểu,"freq 2 docs ('xâm lấn tối thiểu'); src: BYT1514, BV103-UTTG; Southern GPB BVNTP-GPB3 writes 'xâm nhập tối thiểu' (1 doc, 3 hits); parent capsular / vascular invasion = xâm lấn; DECISION (invasion verb)"
+widely invasive follicular carcinoma,carcinom dạng nang xâm lấn rộng,"freq 4 docs ('xâm lấn rộng', S1 N2 O1); src: BYT1514, BV103-UTTG, TCNCYH-PDTC; vs 'xâm nhập lan rộng' 1 (BVNTP-GPB3)"
+medullary thyroid carcinoma,carcinom tuyến giáp dạng tủy (MTC),"freq 2 docs S for 'dạng tủy' (BVNTP-GPB3 'carcinôm tuyến giáp dạng tủy', BVNTP-UTTG2); src: BVNTP-GPB3, TCNCYH-MTC, BYT1514; 'thể tủy' 4 docs (S1 N2 O1; TCNCYH-MTC 'ung thư tuyến giáp thể tủy' x20); South first, same pattern as PTC; DECISION (near tie)"
+poorly differentiated thyroid carcinoma,carcinom tuyến giáp kém biệt hóa (PDTC),"freq 2 docs S exact; src: YHCM19-BGN, BVNTP-FNA, TCNCYH-PDTC; OVERRIDES parent 'ung thư biểu mô tuyến giáp biệt hóa kém': 'kém biệt hóa' 6 docs (S4 N1 O1) vs 'biệt hóa kém' 2 (S1 O1); North 'ung thư tuyến giáp thể kém biệt hóa' (TCNCYH-PDTC x15)"
+anaplastic thyroid carcinoma,carcinom tuyến giáp thoái sản (ATC),"freq 0 exact; src: parent rule anaplastic = thoái sản (BYT1514 1 hit); OVERRIDES parent UTBM form with the carcinôm house form only; DECISION: VN literature names ATC 'không biệt hóa' 9 docs (S5 N3 O1) vs 'thoái sản' 1; 'carcinôm tuyến giáp không biệt hóa' 2 docs S (YHCM19-BGN, BVNTP-FNA)"
+undifferentiated thyroid carcinoma,carcinom tuyến giáp không biệt hóa,"freq 2 docs S; src: YHCM19-BGN, BVNTP-FNA, TCNCYH-PDTC; parent undifferentiated = không biệt hóa"
+differentiated thyroid carcinoma,carcinom tuyến giáp thể biệt hóa (DTC),"freq 5 docs (S3 N1 O1); src: CTUMP23-ATG, BVNTP-UTTG, TCNCYH-LN; vs 'ung thư tuyến giáp biệt hóa' 3, 'carcinôm tuyến giáp biệt hóa' 0; clinical umbrella term, VN keeps 'ung thư'"
+differentiated thyroid cancer,carcinom tuyến giáp thể biệt hóa (DTC),"freq 5 docs (S3 N1 O1); src: CTUMP23-ATG, BVNTP-UTTG, TCNCYH-LN"
+differentiated high-grade thyroid carcinoma,carcinom tuyến giáp biệt hóa độ cao (DHGTC),"freq 0; src: none (WHO 2022 entity); built: differentiated = biệt hóa, high-grade = độ cao (parent); UNRESOLVED"
+thyroid carcinoma,carcinom tuyến giáp,"freq 5 docs S (YHCM19-BGN x19); src: YHCM19-BGN, BVNTP-GPB2, BVNTP-FNA; vs 'ung thư biểu mô tuyến giáp' 5 docs (S2 N2 O1); house form"
 thyroid cancer,ung thư tuyến giáp,"freq 14 docs (S10 N3 O1); src: YHCM18-BD351, TCNCYH-PT, BYT1514"
-oncocytic carcinoma,carcinôm tế bào ái toan,"freq 0 exact; src: BVNTP-GPB3, BYT1514, BVNTP-UTTG2; WHO 2022 name of Hürthle cell carcinoma; parent oncocytic = ái toan ('ái toan' 6 docs S5 O1); VN names the entity by Hurthle ('ung thư tế bào Hurthle' 3 docs S1 N1 O1)"
-Hürthle cell carcinoma,carcinôm tế bào Hurthle,"freq 1 doc S exact + 'ung thư tế bào Hurthle' 3 docs; src: BVNTP-GPB3, BYT1514, BV103-UTTG"
-Hurthle cell carcinoma,carcinôm tế bào Hurthle,"freq 1 doc S exact + 'ung thư tế bào Hurthle' 3 docs; src: BVNTP-GPB3, BYT1514, BV103-UTTG"
+oncocytic carcinoma,carcinom tế bào ái toan,"freq 0 exact; src: BVNTP-GPB3, BYT1514, BVNTP-UTTG2; WHO 2022 name of Hürthle cell carcinoma; parent oncocytic = ái toan ('ái toan' 6 docs S5 O1); VN names the entity by Hurthle ('ung thư tế bào Hurthle' 3 docs S1 N1 O1)"
+Hürthle cell carcinoma,carcinom tế bào Hurthle,"freq 1 doc S exact + 'ung thư tế bào Hurthle' 3 docs; src: BVNTP-GPB3, BYT1514, BV103-UTTG"
+Hurthle cell carcinoma,carcinom tế bào Hurthle,"freq 1 doc S exact + 'ung thư tế bào Hurthle' 3 docs; src: BVNTP-GPB3, BYT1514, BV103-UTTG"
 Hürthle cell,tế bào Hurthle,"freq 7 docs (S5 N1 O1); src: YHCM18-BD351, YHCM19-BGN, BVNTP-HASHI; spelling 'Hurthle' 7 docs vs 'Hürthle' 1"
 Hurthle cell,tế bào Hurthle,"freq 7 docs (S5 N1 O1); src: YHCM18-BD351, YHCM19-BGN, BVNTP-HASHI"
 oncocytic adenoma,u tuyến tế bào ái toan,"freq 0; src: built (adenoma = u tuyến, oncocytic = ái toan); old name 'u tế bào Hurthle' 2 docs S (YHCM18-BD351, YHCM19-BGN)"
 follicular adenoma,u tuyến dạng nang,"freq 3 docs S as 'u tuyến (tuyến) giáp dạng nang'; src: BVNTP-GPB2, BVNTP-FNA, YHCM09-FNA ('bướu tuyến dạng nang'); 'u dạng túi tuyến' 1 (YHCM19-BGN)"
 follicular neoplasm,tân sinh dạng nang,"freq 1 doc (YHCM19-BGN x2); src: YHCM19-BGN, BYT1514; Bethesda IV; same doc also 'u dạng túi tuyến' x3, BYT1514 'u dạng nang' 1, BV103 'tổn thương dạng nang' 1; parent neoplasm = tân sinh; LOW"
-suspicious for a follicular neoplasm,nghi ngờ tân sinh dạng nang,"freq 0 exact; src: built from 'tân sinh dạng nang' + 'nghi ngờ' (3 docs); Bethesda IV"
-NIFTP,NIFTP,"freq 0 VN form; src: none; kept English (no Vietnamese form in 33 local thyroid / endocrine documents)"
-noninvasive follicular thyroid neoplasm with papillary-like nuclear features,tân sinh tuyến giáp dạng nang không xâm lấn có đặc điểm nhân dạng nhú (NIFTP),"freq 0; src: built (neoplasm = tân sinh; 'không xâm lấn' 3 docs vs 'không xâm nhập' 1; 'đặc điểm nhân' 4 docs); UNRESOLVED"
-non-invasive follicular thyroid neoplasm with papillary-like nuclear features,tân sinh tuyến giáp dạng nang không xâm lấn có đặc điểm nhân dạng nhú (NIFTP),"freq 0; src: built as the row above (hyphenated spelling)"
-follicular tumour of uncertain malignant potential,u dạng nang có tiềm năng ác tính không chắc chắn (FT-UMP),"freq 0; src: none; built; UNRESOLVED"
+suspicious for a follicular neoplasm,nghi ngờ tân sinh dạng nang,freq 0 exact; src: built from 'tân sinh dạng nang' + 'nghi ngờ' (3 docs); Bethesda IV
+NIFTP,NIFTP,freq 0 VN form; src: none; kept English (no Vietnamese form in 33 local thyroid / endocrine documents)
+noninvasive follicular thyroid neoplasm with papillary-like nuclear features,tân sinh tuyến giáp dạng nang không xâm lấn có đặc điểm nhân dạng nhú (NIFTP),freq 0; src: built (neoplasm = tân sinh; 'không xâm lấn' 3 docs vs 'không xâm nhập' 1; 'đặc điểm nhân' 4 docs); UNRESOLVED
+non-invasive follicular thyroid neoplasm with papillary-like nuclear features,tân sinh tuyến giáp dạng nang không xâm lấn có đặc điểm nhân dạng nhú (NIFTP),freq 0; src: built as the row above (hyphenated spelling)
+follicular tumour of uncertain malignant potential,u dạng nang có tiềm năng ác tính không chắc chắn (FT-UMP),freq 0; src: none; built; UNRESOLVED
 well-differentiated tumour of uncertain malignant potential,u biệt hóa tốt có tiềm năng ác tính không chắc chắn (WDT-UMP),"freq 0; src: none; built (well-differentiated = biệt hóa tốt, parent); UNRESOLVED"
-hyalinizing trabecular tumour,u dạng bè hyalin hóa,"freq 0; src: none; built (trabecular = dạng bè; parent 'hyalinizing clear cell carcinoma' = hyalin hóa); UNRESOLVED"
-primary thyroid lymphoma,lymphôm tuyến giáp nguyên phát,"freq 1 doc ('lymphôm tuyến giáp'); src: YHCM19-BGN, BVNTP-UTTG2 ('u lympho tuyến giáp'), BVNTP-HASHI ('lymphoma tuyến giáp'); house form lymphôm (parent)"
-cribriform morular thyroid carcinoma,carcinôm tuyến giáp dạng sàng - phôi dâu,"freq 0; src: none (WHO 2022 entity); built (cribriform = dạng sàng, parent); UNRESOLVED"
+hyalinizing trabecular tumour,u dạng bè hyalin hóa,freq 0; src: none; built (trabecular = dạng bè; parent 'hyalinizing clear cell carcinoma' = hyalin hóa); UNRESOLVED
+primary thyroid lymphoma,lymphom tuyến giáp nguyên phát,"freq 1 doc ('lymphôm tuyến giáp'); src: YHCM19-BGN, BVNTP-UTTG2 ('u lympho tuyến giáp'), BVNTP-HASHI ('lymphoma tuyến giáp'); house form lymphôm (parent)"
+cribriform morular thyroid carcinoma,carcinom tuyến giáp dạng sàng - phôi dâu,"freq 0; src: none (WHO 2022 entity); built (cribriform = dạng sàng, parent); UNRESOLVED"
 tall cell subtype,biến thể tế bào cao,"freq 3 docs ('tế bào cao', S1 N1 O1); src: BVNTP-GPB2, BYT1514, BV103-UTTG; WHO 2022 'subtype': VN literature still writes 'biến thể' (5 docs)"
 tall cell variant,biến thể tế bào cao,"freq 3 docs ('tế bào cao'); src: BVNTP-GPB2, BYT1514, BV103-UTTG"
-columnar cell subtype,biến thể tế bào trụ,"freq 1 doc; src: BVNTP-GPB3; parent columnar = trụ"
-hobnail subtype,biến thể đinh mũ (hobnail),"freq 0; src: none; built; UNRESOLVED"
+columnar cell subtype,biến thể tế bào trụ,freq 1 doc; src: BVNTP-GPB3; parent columnar = trụ
+hobnail subtype,biến thể đinh mũ (hobnail),freq 0; src: none; built; UNRESOLVED
 diffuse sclerosing subtype,biến thể xơ hóa lan tỏa,"freq 1 doc exact ('xơ hóa lan tỏa' 2 docs); src: BVNTP-GPB3, BYT1514; parent sclerosing = xơ hóa"
 diffuse sclerosing variant,biến thể xơ hóa lan tỏa,"freq 1 doc exact; src: BVNTP-GPB3, BYT1514"
 solid subtype,biến thể đặc,"freq 0 exact ('dạng đặc' 3 docs); src: YHCM19-BGN, BYT1514; parent solid = dạng đặc"
 follicular variant,biến thể nang,"freq 2 docs S; src: YHCM19-BGN, BVNTP-GPB3 ('carcinôm dạng nhú biến thể nang')"
 follicular subtype,biến thể nang,"freq 2 docs S; src: YHCM19-BGN, BVNTP-GPB3"
-infiltrative follicular subtype,biến thể nang thâm nhiễm,"freq 0; src: built (parent infiltrative border = bờ thâm nhiễm)"
+infiltrative follicular subtype,biến thể nang thâm nhiễm,freq 0; src: built (parent infiltrative border = bờ thâm nhiễm)
 classic subtype,biến thể kinh điển,"freq 3 docs ('kinh điển', S2 O1) vs 'cổ điển' 1 (BYT1514); src: YHCM18-RFA, BVNTP-HASHI, BYT1514"
-nuclear features of papillary thyroid carcinoma,đặc điểm nhân của carcinôm tuyến giáp dạng nhú,"freq 4 docs ('đặc điểm nhân'); src: YHCM19-BGN, BVNTP-FNA, BYT1514"
-papillary-like nuclear features,đặc điểm nhân dạng nhú,"freq 0 exact; src: built ('đặc điểm nhân' 4 docs + dạng nhú)"
-nuclear clearing,nhân sáng,"freq 1 doc; src: BVNTP-GPB3; LOW"
-ground-glass nuclei,nhân dạng kính mờ,"freq 0; src: none; built; LOW"
+nuclear features of papillary thyroid carcinoma,đặc điểm nhân của carcinom tuyến giáp dạng nhú,"freq 4 docs ('đặc điểm nhân'); src: YHCM19-BGN, BVNTP-FNA, BYT1514"
+papillary-like nuclear features,đặc điểm nhân dạng nhú,freq 0 exact; src: built ('đặc điểm nhân' 4 docs + dạng nhú)
+nuclear clearing,nhân sáng,freq 1 doc; src: BVNTP-GPB3; LOW
+ground-glass nuclei,nhân dạng kính mờ,freq 0; src: none; built; LOW
 nuclear overlapping,nhân chồng chất,"freq 2 docs S ('chồng chất'); src: BVNTP-GPB3, BVNTP-FNA"
 nuclear enlargement,nhân to,"freq 3 docs (S2 O1); src: BVNTP-GPB2, BVNTP-FNA, BYT1514"
 intranuclear pseudoinclusion,giả thể vùi trong nhân,"freq 1 doc ('giả thể vùi') + 'thể vùi trong nhân' 2 docs S; src: BVNTP-FNA, BVNTP-GPB3; = parent nuclear pseudoinclusion / pseudoinclusion"
 psammoma body,thể cát,"freq 2 docs (BVNTP-GPB3, BYT1514) vs 'thể psammoma' 3 (S2 N1); src: BVNTP-GPB3, BYT1514; parent note psammoma body = thể cát (user deck)"
 colloid,chất keo,"freq 6 docs (S5 O1); src: BVNTP-GPB2, BVNTP-FNA, BYT1514"
-colloid nodule,phình giáp keo,"freq 0 in corpus; src: user glossary review (translator/glossary/glossary_review.csv: Colloid nodule -> Phình giáp keo); LOW"
+colloid nodule,phình giáp keo,freq 0 in corpus; src: user glossary review (translator/glossary/glossary_review.csv: Colloid nodule -> Phình giáp keo); LOW
 thyroid follicle,nang giáp,"freq 7 docs (S6 N1); src: BVNTP-GPB1, BVNTP-GPB2, YHCM19-BGN"
 follicular cell,tế bào nang giáp,"freq 6 docs (S5 N1); src: BVNTP-GPB2, BVNTP-FNA, TCNCYH-PDTC; 'tế bào tuyến giáp' 8 docs (generic)"
-microfollicle,vi nang,"freq 1 doc; src: BVNTP-FNA; BVNTP-GPB2 'nang nhỏ'; LOW"
+microfollicle,vi nang,freq 1 doc; src: BVNTP-FNA; BVNTP-GPB2 'nang nhỏ'; LOW
 C cell,tế bào C,"freq 5 docs (S3 N2); src: BVNTP-GPB1, BVNTP-GPB3, TCNCYH-MTC"
-parafollicular cell,tế bào C cận nang,"freq 0 exact; src: built ('tế bào C' 5 docs); LOW"
-C-cell hyperplasia,tăng sản tế bào C,"freq 1 doc; src: BV103-UTTG; parent hyperplasia = tăng sản"
+parafollicular cell,tế bào C cận nang,freq 0 exact; src: built ('tế bào C' 5 docs); LOW
+C-cell hyperplasia,tăng sản tế bào C,freq 1 doc; src: BV103-UTTG; parent hyperplasia = tăng sản
 germinal centre,trung tâm mầm,"freq 4 docs (S3 O1); src: BVNTP-GPB1, BVNTP-FNA, BYT1514"
 goiter,phình giáp,"freq 4 docs S (Southern GPB: YHCM19-BGN result table, BVNTP-GPB1/2, BVNTP-FNA); src: YHCM19-BGN, BVNTP-GPB2, BVNTP-FNA; OVERRIDES parent 'nhân giáp' (the parent value of thyroid nodule); clinical 'bướu giáp' 8 docs (S6 N1 O1); user thyroid deck: phình giáp; DECISION"
 goitre,phình giáp,"freq 4 docs S; src: YHCM19-BGN, BVNTP-GPB2, BVNTP-FNA; British spelling of the row above"
 multinodular goiter,phình giáp đa nhân,"freq 0 exact; src: BVNTP-GPB1 ('phình giáp đa cục'), BVNTP-FNA ('phình giáp đa hạt'), YHCM19-BGN ('bướu giáp đa nhân'); clinical 'bướu giáp đa nhân' 3 docs S; root kept as goiter; DECISION"
-multinodular goitre,phình giáp đa nhân,"freq 0 exact; src: as multinodular goiter (British spelling)"
-diffuse goiter,phình giáp lan tỏa,"freq 1 doc; src: BVNTP-GPB2"
-dyshormonogenetic goiter,phình giáp loạn sinh hormon,"freq 1 doc; src: BVNTP-GPB2 ('phình giáp loạn sinh hormôn')"
-diffuse toxic goiter,phình giáp độc lan tỏa,"freq 1 doc; src: BVNTP-GPB2"
+multinodular goitre,phình giáp đa nhân,freq 0 exact; src: as multinodular goiter (British spelling)
+diffuse goiter,phình giáp lan tỏa,freq 1 doc; src: BVNTP-GPB2
+dyshormonogenetic goiter,phình giáp loạn sinh hormon,freq 1 doc; src: BVNTP-GPB2 ('phình giáp loạn sinh hormôn')
+diffuse toxic goiter,phình giáp độc lan tỏa,freq 1 doc; src: BVNTP-GPB2
 Graves disease,bệnh Basedow (Graves),"freq 4 docs 'bệnh Basedow' ('Basedow' 6 docs S5 O1) vs 'bệnh Graves' 1; src: BVNTP-GPB2, BVNTP-HASHI, BYT1514"
 Hashimoto thyroiditis,viêm giáp Hashimoto,"freq 8 docs S vs 'viêm tuyến giáp Hashimoto' 3 (S2 O1); src: YHCM19-BGN, BVNTP-GPB1, BVNTP-HASHI"
 Hashimoto's thyroiditis,viêm giáp Hashimoto,"freq 8 docs S; src: YHCM19-BGN, BVNTP-GPB1, BVNTP-HASHI; possessive spelling of the row above"
-lymphocytic thyroiditis,viêm giáp lympho bào,"freq 0 exact ('viêm tuyến giáp lympho' 1); src: BVNTP-HASHI; built: viêm giáp + parent lymphocyte = lympho bào; LOW"
-chronic lymphocytic thyroiditis,viêm giáp lympho bào mạn tính,"freq 0 exact ('viêm giáp mạn' 2 docs S); src: YHCM16-SG, BVNTP-HASHI; built"
+lymphocytic thyroiditis,viêm giáp lymphô bào,freq 0 exact ('viêm tuyến giáp lympho' 1); src: BVNTP-HASHI; built: viêm giáp + parent lymphocyte = lympho bào; LOW
+chronic lymphocytic thyroiditis,viêm giáp lymphô bào mạn tính,"freq 0 exact ('viêm giáp mạn' 2 docs S); src: YHCM16-SG, BVNTP-HASHI; built"
 autoimmune thyroiditis,viêm giáp tự miễn,"freq 4 docs S vs 'viêm tuyến giáp tự miễn' 2; src: YHCM16-SG, BVNTP-GPB1, BVNTP-UTTG2"
 thyroiditis,viêm giáp,"freq 9 docs S (65 hits) vs 'viêm tuyến giáp' 7 docs (S6 O1, 27 hits); src: YHCM16-SG, BVNTP-GPB1, BVNTP-HASHI"
 subacute thyroiditis,viêm giáp bán cấp,"freq 2 docs S vs 'viêm tuyến giáp bán cấp' 2 (tie); src: YHCM19-BGN, BVNTP-HASHI; same root as thyroiditis row"
-subacute granulomatous thyroiditis,viêm giáp bán cấp dạng u hạt (de Quervain),"freq 0 exact; src: BVNTP-GPB1 (de Quervain); built: granuloma = u hạt (parent)"
+subacute granulomatous thyroiditis,viêm giáp bán cấp dạng u hạt (de Quervain),freq 0 exact; src: BVNTP-GPB1 (de Quervain); built: granuloma = u hạt (parent)
 Riedel thyroiditis,viêm giáp Riedel,"freq 2 docs S; src: YHCM16-SG, BVNTP-GPB1"
 hypothyroidism,suy giáp,"freq 8 docs (S6 N1 O1) vs 'nhược giáp' 3 (S2 O1); src: YHCM16-SG, BVNTP-HASHI, BYT1514"
 euthyroid,bình giáp,"freq 8 docs; src: YHCM16-SG, BVNTP-GPB1, BYT1514"
@@ -83,12 +83,12 @@ ectopic thyroid tissue,mô giáp lạc chỗ,"freq 1 doc exact (5 hits); 'giáp 
 thyroglossal duct cyst,nang ống giáp lưỡi,"freq 1 doc exact ('ống giáp lưỡi' 3 docs); src: BVNTP-UTTG2, BVNTP-GPB1; = pathology-headneck"
 Bethesda System for Reporting Thyroid Cytopathology,Hệ thống Bethesda báo cáo tế bào học tuyến giáp (TBSRTC),"freq 2 docs ('phân loại Bethesda'); src: YHCM19-BGN, BVNTP-FNA; built name; Bethesda kept"
 Bethesda category,nhóm Bethesda,"freq 7 docs ('nhóm I-VI' in Bethesda tables, S5 N1 O1); src: YHCM19-BGN, PNT23-CT, BVNTP-FNA; title JCMHCH 'Bethesda nhóm IV'"
-nondiagnostic,không đủ tiêu chuẩn chẩn đoán,"freq 1 doc; src: BVNTP-FNA; Bethesda I; LOW"
-non-diagnostic,không đủ tiêu chuẩn chẩn đoán,"freq 1 doc; src: BVNTP-FNA; Bethesda I; LOW"
+nondiagnostic,không đủ tiêu chuẩn chẩn đoán,freq 1 doc; src: BVNTP-FNA; Bethesda I; LOW
+non-diagnostic,không đủ tiêu chuẩn chẩn đoán,freq 1 doc; src: BVNTP-FNA; Bethesda I; LOW
 atypia of undetermined significance,không điển hình có ý nghĩa không xác định (AUS),"freq 1 doc exact; src: YHCM18-CCG, BVNTP-FNA ('tế bào không điển hình'); Bethesda III; parent atypical = không điển hình"
-follicular lesion of undetermined significance,tổn thương dạng nang có ý nghĩa không xác định (FLUS),"freq 0 exact; src: built as AUS row; Bethesda III (2010-2017)"
+follicular lesion of undetermined significance,tổn thương dạng nang có ý nghĩa không xác định (FLUS),freq 0 exact; src: built as AUS row; Bethesda III (2010-2017)
 suspicious for malignancy,nghi ngờ ác tính,"freq 3 docs S; src: YHCM19-BGN, CTUMP23-TIRADS, BVNTP-FNA; Bethesda V"
-risk of malignancy,nguy cơ ác tính,"freq 1 doc (3 hits); src: CTUMP23-TIRADS; 'tỷ lệ ác tính' 4 docs is the observed rate"
+risk of malignancy,nguy cơ ác tính,freq 1 doc (3 hits); src: CTUMP23-TIRADS; 'tỷ lệ ác tính' 4 docs is the observed rate
 TI-RADS,TI-RADS,"freq 7 docs ('TI-RADS' / 'TIRADS'); src: CTUMP23-TIRADS, TCNCYH-LN, BYT1514; kept English"
 microcalcification,vi vôi hóa,"freq 7 docs (S3 N3 O1); src: CTUMP23-TIRADS, TCNCYH-MTC, BYT1514"
 taller-than-wide,chiều cao lớn hơn chiều rộng,"freq 2 docs; src: BVNTP-UTTG, BYT1514"
@@ -96,29 +96,29 @@ hypoechoic,giảm âm,"freq 7 docs (S3 N3 O1) vs 'phản âm kém' 1 (YHCM19-BGN
 thyroidectomy,cắt tuyến giáp,"freq 7 docs (S5 N1 O1); src: YHCM18-BD351, CTUMP23-ATG, BYT1514"
 total thyroidectomy,cắt toàn bộ tuyến giáp,"freq 8 docs (S2 N5 O1); src: BVNTP-UTTG, TCNCYH-LN, BYT1514; vs 'cắt giáp toàn bộ' 3, 'cắt tuyến giáp toàn bộ' 3, 'cắt trọn tuyến giáp' 2 (S)"
 near-total thyroidectomy,cắt gần trọn tuyến giáp,"freq 1 doc + 'cắt giáp gần trọn' 1 (both S); src: YHCM21-CR120, BVNTP-GPB2"
-subtotal thyroidectomy,cắt bán phần tuyến giáp,"freq 1 doc; src: CTUMP23-ATG"
+subtotal thyroidectomy,cắt bán phần tuyến giáp,freq 1 doc; src: CTUMP23-ATG
 thyroid lobectomy,cắt thùy tuyến giáp,"freq 0 exact ('cắt thùy' 5 docs, 'cắt 1 thùy (giáp)' 3); src: BVNTP-GPB3, TCNCYH-PT, BYT1514; parent lobectomy = cắt thùy"
-hemithyroidectomy,cắt thùy tuyến giáp,"freq 0 exact; src: as thyroid lobectomy"
-isthmusectomy,cắt eo tuyến giáp,"freq 1 doc (3 hits); src: YHCM18-BD351"
+hemithyroidectomy,cắt thùy tuyến giáp,freq 0 exact; src: as thyroid lobectomy
+isthmusectomy,cắt eo tuyến giáp,freq 1 doc (3 hits); src: YHCM18-BD351
 completion thyroidectomy,cắt hoàn tất tuyến giáp,"freq 0 ('phẫu thuật lại' 3 docs, generic); src: none; built; UNRESOLVED"
 central neck dissection,nạo vét hạch cổ trung tâm,"freq 0 exact; 'vét hạch cổ' 7 docs (S1 N5 O1) vs 'nạo hạch cổ' 2 (S1 N1); src: BYT1514, TCNCYH-LN, BVNTP-UTTG; parent neck dissection = nạo vét hạch cổ; Southern surgery also 'nạo hạch' (YHCM18-BD351)"
-lateral neck dissection,nạo vét hạch cổ bên,"freq 0 exact; src: as central neck dissection; 'hạch cổ bên' 4 docs"
+lateral neck dissection,nạo vét hạch cổ bên,freq 0 exact; src: as central neck dissection; 'hạch cổ bên' 4 docs
 level VI,nhóm VI,"freq 7 docs (S5 N1 O1); src: YHCM19-BGN, BVNTP-UTTG, BYT1514; user rule level I-VI = nhóm I-VI (parent prompt)"
 central neck lymph node,hạch cổ trung tâm,"freq 5 docs (S1 N4); src: PNT23-CT, TCNCYH-MTC, TCNCYH-LN"
 lateral neck lymph node,hạch cổ bên,"freq 4 docs (S1 N3); src: PNT23-CT, TCNCYH-MTC, TCNCYH-PDTC"
 extrathyroidal extension,xâm lấn ra ngoài tuyến giáp (ETE),"freq 3 docs (S2 O1) vs 'xâm lấn ngoài tuyến giáp' 1 (N); src: CTUMP23-TIRADS, BVNTP-UTTG, BYT1514; same pattern as pathology-headneck ENE row"
 gross extrathyroidal extension,xâm lấn ra ngoài tuyến giáp đại thể,"freq 0; src: built (gross = đại thể, parent)"
-minimal extrathyroidal extension,xâm lấn ra ngoài tuyến giáp tối thiểu,"freq 0; src: built"
-strap muscles,cơ trước giáp,"freq 1 doc; src: TCNCYH-LN; 'cơ ức giáp' (one strap muscle) 2 docs; LOW"
-extranodal extension,xâm lấn ra ngoài hạch (ENE),"freq 1 doc 'xâm lấn ngoài hạch' (BYT1514 x17); src: BYT1514; = pathology-headneck (sibling value)"
+minimal extrathyroidal extension,xâm lấn ra ngoài tuyến giáp tối thiểu,freq 0; src: built
+strap muscles,cơ trước giáp,freq 1 doc; src: TCNCYH-LN; 'cơ ức giáp' (one strap muscle) 2 docs; LOW
+extranodal extension,xâm lấn ra ngoài hạch (ENE),freq 1 doc 'xâm lấn ngoài hạch' (BYT1514 x17); src: BYT1514; = pathology-headneck (sibling value)
 recurrent laryngeal nerve,thần kinh thanh quản quặt ngược,"freq 3 docs exact (S1 N1 O1) + 'thần kinh quặt ngược' 5 docs; src: BVNTP-UTTG, BYT1514, BV103-UTTG"
 frozen section,sinh thiết tức thì,"freq 3 docs (S1 N1 O1) vs 'cắt lạnh' 1; src: TCNCYH-MTC, BVNTP-UTTG, BYT1514; OVERRIDES parent 'lát cắt lạnh' (roadmap decision 6); = pathology-headneck"
 radioactive iodine,iod phóng xạ,"freq 7 docs (S6 O1) vs 'i ốt phóng xạ' 1 (BV103-UTTG); src: BVNTP-UTTG2, CTUMP23-ATG, BYT1514"
-radioactive iodine-refractory,kháng iod phóng xạ,"freq 0; src: built; LOW"
+radioactive iodine-refractory,kháng iod phóng xạ,freq 0; src: built; LOW
 calcitonin,calcitonin,"freq 7 docs; src: TCNCYH-MTC, BVNTP-GPB3, BYT1514; kept English"
 BRAF V600E,BRAF V600E,"freq 2 docs; src: CTUMP23-TIRADS, BYT1514; kept English; = molecular-pathology"
-RET/PTC rearrangement,tái sắp xếp gen RET/PTC,"freq 0; src: built as molecular-pathology 'ALK rearrangement = tái sắp xếp gen ALK'; gene names kept"
-PAX8::PPARG fusion,dung hợp gen PAX8::PPARG,"freq 0; src: built as molecular-pathology 'ALK fusion = dung hợp gen ALK'"
+RET/PTC rearrangement,tái sắp xếp gen RET/PTC,freq 0; src: built as molecular-pathology 'ALK rearrangement = tái sắp xếp gen ALK'; gene names kept
+PAX8::PPARG fusion,dung hợp gen PAX8::PPARG,freq 0; src: built as molecular-pathology 'ALK fusion = dung hợp gen ALK'
 RAS mutation,đột biến gen RAS,"freq 0 exact ('RAS' 2 docs); src: BVNTP-UTTG, BYT1514; form as molecular-pathology 'KRAS mutation'"
 germline RET mutation,đột biến dòng mầm gen RET,"freq 0; src: built (germline mutation = đột biến dòng mầm, molecular-pathology)"
 multiple endocrine neoplasia,đa u tuyến nội tiết (MEN),"freq 2 docs; src: BYT1514, BVDHYD-NET"
@@ -126,11 +126,11 @@ multiple endocrine neoplasia type 1,đa u tuyến nội tiết týp 1 (MEN1),"fr
 multiple endocrine neoplasia type 2,đa u tuyến nội tiết týp 2 (MEN2),"freq 2 docs ('MEN 2'); src: BVNTP-UTTG, BYT1514"
 parathyroid gland,tuyến cận giáp,"freq 4 docs (S3 O1); src: YHCM18-CCG, BVNTP-GPB3, BYT1514"
 parathyroid adenoma,u tuyến cận giáp,"freq 2 docs (S1 N1) vs 'adenoma tuyến cận giáp' 1 (S); src: YHCM18-CCG, TCNCYH-CCG; parent adenoma = u tuyến"
-parathyroid hyperplasia,tăng sản tuyến cận giáp,"freq 1 doc; src: TCNCYH-CCG"
+parathyroid hyperplasia,tăng sản tuyến cận giáp,freq 1 doc; src: TCNCYH-CCG
 atypical parathyroid tumour,u tuyến cận giáp không điển hình,"freq 0; src: built (WHO 2022; atypical = không điển hình, parent); LOW"
-parathyroid carcinoma,carcinôm tuyến cận giáp,"freq 0 exact ('ung thư tuyến cận giáp' 1, N); src: TCNCYH-CCG; house form; LOW"
+parathyroid carcinoma,carcinom tuyến cận giáp,"freq 0 exact ('ung thư tuyến cận giáp' 1, N); src: TCNCYH-CCG; house form; LOW"
 primary hyperparathyroidism,cường cận giáp nguyên phát,"freq 2 docs (S1 N1, 35 hits); src: YHCM18-CCG, TCNCYH-CCG"
-secondary hyperparathyroidism,cường cận giáp thứ phát,"freq 1 doc; src: YHCM18-CCG"
+secondary hyperparathyroidism,cường cận giáp thứ phát,freq 1 doc; src: YHCM18-CCG
 hyperparathyroidism,cường cận giáp,"freq 3 docs; src: YHCM18-CCG, TCNCYH-CCG, BV103-UTTG"
 hypoparathyroidism,suy cận giáp,"freq 3 docs (S2 N1) vs 'suy tuyến cận giáp' 1 (TCNCYH-PT); src: BVNTP-HASHI, YHCM18-RFA, BV103-UTTG"
 hypocalcemia,hạ canxi máu,"freq 2 docs (S1 N1) vs 'hạ calci máu' 1 (BYT1514); src: YHCM21-CR120, TCNCYH-PT"
@@ -140,32 +140,32 @@ adrenal gland,tuyến thượng thận,"freq 15 docs (S11 N3 O1); src: YHCM16-US
 adrenal cortex,vỏ thượng thận,"freq 4 docs (S2 N1 O1); src: BVNTP-ACC, BVNTP-UTTT, BYT1514"
 adrenal medulla,tủy thượng thận,"freq 4 docs (S2 N1 O1); src: BVNTP-PHEO, BVNTP-UTTT, JMPM-TTT"
 adrenal cortical adenoma,u tuyến vỏ thượng thận,"freq 1 doc exact + 'u tuyến thượng thận' 2 docs; src: JMPM-TTT, YHCM16-USPM; parent adenoma = u tuyến"
-adrenocortical adenoma,u tuyến vỏ thượng thận,"freq 1 doc exact; src: JMPM-TTT"
-adrenal cortical carcinoma,carcinôm vỏ thượng thận (ACC),"freq 0 exact; src: BVNTP-ACC ('ung thư biểu mô vỏ thượng thận' x16), BVNTP-UTTT + BYT1514 ('ung thư vỏ thượng thận' 2 docs); house form carcinôm; DECISION"
-adrenocortical carcinoma,carcinôm vỏ thượng thận (ACC),"freq 0 exact; src: BVNTP-ACC, BVNTP-UTTT, BYT1514; as the row above"
+adrenocortical adenoma,u tuyến vỏ thượng thận,freq 1 doc exact; src: JMPM-TTT
+adrenal cortical carcinoma,carcinom vỏ thượng thận (ACC),"freq 0 exact; src: BVNTP-ACC ('ung thư biểu mô vỏ thượng thận' x16), BVNTP-UTTT + BYT1514 ('ung thư vỏ thượng thận' 2 docs); house form carcinôm; DECISION"
+adrenocortical carcinoma,carcinom vỏ thượng thận (ACC),"freq 0 exact; src: BVNTP-ACC, BVNTP-UTTT, BYT1514; as the row above"
 Weiss criteria,tiêu chuẩn Weiss,"freq 0 (adrenal sense); src: none; built, name kept"
 pheochromocytoma,u tế bào ưa crom (pheochromocytoma),"freq 2 docs ('u tế bào ưa crom': BYT1514 x20, BVNTP-UTTT x20) vs 'u tủy thượng thận' 1 (BVNTP-PHEO title), 'u sắc bào' 1 (JMPM-TTT, N); src: BVNTP-UTTT, BYT1514, BVNTP-PHEO; EN kept in brackets (BVNTP-PHEO x16)"
-paraganglioma,u cận hạch (paraganglioma),"freq 1 doc (Southern GPB x3); src: YHCM16-USPM; BVNTP-PHEO 'u hạch cận giao cảm'; LOW"
+paraganglioma,u cận hạch (paraganglioma),freq 1 doc (Southern GPB x3); src: YHCM16-USPM; BVNTP-PHEO 'u hạch cận giao cảm'; LOW
 neuroblastoma,u nguyên bào thần kinh,"freq 4 docs (S2 N1 O1); src: YHCM16-ARID1B, TCNCYH-NB, BYT1514"
 Cushing syndrome,hội chứng Cushing,"freq 6 docs; src: BVNTP-ACC, BVDHYD-NET, BYT1514"
 adrenal incidentaloma,u tuyến thượng thận phát hiện tình cờ,"freq 1 doc ('bướu tuyến thượng thận phát hiện tình cờ', + EN incidentaloma); src: JMPM-TTT; LOW"
 pituitary gland,tuyến yên,"freq 5 docs; src: BVNTP-PIT, YHCM16-SG, BYT1514"
 pituitary adenoma,u tuyến yên,"freq 3 docs (S2 O1); src: BVNTP-PIT, YHCM16-SG, BYT1514"
-pituitary neuroendocrine tumour,u thần kinh nội tiết tuyến yên (PitNET),"freq 0; src: none (WHO 2022 name); built from the NET row (= pathology-gi 'u thần kinh nội tiết'); UNRESOLVED"
-pituitary neuroendocrine tumor,u thần kinh nội tiết tuyến yên (PitNET),"freq 0; src: none; as the row above (US spelling)"
-PitNET,PitNET,"freq 0 VN form; src: none; kept English"
-prolactinoma,u tuyến yên tiết prolactin,"freq 1 doc ('u tiết prolactin' x4); src: BVNTP-PIT"
-acromegaly,bệnh to đầu chi,"freq 1 doc; src: BVNTP-PIT"
+pituitary neuroendocrine tumour,u thần kinh nội tiết tuyến yên (PitNET),freq 0; src: none (WHO 2022 name); built from the NET row (= pathology-gi 'u thần kinh nội tiết'); UNRESOLVED
+pituitary neuroendocrine tumor,u thần kinh nội tiết tuyến yên (PitNET),freq 0; src: none; as the row above (US spelling)
+PitNET,PitNET,freq 0 VN form; src: none; kept English
+prolactinoma,u tuyến yên tiết prolactin,freq 1 doc ('u tiết prolactin' x4); src: BVNTP-PIT
+acromegaly,bệnh to đầu chi,freq 1 doc; src: BVNTP-PIT
 craniopharyngioma,u sọ hầu,"freq 2 docs (S1 O1); src: BVNTP-PIT, BYT1514"
 neuroendocrine tumour,u thần kinh nội tiết (NET),"freq 2 docs (S1 O1, 72 hits); src: BVDHYD-NET, BYT1514; = pathology-gi (sibling value)"
 neuroendocrine tumor,u thần kinh nội tiết (NET),"freq 2 docs; src: BVDHYD-NET, BYT1514; = pathology-gi"
-well-differentiated neuroendocrine tumour,u thần kinh nội tiết biệt hóa tốt,"freq 1 doc ('NET ... biệt hóa tốt'); src: BVDHYD-NET"
-neuroendocrine carcinoma,ung thư biểu mô thần kinh nội tiết (NEC),"freq 0 exact ('carcinoma thần kinh nội tiết' 1 doc, 'ung thư thần kinh nội tiết' 1); src: BVDHYD-NET; = pathology-gi value (siblings must agree); house form not applied here, see MINING_REPORT"
+well-differentiated neuroendocrine tumour,u thần kinh nội tiết biệt hóa tốt,freq 1 doc ('NET ... biệt hóa tốt'); src: BVDHYD-NET
+neuroendocrine carcinoma,carcinom thần kinh nội tiết (NEC),"freq 0 exact ('carcinoma thần kinh nội tiết' 1 doc, 'ung thư thần kinh nội tiết' 1); src: BVDHYD-NET; = pathology-gi value (siblings must agree); house form not applied here, see MINING_REPORT"
 neuroendocrine neoplasm,tân sinh thần kinh nội tiết (NEN),"freq 0; src: built (neoplasm = tân sinh, parent; 'thần kinh nội tiết' 6 docs vs 'nội tiết thần kinh' 1)"
-Ki-67 index,chỉ số Ki-67,"freq 1 doc (10 hits); src: BVDHYD-NET; = pathology-breast / pathology-hpb"
-Ki-67 proliferation index,chỉ số tăng sinh Ki-67,"freq 1 doc ('chỉ số tăng sinh'); src: BVDHYD-NET"
-mitotic count,số phân bào,"freq 1 doc (3 hits); src: BVDHYD-NET; = pathology-breast"
+Ki-67 index,chỉ số Ki-67,freq 1 doc (10 hits); src: BVDHYD-NET; = pathology-breast / pathology-hpb
+Ki-67 proliferation index,chỉ số tăng sinh Ki-67,freq 1 doc ('chỉ số tăng sinh'); src: BVDHYD-NET
+mitotic count,số phân bào,freq 1 doc (3 hits); src: BVDHYD-NET; = pathology-breast
 chromogranin A,chromogranin A,"freq 4 docs; src: BVDHYD-NET, TCNCYH-NB, BYT1514; kept English"
 synaptophysin,synaptophysin,"freq 4 docs; src: BVDHYD-NET, TCNCYH-NB, BYT1514; kept English"
-INSM1,INSM1,"freq 1 doc; src: BVDHYD-NET; kept English"
-somatostatin receptor,thụ thể somatostatin (SSTR),"freq 1 doc; src: BVDHYD-NET"
+INSM1,INSM1,freq 1 doc; src: BVDHYD-NET; kept English
+somatostatin receptor,thụ thể somatostatin (SSTR),freq 1 doc; src: BVDHYD-NET

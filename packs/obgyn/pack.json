@@ -1,0 +1,7 @@
+{"id": "obgyn", "version": "0.1.1", "name": "Sản phụ khoa",
+ "detect": ["obstetric", "obstetrics", "gestational age", "trimester", "caesarean", "cesarean", "postpartum",
+            "preeclampsia", "pre-eclampsia", "eclampsia", "placenta previa", "placenta praevia", "placenta accreta",
+            "placental abruption", "postpartum haemorrhage", "postpartum hemorrhage", "miscarriage",
+            "ectopic pregnancy", "preterm birth", "gestational diabetes", "antenatal", "intrapartum",
+            "nulliparous", "multiparous", "Apgar", "cardiotocography", "endometriosis", "uterine fibroids",
+            "in vitro fertilization", "embryo transfer"]}

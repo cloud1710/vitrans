@@ -1,9 +1,9 @@
 import pytest
 
 from vitranslate.packs import TermFix
-from vitranslate.qa import (apply_term_fixes, copied_english, english_left, fix_latex, glossary_misses, latex_markup,
-                            missing_tokens, new_latex, numbers_changed, omitted_clauses, single_english, source_case,
-                            strip_leaks, suspicious_tokens)
+from vitranslate.qa import (apply_term_fixes, copied_english, english_left, fix_latex, fix_title_order, glossary_misses,
+                            latex_markup, missing_tokens, new_latex, numbers_changed, omitted_clauses, single_english,
+                            source_case, strip_leaks, suspicious_tokens)
 
 
 def test_strip_leaks_and_keep_source_edges():
@@ -24,6 +24,12 @@ def test_english_left():
 def test_numbers_changed():
     assert not numbers_changed("accounts for 0.36-3% of 7,016 cases", "chi\u1ebfm 0,36-3% c\u1ee7a 7.016 ca")
     assert numbers_changed("in 2 months", "trong 3 th\u00e1ng")
+    # an English month name becomes its number in Vietnamese ("November" -> "th\u00e1ng 11")
+    assert not numbers_changed("1-3 November 2026", "1-3 th\u00e1ng 11 n\u0103m 2026")
+    assert not numbers_changed("1-3 NOVEMBER 2026", "1\u20133 TH\u00c1NG 11 N\u0102M 2026")
+    assert not numbers_changed("Sept 2019 to May 2020", "th\u00e1ng 9/2019 \u0111\u1ebfn th\u00e1ng 5/2020")
+    assert numbers_changed("1-3 November 2026", "1-3 th\u00e1ng 12 n\u0103m 2026")
+    assert numbers_changed("in May", "trong th\u00e1ng 5 v\u00e0 6")
 
 
 def test_term_fixes_source_gated_and_case():
@@ -385,3 +391,72 @@ def test_single_english_finds_one_word_copied_into_a_vietnamese_answer():
 ])
 def test_single_english_leaves_names_codes_species_units_and_loanwords(src, out):
     assert single_english(src, out) == []
+
+
+# Vietnamese academic titles (his rule): before the name, GS. / PGS. > TS. > ThS. > BS. / CN. / KS., a dot after each
+@pytest.mark.parametrize("text, want", [
+    ("BS. TS. Jane Doe \u0111\u00e3 xem l\u1ea1i", "TS. BS. Jane Doe \u0111\u00e3 xem l\u1ea1i"),
+    ("BS TS Jane Doe", "TS. BS. Jane Doe"),
+    ("TS BS Nguyen A", "TS. BS. Nguyen A"),
+    ("GS TS BS John Smith", "GS. TS. BS. John Smith"),
+    ("BS TS PGS Mei-Ling Tran", "PGS. TS. BS. Mei-Ling Tran"),
+    ("BS. ThS. Nguy\u1ec5n V\u0103n A", "ThS. BS. Nguy\u1ec5n V\u0103n A"),
+    ("KS. ThS. Tran B", "ThS. KS. Tran B"),
+    ("CN TS Tran B", "TS. CN. Tran B"),
+    ("BS Jane Doe", "BS. Jane Doe"),
+    ("TS. BS. TS. Jane Doe", "TS. BS. Jane Doe"),  # a title said twice is written once
+    ("<g1>BS TS Jane Doe</g1> \u0111\u00e3 k\u00fd", "<g1>TS. BS. Jane Doe</g1> \u0111\u00e3 k\u00fd"),
+    ("(BS. TS. Jane Doe)", "(TS. BS. Jane Doe)"),
+    ("BS. TS. <g1>Jane Doe</g1>, MD", "TS. BS. <g1>Jane Doe</g1>, MD"),  # the name in its own formatting
+])
+def test_title_order_puts_titles_in_order_with_a_dot_after_each(text, want):
+    assert fix_title_order(text) == (want, ["title-order"])
+
+
+@pytest.mark.parametrize("text", [
+    "TS. BS. Jane Doe", "GS. TS. BS. John Smith", "PGS. TS. Nguyen A", "ThS. BS. Tran B",
+    "C\u00e1c BS v\u00e0 TS",                         # no name after them
+    "BS CKII Nguyen A",                               # a run must sit right before a capitalised name
+    "d\u00e2y th\u1ea7n kinh s\u1ecd (CN VII)",       # cranial nerve VII: an all-capital word is no name
+    "TSH v\u00e0 BS",
+    "Jane Doe, BS, TS",                               # after the name: left alone
+    "<g1>BS. TS.</g1> Jane Doe",                      # a closing tag between the titles and the name
+    "BS-TS Nguyen A", "PGS.TS. Nguyen A",             # glued forms are not runs
+    "bs ts Jane Doe", "BS TS 2 l\u1ea7n", "BS TS",
+])
+def test_title_order_leaves_other_text_alone(text):
+    assert fix_title_order(text) == (text, [])
+
+
+def test_title_order_logs_each_rewritten_run_once():
+    log = []
+    out, applied = fix_title_order("BS TS Jane Doe v\u00e0 BS. TS. John Smith, BS. TS. Nguyen A; TS. BS. Tran B", log)
+    assert out == "TS. BS. Jane Doe v\u00e0 TS. BS. John Smith, TS. BS. Nguyen A; TS. BS. Tran B"
+    assert applied == ["title-order"]
+    assert log == [{"en": "title-order", "from": "BS TS", "to": "TS. BS."},
+                   {"en": "title-order", "from": "BS. TS.", "to": "TS. BS."}]
+
+
+def test_suspicious_tokens_accept_the_words_of_the_active_packs():
+    allowed = frozenset({"lymph\u00f4"})
+    assert suspicious_tokens("Nhi\u1ec1u lymph\u00f4 b\u00e0o", "Many lymphocytes") == ["lymph\u00f4"]  # no pack
+    assert suspicious_tokens("Nhi\u1ec1u lymph\u00f4 b\u00e0o", "Many lymphocytes", allowed) == []
+    assert suspicious_tokens("Lymph\u00f4 b\u00e0o; LYMPH\u00d4 B\u00c0O", "", allowed) == []  # in any case
+    assert suspicious_tokens("carcin\u00f4m v\u00e0 lymph\u00f4 b\u00e0o", "", allowed) == ["carcin\u00f4m"]
+
+
+def test_term_fixes_log_what_was_found_and_what_was_written():
+    fixes = [TermFix("lung", "ph\u1ed5i", ["pulm\u00f4n"]),
+             TermFix("fine needle aspiration", "ch\u1ecdc h\u00fat b\u1eb1ng kim nh\u1ecf (FNA)",
+                     ["ch\u1ecdc h\u00fat kim nh\u1ecf"])]
+    log = []
+    out, applied = apply_term_fixes("Pulm\u00f4n, pulm\u00f4n v\u00e0 pulm\u00f4n", "Lung, lung and lung", fixes, log)
+    assert (out, applied) == ("Ph\u1ed5i, ph\u1ed5i v\u00e0 ph\u1ed5i", ["lung"])
+    assert log == [{"en": "lung", "from": "Pulm\u00f4n", "to": "Ph\u1ed5i"},
+                   {"en": "lung", "from": "pulm\u00f4n", "to": "ph\u1ed5i"}]  # one row per distinct replacement
+    assert apply_term_fixes(out, "Lung, lung and lung", fixes, log) == (out, []) and len(log) == 2
+    log = []
+    out, _ = apply_term_fixes("Ch\u1ecdc h\u00fat kim nh\u1ecf (fna) cho th\u1ea5y", "Fine needle aspiration", fixes, log)
+    assert out == "Ch\u1ecdc h\u00fat b\u1eb1ng kim nh\u1ecf (FNA) cho th\u1ea5y"
+    assert log == [{"en": "fine needle aspiration", "from": "Ch\u1ecdc h\u00fat kim nh\u1ecf (fna)",
+                    "to": "Ch\u1ecdc h\u00fat b\u1eb1ng kim nh\u1ecf (FNA)"}]  # the whole replaced span

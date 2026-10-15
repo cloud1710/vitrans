@@ -71,10 +71,10 @@ test("session: a passing Turnstile gives a signed session, its lifetime and the 
   const r = await call(sessionApi, deps, { path: "/api/v1/session", body: { turnstile: "XXXX.DUMMY.TOKEN.XXXX" }, env });
   assert.equal(r.status, 200);
   assert.deepEqual(Object.keys(r.body).sort(), ["expires_s", "quota", "session"]);
-  assert.equal(r.body.expires_s, 3600);
+  assert.equal(r.body.expires_s, 43200);
   assert.deepEqual(r.body.quota, { segments_left_today: 1500 });
   const v = await verifySession(TEST_SESSION_SECRET, r.body.session, NOW);
-  assert.equal(v.exp, NOW / 1000 + 3600);
+  assert.equal(v.exp, NOW / 1000 + 43200);
   assert.deepEqual(deps.sv.calls[0].body, { secret: env.TURNSTILE_SECRET, response: "XXXX.DUMMY.TOKEN.XXXX",
     remoteip: "203.0.113.7" });
   assert.equal(r.res.headers.get("cache-control"), "no-store");
@@ -140,6 +140,14 @@ test("classify: the whole document -> the helper's classify event (with versions
   const dom = await call(classifyApi, deps, { path: "/api/v1/classify", body: { session, text: FULL_TEXT,
     domain: ["alpha-kid"] }, env });
   assert.deepEqual(dom.body.setup.packs.map((p) => p.id), ["alpha-kid", "alpha"]);
+  // profile photo (the image tool): a short text gets the pack it names; file (the default) keeps the thresholds
+  const SHORT = "TUMOUR BOARD 2026";
+  const file = await call(classifyApi, deps, { path: "/api/v1/classify", body: { session, text: SHORT, profile: "file" }, env });
+  assert.deepEqual([file.status, file.body.packs], [200, []]);
+  const photo = await call(classifyApi, deps, { path: "/api/v1/classify", body: { session, text: SHORT, profile: "photo" },
+    env });
+  assert.deepEqual(photo.body.packs.map((p) => [p.id, p.reason]), [["alpha", "detect"]]);
+  assert.deepEqual(photo.body.setup, { packs: [{ id: "alpha", version: "1.0.0" }], hits: ["tumour"] });
 });
 
 test("classify: sessions are required; text and domain are validated; a long text counts against the quota", async () => {
@@ -151,12 +159,12 @@ test("classify: sessions are required; text and domain are validated; a long tex
     else assert.deepEqual([r.status, r.body.code], [401, "session_expired"], String(session));
   }
   const session = await openSession(env, deps);
-  const late = await call(classifyApi, { ...deps, now: () => NOW + 3601 * 1000 }, { path: "/api/v1/classify",
+  const late = await call(classifyApi, { ...deps, now: () => NOW + 43201 * 1000 }, { path: "/api/v1/classify",
     body: { session, text: "x" }, env });
   assert.deepEqual([late.status, late.body.code], [401, "session_expired"]);
   for (const body of [{ session, text: 5 }, { session }, { session, text: "x", domain: "alpha" },
     { session, text: "x", domain: ["Alpha!"] }, { session, text: "x", domain: Array(7).fill("alpha") },
-    { session, text: "x", other: 1 }]) {
+    { session, text: "x", other: 1 }, { session, text: "x", profile: "live" }, { session, text: "x", profile: 1 }]) {
     const r = await call(classifyApi, deps, { path: "/api/v1/classify", body, env });
     assert.deepEqual([r.status, r.body.code], [400, "bad_request"], JSON.stringify(body).slice(0, 80));
   }
@@ -204,8 +212,9 @@ test("translate: two batches of one document both use the helper's whole-documen
   const results = out.flatMap((b) => b.results);
   assert.deepEqual(results.map((r) => r.id), [0, 1, 2, 3]);
   for (const r of results) {
-    assert.deepEqual(Object.keys(r).sort(), ["cached", "flags", "id", "level", "reduced", "spans", "text"]);
+    assert.deepEqual(Object.keys(r).sort(), ["cached", "fixes", "flags", "id", "level", "reduced", "spans", "text"]);
     assert.equal(r.text, VI[DOC[r.id]]);
+    assert.deepEqual(r.fixes, []);
   }
   const u = out[0].usage;
   assert.deepEqual(Object.keys(u).sort(), ["cached_tokens", "calls", "completion_tokens", "neurons", "prompt_tokens"]);
@@ -218,6 +227,21 @@ test("translate: two batches of one document both use the helper's whole-documen
   assert.equal(await kv.get("v1:s:2026-10-14:" + sid), "5", "4 segments + 1 classify unit");
   const spent = Number(await kv.get("v1:b:2026-10-14"));
   assert.ok(Math.abs(spent - (out[0].usage.neurons + out[1].usage.neurons)) < 0.01, String(spent));
+});
+
+test("translate: the fixes the core wrote come back per segment as {en, from, to} (the page's list of fixes)", async () => {
+  const src = "The tumour was reviewed by Jane Doe, MD, PhD.";
+  const env = setupEnv({ AI: fakeAI((inputs) => chatAnswer(sourceOf(inputs) === src
+    ? "Khối bướu được BS TS Jane Doe xem lại." : "Văn bản khác.")) });
+  const deps = depsFor();
+  const { session, setup, setupId } = await classified(env, deps);
+  const r = await call(translateApi, deps, { path: "/api/v1/translate", env, body: { session, job_id: "job-fix",
+    setup, setup_id: setupId, segments: [{ id: "s1", tagged: src, essential: [], prev: "", nxt: "", where: "Doan 1" }] } });
+  assert.equal(r.status, 200, JSON.stringify(r.body));
+  const [res] = r.body.results;
+  assert.equal(res.text, "U được TS. BS. Jane Doe xem lại.");
+  assert.deepEqual(res.fixes, [{ en: "tumour", from: "Khối bướu", to: "U" }, { en: "title-order", from: "BS TS", to: "TS. BS." }]);
+  assert.deepEqual(res.flags.filter((f) => f.startsWith("term_fix:")), ["term_fix:tumour", "term_fix:title-order"]);
 });
 
 test("translate: the request is validated (segments, ids, fields, sizes, job id, setup)", async () => {

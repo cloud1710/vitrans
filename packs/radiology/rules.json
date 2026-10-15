@@ -1,0 +1,4 @@
+{"term_fixes": [
+ {"en": "spiculated margin", "vi": "bờ tua gai", "wrong": ["diện cắt tua gai", "diện cắt có gai", "rìa tua gai"]},
+ {"en": "irregular margin", "vi": "bờ không đều", "wrong": ["diện cắt không đều", "rìa không đều", "lề không đều"]}
+]}

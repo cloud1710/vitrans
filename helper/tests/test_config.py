@@ -29,6 +29,16 @@ def test_style_dir_follows_env(tmp_path, monkeypatch):
     assert config.style_dir() == Path(tmp_path)
 
 
+def test_ollama_url_is_the_env_then_the_setup_choice_then_the_default(monkeypatch):
+    monkeypatch.setattr(config, "_ollama_override", None)
+    monkeypatch.delenv("VITRANSLATE_OLLAMA", raising=False)
+    assert config.ollama_url() == "http://127.0.0.1:11434"
+    config.set_ollama_url("http://127.0.0.1:11435")  # the installed helper's own (portable) Ollama
+    assert config.ollama_url() == "http://127.0.0.1:11435"
+    monkeypatch.setenv("VITRANSLATE_OLLAMA", "http://10.0.0.5:11434")
+    assert config.ollama_url() == "http://10.0.0.5:11434"  # an explicit configuration wins
+
+
 def test_registry_source(tmp_path, monkeypatch):
     monkeypatch.delenv("VITRANSLATE_REGISTRY", raising=False)
     monkeypatch.setattr(config, "REPO_ROOT", tmp_path)

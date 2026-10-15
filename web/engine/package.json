@@ -2,13 +2,12 @@
   "name": "vitranslate-engine",
   "private": true,
   "type": "module",
-  "description": "ViTranslate browser engine (OOXML port). Dev-only dependencies for the tests; fflate is vendored under vendor/.",
+  "description": "ViTranslate browser engine (OOXML port). fflate is vendored under vendor/, the Node tests' XML parser (@xmldom/xmldom) under tests/vendor/; playwright-core is only for the Chrome runs.",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "test:chrome": "node tests/chrome.mjs"
   },
   "devDependencies": {
-    "@xmldom/xmldom": "0.9.12",
     "playwright-core": "1.63.0"
   }
 }
